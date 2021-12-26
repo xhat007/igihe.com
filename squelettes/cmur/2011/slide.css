@@ -1,0 +1,157 @@
+
+html{background:}
+body,{margin:0;padding:0;}
+
+
+/***** clearfix *****/
+.clear {clear: both;height: 0;line-height: 0;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+.clearfix {height: 1%;}
+.clearfix {display: block;}
+
+
+
+/* Panel Tab/button */
+.tab {
+	width:100%;
+	min-height:82px;
+	position: relative;
+    z-index: 999;
+	margin:0px
+	padding:0px;
+	}
+
+.tab ul.login {
+	display: block;
+	position: relative;
+  	width:915px;
+	height:82px;
+	float: center;
+	margin:0px;
+	margin-left:auto;
+	margin-right:auto;
+	list-style:none;
+}
+
+
+.tab ul.login li a {list-style:none; margin:0px; padding:0px;left:-33px;}
+.tab ul.login li a:hover {list-style:none; margin:0px; padding:0px;left:-33px;}
+
+
+.tab a.open, .tab a.close{
+	text-align:center;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	margin:0px
+	padding:0px;
+	height:82px;
+	top:0px;
+}
+
+
+
+/* sliding panel */
+#toppanel {
+    position: relative;   /*Panel will overlap  content */
+    /*position: ;*/   /*Panel will "push" the content down */
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#panel {
+	width: 100%;
+	background:#464646;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	display: none;
+	background-image:url(cmur_bg.jpg);background-repeat:repeat-x;background-position:top center;
+}
+
+#panel .content {
+	width: 978px;
+	height:380px;
+	margin: 0 auto;
+	text-align: left;
+
+}
+
+#panel .content .left {
+	width: 978px;
+	height: 385px;
+	float: center;
+
+}
+
+div.sc_menu {padding: 3px 0;}
+.sc_menu a {	display: block;	
+	margin-bottom: 5px;	
+	width: 240px;	
+	border: 1px solid #000000;	
+	/* When image support is turned off */
+	font-family:verdana;font-weight:bold;font-size:11px;color:#9dafcf;text-decoration:none;
+}
+
+.sc_menu a:hover {
+	border: 1px solid #808080;	
+	font-family:verdana;font-weight:bold;font-size:11px;color:#ffffff;text-decoration:none;
+
+}
+.sc_menu img {
+	display: block;
+	border: none;
+}
+ 
+.sc_menu_wrapper .loading {
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	
+	margin: 0 auto;
+	padding: 5px;
+ 
+	width: 100px;
+	
+	text-align: center;
+	color: #fff;
+	border: 1px solid rgb(79, 79, 79);
+	background: #1F1D1D;
+}
+/* Styling tooltip */
+.sc_menu_tooltip {
+	display: block;
+	position: absolute;
+	
+	padding: 6px;
+	font-size: 12px;	
+	color: #fff;
+	
+	
+	border: 1px solid rgb(79, 79, 79);
+	background: rgb(0, 0, 0);
+	/* Make background a bit transparent for browsers that support rgba */	
+	background: rgba(0, 0, 0, 0.5);
+}
+ 
+/* Here are styles for a link to an article. Not for you :) */
+#back {
+	margin-left: 8px;
+	color: gray;
+	font-size: 18px;
+	text-decoration: none;
+}
+#back:hover {
+	text-decoration: underline;
+}
+
+

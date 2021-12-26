@@ -1,0 +1,396 @@
+<BOUCLE_rub(RUBRIQUES){id_rubrique}>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<title>IGIHE.com - #TITRE</title>
+
+		<script src="js/pgwslider.js"></script>
+		<script src="js/jspgwslider.min.js"></script>
+		<link rel="stylesheet" href="css/pgwslider.css"/>
+		<link rel="stylesheet" href="css/pgwslider.min.css"/>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    $('.pgwSlider').pgwSlider();
+			});
+		</script>
+		<link rel="stylesheet" href="css/rub.css"/>
+		<style type="text/css">
+			a{text-decoration:none;color:inherit;}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid" style="text-align:center;background:#FFF;" id="gh_top_row">
+			<!-- Header -->
+			<div class="row" style="background:url('css/gh_day_top.jpg') repeat-x;">
+				<div class="col-sm-1">
+				</div>
+				<div class="col-sm-10">
+					<div class="row visible-lg" id="language_bar" style="border-bottom-left-radius: 1em;border-bottom-right-radius: 1em;">
+						<div class="col-sm-10">
+							<ul style="margin-top:10px;">
+								<li><a href="http://igihe.com"><img src="http://www.igihe.com/art_images/kiny.png" alt="" width="23"/>IKINYARWANDA</a></li>
+								<li><a href="http://igihe.bi" target="_blank"><img src="http://www.igihe.com/art_images/kirundi.png" alt="" width="23"/>IKIRUNDI</a></li>
+								<li><a href="http://en.igihe.com/" target="_blank"><img src="http://www.igihe.com/art_images/eng.png" alt="" width="23"/>ENGLISH</a></li>
+								<li><a href="http://fr.igihe.com" target="_blank"><img src="http://www.igihe.com/art_images/fr.png" alt="" width="23"/>FRANCAIS</a></li>
+								<li><a href="http://igihe.tv" target="_blank"><img src="http://www.igihe.com/art_images/igihetv.png" alt="" width="23"/>IGIHE TV</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-2">
+							<!-- Search engine -->
+							<div id="custom-search-input" style="margin-bottom:5px;">
+								<div class="input-group col-md-12">
+									<form method="GET" action="" style="padding:0;margin:0;">
+										<input type="text" class="search-query form-control" placeholder="Search" name="q"/>
+										<input name='page' value='recherche' type='hidden'>
+									</form>
+								</div>
+							</div>
+							<!-- End Search engine -->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<img src="http://www.igihe.com/art_images/logo.png" alt=""/>
+						</div>
+						<div class="col-sm-9 visible-lg">
+							<span class="advertising">Kwamamaza</span><br/>
+							<B_gh_ads1>
+								<BOUCLE_gh_ads1(ARTICLES){tout}{0,1}{titre_mot=Ad1_LeaderBoard_728x90}{par date}{inverse}>
+									<a href="[(#URL_SITE|sinon{http://www.igihe.com/#URL_ARTICLE})]" title="#TITRE" target="_blank">
+										<BOUCLE_gh_ads1_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+											[<img src="http://igihe.com/(#URL_DOCUMENT)"  width="728" height="90" border="0" alt="#TITRE" title="#TITRE"/>]
+										</BOUCLE_gh_ads1_img>
+									</a>
+								</BOUCLE_gh_ads1>
+							</B_gh_ads1>
+								<a href="#"><img src="#CHEMIN{'igihe_imgs/gh_ad1_default.png'}"  width="728" height="90" border="0"/></a>							<//B_gh_ads1>
+						</div>
+					</div>					
+					<!-- Navbar -->
+					<div class="row visible-lg" id="navbar">
+						<ul>
+							<li>
+								<a href="http://www.igihe.com/">
+<img src="http://www.igihe.com/squelettes/igihe_imgs/icons/gh_home.gif" width="19" height="25" border="0" align="left">
+AHABANZA</a>
+							</li>
+							<li>
+								<a href="http://igihe.com/abo-turibo/">
+<img src="http://www.igihe.com/squelettes/igihe_imgs/icons/gh_Abo Turibo.gif" width="19" height="25" border="0" align="left">
+ABO TURIBO</a>
+							</li>
+							<li>
+								<a href="http://igihe.org/spip.php?rubrique3">
+<img src="http://www.igihe.com/squelettes/igihe_imgs/icons/gh_Serivisi.gif" width="19" height="25" border="0" align="left">
+SERIVISI</a>
+						<img src="http://www.igihe.com/squelettes/igihe_imgs/icons/gh_ibirimo.gif" width="19" height="25" border="0" align="left">	</li>
+							<li>
+								<a href="http://igihe.com/spip.php?page=contact&id_rubrique=3">
+<img src="http://www.igihe.com/squelettes/igihe_imgs/icons/gh_Twandikire.gif" width="19" height="25" border="0" align="left">TWANDIKIRE
+								</a>
+							</li>
+							<li style="border-right:none;">
+								<a href="#">
+<img src="http://www.igihe.com/squelettes/igihe_imgs/icons/gh_ibirimo.gif" width="19" height="25" border="0" align="left">
+IBIRIMO
+</a>
+							</li>
+						</ul>
+					</div>
+					<!-- End Navbar -->
+				</div>				
+				<div class="col-sm-1">
+				</div>
+			</div>
+			<!-- End Header -->			
+			<!-- Body -->
+			<div class="row" style="background:url(squelettes/igihe_imgs/gh_day_content.jpg) repeat-x;">
+				<div class="col-sm-1">
+				</div>
+				<div class="col-sm-10" style="background:#FFF;">
+					<!-- Section head -->
+					<div class="row">
+						[(#LOGO_RUBRIQUE|inserer_attribut{style,width=100%;}|match{rubon#ID_RUBRIQUE\.}|oui)#LOGO_RUBRIQUE]
+						<!--<img src="images/imyidagaduro.jpg" alt="" style="width:100%;"/>-->
+					</div>
+					<div class="row">&nbsp;</div>
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="row">
+								<!-- Slider -->
+								<ul class="pgwSlider">
+									<BOUCLE_rubhighlights(ARTICLES){id_rubrique}{branche}{par date}{inverse}{doublons xx}{0,5}>
+								   		<li><a href="#URL_ARTICLE">[(#LOGO_ARTICLE|inserer_attribut{data-description,#TITRE})]</a></li>
+									</BOUCLE_rubhighlights>
+								</ul>
+								<!-- End SLider -->
+							</div>
+							<div class="row">&nbsp;</div>
+							<div class="row">
+								<img src="images/KwitaIzina_banner_Kinya.gif" style="width:100%;" alt=""/>
+							</div>
+							<div class="row">&nbsp;</div>
+							<div class="row">
+								<BOUCLE_rubart(ARTICLES){id_rubrique}{branche}{par date}{inverse}{doublons xx}{0,2}>
+									<div class="col-sm-6">
+										<div style="width:100%;height:270px;overflow:hidden;">
+											[(#LOGO_ARTICLE|vider_attribut{width}|vider_attribut{height}|inserer_attribut{style,height:100%;})]
+										</div>
+										<h5><a href="#URL_ARTICLE">#TITRE</a></h5>
+									</div>
+								</BOUCLE_rubart>
+							</div>
+							<div class="row">
+								<BOUCLE_rubart2(ARTICLES){id_rubrique}{branche}{par date}{inverse}{doublons xx}{0,2}>
+									<div class="col-sm-6">
+										<div style="width:100%;height:270px;overflow:hidden;">
+											[(#LOGO_ARTICLE|vider_attribut{width}|vider_attribut{height}|inserer_attribut{style,height:100%;})]
+										</div>
+										<h5><a href="#URL_ARTICLE">#TITRE</a></h5>
+									</div>
+								</BOUCLE_rubart2>
+							</div>
+							<div class="row separator"></div>
+							<div class="row visible-lg">
+								<div class="col-sm-6">
+									<img src="images/ads/gh_ads300x250_available.png" style="width:100%;"/>
+								</div>
+								<div class="col-sm-6">
+									<img src="images/ads/gh_ads300x250_available.png" style="width:100%;"/>
+								</div>
+							</div>
+							<div class="row separator"></div>
+							<style type="text/css">
+								.myDivToShow_2,.myDivToShow_3{display:none;}
+							</style>
+							<script type="text/javascript">
+								function showdiv(div_to_show,div_to_hide){
+								   var divs = document.getElementsByClassName("myDivToShow_"+div_to_show);
+								   for (var i=0; i<divs.length; i++){ 
+								      divs[i].style.display = "table";
+								   }
+									document.getElementById("show_link_"+div_to_hide).style.display='none';
+								}
+							</script>
+							<div class="row">
+								<div class="col-sm-6" style="border-right:2px solid #4478ba;">
+									<BOUCLE_rubart3(ARTICLES){id_rubrique}{branche}{par date}{inverse}{doublons xx}{0,6}>
+										<div class="row" style="">
+											<div class="col-sm-4">
+												[(#LOGO_ARTICLE|image_reduire{100,}|image_recadre{100,78})]
+											</div>
+											<div class="col-sm-8" style="text-align:left;">
+												<b><a href="#">#TITRE</a></b><br/><br/>
+												<span class="hashize"><B_gh_pasttime3><BOUCLE_gh_pasttime3(ARTICLES){id_article}{age<2040}>[(#DATE|date_relative)]</BOUCLE_gh_pasttime3></B_gh_pasttime3>[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]<//B_gh_pasttime3></span>
+											</div>
+										</div>
+										<div class="row">&nbsp;</div>
+									</BOUCLE_rubart3>
+								</div>
+								<div class="col-sm-6">
+									<BOUCLE_rubart4(ARTICLES){id_rubrique}{branche}{par date}{inverse}{doublons xx}{0,6}>
+										<div class="row" style="">
+											<div class="col-sm-4">
+												[(#LOGO_ARTICLE|image_reduire{100,}|image_recadre{100,78})]
+											</div>
+											<div class="col-sm-8" style="text-align:left;">
+												<b><a href="#">#TITRE</a></b><br/><br/>
+												<span class="hashize"><B_gh_pasttime4><BOUCLE_gh_pasttime4(ARTICLES){id_article}{age<2040}>[(#DATE|date_relative)]</BOUCLE_gh_pasttime4></B_gh_pasttime4>[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]<//B_gh_pasttime4></span>
+											</div>
+										</div>
+										<div class="row">&nbsp;</div>
+									</BOUCLE_rubart4>
+								</div>								
+							</div>
+							<div class="row">
+								<div class="clickmore" id="show_link_1"><a href="#myDivToShow_2" onclick="showdiv(2,1)">Kanda hano ubone izindi nkuru</a></div>
+							</div>
+							<div class="row">&nbsp;</div>
+							<div class="row myDivToShow_2">
+								<div style="width:100%;">
+									<div class="col-sm-6" style="border-right:2px solid #4478ba;">
+										<BOUCLE_rubart5(ARTICLES){id_rubrique}{branche}{par date}{inverse}{doublons xx}{0,6}>
+											<div class="row" style="">
+												<div class="col-sm-4">
+													[(#LOGO_ARTICLE|image_reduire{100,}|image_recadre{100,78})]
+												</div>
+												<div class="col-sm-8" style="text-align:left;">
+													<b><a href="#">#TITRE</a></b><br/><br/>
+													<span class="hashize"><B_gh_pasttime5><BOUCLE_gh_pasttime5(ARTICLES){id_article}{age<2040}>[(#DATE|date_relative)]</BOUCLE_gh_pasttime5></B_gh_pasttime5>[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]<//B_gh_pasttime5></span>
+												</div>
+											</div>
+											<div class="row">&nbsp;</div>
+										</BOUCLE_rubart5>									
+									</div>
+									<div class="col-sm-6">
+										<BOUCLE_rubart6(ARTICLES){id_rubrique}{branche}{par date}{inverse}{doublons xx}{0,6}>
+											<div class="row" style="">
+												<div class="col-sm-4">
+													[(#LOGO_ARTICLE|image_reduire{100,}|image_recadre{100,78})]
+												</div>
+												<div class="col-sm-8" style="text-align:left;">
+													<b><a href="#">#TITRE</a></b><br/><br/>
+													<span class="hashize"><B_gh_pasttime6><BOUCLE_gh_pasttime6(ARTICLES){id_article}{age<2040}>[(#DATE|date_relative)]</BOUCLE_gh_pasttime6></B_gh_pasttime6>[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]<//B_gh_pasttime6></span>
+												</div>
+											</div>
+											<div class="row">&nbsp;</div>
+										</BOUCLE_rubart6>									
+									</div>
+									<div style="clear:both;">&nbsp;</div>
+								</div>							
+								<div class="row">
+									<div class="clickmore" id="show_link_2"><a href="#myDivToShow_3" onclick="showdiv(3,2)">Kanda hano ubone izindi nkuru</a></div>
+								</div>
+							</div>							
+							<div class="row">&nbsp;</div>
+							<div class="row myDivToShow_3">
+								<div class="col-sm-6" style="border-right:2px solid #4478ba;">
+									<BOUCLE_rubart7(ARTICLES){id_rubrique}{branche}{par date}{inverse}{doublons xx}{0,6}>
+										<div class="row" style="">
+											<div class="col-sm-4">
+												[(#LOGO_ARTICLE|image_reduire{100,}|image_recadre{100,78})]
+											</div>
+											<div class="col-sm-8" style="text-align:left;">
+												<b><a href="#">#TITRE</a></b><br/><br/>
+												<span class="hashize"><B_gh_pasttime7><BOUCLE_gh_pasttime7(ARTICLES){id_article}{age<2040}>[(#DATE|date_relative)]</BOUCLE_gh_pasttime7></B_gh_pasttime7>[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]<//B_gh_pasttime7></span>
+											</div>
+										</div>
+										<div class="row">&nbsp;</div>
+									</BOUCLE_rubart7>									
+								</div>
+								<div class="col-sm-6">
+									<BOUCLE_rubart8(ARTICLES){id_rubrique}{branche}{par date}{inverse}{doublons xx}{0,6}>
+										<div class="row" style="">
+											<div class="col-sm-4">
+												[(#LOGO_ARTICLE|image_reduire{100,}|image_recadre{100,78})]
+											</div>
+											<div class="col-sm-8" style="text-align:left;">
+												<b><a href="#">#TITRE</a></b><br/><br/>
+												<span class="hashize"><B_gh_pasttime8><BOUCLE_gh_pasttime8(ARTICLES){id_article}{age<2040}>[(#DATE|date_relative)]</BOUCLE_gh_pasttime8></B_gh_pasttime8>[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]<//B_gh_pasttime8></span>
+											</div>
+										</div>
+										<div class="row">&nbsp;</div>
+									</BOUCLE_rubart8>									
+								</div>
+							</div>							
+						</div>
+						<div class="col-sm-4" style="border-left:1px solid #000;" id="unalefter">
+							<div class="row" style="padding:10px;">
+							<script language="javascript">
+									function run() {					  
+						  				var iframe = jQuery('#twitter-widget-0').contents();
+						  				var prev = jQuery(iframe).contents().find('.h-feed li:first-child');			  
+						  				//jQuery(iframe).contents().find('.timeline .stream').css('overflow-y','hidden');	 
+										jQuery.unique(prev).each(fungh_ads300x250_available.pngction(i) {
+							  			jQuery(this).delay(i*2000).slideUp(2000,function() {
+										jQuery(this).appendTo(this.parentNode).slideDown();
+							  			});
+									});
+									}
+						  			window.setInterval(run,8000);					  
+								</script>
+								<a class="twitter-timeline" height="350"  href="https://twitter.com/igihe"  data-widget-id="425313326403317761">Tweets by @igihe</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+							</div>
+							<div class="row">&nbsp;</div>
+							<div class="row visible-lg">
+								<img src="images/ads/gh_ads300x250_available.png" alt=""/>
+							</div>
+							<div class="row">&nbsp;</div>
+							<div class="row">
+								<div class="sect-title-2017">INKURU ZIHERUKA</div>
+								<div class="ziheruka-2017">
+									<table>
+										<tr><td><span class="cptnbr">1</span></td><td class="art-after-2017"><a href="amakuru/u-rwanda/article/duhe-umwanya-ba-rutahizamu-dufite-kagere-meddie-si-cyo-kibazo-nzamvita-degaule">Duhe umwanya ba rutahizamu dufite Kagere Meddie si cyo kibazo - Nzamvita Degaule</a></td></tr>  
+										<tr><td><span class="cptnbr">2</span></td><td class="art-after-2017"><a href="amakuru/u-rwanda/article/ise-ltd-yiyemeje-gukangurira-abanyarwanda-kugira-umuco-wo-gukunda-film-kime">ISE LTD yiyemeje gukangurira Abanyarwanda kugira umuco wo gukunda film</a></td></tr>  
+										<tr><td><span class="cptnbr">3</span></td><td class="art-after-2017"><a href="amakuru/u-rwanda/article/hellofood-irifatanya-n-amahanga-mu-kurwanya-inzara">Hellofood irifatanya n&#8217;amahanga mu kurwanya inzara</a></td></tr>  
+										<tr><td><span class="cptnbr">4</span></td><td class="art-after-2017"><a href="amakuru/u-rwanda/article/abanyemari-43-baturutse-muri-nigeria-barasura-u-rwanda">Abanyemari 43 baturutse muri Nigeria barasura u Rwanda  </a></td></tr>  
+										<tr><td><span class="cptnbr">5</span></td><td class="art-after-2017"><a href="amakuru/u-rwanda/article/quartier-matheus-igiye-kubakwa-mu-ishusho-ndangamateka-igezweho">Quartier Matheus igiye kubakwa mu ishusho ndangamateka igezweho </a></td></tr>  
+									</table>
+								</div>
+							</div>
+							<div class="row">&nbsp;</div>
+							<div class="row visible-lg">
+								<img src="images/ads/gh_ads300x250_available.png" alt=""/>
+							</div>
+							<div class="row">&nbsp;</div>
+							<div class="row">
+								<div class="sect-title-2017">INKURU ZASOMWE</div>
+								<div class="ziheruka-2017">
+									<table>
+										<tr><td><span class="cptnbr">1</span></td><td class="art-after-2017"><a href="amakuru/u-rwanda/article/duhe-umwanya-ba-rutahizamu-dufite-kagere-meddie-si-cyo-kibazo-nzamvita-degaule">Duhe umwanya ba rutahizamu dufite Kagere Meddie si cyo kibazo - Nzamvita Degaule</a></td></tr>  
+										<tr><td><span class="cptnbr">2</span></td><td class="art-after-2017"><a href="amakuru/u-rwanda/article/ise-ltd-yiyemeje-gukangurira-abanyarwanda-kugira-umuco-wo-gukunda-film-kime">ISE LTD yiyemeje gukangurira Abanyarwanda kugira umuco wo gukunda film </a></td></tr>  
+										<tr><td><span class="cptnbr">3</span></td><td class="art-after-2017"><a href="amakuru/u-rwanda/article/hellofood-irifatanya-n-amahanga-mu-kurwanya-inzara">Hellofood irifatanya n&#8217;amahanga mu kurwanya inzara</a></td></tr>  
+										<tr><td><span class="cptnbr">4</span></td><td class="art-after-2017"><a href="amakuru/u-rwanda/article/abanyemari-43-baturutse-muri-nigeria-barasura-u-rwanda">Abanyemari 43 baturutse muri Nigeria barasura u Rwanda  </a></td></tr>  
+										<tr><td><span class="cptnbr">5</span></td><td class="art-after-2017"><a href="amakuru/u-rwanda/article/quartier-matheus-igiye-kubakwa-mu-ishusho-ndangamateka-igezweho">Quartier Matheus igiye kubakwa mu ishusho ndangamateka igezweho </a></td></tr>  
+									</table>
+								</div>
+							</div>
+							<div class="row">&nbsp;</div>
+							<div class="row visible-lg">
+								<img src="images/ads/gh_ads300x250_available.png" alt=""/>
+							</div>
+							<div class="row">&nbsp;</div>
+							<div class="row visible-lg">
+								<img src="images/ads/gh_ads300x250_available.png" alt=""/>
+							</div>
+						</div>
+					</div>
+					<!-- Section head end -->
+				</div>
+				<div class="col-sm-1">
+				</div>
+			</div>			
+			<div class="row" style="background:#b3d3fc;">
+				<div class="col-sm-1">
+				</div>
+				<div class="col-sm-10" style="background:#FFF;">
+					<div class="row separator"></div>
+					<img src="images/kwitizina.gif" alt=""/><br/><br/>
+					<div class="row separator"></div>
+				</div>
+				<div class="col-sm-1">
+				</div>
+			</div>
+			<div class="row visible-lg" style="background:#b3d3fc;">
+				<div class="col-sm-1">
+				</div>
+				<div class="col-sm-10" style="background:#2c4e7c;">
+					<div class="row videotitle">
+						<img src="images/videos/logo-ghtv.png" class="videolxogo"/>
+						VIDEOS
+					</div>
+					<div class="row videos">
+						<div class="col-sm-3">
+							<img src="images/videos/1.jpg" alt=""/><br/>
+							<a href="#">Depite Bazivamo atekereza iki ku ivugururwa ry’Itegeko Nshinga?</a>
+						</div>
+						<div class="col-sm-3">
+							<img src="images/videos/2.jpg" alt=""/><br/>
+							<a href="#">Iyo FPR idashyira imbere ubunyarwanda, ntiba yaratsinze - Depite Bamporiki</a>
+						</div>
+						<div class="col-sm-3">
+							<img src="images/videos/3.jpg" alt=""/><br/>
+							<a href="#">Kigali: Perezida Kagame yongeye guhagarara asuhuza abaturage</a>
+						</div>
+						<div class="col-sm-3">
+							<img src="images/videos/4.jpg" alt=""/><br/>
+							<a href="#">Gisagara - Mukindo kubera aho bageze heza bifuza kuzakomeza kuyoborwa na Kagame nyuma ya 2017</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-1">
+				</div>
+			</div>
+			<!-- End Body -->
+			<!-- Footer -->
+			<div class="row">
+				
+			</div>
+			<!-- End Footer -->			
+		</div>
+	</body>
+</html>
+</BOUCLE_rub>

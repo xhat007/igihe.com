@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="css/text" href="css/style.css" />
+	</head>
+	<body>
+		<a href="http://m.igiheshowbiz.com">
+		<div id="header" style="border-bottom: 3px solid #80b1e5;">
+			<img src="images/logo.png" />
+		</div>
+		</a>
+		<div id="content">
+			<div id="content_menu" align="center" style="width: 100%; padding-top: 10px;">
+			<form name="guideform">
+				<select name="guidelinks" style="width: 96%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+					<option style="font-size: 1.0em; font-family: sans-serif;" selected>Ahabanza</option>
+					<BOUCLE_gh_ibirimoside(RUBRIQUES){id_rubrique=13}>
+					<BOUCLE_gh(RUBRIQUES){id_parent}{0,7}>
+						<option value="#URL_RUBRIQUE" style="font-size: 1.0em; font-family: sans-serif;">#TITRE</option>
+					</BOUCLE_gh>
+					</BOUCLE_gh_ibirimoside>
+				</select>
+			</form>
+			</div>
+			<div id="content_search" style="width: 100%; padding-left: 10px; padding-right: 10px;">
+				<input type="text" class="search" />
+				<input type="submit" class="searchbutton" />
+			</div>
+			<div class="clear"></div>
+			<div class="cat">
+				<div align="center" style="margin-bottom: 10px;"><img src="images/1.jpg"/></div>
+				<BOUCLE_artrnb(ARTICLES){titre_mot=artrnb}{par date}{inverse}{0,3}>
+					<div style="padding: 5px 0px; margin: 2px 0px; min-height: 70px;  border-bottom: 3px solid #3c73ac;">
+						[<img src="(#LOGO_ARTICLE||image_reduire{0,55}||image_recadre{80,55,top center}|extraire_attribut{src})" width="80" height="55"  border="0" align="left"/>]
+						<a href="#URL_ARTICLE" style="color: #000; font-family: sans-serif; font-weight: bold;">#TITRE</a>
+						<div class="clear"></div>
+					</div>
+				</BOUCLE_artrnb>
+			</div>
+			<div align="center" style="margin: 10px;"><img src="http://igihe.bi/IMG/gif/2-2.gif" style="width: 100%;" /></div>
+			<div class="cat">
+				<div align="center" style="margin-bottom: 10px;"><img src="images/2.jpg"/></div>
+				<BOUCLE_arthiphop(ARTICLES){titre_mot=arthiphop}{par date}{inverse}{0,3}>
+					<div style="padding: 5px 0px; margin: 2px 0px; min-height: 70px;  border-bottom: 3px solid #3c73ac;">
+						[<img src="(#LOGO_ARTICLE||image_reduire{0,55}||image_recadre{80,55,top center}|extraire_attribut{src})" width="80" height="55"  border="0" align="left"/>]
+						<a href="#URL_ARTICLE" style="color: #000; font-family: sans-serif; font-weight: bold;">#TITRE</a>
+						<div class="clear"></div>
+					</div>
+				</BOUCLE_arthiphop>
+			</div>
+			<div align="center" style="margin: 10px;"><img src="http://igihe.rw/IMG/jpg/burundi_banner.jpg" style="width: 100%;" /></div>
+			<div class="cat">
+				<div align="center" style="margin-bottom: 10px;"><img src="images/3.jpg"/></div>
+				<BOUCLE_artafrobeat(ARTICLES){titre_mot=artafrobeat}{par date}{inverse}{0,3}>
+					<div style="padding: 5px 0px; margin: 2px 0px; min-height: 70px;  border-bottom: 3px solid #3c73ac;">
+						[<img src="(#LOGO_ARTICLE||image_reduire{0,55}||image_recadre{80,55,top center}|extraire_attribut{src})" width="80" height="55"  border="0" align="left"/>]
+						<a href="#URL_ARTICLE" style="color: #000; font-family: sans-serif; font-weight: bold;">#TITRE</a>
+						<div class="clear"></div>
+					</div>
+				</BOUCLE_artafrobeat>
+			</div>
+			<div align="center" style="margin: 10px;"><img src="http://igihe.bi/IMG/gif/2-2.gif" style="width: 100%;" /></div>
+			<div class="cat">
+				<div align="center" style="margin-bottom: 10px;"><img src="images/4.jpg"/></div>
+				<BOUCLE_artgospel(ARTICLES){titre_mot=artgospel}{par date}{inverse}{0,3}>
+					<div style="padding: 5px 0px; margin: 2px 0px; min-height: 70px;  border-bottom: 3px solid #3c73ac;">
+						[<img src="(#LOGO_ARTICLE||image_reduire{0,55}||image_recadre{80,55,top center}|extraire_attribut{src})" width="80" height="55"  border="0" align="left"/>]
+						<a href="#URL_ARTICLE" style="color: #000; font-family: sans-serif; font-weight: bold;">#TITRE</a>
+						<div class="clear"></div>
+					</div>
+				</BOUCLE_artgospel>
+			</div>
+			<div align="center" style="margin: 10px;"><img src="http://igihe.rw/IMG/jpg/burundi_banner.jpg" style="width: 100%;" /></div>
+			<div class="cat">
+				<div align="center" style="margin-bottom: 10px;"><img src="images/5.jpg"/></div>
+				<BOUCLE_artsinema(ARTICLES){titre_mot=artsinema}{par date}{inverse}{0,3}>
+					<div style="padding: 5px 0px; margin: 2px 0px; min-height: 70px;  border-bottom: 3px solid #3c73ac;">
+						[<img src="(#LOGO_ARTICLE||image_reduire{0,55}||image_recadre{80,55,top center}|extraire_attribut{src})" width="80" height="55"  border="0" align="left"/>]
+						<a href="#URL_ARTICLE" style="color: #000; font-family: sans-serif; font-weight: bold;">#TITRE</a>
+						<div class="clear"></div>
+					</div>
+				</BOUCLE_artsinema>
+			</div>
+			<div align="center" style="margin: 10px;"><img src="http://igihe.bi/IMG/gif/2-2.gif" style="width: 100%;" /></div>
+			<div class="cat">
+				<div align="center" style="margin-bottom: 10px;"><img src="images/6.jpg"/></div>
+				<BOUCLE_artmakuru(ARTICLES){titre_mot=artmakuru}{par date}{inverse}{0,3}>
+					<div style="padding: 5px 0px; margin: 2px 0px; min-height: 70px;  border-bottom: 3px solid #3c73ac;">
+						[<img src="(#LOGO_ARTICLE||image_reduire{0,55}||image_recadre{80,55,top center}|extraire_attribut{src})" width="80" height="55"  border="0" align="left"/>]
+						<a href="#URL_ARTICLE" style="color: #000; font-family: sans-serif; font-weight: bold;">#TITRE</a>
+						<div class="clear"></div>
+					</div>
+				</BOUCLE_artmakuru>
+			</div>
+			<div align="center" style="margin: 10px;"><img src="http://igihe.rw/IMG/jpg/burundi_banner.jpg" style="width: 100%;" /></div>
+			<div class="cat">
+				<div align="center" style="margin-bottom: 10px;"><img src="images/7.jpg"/></div>
+				<BOUCLE_arturwenya(ARTICLES){titre_mot=arturwenya}{par date}{inverse}{0,3}>
+					<div style="padding: 5px 0px; margin: 2px 0px; min-height: 70px;  border-bottom: 3px solid #3c73ac;">
+						[<img src="(#LOGO_ARTICLE||image_reduire{0,55}||image_recadre{80,55,top center}|extraire_attribut{src})" width="80" height="55"  border="0" align="left"/>]
+						<a href="#URL_ARTICLE" style="color: #000; font-family: sans-serif; font-weight: bold;">#TITRE</a>
+						<div class="clear"></div>
+					</div>
+				</BOUCLE_arturwenya>
+			</div>
+			<div align="center" style="margin: 10px;"><img src="http://igihe.bi/IMG/gif/2-2.gif" style="width: 100%;" /></div>
+			
+		</div>
+		<div id="footer">
+			<div class="f1" align="center"><a href="#" style="font-size: 12px; font-weight: bold; color: #fff;">Ahabanza</a></div>
+			<div class="f2" align="center" style="font-size: 12px; font-weight: normal; color: #fff;">Copyright &copy; 2013 - IGIHEshowbiz<br />All Rights Reserved</div>
+			<div class="clear"></div>
+		</div>
+	</body>
+	
+</html>

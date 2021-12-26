@@ -1,0 +1,43 @@
+<div class="col col-lg-6 visible-lg "> 
+												<div class="company-advertorial2 margintop">
+													<div class="header-advertorial">
+														<img src="images/brd_header.png" width="100%" height="">
+													</div>
+													<div class="field-advertorial2">
+														<div class="title-advertorial2 text-center">
+															AMAKURU
+														</div>
+														<div class="first-advertorial2">
+															<div class="row margintop">
+															<BOUCLE_aboutbrd(ARTICLES){titre_mot=BRD_homenews}{par date}{inverse}{0,1}>
+																<div class="col col-lg-5  col-md-4  col-sm-4 col-xs-4"> 
+																	[<a href="#URL_ARTICLE"><img src="(#LOGO_ARTICLE||image_reduire{100}|extraire_attribut{src})" class="img-responsive" ></a>]
+																</div>
+																<div class="col col-lg-7  col-md-8  col-sm-8 col-xs-8"> 
+																	<div class="news-wrap">
+																		<a href="#URL_ARTICLE">[(#TITRE|couper{60,'...'})]</a>
+																		<span class="time-rubrique"><i class="fa fa-clock-o"></i> [(#DATE*|affdate{'d/m'})] | <a href="#URL_RUBRIQUE{1756}">BRD</a></span>
+																	</div>
+																</div>
+															</BOUCLE_aboutbrd>
+															</div>
+														</div> 
+														<div class="row margintop"> 
+															<div class="col col-lg-12"> 
+															<BOUCLE_aboutbrd2(ARTICLES){titre_mot=BRD_homenews}{par date}{inverse}{1,4}>
+																<div class="other-advertorial2">
+																	<a href="#URL_ARTICLE">#TITRE</a> 
+																</div> 
+															</BOUCLE_aboutbrd2> 
+															</div>
+														</div> 
+														<div class="link-advertorial2 text-right margintop">
+															<span class="rssb-link2"><a href="#URL_RUBRIQUE{1756}">ANDI MAKURU</a></span>
+														</div>
+													</div>
+													
+													<div class="header-advertorial">
+														<img src="images/brd_footer.png" width="100%" height="">
+													</div>
+												</div>  
+											</div> 

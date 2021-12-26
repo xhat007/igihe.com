@@ -1,0 +1,202 @@
+<html>
+	<head>
+		<title>Rwanda Day Toronto 2013</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="rwandaday/toronto/css/default.css" />
+		<link rel="stylesheet" type="text/css" href="rwandaday/toronto/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="rwandaday/toronto/css/style.css" />
+		<script src="rwandaday/toronto/js/modernizr.custom.js"></script>
+		<link rel="stylesheet" href="rwandaday/toronto/js/colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		
+	</head>
+	<body>
+		<div id="header" style="background: url('rwandaday/toronto/images/bggg.jpg') center no-repeat; height: 339px;">
+		
+			<div class="header">
+				
+			</div>
+		</div>
+		<div style=" background: #113d86;">
+		<div id="slide" style="max-width: 990px; margin: auto;">
+			<div id="nav">
+				<ul class="nav">
+					<li><a href="http://igihe.com/serivisi/special-pages/igihe-rwanda-day-2013-toronto">AHABANZA</a></li>
+					<li><a href="#">GAHUNDA</a></li>
+					<li><a href="http://rwandaday.org/rwanda-day/register?lang=en">IYANDIKISHE</a></li>
+					<li><a href="http://rwandaday.org/rwanda-day/contact-us?lang=en">TWANDIKIRE</a></li>
+					<li><a href="http://igihe.com">IGIHE.COM</a></li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+			<div id="cbp-fwslider" class="cbp-fwslider">
+				<ul>	
+					<BOUCLE_rdayslide(ARTICLES){titre_mot=rdayslides}{0,6}{par date}{inverse}>
+					<li>
+					<a href="#">
+						[<img src="http://igihe.com/(#LOGO_ARTICLE|extraire_attribut{src})" width="990" height="444" alt="#TITRE"/>]
+						<div style="position: absolute; top: 200px; left: 30px; background: rgba(0,0,0,0.4); padding: 10px; " align="left">
+							<div style="font-weight: bold;">#TITRE</div>
+							<div>[(#DATE|affdate)]</div>
+						</div>
+					</a>
+					</li>
+					</BOUCLE_rdayslide>
+					
+				</ul>
+			</div>
+			
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="rwandaday/toronto/js/jquery.cbpFWSlider.min.js"></script>
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpFWSlider( [options] );
+				- options:
+				{
+					// default transition speed (ms)
+					speed : 500,
+					// default transition easing
+					easing : 'ease'
+				}
+				- destroy:
+				$( selector ).cbpFWSlider( 'destroy' );
+				*/
+
+				$( '#cbp-fwslider' ).cbpFWSlider();
+
+			} );
+		</script>
+		</div>
+		</div>
+		<div id="content">
+			<div class="content">
+				<div class="events">
+					<div class="eventheader">
+						past event <span style="font-family: 'Caudex'; font-size: 18px;">2011 - 2012 -2013</span>
+					</div>
+					<div class="event">
+						<a href="http://rwandaday.org/past-events/london?lang=en" target="_blank"><img src="rwandaday/toronto/images/img1.jpg" /></a>
+					</div>
+					<div class="event">
+						<a href="http://rwandaday.org/past-events/boston?lang=en" target="_blank"><img src="rwandaday/toronto/images/img2.jpg" /></a>
+					</div>
+					<div class="event">
+						<a href="http://rwandaday.org/past-events/paris?lang=en" target="_blank"><img src="rwandaday/toronto/images/img3.jpg" /></a>
+					</div>
+					<div class="event">
+						<a href="http://rwandaday.org/past-events/chicago?lang=en" target="_blank"><img src="rwandaday/toronto/images/img4.jpg" /></a>
+					</div>
+					<div class="clear"></div>
+				</div>
+					<div class="latest">
+					<B_rnews>
+						<div class="ctitle">amakuru aheruka</div>						
+						<BOUCLE_rnews(ARTICLES){titre_mot=rdaylatestnews}{par date}{inverse}{pagination 6}{tout}>
+							<div class="lnews">
+								[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{0,85}||image_recadre{120,75,top center, #000}|extraire_attribut{src})" alt="[(#TITRE)]" align="left" />]
+								<a href="#URL_ARTICLE">#TITRE</a>
+								<span>[(#DATE|affdate)]</span>
+								<div class="clear"></div>
+							</div>
+						</BOUCLE_rnews>
+						<div class="pagination">[(#PAGINATION{page})]</div>
+						</B_rnews>
+					<//B_rnews>
+					</div>
+					<div class="media">
+						<div class="ctitle">video</div>
+						<div style="padding: 4px;">
+							<BOUCLE_rvidz(ARTICLES){titre_mot=rdayvidz}{0,4}{par date}{inverse}>
+								<div class="gal">
+									<a class="youtube" href="http://www.youtube.com/embed/#SOUSTITRE?rel=0&wmode=transparent">
+										[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{0,150}||image_recadre{150,90,top center}|extraire_attribut{src})" alt="[(#TITRE)]" />]
+									</a>
+								</div>
+							</BOUCLE_rvidz>
+							<div class="clear"></div>
+						</div>
+						<div class="ctitle">photos</div>
+						<div style="padding: 4px;">
+							<BOUCLE_rgal(ARTICLES){titre_mot=rdayslides}{0,6}{par date}{inverse}>
+								<div class="gal">
+									<a class="group2" href="[http://igihe.com/(#LOGO_ARTICLE|extraire_attribut{src})]">
+										[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{0,100}||image_recadre{150,90,top center}|extraire_attribut{src})" alt="[(#TITRE)]" />]
+									</a>
+								</div>
+							</BOUCLE_rgal>
+							<div class="clear"></div>
+						</div>
+						<script src="rwandaday/toronto/js/jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:344});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+					</div>
+					<div class="tweet">
+						<div class="ctitle">tweets</div>
+					</div>
+					<div class="clear"></div>
+				
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer">
+				<div class="f1">
+					<img src="rwandaday/toronto/images/logo.png" />
+				</div>
+				<div class="f2" style="padding-top: 20px;">
+					<div></div>
+					<table style="width: 100%; border: 0; text-align: center; color: #fff; font-family: calibri; padding: 10px 0;">
+						<tr>
+							<td><b>LONDON</b> 2013</td>
+							<td><b>BOSTON</b> 2012</td>
+							<td><b>PARIS</b> 2011</td>
+							<td><b>CHICAGO</b> 2011</td>
+						</tr>
+					</table>
+					<ul class="nav">
+						<li><a href="http://igihe.com/serivisi/special-pages/igihe-rwanda-day-2013-toronto">AHABANZA</a></li>
+						<li><a href="#">GAHUNDA</a></li>
+						<li><a href="http://rwandaday.org/rwanda-day/register?lang=en">IYANDIKISHE</a></li>
+						<li><a href="http://rwandaday.org/rwanda-day/contact-us?lang=en">TWANDIKIRE</a></li>
+						<li><a href="http://igihe.com">IGIHE.COM</a></li>
+						<div class="clear"></div>
+					</ul>
+
+				</div>
+				<div class="f3">
+					<img src="rwandaday/toronto/images/igihe.png" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

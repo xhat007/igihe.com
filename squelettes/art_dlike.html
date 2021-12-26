@@ -1,0 +1,25 @@
+<?php
+session_start();
+$arnbr = '#ID_ARTICLE'; 
+
+## DISLIKES COUNTER INITIALISATION ##
+
+$dlike_counter = "squelettes/v5inclure/ctr/dlike_". $arnbr .".txt";
+if (!file_exists($dlike_counter)) {
+  $f = fopen($dlike_counter, "w");
+  fwrite($f,"0");
+  fclose($f);
+} 
+$f = fopen($dlike_counter,"r");
+$dlikeVal = fread($f, filesize($dlike_counter));
+fclose($f);
+
+## // DISLIKES COUNTER INITIALISATION ##
+
+
+echo $dlikeVal;
+//echo "You are visitor number ". $counterVal ." to this site";
+//[(#SET{visitts,11})] [(#GET{visitts})]
+?> 
+<!-- [(#SET{visitts,[(15)]})]
+[(#SESSION_SET{valvisits,#GET{visitts})] -->

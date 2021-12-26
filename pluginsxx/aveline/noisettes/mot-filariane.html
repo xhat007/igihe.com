@@ -1,0 +1,10 @@
+[(#SET{ariane_separateur, #ENV{ariane_separateur}|is_null|non|?{#ENV{ariane_separateur},'&gt;'}})]
+[(#SET{ariane_separateur, [<span class="sep">(#GET{ariane_separateur})</span>]})]
+[(#SET{longueur_max_titres, #ENV{longueur_max_titres}|sinon{80}})]
+<BOUCLE_mot(MOTS){id_mot}>
+<p id="hierarchie">
+	[(#ENV{afficher_lien_accueil}|oui)<a href="#URL_SITE_SPIP/"><:accueil_site:></a>] [(#GET{ariane_separateur})] <:mots_clefs:>
+	<BOUCLE_test(CONDITION){si #ENV{afficher_groupe}}><BOUCLE_ariane(GROUPES_MOTS){id_groupe}>[(#GET{ariane_separateur})] [(#ENV{lien_groupe_mots}|oui)<a href="#URL_PAGE{groupe_mots,id_groupe=#ID_GROUPE}">][(#TITRE|couper{#GET{longueur_max_titres}})][(#ENV{lien_groupe_mots}|oui)</a>]</BOUCLE_ariane></BOUCLE_test>
+	[(#ENV{afficher_titre_mot}|oui) [(#GET{ariane_separateur})] <strong class="on">[(#TITRE|couper{#GET{longueur_max_titres}})]</strong>]
+</p>
+</BOUCLE_mot>

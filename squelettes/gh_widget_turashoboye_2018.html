@@ -1,0 +1,59 @@
+<style>
+.f-title5 a {
+    color: #ffffff;
+    font-family: ralewaymedium, 'trebuchet ms';
+    font-size: 14px;
+}
+.f-title5 a:hover {
+    color: #ff97c5; 
+}
+
+.ir-full250{padding: 5px 0 0 5px;} 
+
+.w_miss2018{background: #212121 url(squelettes/turashoboye/images/news-bg2.png) center no-repeat; height: 340px;}
+.item_miss_2018{background: transparent; margin-bottom: 5px; border-bottom: 1px solid #ff4195; padding-bottom: 5px; }  
+.readmore{background: #c40057; text-align: center; padding: 2px 0;}  
+.readmore a{color: #fff; }  
+</style>
+ 
+<h3 class="title-section" style="background: #ff4195 url(squelettes/turashoboye/images/header-bg.jpg) no-repeat;">UKWEZI KWAHARIWE ABAGORE</h3>
+<div class="irambuye-news"> 
+	<div class="row">
+		<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 nopaddingright0 "> 
+			<div class="flashnews2">
+				<BOUCLE_gh_widget(ARTICLES){id_article=103992}>
+					<div class="flashphoto">
+						<!-- <a href="#URL_RUBRIQUE"><img class="rectangle img-responsive" data-original="[(#LOGO_RUBRIQUE||image_reduire{325,*}||extraire_attribut{src})]" alt="."/> </a> -->
+						<a href="#URL_RUBRIQUE{1955}"><img class="rectangle img-responsive" src="[(#LOGO_ARTICLE||extraire_attribut{src})]" alt="."/> </a>
+					</div> 
+				</BOUCLE_gh_widget> 
+			</div>												  
+		</div> 
+		<div class="col col-lg-6 col-md-6 col-sm-6 nopaddingleft0"> 
+			<div class="ir-full250 w_miss2018">
+				<BOUCLE_gh_inkuru_irushanwa(ARTICLES){id_rubrique=1957}{0,10}{!par date}{doublons rushw}>
+					<div class="item_miss_2018"> 
+					<div class="row"> 
+						<div class="col col-lg-4 nopaddingright0">
+							<B_videomiss>
+							<BOUCLE_videomiss (MOTS){id_article}{titre_mot=video}> 
+								<a href="#URL_ARTICLE" class="video"><span></span><img class="rectangle img-responsive" src="[(#LOGO_ARTICLE||image_reduire{320,*}||extraire_attribut{src})]" alt="."/> </a>
+							</BOUCLE_videomiss>
+							</B_videomiss>
+								<a href="#URL_ARTICLE"><img class="rectangle img-responsive" src="[(#LOGO_ARTICLE||image_reduire{320,*}||extraire_attribut{src})]" alt="."/> </a>
+							<//B_videomiss>
+							
+						</div>
+						<div class="col col-lg-8 nopaddingleft0"> 
+							<div class="f-title5"> 
+								<a href="#URL_ARTICLE">#TITRE</a>
+							</div>
+						</div>
+					</div>  
+					</div>  
+				</BOUCLE_gh_inkuru_irushanwa>  
+			</div>
+			<div class="readmore"><a href="#URL_RUBRIQUE{1955}">Soma izindi</a></div>
+		</div> 
+	</div> 
+</div>   

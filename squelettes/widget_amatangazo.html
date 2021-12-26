@@ -1,0 +1,36 @@
+<div class="advertorials">
+		<div class="row"> 
+			<div class="col col-md-6">
+				<h1>Cyamunara</h1>
+				<div class="advert-articles-all">
+				<BOUCLE_amatangazo(ARTICLES){id_rubrique IN 1989,1629}{branche}{par date}{inverse}{0,20}>
+					<div class="advert-article">
+						<div class="row"> 
+							<div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+								<div class="f-title4"><a href="#URL_ARTICLE">#TITRE</a></div>
+							</div>
+						</div>
+					</div>
+				</BOUCLE_amatangazo>
+				</div>
+			</div>
+			<div class="col col-md-6">
+				<h1>Inkuru zamamaza</h1>
+				<div class="advert-articles-all">
+				<BOUCLE_zamamaza(ARTICLES){branche 1410}{par date}{inverse}{0,20}{doublons ubu}>
+					<div class="advert-article">
+						<div class="row">
+							<div class="col col-lg-5 col-md-5 col-sm-3 col-xs-3 ">
+								<a href="#URL_ARTICLE"><img src="[(#LOGO_ARTICLE||image_reduire{500,*}|extraire_attribut{src})]" class="img-responsive"></a>
+							</div>
+							<div class="col col-lg-7 col-md-7 col-sm-9 col-xs-9 "> 
+								<div class="f-title4"><a href="#URL_ARTICLE">#TITRE</a></div>
+							</div>
+						</div>
+					</div>
+				</BOUCLE_zamamaza>
+				
+				</div>
+			</div>
+		</div>
+	</div>

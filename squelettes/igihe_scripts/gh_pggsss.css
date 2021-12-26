@@ -1,0 +1,99 @@
+/*PGGSS*/
+#sectionpggss{margin-top:2px;padding:0px;margin:0px;min-height:830px;height:auto;}
+#sectionpggss_header{width:100%;height:150px;text-align:center;background-color:#0655c7;}
+#sectionpggss_body{margin-top:2px;padding:0px;margin:0px;background-color:#0655c7;width:982px;min-height:830px;height:auto;border:0px solid #c0c0c0;-moz-border-radius-bottomright: 10px; -webkit-border-bottom-right-radius: 10px; border-bottom-right-radius: 10px; -moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px; border-bottom-left-radius: 10px;overflow:hidden;}
+
+#sectionpggss_contestants{display:block;float:left;background-color:#ffffff;margin-left:10px;margin-right:3px;margin-top:10px;width:570px;min-height:805px;text-align:left;-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;overflow:hidden;}
+#sectionpggss_news{display:block;float:left;background-color:#ffffff;margin-left:10px;margin-right:3px;margin-top:10px;width:375px;min-height:400px;text-align:left;-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;overflow:hidden;}
+
+#pggss_menu{display:block; float:left; text-align:center;width:970px; height: 35px;top:15px;left:10px;margin:5px;margin-top:0px;padding:0px; background-color:#fafc8f;border:2px solid red;border-radius: 8px;-moz-border-radius:8px; -webkit-border-radius:8px;background-image:url(../igihe_imgs/pggss_menubgoff.gif);background-repeat:repeat-x;background-position:left bottom;}
+#menulist{display:block; position:relative;margin-left:auto;margin-right:auto;}
+li.menulinks{list-style-type:none;float:left; height:35px;display:inline-block;text-align:center;cursor:pointer;font-family:franklin gothic heavy;verdana,Helvetica,sans-serif;color:red;font-weight:normal;text-transform:uppercase;font-size:18px;line-height:33px;width:190px;padding:0px;background-image:url(../igihe_imgs/pggss_menubgoff.gif);background-repeat:repeat-x;background-position:left bottom;text-shadow: 1px 1px 1px #ffffff;}
+li:hover.menulinks{list-style-type:none;height:35px;display:inline-block;text-align:center;cursor:pointer;font-family:franklin gothic heavy;verdana,Helvetica,sans-serif;color:black;font-weight:normal;text-transform:uppercase;font-size:18px;line-height:33px;width:190px;padding:0px;background-image:url(../igihe_imgs/pggss_menubgon.gif);background-repeat:repeat-x;background-position:left bottom;text-shadow: 1px 1px 1px #ffff00;}
+
+li.inmenulinks{list-style-type:none;float:left; height:35px;display:inline-block;text-align:center;cursor:pointer}
+li:hover.inmenulinks{list-style-type:none;height:35px;display:inline-block;text-align:center;cursor:pointer}
+
+a.menulinks{list-style-type:none;float:left; height:35px;display:inline-block;text-align:center;cursor:pointer;font-family:franklin gothic heavy;verdana,Helvetica,sans-serif;color:red;font-weight:normal;text-transform:uppercase;font-size:18px;line-height:33px;width:190px;padding:0px;background-image:url(../igihe_imgs/pggss_menubgoff.gif);background-repeat:repeat-x;background-position:left bottom;text-shadow: 1px 1px 1px #ffffff;}
+a:hover.menulinks{list-style-type:none;height:35px;display:inline-block;text-align:center;cursor:pointer;font-family:franklin gothic heavy;verdana,Helvetica,sans-serif;color:black;font-weight:normal;text-transform:uppercase;font-size:18px;line-height:33px;width:190px;padding:0px;background-image:url(../igihe_imgs/pggss_menubgon.gif);background-repeat:repeat-x;background-position:left bottom;text-shadow: 1px 1px 1px #ffff00;}
+
+a.onmenulinks{list-style-type:none;height:35px;display:inline-block;text-align:center;cursor:pointer;font-family:franklin gothic heavy;verdana,Helvetica,sans-serif;color:black;font-weight:normal;text-transform:uppercase;font-size:18px;line-height:33px;width:190px;padding:0px;background-image:url(../igihe_imgs/pggss_menubgon.gif);background-repeat:repeat-x;background-position:left bottom;text-shadow: 1px 1px 1px #ffff00;}
+a:hover.onmenulinks{list-style-type:none;height:35px;display:inline-block;text-align:center;cursor:pointer;font-family:franklin gothic heavy;verdana,Helvetica,sans-serif;color:black;font-weight:normal;text-transform:uppercase;font-size:18px;line-height:33px;width:190px;padding:0px;background-image:url(../igihe_imgs/pggss_menubgon.gif);background-repeat:repeat-x;background-position:left bottom;text-shadow: 1px 1px 1px #ffff00;}
+
+
+a.inmenulinks{list-style-type:none;float:left; height:35px;display:inline-block;text-align:center;cursor:pointer;font-family:franklin gothic heavy;verdana,Helvetica,sans-serif;color:red;font-weight:normal;text-transform:uppercase;font-size:16px;line-height:33px;width:190px;padding:0px;background-image:url(../igihe_imgs/pggss_menubgoff.gif);background-repeat:repeat-x;background-position:left bottom;text-shadow: 1px 1px 1px #ffffff;}
+a:hover.inmenulinks{list-style-type:none;height:35px;display:inline-block;text-align:center;cursor:pointer;font-family:franklin gothic heavy;verdana,Helvetica,sans-serif;color:black;font-weight:normal;text-transform:uppercase;font-size:16px;line-height:33px;width:190px;padding:0px;background-image:url(../igihe_imgs/pggss_menubgon.gif);background-repeat:repeat-x;background-position:left bottom;text-shadow: 1px 1px 1px #ffff00;}
+
+a.menulinks_nominees{display:block;position:absolute;z-index:100;float:left; width:190px;height:42px; top:5px; border:0px solid red;text-align:center;cursor:pointer;font-family:franklin gothic heavy;verdana,Helvetica,sans-serif;color:#008aef;font-weight:normal;text-transform:uppercase;font-size:18px;line-height:33px;width:190px;padding:0px;background-image:url(../igihe_imgs/pggss_menubg.png);background-repeat:no-repeat;background-position:top;text-shadow: 1px 1px 1px #ffffff;}
+a.inmenulinks_nominees{display:block;position:relative;z-index:100;float:left; width:100px;height:42px; top:5px; border:0px solid red;text-align:center;cursor:pointer;font-family:franklin gothic heavy;verdana,Helvetica,sans-serif;color:#008aef;font-weight:normal;text-transform:uppercase;font-size:16px;line-height:33px;width:190px;padding:0px;background-image:url(../igihe_imgs/pggss_menubg.png);background-repeat:no-repeat;background-position:top;text-shadow: 1px 1px 1px #ffffff;}
+div.menu_nominees{display:inline-block;float:left; width:55px;height:60px;background-color:#000000;border:2px solid #ffffff;text-align:center;cursor:pointer;margin:6px;margin-left:4px;margin-right:4px;}
+div:hover.menu_nominees{display:inline-block;float:left; width:55px;height:60px;background-color:#ffff00;border:2px solid #ff0000;text-align:center;cursor:pointer;margin:6px;margin-left:4px;margin-right:4px;}
+
+
+#pggss_nominees{display:block; float:left; text-align:center;width: 970px; height:103px; top:15px;left:10px;margin-top:0px;margin:5px;padding:0px; background-color:#ffffff;border-radius: 8px;-moz-border-radius:8px; -webkit-border-radius:8px;}
+#pggss_slideshows{display:block; float:left; text-align:center;width: 970px; height: 280px;top:15px;left:10px;margin:5px;padding:0px; background-color:rgba(0, 0, 0, 0.66);border-radius: 8px;-moz-border-radius:8px; -webkit-border-radius:8px;}
+#pggss_news{display:inline-block; position:relative;  float:left; width: 570px; height: 785px;margin:5px;padding:0px; background-color:#75a1e1;border-radius: 5px;-moz-border-radius:10px; -webkit-border-radius:10px;-border-radius:10px;}
+
+#pggss_photos{display:inline-block;position:relative; float:left;margin-left:10px;margin-right:3px;margin-top:10px;width:375px;min-height:400px;text-align:left;background-color:#000000;border-radius: 10px;-moz-border-radius:10px; -webkit-border-radius:10px;-border-radius:10px; overflow: hidden; }
+#pggss_videos{display:inline-block;position:relative; float:left;margin-left:10px;margin-right:3px;margin-top:10px;width:375px;min-height:370px;text-align:left;background-color:#000000;border-radius: 10px;-moz-border-radius:10px; -webkit-border-radius:10px;-border-radius:10px; overflow: hidden; }
+
+#pggss_footer{display:block; float:left; text-align:center;width: 970px; height: 100px;margin:5px;padding:0px;}
+
+
+#photoalbum{display:inline-block;  position:relative; float:left; width: 660px; min-height:600px;margin-top:50px;margin:5px;padding:0px; background-color:#000000;border-radius: 5px;-moz-border-radius:5px; -webkit-border-radius:5px;-border-radius:5px;}
+
+#pggss_titletab1{display:block; float:left; width: 100%; height:23px;margin-top:8px;padding:0px; background-color:#0038c7;background-image:url(../igihe_imgs/pggss_star.png);background-repeat:no-repeat;background-position:right;font-family:verdana,Helvetica,sans-serif;color:#78a4e1;font-weight:bold;text-transform:uppercase;font-size:11px;line-height:23px;}
+#pggss_titletab2{display:block; float:left; width: 100%; height:23px;margin-top:8px;padding:0px; background-color:#3f3f3f;background-image:url(../igihe_imgs/pggss_star.png);background-repeat:no-repeat;background-position:right;font-family:verdana,Helvetica,sans-serif;color:#b5b5b5;font-weight:bold;text-transform:uppercase;font-size:11px;line-height:23px;}
+#pggss_titletab3{display:block; float:left; width: 100%; height:23px;margin-top:8px;padding:0px; background-color:#ff0000;background-image:url(../igihe_imgs/pggss_star.png);background-repeat:no-repeat;background-position:right;font-family:verdana,Helvetica,sans-serif;color:#ffff33;font-weight:bold;text-transform:uppercase;font-size:11px;line-height:23px;}
+#pggss_titletab4{display:block; float:left; width: 100%; height:23px;margin-top:8px;padding:0px; background-color:#01266b;background-image:url(../igihe_imgs/pggss_star.png);background-repeat:no-repeat;background-position:right;font-family:verdana,Helvetica,sans-serif;color:#0370dc;font-weight:bold;text-transform:uppercase;font-size:11px;line-height:23px;}
+
+#newstab1{display:block;float:left;width:98%;padding:0px; margin:8px 2px 2px 2px;border-bottom:1px solid #97b7e8;}
+span.newstab2{display:inline-block;float:left;width:155px;padding:0px; margin:4px;background-color:#000000;}
+#newsimg{display:block;float:left;margin:3px;border:1px solid #aec8ed;background-color:#aec8ed;}
+#newsdate{font-family:tahoma;color:#c8daf2;font-size:10px;font-weight:normal;}
+a.newstitle{font-family:verdana;font-size:12px;font-weight:bold;color:#000000;text-decoration:none;}
+a:hover.newstitle{font-family:verdana;font-size:12px;font-weight:bold;color:#ffffff;text-decoration:underline;}
+a.newstitle2{font-family:verdana;font-size:10px;font-weight:bold;color:#0246c4;text-decoration:none;}
+a:hover.newstitle2{font-family:verdana;font-size:10px;font-weight:bold;color:#6b9efe;text-decoration:none;}
+
+#newstab2{display:block;float:left;width:98%;padding:0px; margin:2px;}
+
+#newstab2photos{width:170px;padding:0px;margin:6px;float:left;text-align:center;border:0px solid red;}
+#innewstab2photos{width:48%;padding:0px;margin:6px;display:inline-block;float:left;text-align:center;border:0px solid red;}
+
+#galleryimg{display:block;float:center;margin:3px;border:1px solid #494949;background-color:#5f5f5f;margin-left:auto;margin-right:auto;}
+a.gallerytitle{display:block;font-family:verdana;font-size:10px;font-weight:bold;color:#808080;text-decoration:none;}
+a:hover.gallerytitle{display:block;font-family:verdana;font-size:10px;font-weight:bold;color:#cfcfcf;text-decoration:underline;}
+
+div.gh_pagination{display:block;text-align:center;height:13px;font-family:verdana;font-size:10px;font-weight:bold;color:#ffffff; text-decoration:none;}
+span.gh_pagination_in{background-color:#75a1e1;bottom:0px;padding:3px 8px 3px 8px;margin-top:3px;border:0px solid red;}
+
+
+ul.thumb {
+	float: left;
+	list-style: none;
+	margin: 0; padding:4px;
+	width: 970px;
+}
+ul.thumb li {
+
+	float: left;
+	position: relative;  /* Set the absolute positioning base coordinate */
+	width:85px;
+	height: 85px;
+	background: #ffffff;
+	margin-left:10px;
+	margin-top:4px;
+}
+ul.thumb li img {
+	width: 85px; height: 85px; /* Set the small thumbnail size */
+	-ms-interpolation-mode: bicubic; /* IE Fix for Bicubic Scaling */
+	border: 0px solid #017fe5;
+	position: absolute;
+	left: 0; top: 0;
+}
+ul.thumb li img.hover {
+	background:url(../igihe_imgs/pggss_star.png) no-repeat top right;  /* Image used as background on hover effect
+	border: none; /* Get rid of border on hover */
+}
+

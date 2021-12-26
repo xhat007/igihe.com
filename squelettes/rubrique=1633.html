@@ -1,0 +1,240 @@
+<html>
+	<head>
+		<title>FESPAD Byina !</title>
+		<link rel="stylesheet" href="js/blueberry.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script src="js/jquery.blueberry.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+		<script>
+		$(window).load(function() {
+			$('.blueberry').blueberry();
+		});
+		</script>
+		<script type="text/javascript" src="js/demo.js"></script>
+		<link rel="stylesheet" type="text/css" href="js/shadowboxe.css">
+		<script type="text/javascript" src="js/shadowbox.js"></script>
+		<script type="text/javascript">
+		Shadowbox.init({
+			// a darker overlay looks better on this particular site
+			overlayOpacity: 0.8
+			// setupDemos is defined in assets/demo.js
+		}, setupDemos);
+		</script>
+		<style>
+			.on{ color: #462A0F; padding: 3px; font-family: arial; font-weight: bold;}
+			.lien_pagination{ background: #462A0F; color: #fff; font-size: 16px; padding: 3px; font-family: arial; font-weight: bold;}
+		</style>
+	</head>
+	<body>	
+		<div id="fespad">
+			<header id="header">
+			</header>
+			<section id="content">
+				<nav class="nav">
+					<li><a href="#">AHABANZA</a></li>
+					<li><a href="http://igihe.com/fespad2013/fespad_weekly_program.pdf" target="_blank">GAHUNDA</a></li>
+					<li><a href="http://www.flickr.com/photos/fespad">AMAFOTO</a></li>
+					<li><a href="http://www.youtube.com/user/Fespad2013">VIDEO</a></li>
+					<li><a href="http://www.igihe.com/spip.php?page=contact_fespad">TWANDIKIRE</a></li>
+					<div class="clear"></div>
+				</nav>
+				<div class="slide">
+					<div class="blueberry">
+					  <ul class="slides">
+					  <BOUCLE_slide(ARTICLES){par date}{inverse}{titre_mot=fespad_slide}>
+					  	<BOUCLE_slideimg(DOCUMENTS){id_article}>
+							<li><img src="[(#URL_DOCUMENT)]" height="312"/></li>
+						</BOUCLE_slideimg>
+					  </BOUCLE_slide>
+					  </ul>
+					</div>
+				</div>
+				<aside class="c_all">
+					<div class="c1">
+						<div class="ctitles">AMAKURU</div>
+						<div class="camakuru">
+						
+						<BOUCLE_amakurus(RUBRIQUES){id_parent=1633}{titre=Amakuru}>
+						<B_amakuru>
+							<BOUCLE_amakuru(ARTICLES){par date}{id_rubrique}{inverse}{pagination 5}>
+								<article class="amakuru">
+									<div class="amakurulogo">[<img src="http://igihe.rw/IMG/(#LOGO_ARTICLE|fichier)" height="100">]</div>
+									<div class="amakurutexte">
+										<div style="padding: 5px;">
+											<span class="inline"><a href="#URL_ARTICLE" class="amakurutitle">#TITRE</a></span>
+											<span class="amakurudate inline">[(#DATE|affdate)]</span>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</article>
+							</BOUCLE_amakuru>
+							#PAGINATION
+						</B_amakuru>
+						</BOUCLE_amakurus>		
+								
+						</div>
+					</div>
+					<div class="c2">
+						<div class="ctitles">INTERVIEWS</div>
+						<div class="interview">
+						<BOUCLE_interviews(RUBRIQUES){id_parent=1633}{titre=Interviews}>
+						<BOUCLE_interview(ARTICLES){par date}{inverse}{id_rubrique}{0,4}>
+							<div class="i1"><a href="#URL_ARTICLE"><img src="http://igihe.rw/IMG/[(#LOGO_ARTICLE|fichier)]" alt="#TITRE" width="170"></a></div>
+						</BOUCLE_interview>
+						</BOUCLE_interviews>
+							<div class="clear"></div>
+						</div>
+						<div class="ctitles" style="margin-top: 5px; margin-bottom: 20px;">AMATEKA</div>
+						<BOUCLE_amatekas(RUBRIQUES){id_parent=1633}{titre=Amateka}>
+							<BOUCLE_amateka(ARTICLES){par date}{id_rubrique}{inverse}{0,3}>
+								<article class="amakuru">
+									<div class="amakurulogo">[<img src="http://igihe.rw/IMG/(#LOGO_ARTICLE|fichier)" width="140">]</div>
+									<div class="amakurutexte">
+										<div style="padding: 5px;">
+											<span class="inline"><a href="#URL_ARTICLE" class="amakurutitle">#TITRE</a></span>
+											<span class="amakurudate inline">[(#DATE|affdate)]</span>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</article>
+							</BOUCLE_amateka>
+						</BOUCLE_amatekas>
+								
+								
+
+					</div>
+					<div class="c3">
+						<div class="socialmedia">
+							<div class="date"><span>1st March 2013</span></div>
+							<div class="media"><span>KEEP IN TOUCH</span></div>
+							<div style="border-top: 1px dashed #999;padding-top: 20px;">			
+								<ul class="soc-list">
+									<li><a target="_blank" class="rss" href="http://www.youtube.com/user/Fespad2013">rss</a></li>
+									<li><a target="_blank" class="twitter" href="https://twitter.com/fespad">twitter</a></li>
+									<li><a target="_blank" class="facebook" href="http://www.facebook.com/fespad.rda">facebook</a></li>
+									<li><a target="_blank" class="mail" href="http://www.flickr.com/photos/fespad">flickr</a></li>
+								</ul>
+							</div>
+							<div>
+								<span class="inline" style="font-weight: bold; font-size: 14px; color: #333;">SEARCH :</span>
+								<div class="row">								
+									<input id="mail" name="mail" type="text" class="text">
+									<input name="op" type="submit" class="btn-ok" value="OK">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="venue">
+						<div class="ctitles">FESPAD HISTORY</div>
+						<div style="padding-top: 15px; color: #666;">
+							<p>Pan African Dance Festival (FESPAD) is an unrivalled African Dance festival held as a
+
+means to promote peace and unity on the African continent.</p>
+
+<p>Dance as an important part of African culture dates as far back as the earliest
+
+documentation of African history. The role played by dances in traditional African
+
+community went beyond entertainment fostering peace and unity, bringing peoples and
+
+communities closer together.</p>
+
+<p>FESPAD was created out of the realization that dance still holds the same importance
+
+in the social, political and economic fabric of the continent and continues to promote
+
+integration, peace and unity.</p>
+
+<p>The theme for the 8th FESPAD “The spirit of expression” is apt as it fits into the overall
+
+objective of the festival which is to bring together Africa through dance. In Africa,
+
+dances teach social patterns and values and help people work, mature and praise
+
+members of the community hence FESPAD 2013 will provide a platform for African to
+
+express their dance styles, moves while celebrating the spirit of oneness!</p>
+						</div>
+					</div>
+					<div class="sponsor">
+						<div class="ctitles">SPONSORS</div>
+						<div style="height: 220px;">
+							<a href="#"><img src="http://rdb.rw/fespad/images/logoNet/rwandair.jpg" width="80" align="left" style="padding-bottom: 5px;" /></a></span>
+							<a href="#"><img src="http://rdb.rw/fespad/images/logoNet/merez.jpg" width="80" align="left" style="padding-bottom: 5px;" /></a>
+							<a href="#"><img src="http://rdb.rw/fespad/images/logoNet/hmc.jpg" width="80" align="left" style="padding-bottom: 5px;" /></a>
+							<a href="#"><img src="http://rdb.rw/fespad/images/logoNet/bsc.jpg" width="80" align="left" style="padding-bottom: 5px;" /></a>
+							<a href="#"><img src="http://rdb.rw/fespad/images/logoNet/PrimusLogo.jpg" width="80" align="left" style="padding-bottom: 5px;" /></a>
+							<a href="#"><img src="http://rdb.rw/fespad/images/logoNet/tigo.jpg" width="80" align="left" style="padding-bottom: 5px;" /></a>
+							<a href="#"><img src="http://rdb.rw/fespad/images/logoNet/kcity.jpg" width="80" align="left" style="padding-bottom: 5px;" /></a>
+							<a href="#"><img src="http://rdb.rw/fespad/images/logoNet/sp.png" width="80" align="left" style="padding-bottom: 30px;" /></a>
+							
+							<a href="#"><img src="http://rdb.rw/fespad/images/logoNet/bk.jpg" width="80" align="left" style="padding-bottom: 5px;" /></a>
+							
+							
+							<a href="#"><img src="http://rdb.rw/fespad/images/logoNet/INYANGE-LOGO.PNG" width="80" align="left" style="padding-bottom: 30px;" /></a><br />
+							<a style="clear: both;"></a>
+						</div>
+						<div class="ctitles">MEDIA PARTNERS</div>
+						<div>
+							<a href="#"><img src="http://rdb.rw/fespad/images/logoNet/mediaPart/IGIHE.jpg" width="90" align="left" style="padding-bottom: 5px; padding-right: 5px;" /></a></span>
+							<a href="#"><img src="http://rdb.rw/fespad/images/logoNet/family.jpg" width="90" align="left" style="padding-bottom: 5px; padding-right: 5px;" /></a>
+							<a href="#"><img src="http://rdb.rw/fespad/images/kfm.jpg" width="90" align="left" style="padding-bottom: 20px;" /></a>
+							<a href="#"><img src="http://rdb.rw/fespad/images/logoNet/inyarwandalogo3.png" width="90" align="left" style="padding-bottom: 5px; padding-right: 5px;" /></a>
+							<a href="#"><img src="http://rdb.rw/fespad/images/radio.jpg" width="80" align="left" style="padding-bottom: 5px; padding-right: 5px;" /></a>
+							<a href="#"><img src="http://rdb.rw/fespad/images/city.jpg" width="80" align="left" style="padding-bottom: 5px;" /></a>
+							
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="videos">
+						<div class="ctitles">VIDEO</div>
+						<div style="padding-top: 10px; padding-left: 5px; text-align: center;">
+						<BOUCLE_videos(RUBRIQUES){id_parent=1633}{titre=Video}>
+							<BOUCLE_video(ARTICLES){par date}{id_rubrique}{inverse}{0,4}>
+							<article class="video">
+							<a href="#SOUSTITRE" class="mustang-gallery" alt="#TITRE" title="#TITRE">
+								<div class="vlogo"><img src="http://igihe.rw/IMG/[(#LOGO_ARTICLE|fichier)]" width="170" /></div>
+								<div class="vtitle">#TITRE</div>
+							</a>
+							</article>
+							</BOUCLE_video>
+						</BOUCLE_videos>
+							<article class="clear"></article>
+							
+							
+						</div>
+					</div>
+				</aside>
+			</section>
+			<footer id="footer">
+				<div class="footer1"></div>
+				<div class="footer2">
+					<div style="float: left; width: 20%; padding: 20px;">
+						<div style="color: #; padding-bottom: 12px;">Le Festival</div>
+							
+								<li><a href="#">Ahabanza</a></li>
+								<li><a href="#">Gahunda</a></li>
+								<li><a href="#">Amafoto</a></li>
+								<li><a href="#">Amavideo</a></li>
+								<li><a href="http://www.igihe.com/spip.php?page=contact_fespad">Twandikire</a></li>
+							
+					</div>
+					<div style="float: left; width: 70%; padding: 20px; padding-right: 0px; padding-bottom: 0px;">
+						<div style="color: #; padding-bottom: 12px;">KEEP IN TOUCH</div>
+							
+								<span><a href="http://www.facebook.com/pages/Fespad/334764166639205?fref=ts"><img src="images/face.png"></a></span>
+								<span><a href="https://twitter.com/fespad"><img src="images/twi.png"></a></span>
+								<span><a href="#"><img src="images/rss.png"></a></span>
+						<div class="row" style="margin-top: 10px;">								
+									<input id="mail" name="mail" type="text" class="text">
+									<input name="op" type="submit" class="btn-ok" value="OK">
+						</div>	
+						<div style="font-weight: normal; font-size: 14px; margin-top: 10px;">&copy; 2013. All rights reserved.</div>
+						<div style="padding: 5px; margin-top: 40px;" align="right"><img src="images/igiheltd.png" /></div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

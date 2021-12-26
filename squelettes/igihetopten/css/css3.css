@@ -1,0 +1,297 @@
+a{ color: #000; font-family: "nimbus-sans","helvetica neue",helvetica,arial,sans-serif; text-decoration: none;}
+a:hover{ color: #00BBE4; font-family: "nimbus-sans","helvetica neue",helvetica,arial,sans-serif;}
+#igiher10{ position: absolute; width: 100%; top: 0; left: 0; font-family: "nimbus-sans","helvetica neue",helvetica,arial,sans-serif;}
+header{ width: 100%; background: url(../img/bgheader.jpg); text-align:center; height: 110px;}
+#logo{width: 100%; overflow: hidden; height: 170px; background: url(../img/headernn.png); padding-top: 10px;}
+.content{ background: url(../img/gh_day_content.jpg) top center; width: 100%; height: auto;}
+.section{ width: 980px;}
+aside{}
+.t10artiste{ width: 980px; background: url(../img/t10artist.png) bottom no-repeat; height: 150px;}
+.slide{ background: rgba(255,255,255,0.7); width: 970px; border-radius: 0px 0px 10px 10px; border-top: 0; padding: 5px; padding-bottom: 20px; height: 340px;}
+.thecontent{ background: rgba(255,255,255,0.6); width: 960px; height: auto; margin-top: 10px; border-radius: 10px 10px 0px 0px; padding: 10px; padding-top: 0px; padding-bottom: 20px;}
+.artistnews{ width: 550px; min-height: 800px; float: left;}
+.artnews{ background: #fff; height: auto; padding: 10px; margin-top: 10px; padding-top: 10px; text-align: left; padding-bottom: 26px;}
+.arttitle{ border-bottom: 4px solid #000; height: 55px;}
+.arttitle1{ font-family: "nimbus-sans","helvetica neue",helvetica,arial,sans-serif; font-weight: bold; letter-spacing: -4px; font-size: 50px; color: #00BBE4; padding-right: 5px;}
+.arttitle2{ font-family: "Myriad Pro"; font-size: 53px; letter-spacing: -4px;}
+.artbest img{ opacity: 4;}
+.artbest img:hover{ opacity: 4; -moz-transition: .5s ease-in-out; -webkit-transition: .5s ease-in-out; transition: .5s ease-in-out; }
+.artlnews2texte img{ opacity: 0.8;}
+.artlnews2texte img:hover{ -moz-transition: .5s ease-in-out; -webkit-transition: .5s ease-in-out; transition: .5s ease-in-out; opacity: 4;}
+
+.artlatestnews{width: 240px; float: left; padding-top: 20px;}
+.artlnews{width: 240px; border-bottom: dotted 1px black; margin-bottom: 12px; padding-bottom: 15px;}
+.artlnews_logo{ width: 70px; float: left;}
+.artlnews_texte{ width: 130px; float: left; margin-left: 5px; font-size: 12px;}
+
+.artlatestnewsu{width: 370px; float: left; padding-top: 20px;}
+.artlnewsu{width: 370px; border-bottom: dotted 1px black; margin-bottom: 12px; padding-bottom: 15px;}
+.artlnews_logou{ width: 90px; float: left;}
+.artlnews_texteu{ width: 270px; float: left; margin-left: 5px; font-size: 12px;}
+
+
+.artbest{ width: 275px; margin-left: 5px; min-height: 100px; float: left; text-align: center; margin-top: -50px; position: relative; z-index: 1;}
+.artbest_img{ max-height: 350px; overflow: hidden;}
+.artbest_txt{ height: auto; padding: 5px; font-size: 18px; font-weight: bold; margin-top: -80px; background: rgba(255,255,255,0.9); position: relative; z-index: 9;}
+.artbest img{ width: 220px;}
+
+.artlnews2{ margin-top: 0px;}
+.artlnews2_title{ background: #000; padding: 3px; width: 250px; color: #fff; text-align: center; font-weight: bold; letter-spacing: 1;}
+.artlnews2texte{ width: 250px; margin-top: 20px; position: relative; z-index: 1; float: left; margin-right: 15px;}
+.artlnews2texte img{ width: 250px; height: 141px;}
+.artlnews2title{ background: #fff; color: #000; padding: 2px; font-weight: bold; margin-top: -60px; position: relative; z-index: 9; font-size: 13px;}
+
+.artlnews2_titleu{ background: #000; padding: 3px; width: 370px; color: #fff; text-align: center; font-weight: bold; letter-spacing: 1;}
+.artlnews2texteu{ width: 370px;  min-height: 150px; margin-top: 20px; margin-bottom: 10px; position: relative; z-index: 1; margin-right: 15px;}
+.artlnews2texteu div{ max-height: 160px; overflow: hidden;}
+.artlnews2texteu img{ width: 370px; height: auto;}
+.artlnews2titleu{ background: #fff; color: #000; padding: 2px; font-weight: bold; margin-top: -40px; position: relative; z-index: 9; font-size: 13px;}
+
+.artistvote{ width: 390px; min-height: 700px; float: left; margin-left: 10px; padding: 5px;}
+.artisttop10{ border-bottom: 3px; padding-bottom: 5px; margin-bottom: 2px; width: 100%; background:url(../img/bg1.jpg) repeat-x, #fff; height: 80px; font-family: Arial, Helvetica, sans-serif; border: 2px solid #d8d6d7; padding-right: 2px; overflow: hidden;
+height:75px;
+transition:width 1s;
+-moz-transition:height 1s; /* Firefox 4 */
+-webkit-transition:height 1s; /* Safari and Chrome */
+-o-transition:height 1s; /* Opera */
+
+}
+.artisttop10:hover{ border-bottom: 3px; padding-bottom: 5px; margin-bottom: 2px; width: 100%; background: url(../img/bg1hover.jpg) repeat-x, #fff; height: 175px; font-family: Arial, Helvetica, sans-serif; border: 2px solid #d8d6d7; padding-right: 2px;}
+
+.footer{ background: url(../img/footer.jpg) repeat-x;}
+.footerside1{width: 960px; background: none; min-height: 160px; padding: 10px;}
+.footersideart{ float: left; width: 160px; margin-right: 0px; margin-top: 5px; min-height: 110px; padding-bottom: 5px; padding-top: 5px; text-align: left}
+.footersideart img{ width: 140px; height: 94px; margin-bottom: 5px; box-shadow: 0px 0px 10px #000;}
+.footersideart a{color: #fff; font-size: 14px; font-weight: bold; text-decoration: none;}
+.footerside2{width: 980px; background: url(../img/bgfooter.png); min-height: 50px; margin-top: 0px;}
+
+/*  ------------------------------------------------------------- ARTICLES CSS --------------------------------------------------------------------------------*/
+
+.thearticle{ background: rgba(255,255,255,0.6); width: 960px; height: auto; margin-top: 10px; border-radius: 0px 0px 0px 0px; padding: 0px; padding-bottom: 20px;}
+.articleleft{ width: 680px; min-height: 800px; float: left; background: #fff;}
+.articleright{ width: 277px; min-height: 700px; float: left; margin-left: 3px; padding: 0px; background: #fff;}
+
+
+
+
+
+
+
+
+
+
+	/* El-gato Reset */
+.menu,
+.menu ul,
+.menu li,
+.menu a {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+/* El-gato Menu */
+.menu {	
+	height: 42px;
+	width: auto;
+	border-top: 5px solid #2f679f;
+	border-bottom: 7px solid #ee9715;
+	background: #4c4e5a;
+	background: -webkit-linear-gradient(top, #4580bd 0%,#366ca2 100%);
+	background: -moz-linear-gradient(top, #4580bd 0%,#366ca2 100%);
+	background: -o-linear-gradient(top, #4580bd 0%,#366ca2 100%);
+	background: -ms-linear-gradient(top, #4580bd 0%,#366ca2 100%);
+	background: linear-gradient(top, #4580bd 0%,#366ca2 100%);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+
+}
+
+.menu li {
+	position: relative;
+	list-style: none;
+	float: left;
+	display: block;
+	height: 40px;
+	border-top: 1px solid #447fbc;
+	border-bottom: 1px solid #447fbc;
+}
+.menu li ul li{ border: none;}
+.menu .selected{ 
+	background: url(ico.png) no-repeat top center, -webkit-linear-gradient(top, #356ba2 0%,#204a76 100%);
+	background: url(ico.png) no-repeat top center, -moz-linear-gradient(top, #356ba2 0%,#204a76 100%);
+	background: url(ico.png) no-repeat top center, -o-linear-gradient(top, #356ba2 0%,#204a76 100%);
+	background: url(ico.png) no-repeat top center, -ms-linear-gradient(top, #356ba2 0%,#204a76 100%);
+	background: url(ico.png) no-repeat top center, linear-gradient(top, #356ba2 0%,#204a76 100%);
+
+ }
+
+/* El-gato Links */
+
+.menu li a {
+	display: block;
+	padding: 0 12px;
+	margin: 6px 0;
+	line-height: 28px;
+	text-decoration: none;
+	
+	border-left: 1px solid #386fa5;
+	border-right: 1px solid #386fa5;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+
+	color: #f3f3f3;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+.menu li:first-child a { border-left: none; }
+.menu li:last-child a{ border-right: none; }
+
+.menu li:hover {
+	background: -webkit-linear-gradient(top, #356ba2 0%,#204a76 100%);
+	background: -moz-linear-gradient(top, #356ba2 0%,#204a76 100%);
+	background: -o-linear-gradient(top, #356ba2 0%,#204a76 100%);
+	background: -ms-linear-gradient(top, #356ba2 0%,#204a76 100%);
+	background: linear-gradient(top, #356ba2 0%,#204a76 100%);
+
+ }
+
+/* El-gato Sub Menu */
+
+.menu ul {
+	position: absolute;
+	top: 40px;
+	left: 0;
+
+	opacity: 0;
+	
+	background: #1f2024;
+
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+
+	-webkit-transition: opacity .25s ease .1s;
+	-moz-transition: opacity .25s ease .1s;
+	-o-transition: opacity .25s ease .1s;
+	-ms-transition: opacity .25s ease .1s;
+	transition: opacity .25s ease .1s;
+}
+
+.menu li:hover > ul { opacity: 1; }
+
+.menu ul li {
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+
+	-webkit-transition: height .25s ease .1s;
+	-moz-transition: height .25s ease .1s;
+	-o-transition: height .25s ease .1s;
+	-ms-transition: height .25s ease .1s;
+	transition: height .25s ease .1s;
+}
+
+.menu li:hover > ul li {
+	height: 36px;
+	overflow: visible;
+	padding: 0;
+}
+
+.menu ul li a {
+	width: 150px;
+	padding: 4px 0 4px 40px;
+	margin: 0;
+
+	border: none;
+	border-bottom: 1px solid #353539;
+}
+
+.menu ul li:last-child a { border: none; }
+
+/* El-gato Icons */
+
+.menu a.documents { background: url(docs.png) no-repeat 3px center; }
+.menu a.messages { background: url(bubble.png) no-repeat 3px center; }
+.menu a.signout { background: url(arrow.png) no-repeat 3px center; }	
+.shakisha{ padding-top: 5px !important; border: none !important; margin-left: 10px !important; }
+.shakisha:hover{ background: none !important;}
+.search{ border: none; border-radius: 20px; padding: 5px; padding-left: 10px; color: #888888; font-weight: bold; background: #3e3d3d; font-family: Helvetica, Arial, sans-serif;}
+.submit{ border: none; cursor: pointer; background: none; color: #fff; font-size: 16px; font-weight: bold;}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*if you just want to adjust the size of the stage and the thumbnails, you can do so by editing the following lines: */
+.pika-thumbs li{width: 160px; height:74px;}
+.pika-stage {height: 350px;}
+
+.pikachoose {width: 950px;}
+.pika-stage {position: relative;border: 2px solid #ccc;}
+	
+	/*if you change the padding on pika-stage you must adjust the top left of this to match! */
+	.pika-stage .main-image {position: absolute; top: 0px; left: 0px;}
+	.pika-stage .pika-aniwrap{position: absolute; top: 0px; left: 0px;}
+	.pika-stage .pika-ani {position:relative;display: none;z-index:2;margin:0 auto;}
+	.pika-stage img {border:0;height: 350px; width: 946px;}
+
+.pika-stage .caption {position: absolute; background: rgba(0,0,0,0.8);  border: 0px solid #CCC; font-size: 25px; color: #fff; padding: 10px; text-align: left; bottom: 50px; right: 10px; width: 400px; font-family: Arial, Helvetica, sans-serif; border: none; border-left: 4px solid #00BBE4;}
+.pika-stage .caption a:hover{ text-decoration: underline;}
+	.pika-stage .caption p {padding: 0; margin: 0; line-height: 14px;}
+
+.pika-imgnav a {position: absolute; text-indent: -5000px; display: block;z-index:3;cursor:pointer;}
+	.pika-imgnav a.previous {width:20px;height:20px;border-left: 5px solid #FFF;border-top: 5px solid #FFF;opacity:0;-webkit-transition: opacity 300ms linear;
+		-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);transform: rotate(-45deg);top:45%;left:10px;}
+	.pika-imgnav a.next {width:20px;height:20px;border-right: 5px solid #FFF;border-top: 5px solid #FFF;opacity:0;-webkit-transition: opacity 300ms linear;
+		-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);transform: rotate(45deg);top:45%;right:10px;}
+	.pika-imgnav a:hover{opacity:.6;-webkit-transition: opacity 300ms linear;}	
+
+	.pika-imgnav a.play  {border-color: transparent transparent rgba(255,255,255,.7);border-style: solid;border-width: 0 0 25px 25px;height: 0;width: 0;position:absolute;
+		-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);transform: rotate(-45deg);top:14px;left:47%;display:none;}
+	.pika-imgnav a.pause {display:none;border-left:5px solid rgba(255,255,255,.7);border-right:5px solid rgba(255,255,255,.8);height: 30px;width: 14px; position:absolute;top:10px;left:47%;}
+
+.pika-textnav {display:none;}
+	
+.pika-thumbs {margin: 10px 0 0 21px; padding: 0;}
+	.pika-thumbs li {float: left; list-style-type: none;margin: 0 5px; border: 1px solid #afafaf; cursor: pointer;}
+	.pika-thumbs li img{ width: 160px;}
+
+		.pika-thumbs li:last {margin: 0;}
+		.pika-thumbs li .clip {position:relative;height:100%;text-align: center; vertical-align: center; overflow: hidden;}
+
+/*for the tool tips*/
+.pika-tooltip{font-size:12px;position:absolute;color:white;padding:3px; background-color: rgba(0,0,0,0.7);border:3px solid black;}
+.pika-counter{position: absolute;bottom: 15px;left:15px;color:white;background:rgba(0,0,0,0.7);font-size:11px;padding:3px;-moz-border-radius: 5px;border-radius:5px;}
+	
+		
+/* jCarousel Styles */
+/*if you're not using the carousel you can delete everything below this */
+.jcarousel-skin-pika .jcarousel-container-horizontal { padding: 15px 20px; overflow:hidden;}
+.jcarousel-skin-pika .jcarousel-clip-horizontal {height: 90px; width: 485px;}
+.jcarousel-skin-pika .jcarousel-item-horizontal { margin-right: 10px;}

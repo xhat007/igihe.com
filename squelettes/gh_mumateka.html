@@ -1,0 +1,12 @@
+	<div class="grid_7" id="box">
+<BOUCLE_gh_2dayhistorytitle(ARTICLES){tout}{titre_mot=HomeAmateka}{0,1}{par date}{inverse}><a href="http://www.igihe.com/#URL_ARTICLE" class="box_title gh_home2day">[(#TITRE|supprimer_tags)] <b style="color:#6e6e6e;">: Mu mateka</b></a></BOUCLE_gh_2dayhistorytitle>
+
+<div style="padding:10px;">
+<marquee behavior="scroll" direction="up" scrollamount="2" scrolldelay="1" width="99%" height="400px" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();">
+<BOUCLE_gh_2dayhistory(ARTICLES){tout}{titre_mot=HomeAmateka}{0,1}{par date}{inverse}>
+<font class="gh_home2day"><p align="justify">[(#TEXTE)]</p></font>
+</BOUCLE_gh_2dayhistory>
+</marquee>
+</div>
+
+	</div>

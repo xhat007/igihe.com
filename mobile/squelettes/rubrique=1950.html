@@ -1,0 +1,343 @@
+<BOUCLE_rubrique(RUBRIQUES){id_rubrique}>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" /> 
+		<!-- <base href="http://mobile.igihe.com/squelettes/"> -->
+		<meta name="author" content="www.igihe.com" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+ 
+		<title>[(#TITRE|textebrut)] | [(#NOM_SITE_SPIP|textebrut)]</title>
+		[<meta name="description" content="(#DESCRIPTIF_SITE_SPIP|couper{250}|attribut_html)" />]
+		
+		<link rel="shortcut icon" href="http://mobile.igihe.com/squelettes/images/icon.png" />
+		<link rel="stylesheet" href="http://mobile.igihe.com/squelettes/css/jquery.mobile.1.5.css?t=1" />
+		<!-- <link href="http://mobile.igihe.com/squelettes/css/responsive.css" rel="stylesheet"> -->
+		<link href="http://mobile.igihe.com/squelettes/css/bootstrap.min.css" rel="stylesheet">  
+		
+		<link rel="stylesheet" type="text/css" href="http://mobile.igihe.com/squelettes/css/demo.css?t=9">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300|Roboto|Ubuntu" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="http://mobile.igihe.com/squelettes/css/font-awesome.min.css">
+
+		<script type="text/javascript" src="http://mobile.igihe.com/squelettes/js/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+		$(document).on("mobileinit", function(){
+			$.mobile.ajaxEnabled=false;
+			$.mobile.loadingMessage = false;
+		});            
+		</script> 
+		<script src="http://mobile.igihe.com/squelettes/js/jquery.mobile.1.5.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="http://mobile.igihe.com/squelettes/css/jquery.mmenu.all.css">
+		<script type="text/javascript" src="http://mobile.igihe.com/squelettes/js/jquery.mmenu.all.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="http://mobile.igihe.com/squelettes/dist/jquery.mhead.css?t=9">
+		<script type="text/javascript" src="http://mobile.igihe.com/squelettes/dist/jquery.mhead.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen, handheld" href="http://mobile.igihe.com/squelettes/css/mobistyle_2.css?t=22">
+
+		<script type="text/javascript">
+			$(function() {
+
+				//	create a menu
+				$('#menu').mmenu();
+
+				//	fire the plugin
+				$('.mh-head').mhead({
+					
+				});
+
+				//	for demo only
+				$('a[href^="#/"]').click(function() {
+					alert( 'Thank you for clicking, but that\'s a demo link.' );
+					return;
+				})
+			});
+		</script> 
+		<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-587b16b7bbda5902"></script> -->
+	<style>
+		.festive {
+			font-family: Ubuntu;
+		}
+		.festive .title-section{
+			background: #0e2b8f;
+			text-align: center;
+			font-family: Ubuntu;
+			color: #fff;
+			padding: 5px;
+		}
+		
+		.festive .body-msg, .festive .title-section-1{
+			text-align: justify;
+		}
+		
+		.festive .title-section-1
+		{
+			font-size: 16px;
+			line-height: inherit;
+			margin: 10 px 0; 
+			font-weight: bold; 
+		}
+		
+		
+		.festive .body-msg p{
+			font-size: 14px;
+		}
+		
+		.news-section { 
+			padding: 0px; 
+		}
+		
+		.navbar-default {
+			background-color: #8494a3;
+			border-color: #8494a3;
+		}
+		.navbar, .news-section{
+			border-radius: 4px 4px 0 0;
+		}  
+		
+		.navbar-default .navbar-nav > li > a {
+			color: #fff;
+		}
+		
+		.festive .navbar-nav > li > a {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		
+		.ob-item{
+			padding: 15px;
+		}
+		
+		.ob-descr {
+			color: #8494a3; 
+			border: 1px solid #8494a3;
+			padding: 5px 0 0 10px;
+			margin: 20px 0;
+			font-size: 12px;
+		}
+		.ob-descr h1, .ob-descr h2 {
+			font-size: inherit;
+			line-height: inherit;
+			margin: inherit;
+			display: inline-block;
+			font-weight: bold;
+			color: #4b4b4b;
+		}
+		.ob-descr ul{
+			padding: 0; 
+			list-style: none;
+			margin-bottom: 0;
+		}
+		
+		.nopaddingright{
+			padding-right: 0;
+		}
+		.nopaddingleft{
+			padding-left: 0;
+		}
+		
+		.advertorial-news a {
+			color: #444444;
+			font-family: 'ralewayregular';
+		}
+		
+		.comment-section{
+			background: #f4f4f4;
+			padding: 10px; 
+		}
+		
+		.input-group-2{
+			margin-bottom: 10px;
+		}
+		.input-group-2 .form-control{
+			background: #fff;
+			border: none;
+			padding: 10px;
+			font-size: 14px; 
+		}
+		
+		.input-sm{height: 41px}
+		
+		fieldset.scheduler-border {
+			border: solid 1px #DDD !important;
+			padding: 30px 10px;
+			border-bottom: none;
+		}
+
+		legend.scheduler-border {
+			width: auto !important;
+			border: none;
+			font-size: 12px;
+			margin: 0 10px;
+			padding: 0;
+		}
+		
+		
+		.sendflowers{
+			background: #0e2b8f;
+			padding: 8px 15px;
+			font-size: 14px;
+			color: #fff;
+		}
+		
+
+	</style>
+	</head>
+	<body>
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10838297-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"B/FNo1IWx810S+", domain:"igihe.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=B/FNo1IWx810S+" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->  
+
+		<div id="page" class="container-fluid">
+
+			<div class="mh-head mh-align-left Sticky">
+				<span class="mh-btns-left">
+					<a class="fa fa-bars" href="#menu"></a>
+				</span>
+				<span class="mh-text"><a href="./"><img src="http://mobile.igihe.com/squelettes/images/mlogo.png"></a></span>
+				<span class="mh-btns-right2">  
+					<a class="" href="http://mobile.igihe.com/"><img src="http://mobile.igihe.com/squelettes/images/lkn.png"></a>
+					<a class="" href="http://fr.igihe.com/"><img src="http://mobile.igihe.com/squelettes/images/lfr.png"></a>
+					<a class="" href="http://en.igihe.com/"><img src="http://mobile.igihe.com/squelettes/images/len.png"></a>
+					<!-- <a class="" href="http://m.igihe.bi"><img src="http://mobile.igihe.com/squelettes/images/lki.png"></a> -->
+				</span>
+			</div>
+			
+			 <div class="pagination-section">
+				<div class="row">
+					<div class="col-xs-12"> 
+						<div class="pagination-title">
+							#TITRE
+						</div>
+					</div>
+				</div>
+			</div>  
+			 
+			<div class="latestnews"> 
+					<center><iframe width="100%" height="500" src="http://miss.igihe.org.rw/mobile.php" frameborder="0" scrolling="1"></iframe></center>  
+			</div>
+			
+			<B_articles_recents>
+			#ANCRE_PAGINATION
+			<div class="latestnews"> 
+			<?php $tour2boucle=0; ?>
+				<BOUCLE_articles_recents (ARTICLES){doublons xx}{0,30}{titre_mot=miss_rwanda_2018}{par date}{inverse}{pagination 6}> 
+				 
+				<div class="middle-news">
+					<div class="row">
+						<div class="col-xs-8 nopaddingright">
+							<div class=""> 
+								<div class="topnews-title-2">
+									<a href="#URL_ARTICLE"><h3>#TITRE</h3></a> 
+								</div>
+							</div>
+							<div class="topnews-statistic-3"> 
+								<span class=""><span class="comment-2"><B_combien6>
+										  <BOUCLE_combien6(FORUMS) {id_article} {plat}>
+										  #TOTAL_BOUCLE
+										  </BOUCLE_combien6>
+										  </B_combien6>
+										  0				
+										  <//B_combien6></span></span>
+							<span class=""><i class="fa fa-clock-o"></i> 
+							<B_gh_pasttime13>
+								<BOUCLE_gh_pasttime13(ARTICLES){id_article}{age<1}>
+									[(#DATE*|affdate{'H:i'})]'
+								</BOUCLE_gh_pasttime13>
+							</B_gh_pasttime13>[(#DATE*|affdate{'d/m'})]<//B_gh_pasttime13></span> 
+								<span class="topnews-statistic-last-2 "><a href="#news-F-#COMPTEUR_BOUCLE" data-rel="popup" class=""><i class="fa fa-share-alt"></i> Share</a></span>
+								<div data-role="popup" data-overlay-theme="a" id="news-F-#COMPTEUR_BOUCLE" class="popuping"> 
+									<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_v96i" data-url="http://www.igihe.com/#URL_ARTICLE" data-title="#TITRE | [(#NOM_SITE_SPIP|textebrut)]" data-description="[(#INTRODUCTION|textebrut)]" [data-media="http://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,}|extraire_attribut{src})"]></div>  
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-4 nopaddingleft">
+							<div class="topnews-2">
+								[<a href="#URL_ARTICLE">
+								<img class="lazy img-responsive" src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{534,348}||image_recadre{450,320,top}|extraire_attribut{src})" alt="."/>
+								</a>]
+							</div> 
+						</div>
+					</div>
+				</div>  
+				</BOUCLE_articles_recents> 
+			</div>
+			<div class="pagination-section">
+				<div class="row">
+					<div class="col-xs-12"> 
+						<div class="pagination-title">
+							Izindi paji: #PAGINATION{page} 
+						</div>
+					</div>
+				</div>
+			</div>	
+			</B_articles_recents>		
+			<//B_articles_recents>	
+			 
+			<INCLURE{fond=v5_footer}{env}{ajax}/>
+			
+			<nav id="menu">
+				<ul>
+					<li><span>Indimi</span>
+						<ul>
+							<li><a href="http://mobile.igihe.com/"><img src="http://mobile.igihe.com/squelettes/images/lkn.png"> Kinyarwanda</a></li>
+							<!-- <li><a href="http://m.igihe.bi/"><img src="http://mobile.igihe.com/squelettes/images/lki.png"> Kirundi</a></li> -->
+							<li><a href="http://fr.igihe.com/"><img src="http://mobile.igihe.com/squelettes/images/lfr.png"> Français</a></li>
+							<li><a href="http://en.igihe.com/"><img src="http://mobile.igihe.com/squelettes/images/len.png"> English</a></li>
+						</ul>
+					</li>
+					<li><a href="http://mobile.igihe.com/">Ahabanza</a></li>
+					<BOUCLE_gh_ibirimoside(RUBRIQUES){id_parent=0}{0,20}{titre_mot=IbirimoSide}>
+                     <li>
+                        <a href="#URL_RUBRIQUE">#TITRE</a>
+                     </li>
+                     </BOUCLE_gh_ibirimoside> 
+					 
+					<!-- <li><span>About us</span>
+						<ul>
+							<li><a href="#/about/history">History</a></li>
+							<li><span>The team</span>
+								<ul>
+									<li><a href="#/about/team/management">Management</a></li>
+									<li><a href="#/about/team/sales">Sales</a></li>
+									<li><a href="#/about/team/development">Development</a></li>
+								</ul>
+							</li>
+							<li><a href="#/about/address">Our address</a></li>
+						</ul>
+					</li>
+					<li><a href="#/contact">Contact</a></li> -->
+				</ul>
+			</nav>
+		</div>
+		<script type='text/javascript' src="http://mobile.igihe.com/squelettes/js/jquery.lazyload.min.js"></script>
+		<script>$("img.lazy").lazyload(); </script> 
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-587b16b7bbda5902"></script>
+		<script type="text/javascript">
+		// Call this function once the rest of the document is loaded
+		function loadAddThis() {
+			addthis.init()
+		}
+		loadAddThis();
+		</script>
+
+	</body>
+</html>
+</BOUCLE_rubrique>

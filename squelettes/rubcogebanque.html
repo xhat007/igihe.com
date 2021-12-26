@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Cogebank</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="cogebanque_css/style.css" />
+		<link rel="stylesheet" type="text/css" href="cogebanque_css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="cogebanque_css/bootstrap-responsive.min.css" />
+		<script type="text/javascript" src="cogebanque_js/jquery-1.6.js" ></script>
+		<script type="text/javascript" src="cogebanque_js/kwicks-1.5.1.pack.js" ></script>
+
+	<!-- Start WOWSlider.com HEAD section -->
+		<link rel="stylesheet" type="text/css" href="cogebanque_engine1/style.css" media="screen" />
+		<script type="text/javascript" src="cogebanque_engine1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="logo">
+				<img src="cogebanque_images/logo.jpg">
+			</div>				
+		</div>
+		<!-- Start WOWSlider.com BODY section id=wowslider-container1 -->
+			<div id="wowslider-container1">
+				<div class="ws_images">
+					<ul>
+						<BOUCLE_homeslider(ARTICLES){titre_mot=cogebanque_slider}{par date}{inverse}{0,2}>
+							<li>
+								<img src="IMG/[(#LOGO_ARTICLE|fichier)]" alt="slide" title="[(#TEXTE|couper{350})]" id="wows1_#COMPTEUR_BOUCLE"/>
+							<span class="big-title"><a href="#" style="color:#000;">#TITRE</a></span>
+						</li>
+						</BOUCLE_homeslider>
+					</ul>
+				</div>
+				<div class="ws_bullets">
+					<div>
+						<a href="#" title="slide"><img src="cogebanque_data1/tooltips/slide.jpg" alt="slide"/>1</a>
+						<a href="#" title="slide"><img src="cogebanque_data1/tooltips/slide.jpg" alt="slide"/>2</a>
+					</div>
+				</div>
+				<div class="ws_shadow"></div>
+			</div>
+			<script type="text/javascript" src="cogebanque_engine1//wowslider.js"></script>
+			<script type="text/javascript" src="cogebanque_engine1//script.js"></script>
+		<!-- End WOWSlider.com BODY section -->
+		<div id="body">
+			<div id="news">
+				<div id="title">
+					<img src="cogebanque_images/log1.jpg">
+					<h2>NEWS</h2>
+				</div>				
+				<B_cogebanque_news>
+					<ul>	
+						<BOUCLE_cogebanque_news(ARTICLES){titre_mot=cogebanque_news}{par date}{inverse}{0,5}{pagination}>					<li>
+								<img src="[(#LOGO_ARTICLE||image_reduire{151}||image_recadre{151,80,top center}|extraire_attribut{src})]">
+								<a href="#URL_ARTICLE">[(#TEXTE|couper{100})]</a>
+							</li>							
+						</BOUCLE_cogebanque_news>
+						<li>	
+							<img src="cogebanque_images/news.jpg">
+							<a href="#URL_ARTICLE">Welcome to Cogebanque Rwanda's Commercial Bank, leading financial institution and home for all of your personal financial needs.</a>
+						</li>				
+					</ul>
+					<div id="page">	
+						<ul>	
+							<li><a href="#"><</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#" class="active">5</a></li>
+							<li><a href="#">10</a></li>
+							<li><a href="#">20</a></li>
+							<li><a href="#">30</a></li>
+							<li><a href="#">>></a></li>
+						</ul>
+					</div>
+				</B_cogebanque_news>
+				<//B_cogebanque_news>
+			</div>
+			<div id="right">
+				<div id="upcoming">
+					<h1>Upcoming Event</h1>
+					<ul>
+						<B_cogebanque_events>
+							<BOUCLE_cogebanque_events(ARTICLES){titre_mot=cogebanque_events}{par date}{inverse}{0,4}><li <?php if(#COMPTEUR_BOUCLE & 1){ echo 'class="org"';}else{echo 'class="blk"';}?>>
+									<h2><a href="#">#TITRE</a></h2>
+									<p>#SOUSTITRE</p>
+								</li>
+							</BOUCLE_cogebanque_events>
+						</B_cogebanque_events>
+						<//B_cogebanque_events>
+					</ul>
+						<p class="button">More</p>
+				</div>
+				<div id="check">
+					<div id="title">
+						<img src="cogebanque_images/log2.jpg">
+						<h2>Checking Account</h2>
+					</div>
+					<BOUCLE_body_info(ARTICLES){titre_mot=cogebanque_info_body_middle_right}{par date}{inverse}{0,1}>
+					<h3>#TITRE</h3>
+					#TEXTE
+					</BOUCLE_body_info>
+				</div>
+				<div id="down">
+					<h2>USEFUL DOCS</h2>
+					<ul>
+						<li><img src="cogebanque_images/pdf.png">
+						<p><a href="#">ENROLL PAYMENT</a></p>
+						</li>	
+						<li><img src="cogebanque_images/pdf.png">
+						<p><a href="#">ENROLL PAYMENT</a></p>
+						</li>
+						<li><img src="cogebanque_images/pdf.png">
+						<p><a href="#">ENROLL PAYMENT</a></p>
+						</li>
+						<li><img src="cogebanque_images/pdf.png">
+						<p><a href="#">ENROLL PAYMENT</a></p>
+						</li>	
+					</ul>
+				</div>	
+			</div>	
+		</div>	
+		
+		<div id="below">
+				<div id="video">
+					<!--<iframe width="530" height="295" src="http://www.youtube.com/embed/ytKc0QsVRY4" frameborder="0" allowfullscreen></iframe> --> 
+				<img src="cogebanque_images/video.jpg" width="530px">
+				</div>			
+				<div class="kwicks-wrapper marg_bot1">
+					<ul class="kwicks horizontal">
+						<li><img src="cogebanque_images/ab.jpg" alt=""></li>
+						<li><img src="cogebanque_images/ab.jpg" alt=""></li>
+						<li><img src="cogebanque_images/ab.jpg" alt=""></li>
+						<li><img src="cogebanque_images/ab.jpg" alt=""></li>
+					</ul>
+				</div>
+				
+				<div id="suggestion">
+					<h1>SUGGESTION BOX</h1>
+					<div id="box">
+						<form action="#" method="">
+						<div>
+							<label>
+								Name<br />
+								<input type="text" name="name" value="" />
+							</label>
+							<label>
+								Email<br />
+								<input type="text" name="email" value="" />
+							</label>
+						</div>
+						<div>
+							<label>
+								Message<br />
+								<textarea type="text" name="message" value="" ></textarea>
+							</label>
+							<button action="Submit" value="Send">Send</button>
+						</div>
+						</form>
+					</div>
+				</div>
+				
+		</div>	
+		
+			<section id="sp-user-wrapper" class=" ">
+				<div class="container">
+					<div class="row-fluid" id="user">
+						<div id="sp-user5" class="span12">
+							<div class="ic_marquee0" style="overflow: hidden;">
+								<div style="visibility: visible; width: 100%; height: 100px; position: relative; overflow: hidden;">
+									<div style="position: absolute; left: -908px; white-space: nowrap; top: 5px;">
+										<a href="#"><img src="cogebanque_images/001.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/002.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/004.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/015.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/016.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/017.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/018.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/019.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/020.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/prestige.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/001.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/002.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/004.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/015.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/016.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/017.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/018.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/019.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/020.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/prestige.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/001.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/002.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/004.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/015.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/016.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/017.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/018.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/019.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/020.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+										<a href="#"><img src="cogebanque_images/prestige.png" alt="" style="margin-right: 5px; display: inline; vertical-align: middle;"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>				
+
+		
+		<div id="footer">	
+			<h1>SPECIAL PRODUCTS</h1>
+			<ul>	
+				<li><img src="cogebanque_images/loans.jpg">
+				<p><a href="#">LOANS</a>
+				</li>
+				<li><img src="cogebanque_images/savings.jpg">
+				<p><a href="#">SAVING</a>
+				</li>
+				<li><img src="cogebanque_images/transfer.jpg">
+				<p><a href="#">MONEY TRANSFER</a>
+				</li>
+				<li><img src="cogebanque_images/banking.jpg"></li>
+			</ul>
+		</div>	
+	</div>	
+	
+		<script>
+			$(document).ready(function(){
+				$('.kwicks').kwicks({
+					max : 500,
+					spacing : 0,
+					event : 'mouseover'
+				});
+							   
+			})
+		</script>
+</body>
+</html>

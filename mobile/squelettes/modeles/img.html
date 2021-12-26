@@ -1,0 +1,40 @@
+<BOUCLE_document (DOCUMENTS) {id_document} {mode?} {tout}>
+[(#REM)
+
+	Modele pour <img>
+
+	Si on est en mode "image" ou "vignette", ou appele avec embed=oui,
+	on affiche l'image complete ; sinon le logo
+
+	Si un lien est passe #ENV{lien} on ajoute le a href
+	ou on truque le #URL_DOCUMENT
+
+]
+[(#SET{
+	image,
+		#MODE|match{'image|vignette'}
+		|sinon{#ENV{embed}}
+		|?{' '}
+})][
+
+	(#REM) image complete ?
+
+][(#GET{image}|oui)]
+
+<center>
+<div onmouseover="this.style.backgroundColor='#000000';" onmouseout="this.style.backgroundColor='#ffffff';" style="position:relative;width:#LARGEUR;padding:5px;margin-bottom:20px;margin-right:3px;background-color:#ffffff;align:center;text-align:center;-moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px;">
+<img src='[(#URL_DOCUMENT|timestamp)]'[ width="(#LARGEUR)"][ height="(#HAUTEUR)"] style="-moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px;" border="0"/>
+[<div class="gh_articlep_dphotos" align="center">(#TITRE|textebrut)</div>]
+</div>
+</center>
+
+[
+
+	(#REM) sinon logo document + lien + alt + title etc
+
+][(#GET{image}|non)
+	[(#SET{fichier,[(#LOGO_DOCUMENT|extraire_attribut{src})]})]
+	[(#SET{width,[(#LOGO_DOCUMENT|extraire_attribut{width})]})]
+	[(#SET{height,[(#LOGO_DOCUMENT|extraire_attribut{height})]})]
+<span class='spip_document_#ID_DOCUMENT spip_documents[ spip_documents_(#ENV{align})][ (#ENV{class})] spip_lien_ok'[ style='float:(#ENV{align}|match{left|right});[ width:(#GET{width})px;]']><a href="[(#ENV{lien}|sinon{#URL_DOCUMENT})]"[ (#ENV{lien}|?{'',type="#MIME_TYPE"})][ title="(#TITRE|texte_backend)"]><img src='[(#GET{fichier}|timestamp)]' width='#GET{width}' height='#GET{height}' style="-moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px;" alt='[(#TITRE|strlen|?{#TITRE {#TYPE_DOCUMENT},#TYPE_DOCUMENT}|attribut_html)]' /></a></span>
+]</BOUCLE_document>

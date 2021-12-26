@@ -1,0 +1,274 @@
+<BOUCLE_IGIHE_SECTION(RUBRIQUES){id_rubrique}>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>#TITRE > #NOM_SITE_SPIP</title>
+		<!-- dRmetatags  -->
+		<meta http-equiv="pragma" content="cache" />
+		<meta http-equiv="content-language" content="en-US" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta http-equiv="robots" content="all" />
+		<meta name="revisit-after" content="1" />
+		<meta http-equiv="window-target" content="_top" />
+		<meta name="expires" content="never" />
+		<meta name="rating" content="general" />
+		<!--End dRmetatags  -->
+		<!-- dR_scripts -->
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" media="screen" href="http://igihe.com/squelettes/igihe_scripts/ghgrid.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="http://igihe.com/squelettes/igihe_scripts/ghstyle_day.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="http://igihe.com/squelettes/igihe_scripts/ghstyle.css" />
+		<!-- End dR_scripts -->
+		<link rel="stylesheet" href="http://en.igihe.com/techban/css/style.css" type="text/css" media="screen" charset="utf-8" />	
+		<script type="text/javascript" src="http://en.igihe.com/techban/js/jquery-1.2.6.js"></script>
+		<script type="text/javascript" src="http://en.igihe.com/techban/js/startstop-slider.js"></script>
+		<style>
+			#dropdowncontent {margin:0px; width:100%;height:330px; display:none; float:left;text-align:center;}
+			#dropdownbanner{width:978px;border:0px solid #BCBCBB;margin:auto; margin-bottom: -5px;}
+			.social_feed{}
+			.twtr-hd{ display: none;}
+		</style>
+		<!-- @FR Simple contact scripts -->
+		<link rel="stylesheet" href="simpleContact/style.css" type="text/css" />
+		
+		<script type="text/javascript" src="simpleContact/js/jquery.min.js"></script>
+		<script type="text/javascript" src="simpleContact/js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="simpleContact/js/jquery.form.js"></script>
+		<script type="text/javascript" src="simpleContact/js/contact.js"></script>
+		<!-- @FR Simple contact scripts end -->
+	</head>
+	<body topmargin="0" leftmargin="0" >
+		<a name="hejuru"></a>
+		<!-- HEADER -->
+		<div id="ghheader">
+			<!--
+			<div id="dropdowncontent" align="center">
+			<div id="content">
+			<a href="http://expo.igihe.com/" target="_blank"><img src="http://igihe.com/expo_images/banner-_978-x-325.jpg" style="width: 978px;" height="330px"></a>				
+			</div>
+			</div>-->
+			<div style="width: 100%; background: none; margin-top: -3px; margin-left: 0px;" align="center">
+				<a href="http://www.igihe.com/serivisi/special-pages/doing-business-in-rwanda/">
+					<img id="dropdownbanner" src="http://igihe.com/drpdwn/doingbusiness.jpg" width="978">
+				</a>
+			</div>
+			<!--
+			<script>
+			$("#dropdownbanner").click(function () {
+			if ($("#dropdowncontent").is(":hidden")) {
+				$("#dropdowncontent").slideDown("slow");
+			}
+			else {
+				$("#dropdowncontent").slideUp("slow");
+			}
+			});
+			</script>-->
+			<div class="container_20">
+				<INCLURE{fond=gh_head}{env}{ajax}/>
+				<!-- Menu -->
+				<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP" class="gh_menu1"><img src="http://www.igihe.com/squelettes/igihe_imgs/icons/gh_home.gif" width="19" height="25" border="0" align="left">Ahabanza</a></div>
+				<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/abo-turibo/" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_Abo Turibo.gif'}" width="19" height="25" border="0" align="left">Abo Turibo</a></div>
+				<div class="grid_4" id="menu"><a href="http://igihe.org/spip.php?rubrique3" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_Serivisi.gif'}" width="19" height="25" border="0" align="left">Serivisi</a></div>
+				<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/twandikire/" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_Twandikire.gif'}" width="19" height="25" border="0" align="left">Twandikire</a></div>
+				<div class="grid_4" id="menu"><a href="javascript:animatedcollapse.toggle('ibirimo')" class="gh_menu1"><img src="http://www.igihe.com/squelettes/igihe_imgs/icons/gh_ibirimo.gif" width="19" height="25" border="0" align="left">Ibirimo</a></div>
+				<div class="clear"></div>
+				<!-- End Menu -->
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- End HEADER -->
+		
+	[(#REM) <!-- #########################  CONTACT US ####################### -->]
+	<BOUCLE_gh_twandikire(RUBRIQUES){id_rubrique}>
+	<!-- SECTION HEADER -->
+	<div id="ghheader">
+		<div class="container_20">
+			<!-- SlideNews -->
+			<INCLURE{fond=gh_newssliderin}{env}{ajax}/>
+			<!-- End SlideNews -->
+			<!-- SectionLinks -->
+			<div class="grid_20 alpha omega" id="sectiontitles">
+				<font class="gh_sectiontitle">#TITRE</font>
+			</div>
+			<!-- End SectionLinks -->
+			<!-- Navbar -->
+			<div class="grid_20 alpha omega" id="sectionavbar">
+				<font class="gh_navbar">&nbsp;&nbsp;<a href="#URL_SITE_SPIP" class="gh_navbar"><b>IGIHE.com</b></a>&nbsp;>&nbsp;<BOUCLE_gh_RUBRIQUEtitlel03(RUBRIQUES){id_rubrique}><BOUCLE_gh_RUBRIQUEtitle_followl03(HIERARCHIE)><a href="#URL_RUBRIQUE" class="gh_navbar">[(#TITRE)]</a>&nbsp;>&nbsp;</BOUCLE_gh_RUBRIQUEtitle_followl03>[<a href="#URL_RUBRIQUE" class="gh_navbar">(#TITRE)</a>]</BOUCLE_gh_RUBRIQUEtitlel03></font>
+			</div>
+			<!-- End Navbar-->
+		</div>
+	</div>
+	<div class="clear"></div>
+	<!-- End SECTION HEADER -->
+	<!-- BODY -->
+	<div id="ghbody">
+		<div id="bg">
+			<div class="container_20">
+				<div class="grid_16" id="sectioncontent">
+					<div style="padding:3px;">
+						<!-- box-->
+						<div class="grid_10 alpha" style="width:498px;height:500px;margin:5px;overflow:hidden;border:1px solid #d4d4d4;text-align:center;" id="box">
+							<a href="#" class="box_title">UZUZA AHA UTWANDIKIRE</a>
+							<div style="padding-top:30px;padding:0px;">
+								<!-- simple contact form -->
+								<div id="contactWrap" style="margin-top:50px;">
+									<form id="contactform" action="simpleContact/processForm.php" method="post">
+										<table>
+											<tr>
+												<td><label for="name">Izina:</label></td>
+												<td><input type="text" id="name" name="name" /></td>
+											</tr>
+											<tr>
+												<td><label for="email">Email:</label></td>
+												<td><input type="text" id="email" name="email" /></td>
+											</tr>
+											<tr>
+												<td><label for="message">Ubutumwa:</label></td>
+												<td><textarea id="message" name="message" rows="5" cols="20"></textarea></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td><input type="submit" value="Ohereza" id="send" /></td>
+											</tr>
+										</table>
+									</form>
+									<div id="response"></div>
+								</div>
+								<!-- Simple contact form end-->
+								
+							</div>
+						</div>
+						<div class="grid_5 alpha" style="height:500px;margin:5px;overflow:hidden;border:1px solid #d4d4d4;text-align:center;" id="box">
+							<a href="#" class="box_title">ADERESI ZACU</a>
+							<div style="padding-top:30px;padding:0px;"><br />
+								<b>Main Office</b><br />Ndamage Building - 4th Floor <br /><br />
+								<b>PO Box:</b><br /> 3477 Kigali-Rwanda<br /><br />
+								<b>Phones:</b><br />+250 788 74 29 08 <br />+250 788 49 69 15 <br /><br />
+								<b>Emails:</b> <br />info@igihe.com<br />marketing@igihe.com<br />
+							</div>
+						</div>
+						<div class="grid_10 alpha" style="width:498px;height:400px;margin:5px;overflow:hidden;border:1px solid #d4d4d4;text-align:center;" id="box">
+							<a href="#" class="box_title">AHO DUKORERA</a>
+							<div style="padding-top:30px;padding:0px;">
+								<iframe width="495" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.rw/maps?q=-1.943269,30.058234&amp;num=1&amp;t=h&amp;vpsrc=6&amp;hl=rw&amp;ie=UTF8&amp;ll=-1.943269,30.058234&amp;spn=0.001863,0.00327&amp;z=18&amp;output=embed"></iframe><br /><small></small>
+							</div>
+						</div>
+						<div class="grid_5 alpha" style="height:400px;margin:5px;overflow:hidden;border:1px solid #d4d4d4;text-align:center;" id="box">
+							<a href="#" class="box_title">SABANA NATWE</a>
+							<div style="padding-top:30px;padding:0px;"><br><br><br>
+								<a href="http://www.facebook.com/igihe"><img src="http://igiheshowbiz.com/imgbackground/facee.jpg" width="35" height="35" title="IGIHE on Facebook" alt="IGIHE on Facebook" class="gh_footer_nsocial"/><br>Facebook</a><br><br><br>
+								<a href="http://twitter.com/#!/igihe"><img src="http://igiheshowbiz.com/imgbackground/twii.jpg" width="35" height="35" title="IGIHE on Twitter" alt="IGIHE on Twitter" class="gh_footer_nsocial" /><br>Twitter</a><br><br><br>
+								<a href="http://www.youtube.com/igihetv"><img src="http://igiheshowbiz.com/imgbackground/youu.jpg" width="35" height="35" title="IGIHE on Youtube" alt="IGIHE on Youtube" class="gh_footer_nsocial"/><br>YouTube</a><br><br><br>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<!-- End box -->
+					</div>
+				</div>
+				<!-- AreaRight -->
+				<div class="grid_4 alpha omega" id="sidebar">
+					<div class="grid_4 omega" id="ibirimo">
+						<!-- ibirimo -->
+						<ul>
+							<BOUCLE_gh_ibirimoside_03(RUBRIQUES){id_parent=0}{0,12}{titre_mot=IbirimoSide}>
+							<li class="gh_menu2"><a href="#URL_RUBRIQUE" class="gh_menu2">#TITRE</a></li>
+							</BOUCLE_gh_ibirimoside_03>
+						</ul>
+						<!-- end ibirimo -->
+					</div>
+					<!-- Ads160x600 -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" title="Kanda Hano Wamamaze!">kwamamaza</a>
+						<a href="#"><img src="#DOSSIER_SQUELETTE/igihe_imgs/gh_ad2_default.png"  width="160" height="600" border="0"/></a>
+					</div>
+					<!-- end Ads160x600 -->
+				</div>
+				<!-- End AreaRight -->
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- End BODY -->
+	</BOUCLE_gh_twandikire>
+	[(#REM) <!-- #########################  End CONTACT US ####################### -->]
+
+
+<!-- FOOTER -->
+<div id="ghfooter">
+<div class="container_20">
+
+<!-- Ads728x90 -->
+<div class="grid_20" id="footer_ads">
+	<a href="#" class="gh_adsin" >kwamamaza<br></a>
+<img src="#CHEMIN{'igihe_imgs/gh_ad1_default.png'}"  width="728" height="90" border="0"/>
+<div class="clear"></div>
+<!-- End Ads728x90 -->
+
+<INCLURE{fond=gh_footer}{env}{ajax}/>
+
+</div>
+</div>
+<!-- End FOOTER -->
+
+<script type="text/javascript" charset="utf-8" src="http://remote.igihe.net/igihe_new/igihe_scripts/jqueryz.js"></script>
+
+
+<script type="text/javascript" charset="utf-8" src="http://remote.igihe.net/igihe_new/igihe_scripts/ghcollapse.js"> </script>
+
+<script type="text/javascript">
+animatedcollapse.addDiv('ibirimo', 'speed=400,hide=0,persist=1,fade=1,height=490px')
+animatedcollapse.ontoggle=function($, divobj, state){
+}
+animatedcollapse.init()
+</script>
+
+
+<script type="text/javascript">
+var tablink_idname = new Array("sectionlink","audiolink","popularlink","popularlinkam","amatangazolink","siteslink")
+var tabcontent_idname = new Array("sectioncontent","audiocontent","popularcontent","popularcontentam","amatangazocontent","sitescontent")
+var tabcount = new Array("3","3","2","2","4","2")
+var loadtabs = new Array("1","1","1","1","1","1")
+var autochangemenu = 0;
+var changespeed = 3;
+var stoponhover = 0;
+
+function easytabs(menunr, active) {if (menunr == autochangemenu){currenttab=active;}if ((menunr == autochangemenu)&&(stoponhover==1)) {stop_autochange()} else if ((menunr == autochangemenu)&&(stoponhover==0))  {counter=0;} menunr = menunr-1;for (i=1; i <= tabcount[menunr]; i++){document.getElementById(tablink_idname[menunr]+i).className='tab'+i;document.getElementById(tabcontent_idname[menunr]+i).style.display = 'none';}document.getElementById(tablink_idname[menunr]+active).className='tab'+active+' tabactive';document.getElementById(tabcontent_idname[menunr]+active).style.display = 'block';}var timer; counter=0; var totaltabs=tabcount[autochangemenu-1];var currenttab=loadtabs[autochangemenu-1];function start_autochange(){counter=counter+1;timer=setTimeout("start_autochange()",1000);if (counter == changespeed+1) {currenttab++;if (currenttab>totaltabs) {currenttab=1}easytabs(autochangemenu,currenttab);restart_autochange();}}function restart_autochange(){clearTimeout(timer);counter=0;start_autochange();}function stop_autochange(){clearTimeout(timer);counter=0;}
+
+window.onload=function(){
+var menucount=loadtabs.length; var a = 0; var b = 1; do {easytabs(b, loadtabs[a]);  a++; b++;}while (b<=menucount);
+if (autochangemenu!=0){start_autochange();}
+}
+</script>
+
+<script type="text/javascript" src="http://remote.igihe.net/igihe_new/igihe_scripts/gh_highslide/highslide/highslide-with-html.js"></script>
+<link rel="stylesheet" type="text/css" href="http://remote.igihe.net/igihe_new/igihe_scripts/gh_highslide/highslide/highslide.css" />
+
+<script type="text/javascript">
+hs.graphicsDir = 'http://remote.igihe.net/igihe_new/igihe_scripts/gh_highslide/highslide/graphics/';
+hs.outlineType = 'rounded-white';
+hs.wrapperClassName = 'draggable-header';
+hs.dimmingOpacity = 0.85;
+hs.dimmingDuration = 150;
+hs.align = 'center';
+hs.showCredits = false;
+</script>
+
+<script type="text/javascript" src="http://remote.igihe.net/igihe_new/igihe_scripts/ontop.js"></script>
+
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(["_setAccount", "UA-10838297-1"]);
+	_gaq.push(["_trackPageview"]);
+
+	(function() {
+		var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+		ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+		var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+</body>
+</html>
+</BOUCLE_IGIHE_SECTION>

@@ -1,0 +1,58 @@
+<div id="xmas">
+<div id="xmasmain" style="min-height: 60px;">
+  	<div id="xmasheader">
+  		<img src="xmass/images/head.gif" style="width: 100%;" />
+  	</div>
+    <div>
+      <H1 class="xmastitreart" style="margin-bottom:0px; font-size: 16px!important; height: 25px!important;">
+      Inkuru zamamaza
+      </H1>
+    </div>
+    <div style="height:340px;">
+    
+    <marquee behavior="scroll" direction="up" style="height:340px;" onmouseover="this.setAttribute('scrollamount', 0, 0);" onmouseout="this.setAttribute('scrollamount', 2, 0);" scrollamount="2">
+    <BOUCLE_zamamaza(ARTICLES){titre_mot=igihe_xmass_zamamaza}{par date}{inverse}{tout}>
+    <div class="xmasarticle">
+      <div class="xmasleftimage">
+        [<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,90}||image_recadre{101,80,top center}|extraire_attribut{src})" alt="[(#TITRE)]" />]
+      </div>
+      <div class="xmasrightintro">
+        <a href="#URL_ARTICLE" style="font-weight: bold; color: #000;">#TITRE</a>
+      </div>
+      <div class="xmasilya">
+      <B_gh_pasttime>
+	<BOUCLE_gh_pasttime(ARTICLES){id_article}{age<2040}>
+		 [(#DATE|date_relative)] 
+	</BOUCLE_gh_pasttime>
+      </B_gh_pasttime>
+		 [(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] 
+      <//B_gh_pasttime></div>
+      <div style="clear: both;"></div>
+    </div>
+    </BOUCLE_zamamaza>
+    </marquee>
+   </div>
+     <H1 class="xmastitreart" style=" margin-bottom:0px; font-size: 16px!important; height: 25px!important;">
+      Iminsi mikuru myiza
+      </H1>
+        
+     <BOUCLE_myiza(ARTICLES){titre_mot=igihe_xmass_myiza}{par date}{inverse}>
+    <div class="xmasarticle">
+      <div class="xmasleftimage">
+        [<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,90}||image_recadre{101,80,top center}|extraire_attribut{src})" alt="[(#TITRE)]" />]
+      </div>
+      <div class="xmasrightintro">
+        <a href="#URL_ARTICLE" style="font-weight: bold; color: #000;">#TITRE</a>
+      </div>
+      <div class="xmasilya"><B_gh_pasttime1>
+	<BOUCLE_gh_pasttime1(ARTICLES){id_article}{age<2040}>
+		 [(#DATE|date_relative)] 
+	</BOUCLE_gh_pasttime1>
+      </B_gh_pasttime1>
+		 [(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] 
+      <//B_gh_pasttime1></div>
+    </div>
+    </BOUCLE_myiza>
+     
+</div>
+</div>

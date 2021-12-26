@@ -1,0 +1,44 @@
+a{ text-decoration:none;}
+
+.floatLeft 									{ float: left; margin-right: 10px;}
+.floatRight									{ float: right; }
+.clear 										{ clear: both; }
+
+#page-wrap 									{ position: relative;width: 438px; height: 285px; margin:0px;  border:0px solid red;}
+
+.slider-wrap								{ width: 438px; position: absolute; top: 87px; left: 40px;  }			
+
+.stripViewer .panelContainer .panel ul	{ text-align: left; margin: 0 15px 0 30px; }
+
+.stripViewer								{ position: relative; overflow: hidden; width: 438px; height: 240px;background-color:#000000; border:0px solid blue;}
+
+.stripViewer .panelContainer				{ position: relative; left: 0; top: 0; }
+
+.stripViewer .panelContainer .panel			{ float: left; height: 100%; position: relative; width: 440px; }
+
+.stripNavL, .stripNavR, .stripNav			{ display: none; }
+
+.nav-thumb 									{ border: 0px solid black; margin-right: 5px; }
+
+#movers-row									{ margin: -44px 0 0 62px; }
+
+#movers-row div								{ width: 20%; float: left; }
+
+#movers-row div a.cross-link 				{ float: right; }
+
+.photo-meta-data							{ background-color:rgba(0, 0, 0, 0.7);padding: 3px;padding-bottom:10px; height: 33px; margin-top: -86px; position: relative; z-index: 9999; color: white;}
+.photo-meta-data:hover 					{ background-color:rgba(0, 0, 0, 1);padding: 3px;padding-bottom:10px; height: 33px; margin-top: -86px; position: relative; z-index: 9999; color: white;}
+
+.photo-meta-data span 						{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:16px;font-weight:bold;color:#FFFFFF;text-shadow: 1px 1px 1px #000000;line-height:16px;}
+
+.cross-link									{ display: block; width: 62px; margin-left:1px; margin-top: -10px; position: relative; padding-top: 13px; z-index: 9999; text-decoration:none;}
+
+.active-thumb 								{ background: transparent url(icon-uparrowsmallwhite.gif) top center no-repeat; border:0px solid blue; text-decoration:none;}
+
+
+a.gh_slide_titles{ font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:16px;font-weight:bold;color:#FFFFFF;text-shadow: 1px 1px 1px #000000;line-height:16px;}
+a:hover.gh_slide_titles{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:16px;font-weight:bold;color:#FFFFFF;text-shadow: 1px 1px 1px #000000;line-height:16px;}
+
+
+
+

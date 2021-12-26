@@ -1,0 +1,33 @@
+<div class="col col-lg-6 visible-lg visible-md "> 
+												<div class="company-advertorial3 margintop">
+													<div class="header-advertorial">
+														<img src="squelettes/unicef/unicefheader.jpg" width="100%" height="">
+														<img src="squelettes/unicef/unicefphoto.jpg" width="100%" height="">
+													</div>
+													 
+													
+													<div class="text-advertorial">
+														<BOUCLE_ARTUNICEF(ARTICLES){branche 1937}{0,3}{!par date}>
+														<div class="unicef-article margintop"> 
+															<div class="row"> 
+																<div class="col col-lg-4 col-md-6 nopaddingright0">
+																	<a href="#URL_ARTICLE"><img src="[(#LOGO_ARTICLE||image_reduire{125,*}||image_recadre{120,100,top center}|extraire_attribut{src})]"  alt="ibahasha" class="img-responsive"  /></a>
+																</div>  							
+																<div class="col col-lg-8 col-md-6 ">
+																	<div class="cartoons-details"> 
+																		<a href="#URL_ARTICLE">#TITRE</a>
+																	</div> 
+																</div>  
+																 
+															</div>  
+														</div>
+														</BOUCLE_ARTUNICEF>
+														
+														 
+													</div>
+													
+													<div class="unicef-advertorial">
+														<center><a href="#URL_RUBRIQUE{1937}"><img src="squelettes/unicef/unicefbutton.jpg" ></a></center>
+													</div>
+												</div>
+											</div>

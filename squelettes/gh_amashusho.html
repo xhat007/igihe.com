@@ -1,0 +1,94 @@
+#CACHE{0}
+<div class="grid_7" id="box_media">
+	<a href="#" class="box_media_title">Amashusho</a>
+	<div style="padding:5px;">
+		<div class="tabs">
+			<ul>
+				<li><a href="#" onmouseover="easytabs('1', '1');" onfocus="easytabs('1', '1');" onclick="return false;" title="" id="pglink1">&nbsp;&nbsp;Amafoto&nbsp;&nbsp;</a></li>
+				<li><a href="#" onmouseover="easytabs('1', '2');" onfocus="easytabs('1', '2');" onclick="return false;" title="" id="pglink2">&nbsp;&nbsp;Amavidewo&nbsp;&nbsp;</a></li>
+			</ul>
+		</div>
+		<div id="pgcontent1">
+			<!--  -->
+			<table width="98%" height="98%" cellspacing="0" cellpadding="0" border="0">
+				<!-- Highlight Photo -->
+				<B_gh_highlight_photos>
+					<tr>
+						<BOUCLE_gh_highlight_photos(ARTICLES){doublons}{titre!=intro}{titre_mot=HomeHighlightPhotos}{par date}{inverse}{0,1}>
+							<td width="50%" height="*" colspan="2" align="center"  valign="top" style="padding:2px 0px;">
+								<div style="width: 324px; height: 208px;position: relative;">
+									<B_gh_highlight_photos_img>
+										<a href="http://www.igihe.com/#URL_ARTICLE" class="gh_amashusho_hometitle">
+											<BOUCLE_gh_highlight_photos_img(DOCUMENTS){id_article}{!titre=home}{par hasard}{0,1}>
+												[<img src="(#URL_DOCUMENT||image_reduire{320,0}|image_recadre{312,180,'top left','#000000'}|extraire_attribut{src})" alt="[(#TITRE)]" align="center" class="gh_amashusho_image" border="0"/>]<br />
+											</BOUCLE_gh_highlight_photos_img>
+											[(#TITRE|couper{100,'...'})]
+										</a>
+										<!-- div style="position: absolute; right: 10px; bottom: 25px; width: 200px; height: 25px; background:#000; color:#fff; text-align:center;font-weight:bold;text-transform:uppercase;font-size:16px;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;filter:alpha(opacity=70);opacity:0.7;" -->
+										<div style="margin:0;position: absolute; right: 10px; bottom: 27px; width: 69px; height: 30px; border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;filter:alpha(opacity=80);opacity:0.8; display: none; ">
+											<img src="http://igihe.com/squelettes/igihe_imgs/Rema_Logo.png" alt="REMA" style="border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;" />
+										</div>
+									</B_gh_highlight_photos_img>
+								</div>
+							</td>
+						</BOUCLE_gh_highlight_photos>
+					</tr>
+				</B_gh_highlight_photos>	
+				<!-- End Highlight Photo -->
+				<B_gh_photos>
+					<tr>
+						<BOUCLE_gh_photos(ARTICLES){doublons}{titre!=intro}{titre_mot=HomePhotos}{par date}{inverse}{0,2}>
+							<td width="50%" height="*" align="center"  valign="top" style="padding:2px;">
+								<B_gh_photos_img>
+									<a href="http://www.igihe.com/#URL_ARTICLE" class="gh_amashusho_hometitle">
+										<BOUCLE_gh_photos_img(DOCUMENTS){id_article}{extension==jpg}{!titre=home}{par date}{inverse}{0,1}>
+											[<img src="(#URL_DOCUMENT||image_reduire{160,0}|image_recadre{150,90,'top left','#000000'}|extraire_attribut{src})" alt="[(#TITRE)]" align="center" class="gh_amashusho_image" border="0"/>]<br />
+										</BOUCLE_gh_photos_img>
+										[(#TITRE|couper{50,'...'})]
+									</a>
+								</B_gh_photos_img>
+							</td>
+						</BOUCLE_gh_photos>						
+				</B_gh_photos>
+			</table>
+			<!--  -->
+		</div>
+		<!-- pg content 2 latest videos-->
+		<div id="pgcontent2">
+		<!--  -->
+			<table width="98%" height="98%" cellspacing="0" cellpadding="0" border="0">
+				<!-- Highlight video -->
+				<B_gh_highlight_video>
+					<tr>
+						<BOUCLE_gh_highlight_video(ARTICLES){0,1}{doublons}{titre!=intro}{titre_mot=HomeHighlightVideo}{par date}{inverse}>
+							<td width="50%" height="*" colspan="2" align="center"  valign="top" style="padding:2px 0px;">
+								<div style="width: 324px; height: 208px;position: relative;">
+									<a href="#SOUSTITRE" class="gh_amashusho_hometitle">
+										[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{320,0}|image_recadre{312,180,'top left','#000000'}|extraire_attribut{src})" alt="[(#TITRE)]" align="center" class="gh_amashusho_image" border="0"/>]<br />										
+										[(#TITRE|couper{100,'...'})]
+									</a>
+								</div>
+							</td>
+						</BOUCLE_gh_highlight_video>
+					</tr>
+				</B_gh_highlight_video>	
+				<!-- End Highlight Photo -->
+				<B_gh_video>
+					<tr>
+						<BOUCLE_gh_video(ARTICLES){0,2}{doublons}{titre!=intro}{titre_mot=HomeVideo}{par date}{inverse}>
+							<td width="50%" height="*" align="center"  valign="top" style="padding:2px;">
+								<B_gh_photos_img>
+									<a href="#SOUSTITRE" class="gh_amashusho_hometitle">										
+											[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{160,0}|image_recadre{150,90,'top left','#000000'}|extraire_attribut{src})" alt="[(#TITRE)]" align="center" class="gh_amashusho_image" border="0"/>]<br />
+										[(#TITRE|couper{50,'...'})]
+									</a>
+								</B_gh_video_img>
+							</td>
+						</BOUCLE_gh_video>
+						<BOUCLE_gh_video_list(BOUCLE_gh_video)></BOUCLE_gh_video_list>
+				</B_gh_video>
+			</table>
+			<!--  -->
+		</div>
+	</div>
+</div>

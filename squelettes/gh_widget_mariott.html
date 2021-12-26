@@ -1,0 +1,42 @@
+<style>
+.f-title4 a {
+    color: #ffffff;
+    font-family: ralewaymedium, 'trebuchet ms';
+    font-size: 14px;
+}
+.f-title4 a:hover {
+    color: #c4c4c4; 
+}
+
+.ir-full250{padding: 5px 0 0 5px;}
+</style>
+
+<h3 class="title-section">Kigali Marriott Hotel </h3> 
+<div class="irambuye-news">
+	<div class="row">
+		<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12  "> 
+			<div class="flashnews2">
+				<BOUCLE_gh_widget(ARTICLES){0,1}{titre_mot=banner_mariott}{!par date}{doublons rushw}>
+					<div class="flashphoto">
+						<a href="#URL_ARTICLE" target="_blank"><img class="rectangle img-responsive" data-original="[(#LOGO_ARTICLE||image_reduire{320,*}||extraire_attribut{src})]" alt="."/> </a>
+					</div> 
+				</BOUCLE_gh_widget> 
+			</div>												  
+		</div> 
+		<div class="col col-lg-6 "> 
+			<BOUCLE_ARTIMART(RUBRIQUES){id_rubrique=1939}><div class="ir-full250" style="background: url(https://igihe.com/[(#LOGO_RUBRIQUE|extraire_attribut{src})])"></BOUCLE_ARTIMART>
+				<div class="row"> 
+					<BOUCLE_gh_inkuru_irushanwa(ARTICLES){0,10}{titre_mot=mariott_article}{!par date}{doublons rushw}>
+						<div class="col col-lg-12">
+							<div class="f-title4"> 
+								<a href="#URL_ARTICLE">#TITRE</a>
+							</div>
+							<div class="line_x"></div>
+						</div>
+					</BOUCLE_gh_inkuru_irushanwa> 
+				
+				</div> 
+			</div>
+		</div> 
+	</div> 
+</div>   

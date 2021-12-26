@@ -1,0 +1,45 @@
+<style>
+.f-title4 a {
+    color: #ffffff;
+    font-family: ralewaymedium, 'trebuchet ms';
+    font-size: 14px;
+}
+.f-title4 a:hover {
+    color: #c4c4c4; 
+}
+
+.ir-full250{padding: 5px 0 0 5px;}
+
+.festitle{background: #1670bc;}
+</style>
+
+<h3 class="title-section festitle">Wicikwa n'ubu Bunani</h3> 
+<div class="irambuye-news"> 
+	<div class="row">
+		<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 nopaddingright0 "> 
+			<div class="flashnews2">
+				<BOUCLE_gh_widget(RUBRIQUES){id_rubrique=1942}>
+					<div class="flashphoto">
+						<!-- <a href="#URL_RUBRIQUE"><img class="rectangle img-responsive" data-original="[(#LOGO_RUBRIQUE||image_reduire{325,*}||extraire_attribut{src})]" alt="."/> </a> -->
+						<a href="#URL_RUBRIQUE"><img class="rectangle img-responsive" src="[(#LOGO_RUBRIQUE||extraire_attribut{src})]" alt="."/> </a>
+					</div> 
+				</BOUCLE_gh_widget> 
+			</div>												  
+		</div> 
+		<div class="col col-lg-6 col-md-6 col-sm-6 nopaddingleft0"> 
+			<div class="ir-full250" style="background: #1670bc;">
+				<BOUCLE_gh_inkuru_irushanwa(ARTICLES){id_rubrique=1942}{0,10}{!par date}{doublons rushw}>
+					<div class="row"> 
+						<div class="col col-lg-4 nopaddingright0"><a href="#URL_ARTICLE" target="_blank"><img class="rectangle img-responsive" src="[(#LOGO_ARTICLE||image_reduire{320,*}||extraire_attribut{src})]" alt="."/> </a></div>
+						<div class="col col-lg-8 nopaddingleft0">
+							<div class="f-title4"> 
+								<a href="#URL_ARTICLE">#TITRE</a>
+							</div>
+						</div>
+					</div> 
+					<div class="line_x"></div>
+				</BOUCLE_gh_inkuru_irushanwa>  
+			</div>
+		</div> 
+	</div> 
+</div>   

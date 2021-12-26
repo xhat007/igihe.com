@@ -1,0 +1,229 @@
+<BOUCLE_igihesms(RUBRIQUES){id_rubrique}>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>IGIHE - SMS Online</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<link rel="stylesheet" type="text/css" media="screen" href="#CHEMIN{'igihe_scripts/ghgrid.css'}" />
+<link rel="stylesheet" type="text/css" href="#CHEMIN{'igihe_scripts/ghsmscss.css'}">
+		<link type="text/css" href="http://igihe.com/plugins/notation/css/notation.v2.css" rel="stylesheet" />
+		<link type="text/css" href="http://igihe.com/plugins/notation/css/jquery.rating.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" media="screen" href="http://igihe.com/squelettes/igihe_scripts/ghstyle.css" />
+<style>
+	.star-rating-readonly{display: none !important;}
+	.formulaire_notation{ height: auto; padding-bottom: 3px;}
+	.submit{color: #2075CF; font-size: 12px;}
+</style>
+</head>
+<body>
+<div style="height: 10px; background: rgba(0,0,0,0.4); position: absolute; top: 0; left; 0; width: 100%; z-index: 999;"></div>
+<div id="igihesms" align="center" style="background: url(http://igihe.com/images/smsbg2.jpg) fixed;">
+	<div id="thepage">
+		<div id="header" style=" height: 150px;">
+        	<div><img src="images/smslogo.png" width="300"></div>
+        </div>
+		<div id="content" style="background: url(images/smsbgcontent.png) no-repeat; padding-top: 70px;">
+		
+			<!-- START LEFTSIDE 
+			<div><a href="#"> HOME </a> | <a href="#"> GALLERY </a></div>-->
+			<div id="leftside" style="background: none;">
+			<!-- USER POST AND COMMENTS  -->
+				<BOUCLE_rubrique_igihesms(RUBRIQUES){id_rubrique=1450}>  
+					<B_smspost>		
+						#ANCRE_PAGINATION		
+						<BOUCLE_smspost(ARTICLES){branche}{par date}{inverse}{0,30}{doublons sms}{pagination 5}>
+							<div align="center" style=" margin-top: 5px;" id="zone_#ID_ARTICLE">
+								<div class="smslogo"><BOUCLE_titrerubrique(RUBRIQUES){id_rubrique}>[<img src="IMG/(#LOGO_RUBRIQUE|fichier)" width="55" />]</BOUCLE_titrerubrique></div>
+								<div class="smscontent">
+									<div class="smsuser">									
+											<span><BOUCLE_titrerubriquee(RUBRIQUES){id_rubrique}>#TITRE</BOUCLE_titrerubriquee></span>
+									</div>
+									<div class="sms">								
+										<div class="divi">
+											<div id="comment_statut_0_#ID_ARTICLE" style="height:40px;width:100%;font-size:0.7em;text-align:center;margin-top:5px;display:none;"></div>					
+											<div><a href="#URL_ARTICLE" style="color: #000; text-decoration: none;">#TITRE</a><br />
+												<span style="color: #999999; font-size: 11px">Posted at [(#DATE|heures)][:(#DATE|minutes)] via Blackberry. <a href="#URL_ARTICLE" style="background-image:url(#CHEMIN{igihe_imgs/gh_icons_comments.gif});background-repeat:no-repeat;background-position:left top;"> <B_compteur_forums></B_compteur_forums><BOUCLE_compteur_forums(FORUMS){id_article}{tout}></BOUCLE_compteur_forums>[(#TOTAL_BOUCLE)]&nbsp;[(#TOTAL_BOUCLE|<={1}|?{Comment, Comments})]<//B_compteur_forums>&nbsp;</a></span>
+												<span class="inline" style="height: 50px;">#FORMULAIRE_JAIME_JAIMEPAS</span>
+											</div>
+											<BOUCLE_smsmessage(FORUMS){id_article}{par date}{0,3}>				  
+												<div class="smscomment">
+													<div class="smscommentlogo">
+														<img src="images/smsauteur.png" width="30" />
+													</div>
+													<div class="smscommenttexte">
+														<span style="color: #666666; font-weight: bold"><a style="padding-right: 5px;">[(#NOM)]</a>: [(#TEXTE|textebrut)]</span>
+														<span style="color: #999999; font-size: 11px">Posted at [(#DATE|heures)][:(#DATE|minutes)] via Computer.</span>
+														<div align="right" style=""><a href="poster_messagesms.php?[(#PARAMETRES_FORUM{#SELF})]" class="" onclick="return hs.htmlExpand(this, { objectType: 'ajax', width: 737,} )" class="smsreply" style="color: white; font-size: 11px; padding: 2px 10px 2px 10px; background: #333; border-radius: 5px 5px 0px 0px; text-decoration: none; margin-top: -10px;"><!--Reply--></a></div>
+													</div>				
+												</div>																			
+												<BOUCLE_smsmessagecomment(FORUMS){id_parent}{par date}{0,2}>
+													<div class="smscomment2" style="">
+														<div class="smscommentlogo2">
+															<img src="images/smsauteur.png" width="25" />
+														</div>
+														<div class="smscommenttexte2">
+															<span style="color: #666666; font-weight: bold"><a style="padding-right: 5px;">[(#NOM)]</a>: [(#TEXTE|textebrut)]</span>
+															<span style="color: #999999; font-size: 11px">Posted at [(#DATE|heures)][:(#DATE|minutes)] via Computer.</span>												
+														</div>	
+																	
+													</div>
+												</BOUCLE_smsmessagecomment>
+											</BOUCLE_smsmessage>									
+											<div class="smscomment" style="width: 360px; margin-left: 30px;">
+												<div class="smscommentlogo" style="margin-left: 0px;">
+													<img src="images/smsauteur.png" width="45" />
+												</div>
+												<div class="smscommenttexte" style="width: 310px;">
+													<form action="" method="post" enctype='multipart/form-data' onsubmit="return(false)" name="oForum#ID_ARTICLE">											
+														<input type="hidden" name="id_forum" value="0" />
+														<input type="hidden" name="titre_0_#ID_ARTICLE" id="titre_0_#ID_ARTICLE" value="#TITRE" />
+														<div style="width: 180px; display: inline-block;vertical-align: top; ">								
+															<textarea style="margin-left: 5px; width: 170px; height: 50px; margin-bottom: 7px;" id="texte_0_#ID_ARTICLE"></textarea>
+														</div>
+														<div style="130px; display: inline-block; vertical-align: top;">
+															<input type="texte" style="width: 120px; border: 1px solid #666; font-size: 12px;" placeholder="IZINA" name="session_nom_0_#ID_ARTICLE" id="session_nom_0_#ID_ARTICLE"><br />
+															<input type="texte" style="width: 120px; border: 1px solid #666; font-size: 12px; margin-top: 5px;" placeholder="E-mail" name="session_email_0_#ID_ARTICLE" id="session_email_0_#ID_ARTICLE">
+														</div>
+														<div align="right" style=" width: 312px; vertical-align: top;"><a href="##_zone_#ID_ARTICLE" class="smsreply" onclick="envoyer_commentaire(0,#ID_ARTICLE)" id="ohereza_#ID_FORUM_#ID_ARTICLE">Send</a></div>							
+													</form>
+												</div>																				
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>					
+						</BOUCLE_smspost>
+						<div align="right" style="background: #fff; padding: 5px; color: #666; border-radius: 10px; font-size: 20px; padding-right: 15px;"> <b>Page</b> &raquo;  [(#PAGINATION{page})]</div>
+					</B_smspost>
+					<//B_smspost>
+				</BOUCLE_rubrique_igihesms>
+				<div style="padding-bottom:20px;padding:5px;">
+					<center>[(#ACCEPTER_FORUM|=={non}|oui) <font style='color:#ff0000;'>NTA BITEKEREZO BYEMEREWE KUJYA KURIYI NKURU...</font>]</center>
+					<!-----------------------------------------------------------------------------------------------------------
+										WILLY EDIT FOR AJAXXXXXXXXXXXXXXXXXX
+						------------------------------------------------------------------------------------------------------------>
+								<script type="text/javascript">	
+									function envoyer_commentaire(id_forum,id_article)
+									{
+									var empty_email=(document.getElementById("session_email_"+id_forum+"_"+id_article).value.length==0 || document.getElementById("session_email_"+id_forum+"_"+id_article).value==null);
+									var empty_message=(document.getElementById("texte_"+id_forum+"_"+id_article).value.length==0 || document.getElementById("texte_"+id_forum+"_"+id_article).value==null);
+									if(empty_message){
+										alert("Comment can not be empty");
+									}
+									else if(empty_email){
+										alert("Please provide your email address");
+									}
+									else{
+										var igitekerezo = document.getElementById("texte_"+id_forum+"_"+id_article).value;
+										var izina = document.getElementById("session_nom_"+id_forum+"_"+id_article).value;
+										var email = document.getElementById("session_email_"+id_forum+"_"+id_article).value;
+										var titre = document.getElementById("titre_"+id_forum+"_"+id_article).value;					
+										var page="itsform.php";
+										var url="nom="+izina+"&email="+email+"&commentaire="+igitekerezo+"&id_forum="+id_forum+"&titre="+titre+"&id_article="+id_article;
+										var xhr_object = null;
+										if(window.XMLHttpRequest) // Firefox
+											xhr_object = new XMLHttpRequest();
+										else
+										{
+											if(window.ActiveXObject) // Internet Explorer
+												xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+											else
+											{
+												alert("Browser does not support xmlHttpRequest");
+												return;
+											}
+										}
+										var method = "POST";
+										var filename = page;
+										var requete  = url;
+										xhr_object.onreadystatechange = function()
+										{
+											if(xhr_object.readyState == 1)
+											{
+												document.getElementById("comment_statut_"+id_forum+"_"+id_article).style.display='block';
+												document.getElementById("comment_statut_"+id_forum+"_"+id_article).innerHTML="Your comment is being sent to the server please wait";
+											}								
+											if(xhr_object.readyState == 4) 
+											{
+												var reponse = xhr_object.responseText;
+												//specify the response content								
+												document.getElementById("comment_statut_"+id_forum+"_"+id_article).innerHTML= reponse;
+												document.getElementById("session_nom_"+id_forum+"_"+id_article).disabled="disabled";
+												document.getElementById("session_email_"+id_forum+"_"+id_article).disabled="disabled";
+												document.getElementById("texte_"+id_forum+"_"+id_article).disabled="disabled";
+												document.getElementById("ohereza_"+id_forum+"_"+id_article).disabled="disabled";
+											}
+										}
+										xhr_object.open(method, filename, true);
+										xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+										xhr_object.send(requete);	 
+									}				
+									}			
+								</script>
+						<!-----------------------------------------------------------------------------------------------------------
+									END WILLY EDIT FOR AJAXXXXXXXXXXXXXXXXXX
+					--------------------------------------------------------------------------------------------------------- -->
+			</div>
+			<!-- END OF USER POST AND COMMENTS  -->
+			</div>			
+		<!-- END OF LEFTSIDE -->
+		<!-- START OF RIGHTSIDE -->
+			<div id="rightside" style=" margin-left: 20px; width: 330px;">
+			<BOUCLE_rubrique_igihesms2(RUBRIQUES){id_rubrique=1450}>  
+				<!-- USER POST AND COMMENTS  -->
+				<BOUCLE_smspost2(ARTICLES){branche}{par date}{inverse}{0,10}{doublons sms}>
+					<div align="center" style=" margin-top: 5px;">
+						<BOUCLE_titrerubrique2(RUBRIQUES){id_rubrique}>
+						<div class="smslogo1">[<img src="IMG/(#LOGO_RUBRIQUE|fichier)" width="35" />]</div>
+						<div class="smsuser1">
+							<span>#TITRE</span><br />					
+						</div>
+					</BOUCLE_titrerubrique2>
+						<div class="smscontent1">
+					<div class="sms1">
+						<div class="divi1">
+							<span>#TITRE</span><br />
+							<span style="color: #999999; font-size: 11px">
+							
+							Posted at [(#DATE|heures)][:(#DATE|minutes)] via Blackberry. <a href="#URL_ARTICLE" style="background-image:url(#CHEMIN{igihe_imgs/gh_icons_comments.gif});background-repeat:no-repeat;background-position:left top;"> <B_compteur_forums2></B_compteur_forums2><BOUCLE_compteur_forums2(FORUMS){id_article}{tout}></BOUCLE_compteur_forums2>[(#TOTAL_BOUCLE)]&nbsp;[(#TOTAL_BOUCLE|<={1}|?{Comment, Comments})]<//B_compteur_forums2>&nbsp;</a>
+							
+							</span></span>
+							<BOUCLE_smsmessage2(FORUMS){id_article}{par date}{0,3}>
+								<div class="smscomment1">
+								<div class="smscommentlogo1">
+									<img src="images/smsauteur.png" width="35" />
+								</div>
+								<div class="smscommenttexte1">
+									<span style="color: #666666; font-weight: bold"><a style="padding-right: 5px;">[(#NOM)]</a>: [(#TEXTE|textebrut)]</span>
+									<span style="color: #999999; font-size: 11px">Posted at [(#DATE|heures)][:(#DATE|minutes)] via Computer.</span>
+									<div align="right" style=""><a href="poster_messagesms.php?[(#PARAMETRES_FORUM{#SELF})]" class="" onclick="return hs.htmlExpand(this, { objectType: 'ajax', width: 737,} )" class="smsreply" style="color: white; font-size: 11px; padding: 2px 10px 2px 10px; background: #333; border-radius: 5px 5px 0px 0px; text-decoration: none; margin-top: -10px;"><!--Reply</a>--></div>
+								</div>				
+							</div>
+							</BOUCLE_smsmessage2>
+						</div>
+					</div>
+						</div>
+					</div>
+				</BOUCLE_smspost2>
+				<!-- END OF USER POST AND COMMENTS  -->
+			</BOUCLE_rubrique_igihesms2>
+				<!-- USER POST AND COMMENTS  --><!-- END OF USER POST AND COMMENTS  -->
+			</div>
+			<div style="clear: both;"></div>
+		<!-- END OF RIGHTSIDE -->
+		</div>	  
+		<div id="footer" style="width:897px; height: 200px; background: url(http://igihe.com/images/bgcontentfooter.png) no-repeat center bottom; margin-left: 3px;"></div>
+	</div>
+	<div id="ghfooter" style="width: 100%; height: 240px; background: url(http://igihe.com/images/ghfooter.png) no-repeat;">
+		<div class="container_20">
+
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="#CHEMIN{'igihe_scripts/gh_highslide/highslide/highslide-with-html.js'}"></script>
+<link rel="stylesheet" type="text/css" href="#CHEMIN{'igihe_scripts/gh_highslide/highslide/highslide.css'}" />
+
+</body>
+</html>
+</BOUCLE_igihesms>

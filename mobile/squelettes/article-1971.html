@@ -1,0 +1,361 @@
+<BOUCLE_main(ARTICLES){id_article}{doublons zizi}>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" /> 
+		<base href="https://igihe.com/">
+		<meta name="author" content="www.igihe.org" /> 
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+ 
+	<title>[(#TITRE|textebrut)] | [(#NOM_SITE_SPIP|textebrut)]</title>
+	[<meta name="description" content="(#DESCRIPTIF_SITE_SPIP|couper{250}|attribut_html)" />]
+
+		
+		<link rel="shortcut icon" href="https://mobile.igihe.com/squelettes/images/icon.png" />
+		<!-- <link rel="stylesheet" href="https://mobile.igihe.com/squelettes/css/jquery.mobile.1.5.css" /> -->
+		<!-- <link href="https://mobile.igihe.com/squelettes/css/responsive.css" rel="stylesheet"> -->
+		<link href="https://mobile.igihe.com/squelettes/css/bootstrap.min.css" rel="stylesheet">  
+		
+		<link rel="stylesheet" type="text/css" href="https://mobile.igihe.com/squelettes/css/demo.css?t=9">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300|Roboto|Ubuntu&subset=latin-ext" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="https://mobile.igihe.com/squelettes/css/font-awesome.min.css">
+
+		<script type="text/javascript" src="https://mobile.igihe.com/squelettes/js/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+		$(document).on("mobileinit", function(){
+			$.mobile.ajaxEnabled=false;
+			$.mobile.loadingMessage = false;
+		});             
+		</script>
+		<!-- <script src="https://mobile.igihe.com/squelettes/js/jquery.mobile.1.5.js"></script> -->
+
+		<link rel="stylesheet" type="text/css" href="https://mobile.igihe.com/squelettes/css/jquery.mmenu.all.css">
+		<script type="text/javascript" src="https://mobile.igihe.com/squelettes/js/jquery.mmenu.all.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="https://mobile.igihe.com/squelettes/dist/jquery.mhead.css?t=9">
+		<script type="text/javascript" src="https://mobile.igihe.com/squelettes/dist/jquery.mhead.js"></script> 
+		<link rel="stylesheet" type="text/css" href="https://mobile.igihe.com/squelettes/css/mobistyle.css?t=64">
+
+		<script type="text/javascript">
+			$(function() {
+
+				//	create a menu
+				$('#menu').mmenu();
+
+				//	fire the plugin
+				$('.mh-head').mhead({
+					
+				});
+
+				//	for demo only
+				$('a[href^="#/"]').click(function() {
+					alert( 'Thank you for clicking, but that\'s a demo link.' );
+					return;
+				})
+			});
+		</script> 
+	</head>
+	<body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10838297-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"B/FNo1IWx810S+", domain:"igihe.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=B/FNo1IWx810S+" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->  
+
+		<div id="page" class="container-fluid">
+
+			<div class="mh-head mh-align-left Sticky">
+				<span class="mh-btns-left">
+					<a class="fa fa-bars" href="#menu"></a>
+				</span>
+				<span class="mh-text">
+				<BOUCLE_GH_LOGOV5(ARTICLES){titre_mot=logo_actuel_mobile}{0,1}{!par date}>
+					[<a href="./"><img  src="https://www.igihe.com/(#LOGO_ARTICLE|extraire_attribut{src})" alt="IGIHE" /></a>]
+				</BOUCLE_GH_LOGOV5>
+				</span> 
+				<span class="mh-btns-right2">  
+					<a class="" href="https://mobile.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/lkn.png"></a>
+					<a class="" href="http://fr.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/lfr.png"></a>
+					<a class="" href="http://en.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/len.png"></a>
+					<!-- <a class="" href="http://m.igihe.bi"><img src="https://mobile.igihe.com/squelettes/images/lki.png"></a> -->
+				</span>
+			</div>
+			
+			<div class="content">
+				<div class="row noLRMar"> 
+					<div class="col-xs-12">
+						<BOUCLE_INDOCS (DOCUMENTS) {id_article} {0,1} {extension==jpg|gif|png}>
+								[<img src="https://igihe.com/(#URL_DOCUMENT|timestamp)" class="img-responsive" alt="#TITRE" title="#TITRE">]
+							</BOUCLE_INDOCS>
+					</div> 
+				</div>
+			</div>
+			
+			<div class="inkuru-section gh-body">
+				<!-- <h1>#TITRE</h1> -->
+				<div class="text-center">
+					<!-- Go to www.addthis.com/dashboard to customize your tools -->  
+					<div class="addthis_inline_share_toolbox"></div> 
+				</div>
+				<div class="nyamukuru">
+					<div class="row">
+						<div class="col-xs-12"> 
+							
+							<div class="inkuru-title-2" style="border: 1px solid #c4c4c4; border-bottom: 20px solid #c4c4c4; box-shadow: 0px 30px 40px rgba(0,0,0,.1);">
+								<iframe class="tabFrame" style="border:none;overflow:hidden" src="https://live.igihe.com/live_default.php?id_game=#SOUSTITRE&amp;start=0" frameborder="0" width="100%" id="iframe" height="600" onload='javascript:resizeIframe(this);'></iframe>
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pub-section">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pub-title">Kwamamaza</div>
+						<div class="pub-ads"> 
+							<B_ad_bottom_mobile>
+								<BOUCLE_ad_bottom_mobile(ARTICLES){titre_mot=mobile_internal_live}{par date}{inverse}{0,1}> 
+									<img src="https://www.igihe.com/[(#LOGO_ARTICLE|extraire_attribut{src})]" class="img-responsive">
+								</BOUCLE_ad_bottom_mobile>
+							</B_ad_bottom_mobile>
+								<a href="#"><img src="https://mobile.igihe.com/squelettes/images/ads.jpg" class="img-responsive"></a>
+							<//B_ad_bottom_mobile>	
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="inkuru-section"> 
+				<div class="nyamukuru">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="commentaire-section" id="commentairesection">
+								<h3>TANGA IGITEKEREZO</h3>
+								<script type="text/javascript">										
+									function envoyer_commentaire(id_forum)
+									{
+										var empty_email=(document.getElementById("email").value.length==0 || document.getElementById("email").value==null);
+										var empty_message=(document.getElementById("texte").value.length==0 || document.getElementById("texte").value==null);
+										var empty_text=(document.getElementById("nom").value.length==0 || document.getElementById("nom").value==null);
+										if(empty_text){
+											alert("Andika amazina yanyu");
+										}
+										else if(empty_email){
+											alert("Andika email yanyu");
+										}
+										else if(empty_message){
+											alert("Andika Igitekerezo");
+										}
+										else{
+											var igitekerezo = document.getElementById("texte").value;
+											var izina = document.getElementById("nom").value;
+											var email = document.getElementById("email").value;
+
+											var titre = document.getElementById("titre").value;
+											var id_article_obj=document.getElementsByName("id_article").item(0);
+											var id_article = document.getElementById("idarticle").value;
+
+											var forum_id=0;
+											var page="https://mobile.igihe.com/itsform.php";
+											var url="nom="+izina+"&email="+email+"&commentaire="+igitekerezo+"&id_forum="+id_forum+"&titre="+titre+"&id_article="+id_article;
+											var xhr_object = null;
+											if(window.XMLHttpRequest) // Firefox
+												xhr_object = new XMLHttpRequest();
+											else
+											{
+												if(window.ActiveXObject) // Internet Explorer
+													xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+												else
+												{
+													alert("Browser does not support xmlHttpRequest");
+													return;
+												}
+											}
+											var method = "POST";
+											var filename = page;
+											var requete  = url;
+											xhr_object.onreadystatechange = function()
+											{
+												if(xhr_object.readyState == 1)
+												{
+													document.getElementById("comment_statut").innerHTML="Igitekerezo cyanyu kiri kwoherezwa. Mwihangane...";
+												}								
+												if(xhr_object.readyState == 4) 
+												{
+													var reponse = xhr_object.responseText;
+													//specify the response content								
+													document.getElementById("comment_statut").innerHTML= reponse;
+													document.getElementById("nom").disabled="disabled";
+													document.getElementById("email").disabled="disabled";
+													document.getElementById("texte").disabled="disabled";
+													document.getElementById("ohereza").disabled="disabled";
+												}
+											}
+											xhr_object.open(method, filename, true);
+											xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+											xhr_object.send(requete);	 
+										}				
+									}			
+								</script>
+								<div class="form-comment">
+									<div class="row">
+										<div class="col-xs-12">
+											<form id="signupForm" method="POST" action="#commentairesection" onsubmit="return(false)" accept-charset="UTF-8">
+											<input id="idarticle" name="idarticle" value="#ID_ARTICLE" type="hidden">
+											<input id="titre" name="titre" value="#TITRE" type="hidden">
+											 
+											
+												<div class="col-xs-12">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-user"></i></span>
+														<input id="nom" class="form-control input-sm" placeholder="Amazina yanyu" required="required" maxlength="30" name="nom" type="text">
+													</div>
+												</div>
+												<div class="col col-xs-12">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+														<input id="email" class="form-control input-sm" placeholder="Email yanyu" required="required" maxlength="60" name="email" value="" type="email">
+													</div> 
+												</div>
+												<div class="col col-xs-12">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+														<textarea id="texte" class="form-control input-sm" placeholder="Andika hano" required="required" name="texte" rows="5"></textarea>
+													</div>
+													</div>
+													<div class="col col-xs-9">
+														<span class="amategeko" data-toggle="modal" data-target="#amategeko">AMATEGEKO AGENGA IYANDIKA RY'IGITEKEREZO CYAWE</span> 
+														
+														<!-- Modal -->
+														<div id="amategeko" class="modal fade" role="dialog">
+														  <div class="modal-dialog">
+
+															<!-- Modal content-->
+															<div class="modal-content">
+															  <div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal">×</button>
+																<h4 class="modal-title">AMATEGEKO AGENGA IYANDIKA RY'IGITEKEREZO CYAWE</h4>
+															  </div>
+															  <div class="modal-body">
+																<p>Witandukira kubijyanye n'iyi nkuru; wikwandika ibisebanya, ibyamamaza cyangwa bivangura; wikwandika ibiteye isoni, Wifuza kubona byihuse ibivugwa/ibisubizo ku gitekerezo cyawe, andika email yawe ahabugenewe. Ibi bidakurikijwe igitekerezo cyanyu gishobora kutagaragara hano cyangwa kigasibwa. </p><p>Igitekerezo cyawe kigaragara nyuma y'isuzuma rikorwa na IGIHE.com , Murakoze!</p>
+															  </div>
+															  <div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Funga</button>
+															  </div>
+															</div>
+
+														  </div>
+														</div>
+														
+													</div>
+													<div class="col col-xs-3">
+													<div class="form-group">
+														<button type="submit" id="ohereza" class="btn btn-block btn-primary btn-sm" onclick="envoyer_commentaire()">OHEREZA</button>
+													</div>
+												</div>
+											</form>
+										</div><!-- end of column -->
+										
+										<div class="col-xs-12 fulltext">
+											<p><span id="comment_statut"></span></p>
+										</div>
+										
+									</div><!-- end of row -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+			
+			<div id="commentsAll" class="commentaires-section">  
+			<B_forum>#ANCRE_PAGINATION
+				[<div class="row comments-paging"><p><b>Paji: (#PAGINATION{page})</b>&nbsp;&nbsp;</p></div>]
+				<BOUCLE_forum (FORUMS){id_article}{par date}{inverse}{pagination 10}{0,200}>
+				<div class="row">  
+					<div class="col-xs-12">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="number">#COMPTEUR_BOUCLE</span></span>
+							<div class="comments-box">
+								<div class="comments-head">
+									<span class="comments-username">#AUTEUR</span>
+									<span class="comments-date">#DATE</span> 
+								</div>
+								<div class="comments-text">
+									#TEXTE
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>  
+				</BOUCLE_forum> 
+				[<div class="row comments-paging"><p><b>Paji: (#PAGINATION{page})</b>&nbsp;&nbsp;</p></div>]
+			</B_forum>
+				<div class="row"  class="comments-paging"><p><b>Nta gitekerezo kirajyaho. Ba uwa mbere!</b>&nbsp;&nbsp;</p></div>
+            <//B_forum>
+			</div>
+			
+			<INCLURE{fond=v5_footer}{env}{ajax}/>
+			 
+			
+			<nav id="menu">
+				<ul>
+					<li><span>Indimi</span>
+						<ul>
+							<li><a href="https://mobile.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/lkn.png"> Kinyarwanda</a></li>
+							<!-- <li><a href="http://m.igihe.bi/"><img src="https://mobile.igihe.com/squelettes/images/lki.png"> Kirundi</a></li> -->
+							<li><a href="http://fr.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/lfr.png"> Français</a></li>
+							<li><a href="http://en.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/len.png"> English</a></li>
+						</ul>
+					</li>
+					<li><a href="https://mobile.igihe.com/">Ahabanza</a></li>
+					<BOUCLE_gh_ibirimoside(RUBRIQUES){id_parent=0}{0,20}{titre_mot=IbirimoSide}>
+                     <li>
+                        <a href="https://mobile.igihe.com/#URL_RUBRIQUE">#TITRE</a>
+                     </li>
+                     </BOUCLE_gh_ibirimoside> 
+					 
+					<!-- <li><span>About us</span>
+						<ul>
+							<li><a href="#/about/history">History</a></li>
+							<li><span>The team</span>
+								<ul>
+									<li><a href="#/about/team/management">Management</a></li>
+									<li><a href="#/about/team/sales">Sales</a></li>
+									<li><a href="#/about/team/development">Development</a></li>
+								</ul>
+							</li>
+							<li><a href="#/about/address">Our address</a></li>
+						</ul>
+					</li>
+					<li><a href="#/contact">Contact</a></li> -->
+				</ul>
+			</nav>
+		</div>
+		<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-587b16b7bbda5902"></script>
+		<script type="text/javascript">
+		// Call this function once the rest of the document is loaded
+		function loadAddThis() {
+			addthis.init()
+		}
+		loadAddThis();
+		</script>
+	</body>
+</html>
+</BOUCLE_main>

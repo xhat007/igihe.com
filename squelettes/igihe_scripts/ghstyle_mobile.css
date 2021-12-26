@@ -1,0 +1,116 @@
+img{ max-width: auto; height: auto;}
+
+#gh_mob_body{width:100%;height:100%;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.9em;font-weight:normal;margin:0px;padding:0px;}
+a{color:#2075CF;text-decoration:none;}
+a:hover{color:#4e4e4e;}
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/*MAIN*/
+#gh_mob_header{display:block; width:100%;height:73px; margin-left: auto; margin-right: auto; background-color:#ffffff;border-top:5px solid #000000;background-image:url(../igihe_imgs/gh_mob_headerbg.gif);background-repeat:repeat-x;background-position:bottom;text-align:center;}
+#gh_mob_body{display:block; width:100%;min-height:500px;margin-left: auto; margin-right: auto; background-color:#ffffff;}
+#gh_mob_footer{display:block; width:100%;height:150px; margin-left: auto; margin-right: auto;}
+
+/* HEADER - MENU*/
+#gh_mob_hejuru{display:block; width:100%;height:55px; margin-left: auto; margin-right: auto;background-image:url(../igihe_imgs/gh_mob_footerbg.gif);background-repeat:repeat-x;background-position:bottom;text-align:center;}
+#gh_mob_menu{display:block;float:center;width:385px;padding-top:3px;margin-left: auto; margin-right: auto;vertical-align:middle;background-color:#ffffff;border:0px solid #C0C0C0;}
+div.menu{display:block;float:left;margin:3px;width:90px;height:30px;line-height:25px;background-image:url(../igihe_imgs/gh_menubg1a.png);background-repeat:repeat-x;text-align:center;}
+a.gh_menu1{display:block;width:100%;text-align:center;height:30px;line-height:25px;font-family:verdana;font-size:0.6em;font-weight:bold;text-transform:uppercase;color:#000000;text-decoration:none;text-shadow: 1px 1px 1px #FFFFFF;background-image:url(../igihe_imgs/gh_menubg1a.png);background-repeat:repeat-x;}
+a:hover.gh_menu1{display:block;width:100%;text-align:center;height:30px;line-height:25px;font-family:verdana;font-size:0.6em;font-weight:bold;text-transform:uppercase;color:#2075cf;text-decoration:none;text-shadow: 1px 1px 1px #FFFFFF;background-image:url(../igihe_imgs/gh_mainmenu_blue_on.gif);background-repeat:repeat-x;background-position:left top;}
+
+#gh_mob_menuselect{display:block;float:center;width:99%;padding-top:3px;margin-left: auto; margin-right: auto;vertical-align:middle;background-color:#ffffff;border:0px solid #C0C0C0;text-align:center;}
+select.gh_list{display:block;float:center;width:99%;height:25px;margin:3px;border:2px solid #C0C0C0;background-color:#FFFFFF;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:13px;font-weight:bold;color:#000000;}
+
+div.gh_article_dcomments{display:inline;height:25px;width:40px;background-image:url(../igihe_imgs/gh_article_comments.gif);background-repeat:no-repeat;background-position:left;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.68em;padding-left:13px;padding-right:4px;margin-top:3px;color:#9E9E9E;border-left:1px solid #F7F7F7;}
+
+
+/* BODY */
+div.gh_mob_section_title{display:block;float:center;width:98%;min-height:30px;padding:3px;margin-left: auto; margin-right: auto;vertical-align:middle;text-transform:uppercase;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:18px;font-weight:bold;color:#f8f8f8;background-color:#808080;}
+
+div.gh_mob_body_1{display:block;clear:both;float:center;width:100%;height:21px;margin-left: auto; margin-right: auto;text-align:center;border:0px solid #C0C0C0;background-color:#6ca8f2;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:13px;font-weight:bold;color:#ffffff;}
+div.gh_mob_body_in1{display:block;float:center;width:98%;min-height:60px;padding:3px;margin-left: auto; margin-right: auto;vertical-align:middle;background-color:#e9f2fe;border-bottom:3px solid #b9d3f3;}
+a.gh_mod_news1{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.90em;line-height:20px;font-weight:bold;color:#2075D0; text-decoration:none;}
+a:hover.gh_mod_news1{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.90em;line-height:20px;font-weight:bold;color:#000000; text-decoration:none;}
+img.gh_mod_news1{display:block;float:left;margin:3px;background-color:#b9d3f3;}
+
+div.gh_mob_body_2{display:block;clear:both;float:center;width:100%;height:21px;margin-left: auto; margin-right: auto;text-align:center;border:0px solid #C0C0C0;background-color:#999999;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:13px;font-weight:bold;color:#ffffff;}
+div.gh_mob_body_in2{display:block;float:center;width:98%;min-height:60px;padding:3px;margin-left: auto; margin-right: auto;vertical-align:middle;background-color:#f4f4f4;border-bottom:3px solid #d1d1d1;}
+a.gh_mod_news2{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.90em;line-height:20px;font-weight:bold;color:#000000; text-decoration:none;}
+a:hover.gh_mod_news2{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.90em;line-height:20px;font-weight:bold;color:#2075D0; text-decoration:none;}
+img.gh_mod_news2{display:block;float:left;margin:3px;background-color:#d1d1d1;}
+
+div.gh_mob_body_ads{display:block;clear:both;float:center;width:98%;height:65px;margin-left: auto; margin-right: auto;text-align:center;text-align:center;letter-spacing:5px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:normal;color:#D3D3D3;}
+div.gh_mob_text{display:block;width:98%;float:center;padding:5px;}
+div.gh_article_dtimeago{display:inline;height:25px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.65em;font-weight:bold;padding-right:4px;margin-top:3px;color:#FF0000;}
+font.gh_articledetails{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.75em;font-weight:normal;color:#C0C0C0;}
+font.gh_inarticledetails{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.9em;font-weight:bold;color:#808080; text-decoration:none;}
+a.gh_tab_articledetails_author{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.9em;font-weight:bold;color:#808080; text-decoration:none;}
+a:hover.gh_tab_articledetails_author{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.9em;font-weight:bold;color:#C0C0C0; text-decoration:underline;}
+
+
+
+/*COMMENTS*/
+div.gh_articlecomments{display:block;margin:0px;padding:3px;border:1px solid #000000;background-color:#FFFFFF;}
+div.gh_articlecommentscontent{display:block;padding:4px;background-color:#FFFFFF;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:13px;line-height:16px;font-weight:normal;color:#000000;}
+
+div.gh_articlecomments_thread1{display:block;position:relative;width:98%;border:2px solid #d9d6d6;padding:6px;-moz-border-radius: 10px; -webkit-border-radius: 10px;}
+div.gh_articlecomments_thread2{display:block;position:relative;width:88%;border:2px solid #d9d6d6;padding:6px;-moz-border-radius: 10px; -webkit-border-radius: 10px;text-align:left;}
+
+div.gh_articlecommentsbox{display:block;width:95%;border:2px solid #d9d6d6;padding:6px;margin:5px;-moz-border-radius: 10px; -webkit-border-radius: 10px;}
+div.gh_commentsprev{display:block;width:95%;border:2px solid #FF0000;padding:6px;margin:5px;-moz-border-radius: 10px; -webkit-border-radius: 10px;}
+div.gh_commentsprevin{display:block;position:relative;width:96%;border:2px solid #d9d6d6;padding:6px;-moz-border-radius: 10px; -webkit-border-radius: 10px;}
+
+input.gh_commentsprevsubmit{width:99%;height:25px;border:2px solid #FF0000;background-color:#FF0000;font-family:arial;font-size:12px;text-align:left;font-weight:bold;color:#FFFFFF;padding-left:4px;text-align:center;-moz-border-radius:5px; -webkit-border-radius:5px;}
+input:hover.gh_commentsprevsubmit{width:99%;height:25px;border:2px solid #FF0000;background-color:#000000;font-family:arial;font-size:12px;text-align:left;font-weight:bold;color:#FFFFFF;padding-left:4px;text-align:center;-moz-border-radius:5px; -webkit-border-radius:5px;}
+
+font.gh_articlecommentsdetails{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:10px;font-weight:normal;color:#C0C0C0;}
+
+font.gh_articlecommentsauthor{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:bold;color:#696969; text-decoration:none;}
+
+a.gh_articlecommentsauthor{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:bold;color:#808080; text-decoration:none;}
+a:hover.gh_articlecommentsauthor{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:bold;color:#C0C0C0; text-decoration:underline;}
+a.gh_articlecommentsreply{display:block;position:relative;float:right;background-color:#d9d6d6;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.75em;font-weight:bold;color:#000000; text-decoration:none;padding:2px;margin-right:50px;}
+a:hover.gh_articlecommentsreply{display:block;position:relative;float:right;background-color:#000000;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.75em;font-weight:bold;color:#C0C0C0; text-decoration:underline;padding:2px;margin-right:50px;}
+
+font.gh_articlecommentscontent{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;}
+font.gh_commentstitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:bold;color:#AEAEAE;}
+font.gh_commentsrules{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:normal;color:#868686;}
+font.gh_commentslabel{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:10px;font-weight:normal;color:#C0C0C0;}
+input.gh_comments{width:99%;height:20px;border:2px solid #d9d6d6;background-color:#FFFFFF;font-family:arial;font-size:12px;text-align:left;font-weight:bold;color:#000000;padding-left:4px;}
+
+input.gh_commentssubmit{width:99%;height:25px;border:2px solid #808080;background-color:#808080;font-family:arial;font-size:12px;text-align:left;font-weight:bold;color:#FFFFFF;padding-left:4px;text-align:center;-moz-border-radius: 10px; -webkit-border-radius:5px;}
+input:hover.gh_commentssubmit{width:99%;height:25px;border:2px solid #FF0000;background-color:#000000;font-family:arial;font-size:12px;text-align:left;font-weight:bold;color:#FFFFFF;padding-left:4px;text-align:center;-moz-border-radius: 10px; -webkit-border-radius:5px;}
+
+textarea.gh_comments{width:99%;height:110px;border:2px solid #d9d6d6;background-color:#FFFFFF;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:12px;text-align:left;color:#000000;padding:5px;-moz-border-radius: 10px; -webkit-border-radius: 10px}
+
+div.gh_pagination{display:block;text-align:center;padding-left:23px;padding-top:3px;padding-bottom:3px;margin:3px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.9em;font-weight:bold;color:#666666; text-decoration:none;background-color:#ffffff;border:0px solid #FF0000;}
+
+
+
+
+/* FOOTER */
+#gh_mob_hejuru{display:block; width:100%;height:55px; margin-left: auto; margin-right: auto;background-image:url(../igihe_imgs/gh_mob_footerbg.gif);background-repeat:repeat-x;background-position:bottom;text-align:center;}
+#gh_mob_footerbox{display:block; width:100%;height:130px; margin-left: auto; margin-right: auto;background-color:#000000;;text-align:center;}
+#footer_search{display:block;float:center;width:99%;height:30px;padding:5px;margin-left: auto; margin-right: auto;vertical-align:middle;border:0px solid #C0C0C0;}
+
+input.gh_search{display:inline-block;float:left;width:58%;height:25px;border:0px solid #C0C0C0;background-color:#FFFFFF;font-family:arial;font-size:11px;text-align:left;font-weight:bold;color:#B2B2B2;padding-left:3px;margin:0px;border-top-left-radius: 5px;-moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px;border-bottom-left-radius: 5px;-moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px;}
+input:focus.gh_search{display:inline-block;float:left;width:58%;height:25px;border:0px solid #C0C0C0;background-color:#FFFFFF;font-family:arial;font-size:11px;text-align:left;font-weight:bold;color:#000000;padding-left:3px;margin:0px;border-top-left-radius: 5px;-moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px;border-bottom-left-radius: 5px;-moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px;}
+input.gh_search_out{display:inline-block;float:left;width:38%;height:27px;border:0px solid #C0C0C0;background-color:#C0C0C0;font-family:arial;font-size:13px;font-weight:bold;color:#000000;text-transform:uppercase;padding:0px;margin:0px;border-top-right-radius: 5px;-moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px;border-bottom-right-radius: 5px;-moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px;}
+
+#footer_menu{display:block;float:center;width:100%;padding-top:3px;margin-left: auto; margin-right: auto;vertical-align:middle;border:0px solid #C0C0C0;}
+font.gh_footerliner{font-family:verdana;font-size:15px;font-weight:normal;color:#585858; }
+a.gh_footer{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:13px;font-weight:bold;color:#6b6b6b;text-decoration:none;}
+a:hover.gh_footer{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:13px;font-weight:bold;color:#e6e6e6;text-decoration:none;}
+
+#footer_mobi_version{display:block;float:center;width:width:100%;padding-top:3px;margin-left: auto; margin-right: auto;vertical-align:middle;}
+font.gh_footerliner2{font-family:verdana;font-size:15px;font-weight:normal;color:#585858; }
+a.gh_footer2{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:10px;font-weight:bold;color:#f2f2f2;text-decoration:none;}
+a:hover.gh_footer2{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:10px;font-weight:bold;color:#c0c0c0;text-decoration:none;}
+
+#footer_copyright{display:block;float:center;width:width:100%;padding-top:3px;margin-left: auto; margin-right: auto;vertical-align:middle;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:10px;font-weight:bold;color:#808080;}

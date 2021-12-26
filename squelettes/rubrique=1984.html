@@ -1,0 +1,245 @@
+<BOUCLE_rubrique (RUBRIQUES){id_rubrique}>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document Settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- Page Title -->
+    <title>#TITRE</title>
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="https://www.igihe.com/squelettes/kwibohora25/assets/images/favicon/favicon.png?t=2">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://www.igihe.com/squelettes/kwibohora25/style.css?t=8">
+    <link rel="stylesheet" href="https://www.igihe.com/squelettes/kwibohora25/assets/css/responsive.css">
+
+
+    <!-- HTML5 shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.js"></script>
+    <![endif]-->
+	<style>
+	<BOUCLE_SLIDESIN (ARTICLES){id_rubrique=1986}{0,1}{!par date}{doublons slide}> 
+		.img-0 {
+			background: url(https://igihe.com/[(#LOGO_ARTICLE|extraire_attribut{src})]) no-repeat scroll 50% 50%;
+			background-size: cover;
+		}
+	</BOUCLE_SLIDESIN>
+	<BOUCLE_SLIDESINB (ARTICLES){id_rubrique=1986}{0,4}{!par date}{doublons slide}> 
+		.img-#COMPTEUR_BOUCLE {
+			background: url(https://igihe.com/[(#LOGO_ARTICLE|extraire_attribut{src})]) no-repeat scroll 50% 50%;
+			background-size: cover;
+		}
+	</BOUCLE_SLIDESINB>
+	</style>
+</head>
+<body> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10838297-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"B/FNo1IWx810S+", domain:"igihe.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://certify.alexametrics.com/atrk.gif?account=B/FNo1IWx810S+" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->   
+<!--//site-nav//-->
+<aside class="site-nav">
+    <div class="off-canvas-inner">
+        <!--//Header//-->
+        <header class="header">
+            <h2 class="text-uppercase widget-title pull-left">Kwibohora25</h2>
+            <button type="button" class="close-btn pull-right"><i class="icon fa fa-close"></i></button>
+        </header> <!--//End Header-->
+        <!--//Menu//-->
+        <div class="widget menu">
+            <div class="widget-menu text-uppercase">
+                <ul id="menu">
+                    <li><a href="index.html" class="active">Ahabanza</a></li>
+                </ul>
+            </div>
+        </div> <!--//End Menu-->
+        <!--//Categories//-->
+        <div class="widget categories">
+            <h3 class="widget-title text-uppercase">Ahandi</h3>
+
+            <ul class="widget-menu st-category-menu text-uppercase">
+                <li><a href="category.html">Videos <span class="pull-right">12</span></a></li>
+            </ul>
+        </div> <!--//End Categories--> 
+        <div class="widget scroll-top">
+            <a class="st-top" href="#top"> Subira hejuru</a>
+        </div>
+    </div>
+</aside>
+<!--//home//-->
+<div class="st-home" id="home">
+    <nav class="top-nav">
+        <div class="logo pull-left"><h1><a href="."><img src="https://www.igihe.com/squelettes/kwibohora25/assets/images/logo-25.png" alt="Kwibohora"></a></h1></div>
+        <button type="button" class="navbar-toggle show-btn"><i class="fa fa-navicon"></i></button>
+    </nav>
+    <div class="mask"></div>
+    <div class="st-canvas">
+        <div class="st-content-wrap">
+            <!--//Content Area//-->
+            <div id="home-carousel" class="carousel slide st-content-wrap" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+					<BOUCLE_SLIDESIN3 (ARTICLES){id_rubrique=1986}{0,1}{!par date}{doublons slidev}>
+                    <div class="item active">
+                        <div class="single-home-area section-home-area img-0">
+                            <div class="container">
+                                <div class="home-content text-center">
+                                    <h4 class="post-date">Tariki [(#DATE|affdate)] saa [(#DATE|affdate{'h:i'})]</h4>
+                                    <h2 class="text-uppercase blog-heading"><a href="#URL_ARTICLE">#TITRE</a></h2>
+                                    <a href="#URL_ARTICLE" class="read-more text-uppercase">+Soma Inkuru</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					</BOUCLE_SLIDESIN3>
+					<BOUCLE_SLIDESIN3B (ARTICLES){id_rubrique=1986}{0,4}{!par date}{doublons slidev}>
+                    <div class="item">
+                        <div class="single-home-area section-home-area img-#COMPTEUR_BOUCLE">
+                            <div class="container">
+                                <div class="home-content text-center">
+                                    <h4 class="post-date">Tariki [(#DATE|affdate)] saa [(#DATE|affdate{'h:i'})]</h4>
+                                    <h2 class="text-uppercase blog-heading"><a href="#URL_ARTICLE">#TITRE</a></h2>
+                                    <a href="#URL_ARTICLE" class="read-more text-uppercase">+Soma Inkuru</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					</BOUCLE_SLIDESIN3B>
+                </div>
+                <!--Left and right controls -->
+                <a class="left carousel-control" href="#home-carousel" role="button" data-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="right carousel-control" href="#home-carousel" role="button" data-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//Blog area//-->
+<div class="blog-area">
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="col-sm-6">
+                <div class="single-blog-post post-1 text-center">
+				<BOUCLE_POST1 (ARTICLES){titre_mot=kwibohora_portrait_photo}{0,1}{doublons portrait}{!par date}>
+                    [<img class="img-responsive" src="https://igihe.com/(#LOGO_ARTICLE|image_reduire{800,860}|image_recadre{800,860,top center}|extraire_attribut{src})" alt="">]
+                    <div class="post-overlay text-center">
+                        <h4 class="post-date">Tariki [(#DATE|affdate)] saa [(#DATE|affdate{'h:i'})]</h4>
+
+                        <h2 class="text-uppercase blog-heading">#TITRE</h2>
+
+                        <a href="#URL_ARTICLE" class="read-more text-uppercase">+Soma Inkuru</a>
+                    </div> 
+                    <a class="post-link" href="#URL_ARTICLE"></a>
+				</BOUCLE_POST1>
+                </div>
+            </div>
+            <div class="col-sm-6">
+			<BOUCLE_POST2 (ARTICLES){id_rubrique}{!par date}{0,2}{doublons allstories}>
+                <div class="single-blog-post post-2 fix text-center">
+				 [<img class="img-responsive" src="https://igihe.com/(#LOGO_ARTICLE|image_reduire{1000,760}|image_recadre{800,430,top center,#000000}|extraire_attribut{src})" alt="">]
+                    <div class="post-overlay text-center"> 
+                        <h4 class="post-date">Tariki [(#DATE|affdate)] saa [(#DATE|affdate{'h:i'})]</h4>
+                        <h2 class="text-uppercase blog-heading">#TITRE</h2>
+
+                        <a href="#URL_ARTICLE" class="read-more text-uppercase">+Soma Inkuru</a>
+                    </div> 
+                    <a class="post-link" href="#URL_ARTICLE"></a>
+                </div>
+			</BOUCLE_POST2> 
+            </div>
+			<BOUCLE_POST3 (ARTICLES){id_rubrique}{!par date}{0,1}{doublons allstories}>
+            <div class="col-sm-12 fix">
+                <div class="single-blog-post single-home-area post-3 fix text-center"> 
+					[<img class="img-responsive" src="https://igihe.com/(#LOGO_ARTICLE|image_reduire{1000,760}|image_recadre{1000,600,center,#000000}|extraire_attribut{src})" alt="">]
+                    <div class="post-overlay text-center">
+                        <h4 class="post-date">Tariki [(#DATE|affdate)] saa [(#DATE|affdate{'h:i'})]</h4>
+                        <h2 class="text-uppercase blog-heading">#TITRE</h2>
+
+                        <a href="#URL_ARTICLE" class="read-more text-uppercase">+Soma Inkuru</a>
+                    </div> 
+                    <a class="post-link" href="#URL_ARTICLE"></a>
+                </div>
+            </div> 
+			</BOUCLE_POST3>
+			<BOUCLE_POST4 (ARTICLES){id_rubrique}{!par date}{0,4}{doublons allstories}>
+            <div class="col-sm-6">
+				<div class="single-blog-post post-2 fix text-center">
+                    [<img class="img-responsive" src="https://igihe.com/(#LOGO_ARTICLE|image_reduire{1000,760}|image_recadre{800,430,top center,#000000}|extraire_attribut{src})" alt="">]
+                    <div class="post-overlay text-center">
+                        <h4 class="post-date">Tariki [(#DATE|affdate)] saa [(#DATE|affdate{'h:i'})]</h4>
+                        <h2 class="text-uppercase blog-heading">#TITRE</h2>
+
+                        <a href="#URL_ARTICLE" class="read-more text-uppercase">+Soma Inkuru</a>
+                    </div> 
+                    <a class="post-link" href="#URL_ARTICLE"></a>
+                </div> 
+            </div>
+			</BOUCLE_POST4>
+        </div>
+    </div>
+</div>
+<!--//Footer instragram//--> 
+<!--//Footer top//-->
+<div class="footer-about-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-10">
+                <div class="footer-about text-center">
+                    <div class="footer-about-content">
+                        <a href=""><img src="https://igihe.com/squelettes/v5images/gh_logo_footer5.png" style="height: 100px;"></a>
+                        <p>4 Nyakanga, Umunsi wo Kwibohora ushushanya ukubohora u Rwanda n’Abanyarwanda ku ngoyi ya Guverinoma ya Habyarimana yakoze Jenoside, no guhagarika Jenoside yakorerwaga Abatutsi.</p>
+                    </div>
+                    <div class="footer-social">
+                        <h3 class="text-uppercase">Bana natwe</h3>
+                        <ul>
+                            <li><a target="_blank" href="https://facebook.com/igihe" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/igihe" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://instagram.com/igiheofficial" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//Footer bottom//-->
+<footer>
+    <div class="container">
+        <p class="pull-left">&copy; 2019 <a href="">IGIHE</a>.</p>
+        <a class="scroll-top pull-right" href="#home"> Back to Top</a>
+    </div>
+
+</footer>
+<!--//Script//-->
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/jquery-1.11.3.min.js"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/waypoints.min.js"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/bootstrap.min.js"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/jquery.easing.min.js"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/jquery.nicescroll.min.js"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/owl.carousel.min.js"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/jquery.counterup.min.js"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/main.js"></script>
+</body>
+</html>
+</BOUCLE_rubrique>

@@ -1,0 +1,82 @@
+#CACHE{3600}
+<BOUCLE_art(ARTICLES) {id_article}>
+
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>[(#TITRE|textebrut) - ][(#NOM_SITE_SPIP|textebrut)] Mobile Version </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<link rel='stylesheet' type='text/css' media='screen' href="[(#CHEMIN{'igihe_scripts/ghstyle_mobile.css'})]" />
+</head>
+
+
+<body id="gh_mob_body">
+
+
+<div id="gh_mob_header"><a href="[(#URL_PAGE{sommaire})]"><img src="[(#CHEMIN{'igihe_imgs/gh_mob_logo.png'})]" border="0"/></a></div>
+
+<div class="clear"></div>
+
+<form name="guideform">
+<div id="gh_mob_menuselect">
+<select class="gh_list" name="guidelinks" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+<option selected>MENU</option>
+<option value="[(#URL_PAGE{sommaire})]">Ahabanza</option>
+<BOUCLE_gh_ibirimoside(RUBRIQUES){id_parent=0}{0,20}{titre_mot=IbirimoSide}>
+<option value="spip.php?rubrique#ID_RUBRIQUE">#TITRE</option>
+</BOUCLE_gh_ibirimoside>
+</select>
+</div>
+</form>
+
+	<div id="gh_mob_body">
+
+		<div class="gh_mob_body_ads">advertisment<br /><a href="#"><img src="[(#CHEMIN{'igihe_imgs/bpr_simbuka.gif'})]" width="300" height="50" border="0" /></a></div>
+
+<div class="gh_mob_text">
+	<h3>#TITRE</h3>
+	[<img src="(#LOGO_ARTICLE||image_reduire{200,0}|extraire_attribut{src})" border="0" style="display:block;"/><br />]
+	<p>[(#TEXTE|image_reduire{320,0})]</p>
+	<font class="gh_articledetails"><br /><br />-------------------------------<br />Yanditswe kuya <font class="gh_inarticledetails">[(#DATE|jour)]-[(#DATE|mois)]-[(#DATE|annee)]</font> - saa <font class="gh_inarticledetails">[(#DATE|heures)][:(#DATE|minutes)]'</font> na <BOUCLE_gh_authorpg(AUTEURS){id_article}><a href="#" class="gh_tab_articledetails_author">[(#PS|textebrut|sinon{#NOM})]</a><br></BOUCLE_gh_authorpg></font>
+</div>
+
+	</div>
+
+
+
+<div id="gh_mob_footer">
+<div id="gh_mob_hejuru"><a href="#"><img src="[(#CHEMIN{'igihe_imgs/gh_mob_hejuru.png'})]" width="347" height="56" alt="Jya Hejuru" border="0"/></a></div>
+<div id="gh_mob_footerbox">
+
+<span id="footer_search">
+<center><form action="spip.php?page=recherche" method='get'><input name='page' value='recherche' type='hidden' ><input  type="text" name="recherche" value="&nbsp;Enter a Keyword here..." onfocus="if(this.value=='&nbsp;Enter a Keyword here...') this.value='';" class="gh_search" /><input type="submit" value="SEARCH" class="gh_search_out"/></form>
+</center></span>
+
+<!-- <div id="footer_menu">
+	<font class="gh_footerliner">
+		<a href="#" class="gh_footer">Ahabanza</a>&nbsp;|&nbsp;
+		<a href="#" class="gh_footer">Amakuru</a>&nbsp;|&nbsp;
+		<a href="#" class="gh_footer">Amashusho</a>&nbsp;|&nbsp;
+		<a href="#" class="gh_footer">Twandikire</a>
+	</font>
+</div> -->
+
+<div id="footer_mobi_version">
+	<font class="gh_footerliner2">
+		<a rel="start home" href="#URL_PAGE{sommaire}" class="gh_footer2">MOBILE SITE</a>&nbsp;-&nbsp;
+		<a href="[(#URL_SITE_SPIP)/?mobayilo=web]" class="gh_footer2">DESKTOP SITE</a>
+	</font>
+</div>
+
+<div id="footer_copyright">
+Copyright &copy; 2009 -2011 - IGIHE Ltd - All Rights Reserved
+</div>
+
+</div>
+</div>
+
+
+</body>
+</html>
+</BOUCLE_art>

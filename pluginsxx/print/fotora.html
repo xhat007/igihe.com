@@ -1,0 +1,54 @@
+#CACHE{180000}
+<BOUCLE_article_principal(ARTICLES) {id_article}>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="#LANG_DIR" lang="#LANG">
+
+<head>
+<title>Printable Version - [(#TITRE|supprimer_numero|textebrut)] - IGIHE.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=#CHARSET" />
+</head>
+
+<body dir="#LANG_DIR" style="background-color:#ffffff; color:black; border:0px; font-family: verdana, arial, helvetica, sans-serif; font-size:80%;">
+
+<div width="80%" style="margin:auto;" align="center">
+
+
+<TABLE width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td width="*" height="35" align="left" valign="middle"><img src="#CHEMIN{'ghlogo.gif'}" border="0" alt=""></td>
+		<td width="*" align="right" valign="middle"><font style="font-size:11px;color:#c0c0c0;">Aderesi yiyi nkuru : <a href="#URL_ARTICLE">#URL_SITE_SPIP/#URL_ARTICLE&nbsp;</a></font></td>
+	</tr>
+
+	<tr>
+		<td colspan="2" width="*" height="*" align="left" valign="middle" style="border-top:2px solid #EEEEEE;padding:2px;">
+		[<img src="(#LOGO_ARTICLE||image_reduire{0,50}|image_nb|extraire_attribut{src})" border="0" align="right" style="margin:10px;"/>]
+<font style="font-family:Trebuchet MS, Helvetica, sans-serif;font-size:22px;font-weight:normal;color:#000000;ext-decoration:none;">[(#TITRE|supprimer_numero)]<br /></font>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="2" width="*" height="*" align="left" valign="top" style="padding:10px;">
+<font style="font-family:Trebuchet MS, Helvetica, sans-serif;font-size:13px;font-weight:normal;color:#000000;ext-decoration:none;">[(#TEXTE||image_reduire{500,0})]</font>
+		</td>
+	</tr>
+
+
+	<tr>
+		<td colspan="2" align="center" valign="top" style="border-top:2px solid #e2e2e2;padding:10px;">
+<font style="font-family:Trebuchet MS, Helvetica, sans-serif;font-size:11px;font-weight:normal;color:#828282;ext-decoration:none;"><i>Yanditwe kuya <b style="color:#000000">[(#DATE|jour)]-[(#DATE|mois)]-[(#DATE|annee)]</b> saa <b style="color:#000000">[(#DATE|heures)][:(#DATE|minutes)]</b> |  na <BOUCLE_gh_author(AUTEURS){id_article}{", "}><b style="color:#000000">[(#PS|textebrut|sinon{#NOM})]</b></BOUCLE_gh_author> | Imaze gusomwa incuro  <b style="color:#000000"> <B_gh_vst1><BOUCLE_gh_vst1(ARTICLES){id_article}{age>14}>[(#VISITES|=={0}|?{'1', #VISITES|mult{9}})]</BOUCLE_gh_vst1></B_gh_vst1>[(#VISITES)]<//B_gh_vst1></b></i> </font><br><br>
+			<font style="font-family:Trebuchet MS, Helvetica, sans-serif;font-size:11px;font-weight:normal;color:#B4B4B4;ext-decoration:none;">Copyright © 2009 [ -(#DATE|>{2009}|?{#DATE,''}|annee)] -  IGIHE Ltd - All Rights Reserved</font>
+		</td>
+	</tr>
+
+</table>
+
+
+</div>
+
+     <script type="text/javascript">
+		window.print();
+	</script>
+
+</body>
+</html>
+</BOUCLE_article_principal>

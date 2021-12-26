@@ -1,0 +1,51 @@
+<div class="grid_7" id="box" style="background: #8b8b8b;">
+
+<div id="jslidernews1" class="lof-slidecontent" style="width:325px; height:260px; background: #8b8b8b; margin-left: 7px;">
+	<div class="preload"><div></div></div>
+    		 <!-- MAIN CONTENT --> 
+              <div class="main-slider-content" style="width:325px; height:260px;">
+                <ul class="sliders-wrap-inner">
+                <B_advertorials>
+                	<BOUCLE_advertorials(ARTICLES){id_rubrique=1410}{par date}{inverse}>
+                        <li>
+                            <a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+                                <BOUCLE_advertorial_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+                                    [<img src="(#URL_DOCUMENT)" width="325" height="200" title="#TITRE"/>]
+                                </BOUCLE_advertorial_img>
+                            </a>       
+                            <div class="slider-description"><h4><a href="#URL_ARTICLE">#TITRE</a></h4></div>
+                        </li> 
+                	</BOUCLE_advertorials>    
+                </B_advertorials>   
+                 <img src="http://igihe.com/squelettes/igihe_imgs/gh_ads300x250_available.png" width="325" height="200">
+                <//B_advertorials>    
+                 </ul>  	
+            </div>
+ 		   <!-- END MAIN CONTENT --> 
+           <!-- NAVIGATOR -->
+           	<div class="navigator-content">
+                  <div class="button-next">Next</div>
+                  <div class="navigator-wrapper">
+                        <ul class="navigator-wrap-inner">
+                <B_advertorials_thumb>
+                	<BOUCLE_advertorials_thumb(ARTICLES){id_rubrique=1410}{par date}{inverse}>
+                        <li>
+                                <BOUCLE_advertorial_img_thumb(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+                                    [<img src="(#URL_DOCUMENT)" width="52" height="19"/>]
+                                </BOUCLE_advertorial_img_thumb>
+                        </li> 
+                	</BOUCLE_advertorials_thumb>    
+                </B_advertorials_thumb>   
+                <!-- <img src="http://igihe.com/squelettes/igihe_imgs/adv_324x200.png" width="324" height="200">  -->
+                <//B_advertorials_thumb>       		
+                        </ul>
+                  </div>
+                  <div  class="button-previous">Previous</div>
+             </div> 
+          <!----------------- END OF NAVIGATOR --------------------->
+          <!-- BUTTON PLAY-STOP -->
+          <div class="button-control"><span></span></div>
+           <!-- END OF BUTTON PLAY-STOP -->
+          
+ </div> 
+</div>

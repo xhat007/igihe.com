@@ -1,0 +1,41 @@
+#CACHE{3600}
+
+<div class="grid_9 alpha" id="box_news">
+<B_gh_news>
+#ANCRE_PAGINATION
+<a href="#" class="box_title">Amakuru mashya</a>
+
+<BOUCLE_gh_news(ARTICLES){branche}{pagination 70}{0,3025}{par date}{inverse}{titre!=intro}{titre_mot=HomeNews}>
+
+<div class="gh_amakuru_home" onClick="parent.location='http://www.igihe.com/#URL_ARTICLE'">
+<div style="padding:2px;font-family:Trebuchet MS;font-size:0.68em;color:#9E9E9E">
+<BOUCLE_gh_RUBRIQUEtitlel(RUBRIQUES){id_rubrique}><BOUCLE_gh_RUBRIQUEtitle_followl(HIERARCHIE)><a href="#" class="gh_news_category">#TITRE</a>&nbsp;|&nbsp;</BOUCLE_gh_RUBRIQUEtitle_followl>[<a href="http://www.igihe.com/#URL_RUBRIQUE" class="gh_news_category">(#TITRE)</a>]	</BOUCLE_gh_RUBRIQUEtitle_followl></BOUCLE_gh_RUBRIQUEtitlel>
+</div>
+
+
+[<img src="(#LOGO_ARTICLE||image_reduire{0,85}||image_recadre{90,80,top center}|extraire_attribut{src})" alt="[(#TITRE)]" width="90" height="80" align="left" class="gh_news_image"  />]
+	<div style="padding-bottom:5px;"><a href="http://www.igihe.com/#URL_ARTICLE" class="gh_news_hometitle"><BOUCLE_gh_exclusif(ARTICLES){id_article}{titre_mot=Exclusif}{0,1}{age<1}><div class="gh_article_dtimeago">EXCLUSIF :</div></BOUCLE_gh_exclusif>#TITRE</a>
+	
+<B_gh_pasttime>
+	<BOUCLE_gh_pasttime(ARTICLES){id_article}{age<2040}>
+		<div class="gh_article_dtimeago"><br />[(#DATE|date_relative)]</div>
+	</BOUCLE_gh_pasttime>
+</B_gh_pasttime>
+	<div class="gh_article_dtimeago" style="color:#AEAEAE;"><br />[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] </div>
+<//B_gh_pasttime>
+<div class="gh_article_dcomments" title="Comments">
+<?php $get_comments=file_get_contents('http://www.igihe.com/trafficcounter.php?id_article=#ID_ARTICLE&action=get_comments'); echo $get_comments;?>
+</div>
+<BOUCLE_gh_in_imagesif(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}><B_gh_in_images><BOUCLE_gh_in_images(DOCUMENTS){id_article}{extension==jpg|gif|png}></BOUCLE_gh_in_images></B_gh_in_images> [(#TOTAL_BOUCLE|=={1}|?{'', <div class="gh_article_dphotos" title="Amafoto ari muriyinkuru">[(#TOTAL_BOUCLE)]</div>})]<//B_gh_in_images></BOUCLE_gh_in_imagesif>
+<div class="gh_article_dhits"  title="Abarebye iyinkuru"> <?php $get_visits=file_get_contents('http://www.igihe.com/trafficcounter.php?id_article=#ID_ARTICLE&action=get_visits'); echo $get_visits;?></div>
+
+	</div>
+</div>
+
+</BOUCLE_gh_news>
+<center><div class="gh_pagination">[(#PAGINATION{page})]</div></center>
+
+</B_gh_news>
+<//B_gh_news>
+	</div>
+	<!-- ************************************************************* AMAKURU MASHYA HANO *************************************************************************** -->

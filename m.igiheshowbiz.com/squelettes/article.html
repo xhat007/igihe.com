@@ -1,0 +1,164 @@
+<BOUCLE_main(ARTICLES){id_article}>
+<html>
+	<head>
+		<link rel="stylesheet" type="css/text" href="css/style.css" />
+		<style>
+			#formulaire_forum{font-size: 1.0em; font-family: sans-serif; font-weight: bold; color: #3769c0 !important;}
+			#gh_commentslabel{font-size: 1.0em; font-family: sans-serif; font-weight: bold !important; color: #3769c0 !important;}
+			#formulaire_forum li{list-style: none; }
+			#formulaire_forum ul{ margin: 0; padding: 0px;}
+			.gh_comments{ width: 100%; height: 25px; margin-bottom: 10px;}
+		</style>
+	</head>
+	<body>
+		<a href="http://m.igiheshowbiz.com">
+		<div id="header" style="border-bottom: 3px solid #80b1e5;">
+			<img src="images/logo.png" />
+		</div>
+		</a>
+		<div id="content">
+			<div id="content_menu" align="center" style="width: 100%; padding-top: 10px;">
+			<form name="guideform">
+				<select name="guidelinks" style="width: 96%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+					<BOUCLE_ghselect(RUBRIQUES){id_rubrique}{doublons xx}>
+						<option value="#URL_RUBRIQUE" style="font-size: 1.0em; font-family: sans-serif;" selected>#TITRE</option>
+						<option value="http://m.igiheshowbiz.com" style="font-size: 1.0em; font-family: sans-serif;">Ahabanza</option>
+					</BOUCLE_ghselect>
+					<BOUCLE_gh_ibirimoside(RUBRIQUES){id_rubrique=13}>
+					<BOUCLE_gh(RUBRIQUES){id_parent}{0,7}{doublons xx}>
+						<option value="#URL_RUBRIQUE" style="font-size: 1.0em; font-family: sans-serif;">#TITRE</option>
+					</BOUCLE_gh>
+					</BOUCLE_gh_ibirimoside>
+				</select>
+			</form>
+			</div>
+			<div id="content_search" style="width: 100%; padding-left: 10px; padding-right: 10px;">
+				<input type="text" class="search" />
+				<input type="submit" class="searchbutton" />
+			</div>
+			<div class="clear"></div>
+			<div class="cat">
+				<div align="center" style="margin-bottom: 10px;">[<img src="http://igihe.com/IMG/(#LOGO_RUBRIQUE|fichier)" />]</div>
+				
+					<div class="catcontent">
+						<div align="center">[<img src="http://igihe.com/IMG/(#LOGO_ARTICLE|fichier)" style="max-width: 400px; min-width: 100px;"  border="0" align="center"/>]</div>
+						<div class="cattitle" align="center" style="font-size: 16px; font-weight: bold; background: #3769c0; color: #fff; padding: 10px 5px">#TITRE</div>
+						<div style="font-family: 'Trebuchet MS', Helvetica, sans-serif;font-size: 1.01em;font-weight: normal;color: #C0C0C0; padding: 10px; padding-bottom: 20px; border-bottom: 1px solid #c0c0c0; margin-bottom: 10px;"><i>Inkuru yanditswe </i> <B_gh_author> na <B_gh_author><BOUCLE_gh_author(AUTEURS){id_article}><a href="#" style="color: #666;">[(#PS|textebrut|sinon{#NOM})]</a></BOUCLE_gh_author></B_gh_author><//B_gh_author>  kuwa 
+						<B_gh_pasttime11>
+													<BOUCLE_gh_pasttime11(FORUMS){id_forum}{age<2040}>
+														[(#DATE|date_relative)]
+													</BOUCLE_gh_pasttime11>
+												</B_gh_pasttime11>
+													[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]
+												<//B_gh_pasttime11>
+						</div>
+						
+						<p class="cattext" align="center">[(#TEXTE|image_reduire{320,0})]</p>
+						
+						
+					</div>
+					<div style="font-size: 12px; color: #fff; background: #3759c0; padding: 3px 5px;">IZINDI NKURU WASOMA</div>
+					<BOUCLE_related(ARTICLES){id_rubrique}{par date}{inverse}{0,3}>
+					<div style="padding: 5px 0px; margin: 2px 0px; min-height: 70px;  border-bottom: 3px solid #3c73ac;">
+						[<img src="(#LOGO_ARTICLE||image_reduire{0,55}||image_recadre{80,55,top center}|extraire_attribut{src})" width="80" height="55"  border="0" align="left"/>]
+						<a href="#URL_ARTICLE" style="color: #3769c0; font-family: sans-serif; font-weight: bold;">#TITRE</a>
+						<div class="clear"></div>
+					</div>
+					</BOUCLE_related>
+					<div style="font-size: 12px; color: #fff; background: #3759c0; padding: 3px 5px;">IBITEKEREZO BYATANZWE</div>
+					<BOUCLE_comments(FORUMS){id_article}{par date}{inverse}>
+					<div class="forum">
+						[(#TEXTE|textebrut)]<br /><span style="color: #666;">[(#DATE|affdate)]</span><br /><span style="color: #999;">Yatanzwe na #NOM</span>
+						
+					</div>
+					</BOUCLE_comments>
+					<div style="padding-bottom:20px;padding:5px;">
+<center>[(#ACCEPTER_FORUM|=={non}|oui) <font style='color:#ff0000;'>NTA BITEKEREZO BYEMEREWE KUJYA KURIYI NKURU...</font>]</center>
+<!-----------------------------------------------------------------------------------------------------------
+					WILLY EDIT FOR AJAXXXXXXXXXXXXXXXXXX
+------------------------------------------------------------------------------------------------------------>
+
+			<script type="text/javascript">										
+				function envoyer_commentaire(id_forum)
+				{
+
+				var empty_email=(document.getElementById("session_email_"+id_forum).value.length==0 || document.getElementById("session_email_"+id_forum).value==null);
+				var empty_message=(document.getElementById("texte_"+id_forum).value.length==0 || document.getElementById("texte_"+id_forum).value==null);
+				if(empty_message){
+					alert("Comment can not be empty");
+				}
+				else if(empty_email){
+					alert("Please provide your email address");
+				}
+				else{
+					var igitekerezo = document.getElementById("texte_"+id_forum).value;
+					var izina = document.getElementById("session_nom_"+id_forum).value;
+					var email = document.getElementById("session_email_"+id_forum).value;
+
+					var titre = document.getElementById("titre").value;
+					var id_article_obj=document.getElementsByName("id_article").item(0);
+					var id_article=id_article_obj.value;
+
+					var forum_id=0;
+					var page="itsform.php";
+					var url="nom="+izina+"&email="+email+"&commentaire="+igitekerezo+"&id_forum="+id_forum+"&titre="+titre+"&id_article="+id_article;
+					var xhr_object = null;
+					if(window.XMLHttpRequest) // Firefox
+						xhr_object = new XMLHttpRequest();
+					else
+					{
+						if(window.ActiveXObject) // Internet Explorer
+							xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+						else
+						{
+							alert("Browser does not support xmlHttpRequest");
+							return;
+						}
+					}
+					var method = "POST";
+					var filename = page;
+					var requete  = url;
+					xhr_object.onreadystatechange = function()
+					{
+						if(xhr_object.readyState == 1)
+						{
+							document.getElementById("comment_statut_"+id_forum).innerHTML="Your comment is being sent to the server please wait";
+						}								
+						if(xhr_object.readyState == 4) 
+						{
+							var reponse = xhr_object.responseText;
+							//specify the response content								
+							document.getElementById("comment_statut_"+id_forum).innerHTML= reponse;
+							document.getElementById("session_nom_"+id_forum).disabled="disabled";
+							document.getElementById("session_email_"+id_forum).disabled="disabled";
+							document.getElementById("texte_"+id_forum).disabled="disabled";
+							document.getElementById("ohereza_"+id_forum).disabled="disabled";
+						}
+					}
+					xhr_object.open(method, filename, true);
+					xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+					xhr_object.send(requete);	 
+				}				
+			}			
+		</script>
+<!-----------------------------------------------------------------------------------------------------------
+				END WILLY EDIT FOR AJAXXXXXXXXXXXXXXXXXX
+--------------------------------------------------------------------------------------------------------- -->
+
+
+<center><INCLURE{fond=gh_commentsform}{env}{ajax} /></center>
+</div>
+			</div>
+			<div align="center" style="margin: 10px;"><img src="http://igihe.bi/IMG/gif/2-2.gif" style="width: 100%;" /></div>
+			
+			
+		</div>
+		<div id="footer">
+			<div class="f1" align="center"><a href="m.igiheshowbiz.com" style="font-size: 12px; font-weight: bold; color: #fff;">Ahabanza</a></div>
+			<div class="f2" align="center" style="font-size: 12px; font-weight: normal; color: #fff;">Copyright &copy; 2013 - IGIHEshowbiz<br />All Rights Reserved</div>
+			<div class="clear"></div>
+		</div>
+	</body>
+	
+</html>
+</BOUCLE_main>

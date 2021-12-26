@@ -1,0 +1,83 @@
+@font-face
+{
+font-family: Miss Fonts;
+src: url('../fonts/Miss Fonts.ttf'),
+     url('../fonts/Miss Fonts.eot'); /* IE9 */
+}
+@font-face
+{
+font-family: Levenim MT;
+src: url('../fonts/levenim MTs.ttf'),
+     url('../fonts/levenim MTs.eot'); /* IE9 */
+}
+@font-face
+{
+font-family: Eight One;
+src: url('../fonts/Eight One.ttf'),
+     url('../fonts/Eight One MT.eot'); /* IE9 */
+}
+
+body {
+	background: url(../images/bg.jpg) repeat-x, #fff6c3;
+}
+
+#miss{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#page{
+	width: 990px;
+	background: url(../images/content.png) repeat, #000;
+	border-radius: 15px;
+}
+#header{ background: url(../images/header.png) center no-repeat; height: 157px;}
+#content{ background: url(../images/content.png) center repeat-y; height: auto;}
+#slide{}
+#allmiss{ height: 200px; background: url(../images/allmiss.png) top center no-repeat;}
+#allcontent{ width: 980px; background: none;}
+#content1{ width: 175px; display: inline-block; text-align: left;  background: url(../images/bg4.jpg) no-repeat top left, #0e0e0e; border-radius: 0px; padding: 15px; padding-top: 0px; margin-bottom: 2px; vertical-align: top; padding-left: 0px;}
+#content1 p{; color: #555555; font-family: "Levenim MT";}
+#divi{ border: none; width: 180px; height: 179px; border-radius: 10px; margin-bottom: 10px; padding: 5px;}
+#diva{ border: none; width: 180px; height: 179px; border-radius: 10px; margin-bottom: 10px; padding: 5px;}
+span{ display: list-item; list-style: none; margin-top: 0px; font-family: "Levenim MT"; font-size: 14px; font-weight: bold;}
+.name{ display: list-item; list-style: none; margin-top: -2px; margin-bottom: 10px;  color: #acacaa;}
+.other{ display: list-item; list-style: none; margin-top: 0px; font-family: "Levenim MT"; font-size: 16px; font-weight: bold; color: #d2e08a; text-align: center}
+#content1_content{ margin-left: -12px; margin-bottom: 0px;background: url(../images/bg4.jpg) no-repeat top left, #0e0e0e; width: 190px; padding-left: 10px;}
+
+
+.miss_articles{}
+.p_titre{ background: black; font-family: "Levenim MT"; font-size: 20px; font-weight: bold; color: #d2e08a;}
+#content2{ width: 510px; display: inline-block; vertical-align: top; margin-left: 5px; background: #0e0e0e}
+#content2 #c2div{ margin-top: 0px; background:url(../images/bg3.jpg) no-repeat top left; color: #fff; font-family: "Levenim MT"; font-size: 17px; font-weight: bold; width: 510px;}
+
+#content2 div #thediv{ color: #fff; font-family: "Levenim MT"; font-size: 17px; width: 500px; background: none; padding-bottom: 2px; margin-bottom: 18px; border: none; border-bottom: 1px dashed #555555; margin-top: 7px;}
+#content2 div div div{ margin-bottom: 0px; border: none; border-bottom: none;}
+#content2 #c_date{ display: inline-block; width: 75px; vertical-align: top; color: #666666; font-size: 12px;}
+#content2 #c_logo{ display: inline-block; width: 100px; height: auto; vertical-align: top; margin-left: 5px; margin-right: 5px; border: 1px solid #1c1c1c; margin-top: -2px;}
+#content2 #c_logo img{ padding: 4px;}
+#content2 #c_texte{ display: inline-block; width: 300px; vertical-align: top; margin-left: -8px; margin-bottom: 5px;}
+#content2 #c_texte span{ display: list-item; list-style: none; text-align: left;}
+.c_texte{ color: #666666; font-family: "Levenim MT"; font-weight: normal; font-size: 14px; line-height: 18px; text-align: left; padding-top: 5px;}
+.c_titre{ background: #debf6d; padding: 2px; padding-left: 5px; font-family: "Eight One"; font-size: 20px; font-weight: normal; color: #000;}
+#content2 #cp_logo{ display: inline-block; width: 83px; height: 71px; vertical-align: top; margin-left: 5px; margin-right: 5px; border: 1px solid #1c1c1c; margin-top: 2px;}
+#content2 #cp_logo img{ padding: 2px; width: 80px; height: 66px;}
+#c2_right{border: none; border-bottom: 1px dashed #555555; height: 95px; background: none; margin-bottom: 5px; width: 250px; display: inline-block; vertical-align: top}
+#c2_logo{ display: inline-block; width: 40px; height: 101px; vertical-align: top; margin-left: 5px; margin-right: 5px;}
+#c2_texte{ display: inline-block; width: 180px; vertical-align: top; margin-left: 5px; text-align: left; color: #666666; font-size: 14px}
+
+
+
+#content3{ width: 240px; display: inline-block; vertical-align: top; background: #0e0e0e; margin-left: 5px;}
+#content3_content{ margin-bottom: 5px;}
+#content3 div{ background: url(../images/bg4.jpg) no-repeat top left; color: #555555; font-family: "Levenim MT";}
+#content3 div div{ color: #fff; font-size: 14px; width: 240px; background: none;}
+#content3 div div span{ display: list-item; list-style: none;}
+#c3_right{border: none; border-bottom: 1px dashed #555555; height: 95px; background: #33CCFF; margin-bottom: 5px;}
+#content3 #c3_logo{ display: inline-block; width: 40px; height: 101px; vertical-align: top; margin-left: 5px; margin-right: 5px;}
+#content3 #c3_texte{ display: inline-block; width: 180px; vertical-align: top; margin-left: 5px; text-align: left; color: #666666;}
+
+#banner{ padding-bottom: 10px;}
+#footer{ background:url(../images/footer.png) center no-repeat; height: 70px;}

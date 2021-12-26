@@ -1,0 +1,47 @@
+<a href="#" style="display: block;"><img src="drpdwn/umuv.jpg" style="width: 100%;" /></a>
+			<div style="text-align: left; background: url(drpdwn/bgumuv.jpg) no-repeat bottom, #fffcfd; padding-bottom: 15px;">
+				<BOUCLE_tor1(ARTICLES){par date}{inverse}{0,1}{titre_mot=home_highlight_umushyikirano}>
+				<div style="padding-bottom: 0;  position: relative; height: 230px;">
+					[<img src="(#LOGO_ARTICLE||image_reduire{0,230}|image_recadre{341,230,'top left','#e0e0e0'}|extraire_attribut{src})" />]
+					
+					<div style="position: absolute; bottom: 0px; width: 331px; padding: 5px; left: 0px; font-size: 12px; font-family: Arial,sans-serif; background: rgba(12,8,22,.7)">
+					<div><a href="#URL_ARTICLE" style="color: #fff; font-size: 15px; font-weight: bold; ">#TITRE</a></div>
+					<div style=" color: #fff; font-style: italic;">
+					<B_gh_pasttime1>
+						<BOUCLE_gh_pasttime1(ARTICLES){id_article}{age<2040}><span>[(#DATE|date_relative)]</span></BOUCLE_gh_pasttime1>
+					</B_gh_pasttime1>
+						<span>[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] <span>
+					<//B_gh_pasttime1>
+					</div>
+					</div>
+				</div> 
+				</BOUCLE_tor1>
+				<div style="overflow-y: scroll; height:270px;">
+				<BOUCLE_tor(ARTICLES){par date}{inverse}{0,10}{titre_mot=home_lnews_umushyikirano}>
+				<div style="padding: 5px; padding-bottom: 0;  position: relative;">
+			[<img src="(#LOGO_ARTICLE||image_reduire{0,90}|image_recadre{120,80,'top left','#e0e0e0'}|extraire_attribut{src})" align="left" style="padding-right: 10px;" />]
+					<div><a href="#URL_ARTICLE" style="color: #000; font-size: 12px; font-family: Arial,sans-serif; ">#TITRE</a></div>
+					<div style="clear: both;"></div>
+					<div style="position: absolute; bottom: 2px; right: 2px; color: #2888ef; font-size: 12px; font-family: Arial,sans-serif;">
+					<B_gh_pasttime>
+						<BOUCLE_gh_pasttime(ARTICLES){id_article}{age<2040}><span>[(#DATE|date_relative)]</span></BOUCLE_gh_pasttime>
+					</B_gh_pasttime>
+						<span>[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] <span>
+					<//B_gh_pasttime>
+					</div>
+				</div>
+				</BOUCLE_tor>  
+				</div>
+				<div style="background: #000;">
+					<div style="padding: 5px; background: #222; color: #fff; font-size: 13px; font-family: Arial,sans-serif; text-align: center">Videos z'Umushyikirano</div>
+					
+					<BOUCLE_tors(ARTICLES){par date}{inverse}{0,4}{titre_mot=home_vidz_umushyikirano}>
+				<div style="padding: 5px; padding-bottom: 0;  position: relative; width: 160px; padding: 5px; float: left;">
+					[<img src="http://img.youtube.com/vi/#SOUSTITRE/3.jpg)" align="left" style="width: 160px; height: 100px;" />]
+					
+				</div>
+				</BOUCLE_tors>
+				<div style="clear: both;"></div>
+				</div>
+				
+			</div>

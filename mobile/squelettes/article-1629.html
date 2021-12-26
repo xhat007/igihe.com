@@ -1,0 +1,307 @@
+<BOUCLE_main(ARTICLES){id_article}{doublons zizi}>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" /> 
+		<base href="https://igihe.com/">
+		<meta name="author" content="www.igihe.org" /> 
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+ 
+	<title>[(#TITRE|textebrut)] | [(#NOM_SITE_SPIP|textebrut)]</title>
+	[<meta name="description" content="(#DESCRIPTIF_SITE_SPIP|couper{250}|attribut_html)" />]
+
+		
+		<link rel="shortcut icon" href="https://mobile.igihe.com/squelettes/images/icon.png" />
+		<!-- <link rel="stylesheet" href="https://mobile.igihe.com/squelettes/css/jquery.mobile.1.5.css" /> -->
+		<link href="https://mobile.igihe.com/squelettes/css/responsive.css" rel="stylesheet">
+		<link href="https://mobile.igihe.com/squelettes/css/bootstrap.min.css" rel="stylesheet">  
+		
+		<link rel="stylesheet" type="text/css" href="https://mobile.igihe.com/squelettes/css/demo.css?t=9">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300|Roboto|Ubuntu&subset=latin-ext" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="https://mobile.igihe.com/squelettes/css/font-awesome.min.css">
+
+		<script type="text/javascript" src="https://mobile.igihe.com/squelettes/js/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+		$(document).on("mobileinit", function(){
+			$.mobile.ajaxEnabled=false;
+			$.mobile.loadingMessage = false;
+		});             
+		</script>
+		<!-- <script src="https://mobile.igihe.com/squelettes/js/jquery.mobile.1.5.js"></script> -->
+
+		<link rel="stylesheet" type="text/css" href="https://mobile.igihe.com/squelettes/css/jquery.mmenu.all.css">
+		<script type="text/javascript" src="https://mobile.igihe.com/squelettes/js/jquery.mmenu.all.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="https://mobile.igihe.com/squelettes/dist/jquery.mhead.css?t=9">
+		<script type="text/javascript" src="https://mobile.igihe.com/squelettes/dist/jquery.mhead.js"></script> 
+		<link rel="stylesheet" type="text/css" href="https://mobile.igihe.com/squelettes/css/mobistyle.css?t=64">
+
+		<script type="text/javascript">
+			$(function() {
+
+				//	create a menu
+				$('#menu').mmenu();
+
+				//	fire the plugin
+				$('.mh-head').mhead({
+					
+				});
+
+				//	for demo only
+				$('a[href^="#/"]').click(function() {
+					alert( 'Thank you for clicking, but that\'s a demo link.' );
+					return;
+				})
+			});
+		</script> 
+	</head>
+	<body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10838297-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"B/FNo1IWx810S+", domain:"igihe.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=B/FNo1IWx810S+" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->  
+
+		<div id="page" class="container-fluid">
+
+			<div class="mh-head mh-align-left Sticky">
+				<span class="mh-btns-left">
+					<a class="fa fa-bars" href="#menu"></a>
+				</span>
+				<span class="mh-text">
+				<BOUCLE_GH_LOGOV5(ARTICLES){titre_mot=logo_actuel_mobile}{0,1}{!par date}>
+					[<a href="./"><img  src="https://www.igihe.com/(#LOGO_ARTICLE|extraire_attribut{src})" alt="IGIHE" /></a>]
+				</BOUCLE_GH_LOGOV5>
+				</span> 
+				<span class="mh-btns-right2">  
+					<a class="" href="https://mobile.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/lkn.png"></a>
+					<a class="" href="http://fr.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/lfr.png"></a>
+					<a class="" href="http://en.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/len.png"></a>
+					<!-- <a class="" href="http://m.igihe.bi"><img src="https://mobile.igihe.com/squelettes/images/lki.png"></a> -->
+				</span>
+			</div>
+			
+			<div class="content">
+				<div class="row noLRMar"> 
+					<div class="col-xs-12">
+						<div class="topnews">  
+							<B_ad_mob_top_leaderboard>
+								<BOUCLE_ad_mob_top_leaderboard(ARTICLES){titre_mot=mob_top_leaderboard}{par date}{inverse}{0,1}>
+									<BOUCLE_docs_mob_top_leaderboard(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										<div style="padding: 2px 0;"><center>[<a href="#URL_ARTICLE"><img src="https://igihe.com/(#URL_DOCUMENT|timestamp)1957" class="img-responsive"></a>]</center></div>
+									</BOUCLE_docs_mob_top_leaderboard>
+								</BOUCLE_ad_mob_top_leaderboard>
+							</B_ad_mob_top_leaderboard>
+								
+							<//B_ad_mob_top_leaderboard>
+							
+							<!-- [<img src="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,}|extraire_attribut{src})" class="img-responsive">]   -->
+						</div>
+					</div> 
+				</div>
+			</div>
+			
+			<div class="inkuru-section gh-body">
+				<h1>#TITRE</h1>
+				<div class="text-center">
+					<!-- Go to www.addthis.com/dashboard to customize your tools -->  
+					<div class="addthis_inline_share_toolbox"></div> 
+				</div>
+				<div class="nyamukuru">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="topnews-statistic-4"> 
+								<span class=""><span class="comment-2"><B_combien>
+										  <BOUCLE_combien(FORUMS) {id_article} {plat}>
+										  #TOTAL_BOUCLE
+										  </BOUCLE_combien>
+										  </B_combien>
+										  0				
+										  <//B_combien></span></span> 
+								<span class="inkuru-tipo"> <i class="fa fa-clock-o"></i> [(#DATE|jour)]-[(#DATE|mois)]-[(#DATE|annee)] - saa [(#DATE|heures)][:(#DATE|minutes)], <i class="fa fa-user"></i> <i class="author-name">[(#LESAUTEURS|textebrut|sinon{'IGIHE'})]</i></span>  
+							</div>
+							<div class="inkuru-title-2">
+								[(#TEXTE|image_reduire{1000,*})]
+								<BOUCLE_INDOCPDF (DOCUMENTS){id_article}{extension IN (pdf)}{0,1}>
+									<iframe src="http://docs.google.com/gview?url=https://igihe.com/IMG/pdf/[(#FICHIER|basename)]&embedded=true" style="width:100%; height:600px;" frameborder="0"></iframe>
+
+
+								</BOUCLE_INDOCPDF>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			 
+			
+			<div class="pub-section">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pub-title">Kwamamaza</div>
+						<div class="pub-ads"> 
+							<B_ad_bottom_mobile>
+								<BOUCLE_ad_bottom_mobile(ARTICLES){titre_mot=mobile_internal_1}{par date}{inverse}{0,1}>
+									<BOUCLE_docs_bottom_mobile(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										<center>[<a href="#URL_ARTICLE"><img src="https://igihe.com/(#URL_DOCUMENT|timestamp)" class="img-responsive"></a>]</center>
+									</BOUCLE_docs_bottom_mobile>
+								</BOUCLE_ad_bottom_mobile>
+							</B_ad_bottom_mobile>
+								<a href="#"><img src="https://mobile.igihe.com/squelettes/images/ads.jpg" class="img-responsive"></a>
+							<//B_ad_bottom_mobile>	
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="pub-section">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pub-title">Kwamamaza</div>
+						<div class="pub-ads"> 
+							<B_ad_bottom_mobile2>
+								<BOUCLE_ad_bottom_mobile2(ARTICLES){titre_mot=mobile_internal_2}{par date}{inverse}{0,1}>
+									<BOUCLE_docs_bottom_mobile2(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										<center>[<a href="#URL_ARTICLE"><img src="https://igihe.com/(#URL_DOCUMENT|timestamp)" class="img-responsive"></a>]</center>
+									</BOUCLE_docs_bottom_mobile2>
+								</BOUCLE_ad_bottom_mobile2>
+							</B_ad_bottom_mobile2>
+								<a href="#"><img src="https://mobile.igihe.com/squelettes/images/ads.jpg" class="img-responsive"></a>
+							<//B_ad_bottom_mobile2>	
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="inkuru-section">
+				<h1>Izindi nkuru wasoma</h1>
+				<BOUCLE_gh_irambuye(ARTICLES){0,4}{id_rubrique}{!par date}{doublons zizi}>
+				<div class="nyamukuru">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="inkuru-title"><a href="#URL_ARTICLE">#TITRE</a></div>
+							<div class="topnews-statistic-4">
+								<span class=""><i class="fa fa-eye"></i> #VISITES </span>
+								<span class=""><span class="comment-2"><B_combien4><BOUCLE_combien4(FORUMS) {id_article} {plat}>
+										  #TOTAL_BOUCLE
+										  </BOUCLE_combien4>
+										  </B_combien4>
+										  0				
+										  <//B_combien4></span></span>
+								<span class=""><i class="fa fa-clock-o"></i> [(#DATE|jour)]-[(#DATE|mois)]-[(#DATE|annee)]</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				</BOUCLE_gh_irambuye> 
+			</div>
+			 
+			<div class="pub-section">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pub-title">Kwamamaza</div>
+						<div class="pub-ads"> 
+							<B_ad_bottom_mobile3>
+								<BOUCLE_ad_bottom_mobile3(ARTICLES){titre_mot=mobile_internal_3}{par date}{inverse}{0,1}>
+									<BOUCLE_docs_bottom_mobile3(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										<center>[<a href="#URL_ARTICLE"><img src="https://igihe.com/(#URL_DOCUMENT|timestamp)" class="img-responsive"></a>]</center>
+									</BOUCLE_docs_bottom_mobile3>
+								</BOUCLE_ad_bottom_mobile3>
+							</B_ad_bottom_mobile3>
+								<center><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+								<!-- internal_mobile --> 
+								<ins class="adsbygoogle"
+									 style="display:inline-block;width:320px;height:100px"
+									 data-ad-client="ca-pub-8346045821770316"
+									 data-ad-slot="5982740184"></ins>   
+								<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});  
+								</script></center>
+							<//B_ad_bottom_mobile3>	
+						</div>
+					</div>
+				</div>
+			</div>
+			  
+			<div class="pub-section">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pub-title">Kwamamaza</div>
+						<div class="pub-ads"> 
+							<B_ad_bottom_mobile4>
+								<BOUCLE_ad_bottom_mobile4(ARTICLES){titre_mot=mobile_internal_4}{par date}{inverse}{0,1}>
+									<BOUCLE_docs_bottom_mobile4(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										<center>[<a href="#URL_ARTICLE"><img src="https://www.igihe.com/(#URL_DOCUMENT|timestamp)" class="img-responsive"></a>]</center>
+									</BOUCLE_docs_bottom_mobile4>
+								</BOUCLE_ad_bottom_mobile4>
+							</B_ad_bottom_mobile4>
+								<a href="#"><img src="https://mobile.igihe.com/squelettes/images/ads.jpg" class="img-responsive"></a>
+							<//B_ad_bottom_mobile4>	
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<INCLURE{fond=v5_footer}{env}{ajax}/>
+			 
+			
+			<nav id="menu">
+				<ul>
+					<li><span>Indimi</span>
+						<ul>
+							<li><a href="https://mobile.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/lkn.png"> Kinyarwanda</a></li>
+							<!-- <li><a href="http://m.igihe.bi/"><img src="https://mobile.igihe.com/squelettes/images/lki.png"> Kirundi</a></li> -->
+							<li><a href="http://fr.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/lfr.png"> Français</a></li>
+							<li><a href="http://en.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/len.png"> English</a></li>
+						</ul>
+					</li>
+					<li><a href="https://mobile.igihe.com/">Ahabanza</a></li>
+					<BOUCLE_gh_ibirimoside(RUBRIQUES){id_parent=0}{0,20}{titre_mot=IbirimoSide}>
+                     <li>
+                        <a href="https://mobile.igihe.com/#URL_RUBRIQUE">#TITRE</a>
+                     </li>
+                     </BOUCLE_gh_ibirimoside> 
+					 
+					<!-- <li><span>About us</span>
+						<ul>
+							<li><a href="#/about/history">History</a></li>
+							<li><span>The team</span>
+								<ul>
+									<li><a href="#/about/team/management">Management</a></li>
+									<li><a href="#/about/team/sales">Sales</a></li>
+									<li><a href="#/about/team/development">Development</a></li>
+								</ul>
+							</li>
+							<li><a href="#/about/address">Our address</a></li>
+						</ul>
+					</li>
+					<li><a href="#/contact">Contact</a></li> -->
+				</ul>
+			</nav>
+		</div>
+		<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-587b16b7bbda5902"></script>
+		<script type="text/javascript">
+		// Call this function once the rest of the document is loaded
+		function loadAddThis() {
+			addthis.init()
+		}
+		loadAddThis();
+		</script>
+	</body>
+</html>
+</BOUCLE_main>

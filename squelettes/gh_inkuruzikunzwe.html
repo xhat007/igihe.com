@@ -1,0 +1,37 @@
+<div class="grid_7" id="box">
+	<a href="#" class="box_title">Inkuru Zikunzwe cyane</a>
+	<div style="padding:5px;">
+		<div class="tabs">
+			<ul>
+				<li><a href="#" onmouseover="easytabs('3', '1');" onfocus="easytabs('3', '1');" onclick="return false;" title="" id="popularlink1">&nbsp;&nbsp;Zasomwe&nbsp;&nbsp;</a></li>
+				<li><a href="#" onmouseover="easytabs('3', '2');" onfocus="easytabs('3', '2');" onclick="return false;" title="" id="popularlink2">&nbsp;&nbsp;Zavuzweho&nbsp;&nbsp;</a></li>
+			</ul>
+		</div>
+		<div id="popularcontent1">
+			<BOUCLE_gh_pophits(ARTICLES){tout}{id_rubrique !IN 1,2,3,4,79,91,106}{branche}{0,5}{par visites}{inverse}{titre !IN intro, Biography}{age<5}>
+				<div class="gh_inkuru">
+					<div class="gh_inkuru_top">#COMPTEUR_BOUCLE</div>
+					<div class="gh_inkuru_text">
+						<a href="http://www.igihe.com/#URL_ARTICLE" class="gh_inkuru_hometitle" [(#VISITES|=={0}|?{'', title="Yasuwe Inshuro: [(#VISITES|mult{9})]"})]>
+							[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{45,0}||image_recadre{45,35,top center}|extraire_attribut{src})" alt="[(#TITRE)]" style="float:left;clear:both;margin-right:3px;" border="0"/>]
+							#TITRE
+						</a>
+					</div>
+				</div>
+			</BOUCLE_gh_pophits>
+		</div>
+		<div id="popularcontent2">
+			<BOUCLE_gh_popcomments(ARTICLES){tout}{id_rubrique !IN 1,2,3,4,79,91,106}{branche}{0,5}{titre !IN intro, Biography}{age<5}>
+				<div class="gh_inkuru" >
+					<div class="gh_inkuru_top">#COMPTEUR_BOUCLE</div>
+					<div class="gh_inkuru_text">
+						<a href="http://www.igihe.com/#URL_ARTICLE" class="gh_inkuru_hometitle" title="Yavuzweho Inshuro: #COMPTEUR_FORUM">
+							[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{45,0}||image_recadre{45,35,top center}|extraire_attribut{src})" alt="[(#TITRE)]" style="float:left;clear:both;margin-right:3px;" border="0"/>]
+							#TITRE
+						</a>
+					</div>
+				</div>
+			</BOUCLE_gh_popcomments>
+		</div>
+	</div>
+</div>

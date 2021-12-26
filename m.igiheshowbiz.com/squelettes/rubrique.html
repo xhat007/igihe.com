@@ -1,0 +1,57 @@
+<BOUCLE_main(RUBRIQUES){id_rubrique}>
+<html>
+	<head>
+		<link rel="stylesheet" type="css/text" href="css/style.css" />
+	</head>
+	<body>
+		<a href="http://m.igiheshowbiz.com">
+		<div id="header" style="border-bottom: 3px solid #80b1e5;">
+			<img src="images/logo.png" />
+		</div>
+		<div id="content">
+			<div id="content_menu" align="center" style="width: 100%; padding-top: 10px;">
+			<form name="guideform">
+				<select name="guidelinks" style="width: 96%;" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+					<BOUCLE_ghselect(RUBRIQUES){id_rubrique}{doublons xx}>
+						<option value="#URL_RUBRIQUE" style="font-size: 1.0em; font-family: sans-serif;" selected>#TITRE</option>
+						<option value="http://m.igiheshowbiz.com" style="font-size: 1.0em; font-family: sans-serif;">Ahabanza</option>
+					</BOUCLE_ghselect>
+					<BOUCLE_gh_ibirimoside(RUBRIQUES){id_rubrique=13}>
+					<BOUCLE_gh(RUBRIQUES){id_parent}{0,7}{doublons xx}>
+						<option value="#URL_RUBRIQUE" style="font-size: 1.0em; font-family: sans-serif;">#TITRE</option>
+					</BOUCLE_gh>
+					</BOUCLE_gh_ibirimoside>
+				</select>
+			</form>
+			</div>
+			<div id="content_search" style="width: 100%; padding-left: 10px; padding-right: 10px;">
+				<input type="text" class="search" />
+				<input type="submit" class="searchbutton" />
+			</div>
+			<div class="clear"></div>
+			<div class="cat">
+				<div align="center" style="margin-bottom: 10px;">[<img src="http://igihe.com/IMG/(#LOGO_RUBRIQUE|fichier)" />]</div>
+				<B_artrnb>
+				<BOUCLE_artrnb(ARTICLES){id_rubrique}{par date}{inverse}{tout}{pagination 6}>
+					<div style="padding: 5px 0px; margin: 2px 0px; min-height: 70px;  border-bottom: 3px solid #3c73ac;">
+						[<img src="(#LOGO_ARTICLE||image_reduire{0,55}||image_recadre{80,55,top center}|extraire_attribut{src})" width="80" height="55"  border="0" align="left"/>]
+						<a href="#URL_ARTICLE" style="color: #000; font-family: sans-serif; font-weight: bold;">#TITRE</a>
+						<div class="clear"></div>
+					</div>
+				</BOUCLE_artrnb>
+				<div style="padding: 10px; padding-left: 0px;">Page &raquo; [(#PAGINATION|page)] </div>
+				</B_artrnb>
+			</div>
+			<div align="center" style="margin: 10px;"><img src="http://igihe.bi/IMG/gif/2-2.gif" style="width: 100%;" /></div>
+			
+			
+		</div>
+		<div id="footer">
+			<div class="f1" align="center"><a href="m.igiheshowbiz.com" style="font-size: 12px; font-weight: bold; color: #fff;">Ahabanza</a></div>
+			<div class="f2" align="center" style="font-size: 12px; font-weight: normal; color: #fff;">Copyright &copy; 2013 - IGIHEshowbiz<br />All Rights Reserved</div>
+			<div class="clear"></div>
+		</div>
+	</body>
+	
+</html>
+</BOUCLE_main>

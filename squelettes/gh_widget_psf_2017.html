@@ -1,0 +1,48 @@
+<div class="title-section2"><img src="squelettes/igihe_imgs/psf2017header.png" height="65px" class="img-responsive" /></div>
+<div class="irambuye-news psf-widget">
+	<div class="row">
+		<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12  nopaddingright0"> 
+			<div class="row">
+			<BOUCLE_AMATORA(ARTICLES){titre_mot=expo_2017}{0,1}{!par date}{doublons expo2017}>
+				<div class="col col-lg-12">
+					<div class="psf2017_first">
+						<div class="psf2017_first_img"><img src="[(#LOGO_ARTICLE|image_reduire{330,175}|image_recadre{325,165,center,#f5dbb8}extraire_attribut{src})]" class="img-responsive" /></div>
+						<div class="psf-f-bottom2">
+							<a href="#URL_ARTICLE">#TITRE</a>
+						</div>  
+					</div> 
+				</div> 
+				</BOUCLE_AMATORA>
+				 <BOUCLE_AMATORA2(ARTICLES){titre_mot=expo_2017}{0,2}{!par date}{doublons expo2017}>
+				<div class="col col-lg-12">
+					<div class="">
+						<div class="psf2017">
+						<div class="psf-f-bottom">
+							<a href="#URL_ARTICLE">#TITRE</a>
+						</div> 
+						</div> 
+					</div> 
+				</div> 
+				</BOUCLE_AMATORA2>
+				 
+			</div>
+			  
+		</div> 
+		<div class="col col-lg-6 "> 
+			<div class="ir-full-psf">
+				<div class="row">
+					<BOUCLE_AMATORA3(ARTICLES){titre_mot=expo_2017}{0,10}{!par date}{doublons expo2017}>
+						<div class="col col-lg-12">
+							<div class="f-title3"> 
+								<a href="#URL_ARTICLE">#TITRE</a>
+							</div>
+							<div class="line_x"><!-- <img src="v5images/line.png" width="90%"> --></div>
+						</div>
+					</BOUCLE_AMATORA3> 
+				
+				</div>
+			</div> 
+			 
+		</div> 
+	</div> 
+</div>   

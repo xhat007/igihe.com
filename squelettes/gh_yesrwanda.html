@@ -1,0 +1,27 @@
+<div class="grid_7 yesrwanda" id="box">
+<img src="drpdwn/bgyes.jpg" />
+<B_gh_advertorial>
+
+<BOUCLE_gh_advertorial(ARTICLES){tout}{0,3}{par date}{inverse}{id_rubrique=1720}{titre_mot="HomeYesrwanda"}>
+
+<div class="gh_amakuru_home" onClick="parent.location='http://www.igihe.com/#URL_ARTICLE'" style="min-height: 90px;">
+
+[<img src="(#LOGO_ARTICLE||image_reduire{100,0}||image_recadre{90,80,top center}|extraire_attribut{src})" alt="[(#TITRE)]" width="90" height="80" align="left" class="gh_news_image"  />]
+
+<div style="padding-bottom:5px;">
+	<a href="http://www.igihe.com/#URL_ARTICLE" class="gh_news_hometitle">
+		<BOUCLE_gh_adv_exclusif(ARTICLES){id_article}{titre_mot=Exclusif}{0,1}{age<1}>
+		<div class="gh_article_adv_dtimeago">EXCLUSIF :</div>
+		</BOUCLE_gh_adv_exclusif>
+		#TITRE
+	</a>
+	<a href="http://www.igihe.com/#URL_ARTICLE" class="gh_news_hometitle">#SOUSTITRE</a>
+</div>
+
+</div>
+</BOUCLE_gh_advertorial>
+
+</B_gh_advertorial>
+<//B_gh_advertorial>
+<img src="drpdwn/bgyesfoot.jpg" />
+</div>

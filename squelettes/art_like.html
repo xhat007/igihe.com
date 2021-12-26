@@ -1,0 +1,25 @@
+<?php
+session_start();
+$arnbr = '#ID_ARTICLE'; 
+
+## LIKES COUNTER INITIALISATION ##
+
+$like_counter = "squelettes/v5inclure/ctr/like_". $arnbr .".txt";
+if (!file_exists($like_counter)) {
+  $f = fopen($like_counter, "w");
+  fwrite($f,"0");
+  fclose($f);
+} 
+$f = fopen($like_counter,"r");
+$likeVal = fread($f, filesize($like_counter));
+fclose($f);
+
+## // LIKES COUNTER INITIALISATION ##
+
+
+echo $likeVal;
+//echo "You are visitor number ". $counterVal ." to this site";
+//[(#SET{visitts,11})] [(#GET{visitts})]
+?> 
+<!-- [(#SET{visitts,[(15)]})]
+[(#SESSION_SET{valvisits,#GET{visitts})] -->

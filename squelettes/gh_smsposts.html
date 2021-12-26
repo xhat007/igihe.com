@@ -1,0 +1,62 @@
+<script type="text/javascript">
+$(function() {
+	$(".newsticker-jcarousellite").jCarouselLite({
+		vertical: true,
+		hoverPause:true,
+		visible: 7,
+		auto:2000,
+		speed:1500
+	});
+});
+</script>
+<div class="grid_7" style="margin-top:3px; padding-bottom: 10px; text-align:left;background-color:#ffffff;" align="center">
+<div id="article_hotel_near" style="margin-left: 5px; padding-top: 10px; padding-bottom: 10px;">
+<a href="spip.php?rubrique1450"><div class="smsslidetitle"><b>IGIHE Lastest SMS posted</b></div></a>
+<div id="newsticker-demo">    
+    <div class="newsticker-jcarousellite" style="height: 400px!important;">
+    <BOUCLE_rubrique_igihesms(RUBRIQUES){id_rubrique=1450}>
+	<ul>
+	<BOUCLE_smspost(ARTICLES){branche}{par date}{inverse}>
+            <li>
+                <div class="article_hotel_near">		  		
+                  <div class="article_hotel_near_logo">
+                  	<BOUCLE_titrerubrique(RUBRIQUES){id_rubrique}>
+                  		[<img src="IMG/(#LOGO_RUBRIQUE|fichier)" >]
+                  	</BOUCLE_titrerubrique>
+                  </div>
+                  <div class="article_hotel_near_texte">
+                    <span><a href="#">#TITRE</a></span>
+                    <span>Posted on [(#DATE|affdate)] </span>
+                    <span>via Blackberry. 
+                    <a href="#URL_ARTICLE" style="background-image:url(#CHEMIN{igihe_imgs/gh_icons_comments.gif});background-repeat:no-repeat;background-position:left top;"> <B_compteur_forums></B_compteur_forums><BOUCLE_compteur_forums(FORUMS){id_article}{tout}></BOUCLE_compteur_forums>[(#TOTAL_BOUCLE)]&nbsp;[(#TOTAL_BOUCLE|<={1}|?{Comment, Comments})]<//B_compteur_forums>&nbsp;</a>
+                    </span>                    </div>
+                </div>
+		<div class="clear"></div>
+	    </li>
+	 </BOUCLE_smspost>
+        </ul>
+       </BOUCLE_rubrique_igihesms>
+    </div>
+</div>
+</div>
+</div>
+<!-- Ads gh_ad2_middle300X250 -->
+	<div class="grid_7" style="margin-top:3px;text-align:center;background-color:#ffffff;">
+	<a href="#" class="gh_adsin">kwamamaza<br /></a>
+	<div style="text-align:center;padding:2px;padding-bottom:7px;">
+	<B_gh_ad2_middle>
+		<BOUCLE_gh_ad2_middle(ARTICLES){titre_mot=gh_ad2_middle300X250}{par date}{inverse}{0,1}>
+			<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+				<BOUCLE_gh_ad2_middle_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+					[<img src="(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+				</BOUCLE_gh_ad2_middle_img>
+			</a>						
+		</BOUCLE_gh_ad2_middle>
+	</B_gh_ad2_middle>				
+		<img src="http://igihe.com/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+	<//B_gh_ad2_middle>
+	
+
+	
+</div>
+</div>

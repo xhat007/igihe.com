@@ -1,0 +1,56 @@
+<style>
+.f-title5 a {
+    color: #111111;
+    font-family: ralewaymedium, 'trebuchet ms';
+    font-size: 14px;
+}
+.f-title5 a:hover {
+    color: #121212; 
+}
+
+.ir-full250{padding: 5px 0 0 5px;} 
+
+.w_miss2018{border-left: 2px solid #fa554f; height: 343px;}
+.item_miss_2018{background: #f4f4f4; margin-bottom: 5px;}    
+</style>
+
+<div class="title-section2"><a href="#URL_RUBRIQUE{1950}"><img src="squelettes/miss2018/images/miss_18_widget_top_bg2.jpg"class="img-responsive" /></a></div>
+<div class="irambuye-news"> 
+	<div class="row">
+		<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 nopaddingright0 "> 
+			<div class="flashnews2">
+				<BOUCLE_gh_widget(ARTICLES){id_article=103418}>
+					<div class="flashphoto">
+						<!-- <a href="#URL_RUBRIQUE"><img class="rectangle img-responsive" data-original="[(#LOGO_RUBRIQUE||image_reduire{325,*}||extraire_attribut{src})]" alt="."/> </a> -->
+						<a href="#URL_RUBRIQUE{1950}"><img class="rectangle img-responsive" src="[(#LOGO_ARTICLE||extraire_attribut{src})]" alt="."/> </a>
+					</div> 
+				</BOUCLE_gh_widget> 
+			</div>												  
+		</div> 
+		<div class="col col-lg-6 col-md-6 col-sm-6 nopaddingleft0"> 
+			<div class="ir-full250 w_miss2018">
+				<BOUCLE_gh_inkuru_irushanwa(ARTICLES){titre_mot=miss_rwanda_2018}{0,10}{!par date}{doublons rushw}>
+					<div class="item_miss_2018"> 
+					<div class="row"> 
+						<div class="col col-lg-4 nopaddingright0">
+							<B_videomiss>
+							<BOUCLE_videomiss (MOTS){id_article}{titre_mot=video}> 
+								<a href="#URL_ARTICLE" class="video"><span></span><img class="rectangle img-responsive" src="[(#LOGO_ARTICLE||image_reduire{320,*}||extraire_attribut{src})]" alt="."/> </a>
+							</BOUCLE_videomiss>
+							</B_videomiss>
+								<a href="#URL_ARTICLE"><img class="rectangle img-responsive" src="[(#LOGO_ARTICLE||image_reduire{320,*}||extraire_attribut{src})]" alt="."/> </a>
+							<//B_videomiss>
+							
+						</div>
+						<div class="col col-lg-8 nopaddingleft0"> 
+							<div class="f-title5"> 
+								<a href="#URL_ARTICLE">#TITRE</a>
+							</div>
+						</div>
+					</div>  
+					</div>  
+				</BOUCLE_gh_inkuru_irushanwa>  
+			</div>
+		</div> 
+	</div> 
+</div>   

@@ -1,0 +1,124 @@
+#CACHE{3600}
+<BOUCLE_art(ARTICLES) {id_article}>
+
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>[(#TITRE|textebrut) - ][(#NOM_SITE_SPIP|textebrut)] Mobile Version </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="maximum-scale=1.0,width=device-width,initial-scale=1.0,user-scalable=no" />
+
+<link rel='stylesheet' type='text/css' media='screen' href="[(#CHEMIN{'igihe_scripts/ghstyle_mobile.css'})]" />
+</head>
+
+
+<body id="gh_mob_body">
+
+
+<div id="gh_mob_header"><a href="[(#URL_PAGE{sommaire})]"><img src="[(#CHEMIN{'igihe_imgs/gh_mob_logo.png'})]" border="0"/></a></div>
+
+<div class="clear"></div>
+
+<form name="guideform">
+<div id="gh_mob_menuselect">
+<select class="gh_list" name="guidelinks" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+<option selected>IBIRIMO</option>
+<option value="[(#URL_PAGE{sommaire})]">Ahabanza</option>
+<BOUCLE_gh_ibirimoside(RUBRIQUES){id_parent=0}{0,20}{titre_mot=IbirimoSide}>
+<option value="#URL_RUBRIQUE">#TITRE</option>
+</BOUCLE_gh_ibirimoside>
+</select>
+</div>
+</form>
+
+	<div id="gh_mob_body">
+
+		<div class="gh_mob_body_ads">Kwamamaza<br /><a href="#"><img src="[(#CHEMIN{'igihe_imgs/bpr_simbuka.gif'})]" width="300" height="50" border="0" /></a></div>
+
+<div class="gh_mob_text">
+	<h3>#TITRE</h3>
+	<center>[<img src="(#LOGO_ARTICLE||image_reduire{200,0}|extraire_attribut{src})" border="0" style="display:block;"/><br />]</center>
+	<p>[(#TEXTE|image_reduire{320,0})]</p>
+	<font class="gh_articledetails"><br /><br />-------------------------------<br />Yanditswe kuya <font class="gh_inarticledetails">[(#DATE|jour)]-[(#DATE|mois)]-[(#DATE|annee)]</font> - saa <font class="gh_inarticledetails">[(#DATE|heures)][:(#DATE|minutes)]'</font> na <BOUCLE_gh_authorpg(AUTEURS){id_article}><a href="#" class="gh_tab_articledetails_author">[(#PS|textebrut|sinon{#NOM})]</a><br></BOUCLE_gh_authorpg></font>
+</div>
+
+
+<!-- ArticleComments -->
+<div class="gh_mob_section_title">IBITEKEREZO</div>
+<div  id="articlecomments" style="margin-top:5px;">
+	<div id="articlecommentsin" style="padding:10px;">
+
+<!-- IN-->
+<a name="comments"></a>
+<B_gh_comments_thread1pg>
+[(#ANCRE_PAGINATION)]
+<BOUCLE_gh_comments_thread1pg(FORUMS){id_article}{par date}{inverse}{0,50}{pagination 15}>
+<div style="display:block;position:relative;padding-bottom:2px;">
+<div class="gh_articlecomments_thread1"><font class="gh_articlecommentscontent" style="font-size:13px;">[(#TEXTE|textebrut)]</font></div>
+<div style="display:block;position:relative;width:95%;border:0px solid blue;top:-6px;margin-left:25px;margin:4px;padding:2px;padding-left:45px;background-image:url(http://igihewebsite.igihe.biz/squelettes/igihe_imgs/gh_commentsshow.gif);background-repeat:no-repeat;background-position:left top;"> <font class="gh_articlecommentsdetails">[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] saa [(#DATE|heures)][:(#DATE|minutes)]<br /></font><a href="#" class="gh_articlecommentsauthor">[(#NOM|sinon{######})]</a><br /></div>
+<BOUCLE_gh_comments_thread2pg(FORUMS){id_parent}{par date}{tout}>
+<div align="right" style="display:block;position:relative;margin-bottom:40px;">
+	<div class="gh_articlecomments_thread2"><font class="gh_articlecommentscontent" style="font-size:13px;">[(#TEXTE|textebrut)]</font></div>
+	<div style="display:block;position:relative;width:85%;float:right;top:-6px;padding:2px;padding-right:45px;margin:4px;margin-right:5px;margin-left:25px;background-image:url(http://igihewebsite.igihe.biz/squelettes/igihe_imgs/gh_commentsshowright.gif);background-repeat:no-repeat;background-position:right top;"><font class="gh_articlecommentsdetails">[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] saa [(#DATE|heures)][:(#DATE|minutes)]<br /></font><font class="gh_articlecommentsauthor">[(#NOM)]</font></div>
+</div>
+</BOUCLE_gh_comments_thread2pg>
+</div>
+</BOUCLE_gh_comments_thread1pg>
+[<div class="gh_pagination">(#PAGINATION{page})</div>]
+</B_gh_comments_thread1pg>
+<//B_gh_comments_thread1pg>
+<div style="padding-bottom:20px;padding:5px;">
+<center>[(#ACCEPTER_FORUM|=={non}|oui) <font style='color:#ff0000;'>IBITEKEREZO</font>]</center>
+
+<div class="gh_mob_section_title" style="background-color:#dfdfdf;">ANDIKA ICYO UTEKEREZA KURI IYI NKURU</div>
+<div style="display:block;width:95%;float:center;"><INCLURE{fond=gh_commentsform}{env}{ajax} /></div>
+</div>
+<!-- End IN-->
+
+
+	</div>
+</div>
+
+
+<div class="clear"></div>
+<!-- End ArticleComments -->
+
+	</div>
+
+
+
+<div id="gh_mob_footer">
+<div id="gh_mob_hejuru"><a href="#"><img src="[(#CHEMIN{'igihe_imgs/gh_mob_hejuru.png'})]" width="347" height="56" alt="Jya Hejuru" border="0"/></a></div>
+<div id="gh_mob_footerbox">
+
+<span id="footer_search">
+<center><form action="spip.php?page=recherche" method='get'><input name='page' value='recherche' type='hidden' ><input  type="text" name="recherche" value="&nbsp;Andika aha..." onfocus="if(this.value=='&nbsp;Andika aha...') this.value='';" class="gh_search" /><input type="submit" value="SHAKISHA" class="gh_search_out"/></form>
+</center></span>
+
+<!-- <div id="footer_menu">
+	<font class="gh_footerliner">
+		<a href="#" class="gh_footer">Ahabanza</a>&nbsp;|&nbsp;
+		<a href="#" class="gh_footer">Amakuru</a>&nbsp;|&nbsp;
+		<a href="#" class="gh_footer">Amashusho</a>&nbsp;|&nbsp;
+		<a href="#" class="gh_footer">Twandikire</a>
+	</font>
+</div> -->
+
+<div id="footer_mobi_version">
+	<font class="gh_footerliner2">
+		<a rel="start home" href="#URL_PAGE{sommaire}" class="gh_footer2">MOBILE SITE</a>&nbsp;-&nbsp;
+		<a href="[(#URL_SITE_SPIP)/?cmobile=web]" class="gh_footer2">DESKTOP SITE</a>
+	</font>
+</div>
+
+<div id="footer_copyright">
+Copyright &copy; 2009 -2012 - IGIHE Ltd - All Rights Reserved
+</div>
+
+</div>
+</div>
+
+
+</body>
+</html>
+</BOUCLE_art>

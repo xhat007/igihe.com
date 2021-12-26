@@ -1,0 +1,25 @@
+	<div class="grid_7" id="box">
+	<a href="#" class="box_title">Wari uziko!?</a>
+<table>
+<?php
+$i=0;
+?>
+<tr>
+<BOUCLE_gh_waruziko(ARTICLES){0,4}{doublons}{titre!=intro}{titre_mot=HomeWaruziko}{par date}{inverse}>
+<td style="width:50%;">
+<a href="http://www.igihe.com/#URL_ARTICLE" class="gh_waruz_title" >[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{150,0}||image_recadre{150,70,top center}|extraire_attribut{src})" alt="[(#TITRE)]" align="center" width="150" height="70" style="display:block;background-color:#eeeeee;margin:3px;"/>][(#TITRE)]</a>
+<?php
+if($i==1){
+echo '</td></tr>';
+echo '<tr>';
+$i=0;
+}
+else{
+echo '</td>';
+$i++;
+}
+?>
+</BOUCLE_gh_waruziko>
+</tr>
+</table>
+	</div>

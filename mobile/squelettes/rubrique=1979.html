@@ -1,0 +1,334 @@
+<BOUCLE_rubrique(RUBRIQUES){id_rubrique}>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta name="author" content="NKUSI Alain P/0788665638">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" type="text/css" href="https://www.igihe.com/squelettes/dusangirijambo/assets/bootstrap/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="https://www.igihe.com/squelettes/dusangirijambo/assets/stylesheet/stylesheet.css?t=79">
+  	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>#TITRE</title>
+	
+
+	<!-- below codes are for pop up video -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- end code for pop up video -->
+
+	<link rel="stylesheet" type="text/css" href="https://www.igihe.com/squelettes/dusangirijambo/assets/stylesheet/stylesheet.css?t=82">
+</head>
+<body>
+
+	<!-- logo and menus -->
+	<div class="lgo-mnu">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+					<div class="lgo-top">
+						<img src="https://www.igihe.com/squelettes/dusangirijambo/assets/images/logo-top.jpg" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"></div>
+				<div class="imgn-st">
+					<img src="https://www.igihe.com/squelettes/dusangirijambo/assets/images/shape2.png" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end logo and menus -->
+
+	<!-- news and video section -->
+	<div class="news-video">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-bg1">
+					<div class="pd-nzw">
+						<div class="hr-b4 ">
+							<h1>INKURU ZIHERUKA</h1>
+						</div>
+						<div class="row">
+							<ul class="nws-ul">
+							<BOUCLE_NEWS (ARTICLES) {titre_mot=dusangirijambo_article}{!par date}{0,4}{doublons dusangire}>
+								<li class="col-12">
+									<div class="row">
+										<div class="col-5">
+											<div class="img-newz">
+												[<a href="#URL_ARTICLE"><img src="(#LOGO_ARTICLE|image_reduire{*,600}|image_recadre{500,500}|extraire_attribut{src})" class="img-fluid"></a>]
+											</div>										
+										</div>
+										<div class="col-7">
+											<div class="tx-sts">
+												<a href="#URL_ARTICLE">
+													<p>#TITRE</p>
+												</a>
+												<span class="time-nws pull-right">[(#DATE*|affdate{'M d, Y'})]</span>
+											</div>
+										</div>
+									</div>
+									<hr>
+								</li>
+							</BOUCLE_NEWS>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-bg2">					
+					<div class="pd-bg">
+						<div class="hrx-b4 ">
+							<h1>VIDEO</h1>
+						</div>
+						<div class="row">
+						<BOUCLE_VIDEOS (ARTICLES) {titre_mot=dusangirijambo_videos} {!par date}{0,4}{doublons dusangireVIDEO}>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="vdx">
+								<div class="img-boxez">
+									[<img src="(#LOGO_ARTICLE|image_reduire{*,300}|image_recadre{500,300}|extraire_attribut{src})" class="img-fluid">]
+								</div>
+								<div class="ply-btns">
+									<!-- pasted code for pop up -->
+									 <a href="#videoStory_#COMPTEUR_BOUCLE" class="button more" id="videoLink">
+									 	<span class="fa fa-play"></span>
+									 </a>
+									 <div id="videoStory_#COMPTEUR_BOUCLE" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+									    <iframe width="853" height="480" src="https://www.youtube.com/embed/ASM6AfzXMvc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									 </div>
+									 <!-- end of pasted pop up code -->
+								</div>								
+								<div class="blw-vdx">
+										<p>#TITRE</p>
+									<hr>
+								</div>
+							</div>
+						</div>
+						</BOUCLE_VIDEOS>					
+					</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<img src="https://www.igihe.com/squelettes/dusangirijambo/assets/images/add.jpg" class="img-fluid">
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end news and video section -->
+
+					
+
+	<!-- slide youth -->
+	<div class="sl-blue">
+             <div class="container-fluid">
+             	<div class="hrz-b4">
+					<h1>BIGEJEJE YO</h1>
+					<hr>
+				</div>
+				<br>
+                <div id="carousel-example" class="carousel slide" data-ride="carousel" style="z-index: 1;">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="carousel-item active">
+                          <div class="row">
+						  <BOUCLE_BIGEJEJEYO (ARTICLES) {titre_mot=dusangirijambo_article}{!par date}{0,4}{doublons dusangire}>
+						  
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                              <div class="img-bx itemx mrg-phn">
+                              	[<a href="#URL_ARTICLE"><img src="(#LOGO_ARTICLE|image_reduire{*,300}|image_recadre{500,300}|extraire_attribut{src})" class="img-fluid"></a>]
+                              </div>
+                              <div class="over-sly">
+                                  <a href="#URL_ARTICLE">
+                                     <p>#TITRE</p>
+                                  </a>
+                               </div>
+                            </div>
+							</BOUCLE_BIGEJEJEYO>
+                          </div>
+                        </div>
+                       <div class="carousel-item">
+                          <div class="row">
+						  <BOUCLE_BIGEJEJEYO2 (ARTICLES) {titre_mot=dusangirijambo_article}{!par date}{0,4}{doublons dusangire}>
+						  
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                              <div class="img-bx itemx mrg-phn">
+                              	[<a href="#URL_ARTICLE"><img src="(#LOGO_ARTICLE|image_reduire{*,300}|image_recadre{500,300}|extraire_attribut{src})" class="img-fluid"></a>]
+                              </div>
+                              <div class="over-sly">
+                                  <a href="#URL_ARTICLE">
+                                     <p>#TITRE</p>
+                                  </a>
+                               </div>
+                            </div>
+							</BOUCLE_BIGEJEJEYO2>
+                          </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+              </div>
+              <div class="imgn-big">
+					<img src="https://www.igihe.com/squelettes/dusangirijambo/assets/images/sl-3.png" class="img-fluid">
+			  </div>
+            </div>
+          </div>
+	<!-- end slide youth -->
+
+	<!-- other news section -->
+	<div class="other-news">
+		<div class="container-fluid">
+				<div class="hrm-b4">
+					<h1>IZINDI NKURU</h1>
+					<hr>
+				</div>
+				<br>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="rht-ln">
+						<ul class="izindi-ul">
+						<BOUCLE_IZINDI2 (ARTICLES) {titre_mot=dusangirijambo_article}{!par date}{0,1}{doublons dusangire}>
+							<li class="col-12">
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+										<div class="iz-img">
+											[<a href="#URL_ARTICLE"><img src="(#LOGO_ARTICLE|image_reduire{*,300}|image_recadre{500,300}|extraire_attribut{src})" class="img-fluid"></a>]
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+										<div class="tx-sts">
+											<a href="">
+												<p>#TITRE</p>
+											</a>
+										</div>
+									</div>
+								</div>
+								<hr class="hr-izindi">
+							</li>
+						</BOUCLE_IZINDI2>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="rht-ln">
+						<ul class="izindi-ul">
+						<BOUCLE_IZINDI3 (ARTICLES) {titre_mot=dusangirijambo_article}{!par date}{0,1}{doublons dusangire}>
+							<li class="col-12">
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+										<div class="iz-img">
+											[<a href="#URL_ARTICLE"><img src="(#LOGO_ARTICLE|image_reduire{*,300}|image_recadre{500,300}|extraire_attribut{src})" class="img-fluid"></a>]
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+										<div class="tx-sts">
+											<a href="">
+												<p>#TITRE</p>
+											</a>
+										</div>
+									</div>
+								</div>
+								<hr class="hr-izindi">
+							</li>
+						</BOUCLE_IZINDI3>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="rht-lnx">
+						<ul class="izindi-ul">
+						<BOUCLE_IZINDI4 (ARTICLES) {titre_mot=dusangirijambo_article}{!par date}{0,1}{doublons dusangire}>
+							<li class="col-12">
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+										<div class="iz-img">
+											[<a href="#URL_ARTICLE"><img src="(#LOGO_ARTICLE|image_reduire{*,300}|image_recadre{500,300}|extraire_attribut{src})" class="img-fluid"></a>]
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+										<div class="tx-sts">
+											<a href="">
+												<p>#TITRE</p>
+											</a>
+										</div>
+									</div>
+								</div>
+								<hr class="hr-izindi">
+							</li>
+						</BOUCLE_IZINDI4>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end other news section -->
+	<br>
+	<!-- footer -->
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="z-index: 1;">
+					<div class="lgo-ft">
+						<img src="https://www.igihe.com/squelettes/dusangirijambo/assets/images/ft-logo.jpg" class="img-fluid">
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 text-center" style="z-index: 1;">
+					<div class="ftx-h1">
+						<h1>QUICK LINKS</h1>
+					</div>
+					<div class="row">
+						<ul class="ft-ulx">
+							<li><a href="#">AHABANZA</a></li>
+							<li><a href="#">INKURU</a></li>
+							<li><a href="#">VIDEOS</a></li>
+							<li><a href="#">AMAFOTO</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="imgn-ft">
+					<img src="https://www.igihe.com/squelettes/dusangirijambo/assets/images/sl-3.png" class="img-fluid">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<center><span style="font-family: 'ITCAvantGardeStdXLT';">COPYRIGHT&copy2019</span></center>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer -->
+
+
+	  	  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://www.igihe.com/squelettes/dusangirijambo/assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <!-- below JS allows video pop up to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+
+	<script type="text/javascript">
+		$('#videoLink').magnificPopup({
+	  type:'inline',
+	  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+	})
+	</script>
+ 
+	<!-- end of js that allows pop video to work -->
+
+
+    <script type="text/javascript" src="https://www.igihe.com/squelettes/dusangirijambo/assets/js/carousel.js"></script>
+
+    
+</body>
+</html>
+</BOUCLE_rubrique>

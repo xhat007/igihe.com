@@ -1,0 +1,89 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Murakaza Neza Ku IGIHE DOCUMENTS - GUSHAKISHA : #RECHERCHE</title>
+		<meta charset="UTF-8" />
+		<link href="assets/css/bootstrap.css" type="text/css" rel="stylesheet" />
+		<link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+		<link href="assets/css/flaticon.css" type="text/css" rel="stylesheet" />
+		<link href="assets/css/font-awesome.css" type="text/css" rel="stylesheet" />
+		<link href="assets/css/fonts.css" type="text/css" rel="stylesheet" />
+		<script>
+			function startTime() {
+			    var today = new Date();
+			    var h = today.getHours();
+			    var m = today.getMinutes();
+			    var s = today.getSeconds();
+			    m = checkTime(m);
+			    s = checkTime(s);
+			    document.getElementById('localtime').innerHTML =
+			    h + ":" + m + ":" + s;
+			    var t = setTimeout(startTime, 500);
+			}
+			function checkTime(i) {
+			    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			    return i;
+			}
+		</script>
+	</head>
+	<body onload="startTime()">
+		<div class="container">
+			<header style="background:#FFF;">
+				<table style="width:100%;">
+					<tr>
+						<td style="width:233px;">
+							<a href="http://docs.igihe.com" title=""><img src="assets/images/logo_inpage.png" title="igihe document" /></a>
+						</td>
+						<td style="text-indent:15px;width:80px;">
+							<br/>
+							<a href="http://docs.igihe.com">Home</a> | <a href="javascript:history.go(-1)">Back</a>
+						</td>
+						<td style="text-align:right;">
+							<form class="pull-right" action="spip.php">
+								<input type="hidden" name="page" value="recherche"/>
+								<input type="text"  placeholder="Search from #TITRE" class="pull-left" name="recherche"/>									<button class="input-group-addon pull-left"><i class="fa fa-search"></i></button>										</form>
+						</td>
+						<td style="text-align:right;">
+							<div class="dropdown">
+								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Menu
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<BOUCLE_rubrique_ghdocsxx(RUBRIQUES){id_parent=0}>
+									    <li><a href="#URL_RUBRIQUE">#TITRE</a></li>
+									</BOUCLE_rubrique_ghdocsxx>
+								  </ul>
+							</div>											
+						</td>
+					</tr>
+				</table>
+			</header>			
+			<section class="doc-list col-lg-12">
+				<h3>Search Results "#RECHERCHE"</h3>
+				<ul>
+					<div class="row">
+						<BOUCLE_article_ghdocs(ARTICLES){recherche}{par points}{age<240}{inverse}{pagination 28}{titre!=intro}{lang}>
+							[(#SET{titrearticle,#TITRE})]
+							<BOUCLE_docs_ghdocs(DOCUMENTS){id_article}{par date}{inverse}>
+								<li class="doc-item #DOCUMENTTYPE col-lg-2">
+									<a href="spip.php?page=doc-open&amp;id_article=#ID_ARTICLE" class="in-link">[(#GET{titrearticle})]</span>
+										<a href="spip.php?page=doc-open&amp;id_article=#ID_ARTICLE" class="more">Read</a>
+									</a>
+								</li>
+							</BOUCLE_docs_ghdocs>
+						</BOUCLE_article_ghdocs>
+					</div>	
+				</ul>
+			</section>			
+			<section class="doc-cat col-lg-12">
+				<h3>Categories</h3>
+				<ul>
+					<BOUCLE_rubrique_ghdocs(RUBRIQUES){id_parent=0}>
+						<li class="cat-item cat-[(#TITRE|strtolower)] col-lg-4"><a href="#URL_RUBRIQUE">#TITRE</a></li>
+					</BOUCLE_rubrique_ghdocs>
+				</ul>
+			</section>		
+			<INCLURE(includes/footer)>
+		</div>	
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>PGGSS II - Live Feeds</title>
+		
+<!-- dR_scripts -->
+<link rel="shortcut icon" href="favicon.ico" />
+<script src="http://primusgumaguma.igihe.com/squelettes/pggss_scripts/gh_slideshows/jquery-1.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" src="http://primusgumaguma.igihe.com/squelettes/pggss_scripts/gh_slidedown/jquery.vticker-min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#news-container').vTicker({
+		speed: 1000,
+		pause: 4000,
+		animation: 'fade',
+		mousePause: true,
+		showItems: 6
+	});
+});
+</script>
+
+
+<style>
+#livefeeds{display:block; width: 290px; height:365px; background-image:url(http://igihe.com/squelettes/igihe_imgs/pggss2_live_bg.jpg);background-repeat:repeat-x;background-position:top; position: relative; margin: 0px;border:1px solid #ffffff;overflow:hidden;}
+#livefeeds_top{display:block; width: 290px; height:90px; position: relative; margin: 0px; padding:0px;border:1px solid #ffffff;}
+#livefeeds_bottom{display:block; width: 290px; height:271px; position: relative; left:0px; margin: 0px;border:1px solid #ffffff;background-color:#0040dc;background-image:url(http://igihe.com/squelettes/igihe_imgs/pggss2_live_bg.jpg);background-repeat:repeat-x;background-position:bottom;}
+#livefeeds_newsbox{position: relative; margin-top: 5px; border:0px solid green;}
+
+#news-container{	width: 280px;	margin: auto;	position: relative;  	border:0px solid blue; max-height:330px; overflow: hidden; 	}
+#news-container ul li {padding:2px;	margin-top:2px;	list-style-type:none;min-height:60px;}
+
+div.containerslidebox {width: 270px;	border:1px solid red; background-color:#ffffff; min-height:60px; margin:0px; padding:3px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;cursor:pointer;}
+div:hover.containerslidebox {width: 270px;	border:1px solid red; background-color:#000000; min-height:60px; margin:0px; padding:3px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#ffff00;cursor:pointer;}
+font.datecontainerslidebox {font-family:tahoma;font-size:10px;font-weight:bold;color:#ff0000;}
+
+</style>
+<!-- End dR_scripts -->
+
+
+</head>
+
+<body style="margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"  topmargin="0" leftmargin="0" >
+
+<div id="livefeeds">
+
+	<div id="livefeeds_top">&nbsp;</div>
+
+	<div id="livefeeds_bottom">
+	<div id="livefeeds_newsbox">
+
+	  <div id="news-container">
+		<ul>
+	<BOUCLE_gh_livefeeds(ARTICLES){tout}{id_rubrique=1062}{par date}{inverse}{0,40}>
+			<li><div class="containerslidebox">
+	<font class="datecontainerslidebox">[(#DATE||date_relative)]&nbsp;:&nbsp;</font>[(#TITRE)]
+			</div></li>
+	</BOUCLE_gh_livefeeds>
+		</ul>
+	</div>
+
+
+	</div>
+	</div>
+
+</div>
+
+ </body>
+</html>

@@ -1,0 +1,156 @@
+				<table style="width:190px;background-color:#141414;">
+					<tr>
+						<td>
+							<p style="text-align:center; font-family:'Trebuchet MS', Helvetica, sans-serif;font-size:12px;color:#000000;"></p>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:60%;" rowspan="4">
+							<script type="text/javascript">
+								function send_vote(poll_id,my_vote_is)							
+								{								
+									var xhr_object = null;
+									if(window.XMLHttpRequest) // Firefox
+										xhr_object = new XMLHttpRequest();
+									else
+									{
+										if(window.ActiveXObject) // Internet Explorer
+											xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+											else // XMLHttpRequest non support&#233; par le navigateur
+											{
+												alert("Browser does not support xmlHttpRequest");
+												return;
+											}
+										}
+										var method   = "POST";
+										var filename = "missrwanda2012_votes.php";																	
+										var requete  = "poll_id="+poll_id+"&question_id="+my_vote_is;																	
+										xhr_object.onreadystatechange = function() 
+										{
+											if(xhr_object.readyState == 1)
+											{
+												document.getElementById("poll_area_"+poll_id).innerHTML = '<div style="height:100%;">Loading poll...</div>';
+											}								
+											if(xhr_object.readyState == 4) 
+											{
+												var reponse = xhr_object.responseText;
+												document.getElementById("poll_area_"+poll_id).innerHTML = reponse;																			
+											}
+										}	 
+										xhr_object.open(method, filename, true);
+										xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+										xhr_object.send(requete);								
+									}																
+								</script>												
+								<div style="width:100%;">											
+								<form method="POST" onSubmit="return(false)"/><div id="poll_area_1"><table style="width:100%;"><tr><td align="center" style="color:#D2E08A;font-weight:bold;" colspan="2">25535 Votes</td></tr><tr><td colspan="2" height="10">&nbsp;</td></tr><tr>
+												<td width="157" colspan="2" style="text-align:center;">
+<div style="font-familly:levenim MT;font-size:14px;color:#ACACAA;font-weight:bold;"><a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/giraso-joe-christa.html" style="color:#ACACAA;" title="view profile" target="_top">Giraso Joe Christa</a></div><br/>
+													<a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/giraso-joe-christa.html" title="view profile" target="_top"><img src="http://news.igihe.org/images/ijororyurukundo/resized/tdUpkDz.jpg" width="157" alt=""/></a>
+													<div style="display:list-item;list-style-type:none;font-familly:levenim MT;font-size:16px;font-weight:bold;color:#D2E08A;text-align:center;">18.51 % (<span style="font-size:11px;">4727 votes</span>)<br/> <a href="#" style="color:#D2E08A;" onclick="send_vote(1,15)">VOTE</a></div>
+
+												</td>										
+											</tr><tr><td colspan="2" height="10">&nbsp;</td></tr><tr>
+												<td width="157" colspan="2" style="text-align:center;">
+<div style="font-familly:levenim MT;font-size:14px;color:#ACACAA;font-weight:bold;"><a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/kayibanda-mutesi-aurore.html" style="color:#ACACAA;" title="view profile" target="_top">Kayibanda Mutesi Aurore</a></div><br/>
+													<a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/kayibanda-mutesi-aurore.html" title="view profile" target="_top"><img src="http://news.igihe.org/images/ijororyurukundo/resized/wYeggy8.jpg" width="157" alt=""/></a>
+													<div style="display:list-item;list-style-type:none;font-familly:levenim MT;font-size:16px;font-weight:bold;color:#D2E08A;text-align:center;">13.54 % (<span style="font-size:11px;">3457 votes</span>)<br/> <a href="#" style="color:#D2E08A;" onclick="send_vote(1,10)">VOTE</a></div>
+
+												</td>										
+											</tr><tr><td colspan="2" height="10">&nbsp;</td></tr><tr>
+												<td width="157" colspan="2" style="text-align:center;">
+<div style="font-familly:levenim MT;font-size:14px;color:#ACACAA;font-weight:bold;"><a href="http://www.igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/uwamahoro-natacha.html" style="color:#ACACAA;" title="view profile" target="_top">Uwamahoro Natacha</a></div><br/>
+													<a href="http://www.igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/uwamahoro-natacha.html" title="view profile" target="_top"><img src="http://news.igihe.org/images/ijororyurukundo/resized/8Px21fm.jpg" width="157" alt=""/></a>
+													<div style="display:list-item;list-style-type:none;font-familly:levenim MT;font-size:16px;font-weight:bold;color:#D2E08A;text-align:center;">11.98 % (<span style="font-size:11px;">3059 votes</span>)<br/> <a href="#" style="color:#D2E08A;" onclick="send_vote(1,3)">VOTE</a></div>
+
+												</td>										
+											</tr><tr><td colspan="2" height="10">&nbsp;</td></tr><tr>
+												<td width="157" colspan="2" style="text-align:center;">
+<div style="font-familly:levenim MT;font-size:14px;color:#ACACAA;font-weight:bold;"><a href="http://www.igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/ingabire-francoise.html" style="color:#ACACAA;" title="view profile" target="_top">Ingabire Francoise</a></div><br/>
+													<a href="http://www.igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/ingabire-francoise.html" title="view profile" target="_top"><img src="http://news.igihe.org/images/ijororyurukundo/resized/kEzL4da.jpg" width="157" alt=""/></a>
+													<div style="display:list-item;list-style-type:none;font-familly:levenim MT;font-size:16px;font-weight:bold;color:#D2E08A;text-align:center;">9.73 % (<span style="font-size:11px;">2484 votes</span>)<br/> <a href="#" style="color:#D2E08A;" onclick="send_vote(1,16)">VOTE</a></div>
+
+												</td>										
+											</tr><tr><td colspan="2" height="10">&nbsp;</td></tr><tr>
+												<td width="157" colspan="2" style="text-align:center;">
+<div style="font-familly:levenim MT;font-size:14px;color:#ACACAA;font-weight:bold;"><a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/umutesi-mubera-liliane.html" style="color:#ACACAA;" title="view profile" target="_top">Umutesi Mubera Liliane</a></div><br/>
+													<a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/umutesi-mubera-liliane.html" title="view profile" target="_top"><img src="http://news.igihe.org/images/ijororyurukundo/resized/cpN7LdE.jpg" width="157" alt=""/></a>
+													<div style="display:list-item;list-style-type:none;font-familly:levenim MT;font-size:16px;font-weight:bold;color:#D2E08A;text-align:center;">7.81 % (<span style="font-size:11px;">1994 votes</span>)<br/> <a href="#" style="color:#D2E08A;" onclick="send_vote(1,7)">VOTE</a></div>
+
+												</td>										
+											</tr><tr><td colspan="2" height="10">&nbsp;</td></tr><tr>
+												<td width="157" colspan="2" style="text-align:center;">
+<div style="font-familly:levenim MT;font-size:14px;color:#ACACAA;font-weight:bold;"><a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/nsengiyumvi-johali.html" style="color:#ACACAA;" title="view profile" target="_top">Nsengiyumvi Johali</a></div><br/>
+													<a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/nsengiyumvi-johali.html" title="view profile" target="_top"><img src="http://news.igihe.org/images/ijororyurukundo/resized/LIIpKl1.jpg" width="157" alt=""/></a>
+													<div style="display:list-item;list-style-type:none;font-familly:levenim MT;font-size:16px;font-weight:bold;color:#D2E08A;text-align:center;">4.77 % (<span style="font-size:11px;">1218 votes</span>)<br/> <a href="#" style="color:#D2E08A;" onclick="send_vote(1,13)">VOTE</a></div>
+
+												</td>										
+											</tr><tr><td colspan="2" height="10">&nbsp;</td></tr><tr>
+												<td width="157" colspan="2" style="text-align:center;">
+<div style="font-familly:levenim MT;font-size:14px;color:#ACACAA;font-weight:bold;"><a href="http://www.igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/uwamahoro-ange.html" style="color:#ACACAA;" title="view profile" target="_top">Uwamahoro Ange</a></div><br/>
+													<a href="http://www.igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/uwamahoro-ange.html" title="view profile" target="_top"><img src="http://news.igihe.org/images/ijororyurukundo/resized/2UDbKFe.jpg" width="157" alt=""/></a>
+													<div style="display:list-item;list-style-type:none;font-familly:levenim MT;font-size:16px;font-weight:bold;color:#D2E08A;text-align:center;">4.69 % (<span style="font-size:11px;">1197 votes</span>)<br/> <a href="#" style="color:#D2E08A;" onclick="send_vote(1,5)">VOTE</a></div>
+
+												</td>										
+											</tr><tr><td colspan="2" height="10">&nbsp;</td></tr><tr>
+												<td width="157" colspan="2" style="text-align:center;">
+<div style="font-familly:levenim MT;font-size:14px;color:#ACACAA;font-weight:bold;"><a href="http://www.igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/isimbi-debora-abiellah.html" style="color:#ACACAA;" title="view profile" target="_top">Isimbi Debora Abiellah</a></div><br/>
+													<a href="http://www.igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/isimbi-debora-abiellah.html" title="view profile" target="_top"><img src="http://news.igihe.org/images/ijororyurukundo/resized/rkqcS6G.jpg" width="157" alt=""/></a>
+													<div style="display:list-item;list-style-type:none;font-familly:levenim MT;font-size:16px;font-weight:bold;color:#D2E08A;text-align:center;">4.59 % (<span style="font-size:11px;">1171 votes</span>)<br/> <a href="#" style="color:#D2E08A;" onclick="send_vote(1,1)">VOTE</a></div>
+
+												</td>										
+											</tr><tr><td colspan="2" height="10">&nbsp;</td></tr><tr>
+												<td width="157" colspan="2" style="text-align:center;">
+<div style="font-familly:levenim MT;font-size:14px;color:#ACACAA;font-weight:bold;"><a href="http://www.igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/akineza-carmen.html" style="color:#ACACAA;" title="view profile" target="_top">Akineza Carmen</a></div><br/>
+													<a href="http://www.igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/akineza-carmen.html" title="view profile" target="_top"><img src="http://news.igihe.org/images/ijororyurukundo/resized/JRbMXqr.jpg" width="157" alt=""/></a>
+													<div style="display:list-item;list-style-type:none;font-familly:levenim MT;font-size:16px;font-weight:bold;color:#D2E08A;text-align:center;">4.48 % (<span style="font-size:11px;">1143 votes</span>)<br/> <a href="#" style="color:#D2E08A;" onclick="send_vote(1,4)">VOTE</a></div>
+
+												</td>										
+											</tr><tr><td colspan="2" height="10">&nbsp;</td></tr><tr>
+												<td width="157" colspan="2" style="text-align:center;">
+<div style="font-familly:levenim MT;font-size:14px;color:#ACACAA;font-weight:bold;"><a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/mumporezi-laetitia.html" style="color:#ACACAA;" title="view profile" target="_top">Mumporezi Laetitia</a></div><br/>
+													<a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/mumporezi-laetitia.html" title="view profile" target="_top"><img src="http://news.igihe.org/images/ijororyurukundo/resized/s5Cytfx.jpg" width="157" alt=""/></a>
+													<div style="display:list-item;list-style-type:none;font-familly:levenim MT;font-size:16px;font-weight:bold;color:#D2E08A;text-align:center;">3.66 % (<span style="font-size:11px;">935 votes</span>)<br/> <a href="#" style="color:#D2E08A;" onclick="send_vote(1,14)">VOTE</a></div>
+
+												</td>										
+											</tr><tr><td colspan="2" height="10">&nbsp;</td></tr><tr>
+												<td width="157" colspan="2" style="text-align:center;">
+<div style="font-familly:levenim MT;font-size:14px;color:#ACACAA;font-weight:bold;"><a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/ariane-murerwa.html" style="color:#ACACAA;" title="view profile" target="_top">Ariane Murerwa</a></div><br/>
+													<a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/ariane-murerwa.html" title="view profile" target="_top"><img src="http://news.igihe.org/images/ijororyurukundo/resized/3XkLYp8.jpg" width="157" alt=""/></a>
+													<div style="display:list-item;list-style-type:none;font-familly:levenim MT;font-size:16px;font-weight:bold;color:#D2E08A;text-align:center;">3.62 % (<span style="font-size:11px;">925 votes</span>)<br/> <a href="#" style="color:#D2E08A;" onclick="send_vote(1,11)">VOTE</a></div>
+
+												</td>										
+											</tr><tr><td colspan="2" height="10">&nbsp;</td></tr><tr>
+												<td width="157" colspan="2" style="text-align:center;">
+<div style="font-familly:levenim MT;font-size:14px;color:#ACACAA;font-weight:bold;"><a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/esther-uwingabire.html" style="color:#ACACAA;" title="view profile" target="_top">Esther Uwingabire</a></div><br/>
+													<a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/esther-uwingabire.html" title="view profile" target="_top"><img src="http://news.igihe.org/images/ijororyurukundo/resized/RpwylGS.jpg" width="157" alt=""/></a>
+													<div style="display:list-item;list-style-type:none;font-familly:levenim MT;font-size:16px;font-weight:bold;color:#D2E08A;text-align:center;">3.42 % (<span style="font-size:11px;">873 votes</span>)<br/> <a href="#" style="color:#D2E08A;" onclick="send_vote(1,8)">VOTE</a></div>
+
+												</td>										
+											</tr><tr><td colspan="2" height="10">&nbsp;</td></tr><tr>
+												<td width="157" colspan="2" style="text-align:center;">
+<div style="font-familly:levenim MT;font-size:14px;color:#ACACAA;font-weight:bold;"><a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/karangwa-tega-fidelis.html" style="color:#ACACAA;" title="view profile" target="_top">Karangwa Tega Fidelis</a></div><br/>
+													<a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/karangwa-tega-fidelis.html" title="view profile" target="_top"><img src="http://news.igihe.org/images/ijororyurukundo/resized/S3eMRyG.jpg" width="157" alt=""/></a>
+													<div style="display:list-item;list-style-type:none;font-familly:levenim MT;font-size:16px;font-weight:bold;color:#D2E08A;text-align:center;">3.18 % (<span style="font-size:11px;">812 votes</span>)<br/> <a href="#" style="color:#D2E08A;" onclick="send_vote(1,12)">VOTE</a></div>
+
+												</td>										
+											</tr><tr><td colspan="2" height="10">&nbsp;</td></tr><tr>
+												<td width="157" colspan="2" style="text-align:center;">
+<div style="font-familly:levenim MT;font-size:14px;color:#ACACAA;font-weight:bold;"><a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/umwamikazi-annick.html" style="color:#ACACAA;" title="view profile" target="_top">Umwamikazi Annick</a></div><br/>
+													<a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/umwamikazi-annick.html" title="view profile" target="_top"><img src="http://news.igihe.org/images/ijororyurukundo/resized/yhhhRpI.jpg" width="157" alt=""/></a>
+													<div style="display:list-item;list-style-type:none;font-familly:levenim MT;font-size:16px;font-weight:bold;color:#D2E08A;text-align:center;">3.07 % (<span style="font-size:11px;">784 votes</span>)<br/> <a href="#" style="color:#D2E08A;" onclick="send_vote(1,9)">VOTE</a></div>
+
+												</td>										
+											</tr><tr><td colspan="2" height="10">&nbsp;</td></tr><tr>
+												<td width="157" colspan="2" style="text-align:center;">
+<div style="font-familly:levenim MT;font-size:14px;color:#ACACAA;font-weight:bold;"><a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/uwase-francine.html" style="color:#ACACAA;" title="view profile" target="_top">Uwase Francine</a></div><br/>
+													<a href="http://igihe.com/serivisi/special-pages/miss-rwanda-2012-1437/profiles/uwase-francine.html" title="view profile" target="_top"><img src="http://news.igihe.org/images/ijororyurukundo/resized/dDMbpiS.jpg" width="157" alt=""/></a>
+													<div style="display:list-item;list-style-type:none;font-familly:levenim MT;font-size:16px;font-weight:bold;color:#D2E08A;text-align:center;">2.96 % (<span style="font-size:11px;">756 votes</span>)<br/> <a href="#" style="color:#D2E08A;" onclick="send_vote(1,6)">VOTE</a></div>
+
+												</td>										
+											</tr>							</table>
+						</div>
+					</td>										
+					</tr>									
+				</table>													
+				

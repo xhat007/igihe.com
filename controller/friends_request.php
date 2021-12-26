@@ -1,0 +1,10 @@
+<?php
+session_start();
+include('controller/check_auth.php');
+include('controller/functions.php');
+include('model/friends_request.php');
+$page_title='';
+$friend_requests=get_friend_requests($_SESSION['user_auth']);
+include('view/friends_request.php');
+include('model/sql_close.php');
+?>

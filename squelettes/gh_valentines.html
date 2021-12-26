@@ -1,0 +1,52 @@
+<script type="text/javascript">
+$(function() {
+	$(".newsticker-jcarousellite").jCarouselLite({
+		vertical: true,
+		hoverPause:true,
+		visible: 3,
+		auto:2000,
+		speed:1500
+	});
+});
+</script>
+<div class="grid_7" style="margin-top:3px; padding-bottom: 10px; text-align:left;background-color:#ffffff;" align="center">
+<div id="article_hotel_near" style="border: 2px solid #ff0000; border-left: 2px solid #ff0000; margin-bottom: 0px; margin-top: 5px; width: 330px !important; background: none !important; padding: 0px; border-radius: 10px; padding-top: 0px; margin-left: 5px; padding-bottom: 10px;">
+<img src="gh_valentine/val.png" width="330"/>
+<div id="newsticker-demo" style="width: 330px !important; padding: 0px !important;">    
+    <div class="newsticker-jcarousellite" style="height: 400px!important; width: 330px;">
+    
+	<ul>
+	<BOUCLE_smspost(ARTICLES){titre_mot=Home_valentine}{par date}{inverse}>
+            <li style="border: none !important;  background: url(http://igiheshowbiz.com/images/bgvalentine.jpg) no-repeat bottom, #fff;">
+                <div class="article_hotel_near" style=" width: 330px;">		  		
+                  <div class="article_hotel_near_logo">
+                  	<BOUCLE_titrerubrique(RUBRIQUES){id_rubrique}>
+                  		[<img src="IMG/(#LOGO_ARTICLE|fichier)" >]
+                  	</BOUCLE_titrerubrique>
+                  </div>
+                  <div class="article_hotel_near_texte" style="font-family: 'Trebuchet MS', Helvetica, sans-serif; color: #000; font-size: 12px;">
+                    <div style="padding-bottom: 5px;"><a href="#URL_ARTICLE" style="color: #b80808; font-size: 14px; font-weight: bold; font-family: 'Trebuchet MS', Helvetica, sans-serif;">#TITRE</a></div>
+                    <div style="padding-bottom: 5px;">
+                    
+                    <B_gh_pasttime>
+	<BOUCLE_gh_pasttime(ARTICLES){id_article}{age<2040}>
+		[(#DATE|date_relative)]
+	</BOUCLE_gh_pasttime>
+</B_gh_pasttime>
+	[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]
+<//B_gh_pasttime>
+                    
+                    </div>
+                    <div style="padding-bottom: 5px;">
+                    <a href="#URL_ARTICLE" style="background: #000; color: #fff; padding: 3px;"> <B_compteur_forums></B_compteur_forums><BOUCLE_compteur_forums(FORUMS){id_article}{tout}></BOUCLE_compteur_forums>[(#TOTAL_BOUCLE)]&nbsp;[(#TOTAL_BOUCLE|<={1}|?{Comment, Comments})]<//B_compteur_forums>&nbsp;</a>
+                    </div>                    </div>
+                </div>
+		<div class="clear"></div>
+	    </li>
+	 </BOUCLE_smspost>
+        </ul>
+      
+    </div>
+</div>
+</div>
+</div>

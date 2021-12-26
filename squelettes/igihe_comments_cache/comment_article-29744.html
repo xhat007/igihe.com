@@ -1,0 +1,268 @@
+		<div class="grid_16 alpha omega"  id="articlecomments" style="780px;">
+<a href="#" class="box_title">IBITEKEREZO</a>
+	<div id="articlecommentsin">
+
+<!-- IN-->
+<a name="comments"></a>
+
+<a name='pagination_gh_comments_thread1' id='pagination_gh_comments_thread1'></a>
+
+<div style="display:block;position:relative;padding-bottom:2px;width:740px;">
+<div class="gh_articlecomments_thread1"><font class="gh_articlecommentscontent" style="font-size:13px;">mukunze kunyonga comment kuko zinyuze,,siburikimwe ngo muzanjya mwandika urwo surwenya nimvugo nyandagazi !!!!!!!!!!</font></div>
+<div style="display:block;position:relative;width:88%;border:0px solid blue;top:-6px;margin-left:25px;margin:4px;padding:2px;padding-left:45px;background-image:url(squelettes/igihe_imgs/gh_commentsshow.gif);background-repeat:no-repeat;background-position:left top;"><a href="poster_message.php?id_article=29744&amp;id_forum=182811&amp;retour=%2Fimyidagaduro%2Furwenya%2Furwenya-nibayajyane-nza-andi.html" class="gh_articlecommentsreply" style="margin-right:5px;" onclick="return hs.htmlExpand(this, { objectType: 'ajax', width: 737,} )">Musubize</a><font class="gh_articlecommentsdetails">18.11.2012 saa 12:39<br /></font><a href="#" class="gh_articlecommentsauthor">HORY</a><br /></div>
+
+</div>
+
+<div style="display:block;position:relative;padding-bottom:2px;width:740px;">
+<div class="gh_articlecomments_thread1"><font class="gh_articlecommentscontent" style="font-size:13px;">hahahahahaaaha, uru surwenya ruragatsindwa ubwo se bayamajije iki benengango ??</font></div>
+<div style="display:block;position:relative;width:88%;border:0px solid blue;top:-6px;margin-left:25px;margin:4px;padding:2px;padding-left:45px;background-image:url(squelettes/igihe_imgs/gh_commentsshow.gif);background-repeat:no-repeat;background-position:left top;"><a href="poster_message.php?id_article=29744&amp;id_forum=182746&amp;retour=%2Fimyidagaduro%2Furwenya%2Furwenya-nibayajyane-nza-andi.html" class="gh_articlecommentsreply" style="margin-right:5px;" onclick="return hs.htmlExpand(this, { objectType: 'ajax', width: 737,} )">Musubize</a><font class="gh_articlecommentsdetails">18.11.2012 saa 09:02<br /></font><a href="#" class="gh_articlecommentsauthor"> kkkkkkk</a><br /></div>
+
+</div>
+
+<div style="display:block;position:relative;padding-bottom:2px;width:740px;">
+<div class="gh_articlecomments_thread1"><font class="gh_articlecommentscontent" style="font-size:13px;">hahahahahaaaha, uru surwenya ruragatsindwa ubwo se bayamajije iki benengango ??</font></div>
+<div style="display:block;position:relative;width:88%;border:0px solid blue;top:-6px;margin-left:25px;margin:4px;padding:2px;padding-left:45px;background-image:url(squelettes/igihe_imgs/gh_commentsshow.gif);background-repeat:no-repeat;background-position:left top;"><a href="poster_message.php?id_article=29744&amp;id_forum=182745&amp;retour=%2Fimyidagaduro%2Furwenya%2Furwenya-nibayajyane-nza-andi.html" class="gh_articlecommentsreply" style="margin-right:5px;" onclick="return hs.htmlExpand(this, { objectType: 'ajax', width: 737,} )">Musubize</a><font class="gh_articlecommentsdetails">18.11.2012 saa 09:02<br /></font><a href="#" class="gh_articlecommentsauthor"> kkkkkkk</a><br /></div>
+
+</div>
+
+
+
+<div style="padding-bottom:20px;padding:5px;">
+<center></center>
+<!-----------------------------------------------------------------------------------------------------------
+					WILLY EDIT FOR AJAXXXXXXXXXXXXXXXXXX
+------------------------------------------------------------------------------------------------------------>
+
+			<script type="text/javascript">										
+				function envoyer_commentaire(id_forum)
+				{
+
+				var empty_email=(document.getElementById("session_email_"+id_forum).value.length==0 || document.getElementById("session_email_"+id_forum).value==null);
+				var empty_message=(document.getElementById("texte_"+id_forum).value.length==0 || document.getElementById("texte_"+id_forum).value==null);
+				if(empty_message){
+					alert("Comment can not be empty");
+				}
+				else if(empty_email){
+					alert("Please provide your email address");
+				}
+				else{
+					var igitekerezo = document.getElementById("texte_"+id_forum).value;
+					var izina = document.getElementById("session_nom_"+id_forum).value;
+					var email = document.getElementById("session_email_"+id_forum).value;
+
+					var titre = document.getElementById("titre").value;
+					var id_article_obj=document.getElementsByName("id_article").item(0);
+					var id_article=id_article_obj.value;
+
+					var forum_id=0;
+					var page="itsform.php";
+					var url="nom="+izina+"&email="+email+"&commentaire="+igitekerezo+"&id_forum="+id_forum+"&titre="+titre+"&id_article="+id_article;
+					var xhr_object = null;
+					if(window.XMLHttpRequest) // Firefox
+						xhr_object = new XMLHttpRequest();
+					else
+					{
+						if(window.ActiveXObject) // Internet Explorer
+							xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+						else
+						{
+							alert("Browser does not support xmlHttpRequest");
+							return;
+						}
+					}
+					var method = "POST";
+					var filename = page;
+					var requete  = url;
+					xhr_object.onreadystatechange = function()
+					{
+						if(xhr_object.readyState == 1)
+						{
+							document.getElementById("comment_statut_"+id_forum).innerHTML="Your comment is being sent to the server please wait";
+						}								
+						if(xhr_object.readyState == 4) 
+						{
+							var reponse = xhr_object.responseText;
+							//specify the response content								
+							document.getElementById("comment_statut_"+id_forum).innerHTML= reponse;
+							document.getElementById("session_nom_"+id_forum).disabled="disabled";
+							document.getElementById("session_email_"+id_forum).disabled="disabled";
+							document.getElementById("texte_"+id_forum).disabled="disabled";
+							document.getElementById("ohereza_"+id_forum).disabled="disabled";
+						}
+					}
+					xhr_object.open(method, filename, true);
+					xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+					xhr_object.send(requete);	 
+				}				
+			}			
+		</script>
+<!-----------------------------------------------------------------------------------------------------------
+				END WILLY EDIT FOR AJAXXXXXXXXXXXXXXXXXX
+--------------------------------------------------------------------------------------------------------- -->
+
+
+<center><div class='ajaxbloc env-pIZLmCxbYGM3o3Za0AK2aOAm+PFyKbkCNyi4XL+eED9HadMH4DMD9sGWFsloYYfq6SVFodHh+Qv5ZtfKsQElN9PONNHSfzbQKMIJu7gut7Jtab8a1LttK2UiDJXrA5Zop0fBHPaQH3/+l8WwlTOehpeeBFsHt0q6qMPKh8Pc94CPkWd/Gwo8hrHM/k/jxkOUzyuT8oCwg3E0RlTwis9d9wGBAnjq/oIAEAU='>
+<div style="text-align:center;padding:4px 0px;">
+	<div class="formulaire_spip formulaire_forum ajax" id="formulaire_forum">
+	<br class='bugajaxie' />
+
+	
+	
+
+	
+
+	 
+
+
+	
+
+
+	<form action="#formulaire_forum" method="post" enctype='multipart/form-data' onsubmit="return(false)" name="oForum"><div>
+	<div><input name='formulaire_action' type='hidden'
+		value='forum' /><input name='formulaire_action_args' type='hidden'
+		value='bMfXnG1LfOGIre57KI6ILNR3EGsifEQAFstom1huss71EG6DEF87kzTmfg/3XRFDNQlzRxnhjVYrYJuQtv0/dqLDQQB8Yp2uTq23xrTaVssFx2/2pQDXCqg51EehMmCSbejIUmtshVesHtcxJZt5MU1bi/moRthYY6Tav6iAh4DXhzrNcNBwWlvgzZ+7j46D/nld1JDXVWK5UjVUiujr' /><input type='hidden' name='id_article' value='29744' /><input type='hidden' name='id_breve' value='' /><input type='hidden' name='id_forum' value='' /><input type='hidden' name='id_rubrique' value='' /><input type='hidden' name='id_syndic' value='' /><input type='hidden' name='arg' value='3198727138' /><input type='hidden' name='hash' value='2a2802856586be460e3f293c67230817827f58ea' /><input type='hidden' name='verif_2a2802856586be460e3f293c67230817' value='ok' /><input type='hidden' name='afficher_texte' value='' /><input type='hidden' name='retour_forum' value='%21' /><input type='hidden' name='_jeton' value='a00dec60fe318e74ed4b5199c18dab76c07a070c' /></div>
+	<input type="hidden" name="id_forum" value="0" />
+
+	
+
+
+
+
+	<!-- FORM -->
+	<div class="gh_articlecommentsbox">
+		
+		<div id="comment_statut_0" style="height:40px;">
+
+		</div>
+	
+		<!------------------------------------------------------------------------------------------------------->
+		<!-- WILLY STARTED EDITING FROM HERE THIS IS SOME STUFF HE ADDED -->
+		<!-- HE REMOVED THE CLASS class="noajax" from the previous form-->
+		<!-------------------------------------------------------------------------------------------------------->
+
+	<table width="100%" height="*" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td colspan="2" height="20px" align="center" valign="middle"><font class="gh_commentstitle">ANDIKA ICYO UTEKEREZA KURI IYI NKURU</font></td>
+		</tr>
+
+		<tr>
+			<td width="70%" align="left" valign="top" style="padding:5px;">
+
+	 
+
+		<fieldset>
+		<!-- <legend></legend> -->
+		 
+			<input type="hidden" name="titre" id="titre" value="Urwenya: &quot;Nibayajyane nza... andi!&quot;" />
+		<ul>
+		
+
+	
+	<li class='saisie_texte'>
+			<label for='texte'><font class="gh_commentslabel">AHO WANDIKA<br /></font></label>
+			
+			<textarea name="texte" id="texte_0" class="gh_comments"></textarea>
+		</li>
+	
+		</ul></fieldset>
+
+	
+
+	
+
+			</td>
+
+
+
+
+
+			<td width="30%" align="left" valign="top" style="padding:5px;">
+
+
+	<fieldset>
+
+
+ 
+	<ul>
+		<li class='saisie_session_nom'>
+			<label for="session_nom"><font class="gh_commentslabel">IZINA</font><font style="font-size:11px;color:#B7B7B7;">&nbsp;&#91;<a href="http://www.igihe.com/spip.php?page=login&amp;url=%2Fimyidagaduro%2Furwenya%2Furwenya-nibayajyane-nza-andi.html" rel="nofollow">Se connecter</a>&#93;</font></label>
+			<input type="text" name="session_nom_0" id="session_nom_0" class="gh_comments" value=""  />
+			
+		</li>
+		<li class='saisie_session_email'>
+			<label for="session_email"><font class="gh_commentslabel">EMAIL YANYU</font></label>
+			<input type="text" name="session_email_0" id="session_email_0" value="" class="gh_comments"  />
+		</li>
+	</ul>
+
+</fieldset>
+
+		
+		<p style="display: none;">
+			<label for="nobot_forum">Veuillez laisser ce champ vide :</label>
+			<input type="text" class="text" name="nobot" id="nobot_forum" value="" size="10" />
+		</p>
+		<p class="boutons"><input type="submit" class="gh_commentssubmit" value="OHEREZA" onclick="envoyer_commentaire(0)" id="ohereza_0"/></p>
+	
+	</div>
+	</form>
+
+			</td>
+
+		</tr>
+
+	<tr><td colspan="2" align="center" valign="top" style="padding:4px;">
+	<font class="gh_commentsrules">AMATEGEKO AGENGA IYANDIKA RY'IGITEKEREZO CYAWE:<br />
+	Witandukira kubijyanye n'iyi nkuru; wikwandika ibisebanya, ibyamamaza cyangwa bivangura; wikwandika ibiteye isoni, <br />
+	Wifuza kubona byihuse ibivugwa/ibisubizo ku gitekerezo cyawe, andika email yawe ahabugenewe. <br />
+	Igitekerezo cyawe kigaragara nyuma y'isuzuma rikorwa na IGIHE.com<br />
+	Ibi bidakurikijwe igitekerezo cyanyu gishobora kutagaragara hano cyangwa kigasibwa, Murakoze!<br />
+	</font>
+	</td></tr>
+
+	</table>
+	</div>
+	<!-- FORM -->
+	
+	<script type="text/javascript">/*<![CDATA[*/
+	if (window.jQuery)(function($){
+		$.getScript('http://www.igihe.com/prive/javascript/jquery.cookie.js',
+		function(){
+			var a = $.cookie('spip_contenu_formulaire_29744____');
+			var saveauto = true;
+			if (a) {
+				$('#formulaire_forum textarea[name=texte]')
+				.val(a);
+				$.cookie('spip_contenu_formulaire_29744____', null);
+			}
+			$('#formulaire_forum form')
+			.bind('submit', function() {
+				saveauto = false;
+			});
+			$(window)
+			.bind('unload', function(){
+				if (saveauto){
+					var s = $('#formulaire_forum textarea[name=texte]').val();
+					if (s)
+						$.cookie('spip_contenu_formulaire_29744____', s);
+					else
+						$.cookie('spip_contenu_formulaire_29744____', null);
+				}
+			});
+		});
+	}(jQuery));
+	/*]]>*/</script>
+	
+	</div></div>
+</div>
+</div><!-- ajaxbloc --></center>
+</div>
+<!-- End IN-->
+
+
+	</div>
+</div>
+
+
+<div class="clear"></div>	
+	

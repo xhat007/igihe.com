@@ -1,0 +1,217 @@
+.smolest {
+	font-size:11px !important;
+	line-height:15px !important;
+	}
+.smolest-min {
+	font-size:10px !important;
+	line-height:14px !important;
+	}
+#m-booked-small-t3-8102{margin: 0 auto; float: right;}
+.booked-weather-160x36 {
+	width:150px !important;
+	/* height:22px !important; */
+	padding: 0px 10px;
+	font:normal 10px 'trebuchet ms', Tahoma, Geneva, sans-serif !important;
+	text-align:left;
+	background:url(../v5images/wsmall.png) no-repeat -4px 0;
+	overflow:hidden;
+	/* border:1px solid red; */
+	margin:0 auto;
+	direction:ltr;
+	 
+	}
+	.booked-weather-160x36-city {
+		width:45px  !important;
+		overflow:hidden;
+		line-height:14px;
+		display:block !important;
+		float:right !important;
+		padding:3px 0 0 10px !important;
+		text-decoration:none !important;
+		 
+		color:#ffffff;
+		font-size:12px !important;
+		border-left:1px solid #fff;
+		}
+	.booked-weather-160x36-degree {
+		float:left;
+		font-size:12px !important;
+		line-height:20px  !important;
+		margin:0 6px 0 0 !important;
+		color: #ffffff;
+		font-weight: bold;
+		}
+		.booked-weather-160x36-degree span {
+			font-size:12px !important;
+			line-height:20px  !important;
+			padding:0px !important;
+			margin:0 !important;
+			background:none;
+			
+			}
+			.booked-weather-160x36-degree span {
+				vertical-align: top !important;
+			}
+			*+ html .booked-weather-160x36-degree span {
+				vertical-align:middle !important;
+				}
+			
+.w160x36-01 {
+	background-position: 50px -11px !important;
+	}
+
+.w160x36-02 {
+	background-position: 50px -68px !important;
+	}
+
+.w160x36-03 {
+	background-position: 50px -126px !important;
+	}
+
+.w160x36-04 {
+	background-position: 50px -185px !important;
+	}
+
+.w160x36-05 {
+	background-position: 50px -245px !important;
+	}
+
+.w160x36-06 {
+	background-position: 50px -306px !important;
+	}
+
+.w160x36-07 {
+	background-position: 50px -365px !important;
+	}
+
+.w160x36-08 {
+	background-position: 50px -424px !important;
+	}
+
+.w160x36-11 {
+	background-position: 50px -485px !important;
+	}
+
+.w160x36-12 {
+	background-position: 50px -545px !important;
+	}
+
+.w160x36-13 {
+	background-position: 50px -607px !important;
+	}
+
+.w160x36-14 {
+	background-position: 50px -667px !important;
+	}
+
+.w160x36-15 {
+	background-position: 50px -727px !important;
+	}
+
+.w160x36-16 {
+	background-position: 50px -788px !important;
+	}
+
+.w160x36-17 {
+	background-position: 50px -847px !important;
+	}
+
+.w160x36-18 {
+	background-position: 50px -904px !important;
+	}
+
+.w160x36-19 {
+	background-position: 50px -967px !important;
+	}
+
+.w160x36-20 {
+	background-position: 50px -1029px !important;
+	}
+
+.w160x36-21 {
+	background-position: 50px -1089px !important;
+	}
+
+.w160x36-22 {
+	background-position: 50px -1147px !important;
+	}
+
+.w160x36-23 {
+	background-position: 50px -1209px !important;
+	}
+
+.w160x36-24 {
+	background-position: 50px -1266px !important;
+	}
+
+.w160x36-25 {
+	background-position: 50px -1326px !important;
+	}
+
+.w160x36-26 {
+	background-position: 50px -1388px !important;
+	}
+
+.w160x36-29 {
+	background-position: 50px -1445px !important;
+	}
+
+.w160x36-30 {
+	background-position: 50px -1507px !important;
+	}
+
+.w160x36-31 {
+	background-position: 50px -1568px !important;
+	}
+
+.w160x36-32 {
+	background-position: 50px -1629px !important;
+	}
+
+.w160x36-33 {
+	background-position: 50px -1689px !important;
+	}
+
+.w160x36-34 {
+	background-position: 50px -1748px !important;
+	}
+
+.w160x36-35 {
+	background-position: 50px -1208px !important;
+	}
+
+.w160x36-36 {
+	background-position: 50px -1868px !important;
+	}
+
+.w160x36-37 {
+	background-position: 50px -1927px !important;
+	}
+
+.w160x36-38 {
+	background-position: 50px -1987px !important;
+	}
+
+.w160x36-39 {
+	background-position: 50px -2046px !important;
+	}
+
+.w160x36-40 {
+	background-position: 50px -2106px !important;
+	}
+
+.w160x36-41 {
+	background-position: 50px -2166px !important;
+	}
+
+.w160x36-42 {
+	background-position: 50px -2227px !important;
+	}
+
+.w160x36-43 {
+	background-position: 50px -2286px !important;
+	}
+
+.w160x36-44 {
+	background-position: 50px -2349px !important;
+	}

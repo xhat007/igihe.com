@@ -1,0 +1,78 @@
+#CACHE{0}
+<!DOCTYPE HTML">
+<HTML>
+	<HEAD>
+		<TITLE>Kwibuka20 Widget</TITLE>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link href='http://fonts.googleapis.com/css?family=Gudea' rel='stylesheet' type='text/css'>
+	</HEAD>
+	<BODY>
+		<div id="main">
+			<div id="header">
+				<img src="kw_images/head.png" width="340">
+			</div>
+			<BOUCLE_kw_articles1(ARTICLES){doublons kw}{branche}{0,1}{par date}{inverse}{titre!=intro}{titre_mot=Kwibuka20_Slider}>
+				<div id="mainart">
+					<div>
+						[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{340,0}||image_recadre{340,230,top center}|extraire_attribut{src})" width="340" height="230">]
+						<div class="imagedesc">
+							<DIV class="imagedesc_content">
+								<a href="#URL_SITE_SPIP/spip.php?page=kw_article&id_article=#ID_ARTICLE">
+									#TITRE
+								</a>
+							</DIV>
+						</div>
+					</div>
+				</div>
+			</BOUCLE_kw_articles1>
+			<div class="article2">
+				<div class="leftimage" style="width:40px;">
+					<img src="kw_images/flame.png" height="55">
+				</div>
+				<div class="righttitle">
+					<P>Amakuru aheruka</P>
+				</div>
+			</div>
+			<BOUCLE_kw_articles2(ARTICLES){doublons kw}{branche}{0,2}{par date}{inverse}{titre!=intro}{titre_mot=Kwibuka20_AmakuruAheruka}>
+				<div class="article">
+					<div class="leftimage">
+						[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{0,60}||image_recadre{70,55,top center}|extraire_attribut{src})" height="55" width="70">]
+					</div>
+					<div class="rightintro">
+						<a href="#URL_SITE_SPIP/spip.php?page=kw_article&id_article=#ID_ARTICLE">
+							[(#TITRE|couper{70,'...'})]<BR />
+						</a>
+						<DIV class="ilya">[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]</DIV>
+					</div>
+				</div>
+			</BOUCLE_kw_articles2>
+			<!--<div class="article2">
+				<div class="leftimage" style="width:40px;">
+					<img src="kw_images/flame.png" height="55">
+				</div>
+				<div class="righttitle">
+					<P>Ubutumwa bw'icyizere</P>
+				</div>
+			</div>
+			<BOUCLE_kw_articles3(ARTICLES){doublons kw}{branche}{0,3}{par date}{inverse}{titre!=intro}{titre_mot=HomeNews}>
+				<div class="article">
+					<div class="leftimage">
+						[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{0,60}||image_recadre{70,55,top center}|extraire_attribut{src})" height="55" width="70">]
+					</div>
+					<div class="rightintro">
+						<a href="#URL_SITE_SPIP/spip.php?page=kw_article&id_article=#ID_ARTICLE">
+							[(#TITRE|couper{70,'...'})]<BR />
+						</a>
+						<DIV class="ilya">[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]</DIV>
+					</div>
+				</div>
+			</BOUCLE_kw_articles3>-->
+			<div id="end">
+				Menya amateka ya Jenocide yakorewe Abatutsi birambuye
+				<div class="hano">
+					<a href="http://igihe.com/spip.php?page=kw_sommaire">Kanda Hano</a>
+				</div>
+			</div>
+		</div>
+	</BODY>
+</HTML>

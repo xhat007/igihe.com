@@ -1,0 +1,13 @@
+[(#SET{titre,[(#ENV{titre_liste}|=={titre_perso}|?{[(#ENV**{titre_liste_perso}|typo)],[(#ENV{titre_liste}|_T)]})]})]
+[(#SET{id_unique,#EVAL{'rand();'}})]
+<B_liste_articles>
+<div class="liste anythingslider articles">
+	[(#ENV{afficher_titre_liste}|oui)[<h2 class="h2">(#GET{titre})</h2>]]
+	<ul id="anythingslider_#GET{id_unique}">
+	<BOUCLE_liste_articles(ARTICLES){aveline_branche}{compteur_publie forum}{notation}{tri #ENV{tri},#ENV{senstri}}{archives?}{aveline_pagination}{aveline_lang}{aveline_exclure_objet_encours}>
+	#INCLURE{fond=inclure/article-resume,id_article=#ID_ARTICLE,id_article_expose=#ENV{id_article},env,forcer_width_100=on}
+	</BOUCLE_liste_articles>
+	</ul>
+</div>
+#INCLURE{fond=inclure/appel_anythingslider,env,id_unique=#GET{id_unique}}
+</B_liste_articles>

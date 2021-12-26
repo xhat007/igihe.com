@@ -1,0 +1,22 @@
+#ignore all mysql connection files
+**/model/sqlconnect.php
+**/error_log
+**/squelettes/error_log
+**/.htaccess
+*pdf
+*png
+*gif
+*jpeg
+*docx
+*jpg
+*doc
+*mp4
+*webm
+*txt
+**/tmp/*
+**/tc/*
+**/wcache/*
+**/squelettes/igihe_articles_cache/*
+**/squelettes/igihe_articles_cache*/*
+**/tmp*/*
+**/trafficcounter_visits_*.html

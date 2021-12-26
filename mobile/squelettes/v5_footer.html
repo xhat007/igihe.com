@@ -1,0 +1,135 @@
+<div class="footer-section">
+				
+				<div class="row">
+					<div class="col-xs-4">
+						<ul class="footer-left">
+							<li><a href="" data-toggle="modal" data-target="#twandikirebox"><i class="fa fa-envelope-o"></i> Twandikire</a></li>
+							<li><a href=""><i class="fa fa-phone"></i> Duhamagare kuri 4546</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-4"> 
+						<a href=""><img src="https://mobile.igihe.com/squelettes/images/gh-logo.png" class=""></a>
+					</div>
+					<div class="col-xs-4">
+						<ul class="footer-right">
+							<li><a href="#"><i class="fa fa-bullhorn"></i> Kwamamaza</a></li>
+							<li><a href="http://igihe.org"><i class="fa fa-shield"></i> Abo turi bo</a></li>
+						</ul>
+					</div>
+				</div> 
+				
+			</div>
+			
+			<!-- Modal -->
+				<div id="twandikirebox" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">×</button>
+						<h4 class="modal-title">Twoherereze Inkuru tuyisangize abasomyi</h4>
+					  </div>
+					  <div class="modal-body">
+						<div class="form-comment">
+							<div class="row">
+								<div class="col-xs-12">
+								<form id="signupForm" method="POST" action="#commentairesection" onsubmit="return(false)" accept-charset="UTF-8">
+									<input id="idarticle2" name="idarticle" value="101552" type="hidden">
+									<input id="titre2" name="titre" value="abatwandikiye" type="hidden">
+									 
+									
+										<div class="col-xs-12"> 
+											<input id="nom2" class="form-control input-sm" placeholder="Amazina yanyu" required="required" maxlength="30" name="nom" type="text"> 
+										</div>
+										<div class="col col-xs-12"> 
+											<input id="email2" class="form-control input-sm" placeholder="Email yanyu" required="required" maxlength="60" name="email" value="" type="email"> 
+										</div>
+										<div class="col col-xs-12"> 
+											<textarea id="texte2" class="form-control input-sm" placeholder="Andika hano" required="required" name="texte" rows="5"></textarea> 
+										</div>
+											 
+										<div class="col col-xs-3"> 
+											<button type="submit" id="ohereza2" class="btn btn-block btn-primary btn-sm" onclick="envoyer_idees()">OHEREZA</button> 
+										</div>
+										<div class="col col-xs-9"> 
+											<p><span id="comment_statut2"></span></p>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Funga</button>
+					  </div>
+					</div>
+
+				  </div>
+				</div>
+				<script type="text/javascript">										
+					function envoyer_idees(id_forum)
+					{
+						var empty_email=(document.getElementById("email2").value.length==0 || document.getElementById("email2").value==null);
+						var empty_message=(document.getElementById("texte2").value.length==0 || document.getElementById("texte2").value==null);
+						var empty_text=(document.getElementById("nom2").value.length==0 || document.getElementById("nom2").value==null);
+						if(empty_text){
+							alert("Andika amazina yanyu");
+						}
+						else if(empty_email){
+							alert("Andika email yanyu");
+						}
+						else if(empty_message){
+							alert("Andika Igitekerezo");
+						}
+						else{
+							var igitekerezo = document.getElementById("texte2").value;
+							var izina = document.getElementById("nom2").value;
+							var email = document.getElementById("email2").value;
+
+							var titre = document.getElementById("titre2").value;
+							var id_article_obj=document.getElementsByName("id_article").item(0);
+							var id_article = document.getElementById("idarticle2").value;
+
+							var id_forum=0;
+							var page="https://mobile.igihe.com/itsform.php";
+							var url="nom="+izina+"&email="+email+"&commentaire="+igitekerezo+"&id_forum="+id_forum+"&titre="+titre+"&id_article="+id_article;
+							var xhr_object = null;
+							if(window.XMLHttpRequest) // Firefox
+								xhr_object = new XMLHttpRequest();
+							else
+							{
+								if(window.ActiveXObject) // Internet Explorer
+									xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+								else
+								{
+									alert("Browser does not support xmlHttpRequest");
+									return;
+								}
+							}
+							var method = "POST";
+							var filename = page;
+							var requete  = url;
+							xhr_object.onreadystatechange = function()
+							{
+								if(xhr_object.readyState == 1)
+								{
+									document.getElementById("comment_statut2").innerHTML="Ubutumwa bwanyu buri kwoherezwa. Mwihangane...";
+								}								
+								if(xhr_object.readyState == 4) 
+								{
+									var reponse = xhr_object.responseText;
+									//specify the response content								
+									document.getElementById("comment_statut2").innerHTML= reponse;
+									document.getElementById("nom2").disabled="disabled";
+									document.getElementById("email2").disabled="disabled";
+									document.getElementById("texte2").disabled="disabled";
+									document.getElementById("ohereza2").disabled="disabled";
+								}
+							}
+							xhr_object.open(method, filename, true);
+							xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							xhr_object.send(requete);	 
+						}				
+					}			
+				</script>

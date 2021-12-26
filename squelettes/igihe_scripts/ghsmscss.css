@@ -1,0 +1,42 @@
+/* CSS Document */
+a:hover{text-decoration: underline;}
+#igihesms{ width: 100%; position: absolute; top: 0px; left: 0px; font-family: Arial, Helvetica, sans-serif; background: url(../../images/smsbg2.jpg) repeat fixed top center; z-index: 1;}
+#thepage{ width: 900px;}
+#header{ width: 900px; height: 100px; background: none; text-align: left;}
+#content{ width: 900px; height: auto; background: url(../../images/smsthebg.png);}
+#leftside{ width: 500px; display: inline-block; vertical-align: top; background: #fff; min-height: 800px; text-align: left; margin: 15px; margin-top: 45px;}
+.smslogo{ width: 70px; display: inline-block; vertical-align: top; background: none;}
+.smslogo img{ border-radius: 7px; border: 5px solid #fff;}
+.smscontent{ width: 425px; display: inline-block; vertical-align: top; text-align:left}
+.smsuser span{ display: list-item; list-style: none; color: #fff; font-weight: normal; font-size: 15px; font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;}
+.divi div span a:hover{ text-decoration: underline; color: #2075CF}
+.sms{ background: url(../../images/smsbg.png) no-repeat; color: #000; padding-top: 20px; margin: 5px;}
+.sms .divi{ background: #fff; border-radius: 10px; padding: 10px; padding-bottom: 0px;font-size: 14px; color: #333333}
+.smscomment{ border-radius: 5px; border: 1px solid #ededed; padding: 2px; margin-top: 5px; }
+.smscommentlogo{ width: 35px; display: inline-block; vertical-align: top;}
+.smscommenttexte{ width: 340px; display: inline-block; vertical-align: top;}
+.smscommenttexte span{ display: list-item; list-style: none; font-size: 11px;}
+.smsreply{color:#fff; font-size: 11px; padding: 2px 10px 2px 10px; background: #333333; border-radius: 5px 5px 0px 0px; text-decoration: none}
+
+.smscomment2{ border-radius: 5px; border: 1px solid #ededed; padding: 2px; margin-top: 5px; margin-left: 20px; background: #fcfcfc;}
+.smscommentlogo2{ width: 30px; display: inline-block; vertical-align: top;}
+.smscommenttexte2{ width: 320px; display: inline-block; vertical-align: top;}
+.smscommenttexte2 span{ display: list-item; list-style: none; font-size: 11px;}
+.smsreply2{color:#fff; font-size: 11px; padding: 2px 10px 2px 10px; background: #333333; border-radius: 5px 5px 0px 0px; text-decoration: none}
+
+
+#rightside{ width: 345px; display: inline-block; vertical-align: top;  min-height: 800px; margin-top: 10px;}
+.smslogo1{ width: 35px; display: inline-block; vertical-align: top; background: #000000}
+.smscontent1{ width: 340px; display: inline-block; vertical-align: top; text-align:left}
+.smsuser1{width: 275px; display: inline-block;; text-align: left;}
+.smsuser1 span{ display: list-item; list-style: none; color: #fff; font-weight: bold; font-size: 12px;}
+.sms1{ background: url(../../images/smsbg3.png) no-repeat; color: #000; padding-top: 20px; margin: 5px;}
+.sms1 .divi1{ background: #fff; border-radius: 10px; padding: 10px; font-size: 12px; color: #333333}
+.divi1 span a:hover{ text-decoration: underline; color: #2075CF}
+.smscomment1{ border-radius: 5px; border: 1px solid #ededed; padding: 2px; margin-top: 5px; background: #fcfcfc; }
+.smscommentlogo1{ width: 45px; display: inline-block; vertical-align: top;}
+.smscommenttexte1{ width: 255px; display: inline-block; vertical-align: top;}
+.smscommenttexte1 span{ display: list-item; list-style: none; font-size: 11px;}
+.smsreply1{color:#fff; font-size: 11px; padding: 2px 10px 2px 10px; background: #fff; border-radius: 5px 5px 0px 0px; text-decoration: none}
+
+#footer{ width: 900px; height: auto; background: #none;}

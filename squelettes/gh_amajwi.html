@@ -1,0 +1,42 @@
+#CACHE{0}
+<div class="grid_7" id="box">
+<a href="#" class="box_title">Amajwi</a>
+
+<div style="padding:5px;">
+			<div class="tabs">
+			<ul>
+				<li><a href="#" onmouseover="easytabs('2', '1');" onfocus="easytabs('2', '1');" onclick="return false;" title="" id="audiolink1">&nbsp;&nbsp;Top 5&nbsp;&nbsp;</a></li>
+				<li><a href="#" onmouseover="easytabs('2', '2');" onfocus="easytabs('2', '2');" onclick="return false;" title="" id="audiolink2">&nbsp;&nbsp;Izikunzwe&nbsp;&nbsp;</a></li>
+			</ul>
+			</div>
+
+			<div id="audiocontent1">
+<BOUCLE_gh_tsongs(ARTICLES){0,5}{titre_mot=HomeSong}{par date}{inverse}>
+<div class="gh_homesongz">
+<div class="gh_homesongzc">#COMPTEUR_BOUCLE&nbsp;</div>
+<div class="gh_homesongzt"><a href="http://www.igihe.com/#URL_ARTICLE" class="gh_songzt">#TITRE</a>
+<BOUCLE_gh_songs_artists(RUBRIQUES){branche}{0,1}><BOUCLE_gh_songs_artists0(RUBRIQUES){id_enfant}{0,1}>&nbsp;-&nbsp;<a href="http://www.igihe.com/#URL_RUBRIQUE" class="gh_songzt">#TITRE</a></BOUCLE_gh_songs_artists0></BOUCLE_gh_songs_artists>[<i style="font-size:10px;color:#959595;">&nbsp;feat&nbsp;</i> (#SOUSTITRE)]</div>
+<div class="gh_homesongzp"><a href="http://www.igihe.com/#URL_ARTICLE#amajwi" class="gh_homesongzp"><img src="#DOSSIER_SQUELETTE/igihe_imgs/gh_icons_empty.gif" width="27" height="24" border="0" alt="PLAY"></a></div>
+<div class="clear"></div>
+</div>
+</BOUCLE_gh_tsongs>
+			</div>
+
+
+			<div id="audiocontent2">
+<!--  -->
+<BOUCLE_gh_songsnew(ARTICLES){0,5}{titre_mot=HomeSong}{par visites}{inverse}{age<7}>
+<div class="gh_homesongz">
+<div class="gh_homesongzc">#COMPTEUR_BOUCLE&nbsp;</div>
+<div class="gh_homesongzt"><a href="http://www.igihe.com/#URL_ARTICLE" class="gh_songzt" title="Visits:  <B_gh_vst1><BOUCLE_gh_vst1(ARTICLES){id_article}{age>14}>[(#VISITES|mult{9})]</BOUCLE_gh_vst1></B_gh_vst1>[(#VISITES)]<//B_gh_vst1>">#TITRE</a>
+<BOUCLE_gh_songs_nartists(RUBRIQUES){branche}{0,1}><BOUCLE_gh_songs_nartists0(RUBRIQUES){id_enfant}{0,1}>&nbsp;-&nbsp;<a href="http://www.igihe.com/#URL_RUBRIQUE" class="gh_songzt">#TITRE</a></BOUCLE_gh_songs_nartists0></BOUCLE_gh_songs_nartists>[<i style="font-size:10px;color:#959595;">&nbsp;feat&nbsp;</i> (#SOUSTITRE)]</div>
+<div class="gh_homesongzp"><a href="http://www.igihe.com/#URL_ARTICLE#amajwi" class="gh_homesongzp"><img src="#DOSSIER_SQUELETTE/igihe_imgs/gh_icons_empty.gif" width="27" height="24" border="0" alt="PLAY"></a></div>
+<div class="clear"></div>
+</div>
+</BOUCLE_gh_songsnew>
+<!--  -->
+			</div>
+
+</div>
+
+	</div>

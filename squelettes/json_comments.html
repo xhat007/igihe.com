@@ -1,0 +1,26 @@
+<BOUCLE_json_cmtMain(ARTICLES){id_article=#ENV{news_id,48254}}{doublons zz}>
+{
+	"nodes":[
+		<BOUCLE_json_comments1(FORUMS){id_article=#ENV{news_id,48254}}{doublons ff}{par date}{inverse}{#ENV{pg,0},5}>
+			{
+				"node":
+					{
+						"nom":[(#NOM||json_encode)],
+						"body":[(#TEXTE||json_encode)],
+						"date":[(#DATE||json_encode)]
+					}
+			},
+		</BOUCLE_json_comments1>
+		<BOUCLE_json_comments2(FORUMS){id_article=#ENV{news_id,48254}}{par date}{inverse}{#ENV{pg,0},1}>
+			{
+				"node":
+					{
+						"nom":[(#NOM||json_encode)],
+						"body":[(#TEXTE||json_encode)],
+						"date":[(#DATE||json_encode)]
+					}
+			}
+		</BOUCLE_json_comments2>
+		]
+}
+</BOUCLE_json_cmtMain>

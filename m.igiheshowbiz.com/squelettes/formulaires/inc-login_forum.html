@@ -1,0 +1,32 @@
+[(#REM)
+
+	Formulaire d'identification sur le forum
+
+	Si la session est authentifiee, on propose la deconnexion
+
+	Si la session n'est pas authentifiee, on presente un formulaire nom/email
+
+	Pour les forums sur abonnement, un squelette specifique presente les regles
+
+]
+<fieldset>
+
+[(#SESSION{auth}|?{' '})
+	[<p class='explication'><font class="gh_commentslabel">IZINA:</font><br /><strong>(#SESSION{nom}|typo)</strong> <font style="font-size:11px;color:#B7B7B7;">&#91;<a href="#URL_LOGOUT" rel="nofollow"><:icone_deconnecter:></a>&#93;</font></p>]
+	<input type="hidden" name="session_nom_[(#ENV{id_forum})]" id="session_nom_[(#ENV{id_forum})]" class="gh_comments" value="[(#SESSION**{nom}|sinon{#SESSION**{session_nom}}|entites_html)]"/>
+	<input type="hidden" name="session_email_[(#ENV{id_forum})]" id="session_email_[(#ENV{id_forum})]" value="[(#SESSION**{email}|sinon{#SESSION**{session_email}}|entites_html)]" class="gh_comments"/>
+]
+[(#SESSION{auth}|?{'',' '})
+	<ul>
+		<li class='saisie_session_nom'>
+			<label for="session_nom"><font class="gh_commentslabel">IZINA</font><font style="font-size:11px;color:#B7B7B7;">&nbsp;&#91;<a href="[(#URL_PAGE{login}|parametre_url{url,#SELF})]" rel="nofollow"><:lien_connecter:></a>&#93;</font></label>
+			<input type="text" name="session_nom_[(#ENV{id_forum})]" id="session_nom_[(#ENV{id_forum})]" class="gh_comments" value="[(#SESSION**{nom}|sinon{#SESSION**{session_nom}}|entites_html)]"  />
+			[(#CONFIG{accepter_inscriptions}|=={oui}|?{' '})]
+		</li>
+		<li class='saisie_session_email'>
+			<label for="session_email"><font class="gh_commentslabel">EMAIL YANYU</font></label>
+			<input type="text" name="session_email_[(#ENV{id_forum})]" id="session_email_[(#ENV{id_forum})]" value="[(#SESSION**{email}|sinon{#SESSION**{session_email}}|entites_html)]" class="gh_comments"  />
+		</li>
+	</ul>
+]
+</fieldset>

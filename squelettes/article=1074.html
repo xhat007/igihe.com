@@ -1,0 +1,321 @@
+#CACHE{57600}
+<BOUCLE_IGIHE_ARTICLE(ARTICLES){id_article}>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>#TITRE > #NOM_SITE_SPIP</title>
+
+<!-- dRmetatags  -->
+<meta http-equiv="pragma" content="cache" />
+<meta http-equiv="content-language" content="en-US" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="robots" content="all" />
+<meta name="revisit-after" content="1" />
+<meta http-equiv="window-target" content="_top" />
+<meta name="author" content="El Gato" />
+<meta name="expires" content="never" />
+<meta name="rating" content="general" />
+
+<meta property="og:title" content="#TITRE" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="#URL_SITE_SPIP/#URL_ARTICLE" />
+<meta property="og:image" content="#URL_SITE_SPIP/IMG/[(#LOGO_ARTICLE|fichier)]" />
+<meta property="og:site_name" content="IGIHE.com - Mu Kinyarwanda" />
+<meta property="og:description" content="[(#TEXTE|textebrut|couper{200,'...'})]" />
+<meta property="fb:admins" content="1465848028" />
+<meta property="fb:app_id" content="295995323783537" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="image_src" type="image/jpeg" href="#URL_SITE_SPIP/IMG/[(#LOGO_ARTICLE|fichier)]" />
+<!--End dRmetatags  -->
+
+<!-- dR_scripts -->
+<link rel="stylesheet" type="text/css" media="screen" href="#CHEMIN{'igihe_scripts/ghgrid.css'}" />
+<link rel="stylesheet" type="text/css" media="screen" href="http://igihe.com/squelettes/igihe_scripts/ghstyle_day.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="http://igihe.com/squelettes/igihe_scripts/ghstyle.css" />
+<!-- End dR_scripts -->
+
+<!-- EG_scripts -->
+<style>
+	#thepage
+	{ 
+	width: 965px; 
+	background: url(http://igihe.com/squelettes/igihe_scripts/advertorial/IGIHE_imgs/bac.jpg); 
+	height: auto; 
+	border: 5px #fff solid; 
+	border-radius: 20px; margin: 20px;
+	box-shadow: 1px 1px 50px -7px #25394e;
+	padding-bottom: 10px;
+	margin-left: 2px;
+	}
+	#adv_titre
+	{
+		display: inline-block;
+		vertical-align: top;
+		width: 650px;	
+		margin-left: 5px;
+		padding-left: 5px;
+		margin-top: 7px;
+		font-family: "Lucida Sans Unicode";
+		font-size: 28px;
+		color: #2075cf;
+		text-align: left;	
+	}
+	#adv_logo
+	{		
+		display: inline-block;
+		vertical-align: top;
+		width: 270px;
+		margin-left: 5px;
+		margin-top: 0px;	
+	}
+	#adv_logo img
+	{		
+		opacity: 0.5;
+		width:300px;
+		height:253px;
+	}
+	#adv_logo img:hover
+	{		
+		opacity: 8;
+		width:300px;
+		height:253px;
+	}
+	#adv_text
+	{		
+		font-family: Lucida Sans Unicode; 
+		font-size: 13px;		
+		text-align:left;
+		width: 940px;
+		margin-left: 0px;
+		background: #fff;
+		padding: 10px;
+		border-radius: 10px;
+	}	
+	#adv_texte
+	{		
+		display: inline-block;
+		vertical-align: top;
+		font-family: "Lucida Sans Unicode";
+		font-size: 12px;
+		text-align:left;
+		width: 635px;
+	}	
+	#adv_latest{
+		display: inline-block;
+		vertical-align: top;
+		}
+	#adv_text p
+	{		
+		font-family: "Lucida Sans Unicode";font-size: 13px;
+		text-align:left;
+	}
+	#adv_galery
+	{		
+	width: 100%;
+	margin-left: -10px;
+	height: 180px;
+	}
+	#adv_footer
+	{		
+	width: 100%;
+	padding-top: 10px;
+	height: auto;
+	}
+</style>
+<link rel="stylesheet" href="#CHEMIN{'igihe_scripts/advertorial/default.css'}">
+<link type="text/css" rel="stylesheet" href="#CHEMIN{'igihe_scripts/advertorial/bottom_jquery/themes/base.css'}"/>
+<link type="text/css" rel="stylesheet" href="#CHEMIN{'igihe_scripts/advertorial/bottom_jquery/themes/default/theme.css'}"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="#CHEMIN{'igihe_scripts/advertorial/bottom_jquery/jquery.accessible-news-slider.js'}"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+
+	jQuery('#newsslider').accessNews({
+	
+	});
+
+	jQuery('#newsslider2').accessNews({
+		title : "BREAKING NEWS:",
+		subtitle:"stories from the internet",
+		speed : "slow",
+		slideBy : 4,
+		slideShowInterval: 100000,
+		slideShowDelay: 100000
+	});
+
+});
+</script>
+    <script src="#CHEMIN{'igihe_scripts/advertorial/js/image-slider.js'}" type="text/javascript"></script>
+    <link href="#CHEMIN{'igihe_scripts/advertorial/style/image-slider.css'}" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#slider').slider({ speed: 500 });
+
+        });       
+        
+    </script>
+<!-- END EG_scripts-->
+</head>
+
+
+<body topmargin="0" leftmargin="0" >
+<a name="hejuru"></a>
+
+
+<!-- TOP BANNER
+	<div style="display:block;width:100%;height:111px;text-align:center;background-color:#0655c7;">
+<a href="http://www.igihe.com/coverages/primus-guma-guma-superstar-ii/"><img src="#DOSSIER_SQUELETTE/igihe_imgs/pggss_ads_topbanner.gif" width="978" height="111" border="0" alt=""></a>
+	</div>
+<!-- End TOP BANNER -->	
+
+
+<!-- HEADER -->
+<div id="ghheader">
+<div class="container_20">
+
+<INCLURE{fond=gh_head}{env}{ajax}/>
+
+<!-- Menu -->
+<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_home.gif'}" width="19" height="25" border="0" align="left">Ahabanza</a></div>
+<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/abo-turibo/" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_Abo Turibo.gif'}" width="19" height="25" border="0" align="left">Abo Turibo</a></div>
+<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/serivisi/" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_Serivisi.gif'}" width="19" height="25" border="0" align="left">Serivisi</a></div>
+<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/twandikire/" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_Twandikire.gif'}" width="19" height="25" border="0" align="left">Twandikire</a></div>
+<div class="grid_4" id="menu"><a href="javascript:animatedcollapse.toggle(['ibirimo', 'ibirimopg'])" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_ibirimo.gif'}" width="19" height="25" border="0" align="left">Ibirimo</a></div>
+<div class="clear"></div>
+<!-- End Menu -->
+
+</div>
+</div>
+<div class="clear"></div>
+<!-- End HEADER -->
+
+[(#REM) <!-- #########################  DEFAULT ####################### -->]
+<BOUCLE_gh_l0(ARTICLES){id_article}{doublons yy}>
+
+<!-- SECTION HEADER -->
+<div id="ghheader">
+<div class="container_20">
+
+
+
+</div>
+</div>
+<div class="clear"></div>
+<!-- End SECTION HEADER -->
+
+
+
+<!-- BODY -->
+<div id="ghbody"><div id="bg">
+<div class="container_20">
+
+
+  <div id="thepage">
+  	<div id="adv_titre">
+  	  <div>#TITRE
+      </div>
+  	  <div style="margin-top: 10px; display: inline-block;">
+<a href="http://www.facebook.com/igihe?ref=ts">
+<img src="http://igihe.com/squelettes/igihe_scripts/advertorial/images/face.png" width="28" height="25" border="0"/>
+</a>			     
+<a href="https://twitter.com/igihe">
+<img src="http://igihe.com/squelettes/igihe_scripts/advertorial/images/tw.png" width="28" height="25" border="0"/>    
+</a> 
+<a href="http://www.youtube.com/user/igihetv?feature=results_main">
+<img src="http://igihe.com/squelettes/igihe_scripts/advertorial/images/you.png" width="29" height="26" border="0"/>     
+</a>
+<a href="#">
+<img src="http://igihe.com/squelettes/igihe_scripts/advertorial/images/in.png" width="29" height="26" border="0"/>
+</a>
+	  </div>
+      <div style="display: inline-block; line-height: 15px;vertical-align: top; padding-top: 10px;">
+      <span style="font-size: 14px; color: #726f6f; "><strong>Date:</strong> [(#DATE|affdate)]</span></div>
+  	  <div style="margin-top: 0px; height: 100px; margin-left: 0px;">
+<div id="slider">
+	<BOUCLE_adv_gallery_img(DOCUMENTS){id_article}{extension==jpg|gif|png}>	
+            <div>
+		
+                	[<img src="(#URL_DOCUMENT)" alt="#TITRE" width="641" height="381" /> ]
+		
+           </div>
+</BOUCLE_adv_gallery_img>	                        
+
+</div>
+	  </div>
+  	</div>
+  	<div id="adv_logo" align="right">[(#LOGO_ARTICLE)]<!-- <img src="img2.png" width="300" height="253" /> --></div>
+  	<div id="adv_text" style="">
+    <div id="adv_texte">
+   <p>#TEXTE</p>
+      </div>
+      
+      <div id="adv_latest"><INCLURE{fond=gh_adv_amakurumashya}{env}{ajax}/></div>
+
+<div id="adv_galery">
+    	<ul id="newsslider">
+		
+
+
+<B_adv_news>
+	<BOUCLE_adv_news(ARTICLES){id_rubrique=1074}{par date}{inverse}>
+<li>
+	<a href="#URL_ARTICLE">
+		[<img src="(#LOGO_ARTICLE||image_reduire{0,85}||image_recadre{90,80,top center}|extraire_attribut{src})" width="180" height="104" alt="#TITRE" />]
+	</a>
+	<a href="#URL_ARTICLE">
+            <span style="font-size: 14px; color: #2075d0; font-weight: bold; display: list-item; padding-left: 8px;">#TITRE</span>
+            <span style="font-size: 12px; color: #2075d0; text-align: left; display: list-item; padding-left: 8px;">[(#TEXTE|couper{50})]</span>
+        </a>
+</li>
+
+	</BOUCLE_adv_news>
+</B_adv_news>
+<//B_adv_news>
+
+	</ul>
+
+ 	
+  	
+    </div>
+  	
+    </div>
+    <div id="adv_footer"><img src="http://igihe.com/squelettes/igihe_scripts/advertorial/IGIHE_imgs/footer.png" /></div>
+  </div>
+
+    </div>
+</div>
+	<div class="clear"></div>
+</div></div>
+<!-- End BODY -->
+
+</BOUCLE_gh_l0>
+[(#REM) <!-- ######################### End  DEFAULT ####################### -->]
+
+<!-- FOOTER -->
+<div id="ghfooter">
+<div class="container_20">
+
+<!-- Ads728x90 -->
+<div class="grid_20" id="footer_ads">
+	<a href="#" class="gh_adsin" >kwamamaza<br></a>
+<img src="#CHEMIN{'igihe_imgs/gh_ad1_default.png'}"  width="728" height="90" border="0"/>
+	</div>
+<div class="clear"></div>
+<!-- End Ads728x90 -->
+
+<INCLURE{fond=gh_footer}{env}{ajax}/>
+
+</div>
+</div>
+<!-- End FOOTER -->
+
+
+</body>
+</html>
+</BOUCLE_IGIHE_ARTICLE>
+
+
+
+

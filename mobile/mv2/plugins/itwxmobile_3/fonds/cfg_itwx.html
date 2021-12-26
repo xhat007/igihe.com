@@ -1,0 +1,37 @@
+#CACHE{0}
+[(#REM) icone=prive/img/itwx_25.png]
+[(#SET{logo,
+<img src='#DOSSIER_SQUELETTE/../prive/img/logo_itwx.png' width='65' height='65' alt='iTwX Mobile' style="float:#LANG_RIGHT;padding-left:6px;" />
+})]
+<!-- descriptif=
+<div class="itwx">
+<h4 style=" font-size:1.1em"><:itwx:config_itwx:></h4>
+#GET{logo}
+<:itwx:config_explication:>
+<br class="nettoyeur" /><br /><hr /><br />
+<:itwx:liens:><br />
+[(#CONFIG{itwx/nosmart}|non)<:itwx:smartphone:><br />]
+<:itwx:mobile:><br />
+[(#CONFIG{itwx/notab}|non)<:itwx:tablette:><br />]
+<:itwx:web:>
+</div>
+<div class="itwx" style="padding:0 1em 1.5em 1em"><br />
+<img src='../plugins/itwxmobile_3/prive/img/video_icon.png' alt="" style='float:left;padding:0 0.5em 0 0;'/>
+<:itwx:config_player:>
+<br class="nettoyeur" /><br /><hr /><br />
+<:itwx:vignette_player:>
+</div>
+-->
+<!-- titre=<:itwx:config_titre:>-->
+<div class="ajax">
+#FORMULAIRE_CONFIGURER_ITWX
+</div>
+
+<p class="reponse_formulaire error"><:itwx:config_alerte:></p>
+<style type='text/css'>
+<!--
+	.cadre-info { border:0}
+	#navigation .cadre_padding { padding:0;}
+	#navigation .cadre_padding .itwx { margin-top: 0.8em; padding:0 1em 0.5em 1em; font-size:0.9em; border:2px outset #000; background:#F0F0F0}
+-->
+</style>

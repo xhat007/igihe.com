@@ -1,0 +1,129 @@
+
+/***** clearfix *****/
+.clear {clear: both;height: 0;line-height: 0;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+.clearfix {height: 1%;}
+.clearfix {display: block;}
+
+
+
+/* Panel Tab/button */
+.tab {
+	height: 30px;
+	position: static;
+    top: 0;
+    z-index: 999;
+	}
+
+.tab ul.login {
+	display: block;
+	position: relative;
+  	float: left;
+  	clear: right;
+  	height: 30px;
+	width: auto;
+  	font-weight: bold;
+	line-height: 30px;
+	margin: 0;
+  	color: white;
+  	font-size: 80%;
+	text-align: center;
+
+}
+
+.tab ul.login li.left {
+  	height: 30px;
+	width: 30px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: center;
+}
+
+.tab ul.login li.right {
+  	height: 30px;
+	width: 30px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: center;
+}
+
+.tab ul.login li {
+ 	text-align: center;
+  	padding: 0 4px;
+	display: block;
+	float: center;
+	align:center;
+	height: 30px;
+
+}
+
+.tab ul.login li a {font-family:tahoma;font-size:11px;font-weight:bold;color:#C1C1C1;	background-color:#454545;-moz-border-radius-bottomright: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px;}
+
+.tab ul.login li a:hover {font-family:tahoma;font-size:11px;font-weight:bold;color:#EBEBEB;background-color:#6A6A6A;-moz-border-radius-bottomright: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px;}
+
+
+.tab a.open, .tab a.close{
+	height: 20px;
+	line-height: 30px !important;
+	text-align:center;
+	cursor: pointer;
+	display: block;
+	width: 200px;
+	height: 30px;
+	position: relative;
+	border:0px solid;
+	top: 0px;
+}
+
+
+
+/* sliding panel */
+#toppanel {
+    /*position: absolute;;*/   /*Panel will overlap  content */
+    position: relative;   /*Panel will "push" the content down */
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#panel {
+	width: 100%;
+	color: #999999;
+	background:#383838;
+	border-bottom:4px solid #383838;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	display: none;
+}
+
+#panel .content {
+	width: 970px;
+	height: 370px;
+	margin: 0 auto;
+	padding-top:15px;
+	text-align: left;
+	font-size: 0.85em;
+}
+
+#panel .content .left {
+	width: 970px;
+	height: 370px;
+	float: left;
+	padding: 3px;
+}
+
+
+
+font.sa_paneltitle{font-family:tahoma;font-size:16px;font-weight:bold;color:#006600;}
+font.sa_paneltexte{font-family:verdana;font-size:12px;font-weight:normal;color:#000000;}

@@ -1,0 +1,21 @@
+<div class="grid_7" id="box">
+<a href="#" class="box_title">Sobanukirwa na RSSB</a>
+<a href="http://igihe.com/spip.php?page=rubrique&id_rubrique=35" target="_blank"><img src="http://www.igihe.com/images/rssb_kwibuka.png" width="310" /></a>
+<B_gh_rssb>
+
+<BOUCLE_gh_rssb(ARTICLES){tout}{0,2}{par date}{inverse}{titre_mot="HomeRssb"}>
+
+<div class="gh_amakuru_home" onClick="parent.location='http://www.igihe.com/#URL_ARTICLE'">
+
+[<img src="(#LOGO_ARTICLE||image_reduire{0,85}||image_recadre{90,80,top center}|extraire_attribut{src})" alt="[(#TITRE)]" width="90" height="80" align="left" class="gh_news_image"  />]
+
+<div style="padding-bottom:5px;"><a href="http://www.igihe.com/#URL_ARTICLE" class="gh_news_hometitle">
+<div class="gh_article_adv_dtimeago">#TITRE</div>
+</div>
+
+</div>
+</BOUCLE_gh_rssb>
+
+</B_gh_rssb>
+<//B_gh_rssb>
+</div>

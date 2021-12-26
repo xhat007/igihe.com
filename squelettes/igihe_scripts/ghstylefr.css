@@ -1,0 +1,443 @@
+body{font-family:"Trebuchet MS", Helvetica, sans-serif;font-weight:normal;margin:0px;padding:0px;}
+a{color:#2075CF;text-decoration:none;}
+a:hover{color:#4e4e4e;}
+
+
+/*MAIN*/
+#ghheader{display:block; width:auto;height:auto; margin-left: auto; margin-right: auto; background-image:url(../igihe_imgs/gh_day_top.jpg);background-repeat:repeat-x;background-position:left top;}
+#ghbody{display:block; width:auto;min-height:500px; max-height:auto; margin-left: auto; margin-right: auto; background-image:url(../igihe_imgs/gh_day_content.jpg); background-position:center top; background-repeat:repeat-x;}
+#bg{display:block; width:auto;min-height:500px;bottom: 0px;margin-left: auto; margin-right: auto; background-image:url(../igihe_imgs/gh_bg_trans.png); background-position:center bottom; background-repeat:repeat-x;border:0px solid red}
+#bghome{display:block; width:auto;min-height:500px;bottom: 0px;margin-left: auto; margin-right: auto;}
+#ghfooter{display:block; position:relative;z-index:99999999; width:auto;height:auto; margin-left: auto; margin-right: auto; background-image:url(../igihe_imgs/gh_day_footer.png);background-repeat:no-repeat;background-position:center top;background-color:#000000;}
+
+
+
+/* HEADER */
+#top{height:35px; margin-left: auto; margin-right: auto; background-color:#000000; -moz-border-radius-bottomright: 10px; -webkit-border-bottom-right-radius: 10px; border-bottom-right-radius: 10px; -moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px; border-bottom-left-radius: 10px;}
+#top_text{display:inline-block;float:left;font-family:tahoma;font-size:11px;font-weight:bold;color:#FFFFFF;margin-right:5px;margin-top:10px;}
+
+img.gh_lang{display:inline-block;float:left;height:12px;margin-left:1px;margin-right:3px;}
+ul.gh_lang{list-style-type:none;height:20px;display:inline-block;margin:0;padding:0;margin-top:8px;}
+li.gh_lang{display:inline-block;float:left;cursor:pointer;width:135px;height:12px;padding:3px;margin-right:5px;background-color:#ffffff;background-image:url(../igihe_imgs/gh_lang_on_bg.gif);background-repeat:repeat-y;background-position:left top;border-radius: 5px;-moz-border-radius:5px; -webkit-border-radius:5px;-border-radius:5px;}
+a.gh_lang{float:left;line-height:12px;height:12px;font-family:"verdana", Helvetica, sans-serif;font-size:10px;font-weight:bold;text-transform:uppercase;color:#000000;text-decoration:none; margin:0px; padding:0px;}
+a:hover.gh_lang{float:left;line-height:12px;height:12px;font-family:"verdana", Helvetica, sans-serif;font-size:10px;font-weight:bold;text-transform:uppercase;color:#444444;text-decoration:none;}
+li.gh_lang_na{display:inline-block;float:left;cursor:pointer;width:135px;height:12px;padding:3px;margin-right:5px;background-color:#585858;opacity:0.6;filter:alpha(opacity=60);-moz-border-radius:5px; -webkit-border-radius:5px;border-radius:5px;}
+a.gh_lang_na{float:left;line-height:12px;font-family:"verdana", Helvetica, sans-serif;font-size:10px;font-weight:bold;text-transform:uppercase;color:#dadada;text-decoration:none;}
+a:hover.gh_lang_na{float:left;line-height:12px;font-family:"verdana", Helvetica, sans-serif;font-size:10px;font-weight:bold;text-transform:uppercase;color:#dadada;text-decoration:none;}
+
+div.gh_header_search{width:230px;height:20px;display:inline-block;float:right;top:5px;margin:0px;margin-top:8px;margin-right:3px;}
+input.gh_search{width:135px;height:18px;display:inline-block;float:left;border:0px solid #C0C0C0;background-color:#FFFFFF;font-family:arial;font-size:11px;text-align:left;font-weight:bold;color:#B2B2B2;padding-left:3px;margin:0px;border-top-left-radius: 5px;-moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px;border-bottom-left-radius: 5px;-moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px;}
+input:focus.gh_search{width:135px;height:18px;display:inline-block;float:left;border:0px solid #C0C0C0;background-color:#FFFFFF;font-family:arial;font-size:11px;text-align:left;font-weight:bold;color:#000000;padding-left:3px;margin:0px;border-top-left-radius: 5px;-moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px;border-bottom-left-radius: 5px;-moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px;}
+input.gh_search_out{width:85px;height:18px;display:inline-block;float:left;border:0px solid #C0C0C0;background-color:#C0C0C0;font-family:verdana;font-size:10px;font-weight:bold;color:#000000;text-transform:uppercase;padding:0px;margin:0px;border-top-right-radius: 5px;-moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px;border-bottom-right-radius: 5px;-moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px;}
+ 
+#logo{height:130px;margin:0px;padding:0px;}
+#logoimage{margin-left:-20px;}
+
+a.gh_adsin{text-align:center;letter-spacing:5px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:normal;color:#D3D3D3;text-decoration:none;}
+a:hover.gh_adsin{text-align:center;letter-spacing:5px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:normal;color:#000000;text-decoration:none;}
+
+#menu{text-align:center;height:30px;line-height:25px;background-image:url(../igihe_imgs/gh_menubg1a.png);background-repeat:repeat-x;}
+a.gh_menu1{display:block;width:100%;text-align:center;height:30px;line-height:25px;font-family:verdana;font-size:0.6em;font-weight:bold;text-transform:uppercase;color:#000000;text-decoration:none;text-shadow: 1px 1px 1px #FFFFFF;background-image:url(../igihe_imgs/gh_menubg1a.png);background-repeat:repeat-x;}
+a:hover.gh_menu1{display:block;width:100%;text-align:center;height:30px;line-height:25px;font-family:verdana;font-size:0.6em;font-weight:bold;text-transform:uppercase;color:#2075cf;text-decoration:none;text-shadow: 1px 1px 1px #FFFFFF;background-image:url(../igihe_imgs/gh_mainmenu_blue_on.gif);background-repeat:repeat-x;background-position:left top;}
+a.gh_menu2{display:block;width:100%;text-align:left;padding-left:15px;height:35px;line-height:35px;font-family:verdana;font-size:13px;font-weight:bold;text-transform:normal;color:#000000;text-decoration:none;background-image:url(../igihe_imgs/gh_mainmenuover.gif);background-repeat:no-repeat;background-position:left center;}
+a:hover.gh_menu2{display:block;width:100%;text-align:left;padding-left:15px;height:35px;line-height:35px;font-family:verdana;font-size:13px;font-weight:bold;text-transform:normal;color:#2478d0;text-decoration:none;background-image:url(../igihe_imgs/gh_mainmenuon.gif);background-repeat:no-repeat;background-position:left center;}
+li.gh_menu2{border-bottom:2px solid #E0E0E0;}
+
+
+
+/*BOX*/
+#box{min-height:100px;margin-top:2px;background-color:#ffffff;background-image:url(../igihe_imgs/gh_menubg.png);background-repeat:repeat-x;background-position:left top;}
+a.box_title{display:block;height:25px;font-family:verdana;font-size:13px;font-weight:bold;text-transform:uppercase;color:#808080;text-shadow: 1px 1px 1px #FFFFFF;text-decoration:none;padding-left:25px;}
+a:hover.box_title{display:block;height:25px;font-family:verdana;font-size:13px;font-weight:bold;text-transform:uppercase;color:#000000;text-shadow: 1px 1px 1px #FFFFFF;text-decoration:none;padding-left:25px;}
+
+
+
+/*ADS*/
+#ads_top{margin-top:2px;padding-top:5px;text-align:center;}
+#ads_innertop{height:285px;text-align:center;background-color:#ffffff;}
+#ads_innerbody{min-height:300px;margin-top:2px;text-align:center;background-color:#ffffff;}
+#ads_right{min-height:426px;margin-top:2px;background-color:#ffffff;padding-bottom:5px;}
+
+
+
+
+/*HOMEPAGE*/
+#content{
+margin-top:2px;
+min-height:700px;
+height:auto;
+}
+
+#sidebar{
+margin-top:2px;
+min-height:700px;
+height:auto;
+}
+
+
+#slidenewshomepage{height:37px;line-height:37px;background-color:#ffffff;padding-top:-3px;}
+#slidenewsinner{height:25px;line-height:25px;background-color:#ffffff;padding-top:-3px;}
+font.gh_newsslidesttime{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.75em;font-weight:bold;text-transform:uppercase;color:#FF0000; }
+a.gh_newsslides_title{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.8em;font-weight:bold;color:#000000; text-decoration:none;}
+a:hover.gh_newsslides_title{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.8em;font-weight:bold;color:#2075D0; text-decoration:none;}
+
+
+a.gh_fullnews_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.8em;font-weight:bold;color:#000000; text-decoration:none;}
+a:hover.gh_fullnews_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.8em;font-weight:bold;color:#2478d0; text-decoration:underline;}
+div.gh_fullnews_details{display:block;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.7em;font-weight:normal;color:#C0C0C0; text-decoration:none;}
+a.gh_news_more{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:1.2em;line-height:20px;font-weight:bold;color:#2075D0; text-decoration:none;}
+a:hover.gh_news_more{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:1.2em;line-height:20px;font-weight:bold;color:#2478d0; text-decoration:underline;}
+
+
+#box_media{min-height:300px;margin-top:2px;background-color:#000000;background-image:url(../igihe_imgs/gh_menubg_black.png);background-repeat:repeat-x;background-position:left top;}
+a.box_media_title{display:block;height:25px;font-family:verdana;font-size:13px;font-weight:bold;text-transform:uppercase;color:#E6E6E6;text-decoration:none;padding-left:25px;}
+a:hover.media_title{display:block;height:25px;font-family:verdana;font-size:13px;font-weight:bold;text-transform:uppercase;color:#E6E6E6;text-decoration:none;padding-left:25px;}
+img.gh_amashusho_image{margin:3px;padding:0px;border:1px solid #808080;background-color:#333333;}
+
+
+/*NEWS*/
+#box_news{display:block;z-index:999;min-height:604px;margin-top:2px;margin-bottom:0px;background-color:#ffffff;background-image:url(../igihe_imgs/gh_menubg.png);background-repeat:repeat-x;background-position:left top;}
+
+div.gh_amakuru_home{min-height:110px;border-bottom:4px solid #F3F3F3;margin:2px; margin-bottom:0px; padding-bottom:5px;background-color:#FFFFFF;}
+div:hover.gh_amakuru_home{min-height:110px;border-bottom:4px solid #000000; margin-bottom:0px;padding-bottom:5px;background-color:#FBFBFB;cursor:pointer;}
+
+img.gh_news_image{margin:5px;margin-bottom:10px;padding:0px;border:0px solid #C0C0C0;background-color:#DADADA;}
+a.gh_news_category{font-family:tahoma;font-size:10px;font-weight:bold;color:#5D5D5D;text-transform:uppercase;text-decoration:none;}
+a:hover.gh_news_category{font-family:tahoma;font-size:10px;font-weight:bold;color:#808080;text-transform:uppercase;text-decoration:none;}
+
+a.gh_news_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.90em;line-height:20px;font-weight:bold;color:#2075D0; text-decoration:none;}
+a:hover.gh_news_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.90em;line-height:20px;font-weight:bold;color:#000000; text-decoration:none;}
+
+div.gh_news_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.75em;font-weight:normal;color:#000000; text-decoration:none;}
+div.gh_news_details{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.68em;margin-top:3px;padding-top:2px;border-top:0px solid #DADADA;color:#9E9E9E;padding-bottom:10px;}
+div.gh_news_date{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.65em;font-weight:normal;color:#C0C0C0; text-decoration:none;}
+
+a.gh_news_tickets{font-family:arial;font-size:11px;font-weight:bold;color:#000000; text-decoration:none;}
+a:hover.gh_news_tickets{font-family:arial;font-size:11px;font-weight:bold;color:#2478d0; text-decoration:underline;}
+a.gh_fullnews_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.8em;font-weight:bold;color:#000000; text-decoration:none;}
+a:hover.gh_fullnews_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.8em;font-weight:bold;color:#2478d0; text-decoration:underline;}
+div.gh_fullnews_details{display:block;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.7em;font-weight:normal;color:#C0C0C0; text-decoration:none;}
+
+a.gh_news_more{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:1.2em;line-height:20px;font-weight:bold;color:#2075D0; text-decoration:none;}
+a:hover.gh_news_more{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:1.2em;line-height:20px;font-weight:bold;color:#2478d0; text-decoration:underline;}
+
+div.gh_article_dtimeago{display:inline;height:25px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.65em;font-weight:bold;padding-right:4px;margin-top:3px;color:#FF0000;}
+div.gh_article_dcomments{display:inline;height:25px;width:40px;background-image:url(../igihe_imgs/icons/gh_article_comments.gif);background-repeat:no-repeat;background-position:left;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.68em;padding-left:13px;padding-right:4px;margin-top:3px;color:#9E9E9E;border-left:1px solid #F7F7F7;}
+div.gh_article_dphotos{display:inline;height:25px;width:40px;background-image:url(../igihe_imgs/icons/gh_article_photos.gif);background-repeat:no-repeat;background-position:left;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.68em;padding-left:13px;padding-right:4px;margin-top:3px;color:#9E9E9E;border-left:1px solid #F7F7F7;}
+div.gh_article_dvideos{display:inline;height:25px;width:40px;background-image:url(../igihe_imgs/icons/gh_article_videos.gif);background-repeat:no-repeat;background-position:left;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.68em;padding-left:15px;padding-right:4px;margin-top:3px;color:#9E9E9E;border-left:1px solid #F7F7F7;}
+div.gh_article_daudios{display:inline;height:25px;width:40px;background-image:url(../igihe_imgs/icons/gh_article_audios.gif);background-repeat:no-repeat;background-position:left;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.68em;padding-left:13px;padding-right:4px;margin-top:3px;color:#9E9E9E;border-left:1px solid #F7F7F7;}
+div.gh_article_dhits{display:inline;height:25px;width:40px;background-image:url(../igihe_imgs/icons/gh_article_hits.gif);background-repeat:no-repeat;background-position:left;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.68em;padding-left:15px;padding-right:4px;margin-top:3px;color:#9E9E9E;border-left:1px solid #F7F7F7;}
+
+
+/*WARUZIKO*/
+div.gh_waruz{display:inline;width:158px;float:left;padding:5px;padding-top:10px;margin-bottom:3px;border-bottom:1px dotted #e5e5e5;border-right:1px dotted #e5e5e5;}
+a.gh_waruz_title{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.8em;font-weight:bold;color:#000000; text-decoration:none;}
+a:hover.gh_waruz_title{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.8em;font-weight:bold;color:#2478d0; text-decoration:underline;}
+
+#slideshows{display:block;z-index:99999;min-height:285px;background-color:#ffffff;}
+
+#extras{margin-top:2px;height:111px;background-color:#ffffff;}
+
+#ibirimo{min-height:480px;margin-top:3px;background-color:#ffffff;}
+#ibirimopg{min-height:480px;margin-top:3px;background-color:#ffffff;}
+
+
+/*NAVBAR*/
+font.gh_navbar{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.9em;font-weight:bold;color:#FFFFFF}
+a.gh_navbar{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.7em;font-weight:bold;color:#949494; text-decoration:none;}
+a:hover.gh_navbar{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.7em;font-weight:bold;color:#000000; text-decoration:none;}
+
+
+/*SECTION*/
+#sectioncontent{margin-top:2px;min-height:1100px;height:auto;background-color:#ffffff;}
+#sectiontitles{background-image:url(../igihe_imgs/gh_section_headerbg.gif);background-repeat:no-repeat;background-position:center top;margin-top:0px;height:92px;text-align:center;}
+#sectionmenus{background-image:url(../igihe_imgs/gh_sectionmenu_headerbg.gif);background-repeat:repeat-x;background-position:center top;height:40px;text-align:center;}
+#sectionmenuslinks{margin-left:auto;margin-right:auto;height:40px;}
+#sectionavbar{height:20px;background-color:#F1F0F0;}
+
+font.gh_sectiontitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:3em;font-weight:bold;color:#696969;letter-spacing:10px;}
+div.gh_section_topbanner{background-color:#B5B5B5; border-top-left-radius: 10px;-moz-border-radius-topright: 10px; -webkit-border-top-right-radius: 10px; border-top-left-radius: 10px;-moz-border-radius-topleft: 10px; -webkit-border-top-left-radius: 10px;}
+
+a.gh_subsection_menu{display:block;width:99%;height:99%;text-align:center;line-height:40px;font-family:verdana;font-size:0.7em;font-weight:bold;text-transform:uppercase;color:#626262;padding-right:2px;text-decoration:none;}
+a:hover.gh_subsection_menu{display:block;width:99%;height:99%;text-align:center;background-color:;line-height:40px;font-family:verdana;font-size:0.7em;font-weight:bold;text-transform:uppercase;color:#000000;padding-right:2px;text-decoration:underline;}
+
+img.gh_news_sectionimage{margin:3px;padding:0px;border:0px solid #C0C0C0;background-color:#DADADA;}
+
+a.gh_news_sectiontitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.90em;line-height:20px;font-weight:bold;color:#000000; text-decoration:none;}
+a:hover.gh_news_sectiontitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.90em;line-height:20px;font-weight:bold;color:#2075D0; text-decoration:underline;}
+
+img.gh_newsin_image{margin:5px;margin-bottom:10px;padding:0px;border:0px solid #C0C0C0;background-color:#DADADA;}
+a.gh_newsin_category{font-family:tahoma;font-size:10px;font-weight:bold;color:#5D5D5D;text-transform:uppercase;text-decoration:none;}
+a:hover.gh_newsin_category{font-family:tahoma;font-size:10px;font-weight:bold;color:#808080;text-transform:uppercase;text-decoration:none;}
+
+a.gh_newsin_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:1em;line-height:20px;font-weight:bold;color:#000000; text-decoration:none;}
+a:hover.gh_newsin_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:1em;line-height:20px;font-weight:bold;color:#2478d0; text-decoration:underline;}
+
+div.gh_newsin_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.75em;font-weight:normal;color:#000000; text-decoration:none;}
+div.gh_newsin_details{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.68em;margin-top:3px;padding-top:2px;border-top:0px solid #DADADA;color:#9E9E9E;padding-bottom:10px;}
+div.gh_newsin_date{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.65em;font-weight:normal;color:#C0C0C0; text-decoration:none;}
+
+a.gh_newsin_tickets{font-family:arial;font-size:11px;font-weight:bold;color:#000000; text-decoration:none;}
+a:hover.gh_newsin_tickets{font-family:arial;font-size:11px;font-weight:bold;color:#2478d0; text-decoration:underline;}
+a.gh_fullnewsin_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.8em;font-weight:bold;color:#000000; text-decoration:none;}
+a:hover.gh_fullnewsin_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.8em;font-weight:bold;color:#2478d0; text-decoration:underline;}
+div.gh_fullnewsin_details{display:block;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.7em;font-weight:normal;color:#C0C0C0; text-decoration:none;}
+
+a.gh_newsin_more{font-family:tahoma,Trebuchet MS, Helvetica, sans-serif;font-size:0.65em;font-weight:bold;color:#000000; text-decoration:none;}
+a:hover.gh_newsin_more{font-family:tahoma,Trebuchet MS, Helvetica, sans-serif;font-size:0.65em;font-weight:bold;color:#2478d0; text-decoration:underline;}
+
+font.gh_newsin_text{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.75em;font-weight:normal;color:#464646;}
+
+td.gh_amakuru_home{border-bottom:4px solid #F3F3F3;padding-bottom:3px;background-color:#FFFFFF;}
+td:hover.gh_amakuru_home{border-bottom:4px solid #000000;padding-bottom:3px;background-color:#FBFBFB;cursor:pointer;}
+
+td.gh_amakuru{border-bottom:4px solid #F3F3F3;padding-bottom:3px;background-color:#FFFFFF;}
+td:hover.gh_amakuru{border-bottom:4px solid #000000;padding-bottom:3px;background-color:#FBFBFB;cursor:pointer;}
+
+td.gh_section_intro_home{border:4px solid #b7d5f2;padding-bottom:3px;}
+td:hover.gh_section_intro_home{border:4px solid #000000;padding-bottom:3px;cursor:pointer;}
+
+
+
+/*ARTICLE*/
+#articlescontent{margin-top:2px;min-height:888px;height:auto;background-color:#ffffff;background-image:url(../igihe_imgs/xgh_menubg.png);background-repeat:repeat-x;background-position:left top;}
+#articletools{min-height:888px;background-color:#ffffff}
+#articlecontents{min-height:388px;}
+#articlecomments{min-height:300px;margin-top:5px;background-color:#ffffff;background-image:url(../igihe_imgs/gh_menubg.png);background-repeat:repeat-x;background-position:left top;}
+#articlecommentsin{padding:20px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;}
+
+font.gh_articletitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:1.7em;font-weight:bold;color:#2075cf}
+font.gh_articlecontent{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.8em;font-weight:normal;color:#000000;line-height:24px;}
+font.gh_articledetails{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.75em;font-weight:normal;color:#C0C0C0;}
+font.gh_inarticledetails{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.9em;font-weight:bold;color:#808080; text-decoration:none;}
+
+a.gh_tab_articledetails_author{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.9em;font-weight:bold;color:#808080; text-decoration:none;}
+a:hover.gh_tab_articledetails_author{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.9em;font-weight:bold;color:#C0C0C0; text-decoration:underline;}
+
+img.gh_articleimage{margin:3px;padding:0px;border:0px solid #C0C0C0;background-color:#DADADA;}
+div.gh_articlecontent{display:block;position:relative;padding:5px;padding-left:0px;}
+
+div.gh_articletooltags{display:block;text-align:left;padding-left:23px;padding-top:3px;padding-bottom:3px;margin-bottom:3px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.65em;font-weight:bold;color:#808080; text-decoration:none;background-color:#FFFFFF;border:1px solid #DADADA;}
+
+a.gh_articletool{display:block;text-align:left;padding-left:23px;padding-top:3px;padding-bottom:3px;margin-top:3px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.65em;font-weight:bold;color:#808080; text-decoration:none;background-color:#FFFFFF;border:1px solid #DADADA;}
+a:hover.gh_articletool{display:block;text-align:left;padding-left:23px;padding-top:3px;padding-bottom:3px;margin-top:3px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.65em;font-weight:bold;color:#000000; text-decoration:none;background-color:#FFFFFF;border:1px solid #ACACAC;}
+
+div.gh_articletoolsizing{display:block;width:138px;text-align:center;padding-top:3px;margin-top:3px;background-color:#ffffff;border:1px solid #DADADA;}
+div:hover.gh_articletoolsizing{display:block;width:138px;text-align:center;padding-top:3px;margin-top:3px;background-color:#e9e9e9;border:1px solid #DADADA;}
+
+#gh_articletools-wrapper { width:140px; position: relative; overflow:hidden;} 
+#gh_articletoolsWrapper { /* required to avoid jumping */ position: absolute; width:140px; padding:3px; overflow:hidden;}
+#gh_articletools.fixed {width:140px; position: fixed; top: 0;padding-top:5px;overflow:hidden;}
+.controlstyle a{outline:none;}
+.controlstyle a img{border-width:0;}
+.controlstyle a.selectedcontrol img{border-bottom:4px solid #2075CF;}
+.controlstyle a:hover.selectedcontrol img{border-bottom:4px solid red;}
+
+
+div.gh_articletags{display:block;width:130px;position:relative;margin:4px;padding:2px;border:1px solid #F0F0F0;background-color:#F9F9F9;}
+div.gh_articletagsin{display:block;width:98%;height:98%;position:relative;padding:2px;border:1px solid #F0F0F0;background-color:#FFFFFF;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.7em;font-weight:normal;color:#000000;}
+
+a.gh_articletags{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:12px;font-weight:bold;color:#000000; text-decoration:none;}
+a:hover.gh_articletags{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:12px;font-weight:bold;color:#FF0000; text-decoration:underline;}
+
+div.gh_articlev_dvideos{height:25px;line-height:25px;background-image:url(../igihe_imgs/icons/gh_article_videos.gif);background-repeat:no-repeat;background-position:left;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.68em;padding-left:15px;padding-right:4px;margin-top:3px;color:#9E9E9E;text-align:left;}
+div.gh_articlev_ddvideos{padding:0px 5px 0px 5px;text-align:left;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.78em;border-top:1px dotted #292929;color:#b4b4b4;}
+
+div.gh_articlea_daudios{height:25px;line-height:25px;background-image:url(../igihe_imgs/icons/gh_article_audios.gif);background-repeat:no-repeat;background-position:left;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.68em;padding-left:15px;padding-right:6px;margin-top:2px;color:#9E9E9E;text-align:left;}
+div.gh_articlea_ddaudios{padding:0px 5px 0px 5px;text-align:left;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.78em;border-top:1px dotted #292929;color:#b4b4b4;}
+
+div.gh_articlep_dphotos{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:12px;padding-left:18px;padding-left:40px;margin-top:2px;color:#b4b4b4;text-align:center;}
+div.gh_articlep_photosby{position:absolute;right:0px;bottom:0px;height:15px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:9px;color:#2c2c2c;border:1px solid red;}
+
+
+
+/*SEARCH*/
+#searchcontent{margin-top:2px;min-height:1111px;height:auto;background-color:#ffffff;}
+#authorcontent{margin-top:2px;min-height:1111px;margin-top:2px;background-image:url(../igihe_imgs/gh_menubg.png);background-repeat:repeat-x;background-position:left top;background-color:#ffffff;}
+div.gh_author_home{min-height:80px;border-bottom:4px solid #F3F3F3;margin:2px; margin-bottom:0px; padding-bottom:5px;background-color:#FFFFFF;}
+div:hover.gh_author_home{min-height:80px;border-bottom:4px solid #000000; margin-bottom:0px;padding-bottom:5px;background-color:#FBFBFB;cursor:pointer;}
+
+
+
+/*FOOTER*/
+#footer_ads{margin-top:0px;height:160px;margin:0px;padding-top:4px;text-align:center;}
+#footer_tools{margin-top:3px;height:35px;background-color:#474747;-moz-border-radius:5px; -webkit-border-radius:5px;border-radius:5px;}
+#footer_search{display:block;margin-left:255px;margin-top:9px;border:0px solid red;}
+#footer_tool{display:block;margin-left:5px;margin-right:5px;padding:3px;vertical-align:middle;}
+#footer_nav{margin-top:3px;height:auto;background-color:#2e2a29;-moz-border-radius-topright: 10px; -webkit-border-top-right-radius: 10px; border-top-right-radius: 10px; -moz-border-radius-topleft: 10px; -webkit-border-top-left-radius: 10px; border-top-left-radius: 10px;}
+#footer_box{margin-top:2px;height:160px;text-align:center;}
+#footer_copy{margin-top:4px;padding-top:5px;height:30px;text-align:center;background-color:#1c1c1c;-moz-border-radius-topright: 10px; -webkit-border-top-right-radius: 10px; border-top-right-radius: 10px; -moz-border-radius-topleft: 10px; -webkit-border-top-left-radius: 10px; border-top-left-radius: 10px;}
+font.gh_footertitle{font-family:verdana;font-size:15px;font-weight:bold;color:#525252; }
+font.gh_footer_madeinrwanda{font-family:verdana;font-size:11px;font-weight:bold;color:#395F38; }
+font.gh_footer_footer{font-family:verdana;font-size:10px;font-weight:normal;color:#868686; }
+a.gh_footer{display:block;width:100%;text-align:center;height:20px;line-height:20px;font-family:verdana;font-size:10px;font-weight:bold;text-transform:normal;color:#6E6E6E;text-decoration:none;}
+a:hover.gh_footer{display:block;width:100%;text-align:center;height:20px;line-height:20px;font-family:verdana;font-size:10px;font-weight:bold;text-transform:normal;color:#818181;text-decoration:underline;}
+img.gh_footer_nsocial{border-radius: 5px;-moz-border-radius: 5px; -webkit-border-radius: 5px;}
+
+
+/*TABS*/
+
+.tabs {min-height:20px;width:100%;margin-top:2px;}
+.tabs ul {color:#ffffff; margin:0px; padding:0px; list-style:none; text-align:center; border-bottom:3px solid #696969;}
+.tabs li {color:#ffffff; display:inline; line-height:18px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:12px;}
+.tabs li a {color:#808080; text-decoration:none; padding:2px; font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:12px;-moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-left-radius: 5px;}
+.tabs li a.tabactive {color:#ffffff; background-color:#696969; font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:12px; position:relative;;-moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-left-radius: 5px;}
+
+#pgcontent1, #pgcontent2, #audiocontent1, #audiocontent2, #audiocontent3, #popularcontent1, #popularcontent2, #amatangazocontent1, #amatangazocontent2, #amatangazocontent3, #amatangazocontent4, #sitescontent1, #sitescontent2, #sectioncontent1, #sectioncontent2, #sectioncontent3,{width:100%;text-align:left;padding:6px 0px;margin-bottom:5px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;color:#808080;}
+
+
+
+/*LINKS HOME*/
+div.gh_links{display:block;text-align:left;margin-top:0px;padding-top:3px;padding-bottom:3px;border-bottom:1px solid #DADADA;}
+div.gh_links_top{display:block;font-family:arial;font-size:12px;font-weight:bold;color:#CDCDCD; float:left;width:15px;height:25px;}
+font.gh_links_name{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.75em;font-weight:bold;color:#000000;}
+a.gh_links_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:10px;font-weight:bold;color:#6E6E6E; text-decoration:none;}
+a:hover.gh_links_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:10px;font-weight:bold;color:#2478d0; text-decoration:underline;}
+
+
+
+/*TAGS*/
+font.gh_tagstitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.9em;font-weight:bold;color:#FF0000;}
+input.gh_tagsinput{width:120px;height:25px;border:2px solid #FF0000;background-color:#FFFFFF;font-family:arial;font-size:12px;text-align:left;font-weight:bold;color:#000000;padding-left:4px;text-align:center;-moz-border-radius:5px; -webkit-border-radius:5px;}
+input.gh_tagsadd{width:120px;height:25px;border:2px solid #FF0000;background-color:#FF0000;font-family:arial;font-size:12px;text-align:left;font-weight:bold;color:#FFFFFF;padding-left:4px;text-align:center;-moz-border-radius:5px; -webkit-border-radius:5px;}
+input:hover.gh_tagsadd{width:120px;height:25px;border:2px solid #FF0000;background-color:#000000;font-family:arial;font-size:12px;text-align:left;font-weight:bold;color:#FFFFFF;padding-left:4px;text-align:center;-moz-border-radius:5px; -webkit-border-radius:5px;}
+
+
+
+/*COMMENTS*/
+div.gh_articlecomments{display:block;margin:0px;padding:3px;border:1px solid #000000;background-color:#FFFFFF;}
+div.gh_articlecommentscontent{display:block;padding:4px;background-color:#FFFFFF;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:13px;line-height:16px;font-weight:normal;color:#000000;}
+
+div.gh_articlecomments_thread1{display:block;position:relative;width:98%;border:2px solid #d9d6d6;padding:6px;-moz-border-radius: 10px; -webkit-border-radius: 10px;}
+div.gh_articlecomments_thread2{display:block;position:relative;width:88%;border:2px solid #d9d6d6;padding:6px;-moz-border-radius: 10px; -webkit-border-radius: 10px;text-align:left;}
+
+div.gh_articlecommentsbox{display:block;width:95%;border:2px solid #d9d6d6;padding:6px;margin:5px;-moz-border-radius: 10px; -webkit-border-radius: 10px;}
+div.gh_commentsprev{display:block;width:95%;border:2px solid #FF0000;padding:6px;margin:5px;-moz-border-radius: 10px; -webkit-border-radius: 10px;}
+div.gh_commentsprevin{display:block;position:relative;width:96%;border:2px solid #d9d6d6;padding:6px;-moz-border-radius: 10px; -webkit-border-radius: 10px;}
+
+input.gh_commentsprevsubmit{width:208px;height:25px;border:2px solid #FF0000;background-color:#FF0000;font-family:arial;font-size:12px;text-align:left;font-weight:bold;color:#FFFFFF;padding-left:4px;text-align:center;-moz-border-radius:5px; -webkit-border-radius:5px;}
+input:hover.gh_commentsprevsubmit{width:208px;height:25px;border:2px solid #FF0000;background-color:#000000;font-family:arial;font-size:12px;text-align:left;font-weight:bold;color:#FFFFFF;padding-left:4px;text-align:center;-moz-border-radius:5px; -webkit-border-radius:5px;}
+
+font.gh_articlecommentsdetails{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:10px;font-weight:normal;color:#C0C0C0;}
+
+font.gh_articlecommentsauthor{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:bold;color:#696969; text-decoration:none;}
+
+a.gh_articlecommentsauthor{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:bold;color:#808080; text-decoration:none;}
+a:hover.gh_articlecommentsauthor{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:bold;color:#C0C0C0; text-decoration:underline;}
+a.gh_articlecommentsreply{display:block;position:relative;float:right;background-color:#d9d6d6;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.75em;font-weight:bold;color:#000000; text-decoration:none;padding:2px;margin-right:50px;}
+a:hover.gh_articlecommentsreply{display:block;position:relative;float:right;background-color:#000000;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.75em;font-weight:bold;color:#C0C0C0; text-decoration:underline;padding:2px;margin-right:50px;}
+
+font.gh_articlecommentscontent{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;}
+font.gh_commentstitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:bold;color:#AEAEAE;}
+font.gh_commentsrules{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:normal;color:#868686;}
+font.gh_commentslabel{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:10px;font-weight:normal;color:#C0C0C0;}
+input.gh_comments{width:200px;height:20px;border:2px solid #d9d6d6;background-color:#FFFFFF;font-family:arial;font-size:12px;text-align:left;font-weight:bold;color:#000000;padding-left:4px;}
+
+input.gh_commentssubmit{width:208px;height:25px;border:2px solid #808080;background-color:#808080;font-family:arial;font-size:12px;text-align:left;font-weight:bold;color:#FFFFFF;padding-left:4px;text-align:center;-moz-border-radius: 10px; -webkit-border-radius:5px;}
+input:hover.gh_commentssubmit{width:208px;height:25px;border:2px solid #FF0000;background-color:#000000;font-family:arial;font-size:12px;text-align:left;font-weight:bold;color:#FFFFFF;padding-left:4px;text-align:center;-moz-border-radius: 10px; -webkit-border-radius:5px;}
+
+textarea.gh_comments{width:450px;height:110px;border:2px solid #d9d6d6;background-color:#FFFFFF;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:12px;text-align:left;color:#000000;padding:5px;-moz-border-radius: 10px; -webkit-border-radius: 10px}
+
+div.gh_pagination{display:block;text-align:center;padding-left:23px;padding-top:3px;padding-bottom:3px;margin:3px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.9em;font-weight:bold;color:#666666; text-decoration:none;background-color:#ffffff;border:0px solid #FF0000;}
+
+
+
+/*AMASHUSHO HOME*/
+img.gh_amashusho_image{margin:3px;padding:0px;border:1px solid #808080;background-color:#333333;}
+a.gh_amashusho_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.66em;font-weight:normal;color:#C0C0C0; text-decoration:none;}
+a:hover.gh_amashusho_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.66em;font-weight:normal;color:#C0C0C0; text-decoration:underline;}
+
+
+/*AMAJWI HOME*/
+div.gh_homesongz{display:block;clear:both;width:323px;min-height:30px;margin-top:0px;padding:2px;border-bottom:1px solid #dadada;}
+div.gh_homesongzc{float:left;width:15px;min-height:30px;line-height:30px;font-family:arial;font-size:12px;font-weight:bold;color:#808080;}
+div.gh_homesongzt{float:left;width:273px;min-height:30px;line-height:30px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:bold;vertical-align:middle;color:#000000;}
+div.gh_homesongzp{float:left;width:30px;margin-top:5px;}
+a.gh_homesongzp{display:block;width:27px;height:24px;background-image:url(../igihe_imgs/gh_icons_play.gif);background-repeat:no-repeat;background-position:0px 0px;}
+a:hover.gh_homesongzp{display:block;width:27px;height:24px;background-image:url(../igihe_imgs/gh_icons_play.gif);background-repeat:no-repeat;background-position:-28px 0px;}
+
+
+div.gh_songz{display:block;clear:both;width:290px;min-height:30px;margin-top:0px;padding:2px;border-bottom:1px solid #dadada;}
+div.gh_songzc{float:left;width:15px;min-height:30px;line-height:30px;font-family:arial;font-size:12px;font-weight:bold;color:#808080;}
+div.gh_songzt{float:left;width:245px;min-height:30px;line-height:30px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:bold;vertical-align:middle;color:#000000;border:0px solid blue;}
+a.gh_songzt{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:bold;color:#000000; text-decoration:none;}
+a:hover.gh_songzt{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:11px;font-weight:bold;color:#2478d0; text-decoration:underline;}
+div.gh_songzp{float:left;width:30px;margin-top:5px;}
+
+
+div.gh_inkuru{display:block;min-width:300px;min-height:20px;text-align:left;margin-bottom:2px;padding-top:6px;padding-bottom:8px;border-bottom:1px solid #DADADA;}
+div.gh_inkuru_top{display:block;font-family:arial;font-size:14px;font-weight:bold;color:#808080;float:left;width:8px;min-height:20px;line-height:20px;padding-right:3px;}
+div.gh_inkuru_text{display: table-cell; width:320px; vertical-align: middle;min-height:20px;text-align:left;padding:1px;border:0px solid red;}
+
+font.gh_inkuru_toptitle{font-family:arial;font-size:16px;font-weight:bold;color:#000000;}
+a.gh_inkuru_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.7em;font-weight:bold;color:#000000; text-decoration:none;line-height:16px;}
+a:hover.gh_inkuru_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.7em;font-weight:bold;color:#2478d0; text-decoration:underline;line-height:16px;}
+
+
+/*EVENTS HOME*/
+div.gh_event{min-width:300px;text-align:left;padding:5px;border-bottom:1px solid #DADADA;}
+font.gh_event_date{font-family:arial;font-size:11px;font-weight:normal;color:#808080;}
+a.gh_event_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.8em;font-weight:bold;color:#000000; text-decoration:none;line-height:16px;}
+a:hover.gh_event_hometitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.8em;font-weight:bold;color:#2478d0; text-decoration:underline;line-height:16px;}
+
+
+/*HISTORY2DAY HOME*/
+font.gh_home2day{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.75em;font-weight:normal;color:#333333;line-height:18px;}
+a.gh_home2day{font-family:verdana;font-size:13px;font-weight:bold;text-transform:uppercase;color:#000000;text-shadow: 1px 1px 1px #FFFFFF;}
+a:hover.gh_home2day{font-family:verdana;font-size:13px;font-weight:bold;text-transform:uppercase;color:#000000;}
+
+
+/*SECTION SINGERS*/
+#sectionsingers{background-image:url(../igihe_imgs/gh_section_headerbg.gif);background-repeat:no-repeat;background-position:center bottom;margin-top:0px;height:100px;text-align:center;}
+#sectionsingers_title{display:block;margin-left:150px;margin-top:25px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:2.5em;font-weight:bold;color:#000000;letter-spacing:5px;}
+#awards{min-height:100px;margin-top:2px;background-color:#ffffff;background-image:url(../igihe_imgs/gh_menubg.png);background-repeat:repeat-x;background-position:left top;}
+#topsongs{min-height:300px;margin-top:2px;background-color:#ffffff;background-image:url(../igihe_imgs/gh_menubg.png);background-repeat:repeat-x;background-position:left top;}
+#bio{min-height:300px;margin-top:2px;background-color:#ffffff;background-image:url(../igihe_imgs/gh_menubg.png);background-repeat:repeat-x;background-position:left top;}
+#news{min-height:500px;margin-top:2px;background-color:#ffffff;background-image:url(../igihe_imgs/gh_menubg.png);background-repeat:repeat-x;background-position:left top;}
+#amashusho{min-height:500px;margin-top:2px;background-color:#000000;background-image:url(../igihe_imgs/gh_menubg_black.png);background-repeat:repeat-x;background-position:left top;}
+#comments{min-height:300px;margin-top:10px;background-color:#ffffff;background-image:url(../igihe_imgs/gh_menubg.png);background-repeat:repeat-x;background-position:left top;}
+div.gh_homesingers_img{width:150px;float:left;margin:2px;border:0px solid red;}
+div.gh_homesingers_bio{width:330px;float:left;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;line-height:18px;text-align:justify;border:0px solid red;}
+
+div.gh_amakuru_singers{height:80px;border-bottom:4px solid #F3F3F3;margin:2px; margin-bottom:0px; padding-bottom:5px;background-color:#FFFFFF;}
+div:hover.gh_amakuru_singers{height:80px;border-bottom:4px solid #000000; margin-bottom:0px;padding-bottom:5px;background-color:#FBFBFB;cursor:pointer;}
+a.gh_news_singerstitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.90em;line-height:20px;font-weight:bold;color:#000000; text-decoration:none;}
+a:hover.gh_news_singerstitle{font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:0.90em;line-height:20px;font-weight:bold;color:#696969; text-decoration:none;}
+
+
+/*Photos*/
+#articlepgt{height:100px;background-color:#000000;-moz-border-radius:10px; -webkit-border-radius:10px;border-radius:10px;}
+#articlepg_titles{height:100px;background-image:url(../igihe_imgs/gh_icons_big_camera.png);background-repeat:no-repeat;background-position:right;}
+#articlepg_logo{margin-top:10px;margin:3px;-moz-border-radius:10px; -webkit-border-radius:10px;border-radius:10px;}
+#articlepg_contents{min-height:600px;background-color:#000000;-moz-border-top-left-radius:10px; -webkit-border-top-left-radius:10px;border-top-left-radius:10px;}
+#articlepg_contentstext{width:98%;min-height:100px;border-bottom:3px solid #4b4b4b;padding:5px;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:13px;;font-weight:bold;color:#c1c1c1}
+div.articlepg_img{display:inline-block;width:250px;height:200px;float:left;margin:4px;border:1px solid #1d1d1d;}
+h1.gh_articlepgtitle{display:block;height:35px;position:relative;margin-top:auto;margin-bottom:auto;font-family:"Trebuchet MS", Helvetica, sans-serif;font-size:1.7em;font-weight:bold;color:#c0c0c0}
+
+
+/*DIONG BUSINESS*/
+#sectiondb{margin-top:2px;padding:0px;margin:0px;min-height:800px;height:auto;background-color:#ffffff;border:2px solid #c0c0c0;-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;overflow:hidden;}
+#sectiondb_header{width:100%;height:150px;text-align:center;border:0px solid #c0c0c0;}
+div.sectiondb_titles{width:100%;height:30px;margin-top:0px;text-align:left;line-height:30px;font-family:verdana;font-size:18px;font-weight:bold;color:#FFFFFF;text-transform:uppercase;text-shadow: 1px 1px 1px #69ae42;background-color: rgba(135, 206, 95, 0.75);background-image:url(../igihe_imgs/gh_db_ico.png);background-repeat:no-repeat;background-position:bottom right;}
+div.sectiondb_titlesectors{width:100%;height:35px;margin-top:0px;text-align:center;line-height:35px;font-family:verdana;font-size:18px;font-weight:bold;color:#FFFFFF;text-transform:uppercase;text-shadow: 1px 1px 1px #69ae42;background-color: rgba(135, 206, 95, 0.75);background-image:url(../igihe_imgs/gh_db_ico.png);background-repeat:no-repeat;background-position:bottom center;}
+
+#sectiondb_infography{display:block;float:left;margin-left:10px;margin-right:3px;margin-top:0px;width:470px;min-height:500px;text-align:left;border:2px solid #1380c5;-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;overflow:hidden;}
+#sectiondb_news{display:block;float:left;margin-left:7px;margin-right:0px;margin-top:0px;width:470px;min-height:500px;text-align:left;border:2px solid #1380c5;-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;overflow:hidden;}
+
+#sectiondb_docs{display:block;float:left;margin-left:10px;margin-right:3px;margin-top:10px;width:470px;min-height:200px;text-align:left;border:2px solid #1380c5;-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;overflow:hidden;}
+#sectiondb_links{display:block;float:left;margin-left:7px;margin-right:0px;margin-top:10px;width:470px;min-height:200px;text-align:left;border:2px solid #1380c5;-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;overflow:hidden;}
+
+#sectiondb_sectors{display:block;float:left;margin-left:10px;margin-top:10px;margin-bottom:10px;width:955px;min-height:150px;text-align:left;border:2px solid #1380c5;-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;overflow:hidden;}
+
+
+div.sectiondb_dbin{display:block;float:left;margin:4px;padding:1px;width:97%;min-height:70px;border:1px solid #F3F3F3;padding-bottom:1px;background-color:#FFFFFF;text-align:left;overflow:hidden;}
+div:hover.sectiondb_dbin{display:block;float:left;margin:4px;padding:1px;width:97%;min-height:70px;border:1px solid #000000;padding-bottom:1px;background-color:#FBFBFB;cursor:pointer;text-align:left;overflow:hidden;}
+img.sectiondb_newsimg{margin:5px;margin-bottom:5px;padding:0px;border:0px solid #C0C0C0;background-color:#DADADA;}
+
+div.sectiondb_db_sectors{display:block;float:left;margin:4px;margin-left:11px;padding:0px;width:103px;height:103px;}
+
+div.sectiondb_db_links{display:block;float:left;margin:3px;padding:2px;width:222px;height:20px;border-left:3px solid #a5da87;}
+a.sectiondb_db_links{font-family:verdana;font-size:10px;line-height:20px;font-weight:bold;color:#000000; text-decoration:none;border-bottom:1px solid #a5da87;}
+a:hover.sectiondb_db_links{font-family:verdana;font-size:10px;line-height:20px;font-weight:bold;color:#1380c5; text-decoration:none;border-bottom:1px solid #000000;}
+
+div.sectiondb_db_docs{display:block;float:left;margin:4px;margin-left:15px;padding:0px;width:120px;height:160px;}

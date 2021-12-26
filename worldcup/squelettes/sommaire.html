@@ -1,0 +1,146 @@
+	<INCLURE(header)>
+	<div class="row" >
+        <div class="col-lg-12" style="border:0px solid red;margin-top:6px;padding:0px;">
+		    <div style="margin:auto;width:1137px;border:0px solid red;">
+    
+				<!-- Insert to your webpage where you want to display the slider -->
+				<div id="amazingslider-1" style="position:relative;border:0px solid red;">
+					<ul class="amazingslider-slides" style="display:none;">
+						<BOUCLE_slide(ARTICLES){titre_mot=Worldcup_slide}{par date}{inverse}{0,4}{tous}>
+						<li>[<img src="http://www.igihe.com/IMG/arton#ID_ARTICLE.jpg" alt="<a href='#URL_ARTICLE' style='color:#fff;text-decoration:none;'>#TITRE</a>" />]</li>
+						</BOUCLE_slide>
+					</ul>
+					<ul class="amazingslider-thumbnails" style="display:none;">
+						<BOUCLE_slide1(ARTICLES){titre_mot=Worldcup_slide}{par date}{0,4}{tous}>
+						<li>[<img src="http://www.igihe.com/IMG/arton#ID_ARTICLE.jpg" />]</li>
+						</BOUCLE_slide1>
+					</ul>
+					
+				</div>
+				<!-- End of body section HTML codes -->
+				
+			</div>
+		</div>
+    </div>
+	
+    <div class="row" style="margin-top:-15px;border:0px solid red;padding-left:15px;padding-right:15px;margin-right:-15px;margin-left:-15px;padding-top:0px;">
+        <div class="col-md-4" style="border:0px solid red;background-color:#fff;padding:2px;margin-top:0px;padding-bottom:10px;">
+			<div class="box_title" style="margin-left:-2px;margin-top:5px;">Amakuru Aheruka</div>
+				<BOUCLE_amakuru(ARTICLES){titre_mot=Worldcup_homenews}{par date}{inverse}{0,10}{tous}>
+				<div class="news">
+					<img src="http://www.igihe.com/IMG/arton#ID_ARTICLE.jpg" alt="#TITRE" class="default" />
+					<a href="#URL_ARTICLE">#TITRE</a><br>
+					<p>	Yanditswe: [(#DATE|jour)]-[(#DATE|mois)]-[(#DATE|annee)] [(#DATE|heures)][:(#DATE|minutes)]</p>					
+				</div>
+				</BOUCLE_amakuru>
+				<br><br><br><br>
+				<div class="news_pagination" style="border:0px solid red;margin-top:15px;">
+					<center><br><br>
+						<ul class="pagination">
+							<li><a href="#">&laquo;</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">&raquo;</a></li>
+						</ul>	
+					</center>
+					<br><br><br>
+				</div>	
+		</div>
+        <div class="col-md-8" style="border:0px solid red; height:auto;padding-left:0px;padding-right:0px;background-color:#fff;margin-top:0px;">
+				<div class="col-lg-6 col-sm-6" style="border:0px solid red;padding:3px;margin-top:5px;">
+					<div class="box_title" style="border-bottom:-3px solid #fff;">Inkuru y'Umwihariko</div>
+					<div class="umwihariko">
+						<BOUCLE_umwihariko(ARTICLES){titre_mot=Worldcup_umwihariko}{par date}{inverse}{0,1}{tous}>
+						<img src="http://www.igihe.com/IMG/arton#ID_ARTICLE.jpg" width="100%"   class="default"  /><br>
+					    <a href="#URL_ARTICLE">[(#TITRE|couper{80, '...'})]</a>
+						<p>	</p>
+						</BOUCLE_umwihariko>
+						</div>
+				</div>		
+				<div class="col-lg-6 col-sm-6" style="border:0px solid red;padding:3px;margin-top:5px;">
+					<div class="box_title" style="margin-right:-3px;">Amateka</div>
+					<BOUCLE_amateka(ARTICLES){titre_mot=Worldcup_amateka}{par date}{inverse}{0,2}{tous}>
+					<div class="amateka">
+						<img src="http://www.igihe.com/IMG/arton#ID_ARTICLE.jpg" alt="#TITRE" class="default"  width="100%" />
+						<a href="#URL_ARTICLE">[(#TITRE|couper{50, '...'})]</a><br>
+						<p>	[(#TEXTE|couper{90, '...'})]</p>					
+					</div>
+					</BOUCLE_amateka>
+				</div>
+				<div class="col-lg-12 col-sm-12" style="border:0px solid red;padding:0px;padding-left:3px;margin-top:2px;">
+					<img src="images/ads2.png" width="100%">
+				</div>
+				<div class="col-lg-6 col-sm-6" style="border:0px solid red;padding:3px;margin-top:5px;">
+					<img src="images/gallery.png" width="100%"><br>	<br>
+				    <img src="images/ads1.png" width="100%"><br>	
+				</div>
+				<div class="col-lg-6 col-sm-6" style="border:0px solid red;padding:3px;margin-top:5px;">
+					<img src="images/ads1.png" width="101%"><br>
+					<div class="box_title" style="margin-right:-3px;margin-top:2px;">Udushya</div>
+					<BOUCLE_udushya_main(ARTICLES){titre_mot=Worldcup_udushya}{par date}{inverse}{0,1}{tous}>
+					<img src="http://www.igihe.com/IMG/arton#ID_ARTICLE.jpg" alt="#TITRE" class="default" width="100.5%" /><br>
+					<div  style="height:auto;padding:4px; background-color:#a4c9dc;color:#000;text-decoration:none;padding-left:20px;width:100.5%;font-weight:bold;">
+						<a href="#URL_ARTICLE" class="titre_udushya" style="">#TITRE</a>
+					</div>
+					</BOUCLE_udushya_main>
+					<BOUCLE_udushya(ARTICLES){titre_mot=Worldcup_udushya}{par date}{inverse}{1,2}{tous}>
+					<div class="udushya">
+						<img src="http://www.igihe.com/IMG/arton#ID_ARTICLE.jpg" alt="#TITRE" class="default" width="100%" />
+						<a href="#URL_ARTICLE">[(#TITRE|couper{80, '...'})]</a><br>
+						<p>	[(#TEXTE|couper{55, '...'})]</p>					
+					</div>
+					</BOUCLE_udushya>
+					
+										
+				</div>
+					
+			</div>
+		</div>
+        <div class="row">
+			<div class="col-lg-12 col-sm-12">
+			<a href="http://ls.betradar.com/ls/livescore/?/sports4africa/en/Europe:Berlin/page/sportcenter#matchid_4941204">
+			   <img src="images/sport4africa.jpg" width="100%" style="border-top:1px solid #aaa;margin-top:-20px;">
+			</a>
+			</div>
+		</div>
+    </div>
+        	
+</div>
+<div class="row" style="border-top:1px solid #3c5d7e;margin-top:-83px;z-index:4px;position:relative;">
+    <div class="col-lg-12 col-sm-12"><img src="images/footer.png" width="100%" height="210px"></div>   
+</div>
+<div class="row" style="background-color:#3c5d7e;text-align:center;color:#fff;padding:5px;margin-bottom:0px;">
+    <div class="col-lg-12 col-sm-12">&copy;2014 - IGIHE Ltd. All Rights Reserved</div>   
+</div>
+
+
+<!-- /CONTENT ============-->
+
+         
+
+
+        <script type='text/javascript' src="js/bootstrap.min.js"></script>
+
+
+
+
+
+        
+        <!-- JavaScript jQuery code from Bootply.com editor -->
+        
+        <script type='text/javascript'>
+        
+        $(document).ready(function() {
+        
+            
+        
+        });
+        
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,173 @@
+ 
+	/* ==================== | HEADER | ==================== */
+
+#header .inner {
+	z-index:3;
+}
+#nav {
+	border-bottom:1px dashed #dad3c9;
+}
+@media (min-width: 768px) {
+	#nav {
+		border-bottom:0;
+		/* padding-top:2.778em; */
+	}
+}
+.main-menu-btn {
+	position:relative;
+	display:block;
+	padding:0.815em 40px;
+	/* height:24px; */
+	overflow:hidden;
+	line-height:10px;
+	text-align:center;
+	cursor:pointer;
+	color:#BBB1A3;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	cursor: pointer;
+}
+.main-menu-btn-text {
+	position:absolute;
+	top:-99999px; 
+}
+.main-menu-btn-title {
+	display:block;
+	white-space:nowrap;
+	overflow:hidden;
+	-ms-text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	-moz-text-overflow:ellipsis;
+	-webkit-text-overflow:ellipsis;
+	text-overflow:ellipsis;
+	opacity:1;
+	-webkit-transform:none;
+	transform:none;
+	-webkit-transition:all 0.25s;
+	transition:all 0.25s;
+}
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-title {
+	opacity:0;
+	-webkit-transform:translate3d(0, -50%, 0);
+	transform:translate3d(0, -50%, 0);
+}
+.main-menu-btn-title [data-icon]:before {
+	position:relative;
+	top:-1px;
+	vertical-align:top;
+}
+/* hamburger icon */
+.main-menu-btn-icon, .main-menu-btn-icon:before, .main-menu-btn-icon:after {
+	position:absolute;
+	top:50%;
+	left:5px;
+	height:2px;
+	width:24px;
+	background:#BBB1A3;
+	-webkit-transition:all 0.25s;
+	transition:all 0.25s;
+}
+.main-menu-btn-icon:before {
+	content:'';
+	top:-7px;
+	left:0;
+}
+.main-menu-btn-icon:after {
+	content:'';
+	top:7px;
+	left:0;
+}
+/* close icon */
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon {
+	height:0;
+	background:transparent;
+}
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before {
+	top:0;
+	-webkit-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+}
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after {
+	top:0;
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
+.main-menu-btn-logo {
+	font:italic bold 1.1em/10px Verdana,Arial,Helvetica,sans-serif;
+	color:#3092C0;
+}
+.main-menu-btn-logo-separator {
+	margin-right:0.222em;
+	border-right:1px solid #dad3c9;
+	padding-right:0.5em;
+}
+/* hide menu state checkbox offscreen (so it stays visible to screen readers) */
+#main-menu-state {
+	position: absolute;
+	top: -99999px;
+}
+/* hide the menu in mobile view */
+#main-menu-state:not(:checked) ~ #main-menu, #main-menu-state:not(:checked) ~ #main-menu2 {
+	display: none;
+}
+#main-menu-state:checked ~ #main-menu, #main-menu-state:checked ~ #main-menu2 {
+	display: block;
+}
+@media (min-width: 768px) {
+	/* hide the button in desktop view */
+	.main-menu-btn {
+		position: absolute;
+		top: -99999px;
+	}
+	/* always show the menu in desktop view */
+	#main-menu-state:not(:checked) ~ #main-menu, #main-menu-state:not(:checked) ~ #main-menu2 {
+		display: block;
+	}
+}
+#main-menu, #main-menu2 {
+	margin-bottom:0.666em; 
+}
+
+#main-menu {
+	z-index:2;
+}
+
+#main-menu2 {
+	z-index:1;
+}
+
+@media (min-width: 768px) {
+	#main-menu, #main-menu2 {
+		position:relative;
+		top:0;
+		left:0;
+		margin-bottom:0;
+		width:auto;
+		
+	}
+}
+#main-menu > li [data-icon], #main-menu2 > li [data-icon] {
+	display:none;
+}
+@media (min-width: 768px) {
+	#main-menu > li [data-icon], #main-menu2 > li [data-icon] {
+		display:inline;
+	}
+	#main-menu > li [data-icon]:before , #main-menu2 > li [data-icon]:before {
+		position:relative;
+		top:2px;
+		margin-right:0.375em;
+		font-size:0.89em;
+		line-height:20px;
+	}
+	#main-menu.sm-blue > li [data-icon]:before , #main-menu2.sm-blue > li [data-icon]:before {
+		color:#A4CDE1;
+	}
+}
+
+#logo-menu {
+	margin-right:-4px;
+	font:italic bold 1em/23px Verdana,Arial,Helvetica,sans-serif;
+}
+
+
+

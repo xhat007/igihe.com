@@ -1,0 +1,132 @@
+<BOUCLE_article_ghdocs(ARTICLES){id_article}>
+	[(#SET{titrearticle,#TITRE})]
+	<BOUCLE_docs_ghdocs(DOCUMENTS){id_article}{par date}{inverse}{0,1}>
+		<!Doctype html>
+		<html>
+			<head>
+				<title>Welcome to Igihe document - [(#GET{titrearticle})]</title>
+				<meta charset="UTF-8" />
+				<link href="assets/css/bootstrap.css" type="text/css" rel="stylesheet" />
+				<link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+				<link href="assets/css/flaticon.css" type="text/css" rel="stylesheet" />
+				<link href="assets/css/font-awesome.css" type="text/css" rel="stylesheet" />
+				<link href="assets/css/fonts.css" type="text/css" rel="stylesheet" />
+				<style>	
+
+					.doc-list.col-lg-2{height: 100%; overflow:hidden;}
+					.doc-list.col-lg-2 ::-webkit-scrollbar {width: 10px;}
+					.doc-list.col-lg-2 ::-webkit-scrollbar-track {background: rgba(177, 177, 177, 0.5);border-radius: 0;}
+					.doc-list.col-lg-2 ::-webkit-scrollbar-thumb {background: rgba(177, 177, 177, 0.5);border-radius: 0;}
+					.doc-list.col-lg-2 ::-webkit-scrollbar-thumb:hover {background: #999999;}
+					.doc-list.col-lg-2 ::-webkit-scrollbar-thumb:active {background: #999999;-webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);}
+				</style>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+				<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+			</head>
+			<body >
+				<div class="container">
+					<div class="mn-header">
+						<div class="row">							
+							<table style="width:100%;">
+								<tr>
+									<td style="width:233px;">
+										<a href="http://docs.igihe.com" title=""><img src="assets/images/logo_inpage.png" title="igihe document" /></a>
+									</td>
+									<td style="text-indent:20px;">
+										<br/>
+										&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php">Home</a> | <BOUCLE_gh_RUBRIQUEtitlel(RUBRIQUES){id_rubrique}><BOUCLE_gh_RUBRIQUEtitle_followl(HIERARCHIE)><a href="#URL_RUBRIQUE" class="gh_news_category">#TITRE</a>&nbsp;|&nbsp;</BOUCLE_gh_RUBRIQUEtitle_followl>[<a href="http://www.igihe.com/#URL_RUBRIQUE" class="gh_news_category">(#TITRE)</a>]	</BOUCLE_gh_RUBRIQUEtitle_followl></BOUCLE_gh_RUBRIQUEtitlel> | <a href="javascript:history.go(-1)">Back</a>
+									</td>
+									<td style="text-align:right;width:300px;">
+										<form class="pull-right" action="spip.php">
+											<input type="hidden" name="page" value="recherche"/>
+											<input type="text"  placeholder="Search from #TITRE" class="pull-left" name="recherche"/>									<button class="input-group-addon pull-left"><i class="fa fa-search"></i></button>										</form>
+									</td>
+									<td style="text-align:right;width:300px;">
+										<div class="dropdown">
+											<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Menu
+												<span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu">
+												<BOUCLE_rubrique_ghdocs(RUBRIQUES){id_parent=0}>
+												    <li><a href="#URL_RUBRIQUE">#TITRE</a></li>
+												</BOUCLE_rubrique_ghdocs>
+											  </ul>
+										</div>											
+										
+									</td>
+								</tr>
+							</table>					
+						</div>	
+						<div class="row">
+													
+						</div>
+						<div class="row" style="text-align:right;">
+							<!-- Go to www.addthis.com/dashboard to customize your tools -->
+								<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-553f4c0640a19cdf"></script>
+								<div class="addthis_sharing_toolbox"></div>						
+						</div>
+					</div>
+					</div>
+					<section class="doc-list col-lg-12">
+						<h3>[(#GET{titrearticle})]</h3>
+						Release date : #RELEASEDATE
+						<section class="doc-item pdf col-lg-10">				
+								<!--<iframe style="float:right;" src="ViewerJS/#../#URL_DOCUMENT" width='100%' height='700px' allowfullscreen webkitallowfullscreen></iframe>-->
+								<iframe style="float:right;" src="#URL_DOCUMENT" width='100%' height='700px' allowfullscreen webkitallowfullscreen></iframe>
+						</section>
+						<section class="doc-list col-lg-2">
+							<h3>Latest Documents</h3>
+							<ul class="row">
+								<BOUCLE_rub2(RUBRIQUES){id_parent=0}{0,3}>
+									<BOUCLE_article_latest(ARTICLES){branche 0}{par date}{inverse}{0,1}{doublons xx}>
+										[(#SET{titrearticle2,#TITRE})]
+										<BOUCLE_docs_ghdocs2(DOCUMENTS){id_article}{par date}{inverse}>
+											<li class="doc-item #DOCUMENTTYPE col-lg-12">
+												<a href="http://docs.igihe.com/spip.php?page=doc-open&amp;id_article=#ID_ARTICLE" class="in-link">[(#GET{titrearticle2})]</span>
+													<a href="spip.php?page=doc-open&amp;id_article=#ID_ARTICLE" class="more">Read</a>
+												</a>
+											</li>
+										</BOUCLE_docs_ghdocs2>
+									</BOUCLE_article_latest>						
+								</BOUCLE_rub2>
+							</ul>	
+						</section>
+					</section>
+					<section class="doc-list col-lg-12">
+						<h3>More Documents</h3>
+						<ul class="row">
+							<BOUCLE_article_ghdocs3(ARTICLES){branche}{par date}{inverse}{0,8}{doublons xx}>
+								[(#SET{titrearticle,#TITRE})]
+								<BOUCLE_docs_ghdocs3(DOCUMENTS){id_article}{par date}{inverse}{0,1}>
+									<li class="doc-item #DOCUMENTTYPE col-lg-3">
+										<a href="spip.php?page=doc-open&amp;id_article=#ID_ARTICLE" class="in-link">[(#GET{titrearticle}|couper{50})]</span>
+											<a href="spip.php?page=doc-open&amp;id_article=#ID_ARTICLE" class="more">Read</a>
+										</a>
+										
+									</li>
+								</BOUCLE_docs_ghdocs3>
+							</BOUCLE_article_ghdocs3>
+						</ul>
+					</section>
+					<section class="doc-cat col-lg-12">	
+						<h3>Sub-Categories</h3>
+						<ul>
+							<BOUCLE_rubrique_ghdocs8(RUBRIQUES){id_parent=#ID_RUBRIQUE}>
+								<li class="cat-item cat-[(#TITRE|strtolower)] col-lg-4"><a href="#URL_RUBRIQUE">[(#TITRE)]</a></li>
+							</BOUCLE_rubrique_ghdocs8>
+						</ul>
+					</section>
+					<section class="doc-cat col-lg-12">
+						<h3>Other Categories</h3>
+						<ul>
+							<BOUCLE_rubrique_ghdocs9(RUBRIQUES){id_parent=0}>
+								<li class="cat-item cat-[(#TITRE|strtolower)] col-lg-4"><a href="#URL_RUBRIQUE">[(#TITRE)]</a></li>
+							</BOUCLE_rubrique_ghdocs9>
+						</ul>
+					</section>		
+					<INCLURE(includes/footer)>
+				</div>
+			</body>
+		</html>
+	</BOUCLE_docs_ghdocs>
+</BOUCLE_article_ghdocs>

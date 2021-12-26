@@ -1,0 +1,52 @@
+#CACHE{0}
+<div class="grid_7" id="box_media">
+	<a href="#" class="box_media_title">Amashusho</a>
+	<div style="padding:5px;">
+		<div class="tabs">
+			<ul>
+				<li><a href="#" onmouseover="easytabs('1', '1');" onfocus="easytabs('1', '1');" onclick="return false;" title="" id="pglink1">&nbsp;&nbsp;Amafoto&nbsp;&nbsp;</a></li>
+				<li><a href="#" onmouseover="easytabs('1', '2');" onfocus="easytabs('1', '2');" onclick="return false;" title="" id="pglink2">&nbsp;&nbsp;Amavidewo&nbsp;&nbsp;</a></li>
+			</ul>
+		</div>
+		<div id="pgcontent1">
+			<!--  -->
+			<table width="98%" height="98%" cellspacing="0" cellpadding="0" border="0">
+				<!-- Highlight video -->
+				<B_gh_highlight_video>
+					<tr>
+						<BOUCLE_gh_highlight_video(ARTICLES){0,1}{doublons}{titre!=intro}{titre_mot=HomeHighlightVideo}{par date}{inverse}>
+							<td width="50%" height="*" colspan="2" align="center"  valign="top" style="padding:2px 0px;">
+								<div style="width: 324px; height: 208px;position: relative;">
+									<a href="#SOUSTITRE" class="gh_amashusho_hometitle">
+										[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{320,0}|image_recadre{312,180,'top left','#000000'}|extraire_attribut{src})" alt="[(#TITRE)]" align="center" class="gh_amashusho_image" border="0"/>]<br />										
+										[(#TITRE|couper{100,'...'})]
+									</a>
+								</div>
+							</td>
+						</BOUCLE_gh_highlight_video>
+					</tr>
+				</B_gh_highlight_video>	
+				<!-- End Highlight Photo -->
+				<B_gh_video>
+					<tr>
+						<BOUCLE_gh_video(ARTICLES){0,6}{doublons}{titre!=intro}{titre_mot=HomeVideo}{par date}{inverse}>
+							<td width="50%" height="*" align="center"  valign="top" style="padding:2px;">
+								<B_gh_photos_img>
+									<a href="#SOUSTITRE" class="gh_amashusho_hometitle">										
+											[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{160,0}|image_recadre{150,90,'top left','#000000'}|extraire_attribut{src})" alt="[(#TITRE)]" align="center" class="gh_amashusho_image" border="0"/>]<br />
+										[(#TITRE|couper{50,'...'})]
+									</a>
+								</B_gh_video_img>
+							</td>
+						</BOUCLE_gh_video>
+						<BOUCLE_gh_video_list(BOUCLE_gh_video)></BOUCLE_gh_video_list>
+				</B_gh_video>
+			</table>
+			<!--  -->
+		</div>
+		<!-- pg content 2 latest videos-->
+		<div id="pgcontent2">
+			
+		</div>
+	</div>
+</div>

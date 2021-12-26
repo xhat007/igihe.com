@@ -1,0 +1,38 @@
+[(#CACHE{0})][(#HTTP_HEADER{Content-type: application/json[; charset=(#CHARSET)]})][
+<BOUCLE_json_rubriqueMain(RUBRIQUES){id_rubrique}{doublons zz}>
+{
+	"nodes":[
+		<BOUCLE_json_articles1(ARTICLES){doublons ff}{branche}{par date}{inverse}{#ENV{pg,0},9}>
+			{
+				"node":
+					{
+						"title":[(#TITRE||json_encode)],
+						"lead":[(#INTRODUCTION|textebrut|json_encode)],
+						"author":[(#PS|textebrut|sinon{#NOM}||json_encode)],
+						"body":[(#TEXTE|liens_absolus{#URL_SITE_SPIP}||json_encode)],
+						"created":"[(#DATE|jour)]\/[(#DATE|mois)]\/[(#DATE|annee)] [(#DATE|heures)][:(#DATE|minutes)]",
+						"field_image_fid":"http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]",
+						"news_url":"http://www.igihe.com/#URL_ARTICLE",
+						"news_id":[(#ID_ARTICLE||json_encode)]
+					}
+			},
+		</BOUCLE_json_articles1>
+		<BOUCLE_json_articles2(ARTICLES){doublons ff}{branche}{par date}{inverse}{#ENV{pg,0},1}>
+			{
+				"node":
+					{
+						"title":[(#TITRE||json_encode)],
+						"lead":[(#INTRODUCTION|textebrut|json_encode)],
+						"author":[(#PS|textebrut|sinon{#NOM}||json_encode)],
+						"body":[(#TEXTE|liens_absolus{#URL_SITE_SPIP}||json_encode)],
+						"created":"[(#DATE|jour)]\/[(#DATE|mois)]\/[(#DATE|annee)] [(#DATE|heures)][:(#DATE|minutes)]",
+						"field_image_fid":"http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]",
+						"news_url":"http://www.igihe.com/#URL_ARTICLE",
+						"news_id":[(#ID_ARTICLE||json_encode)]
+					}
+			}
+		</BOUCLE_json_articles2>
+		]
+}
+</BOUCLE_json_rubriqueMain>]
+

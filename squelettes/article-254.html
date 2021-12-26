@@ -1,0 +1,608 @@
+#CACHE{57600}
+<BOUCLE_IGIHE_ARTICLE(ARTICLES){id_article}{doublons showbiz}{doublons x}>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>#TITRE > #NOM_SITE_SPIP</title>
+
+<!-- dRmetatags  -->
+<meta http-equiv="pragma" content="cache" />
+<meta http-equiv="content-language" content="en-US" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="robots" content="all" />
+<meta name="revisit-after" content="1" />
+<meta http-equiv="window-target" content="_top" />
+<meta name="expires" content="never" />
+<meta name="rating" content="general" />
+
+<meta property="og:title" content="#TITRE" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="#URL_SITE_SPIP/#URL_ARTICLE" />
+<meta property="og:image" content="#URL_SITE_SPIP/IMG/[(#LOGO_ARTICLE|fichier)]" />
+<meta property="og:site_name" content="IGIHE.com - Mu Kinyarwanda" />
+<meta property="og:description" content="[(#TEXTE|textebrut|couper{200,'...'})]" />
+
+
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="image_src" type="image/jpeg" href="#URL_SITE_SPIP/IMG/[(#LOGO_ARTICLE|fichier)]" />
+<!--End dRmetatags  -->
+
+<!-- dR_scripts -->
+<link rel="stylesheet" type="text/css" media="screen" href="#CHEMIN{'igihe_scripts/ghgrid.css'}" />
+<link rel="stylesheet" type="text/css" media="screen" href="#CHEMIN{'igihe_scripts/ghstyle_day.css'}" />
+<link rel="stylesheet" type="text/css" media="screen" href="#CHEMIN{'igihe_scripts/ghstyle.css'}" />
+<!-- End dR_scripts -->
+
+<link rel="stylesheet" href="techban/css/style.css" type="text/css" media="screen" charset="utf-8" />	
+<script type="text/javascript" src="techban/js/jquery-1.2.6.js"></script>
+<script type="text/javascript" src="techban/js/startstop-slider.js"></script>
+
+<style>
+		#dropdowncontent {margin:0px; width:100%;height:330px; display:none; float:left;text-align:center;}
+		#dropdownbanner{width:978px;border:0px solid #BCBCBB;margin:auto; margin-bottom: -5px;}
+		.social_feed{}
+		.twtr-hd{ display: none;}
+	</style>
+</head>
+
+
+<body topmargin="0" leftmargin="0" >
+<a name="hejuru"></a>
+
+
+<!-- End TOP BANNER -->	
+
+
+<!-- HEADER -->
+<div id="ghheader">
+<div id="dropdowncontent" align="center">
+		<div id="content">
+			<a href="http://www.rdb.rw/kwitizina/" target="_blank"><img src="http://igihe.com/drpdwn/kwitizina20132.jpg" style="width: 978px;"  height="330px"></a>				
+		</div>
+	</div>
+	<div style="width: 100%; background: none; margin-top: -3px; margin-left: 0px;" align="center">
+		<a href="#"><img id="dropdownbanner" src="http://igihe.com/drpdwn/kwitizina2013.jpg" width="978" ></a>
+	</div>
+	<script>
+		$("#dropdownbanner").click(function () {
+			if ($("#dropdowncontent").is(":hidden")) {
+				$("#dropdowncontent").slideDown("slow");
+			}
+			else {
+				$("#dropdowncontent").slideUp("slow");
+			}
+		});
+	</script>
+	
+<div class="container_20">
+
+<INCLURE{fond=gh_head}{env}{ajax}/>
+
+<!-- Menu -->
+<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_home.gif'}" width="19" height="25" border="0" align="left">Ahabanza</a></div>
+<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/abo-turibo/" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_Abo Turibo.gif'}" width="19" height="25" border="0" align="left">Abo Turibo</a></div>
+<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/serivisi/" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_Serivisi.gif'}" width="19" height="25" border="0" align="left">Serivisi</a></div>
+<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/twandikire/" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_Twandikire.gif'}" width="19" height="25" border="0" align="left">Twandikire</a></div>
+<div class="grid_4" id="menu"><a href="javascript:animatedcollapse.toggle(['ibirimo', 'ibirimopg'])" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_ibirimo.gif'}" width="19" height="25" border="0" align="left">Ibirimo</a></div>
+<div class="clear"></div>
+<!-- End Menu -->
+
+</div>
+</div>
+<div class="clear"></div>
+<!-- End HEADER -->
+[(#REM) <!-- #########################  DEFAULT ####################### -->]
+<BOUCLE_gh_l0(ARTICLES){id_article}{doublons yy}>
+
+<!-- SECTION HEADER -->
+<div id="ghheader">
+<div class="container_20">
+
+
+<!-- SlideNews -->
+<INCLURE{fond=gh_newssliderin}{env}{ajax}/>
+<!-- End SlideNews -->
+
+
+<!-- Navbar -->
+	<div class="grid_20 alpha omega" id="sectionavbar">
+<font class="gh_navbar">&nbsp;&nbsp;<a href="#URL_SITE_SPIP" class="gh_navbar"><b>IGIHE.com</b></a>&nbsp;>&nbsp;<BOUCLE_gh_RUBRIQUEtitlel0(RUBRIQUES){id_rubrique}><BOUCLE_gh_RUBRIQUEtitle_followl0(HIERARCHIE)><a href="#URL_RUBRIQUE" class="gh_navbar">[(#TITRE)]</a>&nbsp;>&nbsp;</BOUCLE_gh_RUBRIQUEtitle_followl0>[<a href="#URL_RUBRIQUE" class="gh_navbar">(#TITRE)</a>]</BOUCLE_gh_RUBRIQUEtitlel0></font>	</div>
+<!-- End Navbar-->
+
+
+</div>
+</div>
+<div class="clear"></div>
+<!-- End SECTION HEADER -->
+
+
+
+<!-- BODY -->
+<div id="ghbody"><div id="bg">
+<div class="container_20">
+
+
+<!-- ArticleContent -->
+<div class="grid_16" id="articlescontent">
+
+
+
+<!-- ArticleTools -->
+<div class="grid_3 alpha" id="articletools">
+<div id="gh_articletoolsWrapper">
+<div id="gh_articletools">
+
+
+<a href="[(#LOGO_ARTICLE||image_reduire{600,600}||extraire_attribut{src})]" onclick="return hs.expand(this)" style="border:0px;">[<img src="(#LOGO_ARTICLE||image_reduire{140,0}||image_recadre{0,0,top}|extraire_attribut{src})" alt="[(#TITRE)]" border="0" width="140"/>]</a>
+[<div class="highslide-caption"><font class="gh_articlecontent">(#CAPTIONLOGO)</font></div>]
+
+
+</div>
+</div>
+</div>
+<!-- End ArticleTools -->
+
+
+
+<!-- ArticleContent -->
+<div class="grid_13 omega"  id="articlecontents">
+
+
+<h1 class="gh_articletitle">[(#TITRE)]</h1>
+<font class="gh_articledetails"><br />Yanditswe kuya <font class="gh_inarticledetails">[(#DATE|jour)]-[(#DATE|mois)]-[(#DATE|annee)]</font> - Saa <font class="gh_inarticledetails">[(#DATE|heures)][:(#DATE|minutes)]'</font><B_gh_author> na <B_gh_author><BOUCLE_gh_author(AUTEURS){id_article}><a href="#" class="gh_tab_articledetails_author">[(#PS|textebrut|sinon{#NOM})]</a></BOUCLE_gh_author></B_gh_author><//B_gh_author></font>
+
+	<div class="gh_articlecontent">
+
+<!-- Social -->
+<ul style="display:block;margin-left:7px;">
+
+		<li style="display: inline;float:left;width:200px;height:25px;border:0px solid red;">
+			<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=225711950783985&amp;xfbml=1"></script><fb:like href="#URL_SITE_SPIP/#URL_ARTICLE"  send="true" layout="button_count" width="200" show_faces="true" font="trebuchet ms"></fb:like>
+		</li>
+
+		<li style="display: inline;float:left;width:200px;height:25px;border:0px solid red;">
+			<a href="http://twitter.com/share" class="twitter-share-button" data-url="#URL_SITE_SPIP/#URL_ARTICLE" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		</li>
+
+		<li style="display: inline;float:left;width:200px;height:25px;border:0px solid red;">
+			<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+			  {parsetags: 'explicit'}
+			</script>
+			<g:plusone size="medium" href="#URL_SITE_SPIP/#URL_ARTICLE"></g:plusone>
+			<script type="text/javascript">gapi.plusone.go();</script>
+		</li>
+</ul>
+<!-- End Social -->
+
+
+		<div id="gh_articlecontent">
+<br><font class="gh_articlecontent">[(#TEXTE|image_reduire{600,0})]</font>
+		</div>
+	</div>
+
+
+
+<BOUCLE_gh_article_videos(DOCUMENTS){id_article}{extension IN (dist_youtu)}{0,5}>
+<a name="amavidewo"></a>
+<br /><br />
+<div style="display:block;position:relative;width:605px;padding:2px;padding-top:5px;margin-bottom:20px;margin-right:3px;background-color:#000000;align:center;text-align:center;-moz-border-radius:10px; -webkit-border-radius:10px;border-radius:10px">
+<div class="cs_article">
+#MODELE{video,document=#ID_DOCUMENT,largeur=600,hauteur=335,autoplay=no}
+</div>
+[<div class="gh_articlev_dvideos">&nbsp;&nbsp;(#TITRE)</div>]
+[<div class="gh_articlev_ddvideos">(#DESCRIPTIF|lignes_longues{50})</div>]
+</div>
+</BOUCLE_gh_article_videos>
+
+
+
+
+<BOUCLE_gh_article_audios(DOCUMENTS){id_article}{extension IN (flv,mp3)}{0,5}>
+<a name="amajwi"></a>
+<br /><br />
+<div style="display:block;position:relative;width:610px;padding:2px;padding-bottom:5px;margin-bottom:20px;margin-right:3px;background-color:#000000;align:center;text-align:center;-moz-border-radius:10px; -webkit-border-radius:10px;border-radius:10px;"><div style="padding:2px;font-family:verdana;font-size:10px;font-weight:bold;text-transform:uppercase;color:#5b5b5b;">KANDA HANO USHOBORE KUMVA</div>
+<B_gh_ArticleTheSong2>
+			<div class="player">
+				<object type="application/x-shockwave-flash" data="#DOSSIER_SQUELETTE/igihe_imgs/igihe_mp3_player.swf" width="600" height="25">
+                    <param name="movie" value="#DOSSIER_SQUELETTE/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=<BOUCLE_gh_ArticleTheSong2(DOCUMENTS){id_article}{mode=document}{extension==mp3}{0,1}>#URL_SITE_SPIP/#URL_DOCUMENT</BOUCLE_gh_ArticleTheSong2>&amp;width=600&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+            </div>
+</B_gh_ArticleTheSong2>
+[<div class="gh_articlea_daudios">&nbsp;&nbsp;(#TITRE)</div>]
+[<div class="gh_articlea_ddaudios">(#DESCRIPTIF|lignes_longues{50})</div>]
+</div>
+</BOUCLE_gh_article_audios>
+
+<B_gh_a_related>
+<a name="related"></a>
+<!-- RELATED STORIES -->
+<div style="display:block;position:relative;width:605px;padding:2px;padding-top:5px;padding-bottom:5px;margin-bottom:20px;margin-right:3px;align:center;text-align:center;">
+<table width="99%" height="50" cellspacing="3" cellpadding="4" border="0">
+	<tr><td height="30" align="left" valign="top" style="margin-top:2px;background-image:url(#CHEMIN{'igihe_imgs/gh_menubg.png'});background-repeat:repeat-x;background-position:left top;background-color:#ffffff;"><a href="#related" class="box_title">IZINDI NKURU WASOMA</a></td></tr>
+
+<BOUCLE_gh_a_related(ARTICLES){id_rubrique}{0,5}{par date}{inverse}{doublons yy}>
+
+	<tr><td width="*" height="40" align="left" valign="middle" class="gh_amakuru_home" onClick="parent.location='#URL_ARTICLE'">
+<div style="padding:2px;font-family:Trebuchet MS;font-size:0.68em;color:#9E9E9E;align:center;">
+<BOUCLE_gh_aRUBRIQUEtitlel(RUBRIQUES){id_rubrique}><BOUCLE_gh_aRUBRIQUEtitle_followl(HIERARCHIE)><a href="#URL_RUBRIQUE" class="gh_news_category">#TITRE</a>&nbsp;|&nbsp;</BOUCLE_gh_aRUBRIQUEtitle_followl>[<a href="#URL_RUBRIQUE" class="gh_news_category">(#TITRE)</a>]	</BOUCLE_gh_aRUBRIQUEtitle_followll></BOUCLE_gh_aRUBRIQUEtitlel>
+</div>
+
+[<img src="(#LOGO_ARTICLE||image_reduire{0,55}||image_recadre{50,40,top center}|extraire_attribut{src})" width="50" height="40" align="left" class="gh_news_image"/>]
+
+<div style="padding-bottom:5px;"><a href="#URL_ARTICLE" class="gh_news_hometitle">[(#TITRE)]</a>
+<div class="gh_article_dtimeago" style="color:#AEAEAE;"><br />[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] </div><//B_gh_pasttime>
+</div>
+
+	</td></tr>
+</BOUCLE_gh_a_related>
+
+	<tr><td height="30" align="right" valign="top" style="margin-top:2px;background-color:#ffffff;"><BOUCLE_gh_s_related(RUBRIQUES){id_rubrique}><a href="#URL_RUBRIQUE" class="box_title">KANDA AHA UREBE N'IZINDI NKURU NYINSHI ...</a></BOUCLE_gh_s_related></td></tr>
+
+
+</table>
+</div>
+<!-- End RELATED STORIES -->
+</B_gh_a_related>
+<//B_gh_a_related>
+
+</div>
+<div class="clear"></div>
+<!-- End ArticleContent -->
+
+
+
+
+<!-- ArticleComments -->
+<div class="grid_16 alpha omega"  id="articlecomments" style="780px;">
+<a href="#" class="box_title">IBITEKEREZO</a>
+	<div id="articlecommentsin">
+
+<!-- IN-->
+<a name="comments"></a>
+<B_gh_comments_thread1>
+[(#ANCRE_PAGINATION)]
+<BOUCLE_gh_comments_thread1(FORUMS){id_article}{par date}{inverse}{pagination 20}>
+<div style="display:block;position:relative;padding-bottom:2px;width:740px;">
+<div class="gh_articlecomments_thread1"><font class="gh_articlecommentscontent" style="font-size:13px;">[(#TEXTE|textebrut)]</font></div>
+<div style="display:block;position:relative;width:88%;border:0px solid blue;top:-6px;margin-left:25px;margin:4px;padding:2px;padding-left:45px;background-image:url(#CHEMIN{'igihe_imgs/gh_commentsshow.gif'});background-repeat:no-repeat;background-position:left top;"><a href="poster_message.php?[(#PARAMETRES_FORUM{#SELF})]" class="gh_articlecommentsreply" style="margin-right:5px;" onclick="return hs.htmlExpand(this, { objectType: 'ajax', width: 737,} )">Musubize</a><font class="gh_articlecommentsdetails">[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] saa [(#DATE|heures)][:(#DATE|minutes)]<br /></font><a href="#" class="gh_articlecommentsauthor">[(#NOM|sinon{######})]</a><br /></div>
+<BOUCLE_gh_comments_thread2(FORUMS){id_parent}{par date}{tout}>
+<div align="right" style="display:block;position:relative;margin-bottom:40px;">
+	<div class="gh_articlecomments_thread2"><font class="gh_articlecommentscontent" style="font-size:13px;">[(#TEXTE|textebrut)]</font></div>
+	<div style="display:block;position:relative;width:75%;float:right;top:-6px;padding:2px;padding-right:45px;margin:4px;margin-right:5px;margin-left:25px;background-image:url(#CHEMIN{'igihe_imgs/gh_commentsshowright.gif'});background-repeat:no-repeat;background-position:right top;"><font class="gh_articlecommentsdetails">[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] saa [(#DATE|heures)][:(#DATE|minutes)]<br /></font><font class="gh_articlecommentsauthor">[(#NOM)]</font></div>
+</div>
+</BOUCLE_gh_comments_thread2>
+</div>
+</BOUCLE_gh_comments_thread1>
+[<div class="gh_pagination">(#PAGINATION{page})</div>]
+</B_gh_comments_thread1>
+<//B_gh_comments_thread1>
+<div style="padding-bottom:20px;padding:5px;">
+<center>[(#ACCEPTER_FORUM|=={non}|oui) <font style='color:#ff0000;'>NTA BITEKEREZO BYEMEREWE KUJYA KURIYI NKURU...</font>]</center>
+<!-----------------------------------------------------------------------------------------------------------
+					WILLY EDIT FOR AJAXXXXXXXXXXXXXXXXXX
+------------------------------------------------------------------------------------------------------------>
+
+			<script type="text/javascript">										
+				function envoyer_commentaire(id_forum)
+				{
+
+				var empty_email=(document.getElementById("session_email_"+id_forum).value.length==0 || document.getElementById("session_email_"+id_forum).value==null);
+				var empty_message=(document.getElementById("texte_"+id_forum).value.length==0 || document.getElementById("texte_"+id_forum).value==null);
+				if(empty_message){
+					alert("Comment can not be empty");
+				}
+				else if(empty_email){
+					alert("Please provide your email address");
+				}
+				else{
+					var igitekerezo = document.getElementById("texte_"+id_forum).value;
+					var izina = document.getElementById("session_nom_"+id_forum).value;
+					var email = document.getElementById("session_email_"+id_forum).value;
+
+					var titre = document.getElementById("titre").value;
+					var id_article_obj=document.getElementsByName("id_article").item(0);
+					var id_article=id_article_obj.value;
+
+					var forum_id=0;
+					var page="itsform.php";
+					var url="nom="+izina+"&email="+email+"&commentaire="+igitekerezo+"&id_forum="+id_forum+"&titre="+titre+"&id_article="+id_article;
+					var xhr_object = null;
+					if(window.XMLHttpRequest) // Firefox
+						xhr_object = new XMLHttpRequest();
+					else
+					{
+						if(window.ActiveXObject) // Internet Explorer
+							xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+						else
+						{
+							alert("Browser does not support xmlHttpRequest");
+							return;
+						}
+					}
+					var method = "POST";
+					var filename = page;
+					var requete  = url;
+					xhr_object.onreadystatechange = function()
+					{
+						if(xhr_object.readyState == 1)
+						{
+							document.getElementById("comment_statut_"+id_forum).innerHTML="Your comment is being sent to the server please wait";
+						}								
+						if(xhr_object.readyState == 4) 
+						{
+							var reponse = xhr_object.responseText;
+							//specify the response content								
+							document.getElementById("comment_statut_"+id_forum).innerHTML= reponse;
+							document.getElementById("session_nom_"+id_forum).disabled="disabled";
+							document.getElementById("session_email_"+id_forum).disabled="disabled";
+							document.getElementById("texte_"+id_forum).disabled="disabled";
+							document.getElementById("ohereza_"+id_forum).disabled="disabled";
+						}
+					}
+					xhr_object.open(method, filename, true);
+					xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+					xhr_object.send(requete);	 
+				}				
+			}			
+		</script>
+<!-----------------------------------------------------------------------------------------------------------
+				END WILLY EDIT FOR AJAXXXXXXXXXXXXXXXXXX
+--------------------------------------------------------------------------------------------------------- -->
+
+
+<center><INCLURE{fond=gh_commentsform}{env}{ajax} /></center>
+</div>
+<!-- End IN-->
+
+
+	</div>
+</div>
+
+
+<div class="clear"></div>
+<!-- End ArticleComments -->
+
+
+</div>
+<!-- End ArticleContent -->
+
+
+<!-- AreaRight -->
+<div class="grid_4 alpha omega" id="sidebar">
+
+	<div class="grid_4 omega" id="ibirimo">
+<!-- ibirimo -->
+<ul>
+<BOUCLE_gh_ibirimoside(RUBRIQUES){id_parent=0}{0,12}{titre_mot=IbirimoSide}>
+	<li class="gh_menu2"><a href="#URL_RUBRIQUE" class="gh_menu2">#TITRE</a></li>
+</BOUCLE_gh_ibirimoside>
+
+<BOUCLE_gh_ibirimoside2(RUBRIQUES){id_parent=0}{0,1}{titre_mot=IbirimoSideIkinyamakuru}>
+	<li class="gh_menu2a">
+	<center><BOUCLE_gh_ibirimoside2in(ARTICLES){id_rubrique}{0,1}{titre_mot=IbirimoSideIkinyamakuru}{par date}{inverse}>
+	<a href="#" class="gh_menu2c">IKINYAMAKURU IGIHE<br /></a><a href="#" class="gh_menu2b">[<img src="(#LOGO_ARTICLE||image_reduire{165,0}|image_recadre{165,0,'top left','#e0e0e0'}|extraire_attribut{src})" width="165" border="0" alt="Ikinyamakuru IGIHE - #TITRE" title="Ikinyamakuru IGIHE - #TITRE" border="0" />]<br />#TITRE</a>
+	</BOUCLE_gh_ibirimoside2in></center>
+	</li>
+</BOUCLE_gh_ibirimoside2>
+
+
+</ul>
+<!-- end ibirimo -->
+	</div>
+
+<!-- Ads160x600 -->
+	<div class="grid_4" id="ads_right" style="text-align:center">
+<a href="#" class="gh_adsin" >kwamamaza</a>
+<B_gh_ads2>
+<BOUCLE_gh_ads2(ARTICLES){id_article}{0,1}{titre_mot IN HomeHighlights, HomeHighlights1}>
+	<a href="http://www.mtn.co.rw/index/bvoice-services-mobilemoney" title="MTN Mobile Money">
+		<img src="http://igihe.com/squelettes/igihe_imgs/mtnmobilemoney.gif" width="160" border="0" alt="MTN Mobile Money" title="MTN Mobile Money"/>
+	</a><br />
+	<BOUCLE_gh_ads22(ARTICLES){0,4}{titre_mot=ad_right_160x600}>
+<a href="#" class="gh_adsin" >kwamamaza</a>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads2_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads2_img>
+								</a>
+	</BOUCLE_gh_ads22>
+</BOUCLE_gh_ads2>
+</B_gh_ads2>
+
+<B_gh_ads2a>
+<BOUCLE_gh_ads2a(RUBRIQUES){0,1}{titre_mot=s_ikoranabuhanga}{branche?}>
+<!-- GIS <a href="http://www.newglobetech.com/" title="@GlobeTech Rwanda Ltd"><img src="http://igihe.com/squelettes/igihe_imgs/globetech_ads.gif" width="160" border="0" alt="@GlobeTech Rwanda Ltd" title="@GlobeTech Rwanda Ltd"/></a> -->
+</BOUCLE_gh_ads2a>
+</B_gh_ads2a>
+
+
+<B_gh_ads3a>
+<BOUCLE_gh_ads3a(RUBRIQUES){0,1}{titre_mot=s_iyobokamana}{branche?}>
+	<BOUCLE_gh_ads33(ARTICLES){0,4}{titre_mot=ad_right_160x600}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads3_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads3_img>
+								</a>
+	</BOUCLE_gh_ads33>
+
+</BOUCLE_gh_ads3a>
+</B_gh_ads3a>
+
+<B_gh_ads4a>
+<BOUCLE_gh_ads4a(ARTICLES){id_article}{0,1}{titre_mot IN HomeNews}>
+
+	<BOUCLE_gh_ads44(ARTICLES){0,4}{titre_mot=ad_right_160x600}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads4_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads4_img>
+								</a>
+	</BOUCLE_gh_ads44>
+
+
+<br><br>
+<a href="http://www.rwandafoam.com/"><img src="http://igihe.com/squelettes/igihe_imgs/Rwandafoam_Ads2_igihe.gif" width="160" border="0" alt="Ryama kuri Matelas ya RWANDAFOAM" title="Ryama kuri Matelas ya RWANDAFOAM"/></a>
+<br><br>
+<!-- ANIMATED BANNER TECHNO BRAIN -->
+<div style="width:100%;overflow:hidden;" id="techno">
+<div id="page-wrap">		
+		<div id="slider">
+
+			<div id="mover">
+		
+				<div id="slide-1" class="slide">
+				
+					<h1 style="margin-top:105px; width:150px;"><a href="https://www.technobraingroup.com" target="_blank" style="text-decoration:none; color:#FFF;"> Training Division</a></h1>	
+                    <h1 style="margin-top:20px;"><span style="color:#FC0;">Offers Quality Training & Certifications in Sync with Industry Requirements</span> </h1>										
+					<a href="https://www.technobraingroup.com/it-training/registration.aspx"><img src="techban/images/logo1.jpg" title="Techno Brain" /></a>
+					
+				</div>				
+				<!--  <div class="slide">				
+					<h1 style="margin-top:20px;"><span style="color:#FC0;">Quality Training & Certifications in sync with industry requirements</span> </h1>	
+                  <!--  <p>Get Free Training on Security+ (ML)</p>	-->
+                            	
+					
+					<!--<a href="#"><img src="techban/images/sample.png" title="New Horizons" /></a>
+					
+				</div>-->
+				
+				<div class="slide">				
+					<h1 style="font-size:21px; margin-top:140px; color:#FC0;"><strong>Phone No:</strong><br /><span style="font-size:18px; color:#FFF;"> 250 788544721 / 252581187</span></h1> 					
+				<a href="https://www.technobraingroup.com/it-training/registration.aspx"><img src="techban/images/logo1.jpg" title="Techno Brain" /></a>
+					
+				</div>			
+			</div>		
+		</div>	
+	</div>
+</div>
+
+<!-- END ANIMATED BANNER TECHNO BRAIN -->
+<!--
+<a href="http://www.ikazeagency.com" title="" target="_blank"><img src="http://igihe.com/squelettes/igihe_imgs/ikaze_adsbanner.gif" width="160" border="0" alt="IKAZE Agency Ltd" title="IKAZE Agency Ltd"/></a>
+-->
+
+</BOUCLE_gh_ads4a>
+</B_gh_ads4a>
+
+	<a href="#"><img src="#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+<//B_gh_ads4a>
+
+<//B_gh_ads3a>
+
+<//B_gh_ads2a>
+
+<//B_gh_ads2>
+</div>
+<!-- START Ad : Ad3_rub_amakuru_page_article_160_600	-->
+<div style="width:100%;overflow:hidden;">
+	<div style="margin-top:3px;text-align:center;background-color:#ffffff;">
+		<a href="#" class="gh_adsin">kwamamaza<br /></a>
+		<div style="text-align:center;padding:2px;padding-bottom:7px;">
+			<B_Ad3_rub_amakuru_page_article_160_600>
+				<BOUCLE_Ad3_rub_amakuru_page_article_160_600(ARTICLES){titre_mot=Ad3_rub_amakuru_page_article_160_600}{par date}{inverse}{0,1}>
+					<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+						<BOUCLE_Ad3_rub_amakuru_page_article_160_600_docs(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+						[<img src="http://igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+						</BOUCLE_Ad3_rub_amakuru_page_article_160_600_docs>
+					</a>						
+				</BOUCLE_Ad3_rub_amakuru_page_article_160_600>
+			</B_Ad3_rub_amakuru_page_article_160_600>
+				<a href="#"><img src="#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>				
+			<//B_Ad3_rub_amakuru_page_article_160_600>
+		</div>
+	</div>
+</div>
+<!-- END Ad : Ad3_rub_amakuru_page_article_160_600 -->
+<!-- end Ads160x600 -->
+
+</div>
+<!-- End AreaRight -->
+
+
+</div>
+	<div class="clear"></div>
+</div></div>
+<!-- End BODY -->
+
+</BOUCLE_gh_l0>
+[(#REM) <!-- ######################### End  DEFAULT ####################### -->]
+
+
+
+
+
+
+<!-- FOOTER -->
+<div id="ghfooter">
+<div class="container_20">
+
+<!-- Ads728x90 -->
+<div class="grid_20" id="footer_ads">
+	<a href="#" class="gh_adsin" >kwamamaza<br></a>
+	<div style="text-align:center;padding:2px;padding-bottom:7px;">
+		<div id="banfooter">
+		<!-- FOOTER BANNER -->
+
+		<!-- END FOOTER BANNER -->	
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+<!-- End Ads728x90 -->
+
+<INCLURE{fond=gh_footer}{env}{ajax}/>
+
+</div>
+</div>
+<!-- End FOOTER -->
+
+
+<script type="text/javascript" charset="utf-8" src="#CHEMIN{'igihe_scripts/jqueryz.js'}"></script>
+
+<script type="text/javascript" charset="utf-8" src="#CHEMIN{'igihe_scripts/gh_fontsizer/fluidtextresizer.js'}"></script>
+
+<script type="text/javascript" charset="utf-8" src="#CHEMIN{'igihe_scripts/ghcollapse.js'}"> </script>
+
+
+<script type="text/javascript">
+animatedcollapse.addDiv('ibirimo', 'speed=500,hide=1,persist=1,fade=1,height=470px')
+animatedcollapse.addDiv('ibirimopg', 'speed=500,hide=1,persist=1,fade=1,height=470px')
+animatedcollapse.ontoggle=function($, divobj, state){
+}
+animatedcollapse.init()
+</script>
+
+
+<script type="text/javascript" src="#CHEMIN{'igihe_scripts/gh_highslide/highslide/highslide-with-html.js'}"></script>
+<link rel="stylesheet" type="text/css" href="#CHEMIN{'igihe_scripts/gh_highslide/highslide/highslide.css'}" />
+
+<script type="text/javascript">
+hs.graphicsDir = '#CHEMIN{'igihe_scripts/gh_highslide/highslide/graphics/'}';
+hs.outlineType = 'rounded-white';
+hs.wrapperClassName = 'draggable-header';
+hs.dimmingOpacity = 0.85;
+hs.dimmingDuration = 150;
+hs.align = 'center';
+hs.showCredits = false;
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(["_setAccount", "UA-10838297-1"]);
+	_gaq.push(["_trackPageview"]);
+
+	(function() {
+		var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+		ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+		var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+</body>
+</html>
+</BOUCLE_IGIHE_ARTICLE>

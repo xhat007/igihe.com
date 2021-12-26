@@ -1,0 +1,28 @@
+#stickey_footer { /* This will make your footer stay where it is */
+	background: none repeat scroll 0 0 #fff;
+	border: 1px solid #fff;
+	bottom: 0;
+	height:80px;
+	left: 50%;
+	margin: 0 auto 0 -490px;
+	padding: 0 10px;
+	position: fixed;
+	width: 958px;
+	text-align:center;
+	z-index:9999;
+	overflow:hidden;
+}
+/* border curves */
+#stickey_footer {
+
+}
+/* hover effect */
+#stickey_footer:hover {
+	background: none repeat scroll 0 0 #fff;
+}
+/* shadow for the footer*/
+#stickey_footer {
+	-moz-box-shadow:0px 0px 11px #191919;
+	-webkit-box-shadow:0px 0px 11px #191919;
+	box-shadow:0px 0px 11px #191919;
+}

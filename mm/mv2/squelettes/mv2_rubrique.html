@@ -1,0 +1,247 @@
+<BOUCLE_rubrique(RUBRIQUES){id_rubrique}>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>IGIHE.com - Mobile Version</title>
+      <meta name="generator" content="Bootply" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/mobile.css" rel="stylesheet">
+      <link href="css/menu.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/bootswatch.min.css">
+      <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <!-- CSS code from Bootply.com editor -->
+      <style type="text/css">
+      </style>
+      <script>
+         var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-23019901-1']);
+          _gaq.push(['_setDomainName', "bootswatch.com"]);
+         _gaq.push(['_setAllowLinker', true]);
+          _gaq.push(['_trackPageview']);
+         
+         (function() {
+           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+         
+      </script>
+      <style>
+         #myList .news_list{ display:none;
+         }
+         #loadMore {
+         color:#005aa2;
+         cursor:pointer;
+         }
+         #loadMore:hover {
+         color:#005aa2;
+         }
+         #showLess {
+         color:#005aa2;
+         cursor:pointer;
+         }
+         #showLess:hover {
+         color:#005aa2;
+         }
+      </style>
+   </head>
+   <!-- HTML code from Bootply.com editor -->
+   <body  >
+      <!-- HEADER 
+         =================================-->
+      <div class="container" style="border:0px solid red;height:120px;margin-top:0px;padding:0px 0px;">
+         <div class="row" style="padding:0px;margin:0px;width:100%;">
+            <div class="col-lg-12" style="padding:0px;margin:0px;">
+               <div style="border:0px solid red;background-image:url(images/header.jpg);background-size: 100% 100%;height:138px;background-position:100%;">
+                  <center><img src="images/logo.png"  height="105"  width="240" align="center" style="margin:auto;"></center>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container" style="padding:0px 15px;border:0px solid red;">
+         <div class="row" style="border:0px solid red;margin-top:-22px;padding:2px 5px;">
+            <div class="col-xs-6">
+               <div class="language">
+                  <a href="#"><img src="images/kn.png" width="30px"></a>
+                  <a href="#"><img src="images/bi.png" width="30px"></a>
+                  <a href="#"><img src="images/en.png" width="30px"></a>
+                  <a href="#"><img src="images/fr.png" width="30px"></a>
+               </div>
+            </div>
+            <div class="col-xs-6" style="padding-bottom:4px;">
+               <div class="search" style="margin-top:-3px;">
+                  <form method="" style="">
+                     <input type="text" placeholder="Shakisha..." class="search" id="searching" name="">
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container" style="padding:0px 0px;margin-top:-2px;border:0px solid red;">
+         <div class="row" style="padding:0px 0px;margin:0px;">
+            <div class="col-lg-12" style="border:0px solid red;margin:0px;padding:0px 0px;border-bottom:2px solid #007ac1;border-top:2px solid #007ac1;">
+               <div id='cssmenu'>
+                  <ul>
+                     <li><a href="#URL_SITE_SPIP/mv2" style="text-transform:capitalize;">Ahabanza</a></li>
+                     <BOUCLE_gh_ibirimoside(RUBRIQUES){id_parent=0}{0,20}{titre_mot=IbirimoSide}>
+                     <li><a href="spip.php?page=rubrique&amp;id_rubrique=#ID_RUBRIQUE" style="text-transform:capitalize;">#TITRE</a></li>
+                     </BOUCLE_gh_ibirimoside>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /header container-->
+      <!-- CONTENT
+         =================================-->
+      <div class="container" style="border:0px solid red;padding:0px 15px;margin-top:2px;margin-left:0px;margin-right:0px;background-color:#f8f8f8;">
+         
+	 <div class="row" style="padding:4px 0px;margin-top:3px;border-top:0px solid #1562b6;border-bottom:1px solid #1562b6;background-color:#f8f8f8;color:#007ac1;">
+            <div class="col-xs-12" style="padding-left:3px;font-size:17px;text-transform:uppercase;">::#TITRE</div>
+         </div>
+         <BOUCLE_rubrique_latest_art(ARTICLES){id_rubrique=#ID_RUBRIQUE}{par date}{inverse}{0,1}>
+         <div class="row"  style="padding:2px 2px;margin:0px -15px;">
+            <div class="col-lg-12"  style="padding:4px 0px;">
+               <div class="title_rubrique" style="">
+                  <a href="spip.php?page=article&amp;id_article=#ID_ARTICLE" style="font-size:16px;font-weight:bold;color:#005a87;">#TITRE</a>
+               </div>
+			   <img src="http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]" width="100%" style="max-height:300px;height:auto;margin-top:3px;">
+               <div class="arrow">
+                   <center>
+                      <BOUCLE_combien(FORUMS) {id_article} {plat}>
+			#TOTAL_BOUCLE
+		      </BOUCLE_combien>
+				0				
+		      <//B_combien>
+		   </center>
+               </div>
+            </div>
+         </div>
+         </BOUCLE_rubrique_latest_art>
+         
+         <div class="row" style="margin:0px -15px;">
+            <div class="col-lg-12" style="padding:0px;">            
+               
+               
+               <div id="myList">
+               
+                  <BOUCLE_rubrique_latest_art1(ARTICLES){id_rubrique=#ID_RUBRIQUE}{par date}{inverse}{1,50}>
+                  <div class="news_list">
+                     <div class="col-xs-4" style="border:0px solid red;padding:0px;">
+                        <img src="http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]" width="120px" height="95px" style="max-height:95px;">
+                        <div class="arrow">
+                           <center>
+                              <BOUCLE_combien1(FORUMS) {id_article} {plat}>
+				#TOTAL_BOUCLE
+			      </BOUCLE_combien1>
+				0				
+			      <//B_combien1>
+			   </center>
+                        </div>
+                     </div>
+                     <div class="col-xs-8">
+                        <a href="spip.php?page=article&amp;id_article=#ID_ARTICLE">#TITRE</a><br>
+                        <i>[(#DATE*|date_relative)]</i>
+                     </div>
+                  </div>
+                </BOUCLE_rubrique_latest_art1>
+                                    
+               </div>
+            </div>
+         </div>
+         <div class="row"  style="padding:7px;">
+            <div class=" col-lg-12 col-sm-12" style="background:#e6ebef; color:#005793; font-size:18px; padding:2px;">
+               <center>
+                  <div id="loadMore" style="border-bottom:1px solid #a2a2a2;margin-bottom:8px;padding-bottom:4px;padding-top:4px;">Kanda hano usome izindi nkuru</div>
+                  <div id="showLess" style="padding-top:2px;padding-bottom:4">Hisha izindi nkuru</div>
+               </center>
+            </div>
+         </div>       
+         
+         <div class="row" style="padding:2px 0px;border:0px solid red;">
+            <div class="col-lg-12" style="padding:0px;">
+               <img src="images/img1.png" width="100%" height="auto" style="border-radius:0px;">
+            </div>
+         </div>
+         
+         <div class="row" style="padding:7px;">
+            <div class="col-lg-12">
+               <center>
+                  <div class="search_footer" style="margin:auto;">
+                     <form method="" style="">
+                        <input type="text" placeholder="Shakisha..." id="searching" name="">
+                     </form>
+                  </div>
+               </center>
+            </div>
+         </div>
+         <!--  ############################################### ad5+++++++++++++++++++++++++++++++++++++-->
+         <div class="row" style="padding:0px 0px;">
+            <div class="col-lg-12" style="padding:0px;">
+            <a href="https://play.google.com/store/apps/details?id=com.mobit.igihe&hl=fr" target="_blank">
+               <img src="images/banner4.png" width="100%" height="auto" style="border-radius:0px;">
+            </a>
+            </div>
+         </div>
+         <!--  ############################################### end of ad5 +++++++++++++++++++++++++++++++++++++-->
+         <!--  ############################################### footer 1 +++++++++++++++++++++++++++++++++++++-->
+         <div class="row" style="padding:0px 0px;">
+            <div class="col-lg-12" style="padding:0px;">
+            <a href="https://play.google.com/store/apps/details?id=com.mobit.igihe&hl=fr" target="_blank">
+               <img src="images/download.png" width="100%" height="auto" style="border-radius:0px;">
+            </a>
+            </div>
+         </div>
+         <!--  ############################################### end of footer 1 +++++++++++++++++++++++++++++++++++++-->
+         <div class="row" style="padding:0px 5px; background-color:#1f1f1f;border:0px solid red;">
+            <div class="col-xs-7" style="padding:0px; border:0px solid red;">
+               <center style="padding-top:30px;right:0px;"><img src="images/logo1.png" width="135px"></center>
+               <center style="padding:4px;font-size:14px;font-weight:normal;color:#807e7f;">2014 &copy. All rights reserved </center>
+            </div>
+            <div class="col-xs-5" style="color:#fff;padding-top:22px;border:0px solid red;text-decoration:none;font-size:12px;">
+				<div class="footer_down">
+				   <a href="" style="text-decoration:none;color:#7e7c7d;right:0px;">Abo Turibo</a><br>
+				   <a href="" style="text-decoration:none;color:#7e7c7d;">Twandikire</a><br>
+				   <a href="" style="text-decoration:none;color:#7e7c7d;">Amamaza</a><br>
+			   </div>
+            </div>
+         </div>
+      </div>
+      <!-- /CONTENT ============-->
+      <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script type='text/javascript' src="js/bootstrap.min.js"></script>
+      <script src="js/bootswatch.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="sliderengine/amazingslider.js"></script>
+      <script src="sliderengine/initslider-1.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function () {
+         size_li = $("#myList .news_list").size();
+         x=10;
+         $('#myList .news_list:lt('+x+')').show();
+         $('#loadMore').click(function () {
+         x= (x+10 <= size_li) ? x+10 : size_li;
+         $('#myList .news_list:lt('+x+')').show();
+         });
+         $('#showLess').click(function () {
+         x=(x-10<0) ? 10 : x-10;
+         $('#myList .news_list').not(':lt('+x+')').hide();
+         });
+         });
+      </script>
+      <!-- JavaScript jQuery code from Bootply.com editor -->
+      <script type='text/javascript'>
+         $(document).ready(function() {
+         
+             
+         
+         });
+         
+      </script>
+   </body>
+</html>
+</BOUCLE_rubrique>

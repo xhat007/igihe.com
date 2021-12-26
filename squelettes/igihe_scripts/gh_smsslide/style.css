@@ -1,0 +1,32 @@
+#newsticker-demo { 
+width:310px; 
+}
+
+#newsticker-demo a { text-decoration:none; }
+#newsticker-demo img { border: 2px solid #FFFFFF; }
+
+#newsticker-demo .title {
+text-align:center;
+font-size:14px;
+font-weight:bold;
+padding:5px;
+}
+
+.newsticker-jcarousellite { width:300px; }
+.newsticker-jcarousellite ul li{ list-style:none; display:block; padding-bottom:1px; padding-bottom:5px; border: none; border-bottom: 1px solid #d2cece;}
+.newsticker-jcarousellite .thumbnail { float:left; width:110px; }
+.newsticker-jcarousellite .info { float:right; width:190px; }
+.newsticker-jcarousellite .info span.cat { display: block; font-size:10px; color:#808080; }
+.smsslidetitle{background: #069;color: #fff; font-size: 18px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; padding: 5px; margin-bottom: 5px;}
+
+.clear { clear: both; }
+#article_hotel_near{border: none; border-bottom: 1px solid #d2cece; border-top: 1px solid #d2cece; margin-bottom: 0px; margin-top: 5px; width: 300px; background: url(bg.png) center; padding: 15px; border-radius: 10px; padding-top: 5px;}
+.article_hotel_near{ padding-top: 10px;}
+.article_hotel_near_logo{ width: 50px; display: inline-block; vertical-align: top;}
+.article_hotel_near_logo img{ width: 40px; height: 40px;}
+.article_hotel_near_texte{ width: 245px; display: inline-block; vertical-align: top; margin-top: -3px; line-height: 15px;}
+.article_hotel_near_texte span{ display: list-item; list-style: none; font-size: 11px; color: #666666; font-family: Verdana, Arial, Helvetica, sans-serif}
+.article_hotel_near_texte a{ color: #006699; font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif}
+#newsticker-demo div ul li{ height: auto!important;}
+#newsticker-demo div ul{ height: auto!important;}
+

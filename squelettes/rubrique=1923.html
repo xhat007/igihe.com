@@ -1,0 +1,209 @@
+<html>
+	<head>		
+		<title>Rwanda Day San Fransisco 2016</title>
+		<link href='rday2016fonts/css%3Ffamily=Open+Sans.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="rday2016css/default.css" />
+		<link rel="stylesheet" type="text/css" href="rday2016css/component.css" />
+		<link rel="stylesheet" type="text/css" href="rday2016css/style.css" />
+		<script src="rday2016js/modernizr.custom.js"></script>
+		<link rel="stylesheet" href="rday2016js/colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		
+	</head>
+	<body>
+		<div id="header" style="background: url('rday2016images/bggg2.jpg') center no-repeat; height: 339px;">
+		
+			<div class="header">
+				
+			</div>
+		</div>
+		<div style=" background: #606060;">
+		<div id="slide" style="max-width: 990px; margin: auto;">
+			<div id="nav">
+				<ul class="nav">
+					<li><a href=".">AHABANZA</a></li>
+					<li><a href="http://rwandaembassy.org/culturalday">IYANDIKISHE</a></li>
+					<li><a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Embassy%20of%20Rwanda%20Cultural%20Poduction%20Show%20and%20Reception%5Esfodt%60EOREORA%60239.00%60USD%60false%604%609/23/16%609/25/16%609/16/16&app=resvlink&stop_mobi=yes">ICUMBI</a></li>
+					<li><a href="https://maps.google.ca/maps?oe=UTF-8&hl=en-ca&client=safari&um=1&ie=UTF-8&fb=1&gl=ca&entry=s&sa=X&ftid=0x8085808636673e71:0xebc2cf7c5bf2d655&gmm=CgIgAQ%3D%3D">AMEREKEZO</a></li> 
+					<div class="clear"></div>
+				</ul>
+			</div>
+			<div id="cbp-fwslider" class="cbp-fwslider">
+				<ul>	
+					<BOUCLE_rdayslide(ARTICLES){titre_mot=rdayslides}{0,6}{par date}{inverse}>
+						<li>
+							<a href="#">
+								[<img src="http://igihe.com/(#LOGO_ARTICLE|extraire_attribut{src})" width="990" height="444" alt="#TITRE"/>]
+								<div style="position: absolute; top: 200px; left: 30px; background: rgba(0,0,0,0.4); padding: 10px; " align="left">
+									<div style="font-weight: bold;">#TITRE</div>
+									<div>[(#DATE|affdate)]</div>
+								</div>
+							</a>
+						</li>
+					</BOUCLE_rdayslide>					
+					
+				</ul>
+			</div>
+			
+		<script src="rday2016js/jquery.min.js"></script>
+		<script src="rday2016js/jquery.cbpFWSlider.min.js"></script>
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpFWSlider( [options] );
+				- options:
+				{
+					// default transition speed (ms)
+					speed : 500,
+					// default transition easing
+					easing : 'ease'
+				}
+				- destroy:
+				$( selector ).cbpFWSlider( 'destroy' );
+				*/
+
+				$( '#cbp-fwslider' ).cbpFWSlider();
+
+			} );
+		</script>
+		</div>
+		</div>
+		<div id="content">
+			<div class="content">
+				<div class="events">
+					<div class="eventheader">
+						Past events <span style="font-family: 'Caudex'; font-size: 18px;">2013 - 2014 - 2015</span>
+					</div>
+					<div class="event">
+						<a href="https://www.flickr.com/photos/paulkagame/8013822726" target="_blank"><img src="rday2016images/mosusu2/img4.jpg" alt="2012"/></a>
+					</div>
+					<div class="event">
+						<a href="https://www.flickr.com/photos/paulkagame/8752673432" target="_blank"><img src="rday2016images/mosusu2/img1.jpg" alt="2013" /></a>
+					</div>
+					<div class="event">
+						<a href="https://www.flickr.com/photos/paulkagame/15301921581/in/photostream/" target="_blank"><img src="rday2016images/mosusu2/img2.jpg" alt="2014" /></a>
+					</div>
+					<div class="event">
+						<a href="https://www.flickr.com/photos/paulkagame/21930931001" target="_blank"><img src="rday2016images/mosusu2/img3.jpg" alt="2015" /></a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="latest">					
+					<B_rnews>
+						<div class="ctitle">amakuru aheruka</div>						
+						<BOUCLE_rnews(ARTICLES){titre_mot=rdaylatestnews}{par date}{inverse}{pagination 6}{tout}>
+							<div class="lnews">
+								[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{0,85}||image_recadre{120,75,top center, #000}|extraire_attribut{src})" alt="[(#TITRE)]" align="left" />]
+								<a href="#URL_ARTICLE">#TITRE</a>
+								<span>[(#DATE|affdate)]</span>
+								<div class="clear"></div>
+							</div>
+						</BOUCLE_rnews>
+						<div class="pagination">[(#PAGINATION{page})]</div>
+						</B_rnews>
+					<//B_rnews>					
+				</div>
+				<div class="media">
+					<div class="ctitle">video</div>
+						<div style="padding: 4px;">
+							<BOUCLE_rvidz(ARTICLES){titre_mot=rdayvidz}{0,4}{par date}{inverse}>
+								<div class="gal">
+									<a class="youtube" href="http://www.youtube.com/embed/#SOUSTITRE?rel=0&wmode=transparent">
+										[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{0,150}||image_recadre{150,90,top center}|extraire_attribut{src})" alt="[(#TITRE)]" />]
+									</a>
+								</div>
+							</BOUCLE_rvidz>
+							<div class="clear"></div>
+							
+							<div class="clear"></div>
+						</div>
+						<div class="ctitle">photos</div>
+						<div style="padding: 4px;">
+							<BOUCLE_rgal(ARTICLES){titre_mot=rdayslides}{0,6}{par date}{inverse}>
+								<div class="gal">
+									<a class="group2" href="[http://igihe.com/(#LOGO_ARTICLE|extraire_attribut{src})]">
+										[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{0,100}||image_recadre{150,90,top center}|extraire_attribut{src})" alt="[(#TITRE)]" />]
+									</a>
+								</div>
+							</BOUCLE_rgal>							
+							<div class="clear"></div>
+						</div>
+						<script src="rday2016js/jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:344});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+					</div>
+					<div class="tweet">
+						<div class="single-sidebar-widget tags">
+							<div class="ctitle">Rwanda day Tweets</div>
+							<!-- <h3 class="title">Rwanda day Tweets</h3> -->
+							<div class="twitter" style="height: 480px; overflow: hidden; margin-top: 5px;">
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><a class="twitter-timeline" href="https://twitter.com/RwandaDay" height="480">Tweets by @RwandaDay</a>
+			
+		  </div>
+						</div>	
+					</div>
+					<div class="clear"></div>
+				
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer">
+				<div class="f1">
+					<img src="rday2016images/logo2.png" />
+				</div>
+				<div class="f2" style="padding-top: 20px;">
+					<div></div>
+					<table style="width: 100%; border: 0; text-align: center; color: #fff; font-family: calibri; padding: 10px 0;">
+						<tr>
+							<td><b>AMSTERDAM</b> 2015</td>
+							<td><b>ATLANTA</b> 2014</td>
+							<td><b>LONDON</b> 2013</td>
+							<td><b>BOSTON</b> 2012</td>
+						</tr>
+					</table>
+					<ul class="nav">
+						<li><a href=".">AHABANZA</a></li>
+						<li><a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Embassy%20of%20Rwanda%20Cultural%20Poduction%20Show%20and%20Reception%5Esfodt%60EOREORA%60239.00%60USD%60false%604%609/23/16%609/25/16%609/16/16&app=resvlink&stop_mobi=yes">ICUMBI</a></li>
+						<li><a href="http://rwandaembassy.org/culturalday">IYANDIKISHE</a></li>
+						<li><a href="https://maps.google.ca/maps?oe=UTF-8&hl=en-ca&client=safari&um=1&ie=UTF-8&fb=1&gl=ca&entry=s&sa=X&ftid=0x8085808636673e71:0xebc2cf7c5bf2d655&gmm=CgIgAQ%3D%3D">AMEREKEZO</a></li>
+						<li><a href="http://igihe.com">IGIHE.COM</a></li>
+						<div class="clear"></div>
+					</ul>
+
+				</div>
+				<div class="f3">
+					<img src="rday2016images/igihe.png" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

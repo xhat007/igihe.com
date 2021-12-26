@@ -1,0 +1,33 @@
+<footer class="footer">
+	<aside  class="footerside1">
+    	<div style=" font-size: 18px; padding-bottom: 5px; font-weight: bold; color: #fff; text-align: left; border: none; border-bottom: 5px solid #fff; padding-top: 10px;">Latest News</div>
+
+	
+<div class=" jcarousel-skin-tango" style="margin-left: -70px;">
+	<div class="jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block; ">
+		<div class="jcarousel-clip jcarousel-clip-horizontal" style="position: relative; ">
+			<ul id="mycarousel" class="jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: -510px; width: 950px; ">
+	<BOUCLE_toptenlatestnews(ARTICLES){tout}{titre_mot=toptenlnews}{par date}{inverse}{0,12}>
+    				<li class="jcarousel-item-1-horizontal" style="float: left; list-style: none; text-align: left;">
+
+					
+				 [<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,100}||image_recadre{150,100,top center}|extraire_attribut{src})" width="140" height="100" title="#TITRE" >]
+					<a href="#URL_ARTICLE"><span style="font-size: 12px; font-weight: normal; color: #fff; display: list-item; list-style: none;">[(#TITRE|couper{60})]</span></a>
+
+				</li>
+	</BOUCLE_toptenlatestnews>    	
+  			</ul>
+		</div>
+		<div class="jcarousel-prev jcarousel-prev-horizontal" style="display: block; " disabled="false"></div>
+		<div class="jcarousel-next jcarousel-next-horizontal" style="display: block; " disabled="false"></div>
+	</div>
+</div>
+
+
+
+       	<div style="clear: both"></div>
+    </aside>
+	<aside  class="footerside2">
+    	<div style="padding-top: 15px; font-size: 13px; color: #333; font-weight: bold;">Copyright © 2012 - IGIHE Ltd in partenarship with RADIO 10 - All Rights Reserved</div>
+    </aside>
+</footer>

@@ -1,0 +1,419 @@
+<BOUCLE_main(ARTICLES){id_article}>
+<?php $_GET['id_article'] = '#ID_ARTICLE';?>
+<?php include('squelettes/art_counter.php'); echo 'yes';?>
+[(#VIRTUEL|oui)  [(#VIRTUEL|redirige_par_entete)]]
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>#TITRE - IGIHE.com - Mobile Version</title>
+      <meta name="generator" content="Bootply" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="mv2_css/bootstrap.min.css" rel="stylesheet">
+      <link href="mv2_css/mobile.css" rel="stylesheet">
+      <link href="mv2_css/menu.css" rel="stylesheet">
+      <link rel="stylesheet" href="mv2_css/bootswatch.min.css">
+<link rel="shortcut icon" href="#CHEMIN{'igihe_imgs/fav-icon.png'}" />
+      <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <!-- CSS code from Bootply.com editor -->
+      
+      <script>
+         var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-23019901-1']);
+          _gaq.push(['_setDomainName', "bootswatch.com"]);
+         _gaq.push(['_setAllowLinker', true]);
+          _gaq.push(['_trackPageview']);
+         
+         (function() {
+           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+         
+      </script>
+      <style stype="text/css">
+         #myList .news_list{ display:none;
+         }
+         #loadMore {
+         color:#005aa2;
+         cursor:pointer;
+         }
+         #loadMore:hover {
+         color:#005aa2;
+         }
+         #showLess {
+         color:#005aa2;
+         cursor:pointer;
+         }
+         #showLess:hover {
+         color:#005aa2;
+         }
+	.internal_article .puce{width:8px;height:11px;padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;}
+      </style>
+   </head>
+   <!-- HTML code from Bootply.com editor -->
+   <body  >
+      <!-- HEADER 
+         =================================-->
+<div class="container" style="border:0px solid red;height:120px;margin-top:0px;padding:0px 0px;">
+         <div class="row" style="padding:0px;margin:0px;width:100%;background-image:url(mv2_images/header.jpg);background-size: 100% 100%;">
+            <div class="col-lg-12" style="padding:0px;margin:0px;">
+               <div style="border:0px solid red;height:138px;background-position:100%;">
+                  <center><a href="mindex.html"><img src="mv2_images/logo.png"  height="105"  width="240" align="center" style="margin:auto;border:none;"></a></center>
+               </div>
+            </div>
+			<div class="col-lg-12" style="padding:0px;margin:0px;">
+			
+				<div class="row" style="border:0px solid red;margin-top:-22px;padding:2px 5px;">
+					<div class="col-xs-6">
+					   <div class="language">
+						  <a href="#"><img src="mv2_images/kn.png" width="30px"></a>
+						  <a href="http://www.igihe.bi"><img src="mv2_images/bi.png" width="30px"></a>
+						  <a href="http://en.igihe.com/"><img src="mv2_images/en.png" width="30px"></a>
+						  <a href="http://fr.igihe.com/"><img src="mv2_images/fr.png" width="30px"></a>
+					   </div>
+					</div>
+					<div class="col-xs-6" style="padding-bottom:4px;">
+					   <div class="search" style="margin-top:-3px;">
+						  <form method="GET" action="spip.php" style="">
+							 <input type="text" placeholder="Shakisha..." class="search" id="searching" name="recherche">
+					<input type="hidden" name="page" value="mv2_recherche"/>
+						  </form>
+					   </div>
+					</div>
+				 </div>
+			
+			</div>
+         </div>
+      </div>
+   
+   
+      
+      <div class="container" style="padding:0px 0px;margin-top:20px;border:0px solid red;">
+         <div class="row" style="padding:0px 0px;margin:0px;">
+            <div class="col-lg-12" style="border:0px solid red;margin:0px;padding:0px 0px;border-bottom:2px solid #007ac1;border-top:2px solid #007ac1;">
+               <div id='cssmenu'>
+                  <ul>
+                     <li><a href="http://igihe.com/spip.php?page=mv2_sommaire" style="text-transform:capitalize;">Ahabanza</a></li>
+                     <BOUCLE_gh_ibirimoside(RUBRIQUES){id_parent=0}{0,20}{titre_mot=IbirimoSide}>
+                     <li>
+                        <a href="spip.php?page=mv2_rubrique&amp;id_rubrique=#ID_RUBRIQUE" style="text-transform:capitalize;">#TITRE</a>
+                     </li>
+                     </BOUCLE_gh_ibirimoside> 
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /header container-->
+      <!-- CONTENT
+         =================================-->
+      <div class="container" style="border:0px solid red;padding:0px 15px;margin-top:2px;background-color:#f8f8f8;">
+         <BOUCLE_article (ARTICLES){id_article=#ID_ARTICLE}{doublons yy}>
+         <div class="row"  style="padding:2px 2px;margin:0px -15px;">
+            <div class="col-lg-12"  style="padding:4px 4px;">
+               <div class="title_rubrique" style="">
+                  <a href="#" style="font-size:20px;color:#2075cf;text-decoration:none;margin-bottom:5px;">#TITRE </a><br>                  
+			<table style="width:100%;">
+				<tr>
+					<td>
+                  				[(#DATE|affdate{'M'})] - [(#DATE|affdate{'Y'})] saa [(#DATE|heures)] : [(#DATE|minutes)]</i>
+					</td>
+					<td>
+						<!-- Social -->				
+						<!-- Go to www.addthis.com/dashboard to customize your tools -->
+						<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-553f4c0640a19cdf" async="async"></script>		
+						<div class="addthis_sharing_toolbox">
+						</div>
+						<!-- End Social -->
+					</td>
+				</tr>
+			</table>
+               </div>
+               <center>[(#LOGO_ARTICLE|inserer_attribut{width,"90%"}|inserer_attribut{style,"height:auto;margin-top:12px;"})]</center>
+            </div>
+         </div>
+         <div class="row" style="margin:0px -15px;border:0px solid red;">
+            <div class="col-lg-12" style="padding:10px;color:#333333;">
+               <div class="internal_article" >
+			<p>#INTRODUCTION</p>
+			<p>#TEXTE</p>
+               </div>
+            </div>
+         </div>
+         <hr>
+         
+         <!-----------------------------------------------------------------------------------------------------------
+					WILLY EDIT FOR AJAXXXXXXXXXXXXXXXXXX
+------------------------------------------------------------------------------------------------------------>
+
+			<script type="text/javascript">										
+				function envoyer_commentaire(id_forum)
+				{
+
+				var empty_email=(document.getElementById("session_email_"+id_forum).value.length==0 || document.getElementById("session_email_"+id_forum).value==null);
+				var empty_message=(document.getElementById("texte_"+id_forum).value.length==0 || document.getElementById("texte_"+id_forum).value==null);
+				if(empty_message){
+					alert("Comment can not be empty");
+				}
+				else if(empty_email){
+					alert("Please provide your email address");
+				}
+				else{
+					var igitekerezo = document.getElementById("texte_"+id_forum).value;
+					var izina = document.getElementById("session_nom_"+id_forum).value;
+					var email = document.getElementById("session_email_"+id_forum).value;
+
+					var titre = document.getElementById("titre").value;
+					var id_article_obj=document.getElementsByName("id_article").item(0);
+					var id_article=id_article_obj.value;
+
+					var forum_id=0;
+					var page="itsform.php";
+					var url="nom="+izina+"&email="+email+"&commentaire="+igitekerezo+"&id_forum="+id_forum+"&titre="+titre+"&id_article="+id_article;
+					var xhr_object = null;
+					if(window.XMLHttpRequest) // Firefox
+						xhr_object = new XMLHttpRequest();
+					else
+					{
+						if(window.ActiveXObject) // Internet Explorer
+							xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+						else
+						{
+							alert("Browser does not support xmlHttpRequest");
+							return;
+						}
+					}
+					var method = "POST";
+					var filename = page;
+					var requete  = url;
+					xhr_object.onreadystatechange = function()
+					{
+						if(xhr_object.readyState == 1)
+						{
+							document.getElementById("comment_statut_"+id_forum).innerHTML="Your comment is being sent to the server please wait";
+						}								
+						if(xhr_object.readyState == 4) 
+						{
+							var reponse = xhr_object.responseText;
+							//specify the response content								
+							document.getElementById("comment_statut_"+id_forum).innerHTML= reponse;
+							document.getElementById("session_nom_"+id_forum).disabled="disabled";
+							document.getElementById("session_email_"+id_forum).disabled="disabled";
+							document.getElementById("texte_"+id_forum).disabled="disabled";
+							document.getElementById("ohereza_"+id_forum).disabled="disabled";
+						}
+					}
+					xhr_object.open(method, filename, true);
+					xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+					xhr_object.send(requete);
+				}
+			}
+		</script>
+<!-----------------------------------------------------------------------------------------------------------
+				END WILLY EDIT FOR AJAXXXXXXXXXXXXXXXXXX
+--------------------------------------------------------------------------------------------------------- -->
+
+         
+         <div class="row" style="padding:2px 0px;border:0px solid red;height:220px;">
+            <div class="col-lg-12" style="padding:6px;">
+               <div class="well" style="background-color:#7a7a7c;height:230px;border-radius:15px;">
+                  <form method="POST" action="#" onSubmit="return(false)">
+			<div id="comment_statut_0" style="height:30px;border:0px solid red;">
+			</div>
+			<center style="color:#fff;">ANDIKA ICYO UTEKEREZA KURI IYI NKURU</center>
+			<br>
+			<div class="col-xs-7" style="border:0px solid red;padding:0px;height:140px;">
+				<textarea style="width:100%;height:130px;background-color:#fff;border-radius:8px;" name="texte" id="texte_0">
+				</textarea>
+			</div>
+			<div class="col-xs-5" style="border:0px solid red;padding:0px;height:140px;padding-left:10px;">
+				<span style="padding-left:13px;color:#fff;">Izina<br></span>						
+				<span style="padding-left:8px;">
+					<input type="text" id="session_nom_0" name="session_nom_0" placeholder="" style="padding-left:3px;width:100%;background-color:#fff;border-radius:10px;"><br>
+                     </span>
+                     <span style="padding-left:13px;color:#fff;">Email<br></span>						
+                     <span style="padding-left:8px;">
+                     	<input type="text" id="session_email_0" name="session_email_0" placeholder="" style="padding-left:3px;width:100%;background-color:#fff;color:#000;border-radius:10px;"><br>
+                     </span>
+                     <span style="padding-left:8px;border:0px solid red;margin:auto;">						
+			<input type="hidden" id="id_article" name="id_article" value="#ID_ARTICLE"/>
+			<input type="hidden" id="titre" value="#TITRE"/>
+	
+                     	<input type="submit" id="ohereza_0" onclick="envoyer_commentaire(0)" value="Ohereza" style="padding-left:3px;width:100%;height:25px;background-color:#fff;border-radius:8px;margin-top:7px;"><br>
+                     </span>
+                  </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         </BOUCLE_article>	 
+         <div class="row" style="padding:5px 7px;border:0px solid red;margin-top:15px;">
+            <div class="col-lg-12" style="padding:0px;background-color:#7a7a7c;padding-top:5px;padding-bottom:5px;padding-left:10px;color:#fff;">
+               <b>IBITEKEREZO</b>
+            </div>
+         </div>
+         <div class="row" style="padding:5px;border:0px solid red;margin-top:-3px;">
+            <B_forum>
+		#ANCRE_PAGINATION
+               <div class="col-lg-12" style="padding:0px;border:1px solid #eee;">
+                  <BOUCLE_forum (FORUMS){id_article}{par date}{inverse}{pagination 5}{0,10}>
+                  <div class="comment">
+                     <p>#TEXTE</p>
+                     <span>#DATE</span>
+                     <h2>#LESAUTEURS</h2>
+                  </div>
+                  </BOUCLE_forum>	
+                  <div class="news_pagination" style="border-top:0px solid #eee;border-bottom:1px solid #eee;margin-top:-5px;">
+                     <center>
+                        <ul class="pagination">
+				[<li>(#PAGINATION{page}{separateur=' '})</li>]
+                        </ul>
+                     </center>
+                  </div>
+               </div>
+            </B_forum>
+            <//B_forum>
+         </div>
+         <div class="row" style="padding:2px 0px;border:0px solid red;margin-top:15px;">
+            <div class="col-xs-12" style="padding:2px 15px;background-color:#2081d9;">
+               <h4 style="color:#fff;">ANDI MAKURU</h4>
+            </div>
+         </div>
+         <div class="row" style="padding:2px 0px;border:0px solid red;margin-top:0px;">
+            <div class="col-xs-12" style="padding:2px 15px;background-color:#fff;">		
+               	<div class="row" style="padding:2px 0px;border:0px solid red;margin-top:5px;">                  
+			<BOUCLE_gh_izindi_img (ARTICLES){branche}{0,2}{par date}{inverse}{titre!=intro}{titre_mot=HomeNews}{doublons yy}>
+				<div class="col-xs-6" style="padding:3px;">
+					<div class="" style="overflow:hidden;height:100px;border:0px solid red;">
+						[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{220,}||image_recadre{220,195,top right}|extraire_attribut{src})?#ID_ARTICLE"  width="100%" style="" />]
+					</div>
+				</div>
+				[(#SET{titre_#COMPTEUR_BOUCLE,#TITRE})]
+				[(#SET{id_#COMPTEUR_BOUCLE,#ID_ARTICLE})]
+			</BOUCLE_gh_izindi_img>
+		</div>
+		<div class="row" style="padding:2px 0px;border:0px solid red;margin-top:-2px;">				
+			<div class="col-xs-6" style="padding:3px;">
+				<a href="spip.php?page=mv2_article&amp;id_article=[(#GET{id_1})]" style="font-size:11px;">[(#GET{titre_1})]</a>
+			</div>
+			<div class="col-xs-6" style="padding:3px;">
+				<a href="spip.php?page=mv2_article&amp;id_article=[(#GET{id_2})]" style="font-size:11px;">[(#GET{titre_2})]</a>
+			</div>
+		</div>
+	    </div>
+            <div class="col-xs-12" style="padding:2px 15px;background-color:#fff;">
+		<div class="row" style="padding:2px 0px;border:0px solid red;margin-top:5px;">
+			<BOUCLE_gh_izindi_img2(ARTICLES){branche}{2,2}{par date}{inverse}{titre!=intro}{titre_mot=HomeNews}{doublons yy}>
+				<div class="col-xs-6" style="padding:3px;">
+					<div class="" style="overflow:hidden;height:100px;border:0px solid red;">
+						[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{220,}||image_recadre{220,195,top right}|extraire_attribut{src})"  width="100%" style="" />]
+					</div>
+				</div>
+				[(#SET{titre_#COMPTEUR_BOUCLE,#TITRE})]
+				[(#SET{id_#COMPTEUR_BOUCLE,#ID_ARTICLE})]
+			</BOUCLE_gh_izindi_img2>
+		</div>
+		<div class="row" style="padding:2px 0px;border:0px solid red;margin-top:-2px;">				
+			<div class="col-xs-6" style="padding:3px;">
+				<a href="spip.php?page=mv2_article&amp;id_article=[(#GET{id_1})]" style="font-size:11px;">[(#GET{titre_1})]</a>
+			</div>               	
+			<div class="col-xs-6" style="padding:3px;">
+				<a href="spip.php?page=mv2_article&amp;id_article=[(#GET{id_2})]" style="font-size:11px;">[(#GET{titre_2})]</a>
+			</div>
+               	</div>
+            </div>
+         </div>
+         <div class="row" style="padding:2px 0px;border:0px solid red;margin-top:15px;">
+            <div class="col-lg-12" style="padding:0px;">
+		<B_ad_bottom_mobile>
+			<BOUCLE_ad_bottom_mobile(ARTICLES){titre_mot=ad_bottom_mobile}{par date}{inverse}{0,1}>
+				<BOUCLE_docs_bottom_mobile(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+					[<img src="(#URL_DOCUMENT)" width="100%" height="auto" style="border-radius:0px;">]
+				</BOUCLE_docs_bottom_mobile>
+			</BOUCLE_ad_bottom_mobile>
+		</B_ad_bottom_mobile>
+			<img src="mv2_images/img1.png" width="100%" height="auto" style="border-radius:0px;">
+		<//B_ad_bottom_mobile>			
+            </div>
+         </div>
+         <div class="row" style="padding:7px;">
+            <div class="col-lg-12">
+               <center>
+                  <div class="search_footer" style="margin:auto;">
+                     <form method="GET" action="spip.php" style="">
+                        <input type="text" placeholder="Shakisha..." id="searching" name="recherche">
+			<input type="hidden" name="page" value="mv2_recherche"/>
+                     </form>
+                  </div>
+               </center>
+            </div>
+         </div>
+         <!--  ############################################### ad5+++++++++++++++++++++++++++++++++++++-->
+         <div class="row" style="padding:0px 0px;">
+            <div class="col-lg-12" style="padding:0px;">
+            <a href="https://play.google.com/store/apps/details?id=com.mobit.igihe&hl=fr" target="_blank">
+               <img src="mv2_images/banner4.png" width="100%" height="auto" style="border-radius:0px;">
+            </a>
+            </div>
+         </div>
+         <!--  ############################################### end of ad5 +++++++++++++++++++++++++++++++++++++-->
+         <!--  ############################################### footer 1 +++++++++++++++++++++++++++++++++++++-->
+         <div class="row" style="padding:0px 0px;">
+            <div class="col-lg-12" style="padding:0px;">
+            <a href="https://play.google.com/store/apps/details?id=com.mobit.igihe&hl=fr" target="_blank">
+               <img src="mv2_images/download.png" width="100%" height="auto" style="border-radius:0px;">
+            </a>
+            </div>
+         </div>
+         <!--  ############################################### end of footer 1 +++++++++++++++++++++++++++++++++++++-->
+         <div class="row" style="padding:0px 5px; background-color:#1f1f1f;border:0px solid red;">
+            <div class="col-xs-7" style="padding:0px; border:0px solid red;">
+               <center style="padding-top:30px;right:0px;"><img src="mv2_images/logo1.png" width="135px"></center>
+               <center style="padding:4px;font-size:14px;font-weight:normal;color:#807e7f;">2014 &copy. All rights reserved </center>
+            </div>
+            <div class="col-xs-5" style="color:#fff;padding-top:22px;border:0px solid red;text-decoration:none;font-size:12px;">
+               <div class="footer_down">
+                  <a href="http://www.igihe.com/spip.php?page=mv2_article&amp;id_article=26605" style="text-decoration:none;color:#7e7c7d;right:0px;">Abo Turibo</a><br>
+                  <a href="http://www.igihe.com/spip.php?page=mv2_rubrique&amp;id_rubrique=3" style="text-decoration:none;color:#7e7c7d;">Twandikire</a><br>
+                  <a href="http://www.igihe.com/spip.php?page=mv2_rubrique&amp;id_rubrique=106" style="text-decoration:none;color:#7e7c7d;">Amamaza</a><br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /CONTENT ============-->
+      <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script type='text/javascript' src="mv2_js/bootstrap.min.js"></script>
+      <script src="mv2_js/bootswatch.js"></script>
+      <script src="mv2_js/menu.js"></script>
+      <script src="mv2_sliderengine/amazingslider.js"></script>
+      <script src="mv2_sliderengine/initslider-1.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function () {
+         size_li = $("#myList .news_list").size();
+         x=3;
+         $('#myList .news_list:lt('+x+')').show();
+         $('#loadMore').click(function () {
+         x= (x+10 <= size_li) ? x+10 : size_li;
+         $('#myList .news_list:lt('+x+')').show();
+         });
+         $('#showLess').click(function () {
+         x=(x-10<0) ? 3 : x-10;
+         $('#myList .news_list').not(':lt('+x+')').hide();
+         });
+         });
+      </script>
+      <!-- JavaScript jQuery code from Bootply.com editor -->
+      <script type='text/javascript'>
+         $(document).ready(function() {
+         
+             
+         
+         });
+         
+      </script>
+   </body>
+</html>
+</BOUCLE_main>

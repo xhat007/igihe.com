@@ -1,0 +1,173 @@
+				<table style="width:755px;background: url(../images/bg4.png);padding: 5px;">
+					
+					<tr>
+						<td style="width:100%; margin: 0; border: 0; margin: 0; padding: 0;" rowspan="4">
+						<script type="text/javascript">
+								function send_vote(poll_id,my_vote_is)							
+								{								
+									var xhr_object = null;
+									if(window.XMLHttpRequest) // Firefox
+										xhr_object = new XMLHttpRequest();
+									else
+									{
+										if(window.ActiveXObject) // Internet Explorer
+											xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+											else // XMLHttpRequest non support&#233; par le navigateur
+											{
+												alert("Browser does not support xmlHttpRequest");
+												return;
+											}
+										}
+										var method   = "POST";
+										var filename = "cbe_votes.php";																	
+										var requete  = "poll_id="+poll_id+"&question_id="+my_vote_is;																	
+										xhr_object.onreadystatechange = function() 
+										{
+											if(xhr_object.readyState == 1)
+											{
+												document.getElementById("poll_area_"+poll_id).innerHTML = '<div style="height:100%;">Loading poll...</div>';
+											}								
+											if(xhr_object.readyState == 4) 
+											{
+												var reponse = xhr_object.responseText;
+												document.getElementById("poll_area_"+poll_id).innerHTML = reponse;																			
+											}
+										}	 
+										xhr_object.open(method, filename, true);
+										xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+										xhr_object.send(requete);								
+									}																
+								</script>												
+								<div style="width:100%; background: #000;">											
+								<form method="POST" onSubmit="return(false)"/><div id="poll_area_1"><table style="width:100%;"><div style="text-align:center; float: left; width: 245px; background: #000; padding: 1px; position: relative;">
+												<div class="vote">
+													<div style=" width: 245px;height: 345px; overflow: hidden; position: relative;">
+														<img src="images/ijororyurukundo/fullsize2/JQDQgHH.jpg" width="245" alt=""/>									
+														<div style=" position: absolute; width: 100%; bottom: 0; left: 0; background: rgba(0,0,0,.5);">
+															<div style="padding-left: 5px; padding-top: 5px;" align="left">
+																<span style="color:#fff;font-weight:bold; font-size: 13px; text-transform: uppercase;">Igihozo Yvette</span><br/>
+																<!-- <a href="#" style="color:#f8368c;font-size:13px;">20 years, 1.64 cm, 60 kg, level one BIT</a> -->
+															</div>		
+															<div style="color:#f8368c;font-size:16px;padding-left: 5px; padding-bottom: 10px; margin-bottom: 5px; background: url(images/bg1.png) no-repeat bottom; padding-top: 5px;text-align:left;">
+																<span style="font-size:13px; font-weight: bold;"> 20 years, 1.64 cm, 60 kg, level one BIT </span><br/>
+																<span style="font-size:16px; font-weight: bold; color: #fff;">4862 <b style="text-transform: uppercase;">votes</b> </span><br/>
+															</div>
+														</div>
+														<!--
+														<div style="position: absolute; top: 40%; left: 0%; width: 100%; " class="thevote">
+															 <a style="color:#fff; padding: 5px 0; display: block; margin: auto; width: 50%; height: 50%; background: #f8368c; font-family: arial,sans-serif; cursor: pointer; " onclick="send_vote(1,4)">VOTE</a>
+														</div>
+														-->
+													</div>
+													<!--<div class="number1">20 years, 1.64 cm, 60 kg, level one BIT</div>--></div>
+											</div> <div style="text-align:center; float: left; width: 245px; background: #000; padding: 1px; position: relative;">
+												<div class="vote">
+													<div style=" width: 245px;height: 345px; overflow: hidden; position: relative;">
+														<img src="images/ijororyurukundo/fullsize2/RWPYwh2.jpg" width="245" alt=""/>									
+														<div style=" position: absolute; width: 100%; bottom: 0; left: 0; background: rgba(0,0,0,.5);">
+															<div style="padding-left: 5px; padding-top: 5px;" align="left">
+																<span style="color:#fff;font-weight:bold; font-size: 13px; text-transform: uppercase;">Tumukunde Josephine</span><br/>
+																<!-- <a href="#" style="color:#f8368c;font-size:13px;">21 years, 1.73 cm , 58 kg, level 2 BBA</a> -->
+															</div>		
+															<div style="color:#f8368c;font-size:16px;padding-left: 5px; padding-bottom: 10px; margin-bottom: 5px; background: url(images/bg1.png) no-repeat bottom; padding-top: 5px;text-align:left;">
+																<span style="font-size:13px; font-weight: bold;"> 21 years, 1.73 cm , 58 kg, level 2 BBA </span><br/>
+																<span style="font-size:16px; font-weight: bold; color: #fff;">4437 <b style="text-transform: uppercase;">votes</b> </span><br/>
+															</div>
+														</div>
+														<!--
+														<div style="position: absolute; top: 40%; left: 0%; width: 100%; " class="thevote">
+															 <a style="color:#fff; padding: 5px 0; display: block; margin: auto; width: 50%; height: 50%; background: #f8368c; font-family: arial,sans-serif; cursor: pointer; " onclick="send_vote(1,3)">VOTE</a>
+														</div>
+														-->
+													</div>
+													<!--<div class="number2">21 years, 1.73 cm , 58 kg, level 2 BBA</div>--></div>
+											</div> <div style="text-align:center; float: left; width: 245px; background: #000; padding: 1px; position: relative;">
+												<div class="vote">
+													<div style=" width: 245px;height: 345px; overflow: hidden; position: relative;">
+														<img src="images/ijororyurukundo/fullsize2/KbTv1lE.jpg" width="245" alt=""/>									
+														<div style=" position: absolute; width: 100%; bottom: 0; left: 0; background: rgba(0,0,0,.5);">
+															<div style="padding-left: 5px; padding-top: 5px;" align="left">
+																<span style="color:#fff;font-weight:bold; font-size: 13px; text-transform: uppercase;">Ererwa Queen Gloria</span><br/>
+																<!-- <a href="#" style="color:#f8368c;font-size:13px;">19 years , 1.70cm , 55 kg , level one BBA</a> -->
+															</div>		
+															<div style="color:#f8368c;font-size:16px;padding-left: 5px; padding-bottom: 10px; margin-bottom: 5px; background: url(images/bg1.png) no-repeat bottom; padding-top: 5px;text-align:left;">
+																<span style="font-size:13px; font-weight: bold;"> 19 years , 1.70cm , 55 kg , level one BBA </span><br/>
+																<span style="font-size:16px; font-weight: bold; color: #fff;">3195 <b style="text-transform: uppercase;">votes</b> </span><br/>
+															</div>
+														</div>
+														<!--
+														<div style="position: absolute; top: 40%; left: 0%; width: 100%; " class="thevote">
+															 <a style="color:#fff; padding: 5px 0; display: block; margin: auto; width: 50%; height: 50%; background: #f8368c; font-family: arial,sans-serif; cursor: pointer; " onclick="send_vote(1,5)">VOTE</a>
+														</div>
+														-->
+													</div>
+													<!--<div class="number1">19 years , 1.70cm , 55 kg , level one BBA</div>--></div>
+											</div> <div style="text-align:center; float: left; width: 245px; background: #000; padding: 1px; position: relative;">
+												<div class="vote">
+													<div style=" width: 245px;height: 345px; overflow: hidden; position: relative;">
+														<img src="images/ijororyurukundo/fullsize2/PMrxYcc.jpg" width="245" alt=""/>									
+														<div style=" position: absolute; width: 100%; bottom: 0; left: 0; background: rgba(0,0,0,.5);">
+															<div style="padding-left: 5px; padding-top: 5px;" align="left">
+																<span style="color:#fff;font-weight:bold; font-size: 13px; text-transform: uppercase;">Nirere gentille</span><br/>
+																<!-- <a href="#" style="color:#f8368c;font-size:13px;">21 years, 1.70cm , 63 kg , level one BIT</a> -->
+															</div>		
+															<div style="color:#f8368c;font-size:16px;padding-left: 5px; padding-bottom: 10px; margin-bottom: 5px; background: url(images/bg1.png) no-repeat bottom; padding-top: 5px;text-align:left;">
+																<span style="font-size:13px; font-weight: bold;"> 21 years, 1.70cm , 63 kg , level one BIT </span><br/>
+																<span style="font-size:16px; font-weight: bold; color: #fff;">2832 <b style="text-transform: uppercase;">votes</b> </span><br/>
+															</div>
+														</div>
+														<!--
+														<div style="position: absolute; top: 40%; left: 0%; width: 100%; " class="thevote">
+															 <a style="color:#fff; padding: 5px 0; display: block; margin: auto; width: 50%; height: 50%; background: #f8368c; font-family: arial,sans-serif; cursor: pointer; " onclick="send_vote(1,2)">VOTE</a>
+														</div>
+														-->
+													</div>
+													<!--<div class="number2">21 years, 1.70cm , 63 kg , level one BIT</div>--></div>
+											</div> <div style="text-align:center; float: left; width: 245px; background: #000; padding: 1px; position: relative;">
+												<div class="vote">
+													<div style=" width: 245px;height: 345px; overflow: hidden; position: relative;">
+														<img src="images/ijororyurukundo/fullsize2/3eRERXR.jpg" width="245" alt=""/>									
+														<div style=" position: absolute; width: 100%; bottom: 0; left: 0; background: rgba(0,0,0,.5);">
+															<div style="padding-left: 5px; padding-top: 5px;" align="left">
+																<span style="color:#fff;font-weight:bold; font-size: 13px; text-transform: uppercase;">Divine mukamasabo</span><br/>
+																<!-- <a href="#" style="color:#f8368c;font-size:13px;">20 years , 1.63 cm , 63 kg , level one BBA</a> -->
+															</div>		
+															<div style="color:#f8368c;font-size:16px;padding-left: 5px; padding-bottom: 10px; margin-bottom: 5px; background: url(images/bg1.png) no-repeat bottom; padding-top: 5px;text-align:left;">
+																<span style="font-size:13px; font-weight: bold;"> 20 years , 1.63 cm , 63 kg , level one BBA </span><br/>
+																<span style="font-size:16px; font-weight: bold; color: #fff;">1710 <b style="text-transform: uppercase;">votes</b> </span><br/>
+															</div>
+														</div>
+														<!--
+														<div style="position: absolute; top: 40%; left: 0%; width: 100%; " class="thevote">
+															 <a style="color:#fff; padding: 5px 0; display: block; margin: auto; width: 50%; height: 50%; background: #f8368c; font-family: arial,sans-serif; cursor: pointer; " onclick="send_vote(1,1)">VOTE</a>
+														</div>
+														-->
+													</div>
+													<!--<div class="number1">20 years , 1.63 cm , 63 kg , level one BBA</div>--></div>
+											</div> <div style="text-align:center; float: left; width: 245px; background: #000; padding: 1px; position: relative;">
+												<div class="vote">
+													<div style=" width: 245px;height: 345px; overflow: hidden; position: relative;">
+														<img src="images/ijororyurukundo/fullsize2/2WDYpWV.jpg" width="245" alt=""/>									
+														<div style=" position: absolute; width: 100%; bottom: 0; left: 0; background: rgba(0,0,0,.5);">
+															<div style="padding-left: 5px; padding-top: 5px;" align="left">
+																<span style="color:#fff;font-weight:bold; font-size: 13px; text-transform: uppercase;">Ikirezi Sandrine</span><br/>
+																<!-- <a href="#" style="color:#f8368c;font-size:13px;">20 years, 174cm , 55 kg, level one Bsc Acc</a> -->
+															</div>		
+															<div style="color:#f8368c;font-size:16px;padding-left: 5px; padding-bottom: 10px; margin-bottom: 5px; background: url(images/bg1.png) no-repeat bottom; padding-top: 5px;text-align:left;">
+																<span style="font-size:13px; font-weight: bold;"> 20 years, 174cm , 55 kg, level one Bsc Acc </span><br/>
+																<span style="font-size:16px; font-weight: bold; color: #fff;">868 <b style="text-transform: uppercase;">votes</b> </span><br/>
+															</div>
+														</div>
+														<!--
+														<div style="position: absolute; top: 40%; left: 0%; width: 100%; " class="thevote">
+															 <a style="color:#fff; padding: 5px 0; display: block; margin: auto; width: 50%; height: 50%; background: #f8368c; font-family: arial,sans-serif; cursor: pointer; " onclick="send_vote(1,6)">VOTE</a>
+														</div>
+														-->
+													</div>
+													<!--<div class="number2">20 years, 174cm , 55 kg, level one Bsc Acc</div>--></div>
+											</div> 							</div>
+						</div>
+					</td>										
+					</tr>									
+				</table>													
+				

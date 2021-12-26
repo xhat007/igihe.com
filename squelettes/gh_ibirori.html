@@ -1,0 +1,23 @@
+	<div class="grid_7" id="box">
+<a href="#" class="box_title">Ibikorwa</a>
+<div>
+
+<BOUCLE_gh_eventwithbanner(ARTICLES){tout}{0,1}{titre_mot=HomeEventBanner}{par date_redac}{doublons}>
+<div class="gh_event">
+<a href="http://www.igihe.com/#URL_ARTICLE" class="gh_event_hometitle">[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{300,0}||image_recadre{300,0,top center}|extraire_attribut{src})" alt="[(#TITRE)]" align="center" width="300" style="margin-left:15px;border:0px solid red;" border="0"/>]
+#TITRE<br /></a>
+<font class="gh_event_date">[Bizaba: <b>Tariki ya (#DATE_REDAC|jour)].[(#DATE_REDAC|mois)].[(#DATE_REDAC|annee)]</b> [saa <b>(#DATE_REDAC|heures)][:(#DATE_REDAC|minutes)</b>] [<br />Bizabera: <b>(#SOUSTITRE)</b>]</font>
+</div>
+</BOUCLE_gh_eventwithbanner>
+
+
+<BOUCLE_gh_event(ARTICLES){tout}{0,5}{titre_mot=HomeEvent}{par date_redac}>
+<div class="gh_event">
+<a href="http://www.igihe.com/#URL_ARTICLE" class="gh_event_hometitle">#TITRE<br /></a>
+<font class="gh_event_date">[Bizaba: <b>Tariki ya (#DATE_REDAC|jour)].[(#DATE_REDAC|mois)].[(#DATE_REDAC|annee)]</b> [saa <b>(#DATE_REDAC|heures)][:(#DATE_REDAC|minutes)</b>] [<br />Bizabera: <b>(#SOUSTITRE)</b>]</font>
+</div>
+</BOUCLE_gh_event>
+
+
+</div>
+	</div>

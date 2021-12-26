@@ -1,0 +1,326 @@
+<BOUCLE_main(RUBRIQUES){id_rubrique}>
+<html>
+	<head>
+	
+	<INCLURE{fond=inc_smscss}>
+	<title>#TITRE > Igihe SMS</title>
+	</head>
+	<body>
+		<div id="igihesms">
+			<aside style="background: url(http://igihe.com/sms/images/bgheader.png) no-repeat left bottom, #1d4a8d; margin: auto; min-height: 30px; width: 980px; border-radius: 7px 7px 0px 0px;">
+				<img src="http://igihe.com/sms/images/icon.png" align="left" style="padding: 5px;" height="18" />
+				<div>
+				<span class="gh-ico"><a href="http://igihe.com" target="_blank">IGIHE Kinyarwanda</a></span>
+				<span class="gh-ico"><a href="http://fr.igihe.com" target="_blank">IGIHE Francais</a></span>
+				<span class="gh-ico"><a href="http://en.igihe.com" target="_blank">IGIHE English</a></span>
+				<span class="gh-ico"><a href="http://igihe.bi" target="_blank">IGIHE Kirundi</a></span>
+				<span class="gh-ico"><a href="http://igiheshowbiz.com" target="_blank">IGIHE Showbiz</a></span>
+				<span class="gh-ico"><a href="http://igihe.tv" target="_blank">IGIHE TV</a></span>
+				</div>
+			</aside>
+			<div>
+			<section id="main" style="background: url(http://igihe.com/sms/images/bg1.jpg) repeat-y; border-radius: 0px 0px 10px 10px; border-bottom: 10px solid #fff;">
+				
+				<aside id="leftside">
+					<div class="logo">
+						<a href="http://www.igihe.com/serivisi/special-pages/igihe-sms">
+							<img src="http://igihe.com/sms/images/logo.png" />
+						</a>
+					</div>
+					<div class="lbanner" style="padding-bottom: 0px;">
+						<div><img src="http://igihe.com/sms/images/pub.jpg" /></div>
+						<div style="padding-top: 5px;"><img src="http://igihe.com/sms/images/banner1.jpg" /></div>
+						<div style="margin-top: -59px;"><img src="http://igihe.com/sms/images/kunzwe.png" /></div>
+					</div>
+					
+					<div class="ltoppost" style="padding-top: 0px;">
+						<div class="ltop" style="margin-top: 0px;">
+						<div class="newsticker-jcarousellite" style="height: 810px!important; overflow: hidden;" align="left">
+						
+							<ul style=" margin: 0; padding: 0;">
+							<BOUCLE_smss(RUBRIQUES){id_rubrique=1450}>
+							<BOUCLE_toppost(ARTICLES){branche}>
+								<li>
+									<article class="lpost">
+										<div class="ltopimage"><img src="http://igihe.com/sms/icons/#COMPTEUR_BOUCLE.png" width="48"/></div>
+										<BOUCLE_rubpostts22(RUBRIQUES){id_rubrique}>
+											<span class="liste lpostuser">
+												<a href="#URL_RUBRIQUE" class="b">#TITRE</a>
+											</span>
+										</BOUCLE_rubpostts22>
+											<span class="liste lposttext">#TITRE</span>
+											<span class="liste lposttime" style="float: right; padding-right: 10px;">
+												<B_gh_pasttime>
+													<BOUCLE_gh_pasttime(ARTICLES){id_article}{age<2040}>
+														[(#DATE|date_relative)]
+													</BOUCLE_gh_pasttime>
+												</B_gh_pasttime>
+													[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]
+												<//B_gh_pasttime>									
+											</span>
+											<div class="clear"></div>
+											
+										
+									</article>
+								</li>
+							</BOUCLE_toppost>
+							</BOUCLE_smss>	
+								
+							</ul>
+						
+						</div>
+						</div>
+					</div>
+					<div class="lsocial">
+						<img src="http://igihe.com/sms/images/social.jpg" />
+						<div class="lsoc">
+							<a href="#"><img src="http://igihe.com/sms/images/face.png" /></a>
+							<a href="#"><img src="http://igihe.com/sms/images/rss.png" /></a>
+							<a href="#"><img src="http://igihe.com/sms/images/twi.png" /></a>
+							<a href="#"><img src="http://igihe.com/sms/images/letter.png" /></a>
+						</div>
+					</div>
+					<div class="lnewsletter">
+						<img src="http://igihe.com/sms/images/newsletter.jpg" />
+						<div class="lnewslettertexte">
+							Enter your email address to subscribe and receive notifications of new posts by email.
+						</div>
+						<div class="newsletter">
+							<input type="text" value="" class="newslettertext" />
+							<input type="submit" value="GO" class="newsletterbutton" />
+						</div>
+					</div>
+				</aside>
+				<aside id="rightside">
+					<aside class="rcontent">
+						<div class="rcontentbanner" style="position: relative; z-index: 1;">	
+							<article style="height: 350px; overflow: hidden;"><img src="http://igihe.com/sms/images/ban1.png" /></article>
+							
+						</div>
+						<div class="rcontentposts" style="min-height: 985px;">
+							<!--
+							<div class="postform">
+								<form action="#"> 
+									<input type="image" src="http://igihe.com/sms/images/ico.jpg" class="postimage"/>
+									<input type="text" class="postname" placeholder="Your Name here..." />
+									<textarea type="text" class="posttext">Write your post here...</textarea>
+									<input type="image" src="http://igihe.com/sms/images/send.png" class="postsend"/>
+									<div class="clear"></div>
+								</form>
+							</div>
+							-->
+							<article style="margin-top: -100px; background: url('http://igihe.com/sms/images/bgprofile2.png') no-repeat bottom; height: 110px; padding: 10px; position: relative; z-index: 2; ">
+								<img src="http://igihe.com/sms/icons/3.png" width="100" align="left"/>
+								<div style="color: #fff; font-size: 14px; padding-top: 55px; line-height: 20px; ">
+									Post <b>16</b> SMS<br />
+									Profile Name: <b>#TITRE</b>
+								</div>
+							</article>
+							<div class="posted">
+							<B_post>
+								<BOUCLE_post(ARTICLES){branche}{par date}{inverse}{0,100}{pagination 10}>
+								<article class="posteds">
+									
+									<div class="posts">
+									<div class="postssmedia">
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " addthis:url="#URL_ARTICLE">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51726fdd32684c5a"></script>
+<!-- AddThis Button END -->
+									</div>
+									<div class="postedlogo left">
+									
+									<img src="http://igihe.com/sms/icons/#COMPTEUR_BOUCLE.png" width="48"/>
+									
+									</div>
+									
+									<div class="postedtext left">
+										<div>
+							<BOUCLE_rubposts22(RUBRIQUES){id_rubrique}>
+								<div class="posteduser left">
+									<a href="#URL_RUBRIQUE" class="b">#TITRE</a>
+								</div>
+							</BOUCLE_rubposts22>
+											<div class="postedtime right">
+												<B_gh_pasttime1>
+													<BOUCLE_gh_pasttime1(ARTICLES){id_article}{age<2040}>
+														[(#DATE|date_relative)]
+													</BOUCLE_gh_pasttime1>
+												</B_gh_pasttime1>
+													[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]
+												<//B_gh_pasttime1>
+											</div>
+											<div class="clear"></div>
+										</div>
+										<div>
+												<span>#TITRE</span>
+										</div>
+										<div class="right"><span style="color: #999999; font-size: 11px"><a style=""> <B_compteur_forums></B_compteur_forums><BOUCLE_compteur_forums(FORUMS){id_article}{tout}></BOUCLE_compteur_forums>[(#TOTAL_BOUCLE)]&nbsp;[(#TOTAL_BOUCLE|<={1}|?{Comment, Comments})]<//B_compteur_forums>&nbsp;</a></span></div><br />
+										<div class="right" style="padding-top: 10px;"><a id="dropdownbanner#COMPTEUR_BOUCLE">IBIKURIKIRA</a></div>
+										<div class="clear"></div>
+										</div>
+										<div class="clear"></div>
+										</div>
+										
+										<div class="postform" class="closed" id="dropdowncontent#COMPTEUR_BOUCLE">
+								<BOUCLE_forumpost(FORUMS){id_article}>
+									<div class="posts" style="margin-left: 10px; min-height: 50px; margin-bottom: 10px; border-bottom: 1px solid #ddd;">
+									<BOUCLE_artposts1(ARTICLES){id_article}>
+									<BOUCLE_rubposts1(RUBRIQUES){id_rubrique}>
+									<div class="postedlogo left" style="width: 40px;">[<img src="http://igihe.com/IMG/(#LOGO_RUBRIQUE|fichier)" width="32"/>]</div></BOUCLE_rubposts1></BOUCLE_artposts1>
+									<div class="postedtext left" style="width: 410px;">
+										<div>
+											<div class="posteduser left"><a class="b">[(#NOM)]</a> @igihe.com</div>
+											
+											<div class="postedtime right">
+												<B_gh_pasttime11>
+													<BOUCLE_gh_pasttime11(ARTICLES){id_article}{age<2040}>
+														[(#DATE|date_relative)]
+													</BOUCLE_gh_pasttime11>
+												</B_gh_pasttime11>
+													[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]
+												<//B_gh_pasttime11>
+											</div>
+											<div class="clear"></div>
+										</div>
+									
+										<div align="left">
+												<span>[(#TEXTE|textebrut)]</span>
+										</div>
+										
+										<div class="clear"></div>
+										</div>
+										<div class="clear"></div>
+										</div>
+									</BOUCLE_forumpost>
+									<div id="comment_statut_0_#ID_ARTICLE" style="height:40px;width:100%;font-size:0.8em;text-align:center;margin:10px;display:none;"></div>					
+
+										<form action="" method="post" enctype='multipart/form-data' onsubmit="return(false)" name="oForum#ID_ARTICLE">
+										<input type="hidden" name="id_forum" value="0" />
+										<input type="hidden" name="titre_0_#ID_ARTICLE" id="titre_0_#ID_ARTICLE" value="#TITRE" />
+											<input type="image" src="http://igihe.com/sms/images/ico.jpg" class="postimage"/>
+											<input type="text" class="postname" placeholder="Your Name here..." name="session_nom_0_#ID_ARTICLE" id="session_nom_0_#ID_ARTICLE" style="width: 203px;" />
+											<input type="text" class="postname" placeholder="Your Email here..." name="session_email_0_#ID_ARTICLE" id="session_email_0_#ID_ARTICLE" style="width: 203px;" />
+											<textarea type="text" class="posttext" id="texte_0_#ID_ARTICLE">Write your post here...</textarea>
+											<a href="##_zone_#ID_ARTICLE" class="smsreply" onclick="envoyer_commentaire(0,#ID_ARTICLE)" id="ohereza_#ID_FORUM_#ID_ARTICLE"><img src="http://igihe.com/sms/images/send.png" class="postsend"/></a>
+											<div class="clear"></div>
+										</form>
+									</div>
+									
+									
+									<div style="padding-bottom:2px; padding:0px;">
+					<center>[(#ACCEPTER_FORUM|=={non}|oui) <font style='color:#ff0000;'>NTA BITEKEREZO BYEMEREWE KUJYA KURIYI NKURU...</font>]</center>
+					<!-----------------------------------------------------------------------------------------------------------
+										WILLY EDIT FOR AJAXXXXXXXXXXXXXXXXXX
+						------------------------------------------------------------------------------------------------------------>
+								<script type="text/javascript">	
+									function envoyer_commentaire(id_forum,id_article)
+									{
+									var empty_email=(document.getElementById("session_email_"+id_forum+"_"+id_article).value.length==0 || document.getElementById("session_email_"+id_forum+"_"+id_article).value==null);
+									var empty_message=(document.getElementById("texte_"+id_forum+"_"+id_article).value.length==0 || document.getElementById("texte_"+id_forum+"_"+id_article).value==null);
+									if(empty_message){
+										alert("Comment can not be empty");
+									}
+									else if(empty_email){
+										alert("Please provide your email address");
+									}
+									else{
+										var igitekerezo = document.getElementById("texte_"+id_forum+"_"+id_article).value;
+										var izina = document.getElementById("session_nom_"+id_forum+"_"+id_article).value;
+										var email = document.getElementById("session_email_"+id_forum+"_"+id_article).value;
+										var titre = document.getElementById("titre_"+id_forum+"_"+id_article).value;					
+										var page="itsform.php";
+										var url="nom="+izina+"&email="+email+"&commentaire="+igitekerezo+"&id_forum="+id_forum+"&titre="+titre+"&id_article="+id_article;
+										var xhr_object = null;
+										if(window.XMLHttpRequest) // Firefox
+											xhr_object = new XMLHttpRequest();
+										else
+										{
+											if(window.ActiveXObject) // Internet Explorer
+												xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+											else
+											{
+												alert("Browser does not support xmlHttpRequest");
+												return;
+											}
+										}
+										var method = "POST";
+										var filename = page;
+										var requete  = url;
+										xhr_object.onreadystatechange = function()
+										{
+											if(xhr_object.readyState == 1)
+											{
+												document.getElementById("comment_statut_"+id_forum+"_"+id_article).style.display='block';
+												document.getElementById("comment_statut_"+id_forum+"_"+id_article).innerHTML="Your comment is being sent to the server please wait";
+											}								
+											if(xhr_object.readyState == 4) 
+											{
+												var reponse = xhr_object.responseText;
+												//specify the response content								
+												document.getElementById("comment_statut_"+id_forum+"_"+id_article).innerHTML= reponse;
+												document.getElementById("session_nom_"+id_forum+"_"+id_article).disabled="disabled";
+												document.getElementById("session_email_"+id_forum+"_"+id_article).disabled="disabled";
+												document.getElementById("texte_"+id_forum+"_"+id_article).disabled="disabled";
+
+document.getElementById("ohereza_"+id_article).disabled="disabled";
+											}
+										}
+										xhr_object.open(method, filename, true);
+										xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+										xhr_object.send(requete);	 
+									}				
+									}			
+								</script>
+						<!-----------------------------------------------------------------------------------------------------------
+									END WILLY EDIT FOR AJAXXXXXXXXXXXXXXXXXX
+					--------------------------------------------------------------------------------------------------------- -->
+			</div>
+			<!-- END OF USER POST AND COMMENTS  -->
+									
+								</article>
+							</BOUCLE_post>
+							<div class="pagination">#PAGINATION</div>
+							</B_post>
+   <BOUCLE_postjs(ARTICLES){branche}{par date}{inverse}{0,100}>
+	<script>
+		$("#dropdownbanner#COMPTEUR_BOUCLE").click(function () {
+			if ($("#dropdowncontent#COMPTEUR_BOUCLE").is(":hidden")) {
+				$("#dropdowncontent#COMPTEUR_BOUCLE").slideDown("slow");
+			}
+			else {
+				$("#dropdowncontent#COMPTEUR_BOUCLE").slideUp("slow");
+			}
+		});
+	</script>
+   </BOUCLE_postjs>
+								
+								</a>
+							</div>
+		
+						</div>
+					</aside>
+				</aside>
+				<div class="clear"></div>
+				
+			</section>
+			</div>
+			<footer id="footer">
+				<div>
+					<img src="http://igihe.com/sms/images/logofooter.png" />
+				</div>
+			</footer>
+			
+		</div>
+		
+		<div class="ahabanza"><a href="#"><img src="http://igihe.com/sms/images/homeicon.png" /></a></div>
+	</body>
+</html>
+</BOUCLE_main>

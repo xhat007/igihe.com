@@ -1,0 +1,149 @@
+				<table style="width:994px;background-color:#ce851a;">
+					
+					<tr>
+						<td style="width:100%;" rowspan="4">
+							<script type="text/javascript">
+								function send_vote(poll_id,my_vote_is)							
+								{								
+									var xhr_object = null;
+									if(window.XMLHttpRequest) // Firefox
+										xhr_object = new XMLHttpRequest();
+									else
+									{
+										if(window.ActiveXObject) // Internet Explorer
+											xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+											else // XMLHttpRequest non support&#233; par le navigateur
+											{
+												alert("Browser does not support xmlHttpRequest");
+												return;
+											}
+										}
+										var method   = "POST";
+										var filename = "moviesawardactress_votes.php";																	
+										var requete  = "poll_id="+poll_id+"&question_id="+my_vote_is;																	
+										xhr_object.onreadystatechange = function() 
+										{
+											if(xhr_object.readyState == 1)
+											{
+												document.getElementById("poll_area_"+poll_id).innerHTML = '<div style="height:100%;">Loading poll...</div>';
+											}								
+											if(xhr_object.readyState == 4) 
+											{
+												var reponse = xhr_object.responseText;
+												document.getElementById("poll_area_"+poll_id).innerHTML = reponse;																			
+											}
+										}	 
+										xhr_object.open(method, filename, true);
+										xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+										xhr_object.send(requete);								
+									}																
+								</script>												
+								<div style="width:100%;">											
+								<form method="POST" onSubmit="return(false)"/><div id="poll_area_4"><table style="width:100%;"><div style="text-align:center; float: left; width: 237px; margin-right: 2px; background: #000; padding-bottom: 10px; padding-top: 10px; border-bottom: 4px solid #fff;">
+												<div>
+													<div style=" width: 237px;height: 160px; overflow: hidden;">
+														<a href="http://igihe.com/coverages/movies-awards/profile/marie-france-niragire.html" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/BnIuCyH.jpg" width="245" alt=""/></a>												
+													</div>
+													<div style="float:left;width:60%;padding-left: 5px; padding-top: 5px;" align="left">
+														<span style="color:#fff;font-weight:bold; font-size: 11px;">MARIE FRANCE NIRAGIRE</span><br/>
+														<a href="#" style="color:#ce851a;font-size:13px;">Anita</a>
+													</div>		
+													<div style="width:34%;float:right;color:#ce851a;font-size:16px;padding-right: 5px;padding-top: 5px;text-align:right;">
+														<span style="font-size:16px;">43.07 %</span><br/>
+														<span style="font-size:12px;">70196 votes </span><br/>
+														</div>
+													<div style="clear:both;">&nbsp;</div>
+													<div align="center">
+														<!--<a href="#" style="color:#D2E08A;" onclick="send_vote(4,41)"><img src="http://vote.igihe.com/images/vote2.jpg" alt=""/></a>-->
+													</div><div class="number1">1</div></div>
+											</div> <div style="text-align:center; float: left; width: 237px; margin-right: 2px; background: #000; padding-bottom: 10px; padding-top: 10px; border-bottom: 4px solid #fff;">
+												<div>
+													<div style=" width: 237px;height: 160px; overflow: hidden;">
+														<a href="http://igihe.com/coverages/movies-awards/profile/isimbi-alliance.html" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/3SF8lLC.jpg" width="245" alt=""/></a>												
+													</div>
+													<div style="float:left;width:60%;padding-left: 5px; padding-top: 5px;" align="left">
+														<span style="color:#fff;font-weight:bold; font-size: 11px;">ISIMBI ALLIANCE</span><br/>
+														<a href="#" style="color:#ce851a;font-size:13px;">Rwasa</a>
+													</div>		
+													<div style="width:34%;float:right;color:#ce851a;font-size:16px;padding-right: 5px;padding-top: 5px;text-align:right;">
+														<span style="font-size:16px;">27.46 %</span><br/>
+														<span style="font-size:12px;">44751 votes </span><br/>
+														</div>
+													<div style="clear:both;">&nbsp;</div>
+													<div align="center">
+														<!--<a href="#" style="color:#D2E08A;" onclick="send_vote(4,43)"><img src="http://vote.igihe.com/images/vote2.jpg" alt=""/></a>-->
+													</div><div class="number2">2</div></div>
+											</div> <div style="text-align:center; float: left; width: 237px; margin-right: 2px; background: #000; padding-bottom: 10px; padding-top: 10px; border-bottom: 4px solid #fff;">
+												<div>
+													<div style=" width: 237px;height: 160px; overflow: hidden;">
+														<a href="http://igihe.com/coverages/movies-awards/profile/mukasekuru-fabiola.html" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/7CtcLK2.jpg" width="245" alt=""/></a>												
+													</div>
+													<div style="float:left;width:60%;padding-left: 5px; padding-top: 5px;" align="left">
+														<span style="color:#fff;font-weight:bold; font-size: 11px;">MUKASEKURU FABIOLA</span><br/>
+														<a href="#" style="color:#ce851a;font-size:13px;">amarira yurukundo</a>
+													</div>		
+													<div style="width:34%;float:right;color:#ce851a;font-size:16px;padding-right: 5px;padding-top: 5px;text-align:right;">
+														<span style="font-size:16px;">20.57 %</span><br/>
+														<span style="font-size:12px;">33527 votes </span><br/>
+														</div>
+													<div style="clear:both;">&nbsp;</div>
+													<div align="center">
+														<!--<a href="#" style="color:#D2E08A;" onclick="send_vote(4,45)"><img src="http://vote.igihe.com/images/vote2.jpg" alt=""/></a>-->
+													</div><div class="number1">3</div></div>
+											</div> <div style="text-align:center; float: left; width: 237px; margin-right: 2px; background: #000; padding-bottom: 10px; padding-top: 10px; border-bottom: 4px solid #fff;">
+												<div>
+													<div style=" width: 237px;height: 160px; overflow: hidden;">
+														<a href="http://igihe.com/coverages/movies-awards/profile/batamuriza-juliet.html" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/qfTaTzc.jpg" width="245" alt=""/></a>												
+													</div>
+													<div style="float:left;width:60%;padding-left: 5px; padding-top: 5px;" align="left">
+														<span style="color:#fff;font-weight:bold; font-size: 11px;">BATAMURIZA JULIET</span><br/>
+														<a href="#" style="color:#ce851a;font-size:13px;">Ibanga</a>
+													</div>		
+													<div style="width:34%;float:right;color:#ce851a;font-size:16px;padding-right: 5px;padding-top: 5px;text-align:right;">
+														<span style="font-size:16px;">8.08 %</span><br/>
+														<span style="font-size:12px;">13165 votes </span><br/>
+														</div>
+													<div style="clear:both;">&nbsp;</div>
+													<div align="center">
+														<!--<a href="#" style="color:#D2E08A;" onclick="send_vote(4,46)"><img src="http://vote.igihe.com/images/vote2.jpg" alt=""/></a>-->
+													</div><div class="number2">4</div></div>
+											</div> <div style="text-align:center; float: left; width: 237px; margin-right: 2px; background: #000; padding-bottom: 10px; padding-top: 10px; border-bottom: 4px solid #fff;">
+												<div>
+													<div style=" width: 237px;height: 160px; overflow: hidden;">
+														<a href="http://igihe.com/coverages/movies-awards/profile/irakoze-fidelite.html" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/YlbBIQK.jpg" width="245" alt=""/></a>												
+													</div>
+													<div style="float:left;width:60%;padding-left: 5px; padding-top: 5px;" align="left">
+														<span style="color:#fff;font-weight:bold; font-size: 11px;">IRAKOZE FIDELITE</span><br/>
+														<a href="#" style="color:#ce851a;font-size:13px;">Anita</a>
+													</div>		
+													<div style="width:34%;float:right;color:#ce851a;font-size:16px;padding-right: 5px;padding-top: 5px;text-align:right;">
+														<span style="font-size:16px;">0.65 %</span><br/>
+														<span style="font-size:12px;">1061 votes </span><br/>
+														</div>
+													<div style="clear:both;">&nbsp;</div>
+													<div align="center">
+														<!--<a href="#" style="color:#D2E08A;" onclick="send_vote(4,44)"><img src="http://vote.igihe.com/images/vote2.jpg" alt=""/></a>-->
+													</div><div class="number1">5</div></div>
+											</div> <div style="text-align:center; float: left; width: 237px; margin-right: 2px; background: #000; padding-bottom: 10px; padding-top: 10px; border-bottom: 4px solid #fff;">
+												<div>
+													<div style=" width: 237px;height: 160px; overflow: hidden;">
+														<a href="http://igihe.com/coverages/movies-awards/profile/umutesi-tina.html" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/qxEGEeu.jpg" width="245" alt=""/></a>												
+													</div>
+													<div style="float:left;width:60%;padding-left: 5px; padding-top: 5px;" align="left">
+														<span style="color:#fff;font-weight:bold; font-size: 11px;">UMUTESI TINA</span><br/>
+														<a href="#" style="color:#ce851a;font-size:13px;">gatebe gatoki</a>
+													</div>		
+													<div style="width:34%;float:right;color:#ce851a;font-size:16px;padding-right: 5px;padding-top: 5px;text-align:right;">
+														<span style="font-size:16px;">0.16 %</span><br/>
+														<span style="font-size:12px;">267 votes </span><br/>
+														</div>
+													<div style="clear:both;">&nbsp;</div>
+													<div align="center">
+														<!--<a href="#" style="color:#D2E08A;" onclick="send_vote(4,42)"><img src="http://vote.igihe.com/images/vote2.jpg" alt=""/></a>-->
+													</div><div class="number2">6</div></div>
+											</div> 							</div>
+						</div>
+					</td>										
+					</tr>									
+				</table>													
+				

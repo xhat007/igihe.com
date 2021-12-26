@@ -1,0 +1,688 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>IGIHE.com - Murakaze neza</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+	<meta http-equiv="content-language" content="en-US"/>
+	<meta http-equiv="imagetoolbar" content="no"/>
+	<meta http-equiv="robots" content="all"/>
+	<meta name="revisit-after" content="1"/>
+	<meta http-equiv="window-target" content="_top"/>
+	<meta name="expires" content="-1"/>
+	<meta name="rating" content="general"/>
+	<meta http-equiv="pragma" content="no-cache"/>
+	<link rel="shortcut icon" href="images_light/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css_light/styles.css" />
+	<link type="text/css" href="slide_light/css3.css" rel="stylesheet" />
+	<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script type="text/javascript" src="slide_light/jquery.jcarousel.min.js"></script>
+	<script type="text/javascript" src="slide_light/jquery.pikachoose.min.js"></script>
+	<script type="text/javascript" src="slide_light/jquery.touchwipe.min.js"></script>
+	<script language="javascript">
+		$(document).ready(
+			function (){
+				$("#pikame").PikaChoose();
+			});
+	</script>
+
+</head>
+<body>
+	<div id="header">
+		<div class="header">
+			<div class="h1">
+				<div class="hinfo">IGIHE.com</div>
+				<ul class="hlang">
+					<li><a href="#"><img src="images_light/fla1.gif" />IKINYARWANDA</a></li>
+					<li><a href="#"><img src="images_light/fla1.gif" />IKIRUNDI</a></li>
+					<li><a href="#"><img src="images_light/fla1.gif" />ENGLISH</a></li>
+					<li><a href="#"><img src="images_light/fla1.gif" />FRANÇAIS</a></li>
+					<li><a href="#"><img src="images_light/fla1.gif" />IGIHE TV</a></li>
+				</ul>
+				<form class="hsearch">
+					<input type="text" class="srchtxt" value="Andika aha..." />
+					<input type="submit" class="srchbtn" value="shakisha" />
+				</form>
+				<div class="clear"></div>
+			</div>
+			<div class="h2">
+				<div class="hlogo">
+					<a href="#"><img src="images_light/logo.png" /></a>
+				</div>
+				<div class="hban ban">
+					<span>Kwamamaza</span>
+					<a href="#">
+						<B_gh_ads1>
+							<BOUCLE_gh_ads1(ARTICLES){tout}{0,1}{titre_mot=Ad1_LeaderBoard_728x90}{par date}{inverse}>
+								<a href="[(#URL_SITE|sinon{http://www.igihe.com/#URL_ARTICLE})]" title="#TITRE" target="_blank">
+									<BOUCLE_gh_ads1_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://home.igihe.rw/(#URL_DOCUMENT)"  width="728" height="90" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads1_img>
+								</a>
+							</BOUCLE_gh_ads1>
+						</B_gh_ads1>
+							<a href="#"><img src="#CHEMIN{'igihe_imgs/gh_ad1_default.png'}"  width="728" height="90" border="0"/></a>
+						<//B_gh_ads1>
+					</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="h3">
+				<ul class="hnav">
+					<li><a href="#URL_SITE_SPIP"><img src="images_light/ico1.gif" />AHABANZA</a></li>
+					<li><a href="#URL_SITE_SPIP/abo-turibo/"><img src="images_light/ico2.gif" />ABO TURIBO</a></li>
+					<li><a href="http://igihe.org/spip.php?rubrique3"><img src="images_light/ico3.gif" />SERIVISI</a></li>
+					<li><a href="#URL_SITE_SPIP/spip.php?page=contact&id_rubrique=3"><img src="images_light/ico4.gif" />TWANDIKIRE</a></li>
+					<li><a href="#"><img src="images_light/ico5.gif" />IBIRIMO</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div class="content">
+			<div class="cleft">
+				<div class="cslidenews">
+					<marquee behavior="scroll" direction="left" scrollamount="2" scrolldelay="1" width="100%" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();">
+<BOUCLE_gh_newsslide(ARTICLES){tout}{0,15}{par date}{inverse}{titre_mot=MainSlideNews}{'&nbsp;|&nbsp;'}>
+						<a href="#URL_ARTICLE"><span>Published [(#DATE||date_relative)]</span>#TITRE </a>&nbsp;|&nbsp;
+</BOUCLE_gh_newsslide>
+					</marquee>
+				</div>
+				<div class="cslide">
+					<div class="pikachoose">
+						<ul id="pikame" >	<BOUCLE_gh_highlightsthumbs2(ARTICLES){tout}{doublons xx}{0,6}{titre_mot=HomeHighlights}{par date}{inverse}>
+							<li><a href="[(#URL_DOCUMENT||image_reduire{68,0}||image_recadre{65,43,top center}|extraire_attribut{src})]"><img src="http://home.igihe.rw/[(#LOGO_ARTICLE||image_reduire{68,0}||image_recadre{65,43,top center}|extraire_attribut{src})]"/></a><span><a href="#">#TITRE</a></span></li>
+</BOUCLE_gh_highlightsthumbs2>
+							<div class="clear"></div>
+						</ul>
+					</div>				
+				</div>
+				<div class="clban1 ban">
+					<span>Kwamamaza</span>
+					<B_gh_ads4>
+						<BOUCLE_gh_ads4(ARTICLES){tout}{0,1}{titre_mot=Ad4_MediumRectangle_300x250}{par date}{inverse}>
+							<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+								<BOUCLE_gh_ads4_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+									[<img src="http://igihe.com/(#URL_DOCUMENT)" style="margin:3px;" border="0" alt="#TITRE" title="#TITRE"/>]
+								</BOUCLE_gh_ads4_img>
+							</a>
+						</BOUCLE_gh_ads4>
+					</B_gh_ads4>
+					[<a href="#"><img src="http://www.igihe.com/#CHEMIN{'igihe_imgs/gh_ad4_default.png'}"  width="300" height="250" border="0"/></a>]
+					<//B_gh_ads4>
+				</div>
+				<div class="clear"></div>
+				<div class="c1ban2 ban">
+					<!-- Ads ad_widerectangle -->
+					<B_gh_ad_widerectangle>
+						<BOUCLE_gh_ad_widerectangle(ARTICLES){tout}{0,1}{titre_mot=ad_widerectangle}{par date}{inverse}>
+							<center>
+								<a href="#URL_ARTICLE" title="#TITRE" target="_blank">						
+									<BOUCLE_gh_wr(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.com/(#URL_DOCUMENT)" style="margin:3px; " width="782" height="90" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_wr>
+								</a>
+							</center>
+						</BOUCLE_gh_ad_widerectangle>
+					</B_gh_ad_widerectangle>
+					<//B_gh_ad_widerectangle>				
+					<!-- End Ads ad_widerectangle -->
+				</div>
+				<div class="cblockleft">
+					<div class="cblnews1">
+						<div class="ctitle">Amakuru mashya</div>
+<BOUCLE_gh_news(ARTICLES){branche}{pagination 71}{0,61}{par date}{inverse}{titre!=intro}{titre_mot=HomeNews}>
+						<div class="cnews1">
+							<div class="cnewstop1">
+<BOUCLE_gh_RUBRIQUEtitlel(RUBRIQUES){id_rubrique}><BOUCLE_gh_RUBRIQUEtitle_followl(HIERARCHIE)><a href="#">#TITRE</a> &nbsp;|&nbsp;</BOUCLE_gh_RUBRIQUEtitle_followl>[<a href="#">(#TITRE)</a>]</BOUCLE_gh_RUBRIQUEtitle_followl></BOUCLE_gh_RUBRIQUEtitlel></div>
+							<img src="http://home.igihe.rw/(#LOGO_ARTICLE||image_reduire{0,85}||image_recadre{90,80,top center}|extraire_attribut{src})" />
+							<div class="cnewsinfo1">
+								<a href="#">#TITRE</a>
+								<span>Il y a 3 minutes</span>
+								<div class="comment"></div>
+								<div class="visit"></div>
+								<i class="clear"></i>
+							</div>
+						</div>
+						</BOUCLE_gh_news>
+						
+						<div class="cpagination">
+							<span>1</span> |
+							<a href="#">2</a> | <a href="#">3</a> |
+						</div>
+					</div>
+					<div class="clban2 ban">
+						<span>Kwamamaza</span>
+						<a href="#">
+							<img src="images_light/ban4.png" />
+						</a>
+					</div>
+				</div>
+				<div class="cblockright">
+					<div class="cbrnews1">
+						<div class="ctitle">Inkuru irambuye</div>
+						<div class="cbrnews11">
+							<a href="#">
+								<img src="images_light/img3.png" />
+								<span>Ishyaka PSP mu kwiyubakamo inzego z’abagore</span>
+							</a>
+							<p>IGIHE</p>
+						</div>
+					</div>
+					<div class="cblockban ban">
+						<span>Kwamamaza</span>
+						<B_gh_ad1_middle>
+							<BOUCLE_gh_ad1_middle(ARTICLES){titre_mot=gh_ad1_middle300X250}{par date}{inverse}{0,1}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+									<BOUCLE_gh_ad1_middle_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://home.igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ad1_middle_img>
+								</a>						
+							</BOUCLE_gh_ad1_middle>
+						</B_gh_ad1_middle>				
+							<img src="http://home.igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+						<//B_gh_ad1_middle>
+
+					</div>
+					<div class="cbrnews1">
+						<div class="ctitle">Advertorial</div>
+						<div class="cnews1">
+							<img src="images_light/img2.jpg" />
+							<div class="cnewsinfo1">
+								<a href="#">Ishyaka PSP mu kwiyubakamo inzego z’abagore </a>
+								<i class="clear"></i>
+							</div>
+						</div>
+					</div>
+					<div class="cblockban ban">
+						<span>Kwamamaza</span>
+						<B_gh_ad2_middle>
+							<BOUCLE_gh_ad2_middle(ARTICLES){titre_mot=gh_ad2_middle300X250}{par date}{inverse}{0,1}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+									<BOUCLE_gh_ad2_middle_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://home.igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ad2_middle_img>
+								</a>						
+							</BOUCLE_gh_ad2_middle>
+						</B_gh_ad2_middle>				
+							<img src="http://home.igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+						<//B_gh_ad2_middle>
+					</div>
+					<div class="cbrnews2">
+						<div class="ctitle2">Amashusho</div>
+						<div class="ctab">
+							<div class="tabs">
+								<ul>
+									<li><a href="#" onmouseover="easytabs('3', '1');" onfocus="easytabs('3', '1');" onclick="return false;" title="" id="amashushonav1" class="tab1 tabactive">&nbsp;&nbsp;Amafoto&nbsp;&nbsp;</a></li>
+									<li><a href="#" onmouseover="easytabs('3', '2');" onfocus="easytabs('3', '2');" onclick="return false;" title="" id="amashushonav2" class="tab2">&nbsp;&nbsp;Amavideo&nbsp;&nbsp;</a></li>
+								</ul>
+							</div>
+							<div id="amashushoinfo1" class="amashusho" style="display: block;">
+								<div class="full"><a href="#"><img src="images_light/img4.png"><span>Simba Supermarket</span></a></div>
+								<div class="half"><a href="#"><img src="images_light/img4.png"><span>Simba Supermarket</span></a></div>
+								<div class="half"><a href="#"><img src="images_light/img4.png"><span>Simba Supermarket</span></a></div>
+								<div class="half"><a href="#"><img src="images_light/img4.png"><span>Simba Supermarket</span></a></div>
+								<div class="half"><a href="#"><img src="images_light/img4.png"><span>Simba Supermarket</span></a></div>
+								<i class="clear"></i>
+							</div>
+							<div id="amashushoinfo2" class="amashusho" style="display: none;">
+								<div class="full"><a href="#"><img src="images_light/img4.png"><span>Simba Supermarket</span></a></div>
+								<div class="half"><a href="#"><img src="images_light/img4.png"><span>Simba Supermarket</span></a></div>
+								<div class="half"><a href="#"><img src="images_light/img4.png"><span>Simba Supermarket</span></a></div>
+								<div class="half"><a href="#"><img src="images_light/img4.png"><span>Simba Supermarket</span></a></div>
+								<div class="half"><a href="#"><img src="images_light/img4.png"><span>Simba Supermarket</span></a></div>
+								<i class="clear"></i>
+							</div>
+						</div>
+					</div>
+					<div class="cblockban ban">
+						<span>Kwamamaza</span>
+						<a href="http://www.centurycinemas.rw" title="Century" target="_blank">
+							<img src="http://home.igihe.rw/drpdwn/kw_igihe_advert.jpg" border="0" alt="Century Cinemas" title="Century Cinemas"/>
+						</a>
+					</div>
+					<div class="cbrnews1">
+						<div class="ctitle">Sobanukirwa na RSSB</div>
+						<div class="cnews1">
+							<img src="images_light/img2.jpg" />
+							<div class="cnewsinfo1">
+								<a href="#">Ishyaka PSP mu kwiyubakamo inzego z’abagore </a>
+								<i class="clear"></i>
+							</div>
+						</div>
+					</div>
+					<div class="cbrnews1">
+						<div class="ctitle">IGIHE Newsletter</div>
+						
+					</div>
+					<div class="cbrnews1">
+						<div class="ctitle">Inkuru za komisiyo y'amatora</div>
+						<div class="cnews1">
+							<img src="images_light/img2.jpg" />
+							<div class="cnewsinfo1">
+								<a href="#">Ishyaka PSP mu kwiyubakamo inzego z’abagore </a>
+								<i class="clear"></i>
+							</div>
+						</div>
+					</div>
+					<div class="cblockban ban">
+						<span>Kwamamaza</span>
+						<B_gh_ad3_middle>
+							<BOUCLE_gh_ad3_middle(ARTICLES){titre_mot=gh_ad3_middle300X250}{par date}{inverse}{0,1}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+									<BOUCLE_gh_ad3_bottom_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://home.igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ad3_bottom_img>
+								</a>						
+							</BOUCLE_gh_ad3_middle>
+							</B_gh_ad3_middle>				
+								<img src="http://home.igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />			<//B_gh_ad3_middle>
+						
+					</div>
+					<div class="cbrnews1">
+						<div class="ctitle">Amajwi</div>
+						<div class="ctab">
+							<div class="tabs">
+								<ul>
+									<li><a href="#" onmouseover="easytabs('2', '1');" onfocus="easytabs('2', '1');" onclick="return false;" title="" id="audionav1" class="tab1 tabactive">&nbsp;&nbsp;Top 5&nbsp;&nbsp;</a></li>
+									<li><a href="#" onmouseover="easytabs('2', '2');" onfocus="easytabs('2', '2');" onclick="return false;" title="" id="audionav2" class="tab2">&nbsp;&nbsp;Izikunzwe&nbsp;&nbsp;</a></li>
+								</ul>
+							</div>
+							<div id="audioinfo1" style="display: block;">
+								<ul class="ctoplist">
+									<li>
+										<span>1</span>
+										<div><a href="#">Baza iwacu ft Knowless</a>  - <a href="#">Rafiki</a></div>
+										<a href="#"></a>
+										<i class="clear"></i>
+									</li>
+								</ul>
+							</div>
+							<div id="audioinfo2" style="display: none;">
+								<ul class="ctoplist">
+									<li>
+										<span>1</span>
+										<div><a href="#">Baza iwacu ft Knowless</a>  - <a href="#">Rafiki</a></div>
+										<a href="#"></a>
+										<i class="clear"></i>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="cblockban ban">
+						<span>Kwamamaza</span>
+						<a href="#" title=""><img src="images/IGIHE ZAMUKA banner logo.png" alt=""/></a>
+					</div>
+					<div class="cbrnews1">
+						<div class="ctitle">Forex (Rwandan Francs)</div>
+						
+					</div>
+					<div class="cblockban ban">
+						<span>Kwamamaza</span>
+						<script type="text/javascript" src="http://www.smartadserver.com/call/pubj/38017/258965/4867/S/[timestamp]/[target]?[countgo]" ></script>
+					</div>
+					<div class="cbrnews1">
+						<div class="ctitle">Umuhanzi w'icyumweru</div>
+						<div class="umuhanzi">
+							<div class="u_top">
+								<a href="#"><img src="images_light/img2.jpg" width="90" height="80" align="left" /><i>Riderman</i></a>
+							</div>
+							<span>AMAKURU AHERUKA YA <b>Riderman</b></span>
+							<div class="cbrnews11 umu">
+								<div>3.02.2014 saa 17:52</div>
+								<a href="#">Ishyaka PSP mu kwiyubakamo inzego z’abagore</a>
+							</div>
+							<div class="cbrnews11 umu">
+								<div>3.02.2014 saa 17:52</div>
+								<a href="#">Ishyaka PSP mu kwiyubakamo inzego z’abagore</a>
+							</div>
+						</div>
+					</div>
+					<div class="cblockban ban">
+						<span>Kwamamaza</span>
+						<B_gh_ad5_middle>
+							<BOUCLE_gh_ad5_middle(ARTICLES){titre_mot=gh_ad5_middle300X250}{par date}{inverse}{0,1}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+									<BOUCLE_gh_ad5_bottom_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://home.igihe.rw/(#URL_DOCUMENT)" border="0" width="300" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ad5_bottom_img>
+								</a>						
+							</BOUCLE_gh_ad5_middle>
+						</B_gh_ad5_middle>				
+						<img src="http://home.igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+						<//B_gh_ad5_middle>
+					</div>
+					<div class="cbrnews1">			
+						<div class="ctitle">Facebook Friends</div>
+						<div>
+						<div id="fb-root" style="border:0px;"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/igihe" width="350" height="400" show_faces="true" border_color="#ffffff" stream="false" header="false"></fb:like-box>
+						</div>
+						
+					</div>
+					<div class="cbrnews1">
+						<div class="ctitle">Caricature</div>
+						<div class="cbrnews11 caricature">
+							<a href="#">
+								<img src="images_light/img3.png" />
+								<span>Ishyaka PSP mu kwiyubakamo inzego z’abagore</span>
+							</a>
+						</div>
+					</div>
+					<div class="cblockban ban">
+						<span>Kwamamaza</span>
+						<B_gh_ad6_middle>
+							<BOUCLE_gh_ad6_middle(ARTICLES){titre_mot=gh_ad6_middle300X250}{par date}{inverse}{0,1}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+									<BOUCLE_gh_ad6_middle_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://home.igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ad6_middle_img>
+								</a>						
+							</BOUCLE_gh_ad6_middle>
+						</B_gh_ad6_middle>				
+							<img src="http://home.igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+						<//B_gh_ad6_middle>
+					
+					</div>
+					<div class="cbrnews1">
+						<div class="ctitle">Ibikorwa</div>
+						
+						<div class="cbrnews11 umu">
+								<a href="#"><div class="ban"><img src="images_light/ban3.png" /></div>Ishyaka PSP mu kwiyubakamo inzego z’abagore</a>
+								<div>saa 17:52</div>
+								<div>Bizabera: Gikondo</div>
+						</div>
+						<div class="cbrnews11 umu">
+								<a href="#">Ishyaka PSP mu kwiyubakamo inzego z’abagore</a>
+								<div>saa 17:52</div>
+								<div>Bizabera: Gikondo</div>
+						</div>
+						<div class="cbrnews11 umu">
+								<a href="#">Ishyaka PSP mu kwiyubakamo inzego z’abagore</a>
+								<div>saa 17:52</div>
+								<div>Bizabera: Gikondo</div>
+						</div>
+
+					</div>
+					<div class="cblockban ban">
+						<span>Kwamamaza</span>
+						<B_gh_ad7_middle>
+							<BOUCLE_gh_ad7_middle(ARTICLES){titre_mot=gh_ad7_middle300X250}{par date}{inverse}{0,1}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+									<BOUCLE_gh_ad7_middle_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://home.igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ad7_middle_img>
+								</a>						
+							</BOUCLE_gh_ad7_middle>
+						</B_gh_ad7_middle>				
+								<img src="http://home.igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+						<//B_gh_ad7_middle>
+					</div>
+					<div class="cbrnews1">
+						<div class="ctitle">Tariki ya 6 Gashyantare: Mu mateka</div>
+						<div class="camateka">
+							<marquee behavior="scroll" direction="up" scrollamount="2" scrolldelay="1" width="99%" height="400px" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();">
+								<b>Lorem ipsum dolor sit amet</b>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</marquee>
+						</div>
+					</div>
+					<div class="cblockban ban">
+						<span>Kwamamaza</span>
+						<B_gh_ad8_middle>
+							<BOUCLE_gh_ad8_middle(ARTICLES){titre_mot=gh_ad8_middle300X250}{par date}{inverse}{0,1}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+									<BOUCLE_gh_ad8_bottom_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://home.igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ad8_bottom_img>
+								</a>						
+							</BOUCLE_gh_ad8_middle>
+						</B_gh_ad8_middle>				
+							<img src="http://home.igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+						<//B_gh_ad8_middle>
+					</div>
+					<div class="cbrnews1">
+						<div class="ctitle">Wari uziko ?</div>
+						<div class="cbrnews11 wari">
+							<a href="#">
+								<img src="images_light/img3.png" />
+								<span>Ishyaka PSP mu kwiyubakamo inzego z’abagore</span>
+							</a>
+						</div>
+						<div class="cbrnews11 wari">
+							<a href="#">
+								<img src="images_light/img3.png" />
+								<span>Ishyaka PSP mu kwiyubakamo inzego z’abagore</span>
+							</a>
+						</div>
+						<div class="cbrnews11 wari">
+							<a href="#">
+								<img src="images_light/img3.png" />
+								<span>Ishyaka PSP mu kwiyubakamo inzego z’abagore</span>
+							</a>
+						</div>
+						<div class="cbrnews11 wari">
+							<a href="#">
+								<img src="images_light/img3.png" />
+								<span>Ishyaka PSP mu kwiyubakamo inzego z’abagore</span>
+							</a>
+						</div>
+						<i class="clear"></i>
+					</div>
+					<div class="cblockban ban">
+						<span>Kwamamaza</span>
+						<B_gh_ad9_middle>
+							<BOUCLE_gh_ad9_middle(ARTICLES){titre_mot=gh_ad9_middle300X250}{par date}{inverse}{0,1}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+									<BOUCLE_gh_ad9_bottom_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://home.igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ad9_bottom_img>
+								</a>						
+							</BOUCLE_gh_ad9_middle>
+						</B_gh_ad9_middle>				
+						<//B_gh_ad9_middle>
+					</div>
+					<div class="cbrnews1">
+						<div class="ctitle">Inkuru zikunzwe cyane</div>
+						<div class="ctab">
+							<div class="tabs">
+								<ul>
+									<li><a href="#" onmouseover="easytabs('1', '1');" onfocus="easytabs('1', '1');" onclick="return false;" title="" id="newsnav1" class="tab1 tabactive">&nbsp;&nbsp;Zasomwe&nbsp;&nbsp;</a></li>
+									<li><a href="#" onmouseover="easytabs('1', '2');" onfocus="easytabs('1', '2');" onclick="return false;" title="" id="newsnav2" class="tab2">&nbsp;&nbsp;Zavuzweho&nbsp;&nbsp;</a></li>
+								</ul>
+							</div>
+							<div id="newsinfo1" style="display: block;">
+								<ul class="ctoplist2">
+									<li>
+										<span>1</span>
+										<div><a href="#"><img src="images_light/img2.jpg" width="45" height="35" />Ishyaka PSP mu kwiyubakamo inzego z’abagore</a></div>
+										<i class="clear"></i>
+									</li>
+								</ul>
+							</div>
+							<div id="newsinfo2" style="display: none;">
+								<ul class="ctoplist2">
+									<li>
+										<span>1</span>
+										<div><a href="#"><img src="images_light/img2.jpg" width="45" height="35" />Ishyaka PSP mu kwiyubakamo inzego z’abagore</a></div>
+										<i class="clear"></i>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="cblockban ban">
+						<span>Kwamamaza</span>
+						<B_gh_ad10_middle>
+							<BOUCLE_gh_ad10_middle(ARTICLES){titre_mot=gh_ad10_middle300X250}{par date}{inverse}{0,1}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+									<BOUCLE_gh_ad10_bottom_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://home.igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ad10_bottom_img>
+								</a>						
+							</BOUCLE_gh_ad10_middle>
+						</B_gh_ad10_middle>				
+							<img src="http://home.igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+						<//B_gh_ad10_middle>
+					</div>
+				</div>
+			</div>
+			<div class="cright">
+				<ul class="cnav">
+					<BOUCLE_gh_ibirimoside(RUBRIQUES){id_parent=0}{0,20}{titre_mot=IbirimoSide}>
+						<li><a href="http://www.igihe.com/#URL_RUBRIQUE" class="gh_menu2">#TITRE</a></li>
+					</BOUCLE_gh_ibirimoside>
+				</ul>
+				<div class="crban ban">
+					<span>Kwamamaza</span>
+					<B_gh_ads00>
+						<BOUCLE_gh_ads00(ARTICLES){tout}{0,1}{titre_mot=Ad00_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+							<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+								<BOUCLE_gh_ads00_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+									[<img src="http://home.igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+								</BOUCLE_gh_ads00_img>
+							</a>
+						</BOUCLE_gh_ads00>
+					</B_gh_ads00>
+					<a href="#"><img src="http://home.igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+					<//B_gh_ads00>
+					
+				</div>
+				<div class="crute">
+					<div class="ctitle">Ubibona ute?</div>
+					<a href="#">
+						<img src="images_light/img1.jpg" />
+						<span>TIGO Internet</span>
+					</a>
+				</div>
+				<div class="crban ban">
+					<span>Kwamamaza</span>
+					<B_gh_ads000>
+						<BOUCLE_gh_ads000(ARTICLES){tout}{0,1}{titre_mot=Ad000_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+							<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+								<BOUCLE_gh_ads000_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+									[<img src="http://home.igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+								</BOUCLE_gh_ads000_img>
+							</a>
+						</BOUCLE_gh_ads000>
+					</B_gh_ads000>
+						<a href="#"><img src="http://home.igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+					<//B_gh_ads000>
+				</div>
+				<div class="cweb">
+					<div class="ctitle">Rwandan websites</div>
+					<div class="cwebs">
+						<span>1</span>
+						<h6>Rwanda Gospel</h6>
+						<a href="#">http://www.rwandagospel.com</a>
+						<i class="clear"></i>
+					</div>
+					<div class="cwebs">
+						<span>2</span>
+						<h6>Radio 10</h6>
+						<a href="#">http://www.radio10.com</a>
+						<i class="clear"></i>
+					</div>
+				</div>
+				<div class="crradio ban">
+					<span>Radio Partners</span>
+					<a href="#"><img src="images_light/r1.jpg" /></a>
+					<a href="#"><img src="images_light/r2.gif" /></a>
+				</div>
+				<div class="crban ban">
+					<span>Kwamamaza</span>
+					<B_gh_ads0>
+						<BOUCLE_gh_ads0(ARTICLES){tout}{0,1}{titre_mot=Ad0_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+							<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+								<BOUCLE_gh_ads0_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+									[<img src="http://home.igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+								</BOUCLE_gh_ads0_img>
+							</a>
+						</BOUCLE_gh_ads0>
+					</B_gh_ads0>
+						<a href="#"><img src="http://home.igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+					<//B_gh_ads0>					
+				</div>
+				<div class="crban ban">
+					<span>Kwamamaza</span>
+					<B_gh_ads1>
+						<BOUCLE_gh_ads1(ARTICLES){tout}{0,1}{titre_mot=Ad1_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+							<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+								<BOUCLE_gh_ads1_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+									[<img src="http://home.igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+								</BOUCLE_gh_ads1_img>
+							</a>
+						</BOUCLE_gh_ads1>
+					</B_gh_ads1>
+						<a href="#"><img src="http://home.igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+					<//B_gh_ads1>					
+				</div>
+				<div class="crban ban">
+					<span>Kwamamaza</span>
+				</div>
+
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer">
+			<div class="f1">
+				<div class="fban ban">
+					<span>Kwamamaza</span>
+					<a href="#"><img src="images_light/ban1.png" /></a>
+				</div>
+			</div>
+			<div class="f2">
+				<div class="flogo"><img src="images_light/flogo.png" /></div>
+				<form class="fsearch">
+					<input type="text" class="srchtxt" value="Andika aha..." />
+					<input type="submit" class="srchbtn" value="shakisha" />
+				</form>
+				<div class="ftop"><a href="#"><img src="images_light/ftop.gif" /></a></div>
+			</div>
+			<div class="f3">
+				<div class="fnet">
+					<h3>IGIHE Network</h3>
+					<a href="#">IGIHE.com mu Kinyarwanda</a>
+					<a href="#">IGIHE.com in English</a>
+					<a href="#">IGIHE.com en Français</a>
+				</div>
+				<div class="fjoin">
+					<h3>Join us</h3>
+					<a href="#">Socialize with us</a>
+					<div>
+						<a href="#"><img src="images_light/face.gif" /></a>
+						<a href="#"><img src="images_light/twi.gif" /></a>
+						<a href="#"><img src="images_light/you.gif" /></a>
+					</div>
+				</div>
+				<div class="fcont">
+					<h3>Contacts</h3>
+					<div><b>Location:</b> Ndamage Building 4th Floor</div>
+					<div><b>PO Box:</b> 3477 Kigali-Rwanda</div>
+					<div><b>Phones:</b></div>
+					<div>+250 788 74 29 08, +250 788 49 69 15, +250 728 94 66 08</div>
+					<div><b>Emails:</b></div>
+					<div>info@igihe.com, marketing@igihe.com</div>
+				</div>
+				<div class="fdev">
+					<h3>Website Developedy</h3>
+					<img src="images_light/flogo2.gif" />
+				</div>
+				<div class="clear"></div>
+				<div class="fcopy">
+					<div>Uru Rubuga Ruheruka Gushyirwaho Amakuru mercredi 5 février 2014 Saa 17:33:27</div>
+					<span>Copyright © 2009 -2014 - IGIHE Ltd - All Rights Reserved</span>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">$(document).ready(function(){$("#featured > ul").tabs({fx:{opacity:"toggle"}}).tabs("rotate",7000,true);});</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.3/jquery-ui.min.js"></script>
+<script type="text/javascript">var tablink_idname=new Array("newsnav","audionav","amashushonav","amatangazolink","siteslink")
+var tabcontent_idname=new Array("newsinfo","audioinfo","amashushoinfo","amatangazocontent","sitescontent")
+var tabcount=new Array("2","2","2","2")
+var loadtabs=new Array("1","1","1","1")
+var autochangemenu=0;var changespeed=3;var stoponhover=0;function easytabs(menunr,active){if(menunr==autochangemenu){currenttab=active;}if((menunr==autochangemenu)&&(stoponhover==1)){stop_autochange()}else if((menunr==autochangemenu)&&(stoponhover==0)){counter=0;}menunr=menunr-1;for(i=1;i<=tabcount[menunr];i++){document.getElementById(tablink_idname[menunr]+i).className='tab'+i;document.getElementById(tabcontent_idname[menunr]+i).style.display='none';}document.getElementById(tablink_idname[menunr]+active).className='tab'+active+' tabactive';document.getElementById(tabcontent_idname[menunr]+active).style.display='block';}var timer;counter=0;var totaltabs=tabcount[autochangemenu-1];var currenttab=loadtabs[autochangemenu-1];function start_autochange(){counter=counter+1;timer=setTimeout("start_autochange()",1000);if(counter==changespeed+1){currenttab++;if(currenttab>totaltabs){currenttab=1}easytabs(autochangemenu,currenttab);restart_autochange();}}function restart_autochange(){clearTimeout(timer);counter=0;start_autochange();}function stop_autochange(){clearTimeout(timer);counter=0;}
+window.onload=function(){var menucount=loadtabs.length;var a=0;var b=1;do{easytabs(b,loadtabs[a]);a++;b++;}while(b<=menucount);if(autochangemenu!=0){start_autochange();}}</script>
+</body>
+</html>

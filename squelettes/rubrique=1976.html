@@ -1,0 +1,201 @@
+<BOUCLE_rubrique(RUBRIQUES){id_rubrique}>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta name="description" content="">
+  	<meta name="keywords" content="">
+  	<meta name="author" content="NKUSI Alain Pascal/0788665638">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>#TITRE - IGIHE</title>
+	<link rel="stylesheet" type="text/css" href="https://www.igihe.com/squelettes/cogebanque/assets2/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://www.igihe.com/squelettes/cogebanque/assets2/stylesheet/stylesheet.css?t=3">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="bg-light">
+	
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="."><img src="https://www.igihe.com/squelettes/cogebanque/assets2/images/logo_coge.png" class="img-fluid"></a>
+    </div>
+    <ul class="navbar-nav mr-auto" style="flex-direction: row;">
+	      <li class="nav-item active">
+	        <a class="nav-link" href=".">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" target="_blank" href="http://www.cogebanque.co.rw/personal-banking/" id="BANKINGM">Banking</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#NEWS" id="NEWSM">News</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#VIDEOS" id="VIDEOSM">Videos</a>
+	      </li>
+	    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+	    </form>
+    </ul>
+  </div>
+</nav>
+
+
+	
+	</div>
+	<!-- carousel-->
+	<div id="demo" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ul class="carousel-indicators">
+		<BOUCLE_INSLID (ARTICLES){id_rubrique=1977}{0,1}{!par date}{doublons cogeslide}>
+		<li data-target="#demo" data-slide-to="0" class="active"></li>
+		</BOUCLE_INSLID>
+		<BOUCLE_INSLID2 (ARTICLES){id_rubrique=1977}{0,5}{!par date}{doublons cogeslide}>
+		<li data-target="#demo" data-slide-to="#COMPTEUR_BOUCLE"></li>
+		</BOUCLE_INSLID2>
+	  </ul>
+
+	  <!-- The slideshow -->
+	  <div class="carousel-inner">
+		<BOUCLE_INSLID3 (ARTICLES){id_rubrique=1977}{0,1}{!par date}{doublons cogeslide1}>
+	    <div class="carousel-item active">
+			[<img src="(#LOGO_ARTICLE|extraire_attribut{src})" alt="First slide">]
+	    </div>
+		</BOUCLE_INSLID3>
+		<BOUCLE_INSLID4 (ARTICLES){id_rubrique=1977}{0,5}{!par date}{doublons cogeslide1}>
+	    <div class="carousel-item">
+			[<img src="(#LOGO_ARTICLE|extraire_attribut{src})" alt="#COMPTEUR_BOUCLE slide">]
+	    </div>
+		</BOUCLE_INSLID4> 
+	  </div>
+
+	  <!-- Left and right controls -->
+	  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+	    <span class="carousel-control-prev-icon"></span>
+	  </a>
+	  <a class="carousel-control-next" href="#demo" data-slide="next">
+	    <span class="carousel-control-next-icon"></span>
+	  </a>
+
+	</div>
+	<!-- End Carousel-->
+
+
+	<!-- news  -->
+
+	<section class="stpd">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-1 hidden-md hidden-xs"></div>
+				<div class="col-md-10 col-sm-12 col-xs-12">
+					<div class="row">
+					<BOUCLE_INNEWS (ARTICLES){titre_mot=cogebanque_news}{0,3}{!par date}{doublons cogebanque}>
+					<div class="col-md-4 col-sm-6 col-xs-12"> 
+						<div class="card">
+						[<a href="#URL_ARTICLE" class="card-text"><img src="(#LOGO_ARTICLE|image_reduire{*,300}|image_recadre{450,280}|extraire_attribut{src})" class="img-fluid card-img-top"></a>] 
+						  <div class="card-body">
+							<a href="#URL_ARTICLE" class="card-text">[(#TITRE|couper{95,'...'})]</a>
+							<br><a href="#URL_ARTICLE" class="btn btn-primary">Soma ibikurikira</a>
+						  </div>
+						</div>
+					</div> 
+					</BOUCLE_INNEWS> 
+					</div>
+					<div class="row">
+					<BOUCLE_INNEWS2 (ARTICLES){titre_mot=cogebanque_news}{0,3}{!par date}{doublons cogebanque}>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="card"> 
+						[<a href="#URL_ARTICLE" class="card-text"><img src="(#LOGO_ARTICLE|image_reduire{*,300}|image_recadre{450,280}|extraire_attribut{src})" class="img-fluid card-img-top"></a>] 
+						  <div class="card-body">
+							<a href="#URL_ARTICLE" class="card-text">[(#TITRE|couper{95,'...'})]</a>
+							<br><a href="#URL_ARTICLE" class="btn btn-primary">Soma ibikurikira</a>
+						  </div>
+						</div>
+					</div> 
+					</BOUCLE_INNEWS2>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- end news -->
+
+	<!-- Videos and tweets-->
+	<section class="stv_st">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="vid_st embeds-responsive embed-responsive-16by9">
+					<BOUCLE_DVIDMI (ARTICLES){id_rubrique=1978}{!par date}{0,1}{doublons videoss}>
+						<iframe class="embed-responsive-item" width="100%" height="325" src="https://www.youtube.com/embed/#SOUSTITRE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="height:310px;" allowfullscreen></iframe>
+					</BOUCLE_DVIDMI>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="vids_lst">
+						<h1>More Videos</h1>
+						<ul class="ul_st">
+						<BOUCLE_DVIDMIS (ARTICLES){id_rubrique=1978}{!par date}{0,4}{doublons videoss}>
+							<!-- item video--> 
+								<li>
+									<a target="_blank" href="#SOUSTITRE">#TITRE</a>
+								</li>
+							<hr class="hr_btm">
+							<!-- End Item video-->
+						</BOUCLE_DVIDMIS>						
+						</ul>
+						<a target="_blank" href="https://www.youtube.com/channel/UCBF_O4vGge2VKQgDlawE6rw" class="btn btn-primary">Read more</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+					<a class="twitter-timeline" data-width="380" data-height="325" href="https://twitter.com/Cogebanque1?ref_src=twsrc%5Etfw">Tweets by Cogebanque1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+			</div>			
+		</div>
+	</section>
+	<!-- End Videos and tweets-->
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3">
+					<div class="copy_st text-center">
+						<p>&copy 2020 IGIHE All Rights Reserved</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-3 col-lg-6">
+					<div class="fa_ft text-center">
+						<span><i class="fa fa-phone"></i> :&nbsp;5050&nbsp;|</span>&nbsp;&nbsp;
+						<span><i class="fa fa-envelope"></i> :&nbsp;cogebanque@cogebanque.com&nbsp;|</span>&nbsp;&nbsp;
+						<span><i class="fa fa-map-marker"></i> :&nbsp;KN 63 St, Kigali,Rwanda&nbsp;</span>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3">
+					<div class="social_ft text-center">
+						<a target="_blank" href="https://www.facebook.com/cogebanque" class="fb_ft"><i class="fa fa-facebook"></i></a>
+						<a target="_blank" href="https://twitter.com/Cogebanque1"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-youtube-play"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- END FOOTER -->
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script type="text/javascript"> 
+	$('#BANKINGM').click(function(){$('html, body').animate({scrollTop: ($('#BANKING').offset().top)},500);});
+	$('#NEWSM').click(function(){$('html, body').animate({scrollTop: ($('#NEWS').offset().top)},500);});
+	$('#VIDEOSM').click(function(){$('html, body').animate({scrollTop: ($('#VIDEOS').offset().top)},500);});  
+ </script>
+</body>
+</html>
+</BOUCLE_rubrique>

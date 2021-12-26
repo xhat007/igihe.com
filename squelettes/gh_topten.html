@@ -1,0 +1,517 @@
+<!--<BOUCLE_compteur(RUBRIQUES){id_rubrique=130}{0,10}>
+#SET{count,#COMPTEUR_BOUCLE}  #GET{count}-->
+<BOUCLE_toptenartist(RUBRIQUES){titre_mot=top1}{par date}{inverse}> 
+<!-- RIGHT CONTENT START -->
+<article class="artisttop10">
+
+    <div class="artisttop10logo" style="width: 139px; float: left; border: none; border-right: 1px dotted #999;">
+            <div style="background: #00BBE4; font-size: 39px; color: #fff; float: left; width: 50px; height: 80px; vertical-align: middle">1</div>
+<BOUCLE_toptenone(ARTICLES){titre_mot=top1}{par date}{inverse}{0,1}>
+            <div style="width: 89px; float: left; height: 80px; overflow: hidden;">[<img src="http://igihe.com/IMG/(#LOGO_ARTICLE|fichier)" width="89">]</div>
+            <div style="clear: both;"></div>
+	    <div style="margin-top: 5px;">
+		<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_preferred_1"></a>
+				<a class="addthis_button_preferred_2"></a>
+				<a class="addthis_button_preferred_4"></a>
+				<a class="addthis_button_compact"></a>
+				<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-507ead574673d3ac"></script>
+		<!-- AddThis Button END -->
+	    </div>
+    </div>
+    <div class="artisttop10content" style="width: 250px; float: left; text-align: left; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+            <div style=" padding-bottom: 5px; border: none; border-bottom: 1px dotted #999; margin-left: 5px; margin-bottom: 5px; padding-top: 10px;">
+                <a href="#URL_ARTICLE"><span style="display: list-item; list-style: none; color: #000; font-size: 16px; font-weight: bold; padding-bottom: 7px;">#TITRE</span></a>
+</BOUCLE_toptenone>
+                <span style=" color: #000; font-size: 13px; display: list-item; list-style: none; padding-bottom: 4px;">#TITRE</span>
+<BOUCLE_toptenones(ARTICLES){titre_mot=top1}{par date}{inverse}{0,1}>
+                <span style=" color: #666; font-size: 13px; font-weight: normal;">#SOUSTITRE</span>
+</BOUCLE_toptenones>
+            </div>
+
+
+            <div style=" margin-left: 5px;">
+                <span style="display: list-item; list-style: none; color: #666; font-size: 13px; font-weight: normal; margin-bottom: 10px; border: none; border-left: 4px solid #00BBE4; padding-left: 5px; font-weight: bold;">
+                Izindi Ndirimbo ze
+                </span>
+
+<BOUCLE_song(RUBRIQUES){titre_mot=topsongs1}>
+	<BOUCLE_songs(ARTICLES){par date}{inverse}{0,6}{id_rubrique}>
+                <span style="display: inline-block; list-style: none; color: #000; font-size: 13px; font-weight: normal; width: 120px; padding-bottom: 2px;"><span style="color: #00BBE4;">##COMPTEUR_BOUCLE </span> <a href="#URL_ARTICLE">[(#TITRE|couper{10})]</a></span>
+	</BOUCLE_songs>
+</BOUCLE_song>
+
+	     </div>
+    </div>
+    <div style="clear: both;"></div>
+</article>
+<!-- RIGHT CONTENT END -->
+</BOUCLE_toptenartist>
+<!--</BOUCLE_compteur> -->
+<!-- **************************************************************************************************************************************************************** -->
+
+<BOUCLE_toptenartist2(RUBRIQUES){titre_mot=top2}{par date}{inverse}> 
+<!-- RIGHT CONTENT START -->
+<article class="artisttop10">
+
+    <div class="artisttop10logo" style="width: 139px; float: left; border: none; border-right: 1px dotted #999;">
+            <div style="background: #00BBE4; font-size: 39px; color: #fff; float: left; width: 50px; height: 80px; vertical-align: middle">2</div>
+<BOUCLE_toptenone2(ARTICLES){titre_mot=top2}{par date}{inverse}{0,1}>
+            <div style="width: 89px; float: left; height: 80px; overflow: hidden;">[<img src="http://igihe.com/IMG/(#LOGO_ARTICLE|fichier)" width="89">]</div>
+            <div style="clear: both;"></div>
+	    <div style="margin-top: 5px;">
+		<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_preferred_1"></a>
+				<a class="addthis_button_preferred_2"></a>
+				<a class="addthis_button_preferred_4"></a>
+				<a class="addthis_button_compact"></a>
+				<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-507ead574673d3ac"></script>
+		<!-- AddThis Button END -->
+	    </div>
+    </div>
+    <div class="artisttop10content" style="width: 250px; float: left; text-align: left; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+            <div style=" padding-bottom: 5px; border: none; border-bottom: 1px dotted #999; margin-left: 5px; margin-bottom: 5px; padding-top: 10px;">
+                <a href="#URL_ARTICLE"><span style="display: list-item; list-style: none; color: #000; font-size: 16px; font-weight: bold; padding-bottom: 7px;">#TITRE</span></a>
+</BOUCLE_toptenone2>
+                <span style=" color: #000; font-size: 13px; display: list-item; list-style: none; padding-bottom: 4px;">#TITRE</span>
+<BOUCLE_toptenones2(ARTICLES){titre_mot=top2}{par date}{inverse}{0,1}>
+                <span style=" color: #666; font-size: 13px; font-weight: normal;">#SOUSTITRE</span>
+</BOUCLE_toptenones2>
+            </div>
+
+
+            <div style=" margin-left: 5px;">
+                <span style="display: list-item; list-style: none; color: #666; font-size: 13px; font-weight: normal; margin-bottom: 10px; border: none; border-left: 4px solid #00BBE4; padding-left: 5px; font-weight: bold;">
+                Izindi Ndirimbo ze
+                </span>
+
+<BOUCLE_song2(RUBRIQUES){titre_mot=topsongs2}>
+	<BOUCLE_songs2(ARTICLES){par date}{inverse}{0,6}{id_rubrique}>
+                <span style="display: inline-block; list-style: none; color: #000; font-size: 13px; font-weight: normal; width: 120px; padding-bottom: 2px;"><span style="color: #00BBE4;">##COMPTEUR_BOUCLE </span> <a href="#URL_ARTICLE">[(#TITRE|couper{10})]</a></span>
+	</BOUCLE_songs2>
+</BOUCLE_song2>
+
+	     </div>
+    </div>
+    <div style="clear: both;"></div>
+</article>
+<!-- RIGHT CONTENT END -->
+</BOUCLE_toptenartist2>
+<!-- **************************************************************************************************************************************************************** -->
+<BOUCLE_toptenartist3(RUBRIQUES){titre_mot=top3}{par date}{inverse}> 
+<!-- RIGHT CONTENT START -->
+<article class="artisttop10">
+
+    <div class="artisttop10logo" style="width: 139px; float: left; border: none; border-right: 1px dotted #999;">
+            <div style="background: #00BBE4; font-size: 39px; color: #fff; float: left; width: 50px; height: 80px; vertical-align: middle">3</div>
+<BOUCLE_toptenone3(ARTICLES){titre_mot=top3}{par date}{inverse}{0,1}>
+            <div style="width: 89px; float: left; height: 80px; overflow: hidden;">[<img src="http://igihe.com/IMG/(#LOGO_ARTICLE|fichier)" width="89">]</div>
+            <div style="clear: both;"></div>
+	    <div style="margin-top: 5px;">
+		<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_preferred_1"></a>
+				<a class="addthis_button_preferred_2"></a>
+				<a class="addthis_button_preferred_4"></a>
+				<a class="addthis_button_compact"></a>
+				<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-507ead574673d3ac"></script>
+		<!-- AddThis Button END -->
+	    </div>
+    </div>
+    <div class="artisttop10content" style="width: 250px; float: left; text-align: left; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+            <div style=" padding-bottom: 5px; border: none; border-bottom: 1px dotted #999; margin-left: 5px; margin-bottom: 5px; padding-top: 10px;">
+                <a href="#URL_ARTICLE"><span style="display: list-item; list-style: none; color: #000; font-size: 16px; font-weight: bold; padding-bottom: 7px;">#TITRE</span></a>
+</BOUCLE_toptenone3>
+                <span style=" color: #000; font-size: 13px; display: list-item; list-style: none; padding-bottom: 4px;">#TITRE</span>
+<BOUCLE_toptenones3(ARTICLES){titre_mot=top3}{par date}{inverse}{0,1}>
+                <span style=" color: #666; font-size: 13px; font-weight: normal;">#SOUSTITRE</span>
+</BOUCLE_toptenones3>
+            </div>
+
+
+            <div style=" margin-left: 5px;">
+                <span style="display: list-item; list-style: none; color: #666; font-size: 13px; font-weight: normal; margin-bottom: 10px; border: none; border-left: 4px solid #00BBE4; padding-left: 5px; font-weight: bold;">
+                Izindi Ndirimbo ze
+                </span>
+
+<BOUCLE_song3(RUBRIQUES){titre_mot=topsongs3}>
+	<BOUCLE_songs3(ARTICLES){par date}{inverse}{0,6}{id_rubrique}>
+                <span style="display: inline-block; list-style: none; color: #000; font-size: 13px; font-weight: normal; width: 120px; padding-bottom: 2px;"><span style="color: #00BBE4;">##COMPTEUR_BOUCLE </span> <a href="#URL_ARTICLE">[(#TITRE|couper{10})]</a></span>
+	</BOUCLE_songs3>
+</BOUCLE_song3>
+
+	     </div>
+    </div>
+    <div style="clear: both;"></div>
+</article>
+<!-- RIGHT CONTENT END -->
+</BOUCLE_toptenartist3>
+<!-- **************************************************************************************************************************************************************** -->
+<BOUCLE_toptenartist4(RUBRIQUES){titre_mot=top4}{par date}{inverse}> 
+<!-- RIGHT CONTENT START -->
+<article class="artisttop10">
+
+    <div class="artisttop10logo" style="width: 139px; float: left; border: none; border-right: 1px dotted #999;">
+            <div style="background: #00BBE4; font-size: 39px; color: #fff; float: left; width: 50px; height: 80px; vertical-align: middle">4</div>
+<BOUCLE_toptenone4(ARTICLES){titre_mot=top4}{par date}{inverse}{0,1}>
+            <div style="width: 89px; float: left; height: 80px; overflow: hidden;">[<img src="http://igihe.com/IMG/(#LOGO_ARTICLE|fichier)" width="89">]</div>
+            <div style="clear: both;"></div>
+	    <div style="margin-top: 5px;">
+		<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_preferred_1"></a>
+				<a class="addthis_button_preferred_2"></a>
+				<a class="addthis_button_preferred_4"></a>
+				<a class="addthis_button_compact"></a>
+				<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-507ead574673d3ac"></script>
+		<!-- AddThis Button END -->
+	    </div>
+    </div>
+    <div class="artisttop10content" style="width: 250px; float: left; text-align: left; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+            <div style=" padding-bottom: 5px; border: none; border-bottom: 1px dotted #999; margin-left: 5px; margin-bottom: 5px; padding-top: 10px;">
+                <a href="#URL_ARTICLE"><span style="display: list-item; list-style: none; color: #000; font-size: 16px; font-weight: bold; padding-bottom: 7px;">#TITRE</span></a>
+</BOUCLE_toptenone4>
+                <span style=" color: #000; font-size: 13px; display: list-item; list-style: none; padding-bottom: 4px;">#TITRE</span>
+<BOUCLE_toptenones4(ARTICLES){titre_mot=top4}{par date}{inverse}{0,1}>
+                <span style=" color: #666; font-size: 13px; font-weight: normal;">#SOUSTITRE</span>
+</BOUCLE_toptenones4>
+            </div>
+
+
+            <div style=" margin-left: 5px;">
+                <span style="display: list-item; list-style: none; color: #666; font-size: 13px; font-weight: normal; margin-bottom: 10px; border: none; border-left: 4px solid #00BBE4; padding-left: 5px; font-weight: bold;">
+                Izindi Ndirimbo ze
+                </span>
+
+<BOUCLE_song4(RUBRIQUES){titre_mot=topsongs4}>
+	<BOUCLE_songs4(ARTICLES){par date}{inverse}{0,6}{id_rubrique}>
+                <span style="display: inline-block; list-style: none; color: #000; font-size: 13px; font-weight: normal; width: 120px; padding-bottom: 2px;"><span style="color: #00BBE4;">##COMPTEUR_BOUCLE </span> <a href="#URL_ARTICLE">[(#TITRE|couper{10})]</a></span>
+	</BOUCLE_songs4>
+</BOUCLE_song4>
+
+	     </div>
+    </div>
+    <div style="clear: both;"></div>
+</article>
+<!-- RIGHT CONTENT END -->
+</BOUCLE_toptenartist4>
+<!-- **************************************************************************************************************************************************************** -->
+<BOUCLE_toptenartist5(RUBRIQUES){titre_mot=top5}{par date}{inverse}> 
+<!-- RIGHT CONTENT START -->
+<article class="artisttop10">
+
+    <div class="artisttop10logo" style="width: 139px; float: left; border: none; border-right: 1px dotted #999;">
+            <div style="background: #00BBE4; font-size: 39px; color: #fff; float: left; width: 50px; height: 80px; vertical-align: middle">5</div>
+<BOUCLE_toptenone5(ARTICLES){titre_mot=top5}{par date}{inverse}{0,1}>
+            <div style="width: 89px; float: left; height: 80px; overflow: hidden;">[<img src="http://igihe.com/IMG/(#LOGO_ARTICLE|fichier)" width="89">]</div>
+            <div style="clear: both;"></div>
+	    <div style="margin-top: 5px;">
+		<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_preferred_1"></a>
+				<a class="addthis_button_preferred_2"></a>
+				<a class="addthis_button_preferred_4"></a>
+				<a class="addthis_button_compact"></a>
+				<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-507ead574673d3ac"></script>
+		<!-- AddThis Button END -->
+	    </div>
+    </div>
+    <div class="artisttop10content" style="width: 250px; float: left; text-align: left; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+            <div style=" padding-bottom: 5px; border: none; border-bottom: 1px dotted #999; margin-left: 5px; margin-bottom: 5px; padding-top: 10px;">
+                <a href="#URL_ARTICLE"><span style="display: list-item; list-style: none; color: #000; font-size: 16px; font-weight: bold; padding-bottom: 7px;">#TITRE</span></a>
+</BOUCLE_toptenone5>
+                <span style=" color: #000; font-size: 13px; display: list-item; list-style: none; padding-bottom: 4px;">#TITRE</span>
+<BOUCLE_toptenones5(ARTICLES){titre_mot=top5}{par date}{inverse}{0,1}>
+                <span style=" color: #666; font-size: 13px; font-weight: normal;">#SOUSTITRE</span>
+</BOUCLE_toptenones5>
+            </div>
+
+
+            <div style=" margin-left: 5px;">
+                <span style="display: list-item; list-style: none; color: #666; font-size: 13px; font-weight: normal; margin-bottom: 10px; border: none; border-left: 4px solid #00BBE4; padding-left: 5px; font-weight: bold;">
+                Izindi Ndirimbo ze
+                </span>
+
+<BOUCLE_song5(RUBRIQUES){titre_mot=topsongs5}>
+	<BOUCLE_songs5(ARTICLES){par date}{inverse}{0,6}{id_rubrique}>
+                <span style="display: inline-block; list-style: none; color: #000; font-size: 13px; font-weight: normal; width: 120px; padding-bottom: 2px;"><span style="color: #00BBE4;">##COMPTEUR_BOUCLE </span> <a href="#URL_ARTICLE">[(#TITRE|couper{10})]</a></span>
+	</BOUCLE_songs5>
+</BOUCLE_song5>
+
+	     </div>
+    </div>
+    <div style="clear: both;"></div>
+</article>
+<!-- RIGHT CONTENT END -->
+</BOUCLE_toptenartist5>
+<!-- **************************************************************************************************************************************************************** -->
+<BOUCLE_toptenartist6(RUBRIQUES){titre_mot=top6}{par date}{inverse}> 
+<!-- RIGHT CONTENT START -->
+<article class="artisttop10">
+
+    <div class="artisttop10logo" style="width: 139px; float: left; border: none; border-right: 1px dotted #999;">
+            <div style="background: #00BBE4; font-size: 39px; color: #fff; float: left; width: 50px; height: 80px; vertical-align: middle">6</div>
+<BOUCLE_toptenone6(ARTICLES){titre_mot=top6}{par date}{inverse}{0,1}>
+            <div style="width: 89px; float: left; height: 80px; overflow: hidden;">[<img src="http://igihe.com/IMG/(#LOGO_ARTICLE|fichier)" width="89">]</div>
+            <div style="clear: both;"></div>
+	    <div style="margin-top: 5px;">
+		<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_preferred_1"></a>
+				<a class="addthis_button_preferred_2"></a>
+				<a class="addthis_button_preferred_4"></a>
+				<a class="addthis_button_compact"></a>
+				<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-507ead574673d3ac"></script>
+		<!-- AddThis Button END -->
+	    </div>
+    </div>
+    <div class="artisttop10content" style="width: 250px; float: left; text-align: left; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+            <div style=" padding-bottom: 5px; border: none; border-bottom: 1px dotted #999; margin-left: 5px; margin-bottom: 5px; padding-top: 10px;">
+                <a href="#URL_ARTICLE"><span style="display: list-item; list-style: none; color: #000; font-size: 16px; font-weight: bold; padding-bottom: 7px;">#TITRE</span></a>
+</BOUCLE_toptenone6>
+                <span style=" color: #000; font-size: 13px; display: list-item; list-style: none; padding-bottom: 4px;">#TITRE</span>
+<BOUCLE_toptenones6(ARTICLES){titre_mot=top6}{par date}{inverse}{0,1}>
+                <span style=" color: #666; font-size: 13px; font-weight: normal;">#SOUSTITRE</span>
+</BOUCLE_toptenones6>
+            </div>
+
+
+            <div style=" margin-left: 5px;">
+                <span style="display: list-item; list-style: none; color: #666; font-size: 13px; font-weight: normal; margin-bottom: 10px; border: none; border-left: 4px solid #00BBE4; padding-left: 5px; font-weight: bold;">
+                Izindi Ndirimbo ze
+                </span>
+
+<BOUCLE_song6(RUBRIQUES){titre_mot=topsongs6}>
+	<BOUCLE_songs6(ARTICLES){par date}{inverse}{0,6}{id_rubrique}>
+                <span style="display: inline-block; list-style: none; color: #000; font-size: 13px; font-weight: normal; width: 120px; padding-bottom: 2px;"><span style="color: #00BBE4;">##COMPTEUR_BOUCLE </span> <a href="#URL_ARTICLE">[(#TITRE|couper{10})]</a></span>
+	</BOUCLE_songs6>
+</BOUCLE_song6>
+
+	     </div>
+    </div>
+    <div style="clear: both;"></div>
+</article>
+<!-- RIGHT CONTENT END -->
+</BOUCLE_toptenartist6>
+<!-- **************************************************************************************************************************************************************** -->
+
+<BOUCLE_toptenartist7(RUBRIQUES){titre_mot=top7}{par date}{inverse}> 
+<!-- RIGHT CONTENT START -->
+<article class="artisttop10">
+
+    <div class="artisttop10logo" style="width: 139px; float: left; border: none; border-right: 1px dotted #999;">
+            <div style="background: #00BBE4; font-size: 39px; color: #fff; float: left; width: 50px; height: 80px; vertical-align: middle">7</div>
+<BOUCLE_toptenone7(ARTICLES){titre_mot=top7}{par date}{inverse}{0,1}>
+            <div style="width: 89px; float: left; height: 80px; overflow: hidden;">[<img src="http://igihe.com/IMG/(#LOGO_ARTICLE|fichier)" width="89">]</div>
+            <div style="clear: both;"></div>
+	    <div style="margin-top: 5px;">
+		<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_preferred_1"></a>
+				<a class="addthis_button_preferred_2"></a>
+				<a class="addthis_button_preferred_4"></a>
+				<a class="addthis_button_compact"></a>
+				<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-507ead574673d3ac"></script>
+		<!-- AddThis Button END -->
+	    </div>
+    </div>
+    <div class="artisttop10content" style="width: 250px; float: left; text-align: left; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+            <div style=" padding-bottom: 5px; border: none; border-bottom: 1px dotted #999; margin-left: 5px; margin-bottom: 5px; padding-top: 10px;">
+                <a href="#URL_ARTICLE"><span style="display: list-item; list-style: none; color: #000; font-size: 16px; font-weight: bold; padding-bottom: 7px;">#TITRE</span></a>
+</BOUCLE_toptenone7>
+                <span style=" color: #000; font-size: 13px; display: list-item; list-style: none; padding-bottom: 4px;">#TITRE</span>
+<BOUCLE_toptenones7(ARTICLES){titre_mot=top7}{par date}{inverse}{0,1}>
+                <span style=" color: #666; font-size: 13px; font-weight: normal;">#SOUSTITRE</span>
+</BOUCLE_toptenones7>
+            </div>
+
+
+            <div style=" margin-left: 5px;">
+                <span style="display: list-item; list-style: none; color: #666; font-size: 13px; font-weight: normal; margin-bottom: 10px; border: none; border-left: 4px solid #00BBE4; padding-left: 5px; font-weight: bold;">
+                Izindi Ndirimbo ze
+                </span>
+
+<BOUCLE_song7(RUBRIQUES){titre_mot=topsongs7}>
+	<BOUCLE_songs7(ARTICLES){par date}{inverse}{0,6}{id_rubrique}>
+                <span style="display: inline-block; list-style: none; color: #000; font-size: 13px; font-weight: normal; width: 120px; padding-bottom: 2px;"><span style="color: #00BBE4;">##COMPTEUR_BOUCLE </span> <a href="#URL_ARTICLE">[(#TITRE|couper{10})]</a></span>
+	</BOUCLE_songs7>
+</BOUCLE_song7>
+
+	     </div>
+    </div>
+    <div style="clear: both;"></div>
+</article>
+<!-- RIGHT CONTENT END -->
+</BOUCLE_toptenartist7>
+<!-- **************************************************************************************************************************************************************** -->
+
+<BOUCLE_toptenartist8(RUBRIQUES){titre_mot=top8}{par date}{inverse}> 
+<!-- RIGHT CONTENT START -->
+<article class="artisttop10">
+
+    <div class="artisttop10logo" style="width: 139px; float: left; border: none; border-right: 1px dotted #999;">
+            <div style="background: #00BBE4; font-size: 39px; color: #fff; float: left; width: 50px; height: 80px; vertical-align: middle">8</div>
+<BOUCLE_toptenone8(ARTICLES){titre_mot=top8}{par date}{inverse}{0,1}>
+            <div style="width: 89px; float: left; height: 80px; overflow: hidden;">[<img src="http://igihe.com/IMG/(#LOGO_ARTICLE|fichier)" width="89">]</div>
+            <div style="clear: both;"></div>
+	    <div style="margin-top: 5px;">
+		<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_preferred_1"></a>
+				<a class="addthis_button_preferred_2"></a>
+				<a class="addthis_button_preferred_4"></a>
+				<a class="addthis_button_compact"></a>
+				<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-507ead574673d3ac"></script>
+		<!-- AddThis Button END -->
+	    </div>
+    </div>
+    <div class="artisttop10content" style="width: 250px; float: left; text-align: left; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+            <div style=" padding-bottom: 5px; border: none; border-bottom: 1px dotted #999; margin-left: 5px; margin-bottom: 5px; padding-top: 10px;">
+                <a href="#URL_ARTICLE"><span style="display: list-item; list-style: none; color: #000; font-size: 16px; font-weight: bold; padding-bottom: 7px;">#TITRE</span></a>
+</BOUCLE_toptenone8>
+                <span style=" color: #000; font-size: 13px; display: list-item; list-style: none; padding-bottom: 4px;">#TITRE</span>
+<BOUCLE_toptenones8(ARTICLES){titre_mot=top8}{par date}{inverse}{0,1}>
+                <span style=" color: #666; font-size: 13px; font-weight: normal;">#SOUSTITRE</span>
+</BOUCLE_toptenones8>
+            </div>
+
+
+            <div style=" margin-left: 5px;">
+                <span style="display: list-item; list-style: none; color: #666; font-size: 13px; font-weight: normal; margin-bottom: 10px; border: none; border-left: 4px solid #00BBE4; padding-left: 5px; font-weight: bold;">
+                Izindi Ndirimbo ze
+                </span>
+
+<BOUCLE_song8(RUBRIQUES){titre_mot=topsongs8}>
+	<BOUCLE_songs8(ARTICLES){par date}{inverse}{0,6}{id_rubrique}>
+                <span style="display: inline-block; list-style: none; color: #000; font-size: 13px; font-weight: normal; width: 120px; padding-bottom: 2px;"><span style="color: #00BBE4;">##COMPTEUR_BOUCLE </span> <a href="#URL_ARTICLE">[(#TITRE|couper{10})]</a></span>
+	</BOUCLE_songs8>
+</BOUCLE_song8>
+
+	     </div>
+    </div>
+    <div style="clear: both;"></div>
+</article>
+<!-- RIGHT CONTENT END -->
+</BOUCLE_toptenartist8>
+<!-- **************************************************************************************************************************************************************** -->
+
+<BOUCLE_toptenartist9(RUBRIQUES){titre_mot=top9}{par date}{inverse}> 
+<!-- RIGHT CONTENT START -->
+<article class="artisttop10">
+
+    <div class="artisttop10logo" style="width: 139px; float: left; border: none; border-right: 1px dotted #999;">
+            <div style="background: #00BBE4; font-size: 39px; color: #fff; float: left; width: 50px; height: 80px; vertical-align: middle">9</div>
+<BOUCLE_toptenone9(ARTICLES){titre_mot=top9}{par date}{inverse}{0,1}>
+            <div style="width: 89px; float: left; height: 80px; overflow: hidden;">[<img src="http://igihe.com/IMG/(#LOGO_ARTICLE|fichier)" width="89">]</div>
+            <div style="clear: both;"></div>
+	    <div style="margin-top: 5px;">
+		<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_preferred_1"></a>
+				<a class="addthis_button_preferred_2"></a>
+				<a class="addthis_button_preferred_4"></a>
+				<a class="addthis_button_compact"></a>
+				<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-507ead574673d3ac"></script>
+		<!-- AddThis Button END -->
+	    </div>
+    </div>
+    <div class="artisttop10content" style="width: 250px; float: left; text-align: left; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+            <div style=" padding-bottom: 5px; border: none; border-bottom: 1px dotted #999; margin-left: 5px; margin-bottom: 5px; padding-top: 10px;">
+                <a href="#URL_ARTICLE"><span style="display: list-item; list-style: none; color: #000; font-size: 16px; font-weight: bold; padding-bottom: 7px;">#TITRE</span></a>
+</BOUCLE_toptenone9>
+                <span style=" color: #000; font-size: 13px; display: list-item; list-style: none; padding-bottom: 4px;">#TITRE</span>
+<BOUCLE_toptenones9(ARTICLES){titre_mot=top9}{par date}{inverse}{0,1}>
+                <span style=" color: #666; font-size: 13px; font-weight: normal;">#SOUSTITRE</span>
+</BOUCLE_toptenones9>
+            </div>
+
+
+            <div style=" margin-left: 5px;">
+                <span style="display: list-item; list-style: none; color: #666; font-size: 13px; font-weight: normal; margin-bottom: 10px; border: none; border-left: 4px solid #00BBE4; padding-left: 5px; font-weight: bold;">
+                Izindi Ndirimbo ze
+                </span>
+
+<BOUCLE_song9(RUBRIQUES){titre_mot=topsongs9}>
+	<BOUCLE_songs9(ARTICLES){par date}{inverse}{0,6}{id_rubrique}>
+                <span style="display: inline-block; list-style: none; color: #000; font-size: 13px; font-weight: normal; width: 120px; padding-bottom: 2px;"><span style="color: #00BBE4;">##COMPTEUR_BOUCLE </span> <a href="#URL_ARTICLE">[(#TITRE|couper{10})]</a></span>
+	</BOUCLE_songs9>
+</BOUCLE_song9>
+
+	     </div>
+    </div>
+    <div style="clear: both;"></div>
+</article>
+<!-- RIGHT CONTENT END -->
+</BOUCLE_toptenartist9>
+<!-- **************************************************************************************************************************************************************** -->
+<BOUCLE_toptenartist10(RUBRIQUES){titre_mot=top10}{par date}{inverse}> 
+<!-- RIGHT CONTENT START -->
+<article class="artisttop10">
+
+    <div class="artisttop10logo" style="width: 139px; float: left; border: none; border-right: 1px dotted #999;">
+            <div style="background: #00BBE4; font-size: 39px; color: #fff; float: left; width: 50px; height: 80px; vertical-align: middle">10</div>
+<BOUCLE_toptenone10(ARTICLES){titre_mot=top10}{par date}{inverse}{0,1}>
+            <div style="width: 89px; float: left; height: 80px; overflow: hidden;">[<img src="http://igihe.com/IMG/(#LOGO_ARTICLE|fichier)" width="89">]</div>
+            <div style="clear: both;"></div>
+	    <div style="margin-top: 5px;">
+		<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_preferred_1"></a>
+				<a class="addthis_button_preferred_2"></a>
+				<a class="addthis_button_preferred_4"></a>
+				<a class="addthis_button_compact"></a>
+				<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-507ead574673d3ac"></script>
+		<!-- AddThis Button END -->
+	    </div>
+    </div>
+    <div class="artisttop10content" style="width: 250px; float: left; text-align: left; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+            <div style=" padding-bottom: 5px; border: none; border-bottom: 1px dotted #999; margin-left: 5px; margin-bottom: 5px; padding-top: 10px;">
+                <a href="#URL_ARTICLE"><span style="display: list-item; list-style: none; color: #000; font-size: 16px; font-weight: bold; padding-bottom: 7px;">#TITRE</span></a>
+</BOUCLE_toptenone10>
+                <span style=" color: #000; font-size: 13px; display: list-item; list-style: none; padding-bottom: 4px;">#TITRE</span>
+<BOUCLE_toptenones10(ARTICLES){titre_mot=top10}{par date}{inverse}{0,1}>
+                <span style=" color: #666; font-size: 13px; font-weight: normal;">#SOUSTITRE</span>
+</BOUCLE_toptenones10>
+            </div>
+
+
+            <div style=" margin-left: 5px;">
+                <span style="display: list-item; list-style: none; color: #666; font-size: 13px; font-weight: normal; margin-bottom: 10px; border: none; border-left: 4px solid #00BBE4; padding-left: 5px; font-weight: bold;">
+                Izindi Ndirimbo ze
+                </span>
+
+<BOUCLE_song10(RUBRIQUES){titre_mot=topsongs10}>
+	<BOUCLE_songs10(ARTICLES){par date}{inverse}{0,6}{id_rubrique}>
+                <span style="display: inline-block; list-style: none; color: #000; font-size: 13px; font-weight: normal; width: 120px; padding-bottom: 2px;"><span style="color: #00BBE4;">##COMPTEUR_BOUCLE </span> <a href="#URL_ARTICLE">[(#TITRE|couper{10})]</a></span>
+	</BOUCLE_songs10>
+</BOUCLE_song10>
+
+	     </div>
+    </div>
+    <div style="clear: both;"></div>
+</article>
+<!-- RIGHT CONTENT END -->
+</BOUCLE_toptenartist10>
+

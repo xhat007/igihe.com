@@ -1,0 +1,150 @@
+<BOUCLE_main(ARTICLES){id_article}>
+<html>
+	<head>
+		<title>FESPAD 2013 - #TITRE</title>
+		<link rel="stylesheet" href="js/blueberry.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script src="js/jquery.blueberry.js"></script>
+		<script>
+		$(window).load(function() {
+			$('.blueberry').blueberry();
+		});
+		</script>
+		<script type="text/javascript" src="js/demo.js"></script>
+		<link rel="stylesheet" type="text/css" href="js/shadowboxe.css">
+		<script type="text/javascript" src="js/shadowbox.js"></script>
+		<script type="text/javascript">
+		Shadowbox.init({
+			// a darker overlay looks better on this particular site
+			overlayOpacity: 0.8
+			// setupDemos is defined in assets/demo.js
+		}, setupDemos);
+		</script>
+	</head>
+	<body>	
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+		<div id="fespad">
+			<header id="header">
+			</header>
+			<section id="content">
+				<nav class="nav">
+					<li><a href="#">AHABANZA</a></li>
+					<li><a href="#">GAHUNDA</a></li>
+					<li><a href="#">AMAFOTO</a></li>
+					<li><a href="#">VIDEO</a></li>
+					<li><a href="#">TWANDIKIRE</a></li>
+					<div class="clear"></div>
+				</nav>
+				
+				<aside class="c_all">
+					
+					<div class="carticle">
+						<div class="carticlelogo">
+							<img src="http://igihe.com/IMG/[(#LOGO_ARTICLE)]" style="max-width: 700px" />
+						</div>
+						<div class="carticlesmedia">
+							<!-- AddThis Button BEGIN -->
+							<div class="addthis_toolbox addthis_default_style ">
+							<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+							<a class="addthis_button_tweet"></a>
+							<a class="addthis_button_pinterest_pinit"></a>
+							<a class="addthis_counter addthis_pill_style"></a>
+							</div>
+							<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-512445af674da641"></script>
+							<!-- AddThis Button END -->
+						</div>
+						<div class="carticletexte">
+							<span class="carticletitle inline">#TITRE</span>
+							<span class="carticlecontent inline">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in Voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in Voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+
+<p>ullamco laboris nisi ut aliquip ex ea commodo.consequat. Duis aute irure dolor in reprehenderit in Voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum. consequat. Duis aute irure dolor in reprehenderit in
+Voluptate velit esse cillum dolore eu fugiat nulla
+pariatur.</p> <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+officia deserunt mollit anim id est laborum.consequat. Duis aute irure dolor in reprehenderit in Voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident,</p>
+							</span>
+							<span class="carticletitle inline">
+								<div class="fb-comments" data-href="http://igihe.com/fespad2013" data-width="690" data-num-posts="10"></div>
+							</span>
+						</div>
+					</div>
+					<div class="c3">
+						<div class="socialmedia">
+							<div class="date"><span>19 February 2013</span></div>
+							<div class="media"><span>KEEP IN TOUCH</span></div>
+							<div style="border-top: 1px dashed #999;padding-top: 20px;">			
+								<ul class="soc-list">
+									<li><a target="_blank" class="rss" href="/en/rss">rss</a></li>
+									<li><a target="_blank" class="twitter" href="#">twitter</a></li>
+									<li><a target="_blank" class="facebook" href="#">facebook</a></li>
+									<li><a target="_blank" class="mail" href="#">flickr</a></li>
+								</ul>
+							</div>
+							<div>
+								<span class="inline" style="font-weight: bold; font-size: 14px; color: #333;">SEARCH :</span>
+								<div class="row">								
+									<input id="mail" name="mail" type="text" class="text">
+									<input name="op" type="submit" class="btn-ok" value="OK">
+								</div>
+							</div>
+							<div align="center" class="carticletitle">Related News</div>
+							<BOUCLE_rub(RUBRIQUES){id_rubrique=1633}>
+							<BOUCLE_othernews(ARTICLES){branche}{par date}{inverse}{0,5}>
+								<div class="othernews" style="padding-bottom: 5px;"><a href="#URL_ARTICLE"><img src="http://igihe.rw/IMG/[(#LOGO_ARTICLE|fichier)]" width="222" /></a></div>
+							</BOUCLE_othernews>
+							</BOUCLE_rub>
+						</div>
+					</div>
+					<div class="clear"></div>
+					
+				</aside>
+			</section>
+			<footer id="footer">
+				<div class="footer1"></div>
+				<div class="footer2">
+					<div style="float: left; width: 20%; padding: 20px;">
+						<div style="color: #; padding-bottom: 12px;">Le Festival</div>
+							
+								<li><a href="#">Ahabanza</a></li>
+								<li><a href="#">Gahunda</a></li>
+								<li><a href="#">Amafoto</a></li>
+								<li><a href="#">Amavideo</a></li>
+								<li><a href="#">Twandikire</a></li>
+							
+					</div>
+					<div style="float: left; width: 70%; padding: 20px; padding-right: 0px; padding-bottom: 0px;">
+						<div style="color: #; padding-bottom: 12px;">KEEP IN TOUCH</div>
+							
+								<span><a href="#"><img src="images/face.png"></a></span>
+								<span><a href="#"><img src="images/twi.png"></a></span>
+								<span><a href="#"><img src="images/rss.png"></a></span>
+						<div class="row" style="margin-top: 10px;">								
+									<input id="mail" name="mail" type="text" class="text">
+									<input name="op" type="submit" class="btn-ok" value="OK">
+						</div>	
+						<div style="font-weight: normal; font-size: 14px; margin-top: 10px;">&copy; 2013. All rights reserved.</div>
+						<div style="padding: 5px; margin-top: 40px;" align="right"><img src="images/igiheltd.png" /></div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
+</BOUCLE_main>

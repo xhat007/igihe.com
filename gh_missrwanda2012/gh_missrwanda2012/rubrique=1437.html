@@ -1,0 +1,198 @@
+<BOUCLE_main(RUBRIQUES){id_rubrique}>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>IGIHE Miss Rwanda 2012</title>
+<link rel="stylesheet" type="text/css" href="http://www.igihe.com/#CHEMIN{'igihe_scripts/gh_missrwanda2012/css/style.css'}" />
+        <link rel="stylesheet" type="text/css" href="http://www.igihe.com/#CHEMIN{'igihe_scripts/gh_missrwanda2012/kwery/css/demo.css'}" />
+        <link rel="stylesheet" type="text/css" href="http://www.igihe.com/#CHEMIN{'igihe_scripts/gh_missrwanda2012/kwery/css/style.css'}" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+	<style type="text/css" media="screen">
+<!--
+a:link {
+	color: dcb55c;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: dcb55c;
+}
+a:hover {
+	text-decoration: underline;
+	color: #EEDCB0;
+}
+a:active {
+	text-decoration: none;
+	color: dcb55c;
+}
+#large_box {width:800; height: auto;}
+
+-->
+        </style><noscript>
+			<link rel="stylesheet" type="text/css" href="http://www.igihe.com/#CHEMIN{'igihe_scripts/gh_missrwanda2012/css/noscript.css'}" />
+		</noscript>
+
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=344424848909451";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="miss" align="center">
+    <div style="background: url(http://www.igihe.com/#CHEMIN{'igihe_scripts/gh_missrwanda2012/images/bg_h2.jpg'}) repeat-x;">
+    <img src="http://www.igihe.com/#CHEMIN{'igihe_scripts/gh_missrwanda2012/images/bg_header.png'}"></div>
+  <div id="page" style=" margin-top: -40px;">
+    <div id="header"></div>
+    <div id="content" style="background:url(http://www.igihe.com/#CHEMIN{'igihe_scripts/gh_missrwanda2012/images/bg.png)'};">
+	  <div id="slide">
+	              <div class="wrapper">
+                <div id="ei-slider" class="ei-slider">
+                    <ul class="ei-slider-large">
+                    <BOUCLE_slideshow(ARTICLES){titre_mot=miss_slideshow}{par date}{inverse}{0,15}>
+						<li>
+                            [<img src="(#LOGO_ARTICLE|image_reduire{1070,0})" alt="#TITRE" width="1070"/>]
+                            <div class="ei-title">
+                                <h2>#TITRE</h2>
+                                <h3>#SOUSTITRE</h3>
+                            </div>
+                        </li>
+                    </BOUCLE_slideshow>
+
+                    </ul><!-- ei-slider-large -->
+                    <ul class="ei-slider-thumbs">
+                        <li class="ei-slider-element">Current</li>
+                    <BOUCLE_slideshow_thumbs(ARTICLES){titre_mot=miss_slideshow}{par date}{inverse}{0,15}>
+						<li><a href="#">#TITRE</a>[<img src="(#LOGO_ARTICLE|image_reduire{150,59})" alt="#TITRE" width="150" height="59" />]</li>
+                    </BOUCLE_slideshow_thumbs>
+                    
+                    </ul><!-- ei-slider-thumbs -->
+                </div><!-- ei-slider -->
+            </div><!-- wrapper -->
+      </div>
+		<script type="text/javascript" src="http://www.igihe.com/#CHEMIN{'igihe_scripts/gh_missrwanda2012/kwery/js/jquery170.min.js'}"></script>
+        <script type="text/javascript" src="gh_missrwanda2012/kwery/js/jquery.eislideshow.js'}"></script>
+        <script type="text/javascript" src="gh_missrwanda2012/kwery/js/jquery.easing.1.3.js'}"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#ei-slider').eislideshow({
+					animation			: 'center',
+					autoplay			: true,
+					slideshow_interval	: 3000,
+					titlesFactor		: 0
+                });
+            });
+			
+        </script>
+
+    
+	  <div>
+	    <div id="allmiss"></div>
+	    <div id="allcontent">
+	      <div id="content1">
+              <p align="center">VOTING ONLINE </p>
+              
+         <BOUCLE_missvoting(ARTICLES){titre_mot=miss_profile}{par date}>     
+              <div id="divi" align="center" >
+                <span class="name">#TITRE</span>
+		[<img src="(#LOGO_ARTICLE|image_reduire{150,59})" alt="#TITRE" width="157" height="109">]		
+                <span class="other">RATING  95 %</span>
+                <span class="other">VOTE</span>		
+              </div>	
+          </BOUCLE_missvoting>	
+
+            <div id="content1_content">
+              <p>List of Sponsors </p>
+              <p style="padding-top: 10px; font-size: 13px; padding: 5px; text-align:left"><a href="#">Ku butumire bwa Perezida</a> wa Repubulika y\92u Rwanda, Paul Kagame, ikipi y\92umupira w\92amaguru Yanga Africans yo muri Tanzaniya imaze icyumweru iri mu Rwanda aho yitegura kubonana na we no gukina imikino ya gishuti.</p>
+              <p>&nbsp;</p>
+            </div>
+            <div id="content1_content">
+            
+         <BOUCLE_missprogram(ARTICLES){titre_mot=miss_program}{par date}{inverse}>     
+              <p>Miss rwanda Program </p>
+              <p style="padding-top: 10px; font-size: 13px; padding: 5px; text-align:left"><a href="#">#TITRE</a>  #TEXTE</p>
+              <p>&nbsp;</p>
+          </BOUCLE_missprogram>	
+              
+            </div>
+
+		  </div>
+          <div id="content2">
+            <div id="miss_articles">
+              <p>IN THE MEDIA </p>
+              
+         <BOUCLE_inthemedia(ARTICLES){titre_mot=miss_inthemedia}{par date}{inverse}{0,6}>     
+              <div id="thediv">
+                <div id="c_date">MISS Rwanda 2012</div>
+                    <div id="c_logo">[<img src="(#LOGO_ARTICLE|image_reduire{92,0})" alt="#TITRE" width="92" />]</div>
+                        <div id="c_texte">
+                        <span class="c_titre">#TITRE</span>
+                        <div id="wrapper">
+                            <div id="text">
+                            <p>[(#TEXTE|couper{250})] <a href="#URL_ARTICLE">Read More</a></p>
+                            </div>
+                        </div>
+			  	        </div>
+              </div>
+          </BOUCLE_inthemedia>	
+
+            <div id="miss_banner">
+              <p>Miss rwanda Participant </p>
+              <div id="thediv">
+                 <BOUCLE_participant(ARTICLES){titre_mot=miss_participant}{par date}{inverse}{0,15}>     
+                        <div id="cp_logo">[<img src="(#LOGO_ARTICLE|image_reduire{92,0})" alt="#TITRE"/>]</div>
+                 </BOUCLE_participant>	
+			  </div>
+            </div>
+              </div>
+            <div id="miss_banner">
+              <p>Miss rwanda Interviews </p>
+              
+            <BOUCLE_interviews(ARTICLES){titre_mot=miss_interviews}{par date}{inverse}{0,15}>     
+			    <div id="c2_right">
+			      <div id="c2_logo"><img src="(#LOGO_ARTICLE|image_reduire{50,0})" alt="#TITRE" width="50" height="72"></div>
+			      <div id="c2_texte">
+			        <span><a href="#URL_ARTICLE"><strong>#TITRE</strong></a></span>
+			        <span>#SOUSTITRE</span>			        </div>
+		      </div>
+            </BOUCLE_interviews> 
+              
+</div>
+          </div>
+          <div id="content3">
+            <div id="content3_content">
+
+
+            </div>
+            <div id="content3_content">
+              <p>FACEBOOK Friends</p>
+			  <div class="fb-like-box" data-href="http://www.facebook.com/pages/MissRwanda2012" data-width="238" data-height="542" data-colorscheme="dark" data-show-faces="true" data-border-color="black" data-stream="true" data-header="false"></div>
+              <p><img src="gh_missrwanda2012/images/facebook.jpg" width="240" height="555"><br /><br /> <img src="http://www.igihe.com/#CHEMIN{'igihe_scripts/gh_missrwanda2012/images/covergroup.gif'}" width="230" height="150" style="margin-top: -10px;"></p>
+            </div>
+          </div>
+		  
+        <div id="banner" style=" width: 990px; height: 158px; background: url(http://www.igihe.com/#CHEMIN{'igihe_scripts/gh_missrwanda2012/images/webbanner.gif'}) no-repeat center bottom, #000; margin-left: -5px;"></div>
+          </div>
+    </div></div>
+	  <div id="footer"></div>
+  </div>
+    <div style="background: url(http://www.igihe.com/#CHEMIN{'igihe_scripts/gh_missrwanda2012/images/bg_f1.png'}) no-repeat center; height: 164px;"></div>
+</div>
+	<!--<script type="text/javascript" src="zoom/jquery/js/jquery126.min.js"></script>
+	<script type="text/javascript" src="zoom/jquery/js/fancyzoom.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+				$(document).ready(function() {
+			$('div.photo a').fancyZoom({scaleImg: true, closeOnClick: true});
+			$('#medium_box_link').fancyZoom({width:400, height:300});
+			$('#large_box_link').fancyZoom();
+			$('#flash_box_link').fancyZoom();
+		});
+	</script>-->
+</div>
+</body>
+</html>
+</BOUCLE_main>

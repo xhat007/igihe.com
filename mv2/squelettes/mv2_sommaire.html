@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>IGIHE.com - Mobile Version</title>
+      <meta name="generator" content="Bootply" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/mobile.css" rel="stylesheet">
+      <link href="css/menu.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/bootswatch.min.css">
+      <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <!-- CSS code from Bootply.com editor -->
+      <style type="text/css">
+      </style>
+      <script>
+         var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-23019901-1']);
+          _gaq.push(['_setDomainName', "bootswatch.com"]);
+         _gaq.push(['_setAllowLinker', true]);
+          _gaq.push(['_trackPageview']);
+         
+         (function() {
+           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+         
+      </script>
+      <style>
+         #myList .news_list{ display:none;
+         }
+         #loadMore {
+         color:#005aa2;
+         cursor:pointer;
+         }
+         #loadMore:hover {
+         color:#005aa2;
+         }
+         #showLess {
+         color:#005aa2;
+         cursor:pointer;
+         }
+         #showLess:hover {
+         color:#005aa2;
+         }
+      </style>
+   </head>
+   <!-- HTML code from Bootply.com editor -->
+   <body  >
+      <!-- HEADER 
+         =================================-->
+      <div class="container" style="border:0px solid red;height:120px;margin-top:0px;padding:0px 0px;">
+         <div class="row" style="padding:0px;margin:0px;width:100%;">
+            <div class="col-lg-12" style="padding:0px;margin:0px;">
+               <div style="border:0px solid red;background-image:url(images/header.jpg);background-size: 100% 100%;height:138px;background-position:100%;">
+                  <center><img src="images/logo.png"  height="105"  width="240" align="center" style="margin:auto;"></center>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container" style="padding:0px 15px;border:0px solid red;">
+         <div class="row" style="border:0px solid red;margin-top:-22px;padding:2px 5px;">
+            <div class="col-xs-6">
+               <div class="language">
+                  <a href="#"><img src="images/kn.png" width="30px"></a>
+                  <a href="#"><img src="images/bi.png" width="30px"></a>
+                  <a href="#"><img src="images/en.png" width="30px"></a>
+                  <a href="#"><img src="images/fr.png" width="30px"></a>
+               </div>
+            </div>
+            <div class="col-xs-6" style="padding-bottom:4px;">
+               <div class="search" style="margin-top:-3px;">
+                  <form method="" style="">
+                     <input type="text" placeholder="Shakisha..." class="search" id="searching" name="">
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container" style="padding:0px 0px;margin-top:-2px;border:0px solid red;">
+         <div class="row" style="padding:0px 0px;margin:0px;">
+            <div class="col-lg-12" style="border:0px solid red;margin:0px;padding:0px 0px;border-bottom:2px solid #007ac1;border-top:2px solid #007ac1;">
+               <div id='cssmenu'>
+                  <ul>
+                     <li><a href="#URL_SITE_SPIP/mv2" style="text-transform:capitalize;">Ahabanza</a></li>
+                     <BOUCLE_gh_ibirimoside(RUBRIQUES){id_parent=0}{0,20}{titre_mot=IbirimoSide}>
+			<li>
+				<a href="spip.php?page=rubrique&amp;id_rubrique=#ID_RUBRIQUE" style="text-transform:capitalize;">#TITRE</a>
+			</li>
+		     </BOUCLE_gh_ibirimoside> 
+		 </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /header container-->
+      <!-- CONTENT
+         =================================-->
+      <div class="container" style="border:0px solid red;padding:0px 15px;margin-top:2px;margin-left:0px;margin-right:0px;background-color:#f8f8f8;">
+         <div class="row" style="margin:0px -15px;padding:0px;">
+            <div class="col-lg-12" style="padding:0px 0px;border:0px solid red;margin:0px;">
+               <div class="top_banner">
+                  <a href="https://play.google.com/store/apps/details?id=com.mobit.igihe&hl=fr" target="_blank">
+                      <img src="images/banner1.png" width="100%" style="max-height:150px;height:auto;">
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="row" style="padding:0px;border:0px solid red;margin-top:1px;margin-bottom:0px;">
+            <div class="col-lg-12" style="margin:0px;padding:0px;border:0px solid red;">
+               <div style="margin:0px auto;max-width:100%;">
+                  <!-- Insert to your webpage where you want to display the slider -->
+                  <div id="amazingslider-1" style="display:block;position:relative;margin:3px auto 3px;">			
+			<ul class="amazingslider-slides" style="display:none;">
+			    <BOUCLE_gh_highlightsthumbs10(ARTICLES){tout}{doublons xx}{0,6}{titre_mot=HomeHighlights}{par date}{inverse}>
+				<li><img src="http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]" alt="<a href='spip.php?page=article&amp;id_article=#ID_ARTICLE' style='color:#fff;'>[(#TITRE|couper{60, '...'})]</a>" /></li>
+			    </BOUCLE_gh_highlightsthumbs10>				
+				
+			</ul>
+			<ul class="amazingslider-thumbnails" style="display:none;">
+				<BOUCLE_gh_highlightsthumbs20(ARTICLES){tout}{doublons xx}{0,6}{titre_mot=HomeHighlights}{par date}{inverse}>
+				<li><img src="http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]" /></li>
+			      </BOUCLE_gh_highlightsthumbs20>
+			</ul>
+			<div class="amazingslider-engine" style="display:none;"><a href="http://amazingslider.com">JavaScript Slider</a></div>
+		</div>
+                  <!-- End of body section HTML codes -->
+               </div>
+            </div>
+         </div>
+         <div class="row"  style="padding:2px 2px;margin:0px -15px;">
+            <BOUCLE_gh_highlightsthumbs1(ARTICLES){tout}{doublons xx}{0,1}{titre_mot=HomeHighlights}{par date}{inverse}>
+            <div class="col-lg-12"  style="padding:0px;">
+               <img src="http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]" width="100%" style="max-height:300px;height:auto;">
+               <div class="main_title" style="">
+                  <a href="spip.php?page=article&amp;id_article=#ID_ARTICLE">[(#TITRE|couper{60, '...'})]</a>
+               </div>
+            </div>
+            </BOUCLE_gh_highlightsthumbs1>
+         </div>
+         
+         <div class="row" style="margin:-5px -15px;">
+            
+            <div class="col-lg-12" style="padding:0px;">
+               <div id="myList">
+               	  <BOUCLE_gh_highlightsthumbs2(ARTICLES){tout}{doublons xx}{0,61}{titre_mot=HomeNews}{par date}{inverse}>                  
+                  <div class="news_list">
+                     <div class="col-xs-4" style="border:0px solid red;padding:0px;">
+                        <img src="http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]" width="120px" height="95px" style="max-height:95px;">
+                        <div class="arrow">
+                           <center>
+                           <BOUCLE_combien1(FORUMS) {id_article} {plat}>
+				#TOTAL_BOUCLE
+			   </BOUCLE_combien1>
+				0				
+			   <//B_combien1>
+			   </center>	
+                        </div>
+                     </div>
+                     <div class="col-xs-8">
+                        <a href="spip.php?page=article&amp;id_article=#ID_ARTICLE">[(#TITRE|couper{55, '...'})]</a><br>
+                        
+                     </div>
+                  </div>
+                  </BOUCLE_gh_highlightsthumbs2>
+                  
+               </div>
+            </div>
+         </div>
+         <div class="row"  style="padding:7px;">
+            <div class=" col-lg-12 col-sm-12" style="background:#e6ebef; color:#005793; font-size:18px; padding:2px;">
+               <center>
+                  <div id="loadMore" style="border-bottom:1px solid #a2a2a2;margin-bottom:8px;padding-bottom:4px;padding-top:4px;">Kanda hano usome izindi nkuru</div>
+                  <div id="showLess" style="padding-top:2px;padding-bottom:4">Hisha izindi nkuru</div>
+               </center>
+            </div>
+         </div>
+         <div class="row" style="padding:7px;">
+            <div class="col-lg-12">
+               <a href="https://play.google.com/store/apps/details?id=com.mobit.igihe&hl=fr" target="_blank">
+               	   <img src="images/banner2.png" width="100%" height="auto" style="border-radius:10px;">
+               </a>
+            </div>
+         </div>
+         
+         
+         
+         <div class="row" style="margin-top:5px;border:0px solid red;">
+            <div class="col-lg-12" style="background:#;padding:5px; color:#2b7bda; font-size:16px; font-weight:bold;padding-left:13px;">INKURU ZICUKUMBUYE</div>
+            
+            <BOUCLE_gh_irambuye(ARTICLES){tout}{0,2}{titre_mot=HomeIrambuye}{par hasard}>
+            <div class="col-xs-6" style="padding:0px 2px;">
+               <div class="izicukumbuye">
+                  <img src="http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]" width="220px" height="195px" style="max-height:195px;">
+                  <div class="arrow">
+                    <center>
+			<BOUCLE_combien3(FORUMS) {id_article} {plat}>
+				#TOTAL_BOUCLE
+			</BOUCLE_combien3>
+				0				
+			<//B_combien3>	
+		    </center>
+                  </div>
+                  <div style="padding-left:5px;border:0px solid red;"><a href="spip.php?page=article&amp;id_article=#ID_ARTICLE">[(#TITRE|couper{40, '...'})]</a></div>
+               </div>
+            </div>
+            </BOUCLE_gh_irambuye>
+         </div>
+         <div class="row" style="padding:7px;margin-top:0px;border:0px solid red;">
+            <div class="col-lg-12" style="margin-top:15px;">
+            	<a href="https://play.google.com/store/apps/details?id=com.mobit.igihe&hl=fr" target="_blank">
+               	    <img src="images/banner3.png" width="100%" height="auto" style="border-radius:10px;">
+               	</a>
+            </div>
+         </div>
+         <div class="row" style="padding:2px 0px;border:0px solid red;">
+            <div class="col-lg-12" style="padding-top:4px;padding-bottom:4px;color:#2b7bda; font-size:16px; font-weight:bold;padding-left:13px;">
+               ADVERTORIALS
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-12" style="padding:0px;">
+               <BOUCLE_gh_highlightsthumbs3(ARTICLES){tout}{doublons xx}{id_rubrique=1410}{0,5}{par date}{inverse}>
+                                 
+                  <div class="news_list">
+                     <div class="col-xs-4" style="border:0px solid red;padding:0px;">
+                        <img src="http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]" width="120px" height="95px" style="max-height:95px;">
+                        <div class="arrow">
+                           <center>
+			    <BOUCLE_combien4(FORUMS) {id_article} {plat}>
+				#TOTAL_BOUCLE
+			    </BOUCLE_combien4>
+				0				
+			    <//B_combien4>	
+		           </center>
+                        </div>
+                     </div>
+                     <div class="col-xs-8">
+                        <a href="spip.php?page=article&amp;id_article=#ID_ARTICLE">[(#TITRE|couper{55, '...'})]</a><br>
+                        <i>[(#DATE*|date_relative)]</i>
+                     </div>
+                  </div>
+               </BOUCLE_gh_highlightsthumbs3>
+               
+               
+            </div>
+         </div>
+         <div class="row" style="padding:2px 0px;border:0px solid red;">
+            <div class="col-lg-12" style="padding:0px;">
+               <img src="images/img1.png" width="100%" height="auto" style="border-radius:0px;">
+            </div>
+         </div>
+         <!--  ############################################### Currency Exchange +++++++++++++++++++++++++++++++++++++-->
+         <div class="row" style="padding:8px 4px;border:0px solid red;background-color:#1562b6;color:#fff;font-weight:bold;font-size:18px;">
+            <div class="col-xs-12">FOREX</div>
+         </div>
+         <div class="row" style="padding:4px;border:0px solid red;background-color:#c4c4c4;color:#000;font-weight:bold;">
+            <div class="col-xs-4">DEVIZE</div>
+            <div class="col-xs-4">Igura</div>
+            <div class="col-xs-4">Igurisha</div>
+         </div>
+         <div class="row" style="padding:4px;border:0px solid red;background-color:#1562b6;color:#fff;font-weight:bold;">
+            <div class="col-xs-4">USD</div>
+            <div class="col-xs-4">684,3137</div>
+            <div class="col-xs-4">690,3137</div>
+         </div>
+         <div class="row" style="padding:4px;border:0px solid red;background-color:#c4c4c4;color:#000;font-weight:bold;">
+            <div class="col-xs-4">EUR</div>
+            <div class="col-xs-4">684,3137</div>
+            <div class="col-xs-4">684,3137</div>
+         </div>
+         <div class="row" style="padding:4px;border:0px solid red;background-color:#1562b6;color:#fff;font-weight:bold;">
+            <div class="col-xs-4">GBP</div>
+            <div class="col-xs-4">684,3137</div>
+            <div class="col-xs-4">684,3137</div>
+         </div>
+         <div class="row" style="height:13px;border:0px solid red;background-color:#c4c4c4;color:#fff;font-weight:bold;">
+            <div class="col-xs-12"></div>
+         </div>
+         <div class="row" style="padding:2px;border:0px solid red;background-color:#1562b6;color:#fff;font-weight:bold;">
+            <div class="col-xs-12"><a href="#" style="float:right;color:#f5f5f5;font-size:12px;text-decoration:underline;">Andi madovize</a></div>
+         </div>
+         <div class="row" style="padding:7px;">
+            <div class="col-lg-12">
+               <center>
+                  <div class="search_footer" style="margin:auto;">
+                     <form method="" style="">
+                        <input type="text" placeholder="Shakisha..." id="searching" name="">
+                     </form>
+                  </div>
+               </center>
+            </div>
+         </div>
+         <!--  ############################################### ad5+++++++++++++++++++++++++++++++++++++-->
+         <div class="row" style="padding:0px 0px;">
+            <div class="col-lg-12" style="padding:0px;">
+            	<a href="https://play.google.com/store/apps/details?id=com.mobit.igihe&hl=fr" target="_blank">
+               		<img src="images/banner4.png" width="100%" height="auto" style="border-radius:0px;">
+               	</a>
+            </div>
+         </div>
+         <!--  ############################################### end of ad5 +++++++++++++++++++++++++++++++++++++-->
+         <!--  ############################################### footer 1 +++++++++++++++++++++++++++++++++++++-->
+         <div class="row" style="padding:0px 0px;">
+            <div class="col-lg-12" style="padding:0px;">
+            <a href="https://play.google.com/store/apps/details?id=com.mobit.igihe&hl=fr" target="_blank">
+               <img src="images/download.png" width="100%" height="auto" style="border-radius:0px;">
+            </a>
+            </div>
+         </div>
+         <!--  ############################################### end of footer 1 +++++++++++++++++++++++++++++++++++++-->
+         <div class="row" style="padding:0px 5px; background-color:#1f1f1f;border:0px solid red;">
+            <div class="col-xs-7" style="padding:0px; border:0px solid red;">
+               <center style="padding-top:30px;right:0px;"><img src="images/logo1.png" width="135px"></center>
+               <center style="padding:4px;font-size:14px;font-weight:normal;color:#807e7f;">2014 &copy. All rights reserved </center>
+            </div>
+            <div class="col-xs-5" style="color:#fff;padding-top:22px;border:0px solid red;text-decoration:none;font-size:12px;">
+               <div class="footer_down">
+				   <a href="" style="text-decoration:none;color:#7e7c7d;right:0px;">Abo Turibo</a><br>
+				   <a href="" style="text-decoration:none;color:#7e7c7d;">Twandikire</a><br>
+				   <a href="" style="text-decoration:none;color:#7e7c7d;">Amamaza</a><br>
+			   </div>			
+            </div>
+         </div>
+      </div>
+      <!-- /CONTENT ============-->
+      <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script type='text/javascript' src="js/bootstrap.min.js"></script>
+      <script src="js/bootswatch.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="sliderengine/amazingslider.js"></script>
+      <script src="sliderengine/initslider-1.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function () {
+         size_li = $("#myList .news_list").size();
+         x=5;
+         $('#myList .news_list:lt('+x+')').show();
+         $('#loadMore').click(function () {
+         x= (x+10 <= size_li) ? x+10 : size_li;
+         $('#myList .news_list:lt('+x+')').show();
+         });
+         $('#showLess').click(function () {
+         x=(x-10<0) ? 5 : x-10;
+         $('#myList .news_list').not(':lt('+x+')').hide();
+         });
+         });
+      </script>
+      <!-- JavaScript jQuery code from Bootply.com editor -->
+      <script type='text/javascript'>
+         $(document).ready(function() {
+         
+             
+         
+         });
+         
+      </script>
+   </body>
+</html>

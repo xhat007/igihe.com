@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>IGIHE Special Coverage -  CHOGM 2011</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="pragma" content="cache" />
+	<meta http-equiv="content-language" content="en-US" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta http-equiv="robots" content="all" />
+	<meta name="revisit-after" content="1" />
+	<meta http-equiv="window-target" content="_top" />
+	<meta name="author" content="dR Tsuki" />
+	<meta name="expires" content="never" />
+	<meta name="rating" content="general" />
+
+	<!-- Coverage -->
+<script type="text/javascript" src="#DOSSIER_SQUELETTE/igihe_scripts/gh_coverage_chogm/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="#DOSSIER_SQUELETTE/igihe_scripts/gh_coverage_chogm/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.3/jquery-ui.min.js" ></script>
+<script type="text/javascript" src="#DOSSIER_SQUELETTE/igihe_scripts/gh_coverage_chogm/coin-slider.min.js"></script>
+<script type="text/javascript" src="#DOSSIER_SQUELETTE/igihe_scripts/gh_coverage_chogm/slide.js"></script> 
+
+<link rel="stylesheet" href="#DOSSIER_SQUELETTE/igihe_scripts/gh_coverage_chogm/coin-slider-styles.css" type="text/css" />
+<link rel="stylesheet" href="#DOSSIER_SQUELETTE/igihe_scripts/gh_coverage_chogm/slide.css" type="text/css" media="screen" />
+
+<style>
+.coin-slider { overflow: hidden; zoom: 1; position: relative; }
+.coin-slider a{ text-decoration: none; outline: none; border: none; }
+.cs-buttons { font-size: 0px; padding: 10px; float: left; }
+.cs-buttons a { margin-left: 5px; height: 10px; width: 10px; float: left; border: 1px solid #B8C4CF; color: #B8C4CF; text-indent: -1000px; }
+.cs-active { background-color: #B8C4CF; color: #FFFFFF; }
+.cs-title { width: 520px; padding: 10px; background-color: #000000;  font-family:arial;	color:#ffffff;	font-weight:bold; font-size:12px;}
+.cs-prev, 
+.cs-next { background-color: #000000; color: #FFFFFF; padding: 0px 10px; }
+</style>
+	<!-- End Coverage -->
+
+
+
+</head>
+<body style="text-align:center;background-image:url(#DOSSIER_SQUELETTE/igihe_scripts/gh_coverage_chogm/chogm11_bg.jpg);background-repeat:repeat-x;background-position:top center;">
+
+			<div class="left"  style="text-align:center;background-image:url(#DOSSIER_SQUELETTE/igihe_scripts/gh_coverage_chogm/chogm11_bg.jpg);background-repeat:repeat-x;background-position:top center;">
+
+<div id="rd_content">
+
+	<!-- Logo&Slides -->
+	<div id="rd_left">
+	
+		<div id="rd_logo"><a href="http://www.chogm2011.org/" target="_blank"><img src="#DOSSIER_SQUELETTE/igihe_scripts/gh_coverage_chogm/chogm11_logo.png" width="520" height="122" border="0" alt="CHOGM 2011"></a></div>
+		<div id="rd_slideshow">
+
+<!-- SLIDES -->
+		<div id="rf11">
+<BOUCLE_gh_chogm11_slides(ARTICLES){tout}{doublons yy}{0,1}{titre_mot=CoverageCHOGM_Slideshow}{par date}{inverse}>
+<BOUCLE_gh_chogm11_slides_img(DOCUMENTS){id_article}{extension==jpg|gif|png}>
+			<a href="#URL_ARTICLE" target="_parent"><img src="[(#URL_DOCUMENT||image_reduire{0,255}||image_recadre{520,255,center top, #000000}|extraire_attribut{src})]" border="0" alt="[(#TITRE|couper{110,'...'}|supprimer_tags)]" />
+			[<span>(#TITRE|couper{110,'...'}|supprimer_tags)</span>]</a>
+</BOUCLE_gh_chogm11_slides_img>
+</BOUCLE_gh_chogm11_slides>
+		</div>
+<script>$(document).ready(function() {
+	$('#rf11').coinslider({ hoverPause: false });
+});
+</script>
+<!-- End SLIDES -->
+
+		</div>
+	</div>
+	<!-- End Logo&Slides -->
+
+
+	<!-- News -->
+	<div id="rd_right">
+
+		<div id="rd_idparis"><img src="#DOSSIER_SQUELETTE/igihe_scripts/gh_coverage_chogm/chogm11_dates.png" border="0" alt=""></div>
+		<div id="rd_newstitle">AMAKURU</div>
+		<div id="rd_newsscroller">
+		
+<BOUCLE_gh_chogm11_news(ARTICLES){tout}{par date}{inverse}{titre_mot=CoverageCHOGM_Article}>
+<div id="rd_newscontent">
+<img src="[(#LOGO_ARTICLE||image_reduire{0,65}||image_recadre{80,65,center top}|extraire_attribut{src})]" width="80" height="65" border="0" id="rd_newsimg" align="left">
+[(#DATE|date_relative)]<br>
+<a href="#URL_ARTICLE" class="rd_news"  target="_parent">[(#TITRE|couper{350,'...'})]</a>
+</div>
+</BOUCLE_gh_chogm11_news>
+
+		</div>
+
+	</div>
+	<!-- End News -->
+
+</div>
+
+</body>
+</html>

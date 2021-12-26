@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IGIHE - Amakuru Slides</title>
+<link href="#DOSSIER_SQUELETTE/igihe_scripts/amakuru_slide.css" rel="stylesheet" type="text/css"></link>
+<script type="text/javascript" src="#DOSSIER_SQUELETTE/igihe_scripts/jquery.js"></script>
+<script type="text/javascript" src="#DOSSIER_SQUELETTE/igihe_scripts/amakuru_slide.js"></script>
+</head>
+    <body >
+        <script language="javascript" type="text/javascript">
+
+            $(function() {
+				$("#amakuru_slide3").amakuru_slide({
+                    scroller_title_show: 'enable',
+                    scroller_time_interval: '3000',
+                    scroller_window_background_color: "none",
+                    scroller_window_padding: '2',
+                    scroller_border_size: '0',
+                    scroller_border_color: '#9C6',
+                    scroller_images_width: '226',
+                    scroller_images_height: '180',
+                    scroller_title_color: 'black',
+                    scroller_show_count: '5',
+                    directory: 'images'
+                });
+            });
+        </script>
+
+
+
+               <div id="amakuru_slide3" class="amakuru_slide">
+                   <div class="amakuru_slide_mask">
+                       <ul>
+
+<BOUCLE_gh_amnews_imgs(ARTICLES){tout}{doublons ama}{0,10}{titre_mot=HomeHighlights}{par date}{inverse}>
+<li><a href="#URL_ARTICLE" title="#TITRE" target="_parent">[<img src="(#LOGO_ARTICLE||image_reduire{226,0}||image_recadre{226,0,top center,'#000000'}|extraire_attribut{src})" alt="#TITRE" />]</a></li>
+</BOUCLE_gh_amnews_imgs>
+
+                       </ul>
+                   </div>
+                   <ul class="amakuru_slide_nav">
+                       <li><img src="#DOSSIER_SQUELETTE/igihe_imgs/gh_am_icon_prev.gif" width="25" height="43" alt="<" /></li>
+                       <li><img src="#DOSSIER_SQUELETTE/igihe_imgs/gh_am_icon_next.gif" width="25" height="43" alt=">" style="margin-left:8px;" /></li>
+                   </ul>
+                   <div style="clear: both"></div>
+               </div>
+
+    </body>
+</html>

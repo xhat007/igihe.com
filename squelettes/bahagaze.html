@@ -1,0 +1,77 @@
+<style type="text/css">
+	
+	.newsline{display: inline-block; width: 1px;   background: #1660c1; padding: 30px 0; color: #1660c1;}
+
+	#bahagaze{position: relative;  width: 339px;   margin: 0 auto; }
+	.gh_bahagaze-title{position: absolute; margin-top: -15px; background: #fe9a00; color: white; font-size: 18px; font-family: Arial; font-weight: bold; padding: 5px;}
+	.gh_bahagaze-ok-thumbs{position: absolute; width: 40px; height: 40px; background: url(squelettes/igihe_imgs/good2.png) no-repeat;  background-size: 30px 35px; top: 2px; right: 2px; padding: 2px;}
+	.gh_bahagaze-bad-thumbs{position: absolute; width: 40px; height: 40px; background: url(squelettes/igihe_imgs/bad2.png) no-repeat;  background-size: 30px 35px; top: 2px; right: 2px; padding: 2px;}
+
+	.bahagaze-content-ok{height: 120px; padding: 20px 5px 5px 5px; background: rgba(88, 142, 30, 0.84); color: #fff; font-size: 18px; }
+	.bahagaze-content-ok td{padding: 30px 5px 5px 10px;}
+	.person_title{font-size: 0.90em;font-weight: bold;}
+	.person_descr p{font-size: 0.8em;  font-family: Arial}
+	.bahagaze-content-ok a, .bahagaze-content-bad a{color: #fff; -webkit-transition: all 1.1s ease;}
+	.bahagaze-content-ok a:hover, .bahagaze-content-bad a:hover{color: #000; -webkit-transition: all 1.5s ease;}
+	.bahagaze-content-ok img{border: 2px solid #fff; border-radius: 70px;}
+	.bahagaze-content-bad{height: 120px; padding: 20px 5px 5px 5px; background: rgba(187, 32, 32, 0.84); color: #fff; font-size: 18px; }
+	.bahagaze-content-bad td{padding: 30px 5px 5px 10px;}
+	.bahagaze-content-bad img{border: 2px solid #fff; border-radius: 70px;}
+</style>
+<div class="grid_7" id="box">
+<a href="#" class="box_title">BAHAGAZE GUTE?</a>
+<div style="padding-top: 15px; width: 339px; margin: 0 auto;">
+	<div> 
+	<BOUCLE_ARTICLEBAHAGAZE(ARTICLES){titre_mot=bahagaze_neza}{par date}{inverse}{0,1}>
+	<div id="bahagaze" style="background: url([(#LOGO_ARTICLE|image_reduire{339,*}|extraire_attribut{src})]) no-repeat center; background-size: 339px 220px; ">
+	
+	<div class="gh_bahagaze-title">Bahagaze neza</div>
+	<div class="gh_bahagaze-ok-thumbs"></div>
+	<table class="bahagaze-content-ok">
+		<tr>
+			<td><img src="[(#LOGO_ARTICLE|image_reduire{120,120}|image_recadre{70,70}|extraire_attribut{src})]" ></td>
+			<td> 
+					<B_virt>
+						<BOUCLE_virt(ARTICLES) {id_article} {virtuel == ^http://}>
+							<div class="person_title"><a href="#URL_ARTICLE">#TITRE</a></div>
+							<div class="person_descr"><a href="#URL_ARTICLE">#TEXTE</a></div>
+						</BOUCLE_virt>
+					</B_virt>
+						<div class="person_title">#TITRE</div>
+						<div class="person_descr">#TEXTE</div>
+					<//B_virt> 
+			</td>
+		<tr>
+	</table>
+	</div>
+	</BOUCLE_ARTICLEBAHAGAZE> 
+	</div>
+	
+	<div style="margin-top: 35px; margin-bottom: 30px;"> 
+	
+	<BOUCLE_ARTICLEBAHAGAZE2(ARTICLES){titre_mot=bahagaze_nabi}{par date}{inverse}{0,1}>
+	<div id="bahagaze" style="background: url([(#LOGO_ARTICLE|image_reduire{339,*}|extraire_attribut{src})]) no-repeat center; background-size: 339px 220px; ">
+	
+	<div class="gh_bahagaze-title">Bahagaze nabi</div>
+	<div class="gh_bahagaze-bad-thumbs"></div>
+	<table class="bahagaze-content-bad">
+		<tr>
+			<td><img src="[(#LOGO_ARTICLE|image_reduire{120,120}|image_recadre{70,70}|extraire_attribut{src})]" ></td>
+			<td> 
+					<B_virt2>
+						<BOUCLE_virt2(ARTICLES) {id_article} {virtuel == ^http://}>
+							<div class="person_title"><a href="#URL_ARTICLE">#TITRE</a></div>
+							<div class="person_descr"><a href="#URL_ARTICLE">#TEXTE</a></div>
+						</BOUCLE_virt2>
+					</B_virt2>
+						<div class="person_title">#TITRE</div>
+						<div class="person_descr">#TEXTE</div>
+					<//B_virt2> 
+			</td>
+		<tr>
+	</table>
+	</div>
+	</BOUCLE_ARTICLEBAHAGAZE2> 
+	</div> 
+</div>
+</div> 

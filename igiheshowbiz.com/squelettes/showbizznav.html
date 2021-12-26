@@ -1,0 +1,22 @@
+<aside class="t10artiste">
+		<div><img src="http://igiheshowbiz.com/images/top10.png"></div>
+		<div style="background: -webkit-gradient(linear, top left, top right, from(#4580bd), to(#366aa1));">
+			<!-- Start .menu -->
+			
+			<ul class="menu">
+			
+				<li class="selected"><a href="http://igiheshowbiz.com">Ahabanza</a></li>
+				<BOUCLE_nav(RUBRIQUES){id_parent=13}{tout}{doublons xx}>
+					<BOUCLE_navselected(RUBRIQUES){id_rubrique}{doublons xx}>
+						<li class="selected"><a href="#URL_RUBRIQUE">#TITRE</a></li>
+					</BOUCLE_navselected>
+					<li><a href="#URL_RUBRIQUE">#TITRE</a></li>
+				</BOUCLE_nav>
+				<li><a href="http://igihe.tv/imyidagaduro/" target="_blank">Videwo</a></li>
+				#FORMULAIRE_RECHERCHE
+			
+			</ul>
+			
+			<!-- end .menu -->
+			</div>
+</aside>

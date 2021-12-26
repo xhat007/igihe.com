@@ -1,0 +1,61 @@
+<!--  -->
+<div id="featured" >
+
+		  <ul class="ui-tabs-nav">
+<BOUCLE_gh_highlightsthumbs1(ARTICLES){doublons xx}{0,1}{titre_mot=HomeHighlights1}{par date}{inverse}>
+<li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-1"><a href="#fragment-1">
+<B_gh_highlightsthumbs_img1>
+<BOUCLE_gh_highlightsthumbs_img1(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}{titre=home}>
+[<img src="http://igihe.com/(#URL_DOCUMENT||image_reduire{69,0}||image_recadre{68,45,top center}|extraire_attribut{src}|timestamp)" border="0" width="65" height="43" alt="" />]
+</BOUCLE_gh_highlightsthumbs_img1>
+</B_gh_highlightsthumbs_img1>
+[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{69,0}||image_recadre{68,45,top center}|extraire_attribut{src}|timestamp)" border="0" width="65" height="43" alt="" />]
+<//B_gh_highlightsthumbs_img1>
+</a></li>
+</BOUCLE_gh_highlightsthumbs1>
+	
+
+<BOUCLE_gh_highlightsthumbs2(ARTICLES){doublons xx}{0,5}{titre_mot=HomeHighlights}{par date}{inverse}>
+<li class="ui-tabs-nav-item" id="nav-fragment-[(#COMPTEUR_BOUCLE|plus{1})]"><a href="#fragment-[(#COMPTEUR_BOUCLE|plus{1})]">
+<B_gh_highlightsthumbs_img2>
+<BOUCLE_gh_highlightsthumbs_img2(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}{titre=home}>
+[<img src="http://igihe.com/(#URL_DOCUMENT||image_reduire{69,0}||image_recadre{67,45,top center}|extraire_attribut{src})" border="0" width="65" height="43" alt="" />]
+</BOUCLE_gh_highlightsthumbs_img2>
+</B_gh_highlightsthumbs_img2>
+[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{69,0}||image_recadre{67,45,top center}|extraire_attribut{src})" border="0" width="65" height="43" alt="" />]
+<//B_gh_highlightsthumbs_img2>
+</a></li>
+</BOUCLE_gh_highlightsthumbs2>
+	      </ul>
+
+<BOUCLE_gh_highlights(ARTICLES){doublons yy}{0,1}{titre_mot=HomeHighlights1}{par date}{inverse}>
+	    <div id="fragment-1" class="ui-tabs-panel" style="">
+<B_gh_highlights_img>
+<BOUCLE_gh_highlights_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}{titre=home}>
+			<a href="http://www.igihe.com/#URL_ARTICLE">[<img src="http://igihe.com/(#URL_DOCUMENT||image_reduire{442,0}||image_recadre{433,241,center top}|extraire_attribut{src})" border="0" alt="#TITRE" title="#TITRE"  />]</a>
+			 <div class="info" ><h2><a href="http://www.igihe.com/#URL_ARTICLE">[(#DESCRIPTIF|couper{110,'...'}|supprimer_tags)]</a></h2></div>
+</BOUCLE_gh_highlights_img>
+</B_gh_highlights_img>
+			<a href="http://www.igihe.com/#URL_ARTICLE">[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{442,0}||image_recadre{433,241,center top}|extraire_attribut{src})" border="0" alt="#TITRE" title="#TITRE" />]</a>
+			 <div class="info" ><h2><a href="http://www.igihe.com/#URL_ARTICLE">[(#TITRE|couper{110,'...'}|supprimer_tags)]</a></h2></div>
+<//B_gh_highlights_img>
+	    </div>
+</BOUCLE_gh_highlights>
+
+
+<BOUCLE_gh_highlights2(ARTICLES){doublons yy}{0,5}{titre_mot=HomeHighlights}{par date}{inverse}>
+	    <div id="fragment-[(#COMPTEUR_BOUCLE|plus{1})]" class="ui-tabs-panel" style="">
+<B_gh_highlights_img2>
+<BOUCLE_gh_highlights_img2(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}{titre=home}>
+			<a href="http://www.igihe.com/#URL_ARTICLE">[<img src="http://igihe.com/(#URL_DOCUMENT||image_reduire{441,0}||image_recadre{432,241,center top}|extraire_attribut{src})" border="0" alt="#TITRE" title="#TITRE" />]</a>
+			 <div class="info" ><h2><a href="http://www.igihe.com/#URL_ARTICLE">[(#DESCRIPTIF|couper{110,'...'}|supprimer_tags)]</a></h2></div>
+</BOUCLE_gh_highlights_img2>
+</B_gh_highlights_img2>
+			<a href="http://www.igihe.com/#URL_ARTICLE">[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{441,0}||image_recadre{432,241,center top}|extraire_attribut{src})" border="0" alt="#TITRE" title="#TITRE"  />]</a>
+			 <div class="info" ><h2><a href="http://www.igihe.com/#URL_ARTICLE">[(#TITRE|couper{110,'...'}|supprimer_tags)]</a></h2></div>
+<//B_gh_highlights_img2>
+	    </div>
+</BOUCLE_gh_highlights2>
+
+</div>
+<!--  -->

@@ -1,0 +1,50 @@
+[(#CACHE{0})][(#HTTP_HEADER{Content-type: application/json[; charset=(#CHARSET)]})][
+{
+	"nodes":[
+		<BOUCLE_slider1(ARTICLES){doublons xx}{titre_mot=HomeHighlights1}{0,1}{par date}{inverse}> 
+			{
+				"node":
+					{
+						"title":[(#TITRE||json_encode)],
+						"lead":[(#INTRODUCTION|textebrut|json_encode)],
+						"author":[(#PS|textebrut|sinon{#NOM}||json_encode)],
+						"body":[(#TEXTE|liens_absolus{#URL_SITE_SPIP}||json_encode)],
+						"created":"[(#DATE|jour)]\/[(#DATE|mois)]\/[(#DATE|annee)] [(#DATE|heures)][:(#DATE|minutes)]",
+						"field_image_fid":"http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]",
+						"news_url":"http://www.igihe.com/#URL_ARTICLE",
+						"news_id":[(#ID_ARTICLE||json_encode)]
+					}
+			},
+		</BOUCLE_slider1>
+		<BOUCLE_slider2(ARTICLES){doublons xx}{titre_mot=HomeHighlights}{0,4}{par date}{inverse}>
+			{
+				"node":
+					{
+						"title":[(#TITRE||json_encode)],
+						"lead":[(#INTRODUCTION|textebrut|json_encode)],
+						"author":[(#PS|textebrut|sinon{#NOM}||json_encode)],
+						"body":[(#TEXTE|liens_absolus{#URL_SITE_SPIP}||json_encode)],
+						"created":"[(#DATE|jour)]\/[(#DATE|mois)]\/[(#DATE|annee)] [(#DATE|heures)][:(#DATE|minutes)]",
+						"field_image_fid":"http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]",
+						"news_url":"http://www.igihe.com/#URL_ARTICLE",
+						"news_id":[(#ID_ARTICLE||json_encode)]
+					}
+			},
+		</BOUCLE_slider2>
+		<BOUCLE_slider3(ARTICLES){doublons xx}{titre_mot=HomeHighlights}{0,1}{par date}{inverse}>
+			{
+				"node":
+					{
+						"title":[(#TITRE||json_encode)],
+						"lead":[(#INTRODUCTION|textebrut|json_encode)],
+						"author":[(#PS|textebrut|sinon{#NOM}||json_encode)],
+						"body":[(#TEXTE|liens_absolus{#URL_SITE_SPIP}||json_encode)],
+						"created":"[(#DATE|jour)]\/[(#DATE|mois)]\/[(#DATE|annee)] [(#DATE|heures)][:(#DATE|minutes)]",
+						"field_image_fid":"http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]",
+						"news_url":"http://www.igihe.com/#URL_ARTICLE",
+						"news_id":[(#ID_ARTICLE||json_encode)]
+					}
+			}
+		</BOUCLE_slider3>
+		]
+}]

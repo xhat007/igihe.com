@@ -1,0 +1,59 @@
+<style>
+.f-title5 a {
+    color: #ffffff;
+    font-family: ralewaymedium, 'trebuchet ms';
+    font-size: 14px;
+}
+.f-title5 a:hover {
+    color: #1355A1; 
+}
+
+.ir-full250{padding: 5px 0 0 5px;} 
+
+.item_pggss_2018{height: 340px;}
+.item_pggss_2018{background: transparent; margin-bottom: 5px; border-bottom: 1px solid #434f5b; padding-bottom: 5px; }  
+.readmore2{background: #1355A1; text-align: center; padding: 2px 0;}  
+.readmore2 a{color: #fff; }  
+</style>
+ 
+<h3 class="title-section" style="background: #1355A1">PRIMUS GUMA GUMA SUPERSTAR 8</h3>
+<div class="irambuye-news" style="background: url(squelettes/pggss2018/images/live.png);"> 
+	<div class="row">
+		<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 nopaddingright0 "> 
+			<div class="flashnews2">
+				<BOUCLE_gh_widget2(ARTICLES){id_article=106919}>
+					<div class="flashphoto">
+						<!-- <a href="#URL_RUBRIQUE"><img class="rectangle img-responsive" data-original="[(#LOGO_RUBRIQUE||image_reduire{325,*}||extraire_attribut{src})]" alt="."/> </a> -->
+						<a href="#URL_RUBRIQUE{1963}"><img class="rectangle img-responsive" src="[(#LOGO_ARTICLE||extraire_attribut{src})]" alt="."/> </a>
+					</div> 
+				</BOUCLE_gh_widget2> 
+			</div>												  
+		</div> 
+		<div class="col col-lg-6 col-md-6 col-sm-6 nopaddingleft0"> 
+			<div class="ir-full250 item_pggss_2018">
+				<BOUCLE_gh_inkuru_irushanwa2(ARTICLES){titre_mot=Gumaguma_Amakuru}{0,10}{!par date}{doublons rushw}>
+					<div class="item_miss_2018"> 
+					<div class="row"> 
+						<div class="col col-lg-4 nopaddingright0">
+							<B_videomiss2>
+							<BOUCLE_videomiss2 (MOTS){id_article}{titre_mot=video}> 
+								<a href="#URL_ARTICLE" class="video"><span></span><img class="rectangle img-responsive" src="[(#LOGO_ARTICLE||image_reduire{320,*}||extraire_attribut{src})]" alt="."/> </a>
+							</BOUCLE_videomiss2>
+							</B_videomiss2>
+								<a href="#URL_ARTICLE"><img class="rectangle img-responsive" src="[(#LOGO_ARTICLE||image_reduire{320,*}||extraire_attribut{src})]" alt="."/> </a>
+							<//B_videomiss2>
+							
+						</div>
+						<div class="col col-lg-8 nopaddingleft0"> 
+							<div class="f-title5"> 
+								<a href="#URL_ARTICLE">#TITRE</a>
+							</div>
+						</div>
+					</div>  
+					</div>  
+				</BOUCLE_gh_inkuru_irushanwa2>  
+			</div>
+			<div class="readmore2"><a href="#URL_RUBRIQUE{1963}">Soma izindi</a></div>
+		</div> 
+	</div> 
+</div>   

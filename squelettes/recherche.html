@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>igihe.com > Gushakisha</title>
+		<!-- dRmetatags  -->
+		<meta http-equiv="pragma" content="cache" />
+		<meta http-equiv="content-language" content="en-US" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta http-equiv="robots" content="all" />
+		<meta name="revisit-after" content="1" />
+		<meta http-equiv="window-target" content="_top" />
+		<meta name="expires" content="never" />
+		<meta name="rating" content="general" />
+		<meta property="og:title" content="#TITRE" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="#URL_SITE_SPIP/#URL_ARTICLE" />
+		<meta property="og:image" content="#URL_SITE_SPIP/IMG/[(#LOGO_ARTICLE|fichier)]" />
+		<meta property="og:site_name" content="IGIHE.com - Mu Kinyarwanda" />
+		<meta property="og:description" content="[(#TEXTE|textebrut|couper{200,'...'})]" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="image_src" type="image/jpeg" href="#URL_SITE_SPIP/IMG/[(#LOGO_ARTICLE|fichier)]" />
+		<!--End dRmetatags  -->
+		<!-- dR_scripts -->
+		<link rel="stylesheet" type="text/css" media="screen" href="#CHEMIN{'igihe_scripts/ghgrid.css'}" />
+		<link rel="stylesheet" type="text/css" media="screen" href="#CHEMIN{'igihe_scripts/ghstyle_day.css'}" />
+		<link rel="stylesheet" type="text/css" media="screen" href="#CHEMIN{'igihe_scripts/ghstyle.css'}" />
+		<!-- End dR_scripts -->
+	</head>
+	<body topmargin="0" leftmargin="0" >
+		<a name="hejuru"></a>
+		<!-- End TOP BANNER -->	
+		<!-- HEADER -->
+		<div id="ghheader">
+			<div class="container_20">
+				<INCLURE{fond=gh_head}{env}{ajax}/>
+				<!-- Menu -->
+				<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_home.gif'}" width="19" height="25" border="0" align="left">Ahabanza</a></div>
+				<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/abo-turibo/" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_Abo Turibo.gif'}" width="19" height="25" border="0" align="left">Abo Turibo</a></div>
+				<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/serivisi/" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_Serivisi.gif'}" width="19" height="25" border="0" align="left">Serivisi</a></div>
+				<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/twandikire/" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_Twandikire.gif'}" width="19" height="25" border="0" align="left">Twandikire</a></div>
+				<div class="grid_4" id="menu"><a href="javascript:animatedcollapse.toggle(['ibirimo', 'ibirimopg'])" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_ibirimo.gif'}" width="19" height="25" border="0" align="left">Ibirimo</a></div>
+				<div class="clear"></div>
+				<!-- End Menu -->
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- End HEADER -->
+		<!-- SECTION HEADER -->
+		<div id="ghheader">
+			<div class="container_20">
+				<!-- SlideNews -->
+				<INCLURE{fond=gh_newssliderin}{env}{ajax}/>
+				<!-- End SlideNews -->
+				<!-- Navbar -->
+				<div class="grid_20 alpha omega" id="sectionavbar">
+					<font class="gh_navbar">&nbsp;&nbsp;<a href="#URL_SITE_SPIP" class="gh_navbar"><b>IGIHE.com</b></a>&nbsp;>&nbsp;<BOUCLE_gh_RUBRIQUEtitlel0(RUBRIQUES){id_rubrique}><BOUCLE_gh_RUBRIQUEtitle_followl0(HIERARCHIE)><a href="#URL_RUBRIQUE" class="gh_navbar">[(#TITRE)]</a>&nbsp;>&nbsp;</BOUCLE_gh_RUBRIQUEtitle_followl0>[<a href="#URL_RUBRIQUE" class="gh_navbar">(#TITRE)</a>]</BOUCLE_gh_RUBRIQUEtitlel0></font>
+				</div>
+				<!-- End Navbar-->
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- End SECTION HEADER -->
+		<!-- BODY -->
+		<div id="ghbody">
+			<div id="bg">
+				<div class="container_20" style="background:#FFF;">
+					<div style="width:775px;height:1350px;float:left;background:#FFF;overflow:hidden;">
+						<B_gh_results>
+							#ANCRE_PAGINATION
+							<BOUCLE_gh_results(ARTICLES){recherche}{par points}{age<30}{inverse}{pagination 10}{titre!=intro}{lang}>
+								<div class="gh_amakuru_home" onClick="parent.location='#URL_ARTICLE">
+									[<img src="(#LOGO_ARTICLE||image_reduire{0,85}||image_recadre{90,80,top center}|extraire_attribut{src})" width="90" height="80" align="left" class="gh_news_image"/>]
+									<div style="padding-bottom:5px;">
+										<a href="#URL_ARTICLE" class="gh_news_hometitle">
+											<BOUCLE_gh_exclusif00(ARTICLES){id_article}{titre_mot=Exclusif}{0,1}{age<1}>
+												<div class="gh_article_dtimeago">EXCLUSIF :</div>
+											</BOUCLE_gh_exclusif00>
+											[(#TITRE)]
+										</a>
+										<B_gh_pasttime>
+											<BOUCLE_gh_pasttime(ARTICLES){id_article}{age<1}>
+												<div class="gh_article_dtimeago">
+													<br/>[(#DATE|date_relative)]
+												</div>
+											</BOUCLE_gh_pasttime>
+										</B_gh_pasttime>
+										<div class="gh_article_dtimeago" style="color:#AEAEAE;">
+											<br/>[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] 
+										</div>
+										<//B_gh_pasttime>
+										<BOUCLE_gh_incommentsif(FORUMS){id_article}{0,1}>
+											<B_gh_incomments>
+												<BOUCLE_gh_incomments(FORUMS){id_article}{tout}></BOUCLE_gh_incomments>
+											</B_gh_incomments>
+											[<div class="gh_article_dcomments" title="Comments">(#TOTAL_BOUCLE)</div>]
+											<//B_gh_incomments>
+										</BOUCLE_gh_incommentsif>
+										<BOUCLE_gh_in_imagesif(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+											<B_gh_in_images>
+												<BOUCLE_gh_in_images(DOCUMENTS){id_article}{extension==jpg|gif|png}></BOUCLE_gh_in_images>
+											</B_gh_in_images>
+											[<div class="gh_article_dphotos" title="Photos in this article">(#TOTAL_BOUCLE)</div>]
+											<//B_gh_in_images></BOUCLE_gh_in_imagesif>
+											<B_gh_in_videos>
+												<div class="gh_article_dvideos"  title="Videos in this article">
+													<BOUCLE_gh_in_videos(DOCUMENTS){id_article}{extension IN (dist_youtu)}>
+														[(#TOTAL_BOUCLE)]
+													</BOUCLE_gh_in_videos>
+												</div>
+											</B_gh_in_videos>
+											<B_gh_in_audios>
+												<div class="gh_article_daudios" title="Audio in this article">
+													<BOUCLE_gh_in_audios(DOCUMENTS){id_article}{extension==mp3}>
+														[(#TOTAL_BOUCLE)]
+													</BOUCLE_gh_in_audios>
+												</div>
+											</B_gh_in_audios>
+											<div class="gh_article_dhits"  title="Visits">[(#VISITES|=={0}|?{'1', #VISITES|mult{9} })]</div>
+									</div>
+									<div style="padding-bottom:5px;"><font class="gh_newsin_text">[(#TEXTE|couper{150,'...'})]</font></div>
+								</div>
+							</BOUCLE_gh_results>
+							<center><div class="gh_pagination">[(#PAGINATION{page})]</div></center>
+						</B_gh_results>
+						<center><font class="gh_search_noresults">Mwihangane ibyo mwashakaga <h2><b>" #RECHERCHE "</b></h2> ntibibashije kuboneka!? Mugerageze mushakishe ibindi bijyanye na " #RECHERCHE " <br><br></font></center>
+						<//B_gh_results>
+					</div>
+					
+					<!-- AreaRight -->
+				<div class="grid_4 alpha omega" id="sidebar">
+
+	<div class="grid_4 omega" id="ibirimo" width="10">
+		<!-- ibirimo -->
+						<ul>
+
+						<!-- <li class="gh_menuexpo"><a href="http://expo.igihe.com/"><img src="http://igihe.rw/squelettes/igihe_imgs/expoonline.jpg" border="0" alt="EXPO Online" title="EXPO Online"/></a></li> -->
+
+							
+								<li class="gh_menu2"><a href="http://www.igihe.com/amakuru/" class="gh_menu2">Amakuru</a></li>
+							
+								<li class="gh_menu2"><a href="http://www.igihe.com/politiki/" class="gh_menu2">Politiki</a></li>
+							
+								<li class="gh_menu2"><a href="http://www.igihe.com/ubuzima/" class="gh_menu2">Ubuzima</a></li>
+							
+								<li class="gh_menu2"><a href="http://www.igihe.com/ubukungu/" class="gh_menu2">Ubukungu</a></li>
+							
+								<li class="gh_menu2"><a href="http://www.igihe.com/ikoranabuhanga/" class="gh_menu2">Ikoranabuhanga</a></li>
+							
+								<li class="gh_menu2"><a href="http://www.igihe.com/imyidagaduro/" class="gh_menu2">Imyidagaduro</a></li>
+							
+								<li class="gh_menu2"><a href="http://www.igihe.com/imikino/" class="gh_menu2">Imikino</a></li>
+							
+								<li class="gh_menu2"><a href="http://www.igihe.com/umuco/" class="gh_menu2">Umuco</a></li>
+							
+								<li class="gh_menu2"><a href="http://www.igihe.com/ibidukikije/" class="gh_menu2">Ibidukikije</a></li>
+							
+								<li class="gh_menu2"><a href="http://www.igihe.com/iyobokamana/" class="gh_menu2">Iyobokamana</a></li>
+							
+								<li class="gh_menu2"><a href="http://www.igihe.com/ubukerarugendo/" class="gh_menu2">Ubukerarugendo</a></li>
+							
+								<li class="gh_menu2"><a href="http://www.igihe.com/abantu/" class="gh_menu2">Abantu</a></li>
+							
+								<li class="gh_menu2"><a href="http://www.igihe.com/diaspora/" class="gh_menu2">Diaspora</a></li>
+							
+								<li class="gh_menu2"><a href="http://www.igihe.com/twinigure/" class="gh_menu2">Twinigure</a></li>
+		</ul>
+							
+		<!-- end ibirimo -->
+	</div>
+</div>
+<!-- End AreaRight -->
+
+
+</div>
+	<div class="clear"></div>
+</div></div>
+<!-- End BODY -->
+
+<!-- FOOTER -->
+<div id="ghfooter">
+<div class="container_20">
+
+<!-- Ads728x90 -->
+<div class="grid_20" id="footer_ads">
+	<a href="#" class="gh_adsin" >kwamamaza<br></a>
+<img src="#CHEMIN{'igihe_imgs/gh_ad1_default.png'}"  width="728" height="90" border="0"/>
+	</div>
+<div class="clear"></div>
+<!-- End Ads728x90 -->
+
+<INCLURE{fond=gh_footer}{env}{ajax}/>
+
+</div>
+</div>
+<!-- End FOOTER -->
+
+
+<script type="text/javascript" charset="utf-8" src="#CHEMIN{'igihe_scripts/jqueryz.js'}"></script>
+
+<script type="text/javascript" charset="utf-8" src="#CHEMIN{'igihe_scripts/gh_fontsizer/fluidtextresizer.js'}"></script>
+
+<script type="text/javascript" charset="utf-8" src="#CHEMIN{'igihe_scripts/ghcollapse.js'}"> </script>
+
+
+<script type="text/javascript">
+animatedcollapse.addDiv('ibirimo', 'speed=500,hide=1,persist=1,fade=1,height=470px')
+animatedcollapse.addDiv('ibirimopg', 'speed=500,hide=1,persist=1,fade=1,height=470px')
+animatedcollapse.ontoggle=function($, divobj, state){
+}
+animatedcollapse.init()
+</script>
+
+
+<script type="text/javascript" src="#CHEMIN{'igihe_scripts/gh_highslide/highslide/highslide-with-html.js'}"></script>
+<link rel="stylesheet" type="text/css" href="#CHEMIN{'igihe_scripts/gh_highslide/highslide/highslide.css'}" />
+
+<script type="text/javascript">
+hs.graphicsDir = '#CHEMIN{'igihe_scripts/gh_highslide/highslide/graphics/'}';
+hs.outlineType = 'rounded-white';
+hs.wrapperClassName = 'draggable-header';
+hs.dimmingOpacity = 0.85;
+hs.dimmingDuration = 150;
+hs.align = 'center';
+hs.showCredits = false;
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(["_setAccount", "UA-10838297-1"]);
+	_gaq.push(["_trackPageview"]);
+
+	(function() {
+		var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+		ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+		var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>IGIHE.com - Murakaze neza</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+	<link rel="shortcut icon" href="rssb_images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="rssb_css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="rssb_css/tabs.css" />
+	<link rel="stylesheet" type="text/css" href="rssb_css/style.css" media="screen" />
+	<script type="text/javascript" src="rssb_js/jquery.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/twitterfeed.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="shadowbox/shadowbox.css">
+	<script type="text/javascript" src="shadowbox/shadowbox.js"></script>
+	<script type="text/javascript">
+		Shadowbox.init();
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div class="header">
+			<div class="h1">
+				<div class="hinfo">IGIHE.com</div>
+				<ul class="hlang">
+					<li><a href="http://igihe.com" target="_blank"><img src="images_light/fla1.gif" height="12"/>IKINYARWANDA</a></li>
+					<li><a href="http://igihe.bi" target="_blank"><img src="http://igihe.bi/squelettes/igihe_imgs/gh_flag_bi.jpg" height="12"/>IKIRUNDI</a></li>
+					<li><a href="http://en.igihe.com" target="_blank"><img src="http://igihe.com/squelettes/igihe_imgs/gh_flag_en.gif" height="12"/>ENGLISH</a></li>
+					<li><a href="http://fr.igihe.com/" target="_blank"><img src="http://igihe.com/squelettes/igihe_imgs/gh_flag_fr.gif" height="12"/>FRANÇAIS</a></li>
+					<li><a href="http://igihe.tv" target="_blank"><img src="http://igihe.com/drpdwn/tv.png" height="12"/>IGIHE TV</a></li>				
+				</ul>
+				<form class="hsearch" action="spip.php" method="GET">
+					<input type="text" class="srchtxt" value="Andika aha..." name="recherche"/>
+					<input type="submit" class="srchbtn" value="shakisha" />
+					<input type="hidden" name="page" value="recherche"/>
+				</form>
+				<div class="clear"></div>
+			</div>
+			<div class="h2">
+				<div class="hlogo">
+					<a href="#"><img src="rssb_images/logo.png" /></a>
+				</div>
+				<div class="hban ban">
+					<span>Kwamamaza</span>
+					<a href="#">
+						<B_gh_ads1>
+							<BOUCLE_gh_ads1(ARTICLES){tout}{0,1}{titre_mot=Ad1_LeaderBoard_728x90}{par date}{inverse}>
+								<a href="[(#URL_SITE|sinon{http://www.igihe.com/#URL_ARTICLE})]" title="#TITRE" target="_blank">
+									<BOUCLE_gh_ads1_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://home.igihe.rw/(#URL_DOCUMENT)"  width="728" height="90" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads1_img>
+								</a>
+							</BOUCLE_gh_ads1>
+						</B_gh_ads1>
+							<a href="#"><img src="#CHEMIN{'igihe_imgs/gh_ad1_default.png'}"  width="728" height="90" border="0"/></a>
+						<//B_gh_ads1>
+					</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="h3">
+				<ul class="hnav">
+					<li><a href="#URL_SITE_SPIP"><img src="images_light/ico1.gif" />AHABANZA</a></li>
+					<li><a href="#URL_SITE_SPIP/abo-turibo/"><img src="images_light/ico2.gif" />ABO TURIBO</a></li>
+					<li><a href="http://igihe.org/spip.php?rubrique3"><img src="images_light/ico3.gif" />SERIVISI</a></li>
+					<li><a href="#URL_SITE_SPIP/spip.php?page=contact&id_rubrique=3"><img src="images_light/ico4.gif"/>TWANDIKIRE</a></li>
+					<li><a href="#"><img src="images_light/ico5.gif" />IBIRIMO</a></li>					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div class="bans">
+			 <div class="bann">
+				<a class="ban1"><img src="rssb_images/banner_left.png" /></a>
+				<a class="ban2"><img src="rssb_images/banner_right.png" /></a>
+			 </div>
+		</div>
+		<div class="content">
+			<div class="cleft">
+				<div class="cslidenews">
+					<marquee behavior="scroll" direction="left" scrollamount="2" scrolldelay="1" width="100%" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();">
+						<BOUCLE_gh_newsslide(ARTICLES){tout}{0,15}{par date}{inverse}{titre_mot=MainSlideNews}{'&nbsp;|&nbsp;'}>
+							<a href="#URL_ARTICLE"><span>Published [(#DATE||date_relative)]</span>#TITRE </a>&nbsp;|&nbsp;
+						</BOUCLE_gh_newsslide>						
+					</marquee>
+				</div>
+			</div>
+			<div class="rss-topbanner">
+				<img src="rssb_images/rss-banner.png" />
+			</div>
+			<div class="rss-slide">
+				<div id="wowslider-container2">
+					<div class="ws_images">
+						<ul>
+							<BOUCLE_articles_rssb_home(ARTICLES){titre_mot=HomeRssb}{tout}{par date}{inverse}{0,5}>
+								<li>
+									[(#LOGO_ARTICLE||image_reduire{600,300})]
+									<a href="#URL_ARTICLE">#TITRE</a>
+								</li>
+							</BOUCLE_articles_rssb_home>
+						</ul>
+					</div>
+				</div>					
+			</div>
+			<div class="aside">
+				<div class="about">
+					<h4>Abo turibo</h4>
+					<p>
+					RSSB ni ikigo cyavuttse nyuma yo guhuzwa kw'ibigo 2: icyahoze ari isanduku y'Ubwiteganyirize bw'abakozi
+					y'u Rwanda (CSR) n'icyahoze ari ikigo cy'Ubwishingizi bw'indwara (RAMA) inshingano y'ingenzi y'iki kigo ni uguteza imbere
+					ubwitegnyirize mu rwanda,kugeza ubu kikaba gicunga amashami 3: ishami ryo kwivuza,ishami rya pansiyo n'ishami ry'ibyago bikomoka ku kazi.
+					Muri ayo mashami avuzwe hejuru abiteganyirije bakaba bagobokwa iyo bagze mu zabukuru bashobora guhabwa.pansiyo y'abasizwe n'uwiteganyirije.
+					Bakagobogwa mu byago n'indwara bikomoka ku kazi ndetse bagahabwa n'ibikorwa by'ubuvuzi bigenerwaabiteganyirije.</p>
+				</div>
+				<div class="tweet">
+					<h4>Twitter</h4>
+					<ul id="twitter-feed"></ul>					
+				</div>	
+				<div style="width:100%;" height="1">&nbsp;</div>
+				<div class="tab">
+						<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+						<label for="tab-1" class="tab-label-1">Amafoto</label>
+				
+						<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+						<label for="tab-2" class="tab-label-2">Amavidewo</label>
+					<div class="clear-shadow"></div>
+					<div class="cont">
+						<div class="cont-1">
+							<ul>
+								<BOUCLE_gh_photos(ARTICLES){0,4}{doublons}{titre!=intro}{titre_mot=HomePhotos}{par date}{inverse}>
+									<B_gh_photos_img>
+										<BOUCLE_gh_photos_img(DOCUMENTS){id_article}{extension==jpg}{!titre=home}{par hasard}{0,1}>
+											<li><a href="#URL_DOCUMENT" rel="shadowbox" title="#TITRE"><img src="#URL_DOCUMENT" width="170"/></a>
+</li>
+										</BOUCLE_gh_photos_img>
+									</B_gh_photos_img>
+								</BOUCLE_gh_photos>
+							</ul>
+						</div>
+						<div class="cont-2">
+							<ul>
+								
+							</ul>	
+						</div>			
+					</div>
+				</div>
+			</div>			
+			<div class="article">
+				<h4>Amakuru</h4>
+				<B_amakuru_rssb>
+					<ul>
+						<BOUCLE_amakuru_rssb(ARTICLES){id_rubrique=35}{par date}{inverse}{pagination 3}>
+							<li>
+								[(#LOGO_ARTICLE||image_reduire{180,})]
+								<h5><a href="#URL_ARTICLE">#TITRE</a></h5>
+								<p>[(#TEXTE|couper{200})] (...)</p>
+							</li>
+							</BOUCLE_amakuru_rssb>
+					</ul>
+					<div class="pagination">
+						#PAGINATION
+					</div>		
+				</B_amakuru_rssb>
+				<//B_amakuru_rssb>	
+			</div>
+			<div id="rss">
+				<p><a href="http://www.rssb.rw" target="_blank">www.rssb.rw</a></p>
+			</div>
+		</div>
+		
+	</div>	
+
+	<div id="footer">
+		<div class="footer">
+			<div class="f1">
+				<div class="fban ban">
+					<span>Kwamamaza</span>
+					<a href="#"><img src="rssb_images/ban1.png" /></a>
+				</div>
+			</div>
+			<div class="f2">
+				<div class="flogo"><img src="rssb_images/flogo.png" /></div>
+				<form class="fsearch">
+					<input type="text" class="srchtxt" value="Andika aha..." />
+					<input type="submit" class="srchbtn" value="shakisha" />
+				</form>
+				<div class="ftop"><a href="#"><img src="rssb_images/ftop.gif" /></a></div>
+			</div>
+			<div class="f3">
+				<div class="fnet">
+					<h3>IGIHE Network</h3>
+					<a href="#">IGIHE.com mu Kinyarwanda</a>
+					<a href="#">IGIHE.com in English</a>
+					<a href="#">IGIHE.com en Français</a>
+				</div>
+				<div class="fjoin">
+					<h3>Join us</h3>
+					<a href="#">Socialize with us</a>
+					<div>
+						<a href="#"><img src="rssb_images/face.gif" /></a>
+						<a href="#"><img src="rssb_images/twi.gif" /></a>
+						<a href="#"><img src="rssb_images/you.gif" /></a>
+					</div>
+				</div>
+				<div class="fcont">
+					<h3>Contacts</h3>
+					<div><b>Location:</b> Ndamage Building 4th Floor</div>
+					<div><b>PO Box:</b> 3477 Kigali-Rwanda</div>
+					<div><b>Phones:</b></div>
+					<div>+250 788 74 29 08, +250 788 49 69 15, +250 728 94 66 08</div>
+					<div><b>Emails:</b></div>
+					<div>info@igihe.com, marketing@igihe.com</div>
+				</div>
+				<div class="fdev">
+					<h3>Website Developedy</h3>
+					<img src="rssb_images/flogo2.gif" />
+				</div>
+				<div class="clear"></div>
+				<div class="fcopy">
+					<div>Uru Rubuga Ruheruka Gushyirwaho Amakuru mercredi 5 février 2014 Saa 17:33:27</div>
+					<span>Copyright © 2009 -2014 - IGIHE Ltd - All Rights Reserved</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="rssb_js/wowslider.js"></script>
+	<script type="text/javascript" src="rssb_js/script.js"></script>
+</body>
+</html>

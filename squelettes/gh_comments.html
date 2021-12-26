@@ -1,0 +1,107 @@
+<div class="grid_16 alpha omega"  id="articlecomments" style="width: 760px; margin-left: -15px;">
+<a href="#" class="box_title">IBITEKEREZO</a>
+	<div id="articlecommentsin" style="padding: 20px 5px;">
+
+<!-- IN-->
+<a name="comments"></a>
+<B_gh_comments_thread1>
+[(#ANCRE_PAGINATION)]
+<BOUCLE_gh_comments_thread1(FORUMS){id_article}{par date}{inverse}{pagination 20}>
+<div style="display:block;position:relative;padding-bottom:2px;width:740px;">
+<div class="gh_articlecomments_thread1"><font class="gh_articlecommentscontent" style="font-size:13px;">[(#TEXTE|textebrut)]</font></div>
+<div style="display:block;position:relative;width:88%;border:0px solid blue;top:-6px;margin-left:25px;margin:4px;padding:2px;padding-left:45px;background-image:url(#CHEMIN{'igihe_imgs/gh_commentsshow.gif'});background-repeat:no-repeat;background-position:left top;"><a href="poster_message.php?[(#PARAMETRES_FORUM{#SELF})]" class="gh_articlecommentsreply" style="margin-right:5px; display: none;" onclick="return hs.htmlExpand(this, { objectType: 'ajax', width: 737,} )">Musubize</a><font class="gh_articlecommentsdetails">[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] saa [(#DATE|heures)][:(#DATE|minutes)]<br /></font><a href="#" class="gh_articlecommentsauthor">[(#NOM|sinon{######})]</a><br /></div>
+<BOUCLE_gh_comments_thread2(FORUMS){id_parent}{par date}{tout}>
+<div align="right" style="display:block;position:relative;margin-bottom:40px;">
+	<div class="gh_articlecomments_thread2"><font class="gh_articlecommentscontent" style="font-size:13px;">[(#TEXTE|textebrut)]</font></div>
+	<div style="display:block;position:relative;width:75%;float:right;top:-6px;padding:2px;padding-right:45px;margin:4px;margin-right:5px;margin-left:25px;background-image:url(#CHEMIN{'igihe_imgs/gh_commentsshowright.gif'});background-repeat:no-repeat;background-position:right top;"><font class="gh_articlecommentsdetails">[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] saa [(#DATE|heures)][:(#DATE|minutes)]<br /></font><font class="gh_articlecommentsauthor">[(#NOM)]</font></div>
+</div>
+</BOUCLE_gh_comments_thread2>
+</div>
+</BOUCLE_gh_comments_thread1>
+[<div class="gh_pagination">(#PAGINATION{page})</div>]
+</B_gh_comments_thread1>
+<//B_gh_comments_thread1>
+<div style="padding-bottom:20px;padding:5px;">
+<center>[(#ACCEPTER_FORUM|=={non}|oui) <font style='color:#ff0000;'>NTA BITEKEREZO BYEMEREWE KUJYA KURIYI NKURU...</font>]</center>
+<!-----------------------------------------------------------------------------------------------------------
+					WILLY EDIT FOR AJAXXXXXXXXXXXXXXXXXX
+------------------------------------------------------------------------------------------------------------>
+
+			<script type="text/javascript">										
+				function envoyer_commentaire(id_forum)
+				{
+
+				var empty_email=(document.getElementById("session_email_"+id_forum).value.length==0 || document.getElementById("session_email_"+id_forum).value==null);
+				var empty_message=(document.getElementById("texte_"+id_forum).value.length==0 || document.getElementById("texte_"+id_forum).value==null);
+				if(empty_message){
+					alert("Comment can not be empty");
+				}
+				else if(empty_email){
+					alert("Please provide your email address");
+				}
+				else{
+					var igitekerezo = document.getElementById("texte_"+id_forum).value;
+					var izina = document.getElementById("session_nom_"+id_forum).value;
+					var email = document.getElementById("session_email_"+id_forum).value;
+
+					var titre = document.getElementById("titre").value;
+					var id_article_obj=document.getElementsByName("id_article").item(0);
+					var id_article=id_article_obj.value;
+
+					var forum_id=0;
+					var page="itsform.php";
+					var url="nom="+izina+"&email="+email+"&commentaire="+igitekerezo+"&id_forum="+id_forum+"&titre="+titre+"&id_article="+id_article;
+					var xhr_object = null;
+					if(window.XMLHttpRequest) // Firefox
+						xhr_object = new XMLHttpRequest();
+					else
+					{
+						if(window.ActiveXObject) // Internet Explorer
+							xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+						else
+						{
+							alert("Browser does not support xmlHttpRequest");
+							return;
+						}
+					}
+					var method = "POST";
+					var filename = page;
+					var requete  = url;
+					xhr_object.onreadystatechange = function()
+					{
+						if(xhr_object.readyState == 1)
+						{
+							document.getElementById("comment_statut_"+id_forum).innerHTML="Your comment is being sent to the server please wait";
+						}								
+						if(xhr_object.readyState == 4) 
+						{
+							var reponse = xhr_object.responseText;
+							//specify the response content								
+							document.getElementById("comment_statut_"+id_forum).innerHTML= reponse;
+							document.getElementById("session_nom_"+id_forum).disabled="disabled";
+							document.getElementById("session_email_"+id_forum).disabled="disabled";
+							document.getElementById("texte_"+id_forum).disabled="disabled";
+							document.getElementById("ohereza_"+id_forum).disabled="disabled";
+						}
+					}
+					xhr_object.open(method, filename, true);
+					xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+					xhr_object.send(requete);	 
+				}				
+			}			
+		</script>
+<!-----------------------------------------------------------------------------------------------------------
+				END WILLY EDIT FOR AJAXXXXXXXXXXXXXXXXXX
+--------------------------------------------------------------------------------------------------------- -->
+
+
+
+</div>
+<!-- End IN-->
+
+
+	</div>
+</div>
+
+
+<div class="clear"></div>

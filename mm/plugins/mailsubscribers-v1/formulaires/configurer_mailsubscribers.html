@@ -1,0 +1,104 @@
+<div class="formulaire_spip formulaire_configurer formulaire_#FORM">
+
+	<h3 class="titrem"><:mailsubscriberscfg:cfg_titre_parametrages:></h3>
+
+	[<p class="reponse_formulaire reponse_formulaire_ok">(#ENV*{message_ok})</p>]
+	[<p class="reponse_formulaire reponse_formulaire_erreur">(#ENV*{message_erreur})</p>]
+
+	<form method="post" action="#ENV{action}">
+	<div>
+		#ACTION_FORMULAIRE{#ENV{action}}
+		<input type="hidden" name="_meta_casier" value="mailsubscribers" />
+		<ul>
+			#SET{fl,mailsubscriberscfg}
+			#SET{name,double_optin}#SET{obli,' '}#SET{defaut,'0'}#SET{erreurs,#ENV**{erreurs}|table_valeur{#GET{name}}}
+			<li class="editer editer_[(#GET{name})][ (#GET{obli})][ (#GET{erreurs}|oui)erreur]">
+				<label for="#GET{name}">[(#GET{fl}|concat{':label_',#GET{name}}|_T)]</label>[
+				<span class='erreur_message'>(#GET{erreurs})</span>
+				]<select name="#GET{name}" class="select" id="#GET{name}">
+					#SET{val,0}
+					<option value="#GET{val}"[(#ENV{#GET{name},#GET{defaut}}|=={#GET{val}}|oui)selected="selected"]>[(#GET{fl}|concat{':label_',#GET{name},'_',#GET{val}}|_T)]</option>
+					#SET{val,1}
+					<option value="#GET{val}"[(#ENV{#GET{name},#GET{defaut}}|=={#GET{val}}|oui)selected="selected"]>[(#GET{fl}|concat{':label_',#GET{name},'_',#GET{val}}|_T)]</option>
+				</select>
+			</li>
+			#SET{name,proposer_signup_optin}#SET{obli,''}#SET{defaut,''}#SET{erreurs,#ENV**{erreurs}|table_valeur{#GET{name}}}
+			<li class="editer editer_[(#GET{name})][ (#GET{obli})][ (#GET{erreurs}|oui)erreur]">[
+				<span class='erreur_message'>(#GET{erreurs})</span>
+				]
+				#SET{val,''}
+				<input type="hidden" name="#GET{name}" value="#GET{val}" />
+				#SET{val,1}
+				<div class="choix">
+					<input type="checkbox" name="#GET{name}" class="checkbox" id="#GET{name}_#GET{val}" value="#GET{val}"[(#ENV{#GET{name},#GET{defaut}}|=={#GET{val}}|oui)checked="checked"] />
+					<label for="#GET{name}_#GET{val}">[(#GET{fl}|concat{':label_',#GET{name},'_',#GET{val}}|_T)]</label>
+				</div>
+			</li>
+			<li class="fieldset">
+				<fieldset>
+					<legend><:mailsubscriberscfg:legend_listes_diffusion:></legend>
+					#SET{tableau,#ARRAY{category,newsletter}|mailsubscribers_listes}
+					<BOUCLE_listes(POUR){tableau #GET{tableau}|array_merge{#ARRAY{new1,#LISTE,new2,#LISTE}}}>
+						#SET{index,#COMPTEUR_BOUCLE|moins{1}}
+						<ul class="liste-diffusion">
+							#SET{name,id}#SET{obli,''}#SET{defaut,''}#SET{erreurs,#ENV**{erreurs/lists/#GET{index}/#GET{name}}}
+							<li class="editer editer_lists_[(#GET{index})]_#GET{name}[ (#GET{obli})][ (#GET{erreurs}|oui)erreur]">
+								<label for="lists_[(#GET{index})]_#GET{name}">[(#GET{fl}|concat{':label_list_',#GET{name}}|_T)]</label>[
+								<span class='erreur_message'>(#GET{erreurs})</span>
+								]<input type="text" name="lists[#GET{index}][#GET{name}]" class="text" value="#ENV*{lists/#GET{index}/#GET{name},#VALEUR{#GET{name}}}" id="lists_[(#GET{index})]_#GET{name}" [(#HTML5|et{#GET{obli}})required='required']/>
+								<input type="hidden" name="lists[#GET{index}][#GET{name}_bak]" class="text" value="#ENV*{lists/#GET{index}/#GET{name},#VALEUR{#GET{name}}}" />
+							</li>
+							#SET{name,titre}#SET{obli,''}#SET{defaut,''}#SET{erreurs,#ENV**{erreurs/lists/#GET{index}/#GET{name}}}
+							<li class="editer editer_lists_[(#GET{index})]_#GET{name}[ (#GET{obli})][ (#GET{erreurs}|oui)erreur]">
+								<label for="lists_[(#GET{index})]_#GET{name}">[(#GET{fl}|concat{':label_list_',#GET{name}}|_T)]</label>[
+								<span class='erreur_message'>(#GET{erreurs})</span>
+								]<input type="text" name="lists[#GET{index}][#GET{name}]" class="text" value="#ENV*{lists/#GET{index}/#GET{name},#VALEUR{#GET{name}}}" id="lists_[(#GET{index})]_#GET{name}" [(#HTML5|et{#GET{obli}})required='required']/>
+							</li>
+							#SET{name,status}#SET{obli,''}#SET{defaut,''}#SET{erreurs,#ENV**{erreurs/lists/#GET{index}/#GET{name}}}
+							<li class="editer editer_lists_[(#GET{index})]_#GET{name}[ (#GET{obli})][ (#GET{erreurs}|oui)erreur]">
+								<label for="lists_[(#GET{index})]_#GET{name}">[(#GET{fl}|concat{':label_list_',#GET{name}}|_T)]</label>[
+								<span class='erreur_message'>(#GET{erreurs})</span>
+								]
+								#SET{val,open}
+								<div class="choix left choix_#GET{val}">
+									<input type="radio" name="lists[#GET{index}][#GET{name}]" class="radio" id="lists_[(#GET{index})]_#GET{name}_#GET{val}"
+										value="#GET{val}"[(#ENV*{lists/#GET{index}/#GET{name},#VALEUR{#GET{name}}}|=={#GET{val}}|oui)checked="checked"]
+										onchange="if ($(this).prop('checked')) $(this).parent().nextAll('.choix_delete_explication').hide();" />
+									<label for="lists_[(#GET{index})]_#GET{name}_#GET{val}">[(#GET{fl}|concat{':label_',#GET{name},'_',#GET{val}}|_T)]</label>
+								</div>
+								#SET{val,close}
+								<div class="choix left choix_#GET{val}">
+									<input type="radio" name="lists[#GET{index}][#GET{name}]" class="radio" id="lists_[(#GET{index})]_#GET{name}_#GET{val}"
+										value="#GET{val}"[(#ENV*{lists/#GET{index}/#GET{name},#VALEUR{#GET{name}}}|=={#GET{val}}|oui)checked="checked"]
+										onchange="if ($(this).prop('checked')) $(this).parent().nextAll('.choix_delete_explication').hide();" />
+									<label for="lists_[(#GET{index})]_#GET{name}_#GET{val}">[(#GET{fl}|concat{':label_',#GET{name},'_',#GET{val}}|_T)]</label>
+								</div>
+								#SET{val,delete}
+								<div class="choix right choix_#GET{val}">
+									<input type="radio" name="lists[#GET{index}][#GET{name}]" class="radio" id="lists_[(#GET{index})]_#GET{name}_#GET{val}"
+										value="#GET{val}"[(#ENV*{lists/#GET{index}/#GET{name},#VALEUR{#GET{name}}}|=={#GET{val}}|oui)checked="checked"]
+										onchange="if ($(this).prop('checked')) $(this).parent().nextAll('.choix_delete_explication').show();" />
+									<label for="lists_[(#GET{index})]_#GET{name}_#GET{val}" title="[(#GET{fl}|concat{':label_',#GET{name},'_',#GET{val},'_explication'}|_T|attribut_html)]">[(#GET{fl}|concat{':label_',#GET{name},'_',#GET{val}}|_T)]</label>
+								</div>
+								<div class="choix right choix_#GET{val}_explication explication"[(#ENV*{lists/#GET{index}/#GET{name},#VALEUR{#GET{name}}}|=={#GET{val}}|non)style="display:none"]>
+									[(#GET{fl}|concat{':label_',#GET{name},'_',#GET{val},'_explication'}|_T)]
+								</div>
+							</li>
+						</ul>
+					</BOUCLE_listes>
+				</fieldset>
+			</li>
+
+		</ul>
+
+		<p class="boutons"><span class="image_loading">&nbsp;</span><input type="submit" class="submit" value="<:bouton_enregistrer:>" /></p>
+	</div>
+	</form>
+</div>
+<style type="text/css">
+ul.liste-diffusion {border-bottom: 1px solid #eee;padding-top: 1em !important;padding-bottom: 1em !important;}
+ul.liste-diffusion .editer {padding-top: 2px;padding-bottom: 2px;}
+ul.liste-diffusion .editer .choix.left {float: left}
+ul.liste-diffusion .editer .choix.right {float: right}
+ul.liste-diffusion .choix_close { margin-left:3em;}
+</style>

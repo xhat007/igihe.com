@@ -1,0 +1,511 @@
+				<table style="width:400px;background-color:#FFF;">
+					<tr>
+						<td>
+							<p style="text-align:center; font-family:'Trebuchet MS', Helvetica, sans-serif;font-size:12px;color:#000000;"></p>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:60%;" rowspan="4">
+							<script type="text/javascript">
+								function send_vote(poll_id,my_vote_is)							
+								{								
+									var xhr_object = null;
+									if(window.XMLHttpRequest) // Firefox
+										xhr_object = new XMLHttpRequest();
+									else
+									{
+										if(window.ActiveXObject) // Internet Explorer
+											xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+											else // XMLHttpRequest non support&#233; par le navigateur
+											{
+												alert("Browser does not support xmlHttpRequest");
+												return;
+											}
+										}
+										var method   = "POST";
+										var filename = "igiheshowbiz_votes.php";																	
+										var requete  = "poll_id="+poll_id+"&question_id="+my_vote_is;																	
+										xhr_object.onreadystatechange = function() 
+										{
+											if(xhr_object.readyState == 1)
+											{
+												document.getElementById("poll_area_"+poll_id).innerHTML = '<div style="height:100%;">Loading poll...</div>';
+											}								
+											if(xhr_object.readyState == 4) 
+											{
+												var reponse = xhr_object.responseText;
+												document.getElementById("poll_area_"+poll_id).innerHTML = reponse;																			
+											}
+										}	 
+										xhr_object.open(method, filename, true);
+										xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+										xhr_object.send(requete);								
+									}																
+								</script>												
+								<div style="width:100%;">											
+								<form method="POST" onSubmit="return(false)"/><div id="poll_area_3"><table style="width:100%;"><tr>
+												<td width="147" style="text-align:center;">
+													<a href="#" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/f6ejcbn.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Deux fois Deux</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Jay Polly</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">50</span><br/><span style="font-size:10px;">22.52 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,26)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=#&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://igihe.com/IMG/mp3/NZABAMPARI_by_Knowless_Kina_music_2012_igihe.mp3" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/wKGaCQ2.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Nzabampari</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Knowless</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">24</span><br/><span style="font-size:10px;">10.81 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,24)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://igihe.com/IMG/mp3/NZABAMPARI_by_Knowless_Kina_music_2012_igihe.mp3&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=xg7wGYrIMrs" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/46I4vcy.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Give it to me</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">The Ben</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">21</span><br/><span style="font-size:10px;">9.46 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,23)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://www.youtube.com/watch?feature=player_embedded&amp;v=xg7wGYrIMrs&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://igihe.com/IMG/mp3/Nkeneye_umukunzi_by_PRISCILLAH.mp3" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/f2uMtFT.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Nkeneye umukunzi</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Pricilla</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">19</span><br/><span style="font-size:10px;">8.56 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,39)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://igihe.com/IMG/mp3/Nkeneye_umukunzi_by_PRISCILLAH.mp3&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://igihe.com/imyidagaduro/muzika/abahanzi/peace/indirimbo-577/Uziye-igihe.html" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/4Fku6c2.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Uziye igihe</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Peace</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">15</span><br/><span style="font-size:10px;">6.76 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,36)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://igihe.com/imyidagaduro/muzika/abahanzi/peace/indirimbo-577/Uziye-igihe.html&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://igihe.com/IMG/mp3/meddy_igihe.mp3" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/aqWYHTM.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Holly Spirit</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Meddy</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">11</span><br/><span style="font-size:10px;">4.95 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,22)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://igihe.com/IMG/mp3/meddy_igihe.mp3&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://igihe.com/IMG/mp3/Ibitenge_By_Urban_Boyz_ft_AMA-G_Junior_Mlt_-Super_Level_2013_1_.mp3" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/Zu6aibg.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Ibitenge</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Urban Boyz</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">10</span><br/><span style="font-size:10px;">4.5 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,27)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://igihe.com/IMG/mp3/Ibitenge_By_Urban_Boyz_ft_AMA-G_Junior_Mlt_-Super_Level_2013_1_.mp3&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="#" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/rp5Jfxy.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Yebabawe</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">King James</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">9</span><br/><span style="font-size:10px;">4.05 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,25)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=#&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="#" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/dIePPL5.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Beautiful</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Alpha Rwirangira</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">8</span><br/><span style="font-size:10px;">3.6 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,28)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=#&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://igihe.com/IMG/mp3/NIKI_UTABONA_by_KING_JAMES_-1.mp3" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/WBzIjJC.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Ni iki Utabona</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">King James</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">7</span><br/><span style="font-size:10px;">3.15 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,29)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://igihe.com/IMG/mp3/NIKI_UTABONA_by_KING_JAMES_-1.mp3&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=j_yWFRKedqM" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/THb5a2G.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Bibaye</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Urban Boyz</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">7</span><br/><span style="font-size:10px;">3.15 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,30)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://www.youtube.com/watch?feature=player_embedded&amp;v=j_yWFRKedqM&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://igihe.com/imyidagaduro/muzika/abahanzi/the-ben/indirimbo-615/wowe.html" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/bdTi6uj.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Wowe</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">The Ben</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">7</span><br/><span style="font-size:10px;">3.15 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,37)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://igihe.com/imyidagaduro/muzika/abahanzi/the-ben/indirimbo-615/wowe.html&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://igihe.com/IMG/mp3/Simubure_by_The_Super_Level_Ibisumizi.mp3" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/CgCGz1c.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Simubure</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Urban Boyz</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">6</span><br/><span style="font-size:10px;">2.7 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,21)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://igihe.com/IMG/mp3/Simubure_by_The_Super_Level_Ibisumizi.mp3&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://igihe.com/IMG/mp3/IKIZERE_by_Knowless_kina_music_2012_.mp3" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/p75cK8B.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Icyizere</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Knowless</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">6</span><br/><span style="font-size:10px;">2.7 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,38)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://igihe.com/IMG/mp3/IKIZERE_by_Knowless_kina_music_2012_.mp3&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://igihe.com/IMG/mp3/Ca_Inkoni_Izamba_By_FireMan_ft_Qeen_Cha_Junior_Pro-Bridge_rec2012_.mp3" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/6yFqJ72.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Ca Inkoni Izamba</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Fireman</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">5</span><br/><span style="font-size:10px;">2.25 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,34)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://igihe.com/IMG/mp3/Ca_Inkoni_Izamba_By_FireMan_ft_Qeen_Cha_Junior_Pro-Bridge_rec2012_.mp3&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://igihe.com/imyidagaduro/muzika/abahanzi/bruce-melodie/indirimbo-1034/indorerwamo-33832.html" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/bijfQhM.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Indorerwamo</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Bruce Melodie</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">4</span><br/><span style="font-size:10px;">1.8 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,32)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://igihe.com/imyidagaduro/muzika/abahanzi/bruce-melodie/indirimbo-1034/indorerwamo-33832.html&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://igihe.com/imyidagaduro/muzika/abahanzi/kitoko/indirimbo-351/bananiye-video.html" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/XcWbrKg.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Bananiye</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Kitoko</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">4</span><br/><span style="font-size:10px;">1.8 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,33)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://igihe.com/imyidagaduro/muzika/abahanzi/kitoko/indirimbo-351/bananiye-video.html&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://igihe.com/imyidagaduro/muzika/abahanzi/gisa/indirimbo-978/samantha.html" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/YJBNbvL.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Samantha</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Gisa</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">3</span><br/><span style="font-size:10px;">1.35 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,31)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://igihe.com/imyidagaduro/muzika/abahanzi/gisa/indirimbo-978/samantha.html&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://igihe.com/IMG/mp3/urwanda_rw_amafaranga_by_ama-g_king_james_fazzo_pro_3_igihe.mp3" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/SMPjhs4.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">U Rwanda rw’Amafaranga</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Amag ft King James</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">3</span><br/><span style="font-size:10px;">1.35 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,35)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://igihe.com/IMG/mp3/urwanda_rw_amafaranga_by_ama-g_king_james_fazzo_pro_3_igihe.mp3&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr><tr>
+												<td width="147" style="text-align:center;">
+													<a href="http://igihe.com/IMG/mp3/Udatsikira_by_Jules_Sentore_IGIHE.mp3" title="view profile" target="_top"><img src="http://vote.igihe.com/images/ijororyurukundo/resized/IazT5l5.jpg" width="147" alt=""/></a>												
+
+											</td>										
+											<td style="background-color:609ebf;">
+												<div style="float:left;width:48%;">
+												<span style="color:#FFF;font-weight:bold;">Udatsikira</span><br/>
+												&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:12px;">Jules Sentore</a>
+												</div>		
+												<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">3</span><br/><span style="font-size:10px;">1.35 %</span><br/></div>
+												<div style="clear:both;">&nbsp;</div>
+												<div>
+													<a href="#" style="color:#D2E08A;" onclick="send_vote(3,40)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+<object type="application/x-shockwave-flash" data="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" width="170" height="25">
+                    <param name="movie" value="http://www.igihe.com/squelettes/igihe_imgs/igihe_mp3_player.swf" />
+                        <param name="bgcolor" value="#000000" />
+						 <param name="wmode" value="transparent">
+						<param name="FlashVars" value="mp3=http://igihe.com/IMG/mp3/Udatsikira_by_Jules_Sentore_IGIHE.mp3&amp;width=170&amp;height=25&amp;autoload=1&amp;showstop=1&amp;showvolume=1&amp;showloading=always&amp;buttonwidth=40&amp;sliderwidth=40&amp;sliderheight=15&amp;volumewidth=40&amp;volumeheight=10&amp;loadingcolor=167dc2&amp;bgcolor=000000&amp;bgcolor1=333333&amp;slidercolor1=cfcfcf&amp;slidercolor2=cfcfcf&amp;sliderovercolor=167dc2&amp;buttoncolor=cfcfcf&amp;buttonovercolor=167dc2" />
+                </object>
+												</div>
+											</td>
+											</tr>							</table>
+						</div>
+					</td>										
+					</tr>									
+				</table>													
+				

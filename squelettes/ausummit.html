@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>IGIHE.com - Murakaze neza - Special Page - African Union Summit 2016</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+	<meta http-equiv="content-language" content="en-US"/>
+	<meta http-equiv="imagetoolbar" content="no"/>
+	<meta http-equiv="robots" content="all"/>
+	<meta name="revisit-after" content="1"/>
+	<meta http-equiv="window-target" content="_top"/>
+	<meta name="expires" content="-1"/>
+	<meta name="rating" content="general"/>
+	<meta http-equiv="pragma" content="no-cache"/>
+	<link rel="shortcut icon" href="ausumit_2016_images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="ausumit_2016_css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="ausumit_2016_css/font-awesome.css" />
+	<link type="text/css" href="ausumit_2016_css/css3.css" rel="stylesheet" />
+	<script type="text/javascript" src=" ausumit_2016_js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="ausumit_2016_js/jquery.jcarousel.min.js"></script>
+	<script type="text/javascript" src="ausumit_2016_js/jquery.pikachoose.min.js"></script>
+	<script type="text/javascript" src="ausumit_2016_js/jquery.touchwipe.min.js"></script>
+	<script language="javascript">
+		$(document).ready(
+			function (){
+				$("#pikame").PikaChoose();
+					hideThumbnails: true;
+			});
+	</script>
+
+</head>
+<body>
+	<div id="header">
+		<div class="header">
+			<div class="h1">
+				<div class="hinfo">IGIHE.com</div>
+				<ul class="hlang">
+					<li><a href="#"><img src="ausumit_2016_images/fla1.gif" />IKINYARWANDA</a></li>
+					<li><a href="#"><img src="http://igihe.bi/squelettes/igihe_imgs/gh_flag_bi.jpg" />IKIRUNDI</a></li>
+					<li><a href="#"><img src="http://igihe.com/squelettes/igihe_imgs/gh_flag_en.gif" />ENGLISH</a></li>
+					<li><a href="#"><img src="http://igihe.com/squelettes/igihe_imgs/gh_flag_fr.gif" />FRANÇAIS</a></li>
+					<li><a href="#"><img src="http://igihe.com/drpdwn/tv.png" />IGIHE TV</a></li>
+				</ul>
+				<form class="hsearch" action="http://www.igihe.com/spip.php?page=recherche" method="GET">
+					<input type="text" class="srchtxt" value="Andika aha..." name="recherche"/>
+					<input type="submit" class="srchbtn" value="shakisha" />
+				</form>
+				<div class="clear"></div>
+			</div>
+			<div class="h2">
+				<div class="hlogo">
+					<a href="#"><img src="ausumit_2016_images/logo.png" /></a>
+				</div>
+				<div class="hban ban">
+					<a href="#">
+						<img src="ausumit_2016_images/ban5.png" />
+					</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="h3">
+				<ul class="hnav">
+					<li><a href="http://www.igihe.com/"><img src="ausumit_2016_images/ico1.gif" />AHABANZA</a></li>
+					<li><a href="http://igihe.com/abo-turibo/"><img src="ausumit_2016_images/ico2.gif" />ABO TURIBO</a></li>
+					<li><a href="http://igihe.org/"><img src="ausumit_2016_images/ico3.gif" />SERIVISI</a></li>
+					<li><a href="http://igihe.com/spip.php?page=contact&id_rubrique=3"><img src="ausumit_2016_images/ico4.gif" />TWANDIKIRE</a></li>
+					<li><a href="http://www.igihe.com/"><img src="ausumit_2016_images/ico5.gif" />IBIRIMO</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div class="content">
+			<div class="top-ban">
+				<a href="#">
+					<img src="ausumit_2016_images/ban6.png" alt="" />
+				</a>
+			</div>
+			<div class="cleft">
+				<div class="cslide">
+					<div class="pikachoose">
+						<ul id="pikame">
+							<BOUCLE_slider(ARTICLES){titre_mot=ausummitslide}{par date}{inverse}{0,8}{doublons xx}>
+								<li>
+									<a href="#">[(#LOGO_ARTICLE|image_reduire{500,250}|image_recadre{500,250}|vider_attribut{height}|vider_attribut{width})]</a>
+									<span><a href="#URL_ARTICLE">#TITRE</a></span>
+								</li>
+							</BOUCLE_slider>
+							<div class="clear"></div>
+						</ul>
+					</div>				
+				</div>			
+				<div class="main-news">
+					<h2>amakuru</h2>
+					<div class="news-list">
+						<B_othernews>
+						<ul class="nws">
+							<BOUCLE_othernews(ARTICLES){titre_mot=ausummitnews}{par date}{inverse}{0,20}{doublons xx}{pagination 20}>
+								<li>
+									<div class="nws-img">[(#LOGO_ARTICLE|image_reduire{152,104}|image_recadre{152,104})]</div>
+									<a href="#URL_ARTICLE"><h3>#TITRE</h3></a>
+									<p>[(#TEXTE|couper{300})]</p>
+									<span><i class="fa fa-clock-o"></i>#DATE</span>
+								</li>
+							</BOUCLE_othernews>
+						</ul>
+						<div class="pag">
+							<ul class="pagination">
+								[(#PAGINATION)]
+							</ul>
+						</div>	
+						</B_othernews>
+						<//B_othernews>
+					</div>
+				</div>
+			</div>
+			<div class="cright">
+				<div class="tw-widget">
+					<h2>Twitter</h2>
+					<div class="widget">
+						<a class="twitter-timeline" data-width="380" data-height="430" href="https://twitter.com/igihe">Tweets by igihe</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+				</div>
+				<div class="tw-flickr">
+					<h2>Flickr</h2>
+					<div class="flickr-img">
+						<ul>
+							<li class="prt-1"><img src="ausumit_2016_images/fl-img1.png" /></li>
+							<li class="prt-2"><img src="ausumit_2016_images/fl-img2.png" /><img src="ausumit_2016_images/fl-img3.png" /></li>
+							<li class="prt-3"><img src="ausumit_2016_images/fl-img4.png" /></li>
+						</ul>
+						<span class="more"><a href="#">View all</a></span>
+					</div>
+				</div>
+				<div class="tw-video">
+					<h2>Videos</h2>
+					<div class="video">
+						<table style="width:100%">
+							<tr><td style="border:2px solid #FFF;" colspan="2"><a href="https://www.youtube.com/watch?v=sHLMkZ0XEWg" target="_blank"><img src="http://img.youtube.com/vi/sHLMkZ0XEWg/0.jpg" style="width:100%;"/><i class="fa fa-play-circle-o"></i></a></td></tr>
+							<tr><td colspan="2"><a href="https://www.youtube.com/watch?v=sHLMkZ0XEWg" title="">Nkosazana Dlamini-Zuma visits Kigali Genocide Memorial Site (9th July,2016)</td></tr>
+							<tr><td style="border:2px solid #FFF;text-align:center;"><a href="https://www.youtube.com/watch?v=PRFs8ghBM00" target="_blank"><img src="http://img.youtube.com/vi/PRFs8ghBM00/1.jpg" style="width:164px;"/><i class="fa fa-play-circle-o"></i></a></td>
+							<td style="border:2px solid #FFF;text-align:center;"><a href="https://www.youtube.com/watch?v=VPhiC1gcGIY" target="_blank"><img src="http://img.youtube.com/vi/VPhiC1gcGIY/1.jpg" style="width:164px;"/><i class="fa fa-play-circle-o"></i></a></td>
+							</tr>
+							<tr>
+								<td style="font-size:11px;">
+									<a href="https://www.youtube.com/watch?v=PRFs8ghBM00">
+										Kigali Convention Center is truly Rwandan - President Kagame
+									</a>
+								</td>
+								<td style="font-size:11px;">
+									<a href="https://www.youtube.com/watch?v=VPhiC1gcGIY">
+										President Kagame inaugurated the Kigali Convention Centre | 8th July 2016
+									</a>
+								</td>
+							</tr>
+						</table>
+						<span class="more"><a href="https://www.youtube.com/user/IgiheTV/videos" target="_balnk">View all</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-sep">
+				<a href="#"><img src="ausumit_2016_images/foot-sep.png" /></a>
+			</div>
+			<div class="foot-ban">
+				<a href="#"><img src="ausumit_2016_images/ban5.png" /></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer">
+			<div class="f1">
+
+			</div>
+			<div class="f2">
+				<div class="flogo"><img src="ausumit_2016_images/flogo.png" /></div>
+				<form class="fsearch">
+					<input type="text" class="srchtxt" value="Andika aha..." />
+					<input type="submit" class="srchbtn" value="shakisha" />
+				</form>
+				<div class="ftop"><a href="#"><img src="ausumit_2016_images/ftop.gif" /></a></div>
+			</div>
+			<div class="f3">
+				<div class="fnet">
+					<h3>IGIHE Network</h3>
+					<a href="#">IGIHE.com mu Kinyarwanda</a>
+					<a href="#">IGIHE.com in English</a>
+					<a href="#">IGIHE.com en Français</a>
+				</div>
+				<div class="fjoin">
+					<h3>Join us</h3>
+					<a href="#">Socialize with us</a>
+					<div>
+						<a href="#"><img src="ausumit_2016_images/face.gif" /></a>
+						<a href="#"><img src="ausumit_2016_images/twi.gif" /></a>
+						<a href="#"><img src="ausumit_2016_images/you.gif" /></a>
+					</div>
+				</div>
+				<div class="fcont">
+					<h3>Contacts</h3>
+					<div><b>Location:</b> Ndamage Building 4th Floor</div>
+					<div><b>PO Box:</b> 3477 Kigali-Rwanda</div>
+					<div><b>Phones:</b></div>
+					<div>+250 788 74 29 08, +250 788 49 69 15, +250 728 94 66 08</div>
+					<div><b>Emails:</b></div>
+					<div>info@igihe.com, marketing@igihe.com</div>
+				</div>
+				<div class="fdev">
+					<h3>Website developed by</h3>
+					<img src="ausumit_2016_images/flogo2.gif" />
+				</div>
+				<div class="clear"></div>
+				<div class="fcopy">
+					<div>Uru Rubuga Ruheruka Gushyirwaho Amakuru mercredi 5 février 2014 Saa 17:33:27</div>
+					<span>Copyright © 2009 -2014 - IGIHE Ltd - All Rights Reserved</span>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">$(document).ready(function(){$("#featured > ul").tabs({fx:{opacity:"toggle"}}).tabs("rotate",7000,true);});</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.3/jquery-ui.min.js"></script>
+<script type="text/javascript">var tablink_idname=new Array("newsnav","audionav","amashushonav","amatangazolink","siteslink")
+var tabcontent_idname=new Array("newsinfo","audioinfo","amashushoinfo","amatangazocontent","sitescontent")
+var tabcount=new Array("2","2","2","2")
+var loadtabs=new Array("1","1","1","1")
+var autochangemenu=0;var changespeed=3;var stoponhover=0;function easytabs(menunr,active){if(menunr==autochangemenu){currenttab=active;}if((menunr==autochangemenu)&&(stoponhover==1)){stop_autochange()}else if((menunr==autochangemenu)&&(stoponhover==0)){counter=0;}menunr=menunr-1;for(i=1;i<=tabcount[menunr];i++){document.getElementById(tablink_idname[menunr]+i).className='tab'+i;document.getElementById(tabcontent_idname[menunr]+i).style.display='none';}document.getElementById(tablink_idname[menunr]+active).className='tab'+active+' tabactive';document.getElementById(tabcontent_idname[menunr]+active).style.display='block';}var timer;counter=0;var totaltabs=tabcount[autochangemenu-1];var currenttab=loadtabs[autochangemenu-1];function start_autochange(){counter=counter+1;timer=setTimeout("start_autochange()",1000);if(counter==changespeed+1){currenttab++;if(currenttab>totaltabs){currenttab=1}easytabs(autochangemenu,currenttab);restart_autochange();}}function restart_autochange(){clearTimeout(timer);counter=0;start_autochange();}function stop_autochange(){clearTimeout(timer);counter=0;}
+window.onload=function(){var menucount=loadtabs.length;var a=0;var b=1;do{easytabs(b,loadtabs[a]);a++;b++;}while(b<=menucount);if(autochangemenu!=0){start_autochange();}}</script>
+</body>
+</html>

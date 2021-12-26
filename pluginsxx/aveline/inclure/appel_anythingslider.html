@@ -1,0 +1,17 @@
+<script type="text/javascript">// <![CDATA[
+	$(document).ready(function(){
+		$('#anythingslider_#ENV{id_unique}').anythingSlider({
+			expand: false,
+			resizeContents: false,
+			startText : "<:avelinepublic:start:>",
+			stopText : "<:avelinepublic:stop:>",
+			[theme : '(#ENV{theme})',]
+			buildArrows: [(#ENV{build_arrows}?{true,false})],
+			buildNavigation: [(#ENV{build_navigation}?{true,false})],
+			buildStartStop: [(#ENV{build_startstop}?{true,false})],
+			toggleControls: [(#ENV{toggle_controls}?{true,false})],
+			startStopped: [(#ENV{start_stopped}?{true,false})],
+			[delay : (#ENV{delay})]
+		});
+	});
+ //]]></script>

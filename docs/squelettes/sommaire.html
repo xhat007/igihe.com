@@ -1,0 +1,106 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Murakaza Neza Ku IGIHE DOCUMENTS</title>
+		<meta charset="UTF-8" />
+		<link href="assets/css/bootstrap.css" type="text/css" rel="stylesheet" />
+		<link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+		<link href="assets/css/flaticon.css" type="text/css" rel="stylesheet" />
+		<link href="assets/css/font-awesome.css" type="text/css" rel="stylesheet" />
+		<link href="assets/css/fonts.css" type="text/css" rel="stylesheet" />
+		<script>
+		function startTime() {
+		    var today = new Date();
+		    var h = today.getHours();
+		    var m = today.getMinutes();
+		    var s = today.getSeconds();
+		    m = checkTime(m);
+		    s = checkTime(s);
+		    document.getElementById('localtime').innerHTML =
+		    h + ":" + m + ":" + s;
+		    var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+		    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		    return i;
+		}
+		</script>
+	</head>
+	<body onload="startTime()">
+		<div class="container">
+			<header>
+				<div class="cur-time pull-left col-lg-3">
+					<p><i class="fa fa-clock-o"></i><span class="time" id="localtime"></span></p>
+				</div>
+				<div class="lang col-lg-6 visible-lg">
+					<ul class="nav">
+						<li class="item"><a href="http://www.igihe.com/">Igihe kiny</a></li>
+						<li class="item"><a href="http://en.igihe.com/">Igihe eng</a></li>
+						<li class="item"><a href="http://fr.igihe.com/">Igihe fr</a></li>
+						<li class="item"><a href="http://igihe.bi">Igihe kirundi</a></li>
+					</ul>
+				</div>
+				<div class="social-icon col-lg-3">
+					<ul>
+						<div class="row">
+							<li class="item"><a href="http://www.facebook.com/igihe" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li class="item"><a href="http://www.twitter.com/igihe" target="_blank"><i class="fa fa-twitter"></i></a></li>
+							<li class="item"><a href="http://www.youtube.com/user/igihetv" target="_blank"><i class="fa fa-youtube"></i></a></li>
+							<li class="item"><a href="https://www.instagram.com/igihe/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						</div>	
+					</ul>
+				</div>
+			</header>
+			<section class="lg-view  col-lg-12">
+				<div class="lg-view-cn">
+					<div class="search-engine">
+						<form method="GET" action="spip.php">
+							<input type="text" class="search-doc" placeholder="Search in our database" name="recherche"/>
+							<input type="hidden" name="page" value="recherche"/>
+							<input type="submit" value="Search" class="pull-right"/>
+						</form>
+					</div>
+				</div>
+			</section>
+			<div class="lg-separator col-lg-12" style="background:#FFF;">
+				&nbsp;<br/>
+				&nbsp;<br/>
+				&nbsp;<br/>
+				&nbsp;<br/>
+			</div>
+			<div class="lg-separator col-lg-12">
+				<a href="#latest_documents"><span class="scroll-down pull-right">Scroll down</span></a>
+			</div>
+			<section class="doc-list col-lg-12">				
+				<ul>
+					<div class="row">
+						<div class="col-lg-8">
+							<h3 id="latest_documents">Latest Documents</h3>
+							<BOUCLE_article_ghdocs(ARTICLES){branche}{par date}{inverse}{0,27}>
+								[(#SET{titrearticle,#TITRE})]
+								<BOUCLE_docs_ghdocs(DOCUMENTS){id_article}{par date}{inverse}>
+									<li class="doc-item #DOCUMENTTYPE col-lg-3">
+										<a href="spip.php?page=doc-open&amp;id_article=#ID_ARTICLE" class="in-link">[(#GET{titrearticle}|couper{50})]</span>
+										<a href="spip.php?page=doc-open&amp;id_article=#ID_ARTICLE" class="more">Read</a>
+										</a>
+									</li>
+								</BOUCLE_docs_ghdocs>
+							</BOUCLE_article_ghdocs>
+						</div>
+						<div class="col-lg-4">
+							<section class="doc-cat col-lg-12">
+								<h3>Categories</h3>
+								<ul>
+									<BOUCLE_rubrique_ghdocs(RUBRIQUES){id_parent=0}>
+										<li class="cat-item cat-[(#TITRE|strtolower)]"><a href="#URL_RUBRIQUE">#TITRE</a></li>
+									</BOUCLE_rubrique_ghdocs>
+								</ul>
+							</section>
+						</div>
+					</div>	
+				</ul>
+			</section>
+			<INCLURE(includes/footer)>
+		</div>	
+	</body>
+</html>

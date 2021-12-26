@@ -1,0 +1,112 @@
+				<table style="width:252px;background-color:#FFF;">
+					<tr>
+						<td>
+				
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p style="text-align:center; font-family:'Trebuchet MS', Helvetica, sans-serif;font-size:12px;color:#000000;"></p>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:60%;" rowspan="4">
+							<script type="text/javascript">
+								function send_vote(poll_id,my_vote_is)							
+								{								
+									var xhr_object = null;
+									if(window.XMLHttpRequest) // Firefox
+										xhr_object = new XMLHttpRequest();
+									else
+									{
+										if(window.ActiveXObject) // Internet Explorer
+											xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+											else // XMLHttpRequest non support&#233; par le navigateur
+											{
+												alert("Browser does not support xmlHttpRequest");
+												return;
+											}
+										}
+										var method   = "POST";
+										var filename = "igihehomepoll_votes.php";																	
+										var requete  = "poll_id="+poll_id+"&question_id="+my_vote_is;																	
+										xhr_object.onreadystatechange = function() 
+										{
+											if(xhr_object.readyState == 1)
+											{
+												document.getElementById("poll_area_"+poll_id).innerHTML = '<div style="height:100%;">Loading poll...</div>';
+											}								
+											if(xhr_object.readyState == 4) 
+											{
+												var reponse = xhr_object.responseText;
+												document.getElementById("poll_area_"+poll_id).innerHTML = reponse;																			
+											}
+										}	 
+										xhr_object.open(method, filename, true);
+										xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+										xhr_object.send(requete);								
+									}																
+								</script>												
+								<div style="width:100%;">											
+								<form method="POST" onSubmit="return(false)"/><h3 style="font-size:13px;">Utekereza iki ku mushinga w’Itegeko riha abana b’imyaka 10 kugeza 19 uburyo bwo kuboneza urubyaro?</h3><div id="poll_area_9"><table style="width:100%;"><tr>
+									
+												<td style="background-color:609ebf;">
+													<div style="float:left;width:48%;">
+											
+													&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:13px;"><b>Ni amahano</b></a>
+													</div>		
+													<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">517</span><br/><span style="font-size:10px;">71.81 %</span><br/></div>
+													<div style="clear:both;">&nbsp;</div>
+													<div>
+														<a href="#" style="color:#D2E08A;" onclick="send_vote(9,29)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+													</div>
+												</td>
+												</tr><tr>
+									
+												<td style="background-color:609ebf;">
+													<div style="float:left;width:48%;">
+											
+													&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:13px;"><b>Ni ingenzi</b></a>
+													</div>		
+													<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">105</span><br/><span style="font-size:10px;">14.58 %</span><br/></div>
+													<div style="clear:both;">&nbsp;</div>
+													<div>
+														<a href="#" style="color:#D2E08A;" onclick="send_vote(9,28)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+													</div>
+												</td>
+												</tr><tr>
+									
+												<td style="background-color:609ebf;">
+													<div style="float:left;width:48%;">
+											
+													&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:13px;"><b>Byari byaratinze</b></a>
+													</div>		
+													<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">49</span><br/><span style="font-size:10px;">6.81 %</span><br/></div>
+													<div style="clear:both;">&nbsp;</div>
+													<div>
+														<a href="#" style="color:#D2E08A;" onclick="send_vote(9,30)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+													</div>
+												</td>
+												</tr><tr>
+									
+												<td style="background-color:609ebf;">
+													<div style="float:left;width:48%;">
+											
+													&nbsp;&nbsp;<a href="#" style="color:#FFF;font-size:13px;"><b>Ntacyo bimbwiye</b></a>
+													</div>		
+													<div style="width:48%;float:right;color:#FFF;font-size:11px;text-align:center;">Votes<br/><span style="">49</span><br/><span style="font-size:10px;">6.81 %</span><br/></div>
+													<div style="clear:both;">&nbsp;</div>
+													<div>
+														<a href="#" style="color:#D2E08A;" onclick="send_vote(9,31)"><img src="http://vote.igihe.com/images/bouton_vote.png" alt=""/></a>
+
+													</div>
+												</td>
+												</tr>							</table>
+						</div>
+					</td>										
+					</tr>									
+				</table>													
+				

@@ -1,0 +1,102 @@
+@font-face
+{
+	font-family: 'Catull';
+	src: url('fonts/Catull.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'trebuchet ms';
+	src: url('fonts/TREBUC.TTF') format('truetype');
+}
+@font-face
+{
+	font-family: 'Boli';
+	src: url('fonts/MVBOLI.TTF') format('truetype');
+}
+.corps{background: url(../images/gorilla.jpg) fixed; background-size: 100% auto; font-family: 'trebuchet ms', 'Helvetica Neue',Helvetica,Arial,sans-serif ;  box-shadow: inset 0px 20px 3px -3px rgba(50, 50, 50, 0.75);}
+
+.kwitaizina{margin: 10px 0;}
+.separator{text-align: center;} 
+.online-video{text-align: center; background-color: rgba(89, 128, 166, 0.8); padding: 5px;} 
+.panel { 
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.igihetvcontent {
+    width: 100%;
+    background: url("http://igihe.tv/images/bg5.png") repeat-x scroll 0% 0%, #FFF none repeat scroll 0% 0%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.panel-default > .panel-heading {color: #fff; font-weight: bold; font-size: 20px; text-transform: uppercase; background-color: rgba(0, 58, 23, 0.7);font-family: 'Boli';}
+.panel-default > .panel-heading:hover {background-color: #dd8502; }
+.panel-body {background: rgba(196, 196, 196, 0.95);}
+
+.bannerEvent{background: #003a17; text-align: center;}
+.footer{  padding: 20px 0; margin-top: 10px;   background: #2c4e7c url("http://igihe.tv/images/bglastfooter1.jpg") repeat-x scroll center top; color: #FFF;}
+
+.topmenu{background: #d7a103; border-top: 3px solid #000000;  padding-top: 5px;  padding-bottom: 5px; margin-bottom: 3px;}
+.topmenu ul li {padding: 2px 20px; margin: 0 10px; font-size: 20px; }
+
+.add-info a{font-weight: 700; font-size: 14px;}
+
+.logo-title{font-family: 'Catull'; font-size: 24px; color: #ffffff; font-weight: bold;}
+.logo-title2{font-family: 'Boli'; font-size: 14px; color: #000; }
+
+.mainav{padding-top: 50px;}
+
+.slide{padding: 5px 0; }
+
+.bodycontent{border: 1px solid #c4c4c4; padding: 10px; box-shadow: 0px 0px 10px 0px #D6D6D6; margin-bottom: 10px;}
+.newswrapper{padding: 10px 0;}
+.title-head{font-size: 16px; font-weight: bold; color: #e16c0f;}
+.title-head2{font-size: 14px;  color: #000000;}
+.title-head2 a, .title-head a:hover{color: #000000; }
+.title-head2 a:hover, .title-head a{color: #e16c0f; text-decoration: none; }
+.Published{font-family: 'Catull'; border-bottom: 1px solid #e16c0f; margin: 10px 0; display: inline-block; width: 100%;}
+.readmore{display: inline-block; float: right;   }
+.readmore a{border-radius: 5px 5px 0 0;   padding: 1px 15px; border: 1px solid #fff; margin-bottom: 5px;}
+.readmore a:hover{border: 1px solid #e16c0f; }
+.panel-heading{font-size: 18px; text-align: center;}
+
+.ws_cover a{visibility: hidden;}
+
+.social{padding-top: 50px;}
+.social li a{color: #fff; font-size: 36px; }
+.social li a:hover{opacity: 0.6;}
+
+.dark-background{padding: 30px 0px; background: #373737 none repeat scroll 0% 0%; color: #FFF;}
+.dark-background a{color: #d7a103;}
+.dark-background a:hover{color: #c4c4c4;}
+
+.article-content{ }
+.corps-article{min-height: 800px;}
+.def{float: right;  width: 40%; margin: 0 0 10px 10px;}
+
+.videos-rub{margin-bottom: 10px;}
+
+.spip_doc_titre
+{
+	width: 100%;
+}
+
+.spip_doc_titre:hover
+{
+	color: white;
+}
+
+.spip_documents
+{
+	padding: 5px 0 5px 0;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.spip_documents:hover
+{
+	background-color: #000;
+	cursor: pointer;
+	color: white;
+}

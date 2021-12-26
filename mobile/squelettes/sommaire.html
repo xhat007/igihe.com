@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- <script data-cfasync='false' data-mrf-script="garda" data-mrf-dt="1" data-mrf-host="bc.marfeelcache.com" src="https://bc.marfeelcache.com/statics/marfeel/gardac-sync.js"></script> -->
+		<meta charset="utf-8" /> 
+		<!-- <base href="https://mobile.igihe.com/squelettes/"> -->
+		<meta name="author" content="www.igihe.com" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+ 
+		<title>[(#NOM_SITE_SPIP|textebrut)] | [(#SLOGAN_SITE_SPIP|textebrut)]</title>
+		
+		<link rel="shortcut icon" href="https://mobile.igihe.com/squelettes/images/icon.png" />
+		<link rel="stylesheet" href="https://mobile.igihe.com/squelettes/css/jquery.mobile.1.5.css" />
+		<link href="https://mobile.igihe.com/squelettes/css/responsive.css" rel="stylesheet">
+		<link href="https://mobile.igihe.com/squelettes/css/bootstrap.min.css" rel="stylesheet">  
+		
+		<link rel="stylesheet" type="text/css" href="https://mobile.igihe.com/squelettes/css/demo.css?t=9">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300|Roboto|Ubuntu" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="https://mobile.igihe.com/squelettes/css/font-awesome.min.css">
+
+		<script type="text/javascript" src="https://mobile.igihe.com/squelettes/js/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://mobile.igihe.com/squelettes/js/jquery.mobile.1.5.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="https://mobile.igihe.com/squelettes/css/jquery.mmenu.all.css">
+		<script type="text/javascript" src="https://mobile.igihe.com/squelettes/js/jquery.mmenu.all.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="https://mobile.igihe.com/squelettes/dist/jquery.mhead.css?t=10">
+		<script type="text/javascript" src="https://mobile.igihe.com/squelettes/dist/jquery.mhead.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://mobile.igihe.com/squelettes/css/mobistyle.css?t=10">
+
+		<script type="text/javascript">
+			$(function() {
+
+				//	create a menu
+				$('#menu').mmenu();
+
+				//	fire the plugin
+				$('.mh-head').mhead({
+					
+				});
+
+				//	for demo only
+				$('a[href^="#/"]').click(function() {
+					alert( 'Thank you for clicking, but that\'s a demo link.' );
+					return;
+				})
+			});
+		</script> 
+		<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-587b16b7bbda5902"></script> -->
+		<style>.comment-1{visibility:hidden;}</style>
+	</head>
+	<body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10838297-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"B/FNo1IWx810S+", domain:"igihe.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=B/FNo1IWx810S+" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->  
+
+		<div id="page" class="container-fluid">
+
+			<div class="mh-head mh-align-left Sticky">
+				<span class="mh-btns-left">
+					<a class="fa fa-bars" href="#menu"></a>
+				</span>
+				<span class="mh-text">
+				<BOUCLE_GH_LOGOV5(ARTICLES){titre_mot=logo_actuel_mobile}{0,1}{!par date}>
+					[<a href="./"><img  src="https://www.igihe.com/(#LOGO_ARTICLE|extraire_attribut{src})" alt="IGIHE" /></a>]
+				</BOUCLE_GH_LOGOV5>
+				</span>
+				<span class="mh-btns-right2">  
+					<a class="" href="https://mobile.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/lkn.png"></a>
+					<a class="" href="http://fr.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/lfr.png"></a>
+					<a class="" href="http://en.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/len.png"></a>
+					<!-- <a class="" href="http://m.igihe.bi"><img src="https://mobile.igihe.com/squelettes/images/lki.png"></a> -->
+				</span>
+			</div>
+			
+			<div class="content">
+				<div class="row noLRMar"> 
+					<div class="col-xs-12">
+						<div class="topnews">
+						<BOUCLE_gh_highlightsthumbs1(ARTICLES){doublons xx}{0,1}{titre_mot=HomeHighlights1}{par date}{inverse}>
+							[<a href="https://mobile.igihe.com/spip.php?page=art&id_article=#ID_ARTICLE"><img src="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,}|extraire_attribut{src})" class="img-responsive"></a>] 
+							<div class="topnews-title">
+								<a href="#URL_ARTICLE"><h1>#TITRE</h1></a>
+								<div class="topnews-statistic">
+									<span class=""><i class="fa fa-eye"></i> #VISITES </span>
+									<span class=""><span class="comment-1">
+										<B_combien3b>
+										  <BOUCLE_combien3b(FORUMS) {id_article} {plat}>
+										  #TOTAL_BOUCLE
+										  </BOUCLE_combien3b>
+										  </B_combien3b>
+										  0				
+										  <//B_combien3b>
+									</span></span>
+									<span class=""><i class="fa fa-clock-o"></i> [(#DATE|date_relative)]</span>
+									<span class=""><i class="fa fa-user"></i> [(#PS|textebrut|sinon{'IGIHE'})] </span>
+									<span class="topnews-statistic-last"><a href="#news-1" data-rel="popup" class=""><i class="fa fa-share-alt"></i> Share</a></span>
+									<div data-role="popup" data-overlay-theme="a" id="news-1" class="popuping"> 
+										<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_v96i" data-url="https://www.igihe.com/#URL_ARTICLE" data-title="#TITRE | [(#NOM_SITE_SPIP|textebrut)]" data-description="[(#INTRODUCTION|textebrut)]" [data-media="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,}|extraire_attribut{src})"]></div> 
+									</div>
+								</div>
+							</div>
+						</BOUCLE_gh_highlightsthumbs1>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="latestnews">
+				<div class="row">
+				<?php
+				$tour2boucle=0; 
+				?>
+				<BOUCLE_gh_highlightsthumbs2(ARTICLES){doublons xx}{0,4}{titre_mot=HomeHighlights}{par date}{inverse}>
+				<?php 
+				if($tour2boucle==1){
+					$tour2boucle=0;
+						?> 
+					<div class="col-xs-6 nopaddingleft">
+						<div class="topnews">
+							[<a href="#URL_ARTICLE"><img src="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{*,500}|image_recadre{600,400}|extraire_attribut{src})" class="img-responsive"></a>]
+							<div class="topnews-title">
+								<a href="#URL_ARTICLE"><h1>#TITRE</h1></a> 
+							</div>
+						</div>
+						<div class="topnews-statistic-2"> 
+							<span class=""><span class="comment-2"><B_combien>
+										  <BOUCLE_combien(FORUMS) {id_article} {plat}>
+										  #TOTAL_BOUCLE
+										  </BOUCLE_combien>
+										  </B_combien>
+										  0				
+										  <//B_combien></span></span>
+							<span class=""><i class="fa fa-clock-o"></i> 
+							<B_gh_pasttime>
+								<BOUCLE_gh_pasttime(ARTICLES){id_article}{age<1}>
+									[(#DATE*|affdate{'H:i'})]'
+								</BOUCLE_gh_pasttime>
+							</B_gh_pasttime>[(#DATE*|affdate{'d/m'})]<//B_gh_pasttime></span> 
+							<span class="topnews-statistic-last-2 "><a href="#news-H-#COMPTEUR_BOUCLE" data-rel="popup" class=""><i class="fa fa-share-alt"></i> Share</a></span>
+							<div data-role="popup" data-overlay-theme="a" id="news-H-#COMPTEUR_BOUCLE" class="popuping"> 
+								<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_v96i" data-url="https://www.igihe.com/#URL_ARTICLE" data-title="#TITRE | [(#NOM_SITE_SPIP|textebrut)]" data-description="[(#INTRODUCTION|textebrut)]" [data-media="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,}|extraire_attribut{src})"]></div> 
+							</div>
+						</div>
+					</div>
+					<?php  
+				}
+				else {
+					$tour2boucle+=1;
+				?>
+					<div class="col-xs-6 nopaddingright">
+						<div class="topnews">
+							[<a href="#URL_ARTICLE"><img src="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{*,500}|image_recadre{600,400}|extraire_attribut{src})" class="img-responsive"></a>]
+							<div class="topnews-title">
+								<a href="#URL_ARTICLE"><h1>#TITRE</h1></a> 
+							</div>
+						</div>
+						<div class="topnews-statistic-2"> 
+							<span class=""><span class="comment-2"><B_combien1>
+										  <BOUCLE_combien1(FORUMS) {id_article} {plat}>
+										  #TOTAL_BOUCLE
+										  </BOUCLE_combien1>
+										  </B_combien1>
+										  0				
+										  <//B_combien1></span></span>
+							<span class=""><i class="fa fa-clock-o"></i> 
+							<B_gh_pasttime1>
+								<BOUCLE_gh_pasttime1(ARTICLES){id_article}{age<1}>
+									[(#DATE*|affdate{'H:i'})]'
+								</BOUCLE_gh_pasttime1>
+							</B_gh_pasttime1>[(#DATE*|affdate{'d/m'})]<//B_gh_pasttime1></span> 
+							<span class="topnews-statistic-last-2 "><a href="#news-H-#COMPTEUR_BOUCLE" data-rel="popup" class=""><i class="fa fa-share-alt"></i> Share</a></span>
+							<div data-role="popup" data-overlay-theme="a" id="news-H-#COMPTEUR_BOUCLE" class="popuping"> 
+								<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_v96i" data-url="https://www.igihe.com/#URL_ARTICLE" data-title="#TITRE | [(#NOM_SITE_SPIP|textebrut)]" data-description="[(#INTRODUCTION|textebrut)]" [data-media="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,}|extraire_attribut{src})"]></div>  
+							</div>
+						</div>
+					</div>
+				<?php   
+				}
+				?>
+				</BOUCLE_gh_highlightsthumbs2>  
+				</div>
+				<div class="middle-news">
+				<B_live>
+					<BOUCLE_live (ARTICLES) {0,1} {titre_mot=livestreaming} {!par date}>
+					<div class="row">
+						<div class="col-sm-12 nopaddingright">
+						<iframe width="406" height="324" src="https://www.youtube.com/embed/[(#SOUSTITRE)]?autoplay=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+					</div>
+					</BOUCLE_live>
+				</B_live>
+				<BOUCLE_gh_hi3(ARTICLES){0,1}{titre_mot=Home_main_article}{!par date}>
+					<div class="row">
+						<div class="col-xs-8 nopaddingright">
+							<div class="topnews"> 
+								<div class="topnews-title-2">
+								<a href="#URL_ARTICLE"><h2>#TITRE</h2></a> 
+								</div>
+							</div>
+							<div class="topnews-statistic-3">  
+								<span class=""><span class="comment-2"><B_combien17>
+											  <BOUCLE_combien17(FORUMS) {id_article} {plat}>
+											  #TOTAL_BOUCLE
+											  </BOUCLE_combien17>
+											  </B_combien17>
+											  0				
+											  <//B_combien17></span></span>
+								<span class=""><i class="fa fa-clock-o"></i> 
+								<B_gh_pasttime17>
+									<BOUCLE_gh_pasttime17(ARTICLES){id_article}{age<1}>
+										[(#DATE*|affdate{'H:i'})]'
+									</BOUCLE_gh_pasttime17>
+								</B_gh_pasttime17>[(#DATE*|affdate{'d/m'})]<//B_gh_pasttime17></span>  
+								
+								<span class="topnews-statistic-last-2 "><a href="#news-C" data-rel="popup" class=""><i class="fa fa-share-alt"></i> Share</a></span>
+								<div data-role="popup" data-overlay-theme="a" id="news-C" class="popuping"> 
+									<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_v96i" data-url="https://www.igihe.com/#URL_ARTICLE" data-title="#TITRE | [(#NOM_SITE_SPIP|textebrut)]" data-description="[(#INTRODUCTION|textebrut)]" [data-media="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,}|extraire_attribut{src})"]></div>  
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-4 nopaddingleft">
+							<div class="topnews">
+								[<a href="#URL_ARTICLE"><img src="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,300}|extraire_attribut{src})" class="img-responsive"></a>]
+							</div> 
+						</div>
+					</div>
+				</BOUCLE_gh_hi3>
+				<//B_live>
+				</div> 
+			</div>
+			
+			<div class="pub-section">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pub-title">Kwamamaza</div>
+						<div class="pub-ads"> 
+							<B_ad_bottom_mobile1>
+								<BOUCLE_ad_bottom_mobile1(ARTICLES){titre_mot=mobile_premium_1}{par date}{inverse}{0,1}>
+									<BOUCLE_docs_bottom_mobile1(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										<center>[<a href="#URL_ARTICLE"><img src="(#URL_DOCUMENT|timestamp)" class="img-responsive"></a>]</center>
+									</BOUCLE_docs_bottom_mobile1>
+								</BOUCLE_ad_bottom_mobile1>
+							</B_ad_bottom_mobile1>
+								<center><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+								<!-- internal_mobile --> 
+								<ins class="adsbygoogle"
+									 style="display:inline-block;width:320px;height:100px"
+									 data-ad-client="ca-pub-8563519530061720"
+									 data-ad-slot="6228471092"></ins> 
+								<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});  
+								</script></center>
+							<//B_ad_bottom_mobile1>	
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<B_articles_recents>
+			<div class="latestnews">
+			<?php $tour2boucle=0; ?>
+				<BOUCLE_articles_recents(ARTICLES){doublons xx}{0,200}{titre_mot=HomeNews}{par date}{inverse}{pagination 50}>
+				<div class="row">
+				<?php 
+				if($tour2boucle<2){
+					if($tour2boucle==0)
+					{
+						?> 
+						<div class="col-xs-6 nopaddingright">
+							<div class="topnews">
+								[<a href="#URL_ARTICLE"><img src="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{*,500}|image_recadre{600,400}|extraire_attribut{src})" class="img-responsive"></a>]
+								<div class="topnews-title">
+									<a href="#URL_ARTICLE"><h3>#TITRE</h3></a> 
+								</div>
+							</div>
+							<div class="topnews-statistic-2"> 
+								<span class=""><span class="comment-2"><B_combien2>
+											  <BOUCLE_combien2(FORUMS) {id_article} {plat}>
+											  #TOTAL_BOUCLE
+											  </BOUCLE_combien2>
+											  </B_combien2>
+											  0				
+											  <//B_combien2></span></span>
+								<span class=""><i class="fa fa-clock-o"></i> 
+								<B_gh_pasttime2>
+									<BOUCLE_gh_pasttime2(ARTICLES){id_article}{age<1}>
+										[(#DATE*|affdate{'H:i'})]'
+									</BOUCLE_gh_pasttime2>
+								</B_gh_pasttime2>[(#DATE*|affdate{'d/m'})]<//B_gh_pasttime2></span> 
+								<span class="topnews-statistic-last-2 "><a href="#news-D-#COMPTEUR_BOUCLE" data-rel="popup" class=""><i class="fa fa-share-alt"></i> Share</a></span>
+								<div data-role="popup" data-overlay-theme="a" id="news-D-#COMPTEUR_BOUCLE" class="popuping"> 
+									<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_v96i" data-url="https://www.igihe.com/#URL_ARTICLE" data-title="#TITRE | [(#NOM_SITE_SPIP|textebrut)]" data-description="[(#INTRODUCTION|textebrut)]" [data-media="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,}|extraire_attribut{src})"]></div>  
+								</div>
+							</div>
+						</div>
+					<?php  
+					}
+					else if($tour2boucle==1)
+					{
+					?>
+					<div class="col-xs-6 nopaddingleft">
+						<div class="topnews">
+							[<a href="#URL_ARTICLE"><img src="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{*,500}|image_recadre{600,400}|extraire_attribut{src})" class="img-responsive"></a>]
+							<div class="topnews-title">
+									<a href="#URL_ARTICLE"><h3>#TITRE</h3></a> 
+							</div>
+						</div>
+						<div class="topnews-statistic-2"> 
+							<span class=""><span class="comment-2"><B_combien12>
+										  <BOUCLE_combien12(FORUMS) {id_article} {plat}>
+										  #TOTAL_BOUCLE
+										  </BOUCLE_combien12>
+										  </B_combien12>
+										  0				
+										  <//B_combien12></span></span>
+							<span class=""><i class="fa fa-clock-o"></i> 
+							<B_gh_pasttime12>
+								<BOUCLE_gh_pasttime12(ARTICLES){id_article}{age<1}>
+									[(#DATE*|affdate{'H:i'})]'
+								</BOUCLE_gh_pasttime12>
+							</B_gh_pasttime12>[(#DATE*|affdate{'d/m'})]<//B_gh_pasttime12></span> 
+							<span class="topnews-statistic-last-2 "><a href="#news-E-#COMPTEUR_BOUCLE" data-rel="popup" class=""><i class="fa fa-share-alt"></i> Share</a></span>
+							<div data-role="popup" data-overlay-theme="a" id="news-E-#COMPTEUR_BOUCLE" class="popuping"> 
+								<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_v96i" data-url="https://www.igihe.com/#URL_ARTICLE" data-title="#TITRE | [(#NOM_SITE_SPIP|textebrut)]" data-description="[(#INTRODUCTION|textebrut)]" [data-media="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,}|extraire_attribut{src})"]></div>  
+							</div>
+						</div>
+					</div>
+					</div>
+					
+					<?php   
+					}
+					$tour2boucle+=1; 
+					
+				}
+				else {
+				$tour2boucle+=1;
+				?> 
+				<div class="middle-news">
+					<div class="row">
+						<div class="col-xs-8 nopaddingright">
+							<div class="topnews"> 
+								<div class="topnews-title-2">
+									<a href="#URL_ARTICLE"><h3>#TITRE</h3></a> 
+								</div>
+							</div>
+							<div class="topnews-statistic-3"> 
+								<span class=""><span class="comment-2"><B_combien13>
+										  <BOUCLE_combien13(FORUMS) {id_article} {plat}>
+										  #TOTAL_BOUCLE
+										  </BOUCLE_combien13>
+										  </B_combien13>
+										  0				
+										  <//B_combien13></span></span>
+							<span class=""><i class="fa fa-clock-o"></i> 
+							<B_gh_pasttime13>
+								<BOUCLE_gh_pasttime13(ARTICLES){id_article}{age<1}>
+									[(#DATE*|affdate{'H:i'})]'
+								</BOUCLE_gh_pasttime13>
+							</B_gh_pasttime13>[(#DATE*|affdate{'d/m'})]<//B_gh_pasttime13></span> 
+								<span class="topnews-statistic-last-2 "><a href="#news-F-#COMPTEUR_BOUCLE" data-rel="popup" class=""><i class="fa fa-share-alt"></i> Share</a></span>
+								<div data-role="popup" data-overlay-theme="a" id="news-F-#COMPTEUR_BOUCLE" class="popuping"> 
+									<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_v96i" data-url="https://www.igihe.com/#URL_ARTICLE" data-title="#TITRE | [(#NOM_SITE_SPIP|textebrut)]" data-description="[(#INTRODUCTION|textebrut)]" [data-media="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,}|extraire_attribut{src})"]></div>  
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-4 nopaddingleft">
+							<div class="topnews">
+								[<a href="#URL_ARTICLE">
+								<img class="lazy img-responsive" data-original="(#LOGO_ARTICLE||image_reduire{534,348}||image_recadre{450,320,top}|extraire_attribut{src})" alt="."/>
+								</a>]
+							</div> 
+						</div>
+					</div>
+				</div> 
+				<?php 
+				}
+				?>
+				</BOUCLE_articles_recents> 
+			</div>
+			<div class="pagination-section">
+				<div class="row">
+					<div class="col-xs-12"> 
+						<div class="pagination-title">
+							Izindi paji: #PAGINATION{page} 
+						</div>
+					</div>
+				</div>
+			</div>	
+			</B_articles_recents>		
+			<//B_articles_recents>	
+			
+			<div class="pub-section">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pub-title">Kwamamaza</div>
+						<div class="pub-ads">
+							<B_ad_bottom_mobile>
+								<BOUCLE_ad_bottom_mobile(ARTICLES){titre_mot=mobile_premium_2}{par date}{inverse}{0,1}>
+									<BOUCLE_docs_bottom_mobile(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										<center>[<a href="#URL_ARTICLE"><img src="(#URL_DOCUMENT|timestamp)" class="img-responsive"></a>]</center>
+									</BOUCLE_docs_bottom_mobile>
+								</BOUCLE_ad_bottom_mobile>
+							</B_ad_bottom_mobile>
+								<a href="#"><img src="https://mobile.igihe.com/squelettes/images/ads.jpg" class="img-responsive"></a>
+							<//B_ad_bottom_mobile>	
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="inkuru-section">
+				<h1>Inkuru Nyamukuru</h1>   
+				<BOUCLE_gh_irambuye(ARTICLES){0,4}{titre_mot=HomeIrambuye}{!par date}{doublons zizi}>
+				<div class="nyamukuru">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="inkuru-title"><a href="#URL_ARTICLE">#TITRE</a></div>
+							<div class="topnews-statistic-4">
+								<span class=""><i class="fa fa-eye"></i> #VISITES </span>
+								<span class=""><span class="comment-2"><B_combien4><BOUCLE_combien4(FORUMS) {id_article} {plat}>
+										  #TOTAL_BOUCLE
+										  </BOUCLE_combien4>
+										  </B_combien4>
+										  0				
+										  <//B_combien4></span></span>
+								<span class=""><i class="fa fa-clock-o"></i> [(#DATE|jour)]-[(#DATE|mois)]-[(#DATE|annee)]</span>  
+								<span class="topnews-statistic-last"><a href="#news-G-#COMPTEUR_BOUCLE" data-rel="popup" class=""><i class="fa fa-share-alt"></i> Share</a></span>
+								<div data-role="popup" data-overlay-theme="a" id="news-G-#COMPTEUR_BOUCLE" class="popuping"> 
+									<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_v96i" data-url="https://www.igihe.com/#URL_ARTICLE" data-title="#TITRE | [(#NOM_SITE_SPIP|textebrut)]" data-description="[(#INTRODUCTION|textebrut)]" [data-media="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,}|extraire_attribut{src})"]></div>  
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				</BOUCLE_gh_irambuye> 
+			</div>
+			
+			<div class="pub-section">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pub-title">Kwamamaza</div>
+						<div class="pub-ads"> 
+							<B_ad_bottom_mobile3>
+								<BOUCLE_ad_bottom_mobile3(ARTICLES){titre_mot=mobile_premium_3}{par date}{inverse}{0,1}>
+									<BOUCLE_docs_bottom_mobile3(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										<center>[<a href="#URL_ARTICLE"><img src="(#URL_DOCUMENT|timestamp)" class="img-responsive"></a>]</center>
+									</BOUCLE_docs_bottom_mobile3>
+								</BOUCLE_ad_bottom_mobile3>
+							</B_ad_bottom_mobile3>
+								<a href="#"><img src="https://mobile.igihe.com/squelettes/images/ads.jpg" class="img-responsive"></a>
+							<//B_ad_bottom_mobile3>	
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="inkuru-section-2">
+				<h1>Inkuru Zamamaza</h1>
+				<BOUCLE_zamamaza(ARTICLES){branche 1410}{par date}{inverse}{0,4}{doublons ubu}> 
+				<div class="zamamaza">
+					<div class="row">
+						<div class="col-xs-4 nopaddingright">
+							[<a href="#URL_ARTICLE"><img src="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,300}|extraire_attribut{src})" class="img-responsive"></a>]
+						</div>
+						<div class="col-xs-8">
+							 <div class="pub-title-2"><a href="#URL_ARTICLE">#TITRE</a></div>
+						</div>
+					</div>
+				</div>
+				</BOUCLE_zamamaza> 
+				
+				<div class="more-section"> 
+					<a href="#URL_RUBRIQUE{1410}">Soma izindi</a> 
+				</div>
+				
+			</div>
+				
+			<div class="pub-section">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pub-title">Kwamamaza</div>
+						<div class="pub-ads"> 
+							<B_ad_bottom_mobile4>
+								<BOUCLE_ad_bottom_mobile4(ARTICLES){titre_mot=mobile_premium_4}{par date}{inverse}{0,1}>
+									<BOUCLE_docs_bottom_mobile4(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										<center>[<a href="#URL_ARTICLE"><img src="(#URL_DOCUMENT|timestamp)" class="img-responsive"></a>]</center>
+									</BOUCLE_docs_bottom_mobile4>
+								</BOUCLE_ad_bottom_mobile4>
+							</B_ad_bottom_mobile4>
+								<a href="#"><img src="https://mobile.igihe.com/squelettes/images/ads.jpg" class="img-responsive"></a>
+							<//B_ad_bottom_mobile4>	
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="inkuru-section-2">
+				<h1>Amatangazo</h1>
+				<BOUCLE_amatangazo(ARTICLES){id_rubrique=1629}{branche}{par date}{inverse}{0,4}>
+				<div class="zamamaza">
+					<div class="row">
+						<div class="col-xs-4 nopaddingright">
+							[<a href="#URL_ARTICLE"><img src="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,300}|extraire_attribut{src})" class="img-responsive"></a>]
+						</div>
+						<div class="col-xs-8">
+							 <div class="pub-title-2"><a href="#URL_ARTICLE">#TITRE</a></div>
+						</div>
+					</div>
+				</div>
+				</BOUCLE_amatangazo> 
+				<div class="more-section"> 
+					<a href="#URL_RUBRIQUE{1629}">Soma andi</a> 
+				</div>
+			</div>
+			
+			<div class="inkuru-section">
+				<h1>Cartoon</h1>
+				<BOUCLE_gh_caricature(ARTICLES){0,1}{titre_mot=HomeCaricature}{par date}{inverse}{doublons events}>
+				<div class="nyamukuru">
+					<div class="row">
+						<div class="col-xs-12">   
+							<div class="topnews">
+								[<a href="https://mobile.igihe.com/spip.php?page=art&id_article=#ID_ARTICLE"><img src="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,}|extraire_attribut{src})" class="img-responsive"></a>] 
+								<div class="topnews-title">
+									<div class="topnews-statistic"> 
+										<span class=""><span class="comment-1"><B_combien14>
+													  <BOUCLE_combien14(FORUMS) {id_article} {plat}>
+													  #TOTAL_BOUCLE
+													  </BOUCLE_combien14>
+													  </B_combien14>
+													  0				
+													  <//B_combien14></span></span>
+										<span class=""><i class="fa fa-clock-o"></i> 
+										<B_gh_pasttime14>
+											<BOUCLE_gh_pasttime14(ARTICLES){id_article}{age<1}>
+												[(#DATE*|affdate{'H:i'})]'
+											</BOUCLE_gh_pasttime14>
+										</B_gh_pasttime14>[(#DATE*|affdate{'d/m'})]<//B_gh_pasttime14></span>  
+										<span class="topnews-statistic-last-2 "><a href="#news-H-#COMPTEUR_BOUCLE" data-rel="popup" class=""><i class="fa fa-share-alt"></i> Share</a></span>
+										<div data-role="popup" data-overlay-theme="a" id="news-H-#COMPTEUR_BOUCLE" class="popuping"> 
+											<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_v96i" data-url="https://www.igihe.com/#URL_ARTICLE" data-title="#TITRE | [(#NOM_SITE_SPIP|textebrut)]" data-description="[(#INTRODUCTION|textebrut)]" [data-media="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,}|extraire_attribut{src})"]></div>  
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</BOUCLE_gh_caricature>
+				<div class="nyamukuru">
+					<div class="row">
+					<BOUCLE_gh_caricature2(ARTICLES){0,1}{titre_mot=HomeCaricature}{par date}{inverse}{doublons events}>
+						<div class="col-xs-6 nopaddingright">   
+							<div class="topnews">
+								[<a href="#URL_ARTICLE"><img src="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{*,500}|image_recadre{600,400}|extraire_attribut{src})" class="img-responsive"></a>]
+								<div class="topnews-title">
+									<div class="topnews-statistic">  
+										<span class=""><span class="comment-1"><B_combien15>
+													  <BOUCLE_combien15(FORUMS) {id_article} {plat}>
+													  #TOTAL_BOUCLE
+													  </BOUCLE_combien15>
+													  </B_combien15>
+													  0				
+													  <//B_combien15></span></span>
+										<span class=""><i class="fa fa-clock-o"></i> 
+										<B_gh_pasttime15>
+											<BOUCLE_gh_pasttime15(ARTICLES){id_article}{age<1}>
+												[(#DATE*|affdate{'H:i'})]'
+											</BOUCLE_gh_pasttime15>
+										</B_gh_pasttime15>[(#DATE*|affdate{'d/m'})]<//B_gh_pasttime15></span>  
+										<span class="topnews-statistic-last-2 "><a href="#news-I-#COMPTEUR_BOUCLE" data-rel="popup" class=""><i class="fa fa-share-alt"></i> Share</a></span>
+								<div data-role="popup" data-overlay-theme="a" id="news-I-#COMPTEUR_BOUCLE" class="popuping"> 
+									<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_v96i" data-url="https://www.igihe.com/#URL_ARTICLE" data-title="#TITRE | [(#NOM_SITE_SPIP|textebrut)]" data-description="[(#INTRODUCTION|textebrut)]" [data-media="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,}|extraire_attribut{src})"]></div>  
+								</div>
+								
+									</div>
+								</div>
+							</div>
+						</div>
+					</BOUCLE_gh_caricature2>
+					<BOUCLE_gh_caricature3(ARTICLES){0,1}{titre_mot=HomeCaricature}{par date}{inverse}{doublons events}>
+						<div class="col-xs-6 nopaddingleft">   
+							<div class="topnews">
+								[<a href="#URL_ARTICLE"><img src="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{*,500}|image_recadre{600,400}|extraire_attribut{src})" class="img-responsive"></a>]
+								<div class="topnews-title">
+									<div class="topnews-statistic">  
+										<span class=""><span class="comment-1"><B_combien16>
+													  <BOUCLE_combien16(FORUMS) {id_article} {plat}>
+													  #TOTAL_BOUCLE
+													  </BOUCLE_combien16>
+													  </B_combien16>
+													  0				
+													  <//B_combien16></span></span>
+										<span class=""><i class="fa fa-clock-o"></i> 
+										<B_gh_pasttime16>
+											<BOUCLE_gh_pasttime16(ARTICLES){id_article}{age<1}>
+												[(#DATE*|affdate{'H:i'})]'
+											</BOUCLE_gh_pasttime16>
+										</B_gh_pasttime16>[(#DATE*|affdate{'d/m'})]<//B_gh_pasttime16></span>  
+										<span class="topnews-statistic-last-2 "><a href="#news-J-#COMPTEUR_BOUCLE" data-rel="popup" class=""><i class="fa fa-share-alt"></i> Share</a></span>
+										<div data-role="popup" data-overlay-theme="a" id="news-J-#COMPTEUR_BOUCLE" class="popuping"> 
+											<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox_v96i" data-url="https://www.igihe.com/#URL_ARTICLE" data-title="#TITRE | [(#NOM_SITE_SPIP|textebrut)]" data-description="[(#INTRODUCTION|textebrut)]" [data-media="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{600,}|extraire_attribut{src})"]></div>  
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</BOUCLE_gh_caricature3> 
+					</div>
+				</div>
+			</div>
+				
+			<div class="pub-section">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pub-title">Kwamamaza</div>
+						<div class="pub-ads"> 
+							<B_ad_bottom_mobile5>
+								<BOUCLE_ad_bottom_mobile5(ARTICLES){titre_mot=mobile_premium_5}{par date}{inverse}{0,1}>
+									<BOUCLE_docs_bottom_mobile5(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										<center>[<a href="#URL_ARTICLE"><img src="(#URL_DOCUMENT|timestamp)" class="img-responsive"></a>]</center>
+									</BOUCLE_docs_bottom_mobile5>
+								</BOUCLE_ad_bottom_mobile5>
+							</B_ad_bottom_mobile5>
+								<center><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+								<!-- gh_mob2_internal -->
+								<ins class="adsbygoogle"
+									 style="display:inline-block;width:320px;height:100px"
+									 data-ad-client="ca-pub-8346045821770316"
+									 data-ad-slot="6903813380"></ins> 
+								<script> 
+								(adsbygoogle = window.adsbygoogle || []).push({});
+								</script></center>
+							<//B_ad_bottom_mobile5>	
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<INCLURE{fond=v5_footer}{env}{ajax}/>
+			 
+			
+			<nav id="menu">
+				<ul>
+					<li><span>Indimi</span>
+						<ul>
+							<li><a href="https://mobile.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/lkn.png"> Kinyarwanda</a></li>
+							<!-- <li><a href="http://m.igihe.bi/"><img src="https://mobile.igihe.com/squelettes/images/lki.png"> Kirundi</a></li> -->
+							<li><a href="http://fr.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/lfr.png"> Français</a></li>
+							<li><a href="http://en.igihe.com/"><img src="https://mobile.igihe.com/squelettes/images/len.png"> English</a></li>
+						</ul>
+					</li>
+					<li><a href="https://mobile.igihe.com/">Ahabanza</a></li>
+					<BOUCLE_gh_ibirimoside(RUBRIQUES){id_parent=0}{0,20}{titre_mot=IbirimoSide}>
+                     <li>
+                        <a href="#URL_RUBRIQUE">#TITRE</a>
+                     </li>
+                     </BOUCLE_gh_ibirimoside> 
+					 
+					<!-- <li><span>About us</span>
+						<ul>
+							<li><a href="#/about/history">History</a></li>
+							<li><span>The team</span>
+								<ul>
+									<li><a href="#/about/team/management">Management</a></li>
+									<li><a href="#/about/team/sales">Sales</a></li>
+									<li><a href="#/about/team/development">Development</a></li>
+								</ul>
+							</li>
+							<li><a href="#/about/address">Our address</a></li>
+						</ul>
+					</li>
+					<li><a href="#/contact">Contact</a></li> -->
+				</ul>
+			</nav>
+		</div>
+		<script type='text/javascript' src="squelettes/js/jquery.lazyload.min.js"></script>
+		<script>$("img.lazy").lazyload(); </script> 
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-587b16b7bbda5902"></script>
+		<script type="text/javascript">
+		// Call this function once the rest of the document is loaded
+		function loadAddThis() {
+			addthis.init()
+		}
+		loadAddThis();
+		</script>
+
+	</body>
+</html>

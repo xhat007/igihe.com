@@ -1,0 +1,298 @@
+#CACHE{3600}
+<BOUCLE_article (ARTICLES){id_article}{doublons just}>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document Settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- Page Title -->
+    <title>#TITRE - IGIHE.com</title>
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="https://www.igihe.com/squelettes/kwibohora25/assets/images/favicon/favicon.jpg?t=2">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://www.igihe.com/squelettes/kwibohora25/style.css?t=12">
+    <link rel="stylesheet" href="https://www.igihe.com/squelettes/kwibohora25/assets/css/responsive.css">
+    <!-- HTML5 shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/html5shiv.js"></script>
+    <script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/respond.js"></script>
+    <![endif]-->
+	
+	<style> 
+		.single-page-home {
+			background: url(https://igihe.com/[(#LOGO_ARTICLE|extraire_attribut{src})]) no-repeat scroll 50% 50%;
+			background-size: cover;
+		} 
+	</style>
+</head>
+
+<body> 
+<!--//site-nav//-->
+<aside class="site-nav">
+    <div class="off-canvas-inner">
+        <!--//Header//-->
+        <header class="header">
+            <h2 class="text-uppercase widget-title pull-left">Kwibohora25</h2>
+            <button type="button" class="close-btn pull-right"><i class="icon fa fa-close"></i></button>
+        </header> <!--//End Header-->
+        <!--//Menu//-->
+        <div class="widget menu">
+            <div class="widget-menu text-uppercase">
+                <ul id="menu">
+                    <li><a href="index.html" class="active">Ahabanza</a></li>
+                </ul>
+            </div>
+        </div> <!--//End Menu-->
+        <!--//Categories//-->
+        <div class="widget categories">
+            <h3 class="widget-title text-uppercase">Ahandi</h3>
+
+            <ul class="widget-menu st-category-menu text-uppercase">
+                <li><a href="category.html">Videos <span class="pull-right">12</span></a></li>
+            </ul>
+        </div> <!--//End Categories--> 
+        <div class="widget scroll-top">
+            <a class="st-top" href="#top"> Subira hejuru</a>
+        </div>
+    </div>
+</aside>
+<!--//home//-->
+<div class="st-home" id="home">
+    <nav class="top-nav">
+        <div class="logo pull-left"><h1><a href="#URL_RUBRIQUE{1984}"><img src="https://www.igihe.com/squelettes/kwibohora25/assets/images/logo-25.png" alt="Kwibohora"></a></h1>
+        </div>
+        <button type="button" class="navbar-toggle show-btn"><i class="fa fa-navicon"></i></button>
+    </nav>
+    <div class="mask"></div>
+    <div class="st-canvas">
+        <div class="st-content-wrap">
+            <!--//Content Area//-->
+            <div class="single-home-area section-home-area section-home-area single-page-home">
+
+                <div class="container">
+                    <div class="home-content text-center">
+                        <h4 class="post-date">Tariki [(#DATE|affdate)] saa [(#DATE|affdate{'h:i'})]</h4>
+
+                        <h2 class="text-uppercase blog-heading">#TITRE</h2>
+                        <a href="#blog" class="scroll-down-arrow scroll-top text-uppercase"><span><i class="fa fa-angle-down"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//blog area//-->
+<div id="blog" class="blog-area">
+    <div class="container">
+        <!-- <div class="blog-header text-center">
+            <h2 class="text-uppercase">Yanditswe na [(#ID_ARTICLE|>{80198}|?{#LESAUTEURS,#PS})]</h2>
+        </div> -->
+        <div class="blog-content-top">
+            <p>#INTRODUCTION</p>
+			[(#TEXTE|image_reduire{1000,*})]
+        </div>
+    </div> 
+    <div class="container-fluid">
+        <div class="related-post text-uppercase">
+            <h2 class="text-center title">IZINDI NKURU</h2>
+
+            <div class="row no-gutter">
+			<BOUCLE_INARTIC (ARTICLES){id_rubrique}{!par date}{0,3}>
+                <div class="col-sm-4">
+                    <div class="single-blog-post re post-2 fix text-center">
+				 [<img class="img-responsive" src="https://igihe.com/(#LOGO_ARTICLE|image_reduire{1000,760}|image_recadre{800,430,top center,#000000}|extraire_attribut{src})" alt="">]
+                    <div class="post-overlay text-center">
+                        <h4 class="post-date">Tariki [(#DATE|affdate)] saa [(#DATE|affdate{'h:i'})]</h4>
+                        <h2 class="text-uppercase blog-heading">#TITRE</h2>
+
+                        <a href="#URL_ARTICLE" class="read-more text-uppercase">+Soma Inkuru</a>
+                    </div> 
+                    <a class="post-link" href="#URL_ARTICLE"></a>
+                    </div>
+                </div>
+			</BOUCLE_INARTIC>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="comment-area" id="commentairesection">
+            <h2 class="text-center  text-uppercase title">IBITEKEREZO</h2>
+            <!-- COMMENTS -->
+			<B_IBITEKEREZO>
+            <div class="post-comment">
+                <ul class="media-list">
+				<BOUCLE_IBITEKEREZO (FORUMS) {id_article} {0,50}{par date}>
+                    <li class="media"> 
+
+                        <div class="media-body">
+                            <h4 class="media-heading">[(#NOM|sinon{######})]</h4>
+
+                            <p class="comment-date">[(#DATE|jour)]-[(#DATE|mois)]-[(#DATE|annee)] &agrave; [(#DATE|heures)][:(#DATE|minutes)]</p>
+
+                            <div class="comment-p">
+                                [(#TEXTE)]
+                            </div> 
+                        </div>
+
+                    </li>
+				</BOUCLE_IBITEKEREZO>
+                </ul>
+            </div>
+            <!-- END COMMENTS -->
+			</B_IBITEKEREZO>
+			<div class="igitekerezo-no">Nta gitekerezo kirajyaho. Ba uwa mbere!</div>
+			<//B_IBITEKEREZO>
+            <div id="comment-form">
+                <h2 class="text-center text-uppercase title">Andika igitekerezo</h2>
+	<script type="text/javascript">										
+		function envoyer_commentaire(id_forum)
+		{
+
+		var empty_email=(document.getElementById("email").value.length==0 || document.getElementById("email").value==null);
+		var empty_message=(document.getElementById("texte").value.length==0 || document.getElementById("texte").value==null);
+		var empty_text=(document.getElementById("nom").value.length==0 || document.getElementById("nom").value==null);
+		if(empty_text){
+			alert("Andika amazina yanyu");
+		}
+		else if(empty_email){
+			alert("Andika email yanyu");
+		}
+		else if(empty_message){
+			alert("Andika Igitekerezo");
+		}
+		else{
+			var igitekerezo = document.getElementById("texte").value;
+			var izina = document.getElementById("nom").value;
+			var email = document.getElementById("email").value;
+
+			var titre = document.getElementById("titre").value;
+			var id_article_obj=document.getElementsByName("id_article").item(0);
+			var id_article = document.getElementById("idarticle").value;
+
+			var forum_id=0;
+			var page="itsform.php";
+			var url="nom="+izina+"&email="+email+"&commentaire="+igitekerezo+"&id_forum="+id_forum+"&titre="+titre+"&id_article="+id_article;
+			var xhr_object = null;
+			if(window.XMLHttpRequest) // Firefox
+				xhr_object = new XMLHttpRequest();
+			else
+			{
+				if(window.ActiveXObject) // Internet Explorer
+					xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+				else
+				{
+					alert("Browser does not support xmlHttpRequest");
+					return;
+				}
+			}
+			var method = "POST";
+			var filename = page;
+			var requete  = url;
+			xhr_object.onreadystatechange = function()
+			{
+				if(xhr_object.readyState == 1)
+				{
+					document.getElementById("comment_statut").innerHTML="Igitekerezo cyanyu kiri kwoherezwa. Mwihangange...";
+				}								
+				if(xhr_object.readyState == 4) 
+				{
+					var reponse = xhr_object.responseText;
+					//specify the response content								
+					document.getElementById("comment_statut").innerHTML= reponse;
+					document.getElementById("nom").disabled="disabled";
+					document.getElementById("email").disabled="disabled";
+					document.getElementById("texte").disabled="disabled";
+					document.getElementById("ohereza").disabled="disabled";
+				}
+			}
+			xhr_object.open(method, filename, true);
+			xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xhr_object.send(requete);	 
+		}				
+	}			
+	</script>
+                <form class="contact-form" id="ContactForm" method="post" action="[(#ENV{action})]#commentairesection" onsubmit="return(false)" accept-charset="UTF-8"><!--comment form-->
+					<input id="idarticle" type="hidden" name="idarticle" value="#ID_ARTICLE">
+					<input id="titre" type="hidden" name="titre" value="#TITRE">
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Amazina *</label>
+                                <input type="text" name="nom" id="nom" class="form-control" placeholder="" required>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>E-mail *</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="" required>
+                            </div>
+                        </div>  
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>Igitekerezo</label>
+                                <textarea class="form-control" id="texte" name="texte" rows="10" placeholder=""
+                                          required></textarea>
+                            </div> 
+							<p><span id="comment_statut"></span></p> 
+                            <button type="submit" id="ohereza" class="btn-send" onclick="envoyer_commentaire([(#ENV{id_forum})])">OHEREZA</button>
+                        </div>
+                    </div>
+                </form>
+                <!--end comment form-->
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!--//Footer top//-->
+<div class="footer-about-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-10">
+                <div class="footer-about text-center">
+                    <div class="footer-about-content">
+                        <a href=""><img src="https://igihe.com/squelettes/v5images/gh_logo_footer5.png" alt=""></a>
+                        <p>4 Nyakanga, Umunsi wo Kwibohora ushushanya ukubohora u Rwanda n’Abanyarwanda ku ngoyi ya Guverinoma ya Habyarimana yakoze Jenoside, no guhagarika Jenoside yakorerwaga Abatutsi.</p>
+                    </div>
+                    <div class="footer-social">
+                        <h3 class="text-uppercase">Bana natwe</h3>
+                        <ul>
+                            <li><a target="_blank" href="https://facebook.com/igihe" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/igihe" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://instagram.com/igiheofficial" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//Footer bottom//-->
+<footer>
+    <div class="container">
+        <p class="pull-left">&copy; 2019 <a href="">IGIHE</a>.</p>
+        <a class="scroll-top pull-right" href="#home"> Back to Top</a>
+    </div>
+ 
+</footer>
+<!--//Script//-->
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/jquery-1.11.3.min.js"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/waypoints.min.js"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/bootstrap.min.js"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/jquery.easing.min.js"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/jquery.nicescroll.min.js"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/owl.carousel.min.js"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/jquery.counterup.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBgdZe2H8dUadI-9HbatiJpIufY6oVWMf4"></script>
+<script src="https://www.igihe.com/squelettes/kwibohora25/assets/js/main.js"></script>
+</body>
+</html>
+</BOUCLE_article>

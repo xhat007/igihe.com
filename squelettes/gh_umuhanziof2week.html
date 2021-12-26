@@ -1,0 +1,25 @@
+<B_gh_of2week>
+	<div class="grid_7" id="box">
+	<a href="#" class="box_title">Umuhanzi w'icyumweru</a>
+
+<BOUCLE_gh_of2week(RUBRIQUES){branche}{titre_mot=HomeOf2Week}{0,1}>
+	<div class="grid_7 alpha" style="height:80px;margin:1px;overflow:hidden;">
+	<div><a href="http://www.igihe.com/#URL_RUBRIQUE">[<img src="http://igihe.com/(#LOGO_RUBRIQUE||image_reduire{0,80}|image_recadre{90,80,left top}|extraire_attribut{src})" align="left" alt="#TITRE" border="0" />]</a></div>
+	<div style="margin-top:auto;margin-bottom:auto;height:80px;background-color:#e8e8e8;"><a href="http://www.igihe.com/#URL_RUBRIQUE" style="font-weight:bold;font-size:30px;text-decoration:none;color:#000000;line-height:66px;">&nbsp;#TITRE</a></div>
+	</div>
+
+	<div class="grid_7 alpha" style="height:25px;margin:0px;overflow:hidden;">
+		<div style="margin:3px;text-align:center;font-size:14px;color:#9f9f9f;">AMAKURU AHERUKA YA <b>#TITRE</b></div>
+	</div>
+	
+
+	<BOUCLE_gh_of2weekins(RUBRIQUES){id_parent}{titre_mot=HomeOf2Week}>
+	<BOUCLE_gh_of2weekina(ARTICLES){id_rubrique}{0,3}{par date}{inverse}>
+	<div class="gh_event"><font class="gh_event_date">[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]</b> [saa <b>(#DATE|heures)][:(#DATE|minutes)</b>]<br /></font><a href="http://www.igihe.com/#URL_ARTICLE" class="gh_waruz_title" >[(#TITRE)]</a></div>
+	</BOUCLE_gh_of2weekina>
+	</BOUCLE_gh_of2weekins>
+
+</BOUCLE_gh_of2week>
+
+	</div>
+</B_gh_of2week>

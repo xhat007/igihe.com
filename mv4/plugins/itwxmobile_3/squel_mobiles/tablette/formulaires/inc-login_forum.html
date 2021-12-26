@@ -1,0 +1,32 @@
+[(#REM)
+
+	Formulaire d'identification sur le forum
+
+	Si la session est authentifiee, on propose la deconnexion
+
+	Si la session n'est pas authentifiee, on presente un formulaire nom/email
+
+	Pour les forums sur abonnement, un squelette specifique presente les regles
+
+]
+<div style="display:block;width:99%;float:left;">
+
+[(#SESSION{auth}|?{' '})
+	[<p class='explication'><font class="gh_commentslabel">AMAZINA:</font><br /><strong>(#SESSION{nom}|typo)</strong> <font style="font-size:11px;color:#B7B7B7;">&#91;<a href="#URL_LOGOUT" rel="nofollow"><:icone_deconnecter:></a>&#93;</font></p>]
+	<input type="hidden" name="[(#ENV{id_forum}|is_null|?{'session_nom_reply','session_nom'})]" id="[(#ENV{id_forum}|is_null|?{'session_nom_reply','session_nom'})]" class="gh_comments" value="[(#SESSION**{nom}|sinon{#SESSION**{session_nom}}|entites_html)]"/>
+	<input type="hidden" name="[(#ENV{id_forum}|is_null|?{'session_email_reply','session_email'})]" id="[(#ENV{id_forum}|is_null|?{'session_email_reply','session_email'})]" value="[(#SESSION**{email}|sinon{#SESSION**{session_email}}|entites_html)]" class="gh_comments"/>
+]
+[(#SESSION{auth}|?{'',' '})
+	
+			<label for="session_nom"><font class="gh_commentslabel">AMAZINA:</font><br /><font style="font-size:11px;color:#B7B7B7;">&nbsp;&#91;<a href="[(#URL_PAGE{login}|parametre_url{url,#SELF})]" rel="nofollow"><:lien_connecter:></a>&#93;</font></label>
+			<input type="text" name="[(#ENV{id_forum}|is_null|?{'session_nom_reply','session_nom'})]" id="[(#ENV{id_forum}|is_null|?{'session_nom_reply','session_nom'})]" class="gh_comments" value="[(#SESSION**{nom}|sinon{#SESSION**{session_nom}}|entites_html)]"  />
+			[(#CONFIG{accepter_inscriptions}|=={oui}|?{' '})]
+	
+		<br /><br />
+
+			<label for="session_email"><font class="gh_commentslabel">EMAIL YANYU:</font><br /></label>
+			<input type="text" name="[(#ENV{id_forum}|is_null|?{'session_email_reply','session_email'})]" id="[(#ENV{id_forum}|is_null|?{'session_email_reply','session_email'})]" value="[(#SESSION**{email}|sinon{#SESSION**{session_email}}|entites_html)]" class="gh_comments"  />
+
+]
+</div>
+<br /><br />

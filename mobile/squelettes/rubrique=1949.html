@@ -1,0 +1,459 @@
+<BOUCLE_rubrique(RUBRIQUES){id_rubrique}>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" /> 
+		<!-- <base href="http://mobile.igihe.com/squelettes/"> -->
+		<meta name="author" content="www.igihe.com" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+ 
+		<title>[(#TITRE|textebrut)] | [(#NOM_SITE_SPIP|textebrut)]</title>
+		[<meta name="description" content="(#DESCRIPTIF_SITE_SPIP|couper{250}|attribut_html)" />]
+		
+		<link rel="shortcut icon" href="http://mobile.igihe.com/squelettes/images/icon.png" />
+		<link rel="stylesheet" href="http://mobile.igihe.com/squelettes/css/jquery.mobile.1.5.css?t=1" />
+		<!-- <link href="http://mobile.igihe.com/squelettes/css/responsive.css" rel="stylesheet"> -->
+		<link href="http://mobile.igihe.com/squelettes/css/bootstrap.min.css" rel="stylesheet">  
+		
+		<link rel="stylesheet" type="text/css" href="http://mobile.igihe.com/squelettes/css/demo.css?t=9">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300|Roboto|Ubuntu" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="http://mobile.igihe.com/squelettes/css/font-awesome.min.css">
+
+		<script type="text/javascript" src="http://mobile.igihe.com/squelettes/js/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+		$(document).on("mobileinit", function(){
+			$.mobile.ajaxEnabled=false;
+			$.mobile.loadingMessage = false;
+		});            
+		</script> 
+
+		<link rel="stylesheet" type="text/css" href="http://mobile.igihe.com/squelettes/css/jquery.mmenu.all.css">
+		<script type="text/javascript" src="http://mobile.igihe.com/squelettes/js/jquery.mmenu.all.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="http://mobile.igihe.com/squelettes/dist/jquery.mhead.css?t=9">
+		<script type="text/javascript" src="http://mobile.igihe.com/squelettes/dist/jquery.mhead.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://mobile.igihe.com/squelettes/css/mobistyle.css?t=64">
+
+		<script type="text/javascript">
+			$(function() {
+
+				//	create a menu
+				$('#menu').mmenu();
+
+				//	fire the plugin
+				$('.mh-head').mhead({
+					
+				});
+
+				//	for demo only
+				$('a[href^="#/"]').click(function() {
+					alert( 'Thank you for clicking, but that\'s a demo link.' );
+					return;
+				})
+			});
+		</script> 
+		<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-587b16b7bbda5902"></script> -->
+	<style>
+		.festive {
+			font-family: Ubuntu;
+		}
+		.festive .title-section{
+			background: #0e2b8f;
+			text-align: center;
+			font-family: Ubuntu;
+			color: #fff;
+			padding: 5px;
+		}
+		
+		.festive .body-msg, .festive .title-section-1{
+			text-align: justify;
+		}
+		
+		.festive .title-section-1
+		{
+			font-size: 16px;
+			line-height: inherit;
+			margin: 10 px 0; 
+			font-weight: bold; 
+		}
+		
+		
+		.festive .body-msg p{
+			font-size: 14px;
+		}
+		
+		.news-section { 
+			padding: 0px; 
+		}
+		
+		.navbar-default {
+			background-color: #8494a3;
+			border-color: #8494a3;
+		}
+		.navbar, .news-section{
+			border-radius: 4px 4px 0 0;
+		}  
+		
+		.navbar-default .navbar-nav > li > a {
+			color: #fff;
+		}
+		
+		.festive .navbar-nav > li > a {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		
+		.ob-item{
+			padding: 15px;
+		}
+		
+		.ob-descr {
+			color: #8494a3; 
+			border: 1px solid #8494a3;
+			padding: 5px 0 0 10px;
+			margin: 20px 0;
+			font-size: 12px;
+		}
+		.ob-descr h1, .ob-descr h2 {
+			font-size: inherit;
+			line-height: inherit;
+			margin: inherit;
+			display: inline-block;
+			font-weight: bold;
+			color: #4b4b4b;
+		}
+		.ob-descr ul{
+			padding: 0; 
+			list-style: none;
+			margin-bottom: 0;
+		}
+		
+		.nopaddingright{
+			padding-right: 0;
+		}
+		.nopaddingleft{
+			padding-left: 0;
+		}
+		
+		.advertorial-news a {
+			color: #444444;
+			font-family: 'ralewayregular';
+		}
+		
+		.comment-section{
+			background: #f4f4f4;
+			padding: 10px; 
+		}
+		
+		.input-group-2{
+			margin-bottom: 10px;
+		}
+		.input-group-2 .form-control{
+			background: #fff;
+			border: none;
+			padding: 10px;
+			font-size: 14px; 
+		}
+		
+		.input-sm{height: 41px}
+		
+		fieldset.scheduler-border {
+			border: solid 1px #DDD !important;
+			padding: 30px 10px;
+			border-bottom: none;
+		}
+
+		legend.scheduler-border {
+			width: auto !important;
+			border: none;
+			font-size: 12px;
+			margin: 0 10px;
+			padding: 0;
+		}
+		
+		
+		.sendflowers{
+			background: #0e2b8f;
+			padding: 8px 15px;
+			font-size: 14px;
+			color: #fff;
+		}
+		
+
+	</style>
+	</head>
+	<body>
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10838297-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"B/FNo1IWx810S+", domain:"igihe.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=B/FNo1IWx810S+" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->  
+
+		<div id="page" class="container-fluid">
+
+			<div class="mh-head mh-align-left Sticky">
+				<span class="mh-btns-left">
+					<a class="fa fa-bars" href="#menu"></a>
+				</span>
+				<span class="mh-text">
+				<BOUCLE_GH_LOGOV5(ARTICLES){titre_mot=logo_actuel_mobile}{0,1}{!par date}>
+					[<a href="./"><img  src="https://www.igihe.com/(#LOGO_ARTICLE|extraire_attribut{src})" alt="IGIHE" /></a>]
+				</BOUCLE_GH_LOGOV5>
+				</span> 
+				<span class="mh-btns-right2">  
+					<a class="" href="http://mobile.igihe.com/"><img src="http://mobile.igihe.com/squelettes/images/lkn.png"></a>
+					<a class="" href="http://fr.igihe.com/"><img src="http://mobile.igihe.com/squelettes/images/lfr.png"></a>
+					<a class="" href="http://en.igihe.com/"><img src="http://mobile.igihe.com/squelettes/images/len.png"></a>
+					<!-- <a class="" href="http://m.igihe.bi"><img src="http://mobile.igihe.com/squelettes/images/lki.png"></a> -->
+				</span>
+			</div>
+			
+			 <div class="pagination-section">
+				<div class="row">
+					<div class="col-xs-12"> 
+						<div class="pagination-title">
+							#TITRE
+						</div>
+					</div>
+				</div>
+			</div> 
+			
+			<div class="pub-section">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pub-title">Kwamamaza</div>
+						<div class="pub-ads"> 
+							<B_ad_bottom_mobile>
+								<BOUCLE_ad_bottom_mobile(ARTICLES){titre_mot=premium_leaderboard_reg}{par date}{inverse}{0,1}>
+									<BOUCLE_docs_bottom_mobile(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										<center>[<a href="#URL_ARTICLE"><img src="http://igihe.com/(#URL_DOCUMENT|timestamp)" class="img-responsive"></a>]</center>
+									</BOUCLE_docs_bottom_mobile>
+								</BOUCLE_ad_bottom_mobile>
+							</B_ad_bottom_mobile>
+								<a href="#"><img src="http://mobile.igihe.com/squelettes/images/ads.jpg" class="img-responsive"></a>
+							<//B_ad_bottom_mobile>	
+						</div>
+					</div>
+				</div>
+			</div>
+			 
+			<div class="latestnews">
+				<div class="news-section">
+					<BOUCLE_OBIN(ARTICLES){id_article=101697}>
+					<!-- ####################### PORTAL NEWS SECTION ##################### --> 
+					<div class="row festive"> 
+						<div class="col col-lg-12">
+							 <a href="#URL_ARTICLE"><img src="http://igihe.com/[(#LOGO_ARTICLE|image_reduire{*,100}|extraire_attribut{src})]" class="img-responsive"></a>
+						</div> 
+						<div class="col col-lg-12">
+							<h3 class="title-section">#SOUSTITRE</h3>
+						</div> 
+						<div class="col col-lg-12">
+							<div class="row">
+								<div class="col col-md-12 col-sm-12">
+									<script type="text/javascript">										
+										function envoyer_commentaire(id_forum)
+										{
+
+											var empty_email=(document.getElementById("email").value.length==0 || document.getElementById("email").value==null);
+											var empty_message=(document.getElementById("texte").value.length==0 || document.getElementById("texte").value==null);
+											var empty_text=(document.getElementById("nom").value.length==0 || document.getElementById("nom").value==null);
+											if(empty_text){
+												alert("Andika amazina yanyu");
+											}
+											else if(empty_email){
+												alert("Andika email yanyu");
+											}
+											else if(empty_message){
+												alert("Andika Amakuru");
+											}
+											else{
+												var igitekerezo = document.getElementById("texte").value;
+												var izina = document.getElementById("nom").value;
+												var email = document.getElementById("email").value;
+
+												var titre = document.getElementById("titre").value;
+												var id_article_obj=document.getElementsByName("id_article").item(0);
+												var id_article = document.getElementById("idarticle").value;
+
+												var forum_id=0;
+												var page="http://igihe.com/squelettes/regs_form.php";
+												var url="nom="+izina+"&email="+email+"&commentaire="+igitekerezo+"&id_forum="+id_forum+"&titre="+titre+"&id_article="+id_article;
+												var xhr_object = null;
+												if(window.XMLHttpRequest) // Firefox
+													xhr_object = new XMLHttpRequest();
+												else
+												{
+													if(window.ActiveXObject) // Internet Explorer
+														xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+													else
+													{
+														alert("Browser does not support xmlHttpRequest");
+														return;
+													}
+												}
+												var method = "POST";
+												var filename = page;
+												var requete  = url;
+												xhr_object.onreadystatechange = function()
+												{
+													if(xhr_object.readyState == 1)
+													{
+														document.getElementById("comment_statut").innerHTML="Amakuru mutanze ari kwoherezwa. Mwihangange...";  
+													}								
+													if(xhr_object.readyState == 4) 
+													{
+														var reponse = xhr_object.responseText;
+														//specify the response content								
+														document.getElementById("comment_statut").innerHTML= reponse;
+														document.getElementById("nom").disabled="disabled";
+														document.getElementById("email").disabled="disabled";
+														document.getElementById("texte").disabled="disabled";
+														document.getElementById("ohereza").disabled="disabled";
+													}
+												}
+												xhr_object.open(method, filename, true);
+												xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+												xhr_object.send(requete);	 
+											}				
+										}			
+									</script>
+						
+									<div class="comment-section"> 
+										<div class="row">
+											<div class="col-xs-12">
+												<form id="signupForm" method="POST" action="[(#ENV{action})]#commentairesection" onsubmit="return(false)" 
+												 accept-charset="UTF-8">
+												 <fieldset class="scheduler-border"><legend class="scheduler-border">[(#PS|textebrut)]</legend>
+												<input id="idarticle" type="hidden" name="idarticle" value="#ID_ARTICLE">
+												<input id="titre" type="hidden" name="titre" value="#TITRE">
+												 
+												
+													<div class="col-sm-6">
+														<div class="input-group-2"> 
+															<input id="nom" class="form-control input-sm" placeholder="Andika izina ryawe" required="required" maxlength="30" type="text" name="nom">
+														</div>
+													</div>
+													<div class="col col-sm-6">
+														<div class="input-group-2"> 
+															<input id="email" class="form-control input-sm" placeholder="Email yanyu" required="required" maxlength="60" type="email" name="email" value="">
+														</div> 
+													</div>
+													<div class="col col-sm-12">
+														<div class="input-group-2"> 
+															<textarea id="texte" class="form-control input-sm" placeholder="Andika ibisobanuro byawe hano" required="required" name="texte" rows="8" height=""></textarea>
+														</div>
+													</div> 
+													<div class="col col-sm-3 col-xs-8">
+														<div class="form-group-2">
+															<button type="submit" id="ohereza" class="btn btn-block btn-default btn-sm sendflowers" onclick="envoyer_commentaire([(#ENV{id_forum})])">Ohereza </button>
+														</div>
+													</div>
+													</fieldset>
+												</form>
+											</div><!-- end of column --> 
+											
+											<div class="col-xs-12 fulltext">
+												<p><span id="comment_statut"></span></p>
+											</div>
+											
+										</div><!-- end of row -->
+									</div>
+								</div> 
+							</div> 
+						</div> 
+						 
+						
+						<div class="col col-lg-12">
+							<h1 class="title-section-1">#TITRE</h1>
+							<div class="body-msg">#TEXTE</div>
+						</div> 
+					</div>  
+					</BOUCLE_OBIN>
+				</div>  
+			</div> 
+			
+			<div class="pub-section">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="pub-title">Kwamamaza</div>
+						<div class="pub-ads"> 
+							<B_ad_bottom_mobile2>
+								<BOUCLE_ad_bottom_mobile2(ARTICLES){titre_mot=mobile_internal_2}{par date}{inverse}{0,1}>
+									<BOUCLE_docs_bottom_mobile2(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										<center>[<a href="#URL_ARTICLE"><img src="(#URL_DOCUMENT|timestamp)" class="img-responsive"></a>]</center>
+									</BOUCLE_docs_bottom_mobile2>
+								</BOUCLE_ad_bottom_mobile2>
+							</B_ad_bottom_mobile2>
+								<a href="#"><img src="http://mobile.igihe.com/squelettes/images/ads.jpg" class="img-responsive"></a>
+							<//B_ad_bottom_mobile2>	
+						</div>
+					</div>
+				</div>
+			</div> 
+			 
+			<INCLURE{fond=v5_footer}{env}{ajax}/>
+			
+			<nav id="menu">
+				<ul>
+					<li><span>Indimi</span>
+						<ul>
+							<li><a href="http://mobile.igihe.com/"><img src="http://mobile.igihe.com/squelettes/images/lkn.png"> Kinyarwanda</a></li>
+							<!-- <li><a href="http://m.igihe.bi/"><img src="http://mobile.igihe.com/squelettes/images/lki.png"> Kirundi</a></li> -->
+							<li><a href="http://fr.igihe.com/"><img src="http://mobile.igihe.com/squelettes/images/lfr.png"> Français</a></li>
+							<li><a href="http://en.igihe.com/"><img src="http://mobile.igihe.com/squelettes/images/len.png"> English</a></li>
+						</ul>
+					</li>
+					<li><a href="http://mobile.igihe.com/">Ahabanza</a></li>
+					<BOUCLE_gh_ibirimoside(RUBRIQUES){id_parent=0}{0,20}{titre_mot=IbirimoSide}>
+                     <li>
+                        <a href="#URL_RUBRIQUE">#TITRE</a>
+                     </li>
+                     </BOUCLE_gh_ibirimoside> 
+					 
+					<!-- <li><span>About us</span>
+						<ul>
+							<li><a href="#/about/history">History</a></li>
+							<li><span>The team</span>
+								<ul>
+									<li><a href="#/about/team/management">Management</a></li>
+									<li><a href="#/about/team/sales">Sales</a></li>
+									<li><a href="#/about/team/development">Development</a></li>
+								</ul>
+							</li>
+							<li><a href="#/about/address">Our address</a></li>
+						</ul>
+					</li>
+					<li><a href="#/contact">Contact</a></li> -->
+				</ul>
+			</nav>
+		</div>
+		<script type='text/javascript' src="http://mobile.igihe.com/squelettes/js/jquery.lazyload.min.js"></script>
+		<script>$("img.lazy").lazyload(); </script> 
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-587b16b7bbda5902"></script>
+		<script type="text/javascript">
+		// Call this function once the rest of the document is loaded
+		function loadAddThis() {
+			addthis.init()
+		}
+		loadAddThis();
+		</script>
+
+	</body>
+</html>
+</BOUCLE_rubrique>

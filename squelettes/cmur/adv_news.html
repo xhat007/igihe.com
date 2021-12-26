@@ -1,0 +1,26 @@
+<div id="adv_galery">
+    	<ul id="newsslider">
+		
+
+
+<B_adv_news>
+	<BOUCLE_adv_news(ARTICLES){tout}{par date}{inverse}>
+<li>
+	<a href="#URL_ARTICLE">
+		[<img src="(#LOGO_ARTICLE||image_reduire{0,85}||image_recadre{90,80,top center}|extraire_attribut{src})" width="180" height="104" alt="#TITRE" />]
+	</a>
+	<a href="#URL_ARTICLE">
+            <span style="font-size: 14px; color: #2075d0; font-weight: bold; display: list-item; padding-left: 8px;">#TITRE</span>
+            <span style="font-size: 12px; color: #2075d0; text-align: left; display: list-item; padding-left: 8px;">[(#TEXTE|couper{50})]</span>
+        </a>
+</li>
+
+	</BOUCLE_adv_news>
+</B_adv_news>
+
+
+	</ul>
+
+    </div> 	
+  	
+    </div>

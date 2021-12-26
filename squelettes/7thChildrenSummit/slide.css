@@ -1,0 +1,293 @@
+
+body,{margin:0;padding:0;background:#99ffff;}
+
+
+/***** clearfix *****/
+.clear {clear: both;height: 0;line-height: 0;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+.clearfix {height: 1%;}
+.clearfix {display: block;}
+
+
+
+/* Panel Tab/button */
+.tab {
+	width:100%;
+	min-height:88px;
+	position: relative;
+    z-index: 999;
+	margin:0px
+	padding:0px;
+	}
+
+.tab ul.login {
+	display: block;
+	position: relative;
+  	width:915px;
+	height:88px;
+	float: center;
+	margin:0px;
+	margin-left:auto;
+	margin-right:auto;
+	list-style:none;
+}
+
+
+.tab ul.login li a {list-style:none; margin:0px; padding:0px;left:-33px;}
+.tab ul.login li a:hover {list-style:none; margin:0px; padding:0px;left:-33px;}
+
+
+.tab a.open, .tab a.close{
+	text-align:center;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	margin:0px
+	padding:0px;
+	height:88px;
+	top:0px;
+}
+
+
+
+/* sliding panel */
+#toppanel {
+    position: relative;   /*Panel will overlap  content */
+    /*position: ;*/   /*Panel will "push" the content down */
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#panel {
+	width: 100%;
+	background:#99ffff;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	display: none;
+	background-image:url(7cs_bg.gif);background-repeat:repeat-x;background-position:top center;
+}
+
+#panel .content {
+	width: 978px;
+	height:380px;
+	margin: 0 auto;
+	text-align: left;
+
+}
+
+#panel .content .left {
+	width: 978px;
+	height: 385px;
+	float: center;
+
+}
+
+
+#rd_logo {
+	width:520px;
+	height:122px;
+	position: relative;
+	margin:-2px;
+	padding:0px;
+	float:left;
+	border:0px solid pink;
+	clear:both;
+	overflow:hidden;
+	}
+
+
+#rd_content {
+	width:978px;
+	position: relative;
+	margin-left:auto;
+	margin-right:auto;
+	border:0px solid blue;
+	float:center;
+	}
+
+
+#rd_left {
+	width:531px;
+	height:375px;
+	position: relative;
+	margin:0px;
+	margin-left:0px;
+	margin-bottom:0px;
+	padding:0px;
+	float:left;
+	}
+
+#rd_logo {
+	width:530px;
+	height:121px;
+	position: relative;
+	margin:0px;
+	margin-left:0px;
+	padding:0px;
+	float:left;
+	}
+
+#rd_slideshow{
+	width:520px;
+	height:255px;
+	position: relative;
+	margin:4px;
+	margin-top:0px;
+	padding:0px;
+	float:left;
+	background-color:rgba(0, 0, 0, 0.85);
+	border:2px solid #000000;
+	}
+
+#rd_right {
+	width:442px;
+	height:380px;
+	position: relative;
+	margin:0px;
+	margin-left:0px;
+	margin-bottom:2px;
+	padding:0px;
+	float:left;
+	overflow:hidden;
+	}
+
+#rd_idparis {
+	width:441px;
+	height:30px;
+	position: relative;
+	margin:0px;
+	margin-left:0px;
+	margin-bottom:3px;
+	padding:0px;
+	float:left;
+	}
+
+#rd_newstitle {
+	width:441px;
+	height:30px;
+	position: relative;
+	margin:0px;
+	margin-left:0px;
+	margin-bottom:3px;
+	margin-top:3px;
+	padding:0px;
+	float:left;
+	font-family:times;
+	color:#000000;
+	font-weight:bold;
+	font-size:22px;
+	text-transform:uppercase;
+	}
+
+
+#rd_newsscroller{
+	width:441px;
+	height:311px;
+	overflow: auto;
+	background-color:rgba(255, 255, 255, 0.85);
+	}
+
+
+#rd_newscontent {
+	width:99.8%;
+	min-height:70px;
+	position: relative;
+	margin:0px;
+	padding:0px;
+	padding-bottom:2px;
+	float:left;
+	border-bottom:2px solid #99ffff;
+	font-family:tahoma;font-weight:normal;font-size:11px;color:#a6a6a6;
+	text-align:left;
+	}
+
+#rd_newsimg{display:block;float:left;margin:3px;border:1px solid #ffffff;background-color:#ffffff;}
+
+a.rd_news{font-family:arial;color:#000000;font-weight:bold;font-size:14px;text-decoration:none;}
+a:hover.rd_news{font-family:arial;color:#808080;font-weight:bold;font-size:14px;text-decoration:none;}
+
+
+#rd_success {
+	width:245px;;
+	height:355px;
+	position: relative;
+	margin:0px;
+	margin-left:5px;
+	padding:0px;
+	float:left;
+	border:0px solid pink;
+	}
+
+
+div.sc_menu {padding: 3px 0;}
+.sc_menu a {	display: block;	
+	margin-bottom: 5px;	
+	width: 240px;	
+	border: 1px solid #000000;	
+	/* When image support is turned off */
+	font-family:verdana;font-weight:bold;font-size:11px;color:#9dafcf;text-decoration:none;
+}
+
+.sc_menu a:hover {
+	border: 1px solid #808080;	
+	font-family:verdana;font-weight:bold;font-size:11px;color:#ffffff;text-decoration:none;
+
+}
+.sc_menu img {
+	display: block;
+	border: none;
+}
+ 
+.sc_menu_wrapper .loading {
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	
+	margin: 0 auto;
+	padding: 5px;
+ 
+	width: 100px;
+	
+	text-align: center;
+	color: #fff;
+	border: 1px solid rgb(79, 79, 79);
+	background: #1F1D1D;
+}
+/* Styling tooltip */
+.sc_menu_tooltip {
+	display: block;
+	position: absolute;
+	
+	padding: 6px;
+	font-size: 12px;	
+	color: #fff;
+	
+	
+	border: 1px solid rgb(79, 79, 79);
+	background: rgb(0, 0, 0);
+	/* Make background a bit transparent for browsers that support rgba */	
+	background: rgba(0, 0, 0, 0.5);
+}
+ 
+/* Here are styles for a link to an article. Not for you :) */
+#back {
+	margin-left: 8px;
+	color: gray;
+	font-size: 18px;
+	text-decoration: none;
+}
+#back:hover {
+	text-decoration: underline;
+}
+
+

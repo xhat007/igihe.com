@@ -1,0 +1,69 @@
+
+												<div class="news-sidebar">
+													<ul class="nav nav-tabs nav-justified newstab">
+													  <li class="active"><a data-toggle="tab" href="#home">Politiki</a><span></span></li>
+													  <li><a data-toggle="tab" href="#menu1">Ubukungu</a><span></span></li>  
+													</ul>
+													<div class="tab-content">
+													  <div id="home" class="tab-pane fade in active">
+														<BOUCLE_politics1(ARTICLES){branche 8}{!par date}{0,1}{doublons pol}> 
+															<div class="first-politic-news">
+																<img src="[(#LOGO_ARTICLE||image_reduire{320,*}||image_recadre{300,152,center}|extraire_attribut{src})]"  class="img-responsive" alt="g"/>
+																<p><a href="#URL_ARTICLE">#TITRE</a></p>
+															</div>
+														</BOUCLE_politics1>
+														<div class="other-politic-news">
+															<BOUCLE_politics2(ARTICLES){branche 8}{!par date}{0,2}{doublons pol}>
+																<div class="row margintop">
+																	
+																	<div class="col col-lg-4 col-md-4 col-sm-3 col-xs-3  nopaddingleft0 "> 
+																		<a href="#URL_ARTICLE"><img src="[(#LOGO_ARTICLE||image_reduire{100,*}||image_recadre{90,60,center}|extraire_attribut{src})]"  class="img-responsive"  alt="g"/></a>
+																	</div>
+																	<div class="col col-lg-8 col-md-8 col-sm-9 col-xs-9 nopaddingright0 nopaddingleft0"> 
+																		<div class="news-wrap">
+																			<a href="#URL_ARTICLE">[(#TITRE|couper{50,' ...'})]</a>
+																			<span class="time-rubrique">[(#DATE*|affdate{'h:i'})]' | <a href="#URL_RUBRIQUE{8}">Politike</a></span>
+																		</div>
+																	</div>
+																</div>
+															</BOUCLE_politics2>		
+														</div>
+														
+														<div class="other-related-news text-right">
+															<a href="./spip.php?page=v5rubrique&amp;id_rubrique=8">Izindi</a>
+														</div>
+														
+													  </div>
+													  <div id="menu1" class="tab-pane fade ">
+														<BOUCLE_ubukungu1(ARTICLES){branche 11}{!par date}{0,1}{doublons ubu}>
+															<div class="first-politic-news">   
+																<a href="#URL_ARTICLE">
+																<img class="img-responsive" src="[(#LOGO_ARTICLE||image_reduire{320,*}||image_recadre{300,152,center}|extraire_attribut{src})]" alt="g"/>
+																</a>
+																
+																<p><a href="#URL_ARTICLE">#TITRE</a></p>
+															</div>
+														</BOUCLE_ubukungu1>	
+														<div class="other-politic-news ">
+															<BOUCLE_ubukungu2(ARTICLES){branche 11}{!par date}{0,2}{doublons ubu}>
+																<div class="row margintop">
+																	<div class="col col-lg-4 col-md-4 col-sm-3 col-xs-3 nopaddingleft0"> 
+																		<a href="#URL_ARTICLE"><img src="[(#LOGO_ARTICLE||image_reduire{100,*}||image_recadre{90,60, center}|extraire_attribut{src})]" class="img-responsive" alt="g" /></a>
+																	</div>
+																	<div class="col col-lg-8 col-md-8 col-sm-9 col-xs-9 nopaddingleft0 nopaddingright0"> 
+																		<div class="news-wrap">
+																			<a href="#URL_ARTICLE">[(#TITRE|couper{50,' ...'})]</a>
+																			<span class="time-rubrique">[(#DATE*|affdate{'h:i'})]' | <a href="#URL_RUBRIQUE{11}">Ubukungu</a></span>
+																		</div>
+																	</div>
+																</div>
+															</BOUCLE_ubukungu2>		
+														</div>
+														
+														<div class="other-related-news text-right">
+															<a href="#URL_RUBRIQUE{11}">Izindi</a>
+														</div>
+														
+													  </div>
+													</div>
+												</div>  

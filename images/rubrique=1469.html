@@ -1,0 +1,157 @@
+<BOUCLE_main(RUBRIQUES){id_rubrique}>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>IGIHE - Rwanda day</title>
+<link rel="stylesheet" type="text/css" href="http://igihe.com/css/style.css" />
+<link rel="stylesheet" type="text/css" href="http://igihe.com/css/gallery/style.css">
+<script type="text/javascript" src="http://igihe.com/css/gallery/demo.js"></script>
+<link rel="stylesheet" type="text/css" href="http://igihe.com/css/gallery/shadowbox.css">
+<script type="text/javascript" src="http://igihe.com/css/gallery/shadowbox.js"></script>
+<script type="text/javascript">
+Shadowbox.init({
+    // a darker overlay looks better on this particular site
+    overlayOpacity: 0.8
+    // setupDemos is defined in assets/demo.js
+}, setupDemos);
+</script>
+	  	<style type="text/css">
+	  		#featured { width: 584px; height: 360px; background: #0656B2 url('orbit/loading.gif') no-repeat center center; overflow: hidden; }
+			#featured img{ width: 584px; height: 360px;}
+	  		/* Want a different Loading GIF - visit http://www.webscriptlab.com/ - that's where we go this one :) */
+	  	</style>
+		
+		<!-- Attach our CSS -->
+	  	<link rel="stylesheet" href="css/slide/orbit.css">	
+	  	
+		<!--[if IE]>
+			<style type="text/css">
+				.timer { display: none !important; }
+				div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
+			</style>
+		<![endif]-->
+	  	
+		<!-- Attach necessary scripts -->
+		<script type="text/javascript" src="css/slide/jquery-1.4.1.min.js"></script>
+		<script type="text/javascript" src="css/slide/jquery.orbit.min.js"></script>
+		
+		<!-- Run the plugin -->
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#featured').orbit({
+					'bullets': true,
+					'timer' : true,
+					'animation' : 'horizontal-slide'
+				});
+			});
+		</script>
+
+</head>
+<body>
+<div id="igihe_rwaday" align="center">
+    <div id="header" align="center"></div>
+  <div id="thepage">
+    <div id="content">
+	  <div class="vidz">
+	  	<div style="padding-bottom: 10px;"></div>
+		<div id="featured"> 
+		<BOUCLE_slide(ARTICLES){titre_mot=rdayslides}{par date}{inverse}>
+			[<img src="http://igihe.com/IMG/(#LOGO_ARTICLE|fichier)" alt="#TITRE"/>]
+		</BOUCLE_slide>
+		</div> 
+	  </div>
+		  <div style="width: 390px; display: inline-block; margin-top: 10px;">
+          <BOUCLE_mostread(ARTICLES){titre_mot=rdaymostreaded}{0,5}{par date}{inverse}>
+		    <div class="lnews" style="width: 380px; padding-bottom: 5px;">
+				<div style="padding-bottom: 4px; display: inline-block; vertical-align: top;">[(#LOGO_ARTICLE|image_reduire{93,0})]</div>
+				<div style="padding-left: 1px; display: inline-block; vertical-align: top; width: 270px; margin-left: 10px;"><a href="#URL_ARTICLE" style="color: #0656b2; font-size: 14px;" class="lnewsa">#TITRE</a></div>
+			  </div>
+</BOUCLE_mostread>
+		  </div>
+          
+      <div class="live" style=" border: none; border-right: 1px solid #CCC; font-family: 'Trebuchet MS', Helvetica, sans-serif; color: #4d4d4d; font-size: 12px;"><BOUCLE_live(ARTICLES){titre_mot=rdaylive}{0,2}{par date}{inverse}>
+		  <div class="lnews" style=" width: 450px; font-family: 'Trebuchet MS', Helvetica, sans-serif;">
+				<div style="padding-bottom: 10px; display: inline-block; vertical-align: top; width: 95px;">[(#LOGO_ARTICLE|image_reduire{93,0})]
+</div>
+				<div style="padding-left: 2px; display: inline-block; vertical-align: top; width: 300px; margin-left: 2px;">
+				<span style="display: list-item; list-style: none; font-weight: bold; font-size: 12px; color: #4d4d4d; width: 340px;">#TITRE </span>
+				<span style="display: list-item; list-style: none; font-weight: bold; font-size: 11px; color:#999999">[(#DATE|affdate)]</span>
+				<span style="display: list-item; list-style: none;  font-size:12px; color: #4d4d4d; width: 340px;">[(#TEXTE|couper{150})] <a href="#URL_ARTICLE" class="lnewsa" style="color: #666666; font-size: 10px; text-decoration: underline">read more</a></span>
+				</div>
+		    </div>
+</BOUCLE_live>
+	    <br>
+		  <div class="live" style=" margin-left: 0; margin-top: 15px; background: url(images/bg4.jpg) no-repeat;">
+          
+          <BOUCLE_popular(ARTICLES){titre_mot=rdaypopular}{0,1}{par date}{inverse}>
+		  <div class="lnews" style=" width: 450px; font-family: 'Trebuchet MS', Helvetica, sans-serif;">
+				<div style="padding-bottom: 10px; display: inline-block; vertical-align: top; width: 95px;">[(#LOGO_ARTICLE|image_reduire{93,0})]
+</div>
+				<div style="padding-left: 2px; display: inline-block; vertical-align: top; width: 300px; margin-left: 2px;">
+				<span style="display: list-item; list-style: none; font-weight: bold; font-size: 12px; color: #4d4d4d; width: 340px;">#TITRE </span>
+				<span style="display: list-item; list-style: none; font-weight: bold; font-size: 11px; color:#999999">[(#DATE|affdate)]</span>
+				<span style="display: list-item; list-style: none;  font-size:12px; color: #4d4d4d; width: 340px;">[(#TEXTE|couper{150})] <a href="#URL_ARTICLE" class="lnewsa" style="color: #666666; font-size: 10px; text-decoration: underline">read more</a></span>
+				</div>
+		    </div>
+ </BOUCLE_popular>           
+            
+	    </div>
+		  </div>
+	      <div style="width: 450px; display: inline-block;  vertical-align: top;background: url(images/bg3.jpg) no-repeat; padding-top: 30px;">
+          
+          <BOUCLE_news2011(ARTICLES){titre_mot=rdaynews2011}{0,3}{par date}{inverse}>
+		 <div class="lnews" style=" width: 450px; font-family: 'Trebuchet MS', Helvetica, sans-serif;">
+				<div style="padding-bottom: 10px; display: inline-block; vertical-align: top; width: 95px; ">
+ [(#LOGO_ARTICLE|image_reduire{93,0})]               
+</div>
+				<div style="padding-left: 2px; display: inline-block; vertical-align: top; width: 300px; margin-left: 2px; line-height: 18px;">
+				<span style="display: list-item; list-style: none; font-weight: bold; font-size: 12px; color: #4d4d4d">#TITRE </span>
+				<span style="display: list-item; list-style: none;  font-size:12px; color: #4d4d4d">[(#TEXTE|couper{100})] <a href="#URL_ARTICLE" class="lnewsa" style="color: ##666666; font-size: 10px; text-decoration: underline">read more</a></span>
+				</div>
+		    </div>
+</BOUCLE_news2011>
+	      </div>
+		  
+          <div style=" font-size: 36px; color: #0656b2; font-family: videofont; padding-left: 7px;"><span style=" padding-left: 40px;">VIDEOS</span><br />
+
+<div>
+<BOUCLE_rdayvidz(ARTICLES){titre_mot=rdayvidz}{0,5}{par date}{inverse}>
+<div class="rdayvidz" style="text-align: center;">
+	<a rel="shadowbox;width=805;height=440;player=swf" title="#TITRE" href="http://www.youtube.com/v/#SOUSTITRE&hl=en&fs=1&rel=0&autoplay=1">
+		[<img src="http://igihe.com/IMG/(#LOGO_ARTICLE|fichier)" alt="" width="180" height="163">]
+	</a><br />
+<div style="width: 178px; padding-top: 2px;"><a href="#" class="lnewsa" style="color: #0656b2; font-size: 12px; font-family: 'Trebuchet MS', Helvetica, sans-serif;">#TITRE</a></div>
+</div>
+</BOUCLE_rdayvidz>
+</div>
+
+
+</div>
+    <div style=" width: 750px; display: inline-block; vertical-align: top; margin-top: 15px;">
+    <div style="padding-bottom: 10px; padding-left: 15px;"><img src="images/bg5.jpg"></div>
+    
+    
+          <BOUCLE_latestnews(ARTICLES){titre_mot=rdaylatestnews}{0,3}{par date}{inverse}>
+<div class="lnews" style=" width: 740px;">
+				<div style="padding-bottom: 10px; display: inline-block; vertical-align: top; width: 120px; font-family: 'Trebuchet MS', Helvetica, sans-serif;">
+                
+   [(#LOGO_ARTICLE|image_reduire{119,0})]              
+                </div>
+				<div style="padding-left: 2px; display: inline-block; vertical-align: top; width: 610px; margin-left: 2px; line-height: 16px;">
+				<span style="display: list-item; list-style: none; font-weight: bold; font-size: 12px; color: #4d4d4d">#TITRE </span>
+				<span style="display: list-item; list-style: none; font-weight: bold; font-size: 11px; color:#999999">[(#DATE|affdate)]</span>
+				<span style="display: list-item; list-style: none;  font-size:12px; color: #4d4d4d">[(#TEXTE|couper{350})] <a href="#URL_ARTICLE" class="lnewsa" style="color: #666666; font-size: 10px; text-decoration: underline">read more</a></span>
+				</div>
+	    </div>
+</BOUCLE_latestnews>
+    </div>
+    <div style=" width: 215px; display: inline-block; vertical-align: top; margin-top: 40px;">
+<a href="css/rdaygahunda.pdf" target="_blank"><img src="images/event_dates_3.jpg" style="width: 215px!important;"></a><img src="images/banner.jpg"></div>
+    </div>
+    <div id="footer"></div>
+  </div>
+  <div id="thefooter"></div>
+</div>
+</body>
+</html>
+</BOUCLE_main>

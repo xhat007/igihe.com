@@ -1,0 +1,224 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>IGIHE.com - Murakaze neza</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+	<link rel="shortcut icon" href="mhc_images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="mhc_css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="mhc_css/tabs.css" />
+	<link rel="stylesheet" type="text/css" href="mhc_css/style.css" media="screen" />
+	<script type="text/javascript" src="mhc_js/jquery.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="shadowbox/shadowbox.css">
+	<script type="text/javascript" src="shadowbox/shadowbox.js"></script>
+	<script type="text/javascript">
+		Shadowbox.init();
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div class="header">
+			<div class="top-advert">
+				<a href="#"><img src="mhc_images/top-banner.png" /></a>
+			</div>
+			<div class="h1">
+				<div class="hinfo">IGIHE.com</div>
+				<ul class="hlang">
+					<li><a href="#"><img src="mhc_images/kin.gif" />IKINYARWANDA</a></li>
+					<li><a href="#"><img src="mhc_images/bu.jpg" />IKIRUNDI</a></li>
+					<li><a href="#"><img src="mhc_images/en.gif" />ENGLISH</a></li>
+					<li><a href="#"><img src="mhc_images/fr.gif" />FRANÇAIS</a></li>
+					<li><a href="#"><img src="mhc_images/tv.png" />IGIHE TV</a></li>
+				</ul>
+				<form class="hsearch">
+					<input type="text" class="srchtxt" value="Andika aha..." />
+					<input type="submit" class="srchbtn" value="shakisha" />
+				</form>
+				<div class="clear"></div>
+			</div>
+			<div class="h2">
+				<div class="hlogo">
+					<a href="#"><img src="mhc_images/logo.png" /></a>
+				</div>
+				<div class="hban ban">
+					<span>Kwamamaza</span>
+					<a href="#">
+						<img src="mhc_images/tigo-banner.gif" />
+					</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="h3">
+				<ul class="hnav">
+					<li><a href="#"><img src="mhc_images/ico1.gif" />AHABANZA</a></li>
+					<li><a href="#"><img src="mhc_images/ico2.gif" />ABO TURIBO</a></li>
+					<li><a href="#"><img src="mhc_images/ico3.gif" />SERIVISI</a></li>
+					<li><a href="#"><img src="mhc_images/ico4.gif" />TWANDIKIRE</a></li>
+					<li><a href="#"><img src="mhc_images/ico5.gif" />IBIRIMO</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		
+		<div class="content">
+			<div class="cleft">
+				<div class="cslidenews">
+					<marquee behavior="scroll" direction="left" scrollamount="2" scrolldelay="1" width="100%" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();">
+						<a href="#"><span>Published il y a 9 heures</span>U Rwanda rwakiriye neza iburanishwa rya Pascal Simbikangwa </a>&nbsp;|&nbsp;
+						<a href="#"><span>Published il y a 9 heures</span>U Rwanda rwakiriye neza iburanishwa rya Pascal Simbikangwa </a>&nbsp;|&nbsp;
+						<a href="#"><span>Published il y a 9 heures</span>U Rwanda rwakiriye neza iburanishwa rya Pascal Simbikangwa </a>&nbsp;|&nbsp;
+						<a href="#"><span>Published il y a 9 heures</span>U Rwanda rwakiriye neza iburanishwa rya Pascal Simbikangwa </a>&nbsp;|&nbsp;
+					</marquee>
+				</div>
+			</div>
+			<div class="mhc-topbanner">
+				<a href="http://www.mhc.gov.rw" target="_blank" ><img src="mhc_images/mhc-banner.jpg" /></a>
+			</div>
+			<div class="mhc-slide">
+				<div id="wowslider-container2">
+					<div class="ws_images">
+						<ul>
+							<BOUCLE_mhc_slider(ARTICLES){titre_mot=MHC_slidephoto}{par date}{inverse}{0,4}>
+								<li>[<img src="(#LOGO_ARTICLE||image_reduire{440,0}||image_recadre{435,240,center top}|extraire_attribut{src})" width="600" height="300" />]
+								<a href="#URL_ARTICLE" title="">#TITRE</a>
+								</li>
+							</BOUCLE_mhc_slider>						
+						</ul>
+					</div>
+					<div class="ws_bullets">
+						<div>
+							<BOUCLE_mhc_slider_navigation(ARTICLES){titre_mot=MHC_slidephoto}{par date}{inverse}{0,4}>
+								<a href="#" title="The viking S0#COMPTEUR_BOUCLE">#COMPTEUR_BOUCLE</a>
+							</BOUCLE_mhc_slider_navigation>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="aside">
+				<div class="about">
+					<h4>Aboturibo</h4>
+					<p>
+						<BOUCLE_mhc_about(ARTICLES){titre_mot=MHC_about}{par date}{inverse}{0,1}>
+							[(#TEXTE|couper{200})] <a href="#URL_ARTICLE" title="" style="color:black;">Read More</a>
+						</BOUCLE_mhc_about>
+					</p>
+				</div>
+			</div>		
+			<div class="wrapper">
+				<div class="article">
+					<h4>Inkuru</h4>
+					<ul>
+						<BOUCLE_mhc_news(ARTICLES){titre_mot=MHC_homenews}{par date}{inverse}{0,8}>
+							<li>
+								[<img src="(#LOGO_ARTICLE||image_reduire{0,85}||image_recadre{90,80,top center}|extraire_attribut{src})" />]
+								<h5><a href="#URL_ARTICLE">#TITRE</a></h5>
+								<p></p>
+							</li>
+						</BOUCLE_mhc_news>						
+					</ul>
+					<div class="pagination">
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+					</div>			
+				</div>
+				<div class="document">
+					<h1>Useful document</h1>
+					<div class="img">
+						<BOUCLE_mhc_docs(ARTICLES){titre_mot=MHC_usefuldoc}{par date}{inverse}{0,1}>
+							<BOUCLE_mhc_docs_1(DOCUMENTS){id_article}{par date}{inverse}{0,8}>
+								<a href="#URL_DOCUMENT" target="_blank" title="#TITRE"><img src="mhc_images/docs.png" />
+</a>
+							</BOUCLE_mhc_docs_1>
+						</BOUCLE_mhc_docs>
+					</div>
+				</div>
+				<div class="gallery">
+					<h1>Gallery</h1>
+					<div class="photo">
+						<BOUCLE_mhc_gallery(ARTICLES){titre_mot=MHC_gallery}{par date}{inverse}{0,1}>
+							<BOUCLE_mhc_gallery_docs(DOCUMENTS){id_article}{par date}{inverse}{0,9}>							
+								<a href="[(#URL_DOCUMENT)]" rel="shadowbox"><img src="[(#URL_DOCUMENT||image_reduire{160,0}|image_recadre{150,90,'top left','#000000'}|extraire_attribut{src})]" /></a>
+							</BOUCLE_mhc_gallery_docs>
+								
+						</BOUCLE_mhc_gallery>						
+					</div>
+					<div id="social-media">
+						<h2>Connect with us </h2>
+						<div id="social-img">
+							<a href="#"><img src="mhc_images/down-fc.png" /></a>
+							<a href="#"><img src="mhc_images/down-twi.png" /></a>
+							<a href="#"><img src="mhc_images/down-in.png" /></a>
+							<a href="#"><img src="mhc_images/down-utube.png" /></a>
+							<a href="#"><img src="mhc_images/down-cloud.png" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer">
+			<div class="f1">
+				<div class="fban ban">
+					<span>Kwamamaza</span>
+					<a href="#"><img src="mhc_images/ban1.png" /></a>
+				</div>
+			</div>
+			<div class="f2">
+				<div class="flogo"><img src="mhc_images/flogo.png" /></div>
+				<form class="fsearch">
+					<input type="text" class="srchtxt" value="Andika aha..." />
+					<input type="submit" class="srchbtn" value="shakisha" />
+				</form>
+				<div class="ftop"><a href="#"><img src="mhc_images/ftop.gif" /></a></div>
+			</div>
+			<div class="f3">
+				<div class="fnet">
+					<h3>IGIHE Network</h3>
+					<a href="#">IGIHE.com mu Kinyarwanda</a>
+					<a href="#">IGIHE.com in English</a>
+					<a href="#">IGIHE.com en Français</a>
+				</div>
+				<div class="fjoin">
+					<h3>Join us</h3>
+					<a href="#">Socialize with us</a>
+					<div>
+						<a href="#"><img src="mhc_images/face.gif" /></a>
+						<a href="#"><img src="mhc_images/twi.gif" /></a>
+						<a href="#"><img src="mhc_images/you.gif" /></a>
+					</div>
+				</div>
+				<div class="fcont">
+					<h3>Contacts</h3>
+					<div><b>Location:</b> Ndamage Building 4th Floor</div>
+					<div><b>PO Box:</b> 3477 Kigali-Rwanda</div>
+					<div><b>Phones:</b></div>
+					<div>+250 788 74 29 08, +250 788 49 69 15, +250 728 94 66 08</div>
+					<div><b>Emails:</b></div>
+					<div>info@igihe.com, marketing@igihe.com</div>
+				</div>
+				<div class="fdev">
+					<h3>Website Developed by</h3>
+					<img src="mhc_images/flogo2.gif" />
+				</div>
+				<div class="clear"></div>
+				<div class="fcopy">
+					<div>Uru Rubuga Ruheruka Gushyirwaho Amakuru mercredi 5 février 2014 Saa 17:33:27</div>
+					<span>Copyright © 2009 -2014 - IGIHE Ltd - All Rights Reserved</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="rssb_js/wowslider.js"></script>
+	<script type="text/javascript" src="rssb_js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Testing new contact form</title>
+		
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/jquery.form.js"></script>
+		<script type="text/javascript" src="js/contact.js"></script>
+	</head>
+	<body>
+		<div id="contactWrap">
+			<form id="contactform" action="processForm.php" method="post">
+				<table>
+					<tr>
+						<td><label for="name">Izina:</label></td>
+						<td><input type="text" id="name" name="name" /></td>
+					</tr>
+					<tr>
+						<td><label for="email">Email:</label></td>
+						<td><input type="text" id="email" name="email" /></td>
+					</tr>
+					<tr>
+						<td><label for="message">Ubutumwa:</label></td>
+						<td><textarea id="message" name="message" rows="5" cols="20"></textarea></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit" value="Ohereza" id="send" /></td>
+					</tr>
+				</table>
+			</form>
+			<div id="response"></div>
+		</div>
+	</body>
+</html>

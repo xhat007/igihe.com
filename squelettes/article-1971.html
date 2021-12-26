@@ -1,0 +1,714 @@
+#CACHE{3600}
+<BOUCLE_article(ARTICLES){id_article}{doublons just}>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="rw">
+<head>
+	<title>#TITRE - IGIHE.com</title>  
+	<base href="https://igihe.com/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<meta property="fb:pages" content="171343222113" />
+	<script type="text/javascript">	
+		if(screen.width <= 700) {
+			window.location = "https://mobile.igihe.com/#URL_ARTICLE";
+		}	
+	</script>
+	<link rel="shortcut icon" href="#CHEMIN{'igihe_imgs/fav-icon.png'}">
+	<meta name="generator" content="Bootply" />
+	
+	<meta property="og:title" content="[(#TITRE)]">
+	<meta property="og:description" content="[(#INTRODUCTION|textebrut)]">
+	<meta property="og:image" content="https://igihe.com/[(#LOGO_ARTICLE|extraire_attribut{src})]">
+	<meta property="og:url" content="#URL_ARTICLE">
+	
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="[(#TITRE)]">
+	<meta name="twitter:site" content="@igihe">
+	<meta name="twitter:title" content="[(#TITRE)]">
+	<meta name="twitter:description" content="[(#INTRODUCTION|textebrut)]">
+	<meta name="twitter:creator" content="@igihe">
+	<!-- Twitter summary card with large image must be at least 280x150px -->
+	<meta name="twitter:image:src" content="https://igihe.com/[(#LOGO_ARTICLE|extraire_attribut{src})]">
+
+
+	<link href="https://www.igihe.com/squelettes/v5css/bootstrap.css" rel="stylesheet">
+	<script src="https://www.igihe.com/squelettes/v5js/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="v5engine1/jquery.js"></script> -->
+	<script src="https://www.igihe.com/squelettes/v5js/bootstrap.min.js"></script> 
+	
+	<script src="https://www.igihe.com/squelettes/v5js/clockwise.js"></script>  
+	<script src="https://www.igihe.com/squelettes/v5js/scrollingdiv.js?t=6"></script> 
+	 
+	<link rel="stylesheet" href="https://www.igihe.com/squelettes/v5css/breakingNews.css?t=986554233">
+	<script src="https://www.igihe.com/squelettes/v5js/breakingNews.js"></script>   
+	
+  <link rel="alternate" hreflang="fr" href="http://fr.igihe.com/" />
+	<link rel="stylesheet" type="text/css" href="https://www.igihe.com/squelettes/v5css/font-awesome.min.css?t=4585">  
+	<link rel="stylesheet" type="text/css" href="https://www.igihe.com/squelettes/v5css/v5_gh_article.css?t=91"> 
+	
+    <script type='text/javascript' src='https://www.igihe.com/squelettes/v5js/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='https://www.igihe.com/squelettes/v5js/jquery.easing.1.3.js'></script>  
+	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="squelettes/v5js/html5shiv.min.js"></script>
+	  <script src="squelettes/v5js/respond.min.js"></script>
+	<![endif]-->
+	<!-- SmartMenus jQuery plugin -->
+	<script type="text/javascript" src="https://www.igihe.com/squelettes/v5js/jquery.smartmenus.js"></script>
+
+	<!-- SmartMenus jQuery init -->
+	<script type="text/javascript">
+		$(function() {
+			$('#main-menu').smartmenus({
+				subMenusSubOffsetX: 1,
+				subMenusSubOffsetY: -8
+			});
+			$('#main-menu2').smartmenus({
+				subMenusSubOffsetX: 1,
+				subMenusSubOffsetY: -8
+			});
+		});
+	</script>
+	
+	<!-- SmartMenus core CSS (required) -->
+	<link href="https://www.igihe.com/squelettes/v5css/sm-core-css.css" rel="stylesheet" type="text/css">
+	<link href="https://www.igihe.com/squelettes/v5css/style_menu.css?var_mode=calcul" rel="stylesheet" type="text/css">
+	<!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+	<link href="https://www.igihe.com/squelettes/v5css/sm-blue2.css" rel="stylesheet" type="text/css">
+
+	<!-- #main-menu config - instance specific stuff not covered in the theme -->
+	<!-- Put this in an external stylesheet if you want the media query to work in IE8 (e.g. where the rest of your page styles are) -->
+	<style type="text/css">
+		@media (min-width: 768px) {
+			#main-menu > li {
+				float: none;
+				display: table-cell;
+				width: 1%;
+				text-align: center;
+			}
+			#main-menu2 > li {
+				float: none;
+				display: table-cell;
+				width: 1%;
+				text-align: center;
+			}
+		}
+		iframe{border:none;overflow:hidden;}
+	</style>
+	
+	<script>
+		$(window).load(function(e) {
+			$("#bn7").breakingNews({
+				effect		:"slide-v",
+				autoplay	:true,
+				timer		:7000,
+				color		:'bluedark',
+				border		:true
+			});
+		});
+	</script> 
+</head>
+<body>
+<div class="topline"></div>
+	<div class="corps">
+		<div class="container-fluid wraper-header"> 
+				<INCLURE{fond=v5_header2}{env}{ajax}/>
+			
+			
+				<div class="row label-body margintop">
+					<div class="col col-lg-12 "> 
+					<!-- ####################### MENU ##################### --> 
+						<INCLURE{fond=v5_menu}{env}{ajax}/> 
+						
+					<!-- ####################### END MENU ##################### -->
+					</div> 
+					
+					
+					
+					<!-- ####################### BANNER AFTER MENU ##################### -->
+					<div class="col col-lg-6  visible-lg visible-md nopaddingright">  
+					<B_Ad2_hwide978Xnn>
+					<BOUCLE_Ad2_hwide978Xnn(ARTICLES){titre_mot=premium_leaderboard_Internal_3}{par date}{inverse}{0,1}{doublons the}>
+							<div id="final_msg">
+							<div class="banner-after-menu" style="position: relative;" id="mydiv2">
+									<a href="#URL_ARTICLE">
+										<BOUCLE_Ad2_hwide978Xnn_doc(DOCUMENTS){id_article}{0,1}> 
+											[<img class="banner728" src="https://igihe.com/(#URL_DOCUMENT)" class="img-responsive" alt="."/>] 
+										</BOUCLE_Ad2_hwide978Xnn_doc>
+									</a>
+							</div>
+							</div>
+					</BOUCLE_Ad2_hwide978Xnn>
+					<//B_Ad2_hwide978Xnn>
+					</div>
+					
+					<div class="col col-lg-6  visible-lg visible-md nopaddingleft">  
+					<B_Ad2_hwide978Xnn_B>
+					<BOUCLE_Ad2_hwide978Xnn_B(ARTICLES){titre_mot=premium_leaderboard_Internal_3_B}{par date}{inverse}{0,1}{doublons the}>
+							<div id="final_msg2">
+							<div class="banner-after-menu" style="position: relative;" id="mydiv2">
+									<a href="#URL_ARTICLE">
+										<BOUCLE_Ad2_hwide978Xnn_doc_B(DOCUMENTS){id_article}{0,1}> 
+											[<img class="banner728" src="https://igihe.com/(#URL_DOCUMENT)" class="img-responsive" alt="."/>] 
+										</BOUCLE_Ad2_hwide978Xnn_doc_B>
+									</a>
+							</div>
+							</div>
+					</BOUCLE_Ad2_hwide978Xnn_B>
+					<//B_Ad2_hwide978Xnn_B>
+					</div>
+					
+					<script type="text/javascript">
+						$('#closemydiv2').click(function(){$('#mydiv2').fadeOut('slow');});
+						//$('#final_msg').fadeIn().delay(60000).fadeOut();
+						//$('#final_msg2').fadeIn().delay(60000).fadeOut();
+					</script>
+					
+					<!-- ####################### END BANNER AFTER MENU ##################### -->
+					
+					
+					
+					
+					<!-- ####################### BREAKING NEWS ##################### -->
+					<INCLURE{fond=v5_izigezweho}{env}{ajax}/>  
+					<!-- ####################### END BREAKING NEWS ##################### -->
+					
+					
+					<div class="col col-lg-12 margintop5">  
+						<div class="news-section">
+							<!-- ####################### PORTAL NEWS SECTION ##################### --> 
+							<div class="row margintop">
+								<div class="col col-lg-10 col-md-9 col-sm-12  col-xs-12 ">  
+									<div class="wrap-article">
+										<!-- <h3 class="title-article">#TITRE</h3>  -->
+										<div class="text-article">
+											<div class="row">  	 
+												<div class="col col-lg-12">  
+												<BOUCLE_INDOCS (DOCUMENTS) {id_article} {0,1}>
+													[<img src="https://igihe.com/(#URL_DOCUMENT|timestamp)" class="img-responsive" alt="#TITRE" title="#TITRE">]
+												</BOUCLE_INDOCS>
+														<div class="fulltext " style="border: 1px solid #c4c4c4; border-bottom: 20px solid #c4c4c4; box-shadow: 0px 30px 40px rgba(0,0,0,.1);"> 
+															<iframe class="tabFrame" style="border:none;overflow:hidden" src="https://live.igihe.com/live_default.php?id_game=#SOUSTITRE&amp;start=0" frameborder="0" width="100%" id="iframe" height="1600" onload='javascript:resizeIframe(this);'></iframe>
+														</div>									
+														<div class="article-banner-section"> 
+															<h6>Kwamamaza</h6>
+															<div class="text-center">
+																<center>
+																	<B_gh_ads08062016> <BOUCLE_gh_ads08062016(ARTICLES){0,1}{titre_mot=bottom_leaderboard_1}{par date}{inverse}>
+																		<a href="[(#URL_SITE|sinon{https://www.igihe.com/#URL_ARTICLE})]" title="#TITRE" target="_blank"><BOUCLE_gh_ads08062016_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+																			[<img src="https://igihe.com/(#URL_DOCUMENT|timestamp)" class="img-responsive" alt="#TITRE" title="#TITRE"/>]
+																		</BOUCLE_gh_ads08062016_img>
+																		</a>
+																	</BOUCLE_gh_ads08062016>
+																	</B_gh_ads08062016>
+																		<a href="#"><img src="[(#CHEMIN{'igihe_imgs/gh_ad1_default.png'}|timestamp)]" class="img-responsive"/></a>
+																	<//B_gh_ads08062016>
+																</center>
+															</div>
+															<hr/>
+														</div>								
+														<div class="article-banner-section"> 
+															<h6>Kwamamaza</h6>
+															<div class="text-center">
+																<center>
+																	<B_gh_ads08e> <BOUCLE_gh_ads08e(ARTICLES){0,1}{titre_mot=bottom_leaderboard_2}{par date}{inverse}>
+																		<a href="[(#URL_SITE|sinon{https://www.igihe.com/#URL_ARTICLE})]" title="#TITRE" target="_blank"><BOUCLE_gh_ads08062016_imgww(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+																			[<img src="https://igihe.com/(#URL_DOCUMENT|timestamp)" class="img-responsive" alt="#TITRE" title="#TITRE"/>]
+																		</BOUCLE_gh_ads08062016_imgww>
+																		</a>
+																	</BOUCLE_gh_ads08e>
+																	</B_gh_ads08e>
+																		<a href="#"><img src="[(#CHEMIN{'igihe_imgs/gh_ad1_default.png'}|timestamp)]" class="img-responsive"/></a>
+																	<//B_gh_ads08e>
+																</center>
+															</div>
+															<hr/>
+														</div>		
+														
+															<div class="izindi-section margintop10">
+														<div class="row">
+														<div class="col col-xs-6">
+															<h3 class="title-section">Izindi nkuru wasoma</h3>
+															<BOUCLE_gh_news(ARTICLES){branche}{0,4}{!par date}{titre_mot=HomeNews}{doublons just}>
+																<div class="article-wrap">
+																	<div class="row">
+																		<div class="col col-lg-12"> 
+																			<div class="homenews">
+																				<div class="row">
+																					<div class="col col-lg-3 col-md-4  col-sm-4  col-xs-3 nopaddingright0"> 
+																						<div class=""><a href="#URL_ARTICLE"><img src="[(#LOGO_ARTICLE||image_reduire{0,500}||image_recadre{500,500,top center}|extraire_attribut{src})]" class="img-responsive" /></a></div> 
+																					</div> 
+																					<div class="col col-lg-9 col-md-8  col-md-8  col-md-9 "> 
+																					<div class=""><h6 class="hierarchi-rubrique"><BOUCLE_gh_RUBRIQUEtitle1(RUBRIQUES){id_rubrique}><BOUCLE_gh_RUBRIQUEtitle_followl1(HIERARCHIE)><a href="./spip.php?page=v5rubrique&amp;id_rubrique=#ID_RUBRIQUE">#TITRE</a></BOUCLE_gh_RUBRIQUEtitle_followl1></BOUCLE_gh_RUBRIQUEtitle1></h6>
+																					<span class="homenews-title"><a href="#URL_ARTICLE">#TITRE</a></span>
+																					<div class="in_article">
+																						<div class="article_photos" title="Amafoto ari muriyinkuru"><BOUCLE_gh_in_imagesif(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}><B_gh_in_images><BOUCLE_gh_in_images(DOCUMENTS){id_article}{extension==jpg|gif|png}></BOUCLE_gh_in_images></B_gh_in_images> [(#TOTAL_BOUCLE|=={1}|?{'',[(#TOTAL_BOUCLE)]})]<//B_gh_in_images></BOUCLE_gh_in_imagesif></div>
+																						<div class="article_videos" title="Amavidewo ari muriyinkuru"><B_gh_in_videos><BOUCLE_gh_in_videos(DOCUMENTS){id_article}{extension IN (dist_youtu)}>[(#TOTAL_BOUCLE)]</BOUCLE_gh_in_videos></B_gh_in_videos></div>
+																						<div class="article_audios" title="Amajwi ari muriyinkuru"><B_gh_in_audios><BOUCLE_gh_in_audios(DOCUMENTS){id_article}{extension==mp3}>[(#TOTAL_BOUCLE)]</BOUCLE_gh_in_audios></div>
+																					</div>
+																					</div> 
+																					</div> 
+																				</div> 
+																			</div>  
+																		</div>  
+																	</div> 
+																</div>
+															</BOUCLE_gh_news>							
+														</div>	 
+														
+														<div class="col col-xs-6 latestarticle">
+															<BOUCLE_rub(RUBRIQUES){id_rubrique}>
+																<h3 class="title-section">Inkuru ziheruka -  #TITRE </h3> 
+																<div class="insection">
+																<div class="row">
+																	<BOUCLE_rub_articles(ARTICLES){id_rubrique}{par date}{inverse}{0,6}{doublons just}>
+																		<div class="col col-xs-4">
+																			<div class="latestin">
+																				<a href="#URL_ARTICLE"><img src="[(#LOGO_ARTICLE||image_reduire{*,300}||image_recadre{500,300,center}|extraire_attribut{src})]" class="img-responsive" /></a>
+																				<span class="homenews-title33"><a href="#URL_ARTICLE">#TITRE</a></span>
+																				<div class="latest-time">
+																					<i class="fa fa-clock-o"></i>  
+																					 [(#DATE|affdate{'d/m/y - h:i'})]
+																				</div>
+																			</div>
+																		</div>	 
+																	</BOUCLE_rub_articles>
+																</div>	 
+																</div>
+															</BOUCLE_rub>	 
+														</div>	 
+														</div>	 
+														</div> 
+														
+														<div class="article-banner-section"> 
+															<h6>Kwamamaza</h6>
+															<div class="text-center">
+																<center>
+																	<B_gh_ads08062016m> <BOUCLE_gh_ads08062016m(ARTICLES){0,1}{titre_mot=bottom_leaderboard_3}{par date}{inverse}>
+																		<a href="[(#URL_SITE|sinon{https://www.igihe.com/#URL_ARTICLE})]" title="#TITRE" target="_blank"><BOUCLE_gh_ads08062016_imgm(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+																			[<img src="https://igihe.com/(#URL_DOCUMENT)" class="img-responsive" alt="#TITRE" title="#TITRE"/>]
+																		</BOUCLE_gh_ads08062016_imgm>
+																		</a>
+																	</BOUCLE_gh_ads08062016m>
+																	</B_gh_ads08062016m>
+																		<a href="#"><img src="#CHEMIN{'igihe_imgs/gh_ad1_default.png'}" class="img-responsive"/></a>
+																	<//B_gh_ads08062016m>
+																</center>
+															</div>
+														</div>
+														
+														<div class="commentaire-section" id="commentairesection">
+															<h3>TANGA IGITEKEREZO</h3>
+															<script type="text/javascript">										
+																function envoyer_commentaire(id_forum)
+																{
+
+																var empty_email=(document.getElementById("email").value.length==0 || document.getElementById("email").value==null);
+																var empty_message=(document.getElementById("texte").value.length==0 || document.getElementById("texte").value==null);
+																var empty_text=(document.getElementById("nom").value.length==0 || document.getElementById("nom").value==null);
+																if(empty_text){
+																	alert("Andika amazina yanyu");
+																}
+																else if(empty_email){
+																	alert("Andika email yanyu");
+																}
+																else if(empty_message){
+																	alert("Andika Igitekerezo");
+																}
+																else{
+																	var igitekerezo = document.getElementById("texte").value;
+																	var izina = document.getElementById("nom").value;
+																	var email = document.getElementById("email").value;
+
+																	var titre = document.getElementById("titre").value;
+																	var id_article_obj=document.getElementsByName("id_article").item(0);
+																	var id_article = document.getElementById("idarticle").value;
+
+																	var forum_id=0;
+																	var page="itsform.php";
+																	var url="nom="+izina+"&email="+email+"&commentaire="+igitekerezo+"&id_forum="+id_forum+"&titre="+titre+"&id_article="+id_article;
+																	var xhr_object = null;
+																	if(window.XMLHttpRequest) // Firefox
+																		xhr_object = new XMLHttpRequest();
+																	else
+																	{
+																		if(window.ActiveXObject) // Internet Explorer
+																			xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+																		else
+																		{
+																			alert("Browser does not support xmlHttpRequest");
+																			return;
+																		}
+																	}
+																	var method = "POST";
+																	var filename = page;
+																	var requete  = url;
+																	xhr_object.onreadystatechange = function()
+																	{
+																		if(xhr_object.readyState == 1)
+																		{
+																			document.getElementById("comment_statut").innerHTML="Igitekerezo cyanyu kiri kwoherezwa. Mwihangange...";
+																		}								
+																		if(xhr_object.readyState == 4) 
+																		{
+																			var reponse = xhr_object.responseText;
+																			//specify the response content								
+																			document.getElementById("comment_statut").innerHTML= reponse;
+																			document.getElementById("nom").disabled="disabled";
+																			document.getElementById("email").disabled="disabled";
+																			document.getElementById("texte").disabled="disabled";
+																			document.getElementById("ohereza").disabled="disabled";
+																		}
+																	}
+																	xhr_object.open(method, filename, true);
+																	xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+																	xhr_object.send(requete);	 
+																}				
+															}			
+														</script>
+														<div class="form-comment">
+															<div class="row">
+																<div class="col-xs-12">
+																	<form id="signupForm" method="POST" action="[(#ENV{action})]#commentairesection" onsubmit="return(false)" 
+																	 accept-charset="UTF-8">
+																	<input id="idarticle" type="hidden" name="idarticle" value="#ID_ARTICLE">
+																	<input id="titre" type="hidden" name="titre" value="#TITRE">
+																	 
+																	
+																		<div class="col-xs-6">
+																			<div class="input-group">
+																				<span class="input-group-addon"><i class="fa fa-user"></i></span>
+																				<input id="nom" class="form-control input-lg" placeholder="Amazina yanyu" required="required" maxlength="30" type="text" name="nom">
+																			</div>
+																		</div>
+																		<div class="col col-xs-6">
+																			<div class="input-group">
+																				<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+																				<input id="email" class="form-control input-lg" placeholder="Email yanyu" required="required" maxlength="60" type="email" name="email" value="">
+																			</div> 
+																		</div>
+																		<div class="col col-xs-12">
+																			<div class="input-group">
+																				<span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+																				<textarea id="texte" class="form-control input-lg" placeholder="Andika hano" required="required" name="texte" rows="5"></textarea>
+																			</div>
+																			</div>
+																			<div class="col col-xs-9">
+																				<span class="amategeko" data-toggle="modal" data-target="#amategeko">AMATEGEKO AGENGA IYANDIKA RY'IGITEKEREZO CYAWE</span>
+																				
+																				<!-- Modal -->
+																				<div id="amategeko" class="modal fade" role="dialog">
+																				  <div class="modal-dialog">
+
+																					<!-- Modal content-->
+																					<div class="modal-content">
+																					  <div class="modal-header">
+																						<button type="button" class="close" data-dismiss="modal">&times;</button>
+																						<h4 class="modal-title">AMATEGEKO AGENGA IYANDIKA RY'IGITEKEREZO CYAWE</h4>
+																					  </div>
+																					  <div class="modal-body">
+																						<p>Witandukira kubijyanye n'iyi nkuru; wikwandika ibisebanya, ibyamamaza cyangwa bivangura; wikwandika ibiteye isoni, Wifuza kubona byihuse ibivugwa/ibisubizo ku gitekerezo cyawe, andika email yawe ahabugenewe. Ibi bidakurikijwe igitekerezo cyanyu gishobora kutagaragara hano cyangwa kigasibwa. </p><p>Igitekerezo cyawe kigaragara nyuma y'isuzuma rikorwa na IGIHE.com , Murakoze!</p>
+																					  </div>
+																					  <div class="modal-footer">
+																						<button type="button" class="btn btn-default" data-dismiss="modal">Funga</button>
+																					  </div>
+																					</div>
+
+																				  </div>
+																				</div>
+																				
+																			</div>
+																			<div class="col col-xs-3">
+																			<div class="form-group">
+																				<button type="submit" id="ohereza" class="btn btn-block btn-primary btn-lg" onclick="envoyer_commentaire([(#ENV{id_forum})])">OHEREZA</button>
+																			</div>
+																		</div>
+																	</form>
+																</div><!-- end of column -->
+																
+																<div class="col-xs-12 fulltext">
+																	<p><span id="comment_statut"></span></p>
+																</div>
+																
+															</div><!-- end of row -->
+														</div>
+													</div>
+													<div class="article-banner-section"> 
+														<h6>Kwamamaza</h6>
+														<div class="text-center">
+															<center>
+																<B_gh_ads08ev> <BOUCLE_gh_ads08ev(ARTICLES){0,1}{titre_mot=bottom_leaderboard_4}{par date}{inverse}>
+																	<a href="[(#URL_SITE|sinon{https://www.igihe.com/#URL_ARTICLE})]" title="#TITRE" target="_blank"><BOUCLE_gh_ads08062016_imgwwv(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}> 
+																		[<img src="https://igihe.com/(#URL_DOCUMENT)" class="img-responsive" alt="#TITRE" title="#TITRE"/>]
+																	</BOUCLE_gh_ads08062016_imgwwv>
+																	</a>
+																</BOUCLE_gh_ads08ev>
+																</B_gh_ads08ev>
+																	<a href="#"><img src="#CHEMIN{'igihe_imgs/gh_ad1_default.png'}" class="img-responsive"/></a>
+																<//B_gh_ads08ev>
+															</center>
+														</div>
+														<hr/>
+													</div>	
+													<div id="commentsAll" class="commentaires-section">
+														<iframe class="tabFrame" style="border:none;overflow:hidden" src="forum_iframe.php?id_article=#ID_ARTICLE&amp;start=0" frameborder="0" width="100%" id="iframe" height="1000" onload='javascript:resizeIframe(this);'></iframe>
+													</div>
+													
+														<div class="featured-section">
+															<div class="row">
+																<div class="col-xs-4">
+																	<h3 class="title-section">Inkuru zamamaza</h3>
+																	<div class="featured-box"> 
+																	<BOUCLE_AMAMAZA(ARTICLES){id_rubrique=1410}{!par date}{0,4}{doublons ubu}>
+																			<div class="advertorial-news5">
+																				<div class="row">
+																					<div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 "> 
+																						[<a href="#URL_ARTICLE"><img class="round-image" src="(#LOGO_ARTICLE||image_reduire{150,*}|extraire_attribut{src})" height="60" width="60"/></a>]
+																					</div>
+																					<div class="col col-lg-9  col-md-9 col-sm-9 col-xs-9"> 
+																						<div class="">
+																							<a href="#URL_ARTICLE">[(#TITRE|couper{75,' ...'})]</a> 
+																						</div>
+																					</div>
+																				</div> 
+																			</div>
+																	</BOUCLE_AMAMAZA> 
+																			
+																			<a href="./spip.php?page=v5rubrique&amp;id_rubrique=1410"><div class="text-center"><span class="btn btn-default">SOMA IBINDI</span></div></a>
+																	</div>
+																</div>
+																<div class="col-xs-4">
+																	<h3 class="title-section">Amatangazo</h3>
+																	<div class="featured-box">
+																	<BOUCLE_amatangazo(ARTICLES){id_rubrique=1629}{!par date}{0,4}>
+																		<div class="row">
+																			<div class="col col-lg-12"> 
+																				<div class="homenews">
+																					<div class="row">
+																						<div class="col col-lg-3 col-md-4  col-sm-4  col-xs-3 nopaddingright0"> 
+																							[<div class="pubphoto"><a href="#URL_ARTICLE"><img src="https://www.igihe.com/(#LOGO_ARTICLE||image_reduire{150,*}|extraire_attribut{src})" class="img-responsive" /></a></div> ]
+																						</div> 
+																						<div class="col col-lg-9 col-md-8  col-sm-8  col-xs-9 "> 
+																						<div class="">
+																						<span class="homenews-title"><a href="#URL_ARTICLE">[(#TITRE|couper{75,' ...'})]</a></span>
+																						<div class="in_article">[(#DATE|affdate{'d/m/Y'})]</div>
+																						</div> 
+																						</div> 
+																					</div> 
+																				</div>  
+																			</div>  
+																		</div> 
+																	</BOUCLE_amatangazo>
+																		 
+																		<a href="./spip.php?page=v5rubrique&amp;id_rubrique=1629"><div class="text-center"><span class="btn btn-default">SOMA IBINDI</span></div></a>
+																	</div>
+																</div>
+																<div class="col-xs-4">
+																	<h3 class="title-section">IGIHE Documents</h3>
+																	<div class="featured-box">
+																		<div class="row">
+																			<div class="col col-lg-12"> 
+																				<B_docs_data>
+<BOUCLE_docs_data(DATA){source rss, http://docs.igihe.com/spip.php?page=backend}{0,4}>
+	<div class="homenews">
+		<div class="row">
+			<div class="col col-lg-3 col-md-4  col-sm-4  col-xs-3 nopaddingright0">
+				<div class="pubphoto"><a href="[(#VALEUR{url})]"><img src="https://www.igihe.com/images/pdfIcon.jpg" class="img-responsive" /></a></div>
+			</div>
+			<div class="col col-lg-9 col-md-8  col-sm-8  col-xs-9 ">
+				<div class="">
+					<h6 class="hierarchi-rubrique"><a href="http://docs.igihe.com">DOCS</a></h6>
+					<span class="homenews-title"><a href="[(#VALEUR{url})]">[(#VALEUR{titre})]</a></span>
+				</div>
+			</div>
+		</div> 
+	</div>																					
+</BOUCLE_docs_data>
+</B_docs_data>
+<//B_docs_data>																		
+																					  
+																				<div class="text-center"><span class="btn btn-default">SOMA IBINDI</span></div>
+																			</div>  
+																		</div> 
+																	</div>
+																</div>
+															</div>
+														</div>
+												</div>
+											</div>
+										</div>									
+									</div> 
+								</div> 
+								<!-- ####################### RIGHT SECTION BANNERS ##################### --> 
+								<div class="col col-lg-2 col-md-3 visible-lg visible-md "> 
+								<div class="left-side-box"> 
+								
+									<h3 class="title-ads">Kwamamaza</h3> 
+									<div class="margintop text-center">
+										<B_ad_right_160x600>
+											<BOUCLE_ad_right_160x600(ARTICLES){titre_mot=skyscraper_internal_1}{par date}{inverse}{0,1}>
+												<a href="https://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+													<BOUCLE_ad_right_160x600_docs(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+													[<img src="https://www.igihe.com/(#URL_DOCUMENT)" class="img-responsive" width="160" alt="#TITRE" title="#TITRE"/>]
+													</BOUCLE_ad_right_160x600_docs>
+												</a>						
+											</BOUCLE_ad_right_160x600>
+										</B_ad_right_160x600>
+											<a href="#"><img src="https://www.igihe.com/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}" class="img-responsive" width="160" /></a>				
+										<//B_ad_right_160x600>										
+									</div>  
+									<h3 class="title-ads">Kwamamaza</h3> 
+									<div class="margintop text-center">
+										<B_Ad3_rub_amakuru_page_article_160_600>
+											<BOUCLE_Ad3_rub_amakuru_page_article_160_600(ARTICLES){titre_mot=skyscraper_internal_2}{par date}{inverse}{0,1}>
+												<a href="https://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+													<BOUCLE_Ad3_rub_amakuru_page_article_160_600_docs(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+														[<img class="scrapper img-responsive" data-original="https://igihe.com/(#URL_DOCUMENT)" width="160"  alt="SkyScraper" title="#TITRE"/>]
+													</BOUCLE_Ad3_rub_amakuru_page_article_160_600_docs>
+												</a>						
+											</BOUCLE_Ad3_rub_amakuru_page_article_160_600>
+										</B_Ad3_rub_amakuru_page_article_160_600>							
+											<a href="#"><img class="scrapper img-responsive" data-original="https://igihe.com/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" /> </a>
+										<//B_Ad3_rub_amakuru_page_article_160_600>				
+									</div>  
+									<h3 class="title-ads">Kwamamaza</h3> 
+									<div class="margintop text-center">
+										<B_Ad4_rub_amakuru_page_article_160_600>
+											<BOUCLE_Ad4_rub_amakuru_page_article_160_600(ARTICLES){titre_mot=skyscraper_internal_3}{par date}{inverse}{0,1}>
+												<a href="https://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+													<BOUCLE_Ad4_rub_amakuru_page_article_160_600_docs(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}> 
+														[<img class="scrapper img-responsive" src="https://igihe.com/(#URL_DOCUMENT)" width="160"  alt="SkyScraper" title="#TITRE"/>]
+													</BOUCLE_Ad4_rub_amakuru_page_article_160_600_docs>
+												</a>						
+											</BOUCLE_Ad4_rub_amakuru_page_article_160_600>
+										</B_Ad4_rub_amakuru_page_article_160_600>							
+											<a href="#"><img class="scrapper img-responsive" src="https://igihe.com/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" /> </a>
+										<//B_Ad4_rub_amakuru_page_article_160_600>
+										
+									</div>  
+									<h3 class="title-ads">Kwamamaza</h3> 
+									<div class="margintop text-center">
+										<B_Ad5_rub_amakuru_page_article_160_600>
+											<BOUCLE_Ad5_rub_amakuru_page_article_160_600(ARTICLES){titre_mot=skyscraper_internal_4}{par date}{inverse}{0,1}>
+												<a href="https://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+													<BOUCLE_Ad5_rub_amakuru_page_article_160_600_docs(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+														[<img class="scrapper img-responsive" src="https://igihe.com/(#URL_DOCUMENT)" width="160"  alt="SkyScraper" title="#TITRE"/>]
+													</BOUCLE_Ad5_rub_amakuru_page_article_160_600_docs>
+												</a>						
+											</BOUCLE_Ad5_rub_amakuru_page_article_160_600>
+										</B_Ad5_rub_amakuru_page_article_160_600>							
+											<a href="#"><img class="scrapper img-responsive" src="https://igihe.com/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" /> </a>
+										<//B_Ad5_rub_amakuru_page_article_160_600>
+									</div>  
+									<h3 class="title-ads">Kwamamaza</h3> 
+									<div class="margintop text-center">
+										<B_Ad6_rub_amakuru_page_article_160_600>
+											<BOUCLE_Ad6_rub_amakuru_page_article_160_600(ARTICLES){titre_mot=skyscraper_internal_5}{par date}{inverse}{0,1}>
+												<a href="https://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+													<BOUCLE_Ad6_rub_amakuru_page_article_160_600_docs(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+														[<img class="scrapper img-responsive" src="https://igihe.com/(#URL_DOCUMENT)" width="160"  alt="SkyScraper" title="#TITRE"/>]
+													</BOUCLE_Ad6_rub_amakuru_page_article_160_600_docs>
+												</a>						
+											</BOUCLE_Ad6_rub_amakuru_page_article_160_600>
+										</B_Ad6_rub_amakuru_page_article_160_600>							
+											<a href="#"><img class="scrapper img-responsive" src="https://igihe.com/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" /> </a>
+										<//B_Ad6_rub_amakuru_page_article_160_600>									
+									</div>  
+									<h3 class="title-ads">Kwamamaza</h3> 
+									<div class="margintop text-center">
+										<B_Ad7_rub_amakuru_page_article_160_600>
+											<BOUCLE_Ad7_rub_amakuru_page_article_160_600(ARTICLES){titre_mot=skyscraper_internal_6}{par date}{inverse}{0,1}>
+												<a href="https://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+													<BOUCLE_Ad7_rub_amakuru_page_article_160_600_docs(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+														[<img class="scrapper img-responsive" src="https://igihe.com/(#URL_DOCUMENT)" width="160"  alt="SkyScraper" title="#TITRE"/>]
+													</BOUCLE_Ad7_rub_amakuru_page_article_160_600_docs>
+												</a>						
+											</BOUCLE_Ad7_rub_amakuru_page_article_160_600>
+										</B_Ad7_rub_amakuru_page_article_160_600>							
+											<a href="#"><img class="scrapper img-responsive" src="https://igihe.com/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" /> </a>		
+										<//B_Ad7_rub_amakuru_page_article_160_600>									
+									</div>  
+									<h3 class="title-ads">Kwamamaza</h3> 
+									<div class="margintop text-center">
+										<B_Ad8_rub_amakuru_page_article_160_600>
+											<BOUCLE_Ad8_rub_amakuru_page_article_160_600(ARTICLES){titre_mot=skyscraper_internal_7}{par date}{inverse}{0,1}>
+												<a href="https://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+													<BOUCLE_Ad8_rub_amakuru_page_article_160_600_docs(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+														[<img class="scrapper img-responsive" src="https://igihe.com/(#URL_DOCUMENT)" width="160"  alt="SkyScraper" title="#TITRE"/>]
+													</BOUCLE_Ad8_rub_amakuru_page_article_160_600_docs>
+												</a>						
+											</BOUCLE_Ad8_rub_amakuru_page_article_160_600>
+										</B_Ad8_rub_amakuru_page_article_160_600>							
+											<a href="#"><img class="scrapper img-responsive" src="https://igihe.com/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" /> </a>
+										<//B_Ad8_rub_amakuru_page_article_160_600>								
+									</div>	
+									<h3 class="title-ads">Kwamamaza</h3> 
+									<div class="margintop text-center">
+										<B_Ad8_rub_amakuru_page_article_160_600m>
+											<BOUCLE_Ad8_rub_amakuru_page_article_160_600m(ARTICLES){titre_mot=skyscraper_internal_8}{par date}{inverse}{0,1}>
+												<a href="https://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+													<BOUCLE_Ad8_rub_amakuru_page_article_160_600_docsm(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+														[<img class="scrapper img-responsive" src="https://igihe.com/(#URL_DOCUMENT)" width="160"  alt="SkyScraper" title="#TITRE"/>]
+													</BOUCLE_Ad8_rub_amakuru_page_article_160_600_docsm>
+												</a>						
+											</BOUCLE_Ad8_rub_amakuru_page_article_160_600m>
+										</B_Ad8_rub_amakuru_page_article_160_600m>							
+											<a href="#"><img class="scrapper img-responsive" src="https://igihe.com/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" /> </a>
+										<//B_Ad8_rub_amakuru_page_article_160_600m>								
+									</div>	
+									<h3 class="title-ads">Kwamamaza</h3> 
+									<div class="margintop text-center">
+										<B_Ad8_rub_amakuru_page_article_160_600m1>
+											<BOUCLE_Ad8_rub_amakuru_page_article_160_600m1(ARTICLES){titre_mot=skyscraper_internal_9}{par date}{inverse}{0,1}>
+												<a href="https://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+													<BOUCLE_Ad8_rub_amakuru_page_article_160_600_docsm1(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+														[<img class="scrapper img-responsive" src="https://igihe.com/(#URL_DOCUMENT)" width="160"  alt="SkyScraper" title="#TITRE"/>]
+													</BOUCLE_Ad8_rub_amakuru_page_article_160_600_docsm1>
+												</a>						
+											</BOUCLE_Ad8_rub_amakuru_page_article_160_600m1>
+										</B_Ad8_rub_amakuru_page_article_160_600m1>							
+											<a href="#"><img class="scrapper img-responsive" src="https://igihe.com/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" /> </a>
+										<//B_Ad8_rub_amakuru_page_article_160_600m1>								
+									</div>	
+									<h3 class="title-ads">Kwamamaza</h3> 
+									<div class="margintop text-center">
+										<B_Ad8_rub_amakuru_page_article_160_600m2>
+											<BOUCLE_Ad8_rub_amakuru_page_article_160_600m2(ARTICLES){titre_mot=skyscraper_internal_10}{par date}{inverse}{0,1}>
+												<a href="https://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+													<BOUCLE_Ad8_rub_amakuru_page_article_160_600_docsm2(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+														[<img class="scrapper img-responsive" src="https://igihe.com/(#URL_DOCUMENT)" width="160"  alt="SkyScraper" title="#TITRE"/>]
+													</BOUCLE_Ad8_rub_amakuru_page_article_160_600_docsm2>
+												</a>						
+											</BOUCLE_Ad8_rub_amakuru_page_article_160_600m2>
+										</B_Ad8_rub_amakuru_page_article_160_600m2> 										
+											<a href="#"><img class="scrapper img-responsive" src="https://igihe.com/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" /> </a>
+										<//B_Ad8_rub_amakuru_page_article_160_600m2>								
+									</div>		
+								</div>  
+								</div>								 
+							</div>  
+							<!-- ####################### END PORTAL NEWS SECTION ##################### -->						 
+						</div>
+					</div>
+					
+				</div>  
+			
+		</div>
+	</div> 
+	<!-- ####################### END PORTAL NEWS SECTION ##################### -->
+	
+	<!-- ####################### FOOTER SECTION ##################### -->
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-587b16b7bbda5902"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+
+
+	<INCLURE{fond=v5_footer}{env}{ajax}/>
+	<!-- ####################### END FOOTER SECTION ##################### --> 
+	<script type='text/javascript' src="squelettes/v5js/jquery.lazyload.js"></script>
+	<script>$("img.artimgv5").lazyload(); $("img.scrapper").lazyload(); $("img.rectangle").lazyload(); </script>
+</body>
+</html>
+</BOUCLE_article>

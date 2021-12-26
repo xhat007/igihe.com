@@ -1,0 +1,256 @@
+<aside class="artistnews">
+<!-- HERE RNB CONTENT START -->
+	<article class="artnews music" id="rnb">
+            	<div class="arttitle">
+                	<span class="arttitle1" style="color: #000;">muzika</span>
+                	<span class="arttitle2" style="color: #00BBE4;">RNB</span></div>
+                <div class="artlatestnews">    
+			<BOUCLE_artrnb(ARTICLES){titre_mot=artrnb}{par date}{inverse}{0,3}>
+                   		<div class="artlnews">
+                        		<div class="artlnews_logo">[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{70,0}||image_recadre{70,60,top center}|extraire_attribut{src})" width="70" height="60">]</div>
+                        		<div class="artlnews_texte"><a href="#URL_ARTICLE">#TITRE</a></div>
+       					<div style="clear: both"></div>
+                    		</div>
+			</BOUCLE_artrnb>
+                </div>
+
+		<BOUCLE_bestrnb(ARTICLES){titre_mot=best_rnb}{par date}{inverse}{0,1}>
+            		<div class="artbest">
+            		<a href="#URL_ARTICLE">
+               	 		<div class="artbest_img">[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,330}||image_recadre{220,330,top center}|extraire_attribut{src})" width="220" height="330">]</div>        
+                		<div class="artbest_txt">#TITRE</div>  
+                	</a>                             
+                	</div>
+		</BOUCLE_bestrnb>
+		<div style="clear: both"></div>
+            	<div class="artlnews2">
+                	<div class="artlnews2_title">Ibishya muri RNB</div>
+			<BOUCLE_newinrnb(ARTICLES){titre_mot=newinrnb}{par date}{inverse}{0,2}>
+                    		<div class="artlnews2texte">
+                    		<a href="#URL_ARTICLE">
+                        		<div>[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,141}||image_recadre{250,141,top center}|extraire_attribut{src})" width="250" height="141">]</div>
+                        		<div class="artlnews2title">#TITRE</div>
+                        	</a>
+                   		</div>
+			</BOUCLE_newinrnb>
+       			<div style="clear: both"></div>
+                </div>
+                <!-- BANNER 2 -->
+			<div class="b2"><img src="http://igihe.bi/IMG/gif/2-2.gif" width="530" /></div>
+		<!-- END BANNER 2 -->
+	</article>
+<!-- HERE RNB CONTENT END -->
+
+<!-- HERE HIP HOP CONTENT START -->
+	<article class="artnews music" id="hiphop">
+        	<div class="arttitle">
+                	<span class="arttitle1" style="color: #000;">muzika</span>
+                	<span class="arttitle2" style="color: #239408;">Hip hop</span>
+		</div>
+               	<div class="artlatestnews"> 
+   			<BOUCLE_arthiphop(ARTICLES){titre_mot=arthiphop}{par date}{inverse}{0,3}>
+                    		<div class="artlnews">
+                        		<div class="artlnews_logo">[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{70,0}||image_recadre{70,60,top center}|extraire_attribut{src})" width="70" height="60">]</div>
+                       			<div class="artlnews_texte"><a href="#URL_ARTICLE">#TITRE</a></div>
+       					<div style="clear: both"></div>
+               			</div>
+			</BOUCLE_arthiphop>
+		</div>
+		<BOUCLE_besthiphop(ARTICLES){titre_mot=best_hiphop}{par date}{inverse}{0,1}>
+       			<div class="artbest">
+       			<a href="#URL_ARTICLE">
+               			<div class="artbest_img">[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,330}||image_recadre{220,330,top center}|extraire_attribut{src})" width="220" height="330">]</div>        
+               			<div class="artbest_txt">#TITRE</div>   
+               		</a> 
+		        </div>
+		</BOUCLE_besthiphop>
+       		<div style="clear: both"></div>
+           	<div class="artlnews2">
+                	<div class="artlnews2_title">Ibishya muri HIP HOP</div>
+			<BOUCLE_newinhiphop(ARTICLES){titre_mot=newinhiphop}{par date}{inverse}{0,2}>
+                    		<div class="artlnews2texte">
+                    		<a href="#URL_ARTICLE">
+                        		<div>[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,141}||image_recadre{250,141,top center}|extraire_attribut{src})" width="250" height="141">]</div>
+                        		<div class="artlnews2title">#TITRE</div>
+                        	</a>
+                    		</div>
+			</BOUCLE_newinhiphop>
+       			<div style="clear: both"></div>
+                </div>	
+                <!-- BANNER 3 -->
+			<div class="b2"><img src="http://igihe.rw/IMG/jpg/burundi_banner.jpg" width="530" /></div>
+		<!-- END BANNER 3 -->
+	</article>	
+<!-- HERE HIP HOP CONTENT END -->
+
+<!-- HERE AFRO BEAT CONTENT START -->
+	<article class="artnews music" id="afrobeat">
+		<div class="arttitle">
+			<span class="arttitle1" style="color: #000;">muzika</span>
+			<span class="arttitle2" style="color: #E62970;">Afro Beat</span>
+		</div>
+                <div class="artlatestnews">  
+			<BOUCLE_artafrobeat(ARTICLES){titre_mot=artafrobeat}{par date}{inverse}{0,3}>
+                		<div class="artlnews">
+                   		     	<div class="artlnews_logo">[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{70,0}||image_recadre{70,60,top center}|extraire_attribut{src})" width="70" height="60">]</div>
+                   		     	<div class="artlnews_texte"><a href="#URL_ARTICLE">#TITRE</a></div>
+       					<div style="clear: both"></div>
+				</div>
+			</BOUCLE_artafrobeat>
+                </div>
+		<BOUCLE_bestafrobeat(ARTICLES){titre_mot=best_afrobeat}{par date}{inverse}{0,1}>
+            		<div class="artbest">
+            		<a href="#URL_ARTICLE">
+                		<div class="artbest_img">[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,330}||image_recadre{220,330,top center}|extraire_attribut{src})" width="220" height="330">]</div>    
+                		<div class="artbest_txt">#TITRE</div>  
+                	</a>  
+		        </div>
+		</BOUCLE_bestafrobeat>
+       		<div style="clear: both"></div>
+            	<div class="artlnews2">
+                	<div class="artlnews2_title">Ibishya muri AFRO BEAT</div>
+			<BOUCLE_newinafrobeat(ARTICLES){titre_mot=newinafrobeat}{par date}{inverse}{0,2}>
+                    		<div class="artlnews2texte">
+                    		<a href="#URL_ARTICLE">
+                        		<div>[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,141}||image_recadre{250,141,top center}|extraire_attribut{src})" width="250" height="141">]</div>
+                        		<div class="artlnews2title">#TITRE</div>
+                        	</a>
+                    		</div>
+			</BOUCLE_newinafrobeat>
+       			<div style="clear: both"></div>
+                </div>
+                <!-- BANNER 4 -->
+			<div class="b2"><img src="http://igihe.bi/IMG/gif/2-2.gif" width="530" /></div>
+		<!-- END BANNER 4 -->
+	</article>
+<!-- HERE AFROBEAT CONTENT END -->
+<!-- HERE GOSPEL CONTENT START -->
+	<article class="artnews music" id="gospel">
+		<div class="arttitle">
+			<span class="arttitle1" style="color: #000;">muzika</span>
+			<span class="arttitle2" style="color: #dc6c24;">Gospel</span>
+		</div>
+                <div class="artlatestnews">  
+			<BOUCLE_artgospel(ARTICLES){titre_mot=artgospel}{par date}{inverse}{0,3}>
+                		<div class="artlnews">
+                   		     	<div class="artlnews_logo">[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{70,0}||image_recadre{70,60,top center}|extraire_attribut{src})" width="70" height="60">]</div>
+                   		     	<div class="artlnews_texte"><a href="#URL_ARTICLE">#TITRE</a></div>
+       					<div style="clear: both"></div>
+				</div>
+			</BOUCLE_artgospel>
+                </div>
+		<BOUCLE_bestgospel(ARTICLES){titre_mot=best_gospel}{par date}{inverse}{0,1}>
+            		<div class="artbest">
+            		<a href="#URL_ARTICLE">
+                		<div class="artbest_img">[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,330}||image_recadre{220,330,top center}|extraire_attribut{src})" width="220" height="330">]</div>        
+                		<div class="artbest_txt">#TITRE</div>  
+                	</a>  
+		        </div>
+		</BOUCLE_bestgospel>
+       		<div style="clear: both"></div>
+            	<div class="artlnews2">
+                	<div class="artlnews2_title">Ibishya muri GOSPEL</div>
+			<BOUCLE_newingospel(ARTICLES){titre_mot=newingospel}{par date}{inverse}{0,2}>
+                    		<div class="artlnews2texte">
+                    		<a href="#URL_ARTICLE">
+                        		<div>[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,141}||image_recadre{250,141,top center}|extraire_attribut{src})" width="250" height="141">]</div>
+                        		<div class="artlnews2title">#TITRE</div>
+                        	</a>
+                    		</div>
+			</BOUCLE_newingospel>
+       			<div style="clear: both"></div>
+                </div>
+                <!-- BANNER 4 -->
+			<div class="b2"><img src="http://igihe.rw/IMG/jpg/burundi_banner.jpg" width="530" /></div>
+		<!-- END BANNER 4 -->
+	</article>
+<!-- HERE GOSPEL CONTENT END -->
+<!-- HERE CINEMA CONTENT START -->
+	<article class="artnews" id="movies">
+        	<div class="arttitle">
+                	<span class="arttitle1" style="color: #94003c;">Sinema</span>
+                	<span class="arttitle2">na <span style="color: #94003c;">TV</span></span>
+		</div>
+               	<div class="artlatestnews"> 
+   			<BOUCLE_artsinema(ARTICLES){titre_mot=artsinema}{par date}{inverse}{0,3}>
+                    		<div class="artlnews">
+                        		<div class="artlnews_logo">[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{70,0}||image_recadre{70,60,top center}|extraire_attribut{src})" width="70" height="60">]</div>
+                       			<div class="artlnews_texte"><a href="#URL_ARTICLE">#TITRE</a></div>
+       					<div style="clear: both"></div>
+               			</div>
+			</BOUCLE_artsinema>
+		</div>
+		<BOUCLE_bestsinema(ARTICLES){titre_mot=best_sinema}{par date}{inverse}{0,1}>
+       			<div class="artbest">
+       			<a href="#URL_ARTICLE">
+               			<div class="artbest_img">[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,330}||image_recadre{220,330,top center}|extraire_attribut{src})" width="220" height="330">]</div>        
+               			<div class="artbest_txt">#TITRE</div>  
+               		</a>  
+		        </div>
+		</BOUCLE_bestsinema>
+       		<div style="clear: both"></div>
+           	<div class="artlnews2">
+                	<div class="artlnews2_title">Ibishya muri SINEMA na TV</div>
+			<BOUCLE_newinsinema(ARTICLES){titre_mot=newinsinema}{par date}{inverse}{0,2}>
+                    		<div class="artlnews2texte">
+                        		<div>[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,141}||image_recadre{250,141,top center}|extraire_attribut{src})" width="250" height="141">]</div>
+                        		<div class="artlnews2title"><a href="#URL_ARTICLE">#TITRE</a></div>
+                    		</div>
+			</BOUCLE_newinsinema>
+       			<div style="clear: both"></div>
+                </div>
+                <!-- BANNER 5 -->
+			<div class="b2"><img src="http://igihe.bi/IMG/gif/2-2.gif" width="530" /></div>
+		<!-- END BANNER 5 -->
+
+	</article>
+<!-- HERE HIP HOP CONTENT END -->
+
+<!-- HERE AFRO BEAT CONTENT START -->
+	<article class="artnews" id="makuru">
+		<div class="arttitle">
+			<span class="arttitle1" style="color: #ab12df;">Andi</span>
+			<span class="arttitle2">Makuru</span>
+		</div>
+                <div class="artlatestnews">  
+			<BOUCLE_artmakuru(ARTICLES){titre_mot=artmakuru}{par date}{inverse}{0,6}>
+                		<div class="artlnews">
+                   		     	<div class="artlnews_logo">[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{70,0}||image_recadre{70,60,top center}|extraire_attribut{src})" width="70" height="60">]</div>
+                   		     	<div class="artlnews_texte"><a href="#URL_ARTICLE">#TITRE</a></div>
+       					<div style="clear: both"></div>
+				</div>
+			</BOUCLE_artmakuru>
+                </div>
+		<BOUCLE_bestmakuru(ARTICLES){titre_mot=best_makuru}{par date}{inverse}{0,1}>
+            		<div class="artbest">
+            		<a href="#URL_ARTICLE">
+                		<div class="artbest_img">[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,330}||image_recadre{220,330,top center}|extraire_attribut{src})" width="220" height="330">]</div>            
+                		<div class="artbest_txt"><a href="#URL_ARTICLE">#TITRE</div>    
+                	</a>
+		        </div>
+		</BOUCLE_bestmakuru>
+		<BOUCLE_new2inmakuru(ARTICLES){titre_mot=newinmakuru}{par date}{inverse}{0,2}{doublons xx}>
+                    		<div class="artlnews2texte">
+                        		<div>[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,141}||image_recadre{250,141,top center}|extraire_attribut{src})" width="250" height="141">]</div>
+                        		<div class="artlnews2title"><a href="#URL_ARTICLE">#TITRE</a></div>
+                        		<div style="clear: both"></div>
+                    		</div>
+		</BOUCLE_new2inmakuru>
+       		<div style="clear: both"></div>
+            	<div class="artlnews2">
+                	<div class="artlnews2_title">Andi Makuru</div>
+			<BOUCLE_newinmakuru(ARTICLES){titre_mot=newinmakuru}{par date}{inverse}{0,4}{doublons xx}>
+                    		<div class="artlnews2texte">
+                        		<div>[<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{0,141}||image_recadre{250,141,top center}|extraire_attribut{src})" width="250" height="141">]</div>
+                        		<div class="artlnews2title"><a href="#URL_ARTICLE">#TITRE</a></div>
+                        		<div style="clear: both"></div>
+                    		</div>
+			</BOUCLE_newinmakuru>
+       			<div style="clear: both"></div>
+                </div>
+                <!-- BANNER 6 -->
+			<div class="b2"><img src="http://igihe.rw/IMG/jpg/burundi_banner.jpg" width="530" /></div>
+		<!-- END BANNER 6 -->
+	</article>
+<!-- HERE AFROBEAT CONTENT END -->
+</aside>

@@ -1,0 +1,864 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<script type="text/javascript">
+                if(screen.width <= 700) {
+                        window.location = "http://m.igihe.com/";
+                }
+        </script>
+	<title>#NOM_SITE_SPIP - Murakaza neza</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<meta http-equiv="content-language" content="en-US" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta http-equiv="robots" content="all" />
+	<meta name="revisit-after" content="1" />
+	<meta http-equiv="window-target" content="_top" />
+	<meta name="author" content="dR Tsuki" />
+	<meta name="expires" content="-1" />
+	<meta name="rating" content="general" />
+	<meta http-equiv="pragma" content="no-cache" />
+	
+	<link rel="shortcut icon" href="#CHEMIN{'igihe_imgs/favicon.ico'}" />
+	<link rel="stylesheet" type="text/css" media="screen" href="#CHEMIN{'igihe_scripts/ghgrid.css'}" />
+	<link rel="stylesheet" type="text/css" media="screen" href="#CHEMIN{'igihe_scripts/ghstyle_day.css'}" />
+	<link rel="stylesheet" type="text/css" href="#CHEMIN{'igihe_scripts/gh_slideshow.css'}" />
+	<script type="text/javascript" src="#CHEMIN{'igihe_scripts/gh_coverage/jquery.min.js'}"></script>
+	<link rel="stylesheet" type="text/css" href="#CHEMIN{'igihe_scripts/gh_stickyfooter.css'}" />
+	<link rel="stylesheet" href="gh_valentine/style.css" type="text/css" media="screen" />
+	<script src="gh_valentine/jquery-1.6.1.min.js" type="text/javascript"></script>
+	<script src="gh_valentine/jcarousellite_1.0.1c4.js" type="text/javascript"></script>
+	
+	<style>
+		#dropdowncontent {margin:0px; width:100%;height:330px; display:none; float:left;text-align:center;}
+		#dropdownbanner{width:978px;border:0px solid #BCBCBB;margin:auto; margin-bottom: -5px;}
+		.social_feed{}
+		.twtr-hd{ display: none;}
+	</style>
+</head>
+<body>
+
+<!--  Ad_bottomfixed_958x80 S -->
+	<B_Ad_bottomfixed>
+		<BOUCLE_Ad_bottomfixed(ARTICLES){tout}{0,1}{titre_mot=Ad_bottomfixed_958x80}{par date}{inverse}>
+			<div id="stickey_footer" >
+				<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+				<BOUCLE_Ad_bottomfixed_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>				
+				[<img src="http://igihe.rw/(#URL_DOCUMENT)" style="margin:3px;" border="0" alt="#TITRE" title="#TITRE" width="728" height="80" border="0" title="#TITRE"/>]
+				</BOUCLE_Ad_bottomfixed_img>
+				</a>
+				<a href="#" onClick="document.getElementById('stickey_footer').style.display = 'none';" style="display:block;position:relative;float:right;top:65px;width:100px;line-height:20px;margin:0px;font-size:12px; font-weight: bold; color:#1b6935;">CLOSE</a>
+				</div>
+		</BOUCLE_Ad_bottomfixed>
+	</B_Ad_bottomfixed>
+		
+	<//B_Ad_bottomfixed>	
+
+<!--  Ad_bottomfixed_958x80 ENDS HERE -->
+
+	<a name="hejuru"></a>
+
+<!-- TOP BANNER
+	<div style="display:block;width:100%;height:70px;text-align:center;background-color:#0655c7;">
+<a href="http://www.igihe.com/coverages/primus-guma-guma-superstar-ii/"><img src="#DOSSIER_SQUELETTE/igihe_imgs/pggss_ads_topbanner.gif" width="617" height="70" border="0" alt=""></a>
+	</div>
+ End TOP BANNER -->	
+
+
+<div id="ghheader">
+	
+	<div id="dropdowncontent" align="center">
+		<div id="content">
+			<a href="https://www.facebook.com/HopeKidsAcademyRwanda" target="_blank"><img src="http://www.igiheshowbiz.com/imgbackground/20t.jpg" height="330px"></a>				
+		</div>
+	</div>
+	<div style="width: 100%; background: none; margin-top: -3px; margin-left: 0px;" align="center">
+		<a href="#"><img id="dropdownbanner" src="http://www.igiheshowbiz.com/imgbackground/bannert.jpg" width="978" ></a>
+	</div>
+	<script>
+		$("#dropdownbanner").click(function () {
+			if ($("#dropdowncontent").is(":hidden")) {
+				$("#dropdowncontent").slideDown("slow");
+			}
+			else {
+				$("#dropdowncontent").slideUp("slow");
+			}
+		});
+	</script>
+	
+
+	
+	
+
+		<div class="container_20">
+			<INCLURE{fond=gh_head}{env}{ajax}/>
+			<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP" class="gh_menu1"><img src="http://www.igihe.rw/#CHEMIN{'igihe_imgs/icons/gh_home.gif'}" width="19" height="25" border="0" align="left">Ahabanza</a></div>
+			<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/abo-turibo/" class="gh_menu1"><img src="http://www.igihe.rw/#CHEMIN{'igihe_imgs/icons/gh_Abo Turibo.gif'}" width="19" height="25" border="0" align="left">Abo Turibo</a></div>
+			<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/serivisi/" class="gh_menu1"><img src="http://www.igihe.rw/#CHEMIN{'igihe_imgs/icons/gh_Serivisi.gif'}" width="19" height="25" border="0" align="left">Serivisi</a></div>
+			<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/twandikire/" class="gh_menu1"><img src="http://www.igihe.rw/#CHEMIN{'igihe_imgs/icons/gh_Twandikire.gif'}" width="19" height="25" border="0" align="left">Twandikire</a></div>
+			<div class="grid_4" id="menu"><a href="#" class="gh_menu1"><img src="http://www.igihe.rw/#CHEMIN{'igihe_imgs/icons/gh_ibirimo.gif'}" width="19" height="25" border="0" align="left">Ibirimo</a></div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="ghbody">
+		<div id="bghome">
+			<div class="container_20">
+				<div class="grid_16" id="content" style="">
+					<INCLURE{fond=gh_newsslider}{env}{ajax}/>
+					<div class="grid_16 alpha omega">
+						<div class="grid_9 alpha" id="slideshows">
+							<INCLURE{fond=gh_homeslideshow}{env}{ajax}/>
+						</div>
+<!-- Ads Ad4_MediumRectangle_300x250 -->
+						<div class="grid_7 omega"  id="ads_innertop" style="text-align:center;z-index:9999999999999999999999;">
+							<a href="#" class="gh_adsin" >kwamamaza</a>
+							<B_gh_ads4>
+								<BOUCLE_gh_ads4(ARTICLES){tout}{0,1}{titre_mot=Ad4_MediumRectangle_300x250}{par date}{inverse}>
+									<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+										<BOUCLE_gh_ads4_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+											[<img src="http://igihe.rw/(#URL_DOCUMENT)" style="margin:3px;" border="0" alt="#TITRE" title="#TITRE"/>]
+										</BOUCLE_gh_ads4_img>
+									</a>
+								</BOUCLE_gh_ads4>
+							</B_gh_ads4>
+								[<a href="#"><img src="http://www.igihe.rw/#CHEMIN{'igihe_imgs/gh_ad4_default.png'}"  width="300" height="250" border="0"/></a>]
+							<//B_gh_ads4>
+						</div>
+
+<!-- End Ads Ad4_MediumRectangle_300x250 -->
+						<div class="clear"></div>
+
+<!-- Ads ad_widerectangle -->
+						<B_gh_ad_widerectangle>
+								<BOUCLE_gh_ad_widerectangle(ARTICLES){tout}{0,1}{titre_mot=ad_widerectangle}{par date}{inverse}>
+									<center>
+										<a href="http://igihe.com/serivisi/special-pages/igihe-rwanda-day-2013" title="#TITRE" target="_blank">						
+											<BOUCLE_gh_wr(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+												[<img src="http://igihe.rw/(#URL_DOCUMENT)" style="margin:3px;" width="800" border="0" alt="#TITRE" title="#TITRE"/>]
+											</BOUCLE_gh_wr>
+										</a>
+									</center>
+								</BOUCLE_gh_ad_widerectangle>
+						</B_gh_ad_widerectangle>
+						<//B_gh_ad_widerectangle>
+				
+<!-- End Ads ad_widerectangle -->
+					</div>
+					<div class="grid_9 alpha omega">
+						<INCLURE{fond=gh_amakurumashya}{env}{ajax}/>
+<!-- Ads Ad3_LargeRectangle_336x280 -->
+					<div class="grid_9 alpha" id="ads_innerbody" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza<br /></a>
+						<B_gh_ads3>
+							<BOUCLE_gh_ads3(ARTICLES){tout}{0,1}{titre_mot=Ad3_LargeRectangle_336x280}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads3_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="336" height="280" border="0" alt="#TITRE" title="#TITRE"/>]
+										</BOUCLE_gh_ads3_img>
+									</a>
+								</BOUCLE_gh_ads3>
+							</B_gh_ads3>
+							<a href="#"><img src="http://www.igihe.rw/#CHEMIN{'igihe_imgs/gh_ad3_default.png'}"  width="336" height="280" border="0" /></a>
+							<//B_gh_ads3>
+						</div>
+<!-- End Ad3_LargeRectangle_336x280 -->
+					</div>
+					<div class="grid_7 omega">
+					<INCLURE{fond=gh_inkuruzirambuye}{env}{ajax}/>
+					<!-- Ads gh_ad1_middle300X250 -->
+					<div class="grid_7" style="margin-top:3px;text-align:center;background-color:#ffffff;">
+						<a href="#" class="gh_adsin">kwamamaza<br /></a>
+						<div style="text-align:center;padding:2px;padding-bottom:7px;">
+							<B_gh_ad1_middle>
+								<BOUCLE_gh_ad1_middle(ARTICLES){titre_mot=gh_ad1_middle300X250}{par date}{inverse}{0,1}>
+									<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+										<BOUCLE_gh_ad1_middle_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+										</BOUCLE_gh_ad1_middle_img>
+									</a>						
+								</BOUCLE_gh_ad1_middle>
+							</B_gh_ad1_middle>				
+							<img src="http://igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+							<//B_gh_ad1_middle>
+						</div>
+					</div>
+					<!-- End Ads gh_ad1_middle300X250 -->
+					<!-- POLL -->
+<!--
+<div class="grid_7" id="box">
+<a href="#" class="box_title">Sondage | Poll</a>
+<div style="padding:5px;">
+	<iframe width="330" height="300" src="" frameborder="0" scrolling="no"></iframe>
+</div>
+</div>
+-->
+<!-- END POLL -->
+
+<!-- JEUNE AFRIQUE AD 
+<div class="grid_7" style="margin-top:3px;text-align:center;background-color:#ffffff;">
+<a href="#" class="gh_adsin">kwamamaza<br /></a>
+<div style="text-align:center;padding:2px;padding-bottom:7px;">
+<object >
+<embed src="http://igihe.rw/squelettes/igihe_imgs/JA2685_PlusRwanda_Kr_300x250.swf" width="330" height="340"  loop="true" wmode="opaque" quality="high"  type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+</object>
+</div>
+</div>
+ END JEUNE AFRIQUE AD -->
+
+
+      
+
+<!-- Ads gh_ad2_middle300X250 -->
+	<div class="grid_7" style="margin-top:3px;text-align:center;background-color:#ffffff;">
+	<a href="#" class="gh_adsin">kwamamaza<br /></a>
+	<div style="text-align:center;padding:2px;padding-bottom:7px;">
+	<B_gh_ad2_middle>
+		<BOUCLE_gh_ad2_middle(ARTICLES){titre_mot=gh_ad2_middle300X250}{par date}{inverse}{0,1}>
+			<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+				<BOUCLE_gh_ad2_middle_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+					[<img src="http://igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+				</BOUCLE_gh_ad2_middle_img>
+			</a>						
+		</BOUCLE_gh_ad2_middle>
+	</B_gh_ad2_middle>				
+		<img src="http://igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+	<//B_gh_ad2_middle>
+	
+
+	
+</div>
+</div>
+<!-- End Ads gh_ad2_middle300X250 -->
+
+        <INCLURE{fond=gh_advertorial}{env}{ajax}/>
+
+						<INCLURE{fond=gh_amashusho}{env}{ajax}/>
+				<!-- gh_ad3_middle300X250 -->
+					<div class="grid_7" style="margin-top:3px;text-align:center;background-color:#ffffff;">
+						<a href="#" class="gh_adsin">kwamamaza<br /></a>
+						<div style="text-align:center;padding:2px;padding-bottom:7px;">
+							<B_gh_ad3_middle>
+								<BOUCLE_gh_ad3_middle(ARTICLES){titre_mot=gh_ad3_middle300X250}{par date}{inverse}{0,1}>
+									<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+										<BOUCLE_gh_ad3_bottom_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+											[<img src="http://igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+										</BOUCLE_gh_ad3_bottom_img>
+									</a>						
+								</BOUCLE_gh_ad3_middle>
+							</B_gh_ad3_middle>				
+							<img src="http://igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+							<//B_gh_ad3_middle>
+	
+						</div>
+					</div>
+				<!-- End gh_ad3_middle300X250 -->
+		<INCLURE{fond=gh_rssb}{env}{ajax}/>
+		<!-- IGIHE NEWSLETTER -->
+		<div class="grid_7" id="box">
+			<a href="#" class="box_title">IGIHE NEWSLETTER</a>
+			<div style="padding:5px;text-align:center;">
+				<form method="post" action="http://www.igihe.com/lists/?p=subscribe&id=1" name="signup" target="windowName" onsubmit="window.open('', this.target,'dialog,modal,scrollbars=no,resizable=no,width=650,height=400,left=0,top=0');">
+					<input type=text name=email value="" size="40">
+					<input type="hidden" name="htmlemail" value="1">
+					<input type="hidden" name="list[2]" value="signup">
+					<input type="hidden" name="listname[2]" value="IGIHE NEWSLETTER"/>
+					<div style="display:none"><input type="text" name="VerificationCodeX" value="" size="20"></div><br/>
+					<input type=submit name="subscribe" value="Andikisha Email yawe">
+				</form>
+			</div>
+		</div>
+		<!-- END IGIHE NEWSLETTER -->
+<!-- KMP -->
+	<div class="grid_7" style="margin-top:3px;text-align:center;background-color:#ffffff;">
+		<a href="#" class="gh_adsin">kwamamaza<br /></a>
+	
+<div>
+	
+<embed src="http://igiheshowbiz.com/imgbackground/KMP.swf" width="330" height="330" loop="true" wmode="opaque" quality="high" bgcolor="#ffffff" type="application/x-shockwave-flash" >
+<a href="http://www.kmp.rw">
+<i style="display:block; height: 330px; width: 330px;  position: relative; z-index: 9; margin-top: -330px;"></i>
+</a>
+	</div>
+
+			<!-- <img src="http://igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" /> -->
+		
+		</div>
+		
+
+<!-- End KMP -->
+
+
+					<INCLURE{fond=gh_amajwi}{env}{ajax}/>
+					<!-- Ads gh_ad4_middle300X250 -->
+					<div class="grid_7" style="margin-top:3px;text-align:center;background-color:#ffffff;">
+						<a href="#" class="gh_adsin">kwamamaza<br /></a>
+						<div style="text-align:center;padding:2px;padding-bottom:7px;">
+							<!-- <B_gh_ad4_middle>
+								<BOUCLE_gh_ad4_middle(ARTICLES){titre_mot=gh_ad4_middle300X250}{par date}{inverse}{0,1}>
+									<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+										<BOUCLE_gh_ad4_bottom_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+										</BOUCLE_gh_ad4_bottom_img>
+									</a>						
+								</BOUCLE_gh_ad4_middle>
+							</B_gh_ad4_middle>				
+							<img src="http://igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+							<//B_gh_ad4_middle>
+							-->
+							<script type="text/javascript" src="http://www.smartadserver.com/call/pubj/38017/258965/4867/S/[timestamp]/[target]?[countgo]" ></script>
+						</div>
+					</div>
+					<!-- End Ads gh_ad4_middle300X250 -->
+
+
+						<!-- FOREX -->
+	<div class="grid_7" id="box">
+	<a name="forex"></a>
+<a href="http://igihe.com/serivisi/special-pages/forex/" class="box_title">FOREX (Rwandan Francs)</a>
+<div style="text-align:center;padding:5px;padding-bottom:7px;">
+<a href="http://igihe.com/serivisi/special-pages/forex/"><img src="http://igihe.rw/squelettes/igihe_imgs/forexhomepage_banner.gif" width="335" height="54" alt="" border="0"/></a>
+<iframe src="http://forex.igihe.com/forex_2.php" width="325" height="110" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+<div style="float:center;color:#b2b2b2;font-size:12px;font-weight:bold;padding-top:5px;"><a href="http://igihe.com/serivisi/special-pages/forex/">CLICK HERE FOR MORE</a> <br />Provided by RG Forex Bureau <b>+250788307460</b></div>
+</div>
+	</div>
+<!-- End FOREX -->
+	<!-- KMP -->
+	<div class="grid_7" style="margin-top:3px;text-align:center;background-color:#ffffff;">
+		<a href="#" class="gh_adsin">kwamamaza<br /></a>
+	</div>
+	<!-- End KMP -->			
+
+
+
+						<INCLURE{fond=gh_umuhanziof2week}{env}{ajax}/>
+					<!-- Ads gh_ad5_middle300X250 -->
+					<div class="grid_7" style="margin-top:3px;text-align:center;background-color:#ffffff;">
+						<a href="#" class="gh_adsin">kwamamaza<br /></a>
+						<div style="text-align:center;padding:2px;padding-bottom:7px;">
+							<B_gh_ad5_middle>
+								<BOUCLE_gh_ad5_middle(ARTICLES){titre_mot=gh_ad5_middle300X250}{par date}{inverse}{0,1}>
+									<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+										<BOUCLE_gh_ad5_bottom_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" border="0" width="300" alt="#TITRE" title="#TITRE"/>]
+										</BOUCLE_gh_ad5_bottom_img>
+									</a>						
+								</BOUCLE_gh_ad5_middle>
+							</B_gh_ad5_middle>				
+							<img src="http://igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+							<//B_gh_ad5_middle>
+						</div>
+					</div>
+					<!-- End Ads gh_ad5_middle300X250 -->
+						<div class="grid_7" id="box">
+							<a href="#" class="box_title">Facebook Friends</a>
+							<div>
+								<div id="fb-root" style="border:0px;"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/igihe" width="350" height="400" show_faces="true" border_color="#ffffff" stream="false" header="false"></fb:like-box>
+							</div>
+						</div>
+						<INCLURE{fond=gh_caricature}{env}{ajax}/>
+						<!-- Ads gh_ad6_middle300X250 -->
+						<div class="grid_7" style="margin-top:3px;text-align:center;background-color:#ffffff;">
+							<a href="#" class="gh_adsin">kwamamaza<br /></a>
+							<div style="text-align:center;padding:2px;padding-bottom:7px;">
+								<B_gh_ad6_middle>
+									<BOUCLE_gh_ad6_middle(ARTICLES){titre_mot=gh_ad6_middle300X250}{par date}{inverse}{0,1}>
+										<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+											<BOUCLE_gh_ad6_middle_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+												[<img src="http://igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+											</BOUCLE_gh_ad6_middle_img>
+										</a>						
+									</BOUCLE_gh_ad6_middle>
+								</B_gh_ad6_middle>				
+									<img src="http://igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+								<//B_gh_ad6_middle>
+							</div>
+						</div>
+						<!-- End Ads gh_ad6_middle300X250 -->
+						<INCLURE{fond=gh_ibirori}{env}{ajax}/>
+						<!-- Ads-->
+						<!--
+						<div class="grid_7" style="margin-top:3px;text-align:center;background-color:#ffffff;">
+							<a href="#" class="gh_adsin">kwamamaza<br /></a>
+							<div style="text-align:center;padding:2px;padding-bottom:7px;">
+								<a href="http://igihe.com/imyidagaduro/muzika/abahanzi/knowless/"><img src="http://igihe.rw/squelettes/igihe_imgs/knowless_pggss2_campaign.jpg"  width="300" height="250" border="0" /></a>
+							</div>
+						</div>
+						-->
+						<!-- End Ads -->
+
+						<!-- Ads gh_ad7_middle300X250 -->
+						<div class="grid_7" style="margin-top:3px;text-align:center;background-color:#ffffff;">
+							<a href="#" class="gh_adsin">kwamamaza<br /></a>
+							<div style="text-align:center;padding:2px;padding-bottom:7px;">
+								<B_gh_ad7_middle>
+									<BOUCLE_gh_ad7_middle(ARTICLES){titre_mot=gh_ad7_middle300X250}{par date}{inverse}{0,1}>
+										<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+											<BOUCLE_gh_ad7_middle_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+												[<img src="http://igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+											</BOUCLE_gh_ad7_middle_img>
+										</a>						
+									</BOUCLE_gh_ad7_middle>
+								</B_gh_ad7_middle>				
+									<img src="http://igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+								<//B_gh_ad7_middle>
+							</div>
+						</div>
+						<!-- End Ads gh_ad7_middle300X250 -->
+
+						<INCLURE{fond=gh_mumateka}{env}{ajax}/>
+
+						<!-- Ads gh_ad8_middle300X250 -->
+						<div class="grid_7" style="margin-top:3px;text-align:center;background-color:#ffffff;">
+							<a href="#" class="gh_adsin">kwamamaza<br /></a>
+							<div style="text-align:center;padding:2px;padding-bottom:7px;">
+							<B_gh_ad8_middle>
+								<BOUCLE_gh_ad8_middle(ARTICLES){titre_mot=gh_ad8_middle300X250}{par date}{inverse}{0,1}>
+									<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+										<BOUCLE_gh_ad8_bottom_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+										</BOUCLE_gh_ad8_bottom_img>
+									</a>						
+								</BOUCLE_gh_ad8_middle>
+							</B_gh_ad8_middle>				
+								<img src="http://igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+							<//B_gh_ad8_middle>							
+							</div>
+						</div>
+						<!-- End Ads gh_ad8_middle300X250 -->
+
+						<INCLURE{fond=gh_waruziko}{env}{ajax}/>
+
+						<!-- Ads gh_ad9_middle300X250 -->
+						<div class="grid_7" style="margin-top:3px;text-align:center;background-color:#ffffff;">
+							<a href="#" class="gh_adsin">kwamamaza<br /></a>
+							<div style="text-align:center;padding:2px;padding-bottom:7px;">
+							<B_gh_ad9_middle>
+								<BOUCLE_gh_ad9_middle(ARTICLES){titre_mot=gh_ad9_middle300X250}{par date}{inverse}{0,1}>
+									<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+										<BOUCLE_gh_ad9_bottom_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+										</BOUCLE_gh_ad9_bottom_img>
+									</a>						
+								</BOUCLE_gh_ad9_middle>
+							</B_gh_ad9_middle>				
+								<embed src="http://igihe.tv/js/animation.swf" width="300" height="250" loop="true" wmode="opaque" quality="high" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+							<//B_gh_ad9_middle>							
+							</div>
+						</div>
+						<!-- End Ads gh_ad9_middle300X250 -->
+
+						<INCLURE{fond=gh_inkuruzikunzwe}{env}{ajax}/>
+
+						<!-- Ads gh_ad10_middle300X250 -->
+						<div class="grid_7" style="margin-top:3px;text-align:center;background-color:#ffffff;">
+							<a href="#" class="gh_adsin">kwamamaza<br /></a>
+							<div style="text-align:center;padding:2px;padding-bottom:7px;">
+							<B_gh_ad10_middle>
+								<BOUCLE_gh_ad10_middle(ARTICLES){titre_mot=gh_ad10_middle300X250}{par date}{inverse}{0,1}>
+									<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE" target="_blank">
+										<BOUCLE_gh_ad10_bottom_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" border="0" alt="#TITRE" title="#TITRE"/>]
+										</BOUCLE_gh_ad10_bottom_img>
+									</a>						
+								</BOUCLE_gh_ad10_middle>
+							</B_gh_ad10_middle>				
+								<img src="http://igihe.rw/squelettes/igihe_imgs/gh_ads300x250_available.png"  width="300" height="250" border="0" />
+							<//B_gh_ad10_middle>							
+							</div>
+						</div>
+						<!-- End Ads gh_ad10_middle300X250 -->
+						
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="grid_4 alpha omega" id="sidebar">
+					<div class="grid_4 omega" id="ibirimo">
+						<ul>
+
+						<!-- <li class="gh_menuexpo"><a href="http://expo.igihe.com/"><img src="http://igihe.rw/squelettes/igihe_imgs/expoonline.jpg" border="0" alt="EXPO Online" title="EXPO Online"/></a></li> -->
+
+							<BOUCLE_gh_ibirimoside(RUBRIQUES){id_parent=0}{0,20}{titre_mot=IbirimoSide}>
+								<li class="gh_menu2"><a href="http://www.igihe.com/#URL_RUBRIQUE" class="gh_menu2">#TITRE</a></li>
+							</BOUCLE_gh_ibirimoside>
+
+
+<BOUCLE_gh_ibirimoside2(RUBRIQUES){id_parent=0}{0,1}{titre_mot=IbirimoSideIkinyamakuru}>
+	<li class="gh_menu2a">
+	<center><BOUCLE_gh_ibirimoside2in(ARTICLES){id_rubrique}{0,1}{titre_mot=IbirimoSideIkinyamakuru}{par date}{inverse}>
+	<a href="http://ombudsman.igihe.org" class="gh_menu2b">[<img src="http://igihe.com/(#LOGO_ARTICLE|extraire_attribut{src})" border="0" alt="IGIHE - #TITRE" title="IGIHE - #TITRE" border="0" />]<br />#TITRE</a>
+	</BOUCLE_gh_ibirimoside2in></center>
+	</li>
+</BOUCLE_gh_ibirimoside2>
+
+
+						</ul>
+					</div>
+<!--
+<div class="grid_4" style="margin-top:2px;height:275px;text-align:center;background-color:#ffffff;">
+						<a href="#" class="gh_adsin">Special Page<br /></a>
+						<a href="http://www.igihe.com/serivisi/special-pages/doing-business-in-rwanda/"><img src="http://igihe.rw/squelettes/igihe_imgs/doingbusiness.gif" border="0"/></a>
+					</div>
+-->
+				<!-- Ads Ad00_WideSkyScraper_160x600 -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza</a>
+						<B_gh_ads00>
+							<BOUCLE_gh_ads00(ARTICLES){tout}{0,1}{titre_mot=Ad00_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads0_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads0_img>
+								</a>
+							</BOUCLE_gh_ads00>
+						</B_gh_ads00>
+						<a href="#"><img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+						<//B_gh_ads00>
+					</div>		
+				<!-- END Ads Ad0O_WideSkyScraper_160x600 -->
+				<!-- Ads Ad0_WideSkyScraper_160x600 -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza</a>
+						<B_gh_ads0>
+							<BOUCLE_gh_ads0(ARTICLES){tout}{0,1}{titre_mot=Ad0_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads0_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads0_img>
+								</a>
+							</BOUCLE_gh_ads0>
+						</B_gh_ads0>
+						<a href="#"><img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+						<//B_gh_ads0>
+					</div>		
+				<!-- END Ads Ad0_WideSkyScraper_160x600 -->
+				<!-- Ads Ad1_WideSkyScraper_160x600 -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza</a>
+						<B_gh_ads1>
+							<BOUCLE_gh_ads1(ARTICLES){tout}{0,1}{titre_mot=Ad1_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads1_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads1_img>
+								</a>
+							</BOUCLE_gh_ads1>
+						</B_gh_ads1>
+						<a href="#"><img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+						<//B_gh_ads1>
+					</div>		
+				<!-- END Ads Ad1_WideSkyScraper_160x600 -->
+				<!-- Ads Ad2_WideSkyScraper_160x600 -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza</a>
+						<B_gh_ads2>
+							<BOUCLE_gh_ads2(ARTICLES){tout}{0,1}{titre_mot=Ad2_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads2_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads2_img>
+								</a>
+							</BOUCLE_gh_ads2>
+						</B_gh_ads2>
+						<a href="#"><img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+						<//B_gh_ads2>
+					</div>		
+					<!-- END Ads Ad13_WideSkyScraper_160x600 -->
+					<!-- EWSA -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza<br /></a>
+						<B_gh_ads13>
+							<BOUCLE_gh_ads13(ARTICLES){tout}{0,1}{titre_mot=Ad13_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads13_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads13_img>
+								</a>
+							</BOUCLE_gh_ads13>
+						</B_gh_ads13>					
+						<//B_gh_ads13>
+					</div>
+					<!-- End EWSA -->
+					<!-- Ads Ad13_WideSkyScraper_160x600 -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza</a>
+						<B_gh_ads333>
+							<BOUCLE_gh_ads333(ARTICLES){tout}{0,1}{titre_mot=Ad33_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads333_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads333_img>
+								</a>
+							</BOUCLE_gh_ads333>
+						</B_gh_ads333>
+						<a href="#"><img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+						<//B_gh_ads333>
+					</div>		
+				<!-- END Ads Ad3_WideSkyScraper_160x600 -->
+				 
+				<!-- Ads Ad3_WideSkyScraper_160x600 -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza</a>
+						<B_gh_ads33>
+							<BOUCLE_gh_ads33(ARTICLES){tout}{0,1}{titre_mot=Ad3_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads33_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads33_img>
+								</a>
+							</BOUCLE_gh_ads33>
+						</B_gh_ads33>
+						<a href="#"><img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+						<//B_gh_ads33>
+					</div>		
+				<!-- END Ads Ad3_WideSkyScraper_160x600 -->
+
+					<!-- EAGI
+					 <div class="grid_4" style="margin-top:2px;height:330px;text-align:center;background-color:#ffffff;">
+						<a href="#" class="gh_adsin" >kwamamaza<br /></a>
+						<a href="#" target="_blank"><img src="http://igihe.rw/images/EAGI-Web-banner-final-)150x300-pixels).gif" border="0"/></a>
+					</div>
+					<!-- End EAGI -->
+
+					<!-- WDA
+					 <div class="grid_4" style="margin-top:2px;height:330px;text-align:center;background-color:#ffffff;">
+						<a href="#" class="gh_adsin" >advertisment<br /></a>
+						<a href="http://igihe.com/images/Itangazo Mu Kinyarwanda.docx" target="_blank"><img src="http://igihe.rw/images/WDA-banner-kinya-home-page.jpg" border="0"/></a>
+					</div>
+					<!-- End WDA
+					FOAD
+					 <div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza<br /><br /></a>
+						<a href="http://foad.refer.org" target="_blank"><img src="http://igihe.rw/images/foadpublic1-1.jpg" border="0"/></a>
+					</div>
+				   End FOAD -->
+					
+				<!-- Ads Ad4_WideSkyScraper_160x600 -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza</a>
+						<B_gh_ads44>
+							<BOUCLE_gh_ads44(ARTICLES){tout}{0,1}{titre_mot=Ad4_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads44_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads44_img>
+								</a>
+							</BOUCLE_gh_ads44>
+						</B_gh_ads44>
+						<a href="#"><img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+						<//B_gh_ads44>
+					</div>		
+				<!-- END Ads Ad4_WideSkyScraper_160x600 -->
+
+				<!-- Ads Ad5_WideSkyScraper_160x600 -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza</a>
+						<B_gh_ads5>
+							<BOUCLE_gh_ads5(ARTICLES){tout}{0,1}{titre_mot=Ad5_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads5_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads5_img>
+								</a>
+							</BOUCLE_gh_ads5>
+						</B_gh_ads5>
+						<a href="#"><img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+						<//B_gh_ads5>
+					</div>		
+				<!-- END Ads Ad5_WideSkyScraper_160x600 -->
+			
+
+				<!-- Ads Ad6_WideSkyScraper_160x600 -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza</a>
+						<B_gh_ads6>
+							<BOUCLE_gh_ads6(ARTICLES){tout}{0,1}{titre_mot=Ad6_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads6_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads6_img>
+								</a>
+							</BOUCLE_gh_ads6>
+						</B_gh_ads6>
+						<a href="#"><img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+						<//B_gh_ads6>
+					</div>		
+				<!-- END Ads Ad6_WideSkyScraper_160x600 -->
+
+		
+					<INCLURE{fond=gh_discussionboard}{env}{ajax}/>
+
+				<!-- Ads Ad7_WideSkyScraper_160x600 -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza</a>
+						<B_gh_ads7>
+							<BOUCLE_gh_ads7(ARTICLES){tout}{0,1}{titre_mot=Ad7_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads7_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads7_img>
+								</a>
+							</BOUCLE_gh_ads7>
+						</B_gh_ads7>
+						<a href="#"><img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+						<//B_gh_ads7>
+					</div>		
+				<!-- END Ads Ad7_WideSkyScraper_160x600 -->
+
+				<!-- Ads Ad8_WideSkyScraper_160x600 -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza</a>
+						<B_gh_ads8>
+							<BOUCLE_gh_ads8(ARTICLES){tout}{0,1}{titre_mot=Ad8_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads8_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads8_img>
+								</a>
+							</BOUCLE_gh_ads8>
+						</B_gh_ads8>
+						<a href="#"><img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+						<//B_gh_ads8>
+					</div>		
+				<!-- END Ads Ad8_WideSkyScraper_160x600 -->
+
+					<INCLURE{fond=gh_rwandanlinks}{env}{ajax}/>
+
+
+				   <div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >Radio Partners<br /><br /></a>
+						<a href="http://www.radio10.rw/" target="_blank"><img src="http://igiheshowbiz.com/imgbackground/r10.jpg" border="0"/></a><br/><br/>
+						<a href="http://www.izubaradio.com/" target="_blank"><img src="http://igihe.rw/squelettes/igihe_imgs/radioizuba_ads.gif" border="0"/></a>						
+					</div>
+				<!-- Ads Ad9_WideSkyScraper_160x600 -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza</a>
+						<B_gh_ads9>
+							<BOUCLE_gh_ads9(ARTICLES){tout}{0,1}{titre_mot=Ad9_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads9_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads9_img>
+								</a>
+							</BOUCLE_gh_ads9>
+						</B_gh_ads9>
+						<a href="#"><img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+						<//B_gh_ads9>
+					</div>		
+				<!-- END Ads Ad9_WideSkyScraper_160x600 -->
+				<!-- Ads Ad10_WideSkyScraper_160x600 -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza</a>
+						<B_gh_ads10>
+							<BOUCLE_gh_ads10(ARTICLES){tout}{0,1}{titre_mot=Ad10_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads10_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads10_img>
+								</a>
+							</BOUCLE_gh_ads10>
+						</B_gh_ads10>
+						<a href="#"><img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+						<//B_gh_ads10>
+					</div>		
+				<!-- END Ads Ad10_WideSkyScraper_160x600 -->
+				<!-- Ads Ad11_WideSkyScraper_160x600 -->
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza</a>
+						<B_gh_ads11>
+							<BOUCLE_gh_ads11(ARTICLES){tout}{0,1}{titre_mot=Ad11_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads11_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads11_img>
+								</a>
+							</BOUCLE_gh_ads11>
+						</B_gh_ads11>
+						<a href="#"><img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+						<//B_gh_ads11>
+					</div>		
+				<!-- END Ads Ad11_WideSkyScraper_160x600 -->
+				<!-- Ads Ad12_WideSkyScraper_160x600 
+					<div class="grid_4" id="ads_right" style="text-align:center">
+						<a href="#" class="gh_adsin" >kwamamaza</a>
+						<B_gh_ads12>
+							<BOUCLE_gh_ads12(ARTICLES){tout}{0,1}{titre_mot=Ad12_WideSkyScraper_160x600}{par date}{inverse}{doublons ads2}{par date}{inverse}>
+								<a href="http://www.igihe.com/[(#URL_ARTICLE|sinon{#URL_SITE})]" title="#TITRE">
+									<BOUCLE_gh_ads12_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+										[<img src="(#URL_DOCUMENT)" width="160" border="0" alt="#TITRE" title="#TITRE"/>]
+									</BOUCLE_gh_ads12_img>
+								</a>
+							</BOUCLE_gh_ads12>
+						</B_gh_ads12> -->
+						<!--<a href="#"><img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad2_default.png'}"  width="160" height="600" border="0"/></a>
+						<//B_gh_ads12>
+					</div>	-->	
+				<!-- END Ads Ad12_WideSkyScraper_160x600 -->
+
+
+
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div><!--WHAT IS THIS? </div><!--WHAT IS THIS? -->
+	<div id="ghfooter">
+		<div class="container_20">
+			
+			<div class="grid_20" id="footer_ads">
+				<a href="#" class="gh_adsin" >kwamamaza<br></a>
+				<B_gh_ad1_bottom>
+					<BOUCLE_gh_ad1_bottom(ARTICLES){titre_mot=gh_ad1_bottom}{par date}{inverse}{0,1}>
+						<a href="http://bsc.rw/?page_id=36" title="#TITRE" target="_blank">
+							<BOUCLE_gh_ad1_bottom_img(DOCUMENTS){id_article}{extension==jpg|gif|png}{0,1}>
+								[<img src="http://igihe.rw/(#URL_DOCUMENT)" width="728" height="90" border="0" alt="#TITRE" title="#TITRE"/>]
+							</BOUCLE_gh_ad1_bottom_img>
+						</a>						
+					</BOUCLE_gh_ad1_bottom>
+				</B_gh_ad1_bottom>				
+					<object >
+						<embed src="http://igihe.rw/images/1544_GRP-RWA_internet_banking_728_90_v2.swf"   width="650" height="80" loop="true" wmode="opaque" quality="high"  type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+					</object>				
+					<!--<img src="http://igihe.rw/#CHEMIN{'igihe_imgs/gh_ad1_default.png'}"  width="728" height="90" border="0"/>-->
+				<//B_gh_ad1_bottom>
+			</div>
+
+			<div class="clear"></div>
+			<INCLURE{fond=gh_footer}{env}{ajax}/>
+		</div>
+	</div>
+	<!-- <script src="http://igihe.rw/#CHEMIN{'igihe_scripts/jqueryz.js'}" type="text/javascript" charset="utf-8"></script> -->
+	<script src="http://igihe.rw/#CHEMIN{'igihe_scripts/ontop.js'}" type="text/javascript"></script>
+	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" ></script> -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.3/jquery-ui.min.js" ></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 7000, true);
+		});
+	</script>
+	<script type="text/javascript">
+		var tablink_idname = new Array("pglink","audiolink","popularlink","amatangazolink","siteslink")
+		var tabcontent_idname = new Array("pgcontent","audiocontent","popularcontent","amatangazocontent","sitescontent")
+		var tabcount = new Array("2","2","2","2")
+		var loadtabs = new Array("1","1","1","1")
+		var autochangemenu = 0;
+		var changespeed = 3;
+		var stoponhover = 0;
+	function easytabs(menunr, active) {if (menunr == autochangemenu){currenttab=active;}if ((menunr == autochangemenu)&&(stoponhover==1)) {stop_autochange()} else if ((menunr == autochangemenu)&&(stoponhover==0))  {counter=0;} menunr = menunr-1;for (i=1; i <= tabcount[menunr]; i++){document.getElementById(tablink_idname[menunr]+i).className='tab'+i;document.getElementById(tabcontent_idname[menunr]+i).style.display = 'none';}document.getElementById(tablink_idname[menunr]+active).className='tab'+active+' tabactive';document.getElementById(tabcontent_idname[menunr]+active).style.display = 'block';}var timer; counter=0; var totaltabs=tabcount[autochangemenu-1];var currenttab=loadtabs[autochangemenu-1];function start_autochange(){counter=counter+1;timer=setTimeout("start_autochange()",1000);if (counter == changespeed+1) {currenttab++;if (currenttab>totaltabs) {currenttab=1}easytabs(autochangemenu,currenttab);restart_autochange();}}function restart_autochange(){clearTimeout(timer);counter=0;start_autochange();}function stop_autochange(){clearTimeout(timer);counter=0;}
+	window.onload=function(){
+	var menucount=loadtabs.length; var a = 0; var b = 1; do {easytabs(b, loadtabs[a]);  a++; b++;}while (b<=menucount);
+	if (autochangemenu!=0){start_autochange();}
+	}
+	</script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(["_setAccount", "UA-10838297-1"]);
+		_gaq.push(["_trackPageview"]);
+
+		(function() {
+			var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+			ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+			var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
+</html>

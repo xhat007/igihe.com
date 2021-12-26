@@ -1,0 +1,177 @@
+<html>
+	<head>
+		<title>RWANDA DAY 2013 - London</title>
+		<link rel="stylesheet" type="text/css" href="http://igihe.com/rwandaday/js/style.css" />
+		<link rel="stylesheet" type="text/css" href="http://igihe.com/rwandaday/css/style.css" />
+		<script type="text/javascript" src="http://igihe.com/rwandaday/js/jquery.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style>.twtr-hd h3 a{ font-size: 18px;}</style>
+	</head>
+	<body>
+		<header id="header">
+			<aside style="background: url(http://igihe.com/sms/images/bgheader.png) no-repeat left bottom, #1d4a8d; margin: auto; min-height: 30px; width: 980px; border-radius: 7px 7px 0px 0px;">
+				<img src="http://igihe.com/sms/images/icon.png" align="left" style="padding: 5px;" height="18">
+				<div>
+				<span class="gh-ico"><a href="http://igihe.com" target="_blank">IGIHE Kinyarwanda</a></span>
+				<span class="gh-ico"><a href="http://fr.igihe.com" target="_blank">IGIHE Francais</a></span>
+				<span class="gh-ico"><a href="http://en.igihe.com" target="_blank">IGIHE English</a></span>
+				<span class="gh-ico"><a href="http://igihe.bi" target="_blank">IGIHE Kirundi</a></span>
+			</div>
+			</aside>
+			<div class="service"></div>
+			<div class="head">
+				<a href="#"><img src="rwandaday/images/homeicon.png" class="homeicon" /></a>
+			</div>
+		</header>
+		<section id="slide">
+			<div id="wowslider-container1">
+				<div class="ws_images">
+					<ul>
+					<BOUCLE_rslide(ARTICLES){titre_mot=rdayslides}{0,8}>
+						<li>
+						[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{1000,0}||image_recadre{980,380,top center}|extraire_attribut{src})" alt="[(#TITRE)]" id="wows1_0" />]					
+						</li>
+		
+					</BOUCLE_rslide>
+						
+					</ul>
+				</div>
+				<div class="ws_bullets">
+					<div>
+					<BOUCLE_rslidebullet(ARTICLES){titre_mot=rdayslides}{0,8}>
+						<a href="#" title="arton9">#COMPTEUR_BOUCLE</a>
+					</BOUCLE_rslidebullet>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript" src="http://igihe.com/rwandaday/js/wowslider.js"></script>
+			<script type="text/javascript" src="http://igihe.com/rwandaday/js/script.js"></script>
+		</section>
+		<section id="content">
+			<section class="cont">
+			<section class="combine">
+				<fieldset class="cont1">
+					<B_rnews>
+					<legend class="conttitle">Inkuru ziheruka</legend>
+					<BOUCLE_rnews(ARTICLES){titre_mot=rdaylatestnews}{par date}{inverse}{pagination 7}{tout}>
+					<article class="lnews">
+						[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{120,0}||image_recadre{100,73,top center}|extraire_attribut{src})" alt="[(#TITRE)]" />]
+						<a href="#URL_ARTICLE" style="text-decoration: none;"><span>#TITRE</span></a>
+						<div class="clear">
+					</article>
+					</BOUCLE_rnews>
+					<div class="pagination">[(#PAGINATION{page})]</div>
+					</B_rnews>
+					<//B_rnews>
+				</fieldset>
+				
+				<fieldset class="cont2">
+					<legend class="conttitle">Gallery</legend>
+					<BOUCLE_rgal(ARTICLES){titre_mot=rdayslides}{0,8}>
+					<article class="photo">
+					<a href="#URL_ARTICLE">
+						[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{0,100}||image_recadre{140,100,top center}|extraire_attribut{src})" alt="[(#TITRE)]" />]
+					</a>
+					</article>
+					</BOUCLE_rgal>
+				</fieldset>
+				<fieldset class="cont3">
+					<legend class="conttitle">Videos</legend>
+					<BOUCLE_rvidz(ARTICLES){titre_mot=rdayvidz}{0,4}>
+					<article class="vidz">
+						<a href="#URL_ARTICLE">
+						[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{150,0}||image_recadre{140,103,top center}|extraire_attribut{src})" alt="[(#TITRE)]" />]
+						</a>
+					</article>
+					</BOUCLE_rvidz>
+				</fieldset>
+				</section>
+				<fieldset class="cont4">
+					<a href="#"><img src="http://igihe.com/rwandaday/images/face.jpg" class="smedia" /></a>
+					<a href="#"><img src="http://igihe.com/rwandaday/images/twi.jpg" class="smedia" /></a>
+					<a href="#"><img src="http://igihe.com/rwandaday/images/you.jpg" class="smedia last" /></a>
+				</fieldset>
+
+				<fieldset class="cont5">
+					<legend class="conttitle">Tweets</legend>
+					<div>
+					<td rowspan="2" valign="top"><script src="http://widgets.twimg.com/j/2/widget.js"></script>
+										<script>
+											new TWTR.Widget({
+											version: 2,
+											title: 'Rwanda Day 2013' ,
+											type: 'search',
+											search: 'rwandaday',
+											rpp: 10,
+											interval: 6000,
+											width: 300,
+											height: 320,
+											theme: {
+											shell: {
+											background: '#8ec1da',
+											color: '#ffffff'
+											},
+											tweets: {
+											background: '#FFFFFF',
+											color: '#000000',
+											links: '#514D4D'
+											}
+											},
+											features: {
+											scrollbar: false,
+											loop: true,
+											live: true,
+											hashtags: true,
+											timestamp: true,
+											avatars: true,
+											behavior: 'default'
+											}
+											}).render().start();
+										</script> 
+									</td>			
+					</div>
+					<div class="banner"><img src="http://igihe.com/rwandaday/images/agaciro.jpg" /></div>
+				</fieldset>
+				<div class="clear"></div>
+			</section>
+			<section class="place">
+				<BOUCLE_rplace(ARTICLES){titre_mot=rdaylive}{par date}{inverse}{0,1}{doublons xx}>
+				<aside class="place1">
+					[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{350,0}||image_recadre{310,175,top center}|extraire_attribut{src})" alt="[(#TITRE)]" />]
+					<div class="p" align="right">
+						<div class="pday">Rwanda day 2011</div>
+						<div class="ploc">Chicago</div>
+						<div class="pmonth">Kamena</div>
+					</div>
+				</aside>
+			</BOUCLE_rplace>
+			<BOUCLE_rplace1(ARTICLES){titre_mot=rdaylive}{par date}{inverse}{0,1}{doublons xx}>
+				<aside class="place1">
+					[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{350,0}||image_recadre{310,175,top center}|extraire_attribut{src})" alt="[(#TITRE)]" />]
+					<div class="p" align="right">
+						<div class="pday">Rwanda day 2011</div>
+						<div class="ploc">Paris</div>
+						<div class="pmonth">Nzeri</div>
+					</div>
+				</aside>
+			</BOUCLE_rplace1>
+			<BOUCLE_rplace2(ARTICLES){titre_mot=rdaylive}{par date}{inverse}{0,1}{doublons xx}>
+				<aside class="place1">
+					[<img src="http://igihe.com/(#LOGO_ARTICLE||image_reduire{350,0}||image_recadre{310,175,top center}|extraire_attribut{src})" alt="[(#TITRE)]" />]
+					<div class="p" align="right">
+						<div class="pday">Rwanda day 2012</div>
+						<div class="ploc">Boston</div>
+						<div class="pmonth">Nzeri</div>
+					</div>
+				</aside>
+			</BOUCLE_rplace2>
+				
+				<aside class="clear"></aside>
+			</section>
+			<section class="clear"></section>
+		</section>
+		<footer id="footer">
+			<div class="copy">COPYRIGHT &copy; RWANDA DAY LONDON 2013</div>		
+		</footer>
+	</body>
+</html>

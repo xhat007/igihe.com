@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <title>Rwanda Day 2015 - Netherland</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="rssb2_css/bootstrap.min.css" rel="stylesheet">
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- CSS code from Bootply.com editor -->
+        
+        <style type="text/css">
+            
+
+        </style>
+    </head>    
+    <!-- HTML code from Bootply.com editor -->    
+    <body>
+	<!-- HEADER 
+	=================================-->
+	<!-- /header container-->
+	<!-- CONTENT
+	=================================-->
+	<div class="container" style="width:340px;border:0px solid red;padding:2px;font-family:candara,serif;">
+    		<div class="row" style="padding:0px;">
+        		<div class="col-lg-12" style="">
+				<img src="images/rwandaday2015/topper.jpeg" style="width:100%;border-bottom:8px solid #126bba;">
+			</div>
+    		</div>
+		<BOUCLE_gh_rssb1(ARTICLES){tout}{0,1}{par date}{inverse}{titre_mot="rwandaday_2015"}>
+			<div class="row" style="padding:0px;">
+				<div class="col-lg-12" style="">
+					[(#LOGO_ARTICLE|image_reduire{336,}|image_recadre{336,223}|inserer_attribut{style,width:100%;})]
+					<!--<img src="rssb2_images/img1.jpg" style="width:100%;">-->
+				</div>
+				<div class="col-lg-12" style="margin-top:-60px;">
+					<p style="background-color:#126bba;margin:5px;padding:5px;opacity: 0.6;filter: alpha(opacity=60);height:40px;"></p>
+					<p style="font-weight:bold;margin-top:-55px;text-decoration:none;color:#fff;padding:10px;z-index:99999;position:relative;"><a href="#URL_ARTICLE" style="text-decoration:none;color:#fff;" target="_blank">#TITRE</a></p>
+				</div>
+	    		</div>
+		</BOUCLE_gh_rssb1>
+		<div class="row" style="padding:0px;">
+        		<div class="col-lg-12">
+				<p style="background-color:#126bba;padding:6px;margin:7px;color:#fcb730;margin:auto;text-align:center;">AMAKURU</p>
+			</div>
+    		</div>
+		<div style="height:200px;overflow:auto;overflow-x:hidden;">
+		<BOUCLE_gh_rssb(ARTICLES){tout}{1,20}{par date}{inverse}{titre_mot=rwandaday_2015}>
+	    		<div class="row" style="border:0px solid red;margin-top:5px;padding-right:6px;height:80px;overflow:hidden;">
+				<div class="col-xs-4">
+					[(#LOGO_ARTICLE|image_reduire{90,}|image_recadre{90,106,top}|inserer_attribut{style,width:100%;})]	
+				</div>
+				<div class="col-xs-8" style="padding:0px;padding-right:6px;">
+					<a href="#URL_ARTICLE" style="font-size:12px;font-weight:bold;color:#126bba;" target="_blank">#TITRE</a> 
+					<!--<p style="font-size:12px;">[(#TEXTE|couper{100})]</p>-->
+				</div>
+				<div class="col-xs-12" style="margin-top:-6px;">					
+				</div>
+	    		</div>
+		</BOUCLE_gh_rssb>
+		</div>
+  		<div class="row">
+        		<div class="col-md-12">
+				<div class="" style="padding-left:30px;padding-right:30px;">
+					<!--<p style="background-color:#126bba;text-align:center;padding:4px;"><a href="#" style="text-decoration:none;color:#fcb730;">Andi Makuru</a></p>-->
+				</div>
+			</div>        
+    		</div>
+  		<div class="row" style="padding:0px;">
+        		<div class="col-lg-12" style="">
+				
+			</div>
+    		</div>
+	</div>
+	<!-- /CONTENT ============-->        
+        <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type='text/javascript' src="rssb2_js/bootstrap.min.js"></script>        
+        <!-- JavaScript jQuery code from Bootply.com editor -->        
+        <script type='text/javascript'>        
+        $(document).ready(function() {        
+        });        
+        </script>        
+    </body>
+</html>

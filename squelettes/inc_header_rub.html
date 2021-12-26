@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>#TITRE > #NOM_SITE_SPIP</title>
+		<!-- dRmetatags  -->
+		<meta http-equiv="pragma" content="cache" />
+		<meta http-equiv="content-language" content="en-US" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta http-equiv="robots" content="all" />
+		<meta name="revisit-after" content="1" />
+		<meta http-equiv="window-target" content="_top" />
+		<meta name="expires" content="never" />
+		<meta name="rating" content="general" />
+		<!--End dRmetatags  -->
+		<!-- dR_scripts -->
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" media="screen" href="http://igihe.com/squelettes/igihe_scripts/ghgrid.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="http://igihe.com/squelettes/igihe_scripts/ghstyle_day.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="http://igihe.com/squelettes/igihe_scripts/ghstyle.css" />
+		<!-- End dR_scripts -->
+		<link rel="stylesheet" href="http://en.igihe.com/techban/css/style.css" type="text/css" media="screen" charset="utf-8" />	
+		<script type="text/javascript" src="http://en.igihe.com/techban/js/jquery-1.2.6.js"></script>
+		<script type="text/javascript" src="http://en.igihe.com/techban/js/startstop-slider.js"></script>
+		<style>
+			#dropdowncontent {margin:0px; width:100%;height:330px; display:none; float:left;text-align:center;}
+			#dropdownbanner{width:978px;border:0px solid #BCBCBB;margin:auto; margin-bottom: -5px;}
+			.social_feed{}
+			.twtr-hd{ display: none;}
+		</style>
+	</head>
+	<body topmargin="0" leftmargin="0" >
+		<a name="hejuru"></a>
+		<!-- HEADER -->
+		<div id="ghheader">
+			<!--
+			<div id="dropdowncontent" align="center">
+			<div id="content">
+			<a href="http://expo.igihe.com/" target="_blank"><img src="http://igihe.com/expo_images/banner-_978-x-325.jpg" style="width: 978px;" height="330px"></a>				
+			</div>
+			</div>-->
+			<div style="width: 100%; background: none; margin-top: -3px; margin-left: 0px;" align="center">
+				<a href="http://www.igihe.com/serivisi/special-pages/doing-business-in-rwanda/">
+					<img id="dropdownbanner" src="http://igihe.com/drpdwn/doingbusiness.jpg" width="978">
+				</a>
+			</div>
+			<!--
+			<script>
+			$("#dropdownbanner").click(function () {
+			if ($("#dropdowncontent").is(":hidden")) {
+				$("#dropdowncontent").slideDown("slow");
+			}
+			else {
+				$("#dropdowncontent").slideUp("slow");
+			}
+			});
+			</script>-->
+			<div class="container_20">
+				<INCLURE{fond=gh_head}{env}{ajax}/>
+				<!-- Menu -->
+				<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP" class="gh_menu1"><img src="http://www.igihe.com/squelettes/igihe_imgs/icons/gh_home.gif" width="19" height="25" border="0" align="left">Ahabanza</a></div>
+				<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/abo-turibo/" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_Abo Turibo.gif'}" width="19" height="25" border="0" align="left">Abo Turibo</a></div>
+				<div class="grid_4" id="menu"><a href="http://igihe.org" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_Serivisi.gif'}" width="19" height="25" border="0" align="left">Serivisi</a></div>
+				<div class="grid_4" id="menu"><a href="#URL_SITE_SPIP/twandikire/" class="gh_menu1"><img src="#CHEMIN{'igihe_imgs/icons/gh_Twandikire.gif'}" width="19" height="25" border="0" align="left">Twandikire</a></div>
+				<div class="grid_4" id="menu"><a href="javascript:animatedcollapse.toggle('ibirimo')" class="gh_menu1"><img src="http://www.igihe.com/squelettes/igihe_imgs/icons/gh_ibirimo.gif" width="19" height="25" border="0" align="left">Ibirimo</a></div>
+				<div class="clear"></div>
+				<!-- End Menu -->
+			</div>
+		</div>
+		<div class="clear"></div>

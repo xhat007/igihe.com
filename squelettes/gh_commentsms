@@ -1,0 +1,17 @@
+				  <div class="smscomment" style="width: 360px; margin-left: 30px;">
+				  	<div class="smscommentlogo" style="margin-left: 0px;">
+						<img src="images/smsauteur.png" width="45" />
+					</div>
+				  	<div class="smscommenttexte" style="width: 310px;">
+						<div style="width: 190px; display: inline-block;">
+							<textarea style="margin-left: 5px; width: 180px; height: 50px; vertical-align: top; margin-bottom: 7px;" ></textarea>
+						</div>
+						<div style="130px; display: inline-block; vertical-align: top;">
+							<input type="texte" style="width: 120px; border: 1px solid #666; font-size: 12px;" placeholder="IZINA"><br />
+							<input type="texte" style="width: 120px; border: 1px solid #666; font-size: 12px; margin-top: 5px;" placeholder="E-mail">
+						</div>
+						<div align=ghg"right" style=" width: 312px; vertical-align: top;">
+							<a href="#" class="smsreply">Comment</a>
+						</div>
+					</div>				
+				  </div>

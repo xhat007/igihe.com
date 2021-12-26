@@ -1,0 +1,8 @@
+<li class="shakisha formulaire_spip formulaire_recherche" id="formulaire_recherche">
+	<form action="[(#ENV{action})]" method="get">
+		[(#ENV{action}|form_hidden)]
+		[<input type="hidden" name="lang" value="(#ENV{lang})" />]
+					<input type="text" placeholder="Andika hano" class="search" name="recherche" id="recherche"[ value="(#ENV{recherche})"] accesskey="4"/>
+					<input type="submit" value="Shakisha" class="submit"/>
+	</form>
+</li>

@@ -1,0 +1,51 @@
+				<table style="width:755px;background: url(../images/bg4.png);padding: 5px;">
+					
+					<tr>
+						<td style="width:100%; margin: 0; border: 0; margin: 0; padding: 0;" rowspan="4">
+						<script type="text/javascript">
+								function send_vote(poll_id,my_vote_is)							
+								{								
+									var xhr_object = null;
+									if(window.XMLHttpRequest) // Firefox
+										xhr_object = new XMLHttpRequest();
+									else
+									{
+										if(window.ActiveXObject) // Internet Explorer
+											xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+											else // XMLHttpRequest non support&#233; par le navigateur
+											{
+												alert("Browser does not support xmlHttpRequest");
+												return;
+											}
+										}
+										var method   = "POST";
+										var filename = "missrwanda_votes.php";																	
+										var requete  = "poll_id="+poll_id+"&question_id="+my_vote_is;																	
+										xhr_object.onreadystatechange = function() 
+										{
+											if(xhr_object.readyState == 1)
+											{
+												document.getElementById("poll_area_"+poll_id).innerHTML = '<div style="height:100%;">Loading poll...</div>';
+											}								
+											if(xhr_object.readyState == 4) 
+											{
+												var reponse = xhr_object.responseText;
+												document.getElementById("poll_area_"+poll_id).innerHTML = reponse;																			
+											}
+										}	 
+										xhr_object.open(method, filename, true);
+										xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+										xhr_object.send(requete);								
+									}																
+								</script>												
+								<div style="width:100%; background: #000;">											
+								<br />
+<b>Warning</b>:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in <b>/home/lex94/public_html/vote/cbe.php</b> on line <b>113</b><br />
+<br />
+<b>Warning</b>:  mysql_num_rows() expects parameter 1 to be resource, boolean given in <b>/home/lex94/public_html/vote/cbe.php</b> on line <b>114</b><br />
+							</div>
+						</div>
+					</td>										
+					</tr>									
+				</table>													
+				

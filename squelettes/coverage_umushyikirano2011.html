@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>IGIHE Special Coverage -  9th National Dialogue</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="pragma" content="cache" />
+	<meta http-equiv="content-language" content="en-US" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta http-equiv="robots" content="all" />
+	<meta name="revisit-after" content="1" />
+	<meta http-equiv="window-target" content="_top" />
+	<meta name="author" content="dR Tsuki" />
+	<meta name="expires" content="never" />
+	<meta name="rating" content="general" />
+
+	<!-- Coverage -->
+<script type="text/javascript" src="#DOSSIER_SQUELETTE/umushyikirano2011/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="#DOSSIER_SQUELETTE/umushyikirano2011/query.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.3/jquery-ui.min.js" ></script>
+<script type="text/javascript" src="#DOSSIER_SQUELETTE/umushyikirano2011/coin-slider.min.js"></script>
+<script type="text/javascript" src="#DOSSIER_SQUELETTE/umushyikirano2011/slide.js"></script> 
+
+<link rel="stylesheet" href="#DOSSIER_SQUELETTE/umushyikirano2011/coin-slider-styles.css" type="text/css" />
+<link rel="stylesheet" href="#DOSSIER_SQUELETTE/umushyikirano2011/style.css" type="text/css" media="screen" />
+
+<style>
+.coin-slider { overflow: hidden; zoom: 1; position: relative; }
+.coin-slider a{ text-decoration: none; outline: none; border: none; }
+.cs-buttons { font-size: 0px; padding: 10px; float: left; }
+.cs-buttons a { margin-left: 5px; height: 10px; width: 10px; float: left; border: 1px solid #B8C4CF; color: #B8C4CF; text-indent: -1000px; }
+.cs-active { background-color: #B8C4CF; color: #FFFFFF; }
+.cs-title { width: 520px; padding: 10px; background-color: #000000;  font-family:arial;	color:#ffffff;	font-weight:bold; font-size:12px;}
+.cs-prev, 
+.cs-next { background-color: #000000; color: #FFFFFF; padding: 0px 10px; }
+</style>
+	<!-- End Coverage -->
+
+
+
+</head>
+<body style="text-align:center;background-image:url(#DOSSIER_SQUELETTE/umushyikirano2011/nd2011_bg.jpg);background-repeat:repeat-x;background-position:top center;background-color:#22a0f5;">
+
+			<div class="left"  style="text-align:center;background-image:url(#DOSSIER_SQUELETTE/umushyikirano2011/nd2011_bg.jpg);background-repeat:repeat-x;background-position:top center;">
+
+<div id="rd_content">
+
+<div id="rd_logo"><img src="#DOSSIER_SQUELETTE/umushyikirano2011/nd2011_logo_rw.jpg" width="961" height="53" border="0" alt="...."></div>
+
+	<!-- Logo&Slides -->
+	<div id="rd_left">
+	
+		<div id="rd_slideshow">
+
+<!-- SLIDES -->
+		<div id="rf11">
+<BOUCLE_gh_nd2011_slides(ARTICLES){tout}{doublons yy}{0,1}{titre_mot=CoverageUmushyikirano_Slideshow}{par date}{inverse}>
+<BOUCLE_gh_nd2011_slides_img(DOCUMENTS){id_article}{extension==jpg|gif|png}>
+			<a href="#URL_ARTICLE" target="_parent"><img src="[(#URL_DOCUMENT||image_reduire{0,320}||image_recadre{520,320,center top, #000000}|extraire_attribut{src})]" border="0" alt="[(#TITRE|couper{110,'...'}|supprimer_tags)]" />
+			[<span>(#TITRE|couper{110,'...'}|supprimer_tags)</span>]</a>
+</BOUCLE_gh_nd2011_slides_img>
+</BOUCLE_gh_nd2011_slides>
+		</div>
+<script>$(document).ready(function() {
+	$('#rf11').coinslider({ hoverPause: false });
+});
+</script>
+<!-- End SLIDES -->
+
+		</div>
+	</div>
+	<!-- End Logo&Slides -->
+
+
+	<!-- News -->
+	<div id="rd_right">
+		<div id="rd_newstitle">AMAKURU AHERUKA</div>
+		<div id="rd_newsscroller">
+		
+<BOUCLE_gh_nd2011_news(ARTICLES){tout}{par date}{inverse}{titre_mot=CoverageUmushyikirano_Article}>
+<div id="rd_newscontent">
+<img src="[(#LOGO_ARTICLE||image_reduire{0,65}||image_recadre{80,65,center top}|extraire_attribut{src})]" width="80" height="65" border="0" id="rd_newsimg" align="left">
+[(#DATE|date_relative)]<br>
+<a href="#URL_ARTICLE" class="rd_news"  target="_parent">[(#TITRE|couper{350,'...'})]</a>
+</div>
+</BOUCLE_gh_nd2011_news>
+
+		</div>
+
+		<div id="rd_social">
+<a href="http://twitter.com/#!/umushyikirano" target="_parent"><img src="#DOSSIER_SQUELETTE/umushyikirano2011/nd2011_twitter.gif" width="222" height="40" border="0" alt="@umushyikirano on TWITTER" align="left"/></a>
+<a href="http://www.facebook.com/pages/Umushyikirano/252929371433184?sk=wall" target="_parent"><img src="#DOSSIER_SQUELETTE/umushyikirano2011/nd2011_facebook.gif" width="222" height="40" border="0" alt="FACEBOOK" align="left"/></a>
+		</div>
+
+	</div>
+	<!-- End News -->
+
+
+
+</div>
+
+</body>
+</html>

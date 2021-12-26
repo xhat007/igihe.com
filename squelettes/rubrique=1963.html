@@ -1,0 +1,274 @@
+<BOUCLE_rubrique(RUBRIQUES){id_rubrique}>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>#TITRE - IGIHE</title>
+	<link rel="stylesheet" type="text/css" href="http://www.igihe.com/squelettes/pggss2018/assets/stylesheet/css/bootstrap.min.css">
+	<!-- <script type="text/javascript" src="https://code.jquery-1.12.3.min.js"></script> -->
+	<script type="text/javascript" src="http://www.igihe.com/squelettes/pggss2018/assets/stylesheet/js/bootstrap.min.js"></script>
+	 <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <!-- fonts style lato -->
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,heavy|Open Sans:300,600,700|Montserrat:Medium|Raleway:300,400,500">
+    <link rel="stylesheet" type="text/css" href="http://www.igihe.com/squelettes/pggss2018/assets/stylesheet/style.css">
+
+     <!-- amazing slider -->
+    <script src="http://www.igihe.com/squelettes/pggss2018/sliderengine/jquery.js"></script>
+    <script src="http://www.igihe.com/squelettes/pggss2018/sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://www.igihe.com/squelettes/pggss2018/sliderengine/amazingslider-1.css">
+    <script src="http://www.igihe.com/squelettes/pggss2018/sliderengine/initslider-1.js"></script> 
+	
+	<link rel="stylesheet" type="text/css" href="http://www.igihe.com/squelettes/miss2018/sliderengine-2/amazingslider-2.css">
+    <script src="http://www.igihe.com/squelettes/miss2018/sliderengine-2/initslider-2.js?t=1"></script>
+	
+	<link href="http://imbaraga.org/dist/css/lightgallery.css" rel="stylesheet">	
+
+	
+    <!-- amazing slider -->
+    <style>
+		.no-padding-2{padding: 0 2px 0 15px;}
+		.no-padding{padding: 0 15px 0 2px;}
+		.no-padding a {color: #444444; font-family: Raleway, 'trebuchet ms'; font-size: 14px;}
+		.no-padding a:hover{text-decoration: none; color: #00acc1; transition: color 0.3s ease-in-out;}
+		.article{border-bottom: 1px solid #00acc1; padding: 2px 0;}
+		.amazingslider-bullet-selected .amazingslider-nav-thumbnail-tite-2, .amazingslider-bullet-highlighted .amazingslider-nav-thumbnail-tite-2, .amazingslider-nav-thumbnail-tite-2{font-family: Raleway, 'trebuchet ms';}
+		.bgpic{margin-top: 10px;}
+		.tbgpic {
+			background: url(http://www.igihe.com/squelettes/pggss2018/assets/images/tbg.jpg) repeat top center; 
+			padding-bottom: 15px;
+		}
+	</style>
+
+</head>
+<body>
+		 <!-- Navigation is here -->
+			<nav class="my-nav navbar navbar-default">
+			  <div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#"><img src="http://www.igihe.com/squelettes/pggss2018/assets/images/tlogo.jpg" class="img-responsive"></a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right">
+			        <li class="activex"><a href="#news" id="inkuru" >INKURU &nbsp; &nbsp;| <span class="sr-only">(current)</span></a></li>
+			        <li><a href="#videos" id="video" >VIDEOS &nbsp;&nbsp;&nbsp;|</a></li>
+			     	<li><a href="#amafotos" id="amafoto" >AMAFOTO</a></li>
+			       
+			      </ul>     
+			    
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+		<!-- Naviagation Ends here --> 
+
+		<!-- carousel starts here -->
+
+			<div class="container">
+				 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+				    <!-- Indicators -->
+				    <ol class="carousel-indicators">
+				      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					  <BOUCLE_INRBSLIDETHUMV (ARTICLES){id_rubrique=1964}{!par date}{1,4}>
+				      <li data-target="#myCarousel" data-slide-to="#COMPTEUR_BOUCLE"></li>
+					  </BOUCLE_INRBSLIDETHUMV> 
+				    </ol>
+
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner">
+						<BOUCLE_INRBSLIDE(ARTICLES){id_rubrique=1964}{!par date}{0,1}> 
+							<div class="item active">
+								<img src="[(#LOGO_ARTICLE|extraire_attribut{src})]" alt="#TITRE" style="width:100%;">
+							</div>
+						</BOUCLE_INRBSLIDE> 
+						<BOUCLE_INRBSLIDE2(ARTICLES){id_rubrique=1964}{!par date}{1,4}> 
+							<div class="item">
+								<img src="[(#LOGO_ARTICLE|extraire_attribut{src})]" alt="#TITRE" style="width:100%;">
+							</div>
+						</BOUCLE_INRBSLIDE2> 
+				    </div>
+
+				    <!-- Left and right controls -->
+				    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				      <span class="glyphicon glyphicon-chevron-left"></span>
+				      <span class="sr-only">Previous</span>
+				    </a>
+				    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+				      <span class="glyphicon glyphicon-chevron-right"></span>
+				      <span class="sr-only">Next</span>
+				    </a>
+				  </div>
+				</div>
+
+		<!-- carousel ends here -->
+
+		
+
+		<!-- voting and other pic CONTENT section -->
+		<div class="container tbgpic"> 
+			<div class="row">
+				<div class="col-sm-4"  id="bottom">					
+					<h1 class="title-style">AMAKURU</h1>
+					<hr class="linex">
+					<div class="row bgcol scrolling">
+					<BOUCLE_gh_inkuru_irushanwa2 (ARTICLES){titre_mot=Gumaguma_Amakuru}{0,20}{!par date}{doublons rushw}>
+						<div class="article">
+							<div class="row"> 
+								<div class="col-sm-4 no-padding-2">
+									<a href="#URL_ARTICLE"><img src="[(#LOGO_ARTICLE||image_reduire{320,*}||extraire_attribut{src})]" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-8 no-padding">
+									<p><a href="#URL_ARTICLE">#TITRE</a></p>
+								</div> 
+							</div>
+						</div>
+					</BOUCLE_gh_inkuru_irushanwa2> 
+
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<h1 class="title-style">TORA</h1>
+					<hr class="linex">
+					<div class="row tbgcol">
+						<ul class="flistyle">	
+						
+							<BOUCLE_RUBTIP (ARTICLES){id_rubrique=1966}{0,10}>
+							<li class="img__wrap">
+								<a href="#">
+									<img class="img__img" width="110" src="[(#LOGO_ARTICLE|image_reduire{600,600}|extraire_attribut{src})]">
+								</a>
+								<div class="img__description">
+
+									<h3 class="h3style">#SOUSTITRE</h3>
+									<center><p class="hstylex">#TITRE</p></center>
+									<a href="#URL_ARTICLE" class="astyle">read more..</a>
+
+								</div>
+							</li>
+							</BOUCLE_RUBTIP>							
+
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<h1 class="title-style">IFOTO YIHARIYE</h1>
+					<hr class="linex">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="imagy">
+								<img src="http://www.igihe.com/squelettes/pggss2018/assets/images/pcitron.jpg" class="img-sizex">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> 
+		</div>
+		<!-- end of voting and other pic CONTENT section -->
+
+		<!-- section ya videos -->
+		<div class="container" id="top">
+			<h1 class="title-style">VIDEO</h1>
+			<hr class="liner pull-left">
+			<div class="row">
+				<div class="col col-lg-12 col-md-12 col-sm-12"> 
+					<div class="video-section"> 
+						<div id="amazingslider-wrapper-2" style="display:block;position:relative;max-width:1340px;padding-left:0px; padding-right:514px;margin:0px auto 0px;">
+							<div id="amazingslider-2" style="display:block;position:relative;margin:0 auto;">
+								<ul class="amazingslider-slides" style="display:none;">
+									<BOUCLE_DVIDMIS(ARTICLES){id_rubrique=1965}{!par date}{0,20}>
+									<li><img src="[(#LOGO_ARTICLE|image_reduire{*,353}|extraire_attribut{src})]" alt="#TITRE"  title="#TITRE" data-description="" />
+									<video preload="none" src="#SOUSTITRE" ></video>
+									</li>
+									</BOUCLE_DVIDMIS> 
+								</ul>
+								<ul class="amazingslider-thumbnails" style="display:none;">
+									<BOUCLE_DVIDMIS2(ARTICLES){id_rubrique=1965}{!par date}{0,20}>
+									<li><img src="[(#LOGO_ARTICLE|image_reduire{240,120}|extraire_attribut{src})]" alt="#TITRE" title="#TITRE" /></li>
+									</BOUCLE_DVIDMIS2> 
+								</ul>
+							</div>
+						</div>
+					</div> 
+				</div>			
+			</div>
+		</div>
+		<!-- end of video section -->
+
+
+		<!-- section for contestant photos  -->
+		<div class="container bgpic" id="photosi">
+			<div class="row fmarge">				
+				<div class="col-sm-12">
+					<div class="demo-gallery">
+						<ul id="lightgallery" class="list-unstyled flistyle pmargin">
+							<h1 class="title-style">PHOTOS</h1>
+							<hr class="linex"> 
+							<BOUCLE_DVPHOTOS (ARTICLES){id_rubrique = 1968}{!par date}{0,5}>
+								<BOUCLE_INDOCU (DOCUMENTS) {id_article}{0,10}{par hasard}>
+							  <li class="col-xs-12 col-sm-4 col-md-1" data-responsive="#URL_DOCUMENT" data-src="#URL_DOCUMENT" data-sub-html="<p>Picture #COMPTEUR_BOUCLE</p>"><a href=""><img class="img-responsive" src="[(#URL_DOCUMENT|image_reduire{*,80}extraire_attribut{src})]"></a></li>
+							  </BOUCLE_INDOCU>
+							</BOUCLE_DVPHOTOS> 
+						</ul>
+					</div>	
+				</div>	 
+			</div>
+		</div>
+		<!-- end of contentant photos section -->
+
+		<footer>
+			<div class="container">
+				<div class="row">
+				<div class="col-sm-12 text-center">
+					<img src="http://www.igihe.com/squelettes/pggss2018/assets/images/flogo.jpg" class="imgf">
+				</div>
+			</div>
+			</div>
+		</footer> 
+
+		 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <!-- Latest compiled and minified CSS & JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+			/* Get iframe src attribute value i.e. YouTube video url
+			and store it in a variable */
+		
+			$('#inkuru').click(function(){$('html, body').animate({scrollTop: ($('#bottom').offset().top)},500);});
+			$('#video').click(function(){$('html, body').animate({scrollTop: ($('#top').offset().top)},500);});
+			$('#amafoto').click(function(){$('html, body').animate({scrollTop: ($('#photosi').offset().top)},500);});
+		});
+	</script>
+	
+	<script type="text/javascript">
+        $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+        });
+        </script>
+        <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+        <script src="http://imbaraga.org/dist/js/lightgallery.js"></script>
+        <script src="http://imbaraga.org/dist/js/lg-fullscreen.js"></script>
+        <script src="http://imbaraga.org/dist/js/lg-thumbnail.js"></script>
+        <script src="http://imbaraga.org/dist/js/lg-video.js"></script>
+        <script src="http://imbaraga.org/dist/js/lg-autoplay.js"></script>
+        <script src="http://imbaraga.org/dist/js/lg-zoom.js"></script>
+        <script src="http://imbaraga.org/dist/js/lg-hash.js"></script>
+        <script src="http://imbaraga.org/dist/js/lg-pager.js"></script>
+        <script src="http://imbaraga.org/lib/jquery.mousewheel.min.js"></script>
+
+		
+</body>
+</html>
+</BOUCLE_rubrique>

@@ -1,0 +1,62 @@
+<style>
+.f-title5 a {
+    color: #000;
+    font-family: ralewaymedium, 'trebuchet ms';
+    font-size: 14px;
+}
+.f-title5 a:hover {
+    color: #d82926; 
+}
+.cma-title
+{
+	color: #e3e226;
+}
+.ir-full250{padding: 5px 0 0 5px;} 
+
+.w_cma2019{background: #fef485; height: 301px;}
+.item_cma_2019{background: transparent; margin-bottom: 5px; border-bottom: 1px solid #fef485; padding-bottom: 5px; }  
+.readmore{background: #d82926; text-align: center; padding: 2px 0;}  
+.readmore a{color: #e3e226; }  
+</style>
+ 
+<h3 class="title-section cma-title" style="background: #d82926;">The Capital Market University Challenge 2019</h3>
+<div class="irambuye-news"> 
+	<div class="row">
+		<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 nopaddingright0 "> 
+			<div class="flashnews2">
+				<BOUCLE_gh_widget(ARTICLES){id_article=116629}>
+					<div class="flashphoto">
+						<!-- <a href="#URL_RUBRIQUE"><img class="rectangle img-responsive" data-original="[(#LOGO_RUBRIQUE||image_reduire{325,*}||extraire_attribut{src})]" alt="."/> </a> -->
+						<a href="https://www.youtube.com/watch?v=TnhXVxeUrsg" target="_blank"><img class="rectangle img-responsive" src="[(#LOGO_ARTICLE||extraire_attribut{src})]" alt="."/> </a>
+					</div> 
+				</BOUCLE_gh_widget> 
+			</div>												  
+		</div> 
+		<div class="col col-lg-6 col-md-6 col-sm-6 nopaddingleft0"> 
+			<div class="ir-full250 w_cma2019">
+				<BOUCLE_gh_inkuru_irushanwa(ARTICLES){titre_mot=cma_challenge}{0,10}{!par date}{doublons rushw}>
+					<div class="item_cma_2019"> 
+					<div class="row"> 
+						<div class="col col-lg-4 nopaddingright0">
+							<B_videomiss>
+							<BOUCLE_videomiss (MOTS){id_article}{titre_mot=video}> 
+								<a href="#URL_ARTICLE" class="video"><span></span><img class="rectangle img-responsive" src="[(#LOGO_ARTICLE||image_reduire{320,*}||extraire_attribut{src})]" alt="."/> </a>
+							</BOUCLE_videomiss>
+							</B_videomiss>
+								<a href="#URL_ARTICLE"><img class="rectangle img-responsive" src="[(#LOGO_ARTICLE||image_reduire{320,*}||extraire_attribut{src})]" alt="."/> </a>
+							<//B_videomiss>
+							
+						</div>
+						<div class="col col-lg-8 nopaddingleft0"> 
+							<div class="f-title5"> 
+								<a href="#URL_ARTICLE">#TITRE</a>
+							</div>
+						</div>
+					</div>  
+					</div>  
+				</BOUCLE_gh_inkuru_irushanwa>  
+			</div>
+			<div class="readmore"><a href="https://www.cma.rw/index.php?id=29" target="_blank">Soma izindi</a></div>
+		</div> 
+	</div> 
+</div>   

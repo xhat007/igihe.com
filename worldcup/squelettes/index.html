@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>jQuery ClassyBox plugin | Class.PM</title>
+        <link rel="stylesheet" media="screen" href="css/documentation.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="../src/js/jquery.classybox.js"></script>
+        <script src="../src/js/jwplayer.js"></script>
+        <script src="../src/js/jwplayer.html5.js"></script>
+        <link rel="stylesheet" type="text/css" href="../src/css/jquery.classybox.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <section>
+                              
+                
+                <div class="container_6 clearfix">
+                    <section class="main-section grid_6">
+                        <div class="main-content">
+                            <header>
+                                <h2>Worldcup 2014 - Image Gallery</h2>
+                            </header>
+                            <section class="clearfix">
+                                <div style="text-align: center">
+                                    <h1>Image Gallery</h1>
+                                    <div class="gallery">
+                                        <a href="../images/demo/1.jpg" title="First Image">
+                                            <img src="../images/demo/1_tb.jpg" alt="This is a longer description" />
+                                        </a>
+                                        <a href="../images/demo/2.jpg" title="Second Image">
+                                            <img src="../images/demo/2_tb.jpg" alt="This is a longer description" />
+                                        </a>
+                                        <a href="images/demo/3.jpg" title="Third Image">
+                                            <img src="images/demo/3_tb.jpg" alt="This is a longer description" />
+                                        </a>
+                                        <a href="images/demo/4.jpg" title="Fourth Image">
+                                            <img src="images/demo/4_tb.jpg" alt="This is a longer description" />
+                                        </a>
+                                        <a href="images/demo/5.jpg" title="Fifth Image">
+                                            <img src="images/demo/5_tb.jpg" alt="This is a longer description" />
+                                        </a>
+                                        <a href="images/demo/6.jpg" title="Sixth Image">
+                                            <img src="images/demo/6_tb.jpg" alt="This is a longer description" />
+                                        </a>
+										<a href="images/demo/6.jpg" title="Sixth Image">
+                                            <img src="images/demo/6_tb.jpg" alt="This is a longer description" />
+                                        </a>
+										<a href="images/demo/5.jpg" title="Fifth Image">
+                                            <img src="images/demo/5_tb.jpg" alt="This is a longer description" />
+                                        </a>
+                                        <a href="images/demo/6.jpg" title="Sixth Image">
+                                            <img src="images/demo/6_tb.jpg" alt="This is a longer description" />
+                                        </a>
+										<a href="images/demo/6.jpg" title="Sixth Image">
+                                            <img src="images/demo/6_tb.jpg" alt="This is a longer description" />
+                                        </a>
+                                        <a href="images/demo/5.jpg" title="Fifth Image">
+                                            <img src="images/demo/5_tb.jpg" alt="This is a longer description" />
+                                        </a>
+										<a href="images/demo/6.jpg" title="Fifth Image">
+                                            <img src="images/demo/6_tb.jpg" alt="This is a longer description" />
+                                        </a>
+                                        
+																					
+                                    </div> 
+                                    <h1>Youtube</h1>  
+                                    <div class="video"> 
+                                        <a href="http://www.youtube.com/watch?v=N7OPZOBJZyI" title="DJ Fresh ft. Rita Ora - Hot Right Now"><img src="images/demo/youtube1.jpg" alt="" /></a> 
+                                        <a href="http://www.youtube.com/watch?v=YVw7eJ0vGfM" title="David Guetta - Turn Me On ft. Nicki Minaj"><img src="images/demo/youtube2.jpg" alt="" /></a>   
+                                    </div>	
+                                    <h1>Other:</h1>
+                                    <div class="other">
+                                        <a id="frame" href="http://google.com">Iframe</a> 
+                                        <a id="ajax" href="ajax.txt">Ajax</a>
+                                        <a id="daily" href="http://www.dailymotion.com/video/xq1luq_norah-jones-happy-pills_music">DailyMotion</a>
+                                        <a id="five" href="http://www.5min.com/Video/Mystery-Guitar-Mans-Street-Performance-517284226">5min</a>
+                                        <a id="vimeo" href="http://www.vimeo.com/12848379">Vimeo</a>
+                                        <a id="metacafe" href="http://www.metacafe.com/watch/9364362/interview_with_two_door_cinema_club/">Metacafe</a>
+                                        <a id="ustream" href="http://www.ustream.tv/recorded/26838314">Ustream</a>
+                                        <a id="hell" href="http://www.hell.tv/t/videos/12504/delightfully-sensual.html">Hell TV</a>
+                                        <a id="vevo" href="http://www.vevo.com/watch/coldplay/paradise/GB0401100185">VEVO</a>
+                                        <a id="myspace" href="http://pl.myspace.com/video/alexey-shcheglov/alex-shcheglov-rush/108558854">MySpace</a>
+                                    </div>
+                                    <script>
+                                        $(document).ready(function() {
+                                            $(".gallery a").ClassyBox();
+                                            $(".player a").ClassyBox();
+                                            $(".video a").ClassyBox({
+                                                width: 900,
+                                                title: 0
+                                            });
+                                            $("#frame").ClassyBox({
+                                                iframe: 1,
+                                                social: 0,
+                                                height: 600,
+                                                width: 900
+                                            });
+                                            $("#ajax").ClassyBox({
+                                                height: 450,
+                                                width: 555,
+                                                ajaxSuccess: function(data) {
+                                                    $(".classybox-wrap .content").append(data);
+                                                }
+                                            });
+                                            $('a[href*="vimeo"], a[href*="vevo"], a[href*="dailymotion"], a[href*="5min"], a[href*="ustream"], a[href*="metacafe"], a[href*="hell"], a[href*="myspace"]').ClassyBox({
+                                                height: 500,
+                                                width: 850
+                                            });
+                                            $(window).ClassyBox({
+                                                autoDetect: 1
+                                            });
+                                        });
+                                    </script>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-30825160-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </body>
+</html>

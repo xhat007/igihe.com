@@ -1,0 +1,90 @@
+<BOUCLE_articles(ARTICLES){id_article}{par date}{inverse}{0,1}>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JICA - #TITRE</title>
+<!-- Stylesheets -->
+<link href="css/jica3/bootstrap.css" rel="stylesheet">
+<link href="css/jica3/test.css" rel="stylesheet">
+<link rel="stylesheet" href="css/jica3/font-awesome.css">
+<link href="css/jica3/style.css" rel="stylesheet">
+<link rel="shortcut icon" href=" ">   
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="css/jica3/responsive.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/jica/respond.js"></script><![endif]-->
+</head>
+
+<body>
+<div class="container">
+    	
+    <!-- Main Header -->
+    <header class="main-header">
+    
+    <!--Gallery Section-->
+    <section class="gallery-section full-width">
+    <div class="container-fluid">
+        <div class="row">
+			<div class="col-md-12">
+				<div class="title33">#TITRE</div>
+			</div> 
+		</div> 
+		<div class="row">
+			<div class="col-md-12">
+				<div class="desc33">
+				#TEXTE
+				</div>
+			</div> 
+		</div> 
+    </div>
+        
+        <div class="container-fluid">
+            <div class="filter-list clearfix">
+                
+                <!--Image Box-->
+		<BOUCLE_photos(DOCUMENTS){id_article}{par date}{inverse}{0,9}{extension==jpg|gif|png}{0,9}>
+                	<div class="image-box mix mix_all">
+                   		 <div class="inner-box">
+                        		<figure class="image"><a href="#URL_DOCUMENT" class="lightbox-image"><img src="[(#URL_DOCUMENT||image_reduire{273,181}||image_recadre{273,181,top center}|extraire_attribut{src})]" alt=""></a></figure>
+                        		<a href="#URL_DOCUMENT" class="lightbox-image btn-zoom" title="#TITRE"><span class="icon flaticon-round69"></span></a>
+                    		</div>
+                	</div>
+		</BOUCLE_photos>
+                
+            </div>
+        </div>  
+    </section>  
+	</header>
+	
+	
+<div class="row">
+    <div class="col-md-12"><a href="https://ticad6.net/" target="_blank"><img src="imgjica/pic9.jpg" width="100%"></a></div>
+</div>
+
+<div class="row">
+    <div class="col-md-12"><img src="imgjica/pic10.jpg" width="100%"> </div>
+</div>
+	
+<footer>
+<div class="copy">COPYRIGHT &copy; IGIHE</div>
+</footer>
+</div>
+<!--End pagewrapper-->
+
+
+
+
+
+<script src="js/jica/jquery.js"></script> 
+<script src="js/jica/bootstrap.min.js"></script>
+<script src="js/jica/jquery.mixitup.js"></script>
+<script src="js/jica/jquery.fancybox.pack.js"></script>
+<script src="js/jica/main.js"></script>
+<script src="js/jica/wow.js"></script>
+<script src="js/jica/test.js"></script>
+</body>
+</html>
+</BOUCLE_articles>

@@ -1,0 +1,273 @@
+<BOUCLE_rubrique(RUBRIQUES){id_rubrique}>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>IGIHE Mobile Version</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/bootswatch.min.css">
+	<link rel="stylesheet" href="css/tablet.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <script>
+
+     var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23019901-1']);
+      _gaq.push(['_setDomainName', "bootswatch.com"]);
+        _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+    </script>
+  </head>
+  <body>
+    <div class="container" style="border:0px solid red;height:100px;margin-top:0px;padding:0px;">
+        <div class="row" style="padding:0px;">
+            <div class="col-lg-12" style="padding:0px;margin:0px;">
+			 <div style="border:0px solid red;background-image:url(images/header.jpg);background-size: 100% 100%;background-position:100%;">
+			 <center><img src="images/logo.png"  height="100"  width="300" align="center" style="margin:auto;"></center></div>
+		    </div>
+	    </div>
+    </div>
+	<div class="container" style="border:0px solid red;margin-top:0px;padding:0px;">
+        <div class="row" style="padding:0px;">
+            <div class="col-lg-12" style="padding:0px;margin-top:-24px;">
+				<div class="language">
+					<a href="#"><img src="images/kn.png" width="30px"></a>
+					<a href="#"><img src="images/bi.png" width="30px"></a>
+					<a href="#"><img src="images/en.png" width="30px"></a>
+					<a href="#"><img src="images/fr.png" width="30px"></a>
+				</div>
+			</div> 
+	    </div>
+    </div>
+
+    <div class="navbar navbar-default navbar-top">
+      <div class="container">
+        <div class="navbar-header" style="border:2px solid #007ac1;margin-top:1px;">
+          <a href="../" class="navbar-brand" style="font-weight:bold;">MENU</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" style="background-color:#007ac1;" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	</div>
+	<div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">            
+            <li>
+              <a href="#URL_SITE_SPIP">AHABANZA</a>
+            </li>
+	    <BOUCLE_gh_ibirimoside(RUBRIQUES){id_parent=0}{0,20}{titre_mot=IbirimoSide}>
+		<li>
+			<a href="spip.php?page=rubrique&amp;id_rubrique=#ID_RUBRIQUE" style="text-transform:touper;">#TITRE</a>
+		</li>
+	    </BOUCLE_gh_ibirimoside>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="border:0px solid red;margin-top:-20px;padding:0px;">	
+	<div class="row"  style="padding:7px;">
+		<div class="col-lg-12" style="height:auto;color:#025884;border:0px solid red; padding:px; margin-top:2px;">
+			<div class="title_rubrique" style="border:0px solid red;color:#aaa;">
+				<a href="#" style="color:#007ac1;font-weight:bold;">:: #TITRE</a>
+			</div>
+			<BOUCLE_rubrique_latest_art(ARTICLES){id_rubrique=#ID_RUBRIQUE}{par date}{inverse}{0,1}>
+				<div class="main_title_rubrique">
+					<a href="#URL_ARTICLE" style="color:#030303;margin-left:-8px;">#TITRE</a>
+				</div>
+				</div>
+				<div class="col-lg-12"  style="padding:px;">
+					<img src="http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]" width="100%" height="240px">
+					<div  class="num" style="border:0px solid red;"> 
+						<div class="cssarrow"style="float:right;right:0px;margin-top:-26px;">
+							<center>
+								<BOUCLE_combien(FORUMS){id_article} {plat}>
+									#TOTAL_BOUCLE
+								</BOUCLE_combien>
+									0				
+								<//B_combien>
+							</center>
+						</div>
+					</div>
+				</div>
+			</BOUCLE_rubrique_latest_art>			
+		</div>	
+		<!--  ############################################### news list +++++++++++++++++++++++++++++++++++++-->
+		<div class="row">
+			<div class="col-lg-12">
+				<BOUCLE_rubrique_all_art(ARTICLES){id_rubrique=#ID_RUBRIQUE}{par date}{inverse}{0,20}>
+					<div  class="newscol" >
+						<ul>
+							<li>
+								<img src="http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]">
+								<p>
+									<a href="#URL_ARTICLE">#TITRE</a>
+									<i style="color:red; width:74%; float:right; border:0px solid red;margin-left:-30px;margin-top:2px; padding-left:4px;padding-top:5px;padding-bottom:5px; font-style:normal; font-size:14px;">Hashize iminota 21</i>
+								</p>
+								<div  class="num">
+									<div class="cssarrow">
+										<center>
+											<BOUCLE_combien2(FORUMS){id_article} {plat}>
+												#TOTAL_BOUCLE
+											</BOUCLE_combien2>
+												0
+											<//B_combien2>
+										</center>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</BOUCLE_rubrique_all_art>
+			</div>        
+		</div>
+		<!--  ############################################### end ofnews list +++++++++++++++++++++++++++++++++++++-->
+	    
+
+	<!--  ############################################### izindi nkuru +++++++++++++++++++++++++++++++++++++-->
+	
+	<div class="row"  style="padding:7px;">
+        <div class=" col-lg-12 col-sm-12" style="background:#e6ebef; color:#005793; font-size:24px; padding:7px;">
+			<center><a id="displayText" href="javascript:toggle();" href="#" style="text-decoration:none;color:#005a89;">IZINDI NKURU</a></center>		
+		</div>
+    </div>
+	
+	<!--  ############################################### end of izindi nkuru +++++++++++++++++++++++++++++++++++++-->
+	<div class="row" id="toggleText" style="display:none;padding-bottom:7px;">
+        <div class="col-lg-12" >
+		<BOUCLE_rubrique_izindi(ARTICLES){id_rubrique=#ID_RUBRIQUE}{par date}{inverse}{0,6}>
+			<div  class="newscol">
+				<ul>
+					<li>
+						<img src="http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]">
+						<p>
+						    <a href="#URL_ARTICLE">#TITRE</a>
+							<i style="color:red; width:74%; float:right; border:0px solid red;margin-left:-30px;margin-top:2px; padding-left:4px;padding-top:5px;padding-bottom:5px; font-style:normal; font-size:12px;">Hashize iminota 21</i>
+						</p>
+						<div  class="num"> 
+							<div class="cssarrow">
+								<center>
+									345
+								</center>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</BOUCLE_rubrique_izindi>
+		
+		
+		</div>
+    </div>
+	
+
+	
+	
+</div>
+		<!--  ############################################### end of ad5 +++++++++++++++++++++++++++++++++++++-->
+		
+		<!--  ############################################### footer 1 +++++++++++++++++++++++++++++++++++++-->
+	
+	<div class="row" style="padding:7px; background-color:#1f78d9;margin-top:1px;">
+        <div class="col-lg-12" style="padding:0px; border:0px solid red;">
+		<div class="footer1">
+		<img src="images/logo3.png">
+		<h1>DOWNLOAD THE APPLICATION OF IGIHE</h1>
+		</div>
+		
+		</div>
+		</div>
+		<!--  ############################################### end of footer 1 +++++++++++++++++++++++++++++++++++++-->
+		
+		<!--  ############################################### footer  +++++++++++++++++++++++++++++++++++++-->
+	
+	<div class="row" style="padding:0px; background-color:#1f1f1f;">
+        <div class="col-lg-12" style="padding:0px; border:0px solid red;">
+		<div class="mainfooter">
+		<ul>
+		<li>
+		
+		<a href="">Aboturibo</a></br>
+		<a href="">Twandikire</a></br>
+		<a href="">Amamaza</a>
+		
+		</li>
+		<li><img src="images/logo1.png" style="margin-top:20px;"></li>
+		<li></li>
+		</ul>
+		</div>
+		
+		</div>
+		</div>
+		<!--  ############################################### end of footer +++++++++++++++++++++++++++++++++++++-->
+		
+		
+		
+		<!--  ############################################### end footer  +++++++++++++++++++++++++++++++++++++-->
+	
+	<div class="row" style="padding:0px; background-color:#1f1f1f;">
+        <div class="col-lg-12" style="padding:0px; border:0px solid red;">
+		<center style="color:#bcbcbc; font-size:14px; font-weight:normal;padding:5px;">All rights reserved 2014</center>
+		</div>
+		</div>
+		<!--  ############################################### end of end footer +++++++++++++++++++++++++++++++++++++-->
+		     
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootswatch.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $('#horizontalTab').responsiveTabs({
+                rotate: false,
+                startCollapsed: 'accordion',
+                collapsible: 'accordion',
+                setHash: true,
+                disabled: [3,4]
+            });
+
+            $('#start-rotation').on('click', function() {
+                $('#horizontalTab').responsiveTabs('active');
+            });
+            $('#stop-rotation').on('click', function() {
+                $('#horizontalTab').responsiveTabs('stopRotation');
+            });
+            $('#start-rotation').on('click', function() {
+                $('#horizontalTab').responsiveTabs('active');
+            });
+            $('.select-tab').on('click', function() {
+                $('#horizontalTab').responsiveTabs('activate', $(this).val());
+            });
+
+        });
+		
+		function toggle() {
+			var ele = document.getElementById("toggleText");
+			var text = document.getElementById("displayText");
+			if(ele.style.display == "block") {
+					ele.style.display = "none";
+				text.innerHTML = "IZINDI NKURU";
+			}
+			else {
+				ele.style.display = "block";
+				text.innerHTML = "Hisha izindi nkuru";
+			}
+		} 
+    </script>
+  </body>
+</html>
+</BOUCLE_rubrique>

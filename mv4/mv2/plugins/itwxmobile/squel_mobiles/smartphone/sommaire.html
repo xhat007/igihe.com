@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>IGIHE.com - Mobile Version</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<link rel='stylesheet' type='text/css' media='screen' href="[(#CHEMIN{'igihe_scripts/ghstyle_mobile.css'})]" />
+<meta http-equiv="refresh" content="180" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" type="image/png" href=""/>
+</head>
+
+
+
+<body id="gh_mob_body">
+
+
+<div id="gh_mob_header"><a href="[(#URL_PAGE{sommaire})]"><img src="[(#CHEMIN{'igihe_imgs/gh_mob_logo.png'})]" border="0"/></a></div>
+
+<div class="clear"></div>
+
+<form name="guideform">
+<div id="gh_mob_menuselect">
+<select class="gh_list" name="guidelinks" onChange="window.location=document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value">
+<option selected>IBIRIMO</option>
+<BOUCLE_gh_ibirimoside(RUBRIQUES){id_parent=0}{0,20}{titre_mot=IbirimoSide}>
+<option value="#URL_RUBRIQUE">#TITRE</option>
+</BOUCLE_gh_ibirimoside>
+</select>
+</div>
+</form>
+
+	<div id="gh_mob_body">
+
+		<div class="gh_mob_body_1">AMAKURU ASHYUSHYE</div>
+<BOUCLE_gh_news1(ARTICLES){tout}{doublons xx}{0,1}{par date}{inverse}{titre!=intro}{titre_mot=HomeHighlights1}>
+		<div class="gh_mob_body_in1"><div style="display:block;position:relative;float:right;min-height:60px;width:30px;line-height:60px;"><BOUCLE_gh_incommentsif(FORUMS){id_article}{0,1}><B_gh_incomments><BOUCLE_gh_incomments(FORUMS){id_article}{tout}></BOUCLE_gh_incomments></B_gh_incomments>[<div class="gh_article_dcomments" title="Ibitekerezo biri muriyinkuru ">(#TOTAL_BOUCLE)</div>]<//B_gh_incomments></BOUCLE_gh_incommentsif></div>[<img src="(#LOGO_ARTICLE||image_reduire{0,55}||image_recadre{80,55,top center}|extraire_attribut{src})" width="80" height="55"  border="0" class="gh_mod_news1" align="left"/>]<a href="#URL_ARTICLE" class="gh_mod_news1">#TITRE</a><B_gh_pasttime><BOUCLE_gh_pasttime(ARTICLES){id_article}{age<2040}><div class="gh_article_dtimeago"><br />[(#DATE|date_relative)]</div></BOUCLE_gh_pasttime></B_gh_pasttime><div class="gh_article_dtimeago" style="color:#AEAEAE;"><br />[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] </div><//B_gh_pasttime></div>
+</BOUCLE_gh_news1>
+<BOUCLE_gh_news2(ARTICLES){tout}{doublons xx}{0,4}{par date}{inverse}{titre!=intro}{titre_mot=HomeHighlights}>
+		<div class="gh_mob_body_in1"><div style="display:block;position:relative;float:right;min-height:60px;width:30px;line-height:60px;"><BOUCLE_gh_incommentsif0(FORUMS){id_article}{0,1}><B_gh_incomments0><BOUCLE_gh_incomments0(FORUMS){id_article}{tout}></BOUCLE_gh_incomments0></B_gh_incomments0>[<div class="gh_article_dcomments" title="Ibitekerezo biri muriyinkuru ">(#TOTAL_BOUCLE)</div>]<//B_gh_incomments0></BOUCLE_gh_incommentsif0></div>[<img src="(#LOGO_ARTICLE||image_reduire{0,55}||image_recadre{80,55,top center}|extraire_attribut{src})" width="80" height="55"  border="0" class="gh_mod_news1" align="left"/>]<a href="#URL_ARTICLE" class="gh_mod_news1">#TITRE</a><B_gh_pasttime2><BOUCLE_gh_pasttime2(ARTICLES){id_article}{age<2040}><div class="gh_article_dtimeago"><br />[(#DATE|date_relative)]</div></BOUCLE_gh_pasttime2></B_gh_pasttime2><div class="gh_article_dtimeago" style="color:#AEAEAE;"><br />[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] </div><//B_gh_pasttime2>  </div>
+</BOUCLE_gh_news2>
+
+
+		<div class="gh_mob_body_ads" style="padding-bottom:3px;">Kwamamaza<br /><a href="#"><img src="[(#CHEMIN{'igihe_imgs/bpr_simbuka.gif'})]" border="0" /></a></div>
+
+
+		<div class="gh_mob_body_2">AMAKURU AHERUKA</div>
+<BOUCLE_gh_news3(ARTICLES){tout}{doublons xx}{0,10}{par date}{inverse}{titre!=intro}{titre_mot=HomeNews}>
+		<div class="gh_mob_body_in2"><div style="display:block;position:relative;float:right;min-height:60px;width:30px;line-height:60px;"><BOUCLE_gh_incommentsif1(FORUMS){id_article}{0,1}><B_gh_incomments1><BOUCLE_gh_incomments1(FORUMS){id_article}{tout}></BOUCLE_gh_incomments1></B_gh_incomments1>[<div class="gh_article_dcomments" title="Ibitekerezo biri muriyinkuru ">(#TOTAL_BOUCLE)</div>]<//B_gh_incomments1></BOUCLE_gh_incommentsif1></div>[<img src="(#LOGO_ARTICLE||image_reduire{0,55}||image_recadre{80,55,top center}|extraire_attribut{src})" width="80" height="55"  border="0" class="gh_mod_news2" align="left"/>]<a href="#URL_ARTICLE" class="gh_mod_news2">#TITRE</a><B_gh_pasttime3><BOUCLE_gh_pasttime3(ARTICLES){id_article}{age<2040}><div class="gh_article_dtimeago"><br />[(#DATE|date_relative)]</div></BOUCLE_gh_pasttime3></B_gh_pasttime3><div class="gh_article_dtimeago" style="color:#AEAEAE;"><br />[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)] </div><//B_gh_pasttime3></div>
+</BOUCLE_gh_news3>
+
+
+		<div class="gh_mob_body_ads">Kwamamaza<br /><a href="#"><img src="[(#CHEMIN{'igihe_imgs/mtn.gif'})]" border="0" /></a></div>
+
+	</div>
+
+
+
+<div id="gh_mob_footer">
+<div id="gh_mob_hejuru"><a href="#"><img src="[(#CHEMIN{'igihe_imgs/gh_mob_hejuru.png'})]" alt="Jya Hejuru" border="0"/></a></div>
+<div id="gh_mob_footerbox">
+
+<span id="footer_search">
+<center><form action="spip.php?page=recherche" method='get'><input name='page' value='recherche' type='hidden' ><input  type="text" name="recherche" value="&nbsp;Andika aha..." onfocus="if(this.value=='&nbsp;Andika aha...') this.value='';" class="gh_search" /><input type="submit" value="SHAKISHA" class="gh_search_out"/></form>
+</center></span>
+
+
+<div id="footer_mobi_version">
+	<font class="gh_footerliner2">
+		<a rel="start home" href="[(#URL_PAGE{sommaire})]" class="gh_footer2">MOBILE SITE</a>&nbsp;-&nbsp;
+		<a href="[(#URL_SITE_SPIP)/?cimobile=web]" class="gh_footer2">DESKTOP SITE</a>
+	</font>
+</div>
+
+<div id="footer_copyright">
+Copyright &copy; 2009 -2012 - IGIHE Ltd - All Rights Reserved
+</div>
+
+</div>
+</div>
+
+
+</body>
+</html>

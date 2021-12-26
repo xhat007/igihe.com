@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<BOUCLE_main (ARTICLES){id_article}>
+  <head>
+    <meta charset="utf-8">
+    <title>IGIHE Mobile Version</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/bootswatch.min.css">
+	<link rel="stylesheet" href="css/tablet.css">
+	<link type="text/css" rel="stylesheet" href="css/responsive-tabs.css" />
+    <link type="text/css" rel="stylesheet" href="css/tab.css" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <script>
+
+     var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23019901-1']);
+      _gaq.push(['_setDomainName', "bootswatch.com"]);
+        _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+    </script>
+	
+  <style>
+  #myList span{ display:none;
+	}
+	#loadMore {
+		color:#005aa2;
+		cursor:pointer;
+	}
+	#loadMore:hover {
+		color:#005aa2;
+	}
+	#showLess {
+		color:#005aa2;
+		cursor:pointer;
+	}
+	#showLess:hover {
+		color:#005aa2;
+	}
+  </style>
+  </head>
+  <body>
+    <div class="container" style="border:0px solid red;height:135px;margin-top:0px;padding:0px;">
+        <div class="row" style="padding:0px;">
+            <div class="col-lg-12" style="padding:0px;margin:0px;">
+			 <div style="border:0px solid red;background-image:url(images/header.jpg);background-size: 100% 100%;height:148px;background-position:100%;">
+			 <center><img src="images/logo.png"  height="125"  width="300" align="center" style="margin:auto;"></center></div>
+		    </div>
+	    </div>
+    </div>
+	
+	<div class="container" style="border:0px solid red;margin-top:0px;padding:0px;">
+        <div class="row" style="padding:0px;">
+			<div class="col-lg-12" style="padding:0px;margin-top:-21px;border:0px solid red;padding-left:4px;padding-right:4px;">
+				<div class="language">
+					<a href="#"><img src="images/kn.png" width="30px"></a>
+					<a href="#"><img src="images/bi.png" width="30px"></a>
+					<a href="#"><img src="images/en.png" width="30px"></a>
+					<a href="#"><img src="images/fr.png" width="30px"></a>
+				</div>
+			
+				<div class="search">
+					<form method="" style="">
+						<input type="text" placeholder="Shakisha..." id="searching" name="">
+					</form>
+				</div>
+			</div> 
+	    </div>
+    </div>
+
+	
+    <div class="navbar navbar-default navbar-top" style="background-color:#e4e4e4;">
+      <div class="container">
+        <div class="navbar-header" style="border:2px solid #007ac1;margin-top:1px;">
+          <a href="../mv2jp" class="navbar-brand" style="font-weight:bold;">MENU</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" style="background-color:#007ac1;" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            
+            <li>
+              <a href="#">AHABANZA</a>
+            </li>
+			<li>
+              <a href="#">AMAKURU</a>
+            </li>
+			<li>
+              <a href="#">POLITIKI</a>
+            </li>            
+			<li>
+              <a href="#">UBUZIMA</a>
+            </li>
+			<li>
+              <a href="#">UBUKUNGU</a>
+            </li>
+			<li>
+              <a href="#">IKORANABUHANGA</a>
+            </li>
+			<li>
+              <a href="#">IMYIDAGADURO</a>
+            </li>            
+			<li>
+              <a href="#">IMIKINO</a>
+            </li>
+			
+			<li>
+              <a href="#">UMUCO</a>
+            </li>
+			<li>
+              <a href="#">IBIDUKIKIJE</a>
+            </li>
+			<li>
+              <a href="#">IYOBOKAMANA</a>
+            </li>
+			<li>
+              <a href="#">UBUKERARUGENDO</a>
+            </li>            
+			<li>
+              <a href="#">ABANTU</a>
+            </li>			
+          </ul>
+
+          
+
+        </div>
+      </div>
+    </div>
+    
+	<div class="container" style="border:0px solid red;margin-top:-20px;padding:0px;">
+	
+		<!-- **************************** Article Start *************************************-->
+		<div class="row">
+			<div class="col-lg-12">
+				<BOUCLE_article (ARTICLES){id_article=#ID_ARTICLE}>
+				<div class="titre_article" style="">
+					<span>#TITRE</span>
+					<br>
+					<i> Yanditswe kuya [(#DATE|jour)]-[(#DATE|mois)]-[(#DATE|annee)] saa [(#DATE|heures)][:(#DATE|minutes)]</i>
+				</div>
+				<div class="internal_article" >
+					
+					<center><img src="http://www.igihe.com/IMG/[(#LOGO_ARTICLE|fichier)]" width="100%"></center>					
+					<p>
+					#TEXTE
+					</p>
+				</div>
+			</BOUCLE_article>			
+			</div>
+			<div class="col-lg-12" style="border:0px solid red;padding:30px;">
+				<div class="comment_form" style="border:0px solid red;padding:10px;height:auto;background-color:#797a7b;border-radius:15px;">
+					<center style="margin-top:5px;margin-bottom:10px;">ANDIKA ICYO UTEKEREZA KURI IYI NKURU</center>
+					<div class="row" style="padding:7px;background-color:#797a7b;">
+						<div class="col-xs-8" style="border:0px solid red;height:200px;">
+							<textarea style="width:100%;background-color:#fff;height:160px;border-radius:6px;"></textarea>
+						</div>
+						<div class="col-xs-4"style="border:0px solid red;height:200px;padding-left:15px;">
+							Izina<br>
+							<input type="text" name="" style="width:90%;margin-top:4px;border-radius:5px;margin-bottom:8px;"><br>
+							Email yanyu<br>
+							<input type="text" name="" style="width:90%;border-radius:5px;"><br>
+							<input type="submit" name="" value="OHEREZA" style="width:90%;margin-top:15px;border-radius:12px;background-color:#fff;color:#000;">
+						</div>
+					</div>
+					<div class="row" style="padding:3px;background-color:#797a7b;">
+						<div class="col-xs-12" style="border:0px solid red;height:auto;padding-bottom:10px;">
+							
+							<center style="padding-bottom:10px;">
+							<p>ANDIKA ICYO UTEKEREZA KURI IYI NKURU:</p>
+							Witandukira kubijyanye n'iyi nkuru; wikwandika ibisebanya, ibyamamaza cyangwa bivangura; wikwandika ibiteye isoni, 
+							Wifuza kubona byihuse ibivugwa/ibisubizo ku gitekerezo cyawe, andika email yawe ahabugenewe. 
+							Igitekerezo cyawe kigaragara nyuma y'isuzuma rikorwa na IGIHE.com<br>
+							Ibi bidakurikijwe igitekerezo cyanyu gishobora kutagaragara hano cyangwa kigasibwa, Murakoze!
+							</center>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="row" style="padding:7px;">
+				<div class="col-lg-12" style="padding-left:29px;border:0px solid red;font-weight:bold;height:auto;padding-top:6px;padding-bottom:6px;background-color:#797a7b;color:#fff;">
+					IBITEKEREZO
+				</div>
+				<div class="col-lg-12" style="padding-left:23px;border:0px solid red;height:auto;padding-top:6px;padding-bottom:6px;color:#797a7b;">
+					<div class="comment">
+						<p>Gumaguma niy'Umusaza Jay Polly guturuka muri Tough Gangs, Gumaguma niy'Umusaza Jay Polly guturuka muri Tough Gangs</p>
+						<span>2014-06-09 08:29:04</span>
+						<h2>Olivier Someone</h2>
+					</div>
+					<div class="comment">
+						<p>Gumaguma niy'Umusaza Jay Polly guturuka muri Tough Gangs</p>
+						<span>2014-06-09 08:29:04</span>
+						<h2>Olivier Someone</h2>
+					</div>
+					<div class="comment">
+						<p>Gumaguma niyUmusaza Jay Polly guturuka muri Tough Gangs</p>
+						<span>2014-06-09 08:29:04</span>
+						<h2>Olivier Someone</h2>
+					</div>
+					
+				</div>
+				<div class="news_pagination" style="border:0px solid red;margin-top:-30px;">
+					<center>
+						<ul class="pagination">
+							<li><a href="#">&laquo;</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							
+							<li><a href="#">&raquo;</a></li>
+						</ul>	
+					</center>
+					
+				</div>	
+				
+			</div>
+			<div class="col-lg-12" style="border:0px solid red;padding:5px;margin-top:-30px;">				
+				<div class="row" style="">
+					<div class="col-xs-12" style="border:0px solid red;padding:14px;color:#2a77c5;font-weight:bold;font-size:24px;">
+					ANDI MAKURU
+					</div>
+				</div>
+				<div class="row" style="padding:0px;background-color:#fff;border:0px solid red;height:125px;margin-top:-10px;">
+					<div class="col-xs-4" style="border:0px solid red;">
+						<div class="other_news">
+							<img src="images/other_news.png" width="100%">
+							<b>Micheal John wo muri American idol yapfuye</b>
+						</div>
+					</div>
+					<div class="col-xs-4" style="border:0px solid red;">
+						<div class="other_news">
+							<img src="images/other_news.png" width="100%">
+							<b>Micheal John wo muri American idol yapfuye</b>
+						</div>
+					</div>
+					<div class="col-xs-4" style="border:0px solid red;">
+						<div class="other_news">
+							<img src="images/other_news.png" width="100%">
+							<b>Micheal John wo muri American idol yapfuye</b>
+						</div>
+					</div>					
+				</div>
+				<div class="row" style="padding:3px;background-color:#fff;height:125px;">
+					<div class="col-xs-4" style="border:0px solid red;">
+						<div class="other_news">
+							<img src="images/other_news.png" width="100%">
+							<b>Micheal John wo muri American idol yapfuye</b>
+						</div>
+					</div>
+					<div class="col-xs-4" style="border:0px solid red;">
+						<div class="other_news">
+							<img src="images/other_news.png" width="100%">
+							<b>Micheal John wo muri American idol yapfuye</b>
+						</div>
+					</div>
+					<div class="col-xs-4" style="border:0px solid red;">
+						<div class="other_news">
+							<img src="images/other_news.png" width="100%">
+							<b>Micheal John wo muri American idol yapfuye</b>
+						</div>
+					</div>
+				</div>					
+			</div>
+				
+				
+		</div>
+		
+		
+		<div class="row" style="padding:7px;">
+			<div class="col-lg-12">
+				<img src="images/banner2.png" width="100%" height="auto" style="border-radius:10px;">
+			</div>
+		</div>
+		
+
+	
+	
+	</div>
+		<!--  ############################################### end of ad5 +++++++++++++++++++++++++++++++++++++-->
+		
+		<!--  ############################################### footer 1 +++++++++++++++++++++++++++++++++++++-->
+	
+	<div class="row" style="padding:7px; background-color:#1f78d9;">
+        <div class="col-lg-12" style="padding:0px; border:0px solid red;">
+			<div class="footer1">
+				<img src="images/logo3.png">
+				<h1>DOWNLOAD THE APPLICATION OF IGIHE</h1>
+			</div>
+		</div>
+	</div>
+		<!--  ############################################### end of footer 1 +++++++++++++++++++++++++++++++++++++-->
+		
+		<!--  ############################################### footer  +++++++++++++++++++++++++++++++++++++-->
+	
+	<div class="row" style="padding:0px; background-color:#1f1f1f;">
+        <div class="col-lg-12" style="padding:0px; border:0px solid red;">
+			<div class="mainfooter">
+				<ul>
+					<li>
+				
+						<a href="">Aboturibo</a></br>
+						<a href="">Twandikire</a></br>
+						<a href="">Amamaza</a>
+				
+					</li>
+					<li><img src="images/logo1.png" style="margin-top:20px;"></li>
+					<li></li>
+				</ul>
+			</div>
+		
+		</div>
+	</div>
+		<!--  ############################################### end of footer +++++++++++++++++++++++++++++++++++++-->
+		
+		
+		
+		<!--  ############################################### end footer  +++++++++++++++++++++++++++++++++++++-->
+	
+	<div class="row" style="padding:0px; background-color:#1f1f1f;">
+        <div class="col-lg-12" style="padding:0px; border:0px solid red;">
+			<center style="color:#bcbcbc; font-size:14px; font-weight:normal;padding:5px;">All rights reserved 2014</center>
+		</div>
+	</div>
+		<!--  ############################################### end of end footer +++++++++++++++++++++++++++++++++++++-->
+		
+	        
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootswatch.js"></script>
+  </body>
+</BOUCLE_main>
+</html>

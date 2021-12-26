@@ -1,0 +1,347 @@
+<!Doctype html>
+<html>
+	<head>
+	<title>IGIHE Amatangazo</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Style CSS -->
+		<link rel="stylesheet" type="text/css" href="amatangazo_assets/css/stylez.css">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="amatangazo_assets/css/bootstrap.css">
+		<!-- Font awesome CSS -->
+		<link href="amatangazo_assets/css/ionicons.css" type="text/css" rel="stylesheet" />
+		<!-- Font awesome CSS -->
+		<link href="amatangazo_assets/css/font-awesome.css" type="text/css" rel="stylesheet" />
+		<!-- Fonts CSS -->
+		<link href="amatangazo_assets/css/fonts.css" type="text/css" rel="stylesheet" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/png" href="amatangazo_images/amatangazo_assets/favicon.png"/>
+
+        <link rel="stylesheet" type="text/css" href="amatangazo_assets/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="amatangazo_assets/css/style2.css" />
+		<script type="text/javascript" src="amatangazo_assets/js/modernizr.custom.04022.js"></script>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="js/ie9/html5shiv.min.js"></script>
+			<script src="js/ie9/respond.min.js"></script>
+		<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="sss/sss.min.js"></script>
+<link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+
+<script>
+jQuery(function($) {
+$('.slider').sss();
+});
+</script>
+	</head>
+	<body>
+		<header>
+			<div id="main-top">
+				<div class="container">
+					<div class="row">
+						<div class="cr-date col-lg-6">
+							<span class="fa fa-clock-o tm-icon"></span><span class="dt-time">#MAINTENANT</span>
+						</div>
+						<div class="dr-lang col-lg-12">
+							<nav class="main-menu">
+								<ul class="list-inline">
+									<li><a href="http://www.igihe.com/" target="_blank">Igihe Kiny</a></li>
+									<li><a href="http://en.igihe.com/" target="_blank">Igihe Eng</a></li>
+									<li><a href="http://fr.igihe.com/" target="_blank">Igihe Fr</a></li>
+									<li><a href="http://igihe.bi" target="_blank">Igihe Kirundi</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="sc-media col-lg-6">
+							<ul class="list-inline">
+								<li><a href="http://www.facebook.com/igihe"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="http://www.twitter.com/igihe"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="http://www.youtube.com/user/igihetv"><i class="fa fa-youtube"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div id="lg-block">
+				<div class="container">
+					<div class="row">
+						<div class="mn-logo col-lg-12">
+							<a href="http://www.igihe.com/spip.php?page=amatangazo"><img src="amatangazo_images/logo.png" title="Igihe Amatangazo" alt=""/></a>
+						</div>
+						<div class="en-search col-lg-12">
+							<form class="form">
+								<input type="search" placeholder="Andika hano.." class="search-it" />
+								<button type="submit" class="search-bt">Shakisha</button>
+							</form>				
+						</div>
+					</div>	
+				</div>
+			</div>	
+		</header><!-- End - Header -->
+		
+		<section id="featured">
+			<div class="container">
+				<div class="ft-title">
+ 					<h3>Featured</h3>
+				</div>
+				<div class="ft-list">
+					<ul>
+						<BOUCLE_featured(ARTICLES){titre_mot=amatangazo_featured}{par date}{inverse}{0,4}{doublons xx}>
+							<li class="ft-item col-lg-5">
+								<a href="#URL_ARTICLE">
+									[(#LOGO_ARTICLE|image_reduire{250}|image_recadre{250,169}|inserer_attribut{class, item-img})]
+									<div class="tm-title col-lg-24">
+										<h4>#TITRE</h4>
+										<BOUCLE_idrub(RUBRIQUES){id_rubrique}>
+											<span class="tm-cat">[(#TITRE|supprimer_numero)]</span>
+										</BOUCLE_idrub>
+									</div>
+									<div class="descript">
+										<span class="dt-type col-lg-24">#SOUSTITRE</span>
+										<span class="dt-work col-lg-24">[(#TEXTE|couper{100})]</span>
+									</div>
+								</a>
+							</li>
+						</BOUCLE_featured>
+					</ul>	
+				</div>
+			</div>
+		</section>
+		<section id="t-block">
+			<div class="container">
+				<div class="row">
+					<section class="io-block col-lg-8">
+						<h3>KUMENYESHA</h3>						
+						<div class="io-inner col-lg-24">
+							<B_kumenyesha>
+								<ul class="col-lg-24">
+									<BOUCLE_kumenyesha(ARTICLES){par date}{id_rubrique=96}{inverse}{0,22}{pagination 22}>
+										<li class="io-item">
+											<h5><a href="#URL_ARTICLE">#TITRE</a></h5>
+											<p>[(#TEXTE|couper{40})]</p>
+											<div class="ct-tm">
+												<span class="ct-desc">Kumenyesha</span>
+												<p class="tm-desc"><span class="fa fa-clock-o tm-icon"></span><span class="dt-time">#DATE</span></p>
+											</div>
+										</li>
+									</BOUCLE_kumenyesha>
+								</ul>
+								<div class="paginate col-lg-24">
+									<!--<span class="prev empt"><a href="#">Prev</a></span>-->
+										<ul>
+											[(#PAGINATION{page})]
+										</ul>
+									<!--<span class="next"><a href="#">Next</a></span>-->
+								</div>
+							</B_kumenyesha>
+							<//B_kumenyesha>
+						</div>	
+					</section>
+					<section class="io-box col-lg-8">
+							<h3>CYAMUNARA</h3>
+							<div class="io-inner col-lg-24">
+								<B_cyamunara>
+									<ul>
+										<BOUCLE_cyamunara(ARTICLES){par date}{id_rubrique=1917}{inverse}{0,22}{pagination 22}>
+											<li class="ca-box out col-lg-24">
+												<span class="box-img">
+													[(#LOGO_ARTICLE|image_reduire{107}|image_recadre{107,79})]
+												</span>
+												<h4>#TITRE</h4>
+												<p>[(#TEXTE|couper{22})]</p>
+												<span class="box-ref">#SOUSTITRE</span>
+												<span class="box-desc">#DATE <a href="#URL_ARTICLE">Ibindi</a></span>
+											</li>
+										</BOUCLE_cyamunara>
+									
+									</ul>
+									<div class="paginate col-lg-24">
+										<span class="prev empt"><a href="#">Prev</a></span>
+											<ul>
+												[(#PAGINATION{page})]
+											</ul>
+										<span class="next"><a href="#">Next</a></span>
+									</div>
+								</B_cyamunara>
+								<//B_cyamunara>
+	
+							</div>
+							<div class="advert-sd col-lg-24">
+								<h3>advertisement</h3>
+								<div class="sd-slider">
+									<div class="slider">
+										<div><img src="amatangazo_images/advert1.png" /><span class="caption">Ispa lte 4g routers</span></div>		
+									</div>							
+								</div>
+							</div>
+					</section>
+					<section class="io-sko col-lg-8">
+						<h3>AMASOKO</h3>
+						<div class="io-inner col-lg-24">
+							<B_amasoko>
+								<ul>
+									<BOUCLE_amasoko(ARTICLES){par date}{id_rubrique=1918}{inverse}{0,22}{pagination 22}>
+										<li class="sko-item">
+											<span class="sko-img">
+												[(#LOGO_ARTICLE|image_reduire{337,}|image_recadre{337,168})]
+											</span>
+											<h4>#TITRE</h4>
+											<div class="row">
+												<span class="sko-lft col-lg-7">Amasoko</span>
+												<span class="sko-more col-lg-10">Komeza Usome</span>
+												<span class="sko-rgt col-lg-7">Yesterday</span>
+											</div>
+										</li>
+									</BOUCLE_amasoko>
+								</ul>
+								<div class="paginate col-lg-24">
+									<span class="prev empt"><a href="#">Prev</a></span>
+										<ul>
+											
+										</ul>
+									<span class="next"><a href="#">Next</a></span>
+								</div>
+							</B_amasoko>
+							<//B_amasoko>
+						</div>
+						<article class="tabs col-lg-24">
+							<div class="row">
+								<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1 col-lg-12" checked="checked" />
+								<label for="tab-1" class="tab-label-1 col-lg-12">Akazi</label>
+					
+								<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2 col-lg-12" />
+								<label for="tab-2" class="tab-label-2 col-lg-12">Kurangisha</label>
+								<div class="clear-shadow"></div>
+						
+								<div class="content">
+									<div class="content-1 row akz">
+										<B_akazi>
+											<ul>
+												<BOUCLE_akazi(ARTICLES){par date}{id_rubrique=96}{inverse}{0,22}{pagination 22}>
+													<li class="ct-cblck col-lg-24">
+														<h5>#TITRE</h5>
+														<span class="tbs-desc">#SOUSTITRE</span>
+														<div class="tbs-box">
+															<span class="box-tm">Yashizweho: #DATE</span>
+															<span class="box-rdt">Itariki ntarengwa: #DATE</span>
+														</div>
+													</li>
+												</BOUCLE_akazi>
+											</ul>
+											<div class="paginate col-lg-24">
+												<span class="prev empt"><a href="#">Prev</a></span>
+													<ul>
+														
+													</ul>
+												<span class="next"><a href="#">Next</a></span>
+											</div>
+										</B_akazi>
+										<//B_akazi>		
+									</div>	
+									<div class="content-2 row krg">
+										<B_kurangisha>
+											<ul>
+												<BOUCLE_kurangisha(ARTICLES){par date}{id_rubrique=1919}{inverse}{0,22}{pagination 22}>
+													<li class="ct-cblck col-lg-24">
+														<div class="tbs-img">
+															[(#LOGO_ARTICLE|image_reduire{94,}|image_recadre{94,74})]
+														</div>
+														<div class="tbs-lnk"><a href="#">#TITRE</a></div>	
+														<div class="tbs-tme"><span><i class="fa fa-clock-o tm-icon"></i>#DATE</span><a href="#">Ibindi</a></div>												
+													</li>
+												</BOUCLE_kurangisha>
+											</ul>
+											<div class="paginate col-lg-24">
+												<span class="prev empt"><a href="#">Prev</a></span>
+													<ul>
+														
+													</ul>
+												<span class="next"><a href="#">Next</a></span>
+											</div>
+										</B_kurangisha>
+										<//B_kurangisha>
+									</div>	
+								</div>
+							</div> 
+						</article>						
+					</section>
+				</div>	
+			</div>	
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="contact col-lg-6">
+						<h3>Contact Us</h3>
+						<ul>
+							<li>Marketing: 0788 89 59 53</li>
+							<li>Marketing: 0788 27 26 21</li>
+							<li>Management: 0788 74 29 08 / 0788 49 69 15</li>
+							<li>Emails: info@igihe.com / marketing@igihe.com</li>
+						</ul>
+					</div>
+					<div class="service col-lg-12">
+						<h3>Servisi dutanga</h3>
+						<ul>
+							<div class="row">
+								<li class="ser-item col-lg-12">&#45;<a href="#">Kwamamaza</a></li>
+								<li class="ser-item col-lg-12">&#45;<a href="#">Abo turi bo</a></li>
+								<li class="ser-item col-lg-12">&#45;<a href="#">Web development</a></li>
+								<li class="ser-item col-lg-12">&#45;<a href="#">Twandikire</a></li>
+								<li class="ser-item col-lg-12">&#45;<a href="#">Hosting</a></li>
+								<li class="ser-item col-lg-12">&#45;<a href="#">Tuvugishe</a></li>
+								<li class="ser-item col-lg-12">&#45;<a href="#">Domain name registration</a></li>
+								<li class="ser-item col-lg-12">&#45;<a href="#">Tumenye nyabyo!</a></li>
+								<li class="ser-item col-lg-12">&#45;<a href="#">Amategeko agenga ubwanditsi bwa IGIHE</a></li>
+								<li class="ser-item col-lg-12">&#45;<a href="#">FAQs</a></li>
+								<li class="ser-item col-lg-12">&#45;<a href="#">Kutamena amabanga</a></li>
+								<li class="ser-item col-lg-12">&#45;<a href="#">Ibibazo bikunze kwibazwa</a></li>
+							</div>	
+						</ul>
+					</div>
+					<div class="ot-link col-lg-24">
+						<ul class="list-inline">
+							<li><a href="#">Igihe network</a></li>
+							<li><a href="#">Kinyarwanda</a></li>
+							<li><a href="#">English</a></li>
+							<li><a href="#">Français</a></li>
+							<li><a href="#">Kirundi</a></li>
+							<li><a href="#">Igihe tv</a></li>
+							<li><a href="#">Igihe showbiz</a></li>
+							<li><a href="#">Amatangazo</a></li>
+							<li><a href="#">Iyandikishe</a></li>
+							<li><a href="#">Ijira</a></li>
+							<li><a href="#">Ahabanza</a></li>
+						</ul>
+					</div>
+					<div class="copyr col-lg-24">
+						<div class="row">
+							<div class="gh-web col-lg-7">
+								<ul class="list-inline">
+									<li><a href="#">Igihe.org</a></li>
+									<li><a href="#">Wikirwanda</a></li>
+									<li><a href="#">Ubufasha</a></li>
+								</ul>								
+							</div>
+							<div class="gh-right col-lg-10">
+								<p>&copy; 2009 - 2016 - IGIHE Ltd - All Rights Reserved</p>
+							</div>
+							<div class="gh-social col-lg-7">
+								<ul class="list-inline">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,116 @@
+<!-- RIGHT CONTENT START -->
+<aside class="articleright">
+	<div class="musikanews"> Muzika</div>
+<BOUCLE_rightmusika(ARTICLES){par date}{inverse}{id_rubrique=42}{0,4}{doublons xxx}>
+<a href="#URL_ARTICLE">
+	<article class="arttitle" align="left" style="height: auto;">
+        	<div class="arttitle1">
+			<span class="inline leftlnewshead">Muzika</span>
+			<span class="inline leftlnewstitre">#TITRE</span>
+			<span class="inline leftlnewstexte">[(#TEXTE|couper{100})]</span>
+		</div>
+        	<div class="arttitle2">
+			<div style="width: 120px; height: 80px; overflow: hidden;">
+			  [<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{120,0}||image_recadre{120,80,top center}|extraire_attribut{src})" width="120" height="80" title="#TITRE" >]			
+			</div>
+			
+<B_gh_pasttime>
+	<BOUCLE_gh_pasttime(ARTICLES){id_article}{age<2040}>
+		<div class="musikacomments"><a class="leftlnewsheaddate"><br />[(#DATE|date_relative)]</a></div>
+	</BOUCLE_gh_pasttime>
+</B_gh_pasttime>
+	<div class="musikacomments"><a class="leftlnewsheaddate"><br />[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]</a> </div>
+<//B_gh_pasttime>	
+			
+		</div>
+		<div style="clear: both;"></div>
+	</article>
+</a>
+</BOUCLE_rightmusika>
+
+<!-- **************************************************************************************************************************************************  -->
+
+	<div class="sinemanews"> Sinema na TV</div>
+<BOUCLE_rightsinema(ARTICLES){par date}{inverse}{id_rubrique=44}{0,4}{doublons xxx}>
+<a href="#URL_ARTICLE">
+	<article class="arttitle" align="left" style="height: auto;">
+        	<div class="arttitle1">
+			<span class="inline leftlnewshead2">Sinema na TV</span>
+			<span class="inline leftlnewstitre2">#TITRE</span>
+			<span class="inline leftlnewstexte2">[(#TEXTE|couper{100})]</span>
+		</div>
+        	<div class="arttitle2">
+			<div style="width: 120px; height: 80px; overflow: hidden;">
+			 [<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{120,0}||image_recadre{120,80,top center}|extraire_attribut{src})" width="120" height="80" title="#TITRE" >]	
+			</div>
+<B_gh_pasttime1>
+	<BOUCLE_gh_pasttime1(ARTICLES){id_article}{age<2040}>
+		<div class="musikacomments"><a class="leftlnewsheaddate"><br />[(#DATE|date_relative)]</a></div>
+	</BOUCLE_gh_pasttime1>
+</B_gh_pasttime1>
+	<div class="musikacomments"><a class="leftlnewsheaddate"><br />[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]</a> </div>
+<//B_gh_pasttime1>	
+		</div>
+		<div style="clear: both;"></div>
+	</article>
+</a>
+</BOUCLE_rightsinema>
+
+<!-- **************************************************************************************************************************************************  -->
+
+	<div class="urwenyanews"> Urwenya</div>
+<BOUCLE_righturwenya(ARTICLES){par date}{inverse}{id_rubrique=82}{0,4}{doublons xxx}>
+<a href="#URL_ARTICLE">
+	<article class="arttitle" align="left" style="height: auto;">
+        	<div class="arttitle1">
+			<span class="inline leftlnewshead4">Urwenya</span>
+			<span class="inline leftlnewstitre4">#TITRE</span>
+			<span class="inline leftlnewstexte4">[(#TEXTE|couper{100})]</span>
+		</div>
+        	<div class="arttitle2">
+			<div style="width: 120px; height: 80px; overflow: hidden;">
+			 [<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{120,0}||image_recadre{120,80,top center}|extraire_attribut{src})" width="120" height="80" title="#TITRE" >]	
+			</div>
+<B_gh_pasttime2>
+	<BOUCLE_gh_pasttime2(ARTICLES){id_article}{age<2040}>
+		<div class="musikacomments"><a class="leftlnewsheaddate"><br />[(#DATE|date_relative)]</a></div>
+	</BOUCLE_gh_pasttime2>
+</B_gh_pasttime2>
+	<div class="musikacomments"><a class="leftlnewsheaddate"><br />[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]</a> </div>
+<//B_gh_pasttime2>			</div>
+		<div style="clear: both;"></div>
+	</article>
+</a>
+</BOUCLE_righturwenya>
+<!-- **************************************************************************************************************************************************  -->
+
+	<div class="makurunews"> Andi Makuru</div>
+<BOUCLE_rightandimakuru(ARTICLES){id_rubrique=45}{par date}{inverse}{0,4}{doublons xxx}>
+<a href="#URL_ARTICLE">
+	<article class="arttitle" align="left" style="height: auto;">
+        	<div class="arttitle1">
+			<span class="inline leftlnewshead3">Andi Makuru</span>
+			<span class="inline leftlnewstitre3">#TITRE</span>
+			<span class="inline leftlnewstexte3">[(#TEXTE|couper{100})]</span>
+		</div>
+        	<div class="arttitle2">
+			<div style="width: 120px; height: 80px; overflow: hidden;">
+			 [<img src="http://igihe.rw/(#LOGO_ARTICLE||image_reduire{120,0}||image_recadre{120,80,top center}|extraire_attribut{src})" width="120" height="80" title="#TITRE" >]	
+			</div>
+<B_gh_pasttime3>
+	<BOUCLE_gh_pasttime3(ARTICLES){id_article}{age<2040}>
+		<div class="musikacomments"><a class="leftlnewsheaddate"><br />[(#DATE|date_relative)]</a></div>
+	</BOUCLE_gh_pasttime3>
+</B_gh_pasttime3>
+	<div class="musikacomments"><a class="leftlnewsheaddate"><br />[(#DATE|jour)].[(#DATE|mois)].[(#DATE|annee)]</a> </div>
+<//B_gh_pasttime3>			</div>
+		<div style="clear: both;"></div>
+	</article>
+</a>
+</BOUCLE_rightandimakuru>
+
+<!-- **************************************************************************************************************************************************  -->
+
+</aside>
+
+<!-- RIGHT CONTENT END -->

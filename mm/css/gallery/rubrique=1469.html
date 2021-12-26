@@ -1,0 +1,118 @@
+<BOUCLE_main(RUBRIQUES){id_rubrique}>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>IGIHE - Rwanda day</title>
+<link rel="stylesheet" type="text/css" href="http://igihe.com/css/style.css" />
+<link rel="stylesheet" type="text/css" href="http://igihe.com/css/gallery/style.css">
+<script type="text/javascript" src="http://igihe.com/css/gallery/demo.js"></script>
+<link rel="stylesheet" type="text/css" href="http://igihe.com/css/gallery/shadowbox.css">
+<script type="text/javascript" src="http://igihe.com/css/gallery/shadowbox.js"></script>
+<script type="text/javascript">
+Shadowbox.init({
+    // a darker overlay looks better on this particular site
+    overlayOpacity: 0.8
+    // setupDemos is defined in assets/demo.js
+}, setupDemos);
+</script>
+
+</head>
+<body>
+<div id="igihe_rwaday" align="center">
+    <div id="header"><img src="images/logo.png" width="300" style="margin-left: 100px;"></div>
+  <div id="thepage">
+    <div id="content">
+	  <div class="vidz">
+	  	<div style="padding-bottom: 10px;">Youtube videos</div>
+       
+		<iframe width="584" height="328" src="http://www.youtube.com/embed/ZyGRFGLFsmw" frameborder="0" allowfullscreen></iframe>
+	  </div>
+		  <div style="width: 390px; display: inline-block; margin-top: 30px;">
+          
+          <BOUCLE_mostread(ARTICLES){titre_mot=rdaymostreaded}{0,4}>
+		    <div class="lnews">
+				<div style="padding-bottom: 10px; display: inline-block; vertical-align: top;">[(#LOGO_ARTICLE|image_reduire{93,0})]</div>
+				<div style="padding-left: 10px; display: inline-block; vertical-align: top; width: 200px; margin-left: 10px;"><a href="#URL_ARTICLE" style="color: #0656b2;">#TITRE</a></div>
+			  </div>
+</BOUCLE_mostread>
+		  </div>
+          
+      <div class="live" style=" border: none; border-right: 1px solid #CCC;"><BOUCLE_live(ARTICLES){titre_mot=rdaylive}{0,1}>
+          #TEXTE
+</BOUCLE_live>
+	    <br>
+		  <div class="live" style=" margin-left: 0; margin-top: 15px; background: url(images/bg4.jpg) no-repeat;">
+          
+          <BOUCLE_popular(ARTICLES){titre_mot=rdaypopular}{0,1}>
+		  <div class="lnews" style=" width: 450px;">
+				<div style="padding-bottom: 10px; display: inline-block; vertical-align: top; width: 95px;">[(#LOGO_ARTICLE|image_reduire{93,0})]
+</div>
+				<div style="padding-left: 2px; display: inline-block; vertical-align: top; width: 300px; margin-left: 2px;">
+				<span style="display: list-item; list-style: none; font-weight: bold; font-size: 12px; color: #000000">#TITRE </span>
+				<span style="display: list-item; list-style: none; font-weight: bold; font-size: 9px; color:#999999">[(#DATE|affdate)]</span>
+				<span style="display: list-item; list-style: none;  font-size:12px; color: #000000">[(#TEXTE|couper{150})] <a href="#URL_ARTICLE" style="color: #666666; font-size: 10px; text-decoration: underline">read more</a></span>
+				</div>
+		    </div>
+ </BOUCLE_popular>           
+            
+	    </div>
+		  </div>
+	      <div style="width: 450px; display: inline-block;  vertical-align: top;background: url(images/bg3.jpg) no-repeat; padding-top: 30px;">
+          
+          <BOUCLE_news2011(ARTICLES){titre_mot=rdaynews2011}{0,3}>
+		 <div class="lnews" style=" width: 450px;">
+				<div style="padding-bottom: 10px; display: inline-block; vertical-align: top; width: 95px;">
+ [(#LOGO_ARTICLE|image_reduire{93,0})]               
+</div>
+				<div style="padding-left: 2px; display: inline-block; vertical-align: top; width: 300px; margin-left: 2px;">
+				<span style="display: list-item; list-style: none; font-weight: bold; font-size: 12px; color: #000000">#TITRE </span>
+				<span style="display: list-item; list-style: none; font-weight: bold; font-size: 9px; color:#999999">[(#DATE|affdate)]</span>
+				<span style="display: list-item; list-style: none;  font-size:12px; color: #000000">[(#TEXTE|couper{150})]<a href="#URL_ARTICLE" style="color: #666666; font-size: 10px; text-decoration: underline">read more</a></span>
+				</div>
+		    </div>
+</BOUCLE_news2011>
+	      </div>
+		  
+          <div style=" font-size: 36px; color: #FF0000; font-family:'MS Reference Sans Serif'; padding-left: 7px;"><span style=" padding-left: 40px;">VIDEOS</span><br />
+
+<div>
+<BOUCLE_rdayvidz(ARTICLES){titre_mot=rdayvidz}{0,5}>
+<div class="rdayvidz" style="text-align: center;">
+	<a rel="shadowbox;width=805;height=440;player=swf" title="#TITRE" href="http://www.youtube.com/v/#SOUSTITRE&hl=en&fs=1&rel=0&autoplay=1">
+		[<img src="http://igihe.com/IMG/(#LOGO_ARTICLE|fichier)" alt="" width="183" height="183">]
+	</a><br />
+<div style="width: 183px;"><a href="#" style="color: #0656b2; font-size: 13px;">#TITRE</div>
+</div>
+</BOUCLE_rdayvidz>
+</div>
+
+
+</div>
+    <div style=" width: 750px; display: inline-block; vertical-align: top; margin-top: 15px;">
+    
+    <div style="padding-bottom: 10px; padding-left: 15px;"><img src="images/bg5.jpg"></div>
+    
+    
+          <BOUCLE_latestnews(ARTICLES){titre_mot=rdaylatestnews}{0,3}>
+<div class="lnews" style=" width: 740px;">
+				<div style="padding-bottom: 10px; display: inline-block; vertical-align: top; width: 120px;">
+                
+   [(#LOGO_ARTICLE|image_reduire{119,0})]              
+                </div>
+				<div style="padding-left: 2px; display: inline-block; vertical-align: top; width: 610px; margin-left: 2px;">
+				<span style="display: list-item; list-style: none; font-weight: bold; font-size: 12px; color: #000000">#TITRE</span>
+				<span style="display: list-item; list-style: none; font-weight: bold; font-size: 9px; color:#999999">[(#DATE|affdate)]</span>
+				<span style="display: list-item; list-style: none;  font-size:12px; color: #000000">[(#TEXTE|couper{400})] <a href="#URL_ARTICLE" style="color: #666666; font-size: 10px; text-decoration: underline">read more</a></span>
+				</div>
+	    </div>
+</BOUCLE_latestnews>
+    </div>
+    <div style=" width: 215px; display: inline-block; vertical-align: top; margin-top: 10px;"><img src="images/banner.jpg"></div>
+    </div>
+    <div id="footer"></div>
+  </div>
+  <div id="thefooter"></div>
+</div>
+</body>
+</html>
+</BOUCLE_main>
